@@ -1,0 +1,209 @@
+% Load the kaobook class
+\documentclass[
+	fontsize=10pt, % Base font size
+	twoside=false, % Use different layouts for even and odd pages (in particular, if twoside=true, the margin column will be always on the outside)
+	%open=any, % If twoside=true, uncomment this to force new chapters to start on any page, not only on right (odd) pages
+	secnumdepth=1, % How deep to number headings. Defaults to 1 (sections)
+]{kaobook}
+
+% Choose the language
+\usepackage[english]{babel} % Load characters and hyphenation
+\usepackage[english=british]{csquotes}	% English quotes
+
+% Load packages for testing
+\usepackage{blindtext}
+%\usepackage{showframe} % Uncomment to show boxes around the text area, margin, header and footer
+%\usepackage{showlabels} % Uncomment to output the content of \label commands to the document where they are used
+
+% Load the bibliography package
+\usepackage{kaobiblio}
+\addbibresource{minimal.bib} % Bibliography file
+
+% Load mathematical packages for theorems and related environments
+\usepackage{kaotheorems}
+
+% Load the package for hyperreferences
+\usepackage{kaorefs}
+
+%----------------------------------------------------------------------------------------
+%	Load User packages
+%----------------------------------------------------------------------------------------
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{bm} % bold math letter
+\usepackage{multirow} % table
+\usepackage{subcaption} % multiple images
+\usepackage[ruled,vlined]{algorithm2e} % Algorithm
+
+\usepackage{tikz,pgfplots}  % TikZ and PGF
+\pgfplotsset{compat=1.11}
+
+\usepackage[toc]{glossaries}
+% \usepackage[nopostdot,style=super,nonumberlist,toc]{glossaries}
+\makeglossaries % Start the abbreviation package
+\input{abbreviations.tex} % Abbreviation archive
+\setlength{\glsdescwidth}{0.8\textwidth} % Extend the line
+\renewcommand{\glsnamefont}[1]{\textbf{#1}} % Acronym in bold
+\renewcommand{\glsgroupskip}{} %No space between different group of letters
+
+
+%%% User-defined commands
+
+\newcommand{\rhophys}{ \overline{\widetilde{\rho}} }
+\newcommand{\rhofil}{ \widetilde{\rho} }
+\newcommand{\derfrac}[2]{\frac{\partial#1}{\partial#2}}
+
+\makeindex[columns=3, title=Alphabetical Index, intoc] % Make LaTeX produce the files required to compile the index
+
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	BOOK INFORMATION
+%----------------------------------------------------------------------------------------
+
+\titlehead{1st year PhD report}
+\title[Design and optimisation of lattice structures for aerospace applications]{Design and optimisation of lattice structures for aerospace applications}
+\author[ES]{Enrico Stragiotti}
+\date{\today}
+\publishers{ONERA -- ISAE Supaero}
+
+\titlepageauthor{François-Xavier Irisarri$^{1}$, Cédric Julien$^{1}$ and Joseph Morlier$^{2}$}
+
+\address{1: ONERA - The French Aerospace Lab\\
+DMAS - Département matériaux et structures\\
+92320 Châtillon, France\\
+\{francois-xavier.irisarri, cedric.julien\}@onera.fr\\
+\
+\\
+2: ICA - Institut Clément Ader\\
+ISAE - SUPAERO\\
+31400 Toulouse, France\\
+joseph.morlier@isae-supaero.fr\\
+}
+
+%----------------------------------------------------------------------------------------
+
+\frontmatter % Denotes the start of the pre-document content, uses roman numerals
+
+%----------------------------------------------------------------------------------------
+%	TITLE AND COPYRIGHT PAGE
+%----------------------------------------------------------------------------------------
+
+\makeatletter
+
+\begin{titlepage}
+	\centering
+	\includegraphics[height=1.5cm]{figures/00_intro/megep.png}\hfill\includegraphics[height=1.5cm]{figures/00_intro/ONERA_logo.svg.png}\hfill\includegraphics[height=1.5cm]{figures/00_intro/Logo-ISAE-SUPAERO.png}\par
+	\vspace{4\baselineskip}
+	{\Huge 
+	\@title\par}
+	\vspace{4\baselineskip}
+	{\LARGE\textsc{\@author}\par}
+	\vspace{4\baselineskip}
+	{% author
+	\fontsize{12}{14}\selectfont
+	\bfseries\@titlepageauthor
+	\par
+ 	}%
+	\medskip
+	{% address
+		\fontsize{11}{12}\selectfont
+		\def\and{\\\vspace{13pt}}
+		\normalfont\@address
+		\par
+	}%
+	\@date
+	\vfill
+	{\Large 1st year PhD report}\par
+	\medskip
+	\@publishers
+\end{titlepage}
+
+\newpage
+\vspace*{\fill}
+{\large \textbf{Colophon}} \\
+This document was typeset with the help of \href{https://sourceforge.net/projects/koma-script/}{\KOMAScript} and \href{https://www.latex-project.org/}{\LaTeX} using the \href{https://github.com/fmarotta/kaobook/}{kaobook} class. \par
+\medskip
+\@publishers
+
+\makeatother
+%----------------------------------------------------------------------------------------
+%	PREFACE
+%----------------------------------------------------------------------------------------
+
+\chapter*{Abstract}
+
+%----------------------------------------------------------------------------------------
+%	TABLE OF CONTENTS & LIST OF FIGURES/TABLES
+%----------------------------------------------------------------------------------------
+
+\begingroup % Local scope for the following commands
+
+% Define the style for the TOC, LOF, and LOT
+%\setstretch{1} % Uncomment to modify line spacing in the ToC
+%\hypersetup{linkcolor=blue} % Uncomment to set the colour of links in the ToC
+\setlength{\textheight}{230\vscale} % Manually adjust the height of the ToC pages
+
+% Turn on compatibility mode for the etoc package
+\etocstandarddisplaystyle % "toc display" as if etoc was not loaded
+\etocstandardlines % "toc lines as if etoc was not loaded
+
+\tableofcontents % Output the table of contents
+
+\listoffigures % Output the list of figures
+
+% Comment both of the following lines to have the LOF and the LOT on different pages
+\let\cleardoublepage\bigskip
+\let\clearpage\bigskip
+
+\listoftables % Output the list of tables
+
+\endgroup
+
+%----------------------------------------------------------------------------------------
+%	MAIN BODY
+%----------------------------------------------------------------------------------------
+
+\mainmatter % Denotes the start of the main document content, resets page numbering and uses arabic numbers
+\setchapterstyle{kao} % Choose the default chapter heading style
+
+\include{chapters/1_intro}
+
+\include{chapters/2_bibreview}
+
+\include{chapters/3_results}
+
+\include{chapters/4_conclusion}
+
+%----------------------------------------------------------------------------------------
+
+\backmatter % Denotes the end of the main document content
+\setchapterstyle{plain} % Output plain chapters from this point onwards
+
+%-------------------------------------------------------------------------------
+%	ABBREVIATIONS
+%-------------------------------------------------------------------------------
+
+\printglossary[type=\acronymtype,title={List of Abbreviations}]
+
+%----------------------------------------------------------------------------------------
+%	BIBLIOGRAPHY
+%----------------------------------------------------------------------------------------
+
+% The bibliography needs to be compiled with biber using your LaTeX editor, or on the command line with 'biber main' from the template directory
+
+\pagelayout{margin} % Restore margins
+\printbibliography[heading=bibintoc, title=Bibliography] % Add the bibliography heading to the ToC, set the title of the bibliography and output the bibliography note
+\pagelayout{wide} % No margins
+
+
+%----------------------------------------------------------------------------------------
+%	INDEX
+%----------------------------------------------------------------------------------------
+
+% The index needs to be compiled on the command line with 'makeindex main' from the template directory
+
+\printindex % Output the index
+
+\end{document}
