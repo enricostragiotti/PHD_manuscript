@@ -66,10 +66,17 @@
 	\clearfield{arxivId}
 	\clearfield{pmid}
 	\clearfield{eprint}
+	% MOD
+	\clearfield{urlday}
+    \clearfield{urlmonth}
+    \clearfield{urlyear}
+    \clearlist{language}
 	\ifentrytype{online}{}{\ifentrytype{misc}{}{\clearfield{url}}}
 	\ifentrytype{book}{\clearfield{doi}}{}
 }
 
+% Surname first MOD
+\DeclareNameAlias{default}{family-given}
 % Convert months to integers
 \DeclareSourcemap{
 	\maps[datatype=bibtex]{
@@ -146,8 +153,12 @@
 %----------------------------------------------------------------------------------------
 
 % Command to format the marginnote created for cited items
+% \NewDocumentCommand{\formatmargincitation}{m}{% The parameter is a single citation key
+% 	\parencite{#1}: \citeauthor*{#1} (\iffieldundef{year}{\bibsstring{nodate}}{\printfield{year}}), \citefield{#1}[emph]{title}%
+% }
+% MOD
 \NewDocumentCommand{\formatmargincitation}{m}{% The parameter is a single citation key
-	\parencite{#1}: \citeauthor*{#1} (\iffieldundef{year}{\bibsstring{nodate}}{\printfield{year}}), \citefield{#1}[emph]{title}%
+\textcolor{accent_r_1}{\citenum{#1}.} \textcolor{black!60}{\citeauthor*{#1} (\citeyear{#1}), \citetitle{#1}}
 }
 
 % Command to format the marginnote created for supercited items
@@ -308,7 +319,609 @@
 	\fi%
 }
 
+%%%
+%%% MODIFIED BY ENRICO STRAGIOTTI
+%%%
 
+% add citenum to show only the citation number
+\DeclareCiteCommand{\citenum}
+  {}
+  {\printfield{labelnumber}}
+  {}
+  {}
+
+% Simple modifications to punctuation, etc.
+\renewcommand*\bibnamedash{\textemdash\textemdash}
+\renewcommand*\intitlepunct{\addspace}
+\renewcommand*\newunitpunct{\addcomma\addspace}
+
+% remove "in"
+\renewbibmacro{in:}{}
+
+% No period after doi, ibsn, or eprint
+\renewcommand*{\finentrypunct}{%
+      \ifboolexpr{(togl {bbx:doi} and not test {\iffieldundef{doi}}) or
+                  (togl {bbx:isbn} and not test {\iffieldundef{isbn}}) or
+                  (togl {bbx:eprint} and not test {\iffieldundef{eprint}}) or
+                  (test {\iffieldundef{doi}} and test {\iffieldundef{isbn}} and test {\iffieldundef{eprint}})
+                  %(togl {bbx:url} and not test {\iffieldundef{url}} and test {\ifentrytype{online}})%
+                  }%
+        {}%
+        {\addperiod}%
+      }
+
+
+% Put "cited on" in margin
+\DeclareFieldFormat{pagerefformat}{{\footnotesize\color{gray}#1}}
+%\DeclareFieldFormat{pagerefformat}{\mkbibparens{{\color{red}\mkbibemph{#1}}}}
+\renewbibmacro*{pageref}{%
+  \iflistundef{pageref}
+    {}
+    {\marginnote{%\footnotesize%\color{gray}%{%
+      \printtext[pagerefformat]{%
+         \ifnumgreater{\value{pageref}}{1}%
+           {\bibstring{backrefpages}\ppspace}%
+           {\bibstring{backrefpage}\ppspace}%
+         \printlist[pageref][-\value{listtotal}]{pageref}%
+         }%
+       }}%
+    }
+
+% Doi on newline
+\newbibmacro*{bbx:parunit}{%
+    \ifbibliography
+      {\setunit{\bibpagerefpunct}\newblock
+       \usebibmacro{pageref}%
+       \clearlist{pageref}%
+       \setunit{\adddot\par\nobreak}}
+      {}}
+  
+  \renewbibmacro*{doi+eprint+url}{%
+  \addperiod % ending point  
+  \par
+    \iftoggle{bbx:doi}
+      {\printfield{doi}}
+      {}%
+    \iftoggle{bbx:eprint}
+      {\usebibmacro{eprint}}
+      {}%
+    \iftoggle{bbx:url}
+      {\usebibmacro{url+urldate}}
+      {}}
+  
+  \renewbibmacro*{eprint}{%
+    \par
+    \iffieldundef{eprinttype}
+      {\printfield{eprint}}
+      {\printfield[eprint:\strfield{eprinttype}]{eprint}}}
+
+\newbibmacro*{volume+part}{%
+       \iffieldundef{volume}
+         {}
+         {%
+           \printfield{volume}%
+           \printfield{part}%
+           \setunit{\addcolon\space}%
+         }%
+     }
+
+\newbibmacro*{isbn}{%
+     \setunit{\adddot\addspace}%
+     \iftoggle{bbx:isbn}
+       {%
+         \iffieldundef{isbn}%
+           {}%
+           %{\addperiod\\\printfield{isbn}}%
+           {\addperiod\\\href{http://books.google.com/books?vid=ISBN\thefield{isbn}}{\printfield{isbn}}}%
+         }%
+       {}%
+   }
+
+% These modification are needed to change the order of the elements in the bibliography
+
+% New bibliography drivers, using the required order of fields. These
+% are mainly copied from standard.bbx then modified.
+\DeclareBibliographyDriver{article}{%
+  \usebibmacro{bibindex}%
+  \usebibmacro{pageref}%
+  \usebibmacro{begentry}%
+  \usebibmacro{author/translator+others}%
+  \newunit
+  \usebibmacro{maintitle+title}%
+  \newunit
+  \printlist{language}%
+  \newunit\newblock
+  \usebibmacro{byauthor}%
+  \newunit\newblock
+  \usebibmacro{bytranslator+others}%
+  \newunit\newblock
+  \printfield{version}%
+  \newunit\newblock
+  \usebibmacro{journal+issuetitle}%
+  \newunit
+  \usebibmacro{byeditor+others}%
+  \newunit
+  \usebibmacro{note+pages}%
+  \newunit\newblock
+  \newunit\newblock
+  \usebibmacro{addendum+pubstate}%
+  % \setunit{\bibpagerefpunct}\newblock
+  % \usebibmacro{pageref}%
+  \newunit\newblock
+  \usebibmacro{related}%
+  \usebibmacro{finentry}%
+  \newunit\newblock
+  \usebibmacro{doi+eprint+url}%
+  \usebibmacro{finentry}
+}
+
+
+\DeclareBibliographyDriver{book}{%
+  \usebibmacro{bibindex}%
+  \usebibmacro{begentry}%
+  \usebibmacro{pageref}%
+  \usebibmacro{author/editor+others/translator+others}%
+  \setunit{\labelnamepunct}\newblock
+  \usebibmacro{maintitle+title}%
+  \newunit
+  \printlist{language}%
+  \newunit\newblock
+  \printfield{edition}%
+  \newunit\newblock
+  \usebibmacro{byauthor}%
+  \newunit\newblock
+  \usebibmacro{byeditor+others}%
+  \newunit\newblock
+  \printfield{volumes}%
+  \newunit\newblock
+  \usebibmacro{series+number}%
+  \setunit{\adddot\addspace}%
+  \newblock
+  \usebibmacro{publisher+location+date}%
+  \newunit\newblock
+  \usebibmacro{volume+part}%
+  \newunit
+  \usebibmacro{chapter+pages}%
+  \newunit
+  \printfield{pagetotal}%
+  \newunit\newblock
+  \printfield{note}%
+  \newunit\newblock
+  \usebibmacro{addendum+pubstate}%
+  % \setunit{\bibpagerefpunct}\newblock
+  % \usebibmacro{pageref}%
+  \newunit\newblock
+  \usebibmacro{related}%
+  \usebibmacro{finentry}%
+  \newunit\newblock
+  \usebibmacro{isbn}%
+  \usebibmacro{finentry}%
+  \newunit\newblock
+  \usebibmacro{doi+eprint+url}%
+  \usebibmacro{finentry}%
+}
+
+\DeclareBibliographyDriver{inbook}{%
+  \usebibmacro{bibindex}%
+  \usebibmacro{begentry}%
+  \usebibmacro{pageref}%
+  \usebibmacro{author/translator+others}%
+  \setunit{\labelnamepunct}\newblock
+  \usebibmacro{title}%
+  \newunit
+  \printlist{language}%
+  \newunit\newblock
+  \usebibmacro{byauthor}%
+  \newunit\newblock
+  \usebibmacro{in:}%
+  \usebibmacro{bybookauthor}%
+  \usebibmacro{maintitle+booktitle}%
+  \newunit\newblock
+  \usebibmacro{byeditor+others}%
+  \newunit\newblock
+  \printfield{edition}%
+  \newunit
+  \printfield{volumes}%
+  \newunit\newblock
+  \usebibmacro{series+number}%
+  \setunit{\adddot\addspace}%
+  \newblock
+  \usebibmacro{publisher+location+date}%
+  \newunit\newblock
+  \usebibmacro{volume+part}%
+  \newunit
+  \usebibmacro{chapter+pages}%
+  \newunit\newblock
+  \printfield{note}%
+  \newunit\newblock
+  \iftoggle{bbx:isbn}
+    {\printfield{isbn}}
+    {}%
+  \newunit\newblock
+  \usebibmacro{doi+eprint+url}%
+  \newunit\newblock
+  \usebibmacro{addendum+pubstate}%
+  % \setunit{\bibpagerefpunct}\newblock
+  % \usebibmacro{pageref}%
+  \newunit\newblock
+  \usebibmacro{related}%
+  \usebibmacro{finentry}%
+}
+
+\DeclareBibliographyDriver{incollection}{%
+  \usebibmacro{bibindex}%
+  \usebibmacro{begentry}%
+  \usebibmacro{pageref}%
+  \usebibmacro{author/translator+others}%
+  \setunit{\labelnamepunct}\newblock
+  \usebibmacro{title}%
+  \newunit
+  \printlist{language}%
+  \newunit\newblock
+  \usebibmacro{byauthor}%
+  \newunit\newblock
+  \usebibmacro{in:}%
+  \usebibmacro{maintitle+booktitle}%
+  \newunit\newblock
+  \usebibmacro{series+number}%
+  \newunit\newblock
+  \usebibmacro{byeditor+others}%
+  \newunit\newblock
+  \printfield{edition}%
+  \newunit
+  \iffieldundef{maintitle}
+    {\printfield{volume}%
+     \printfield{part}}
+    {}%
+  \newunit
+  \printfield{volumes}%
+  \newunit\newblock
+  \printfield{note}%
+  \newunit\newblock
+  \usebibmacro{publisher+location+date}%
+  \newunit\newblock
+  \usebibmacro{chapter+pages}%
+  \newunit\newblock
+  \iftoggle{bbx:isbn}
+    {\printfield{isbn}}
+    {}%
+  \newunit\newblock
+  \usebibmacro{addendum+pubstate}%
+  % \setunit{\bibpagerefpunct}\newblock
+  % \usebibmacro{pageref}%
+  \newunit\newblock
+  \usebibmacro{related}%
+  \usebibmacro{finentry}%
+  \newunit\newblock
+  \usebibmacro{doi+eprint+url}%
+  \usebibmacro{finentry}%
+}
+
+\DeclareBibliographyDriver{inproceedings}{%
+  \usebibmacro{bibindex}%
+  \usebibmacro{begentry}%
+  \usebibmacro{pageref}%
+  \usebibmacro{author/translator+others}%
+  \setunit{\labelnamepunct}\newblock
+  \usebibmacro{title}%
+  \newunit
+  \printlist{language}%
+  \newunit\newblock
+  \usebibmacro{byauthor}%
+  \newunit\newblock
+  \usebibmacro{maintitle+booktitle(inproceedings)}%
+  \midsentence
+  \newunit\newblock
+  \usebibmacro{event+venue+date}%
+  \newunit\newblock
+  \usebibmacro{byeditor+others}%
+  \newunit\newblock
+  \printfield{volumes}%
+  \newunit\newblock
+  \usebibmacro{series+number}%
+  \newunit\newblock
+  \printlist{organization}%
+  \newunit\newblock
+  \usebibmacro{volume+part}%
+  \newunit
+  \usebibmacro{publisher+location+date}%
+  \newunit\newblock
+  \usebibmacro{chapter+pages}%
+  \newunit\newblock
+  \usebibmacro{addendum+pubstate}%
+  % \setunit{\bibpagerefpunct}\newblock
+  % \usebibmacro{pageref}%
+  \newunit\newblock
+  \usebibmacro{related}%
+  \usebibmacro{finentry}%
+  \newunit\newblock
+  \printfield{note}%
+  \newunit\newblock
+  \usebibmacro{doi+eprint+url}%
+  \usebibmacro{finentry}%
+  \newunit\newblock
+  %\usebibmacro{isbn}%
+  \usebibmacro{finentry}%
+}
+
+\DeclareBibliographyDriver{online}{%
+  \usebibmacro{bibindex}%
+  \usebibmacro{begentry}%
+  \usebibmacro{pageref}%
+  \usebibmacro{author/editor+others/translator+others}%
+  \newunit
+  \usebibmacro{maintitle+title}%
+  \newunit
+  \printlist{language}%
+  \newunit\newblock
+  \usebibmacro{date}%
+  \newunit\newblock
+  \usebibmacro{byauthor}%
+  \newunit\newblock
+  \usebibmacro{bytranslator+others}%
+  \newunit\newblock
+  \printfield{version}%
+  \newunit\newblock
+  \printlist{organization}%
+  \setunit{\adddot\addspace}%
+  \iftoggle{bbx:eprint}
+    {\usebibmacro{eprint}}
+    {}%
+  %\setunit{\adddot\addspace}%
+  \usebibmacro{addendum+pubstate}%
+  % \setunit{\bibpagerefpunct}\newblock
+  % \usebibmacro{pageref}%
+  \newunit\newblock
+  \usebibmacro{related}%
+  \usebibmacro{finentry}%
+  \newunit\newblock%
+  \usebibmacro{url+urldate}%
+  \usebibmacro{finentry}%
+}
+
+\DeclareBibliographyDriver{patent}{%
+  \usebibmacro{bibindex}%
+  \usebibmacro{begentry}%
+  \usebibmacro{pageref}%
+  \usebibmacro{author}%
+  \setunit{\labelnamepunct}\newblock
+  \usebibmacro{title}%
+  \newunit
+  \printlist{language}%
+  \newunit\newblock
+  \usebibmacro{byauthor}%
+  \newunit\newblock
+  \printfield{type}%
+  \setunit*{\addspace}%
+  %\printfield{number}%
+  \usebibmacro{patnumber}
+  \newunit\newblock
+  \printfield{note}%
+  \newunit\newblock
+  \usebibmacro{date}%
+  \newunit\newblock
+  \usebibmacro{doi+eprint+url}%
+  \newunit\newblock
+  \usebibmacro{addendum+pubstate}%
+  % \setunit{\bibpagerefpunct}\newblock
+  % \usebibmacro{pageref}%
+  \newunit\newblock
+  \usebibmacro{related}%
+  \usebibmacro{finentry}%
+}
+
+\DeclareBibliographyDriver{thesis}{%
+  \usebibmacro{bibindex}%
+  \usebibmacro{begentry}%
+  \usebibmacro{pageref}%
+  \usebibmacro{author}%
+  \setunit{\labelnamepunct}\newblock
+  \usebibmacro{maintitle+title}%
+  \newunit
+  \printlist{language}%
+  \newunit\newblock
+  \usebibmacro{byauthor}%
+  \newunit\newblock
+  \printfield{note}%
+  \newunit\newblock
+  \printfield{type}%
+  \newunit
+  \usebibmacro{institution+location+date}%
+  \newunit\newblock
+  \usebibmacro{chapter+pages}%
+  \newunit
+  \printfield{pagetotal}%
+  \newunit\newblock
+  %\iftoggle{bbx:isbn}
+  %  {\printfield{isbn}}
+  %  {}%
+  %\newunit\newblock
+  %\usebibmacro{doi+eprint+url}%
+  %\newunit\newblock
+  \usebibmacro{addendum+pubstate}%
+  % \setunit{\bibpagerefpunct}\newblock
+  % \usebibmacro{pageref}%
+  \newunit\newblock
+  \iftoggle{bbx:related}
+    {\usebibmacro{related:init}%
+     \usebibmacro{related}}
+    {}%
+  \usebibmacro{finentry}%
+  \newunit\newblock
+  \usebibmacro{isbn}%
+  \usebibmacro{finentry}%
+  \newunit\newblock
+  \usebibmacro{doi+eprint+url}%
+  \usebibmacro{finentry}%
+  }
+
+\DeclareBibliographyDriver{unpublished}{%
+  \usebibmacro{bibindex}%
+  \usebibmacro{begentry}%
+  \usebibmacro{pageref}%
+  \usebibmacro{author}%
+  \setunit{\labelnamepunct}\newblock
+  \usebibmacro{maintitle+title}%
+  \newunit
+  \printlist{language}%
+  \newunit\newblock
+  \usebibmacro{byauthor}%
+  \newunit\newblock
+  \printfield{howpublished}%
+  \newunit\newblock
+  \printfield{note}%
+  \newunit\newblock
+  \usebibmacro{location+date}%
+  \newunit\newblock
+  \iftoggle{bbx:url}
+    {\usebibmacro{url+urldate}}
+    {}%
+  \newunit\newblock
+  \usebibmacro{addendum+pubstate}%
+  % \setunit{\bibpagerefpunct}\newblock
+  % \usebibmacro{pageref}%
+  \newunit\newblock
+  \iftoggle{bbx:related}
+    {\usebibmacro{related:init}%
+     \usebibmacro{related}}
+    {}%
+  \usebibmacro{finentry}
+  }
+
+\DeclareBibliographyDriver{misc}{%
+  \usebibmacro{bibindex}%
+  \usebibmacro{begentry}%
+  \usebibmacro{pageref}%
+  \usebibmacro{author/editor+others/translator+others}%
+  \setunit{\labelnamepunct}\newblock
+  \usebibmacro{maintitle+title}%
+  \newunit
+  \printlist{language}%
+  \newunit\newblock
+  \usebibmacro{byauthor}%
+  \newunit\newblock
+  \usebibmacro{byeditor+others}%
+  \newunit\newblock
+  \printfield{howpublished}%
+  \newunit\newblock
+  \printfield{type}%
+  \newunit
+  \printfield{version}%
+  \newunit
+  \printfield{note}%
+  \newunit\newblock
+  \usebibmacro{organization+location+date}%
+  \newunit\newblock
+  \usebibmacro{addendum+pubstate}%
+  % \setunit{\bibpagerefpunct}\newblock
+  % \usebibmacro{pageref}%
+  \newunit\newblock
+  \iftoggle{bbx:related}
+    {\usebibmacro{related:init}%
+     \usebibmacro{related}}
+    {}%
+  \usebibmacro{finentry}%
+  \newunit\newblock%
+  \usebibmacro{doi+eprint+url}%
+  \usebibmacro{finentry}%
+   }
+
+\DeclareBibliographyDriver{inproceedings}{%
+  \usebibmacro{bibindex}%
+  \usebibmacro{begentry}%
+  \usebibmacro{pageref}%
+  \usebibmacro{author/translator+others}%
+  \setunit{\labelnamepunct}\newblock
+  \usebibmacro{maintitle+title}%
+  \newunit
+  \printlist{language}%
+  \newunit\newblock
+  \usebibmacro{byauthor}%
+  \newunit\newblock
+  \usebibmacro{in:}%
+  \usebibmacro{maintitle+booktitle}%
+  \newunit\newblock
+  \usebibmacro{event+venue+date}%
+  \newunit\newblock
+  \usebibmacro{byeditor+others}%
+  \newunit\newblock
+  \iffieldundef{maintitle}
+    {\printfield{volume}%
+     \printfield{part}}
+    {}%
+  \newunit
+  \printfield{volumes}%
+  \newunit\newblock
+  \usebibmacro{series+number}%
+  \newunit\newblock
+  \printfield{note}%
+  \newunit\newblock
+  \printlist{organization}%
+  \newunit
+  \usebibmacro{publisher+location+date}%
+  \newunit\newblock
+  \usebibmacro{chapter+pages}%
+  \newunit\newblock
+  \iftoggle{bbx:isbn}
+    {\printfield{isbn}}
+    {}%
+  \newunit\newblock
+  \usebibmacro{addendum+pubstate}%
+  % \setunit{\bibpagerefpunct}\newblock
+  % \usebibmacro{pageref}%
+  \newunit\newblock
+  \iftoggle{bbx:related}
+    {\usebibmacro{related:init}%
+     \usebibmacro{related}}
+    {}%
+  \usebibmacro{finentry}%
+  \newunit\newblock
+  \usebibmacro{doi+eprint+url}%
+  \usebibmacro{finentry}
+  }
+
+\DeclareBibliographyDriver{report}{%
+  \usebibmacro{bibindex}%
+  \usebibmacro{begentry}%
+  \usebibmacro{author}%
+  \usebibmacro{pageref}%
+  \setunit{\labelnamepunct}\newblock
+  \usebibmacro{maintitle+title}%
+  \newunit
+  \printlist{language}%
+  \newunit\newblock
+  \usebibmacro{byauthor}%
+  \newunit\newblock
+  \printfield{type}%
+  \setunit*{\addspace}%
+  {\myliningnumfont{}\printfield{number}}%
+  \newunit\newblock
+  \printfield{version}%
+  \newunit
+  \printfield{note}%
+  \newunit\newblock
+  \usebibmacro{institution+location+date}%
+  \newunit\newblock
+  \usebibmacro{chapter+pages}%
+  \newunit
+  \printfield{pagetotal}%
+  \newunit\newblock
+  \iftoggle{bbx:isbn}
+    {\printfield{isbn}}
+    {}%
+  \newunit\newblock
+  \usebibmacro{doi+eprint+url}%
+  \newunit\newblock
+  \usebibmacro{addendum+pubstate}%
+  % \setunit{\bibpagerefpunct}\newblock
+  % \usebibmacro{pageref}%
+  \newunit\newblock
+  \iftoggle{bbx:related}
+    {\usebibmacro{related:init}%
+     \usebibmacro{related}}
+    {}%
+  \usebibmacro{finentry}}
+  
 %----------------------------------------------------------------------------------------
 %	LINKING THE AUTHOR'S NAME
 %----------------------------------------------------------------------------------------

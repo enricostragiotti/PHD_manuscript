@@ -172,7 +172,9 @@
 \DeclareDocumentCommand{\chapterstylekao}{}{%
     \IfWideLayout{%
         \renewcommand*{\chapterformat}{%
-	    	\mbox{\chapappifchapterprefix{\nobreakspace}\scalebox{2.85}{\thechapter\autodot}}%
+	    	% \mbox{\chapappifchapterprefix{\nobreakspace}\scalebox{2.85}{\thechapter\autodot}}%
+	    	\mbox{\chapappifchapterprefix{\nobreakspace}\scalebox{2.85}{\thechapter}}%
+	    	% \mbox{\chapappifchapterprefix{\nobreakspace}\scalebox{2.85}{\textcolor{accent_r_1}{\thechapter}}}%
 	    }%
 	    \renewcommand\chapterlinesformat[3]{%
 	    	\vspace{3.5\vscale}%
@@ -180,27 +182,29 @@
 	    		\Ifthispageodd{%
 	    			\smash{\makebox[0pt][l]{%
                         \parbox[b]{\textwidth - 6.2\hscale}{\flushright{##3}}%
-                        \makebox[6.2\hscale][c]{\rule[-2\vscale]{1pt}{27.4\vscale+\f@size mm}}%
+                        \makebox[6.2\hscale][c]{\color{accent_r_1}\rule[-2\vscale]{1pt}{27.4\vscale+\f@size mm}}%
 	    				\parbox[b]{\marginparwidth}{##2}%
 	    			}}%
 	    		}{
                     \smash{\makebox[\textwidth + 6.2\hscale][r]{%
                         \parbox[b]{47.7\hscale + 6.2\hscale}{\flushright{##2}}%
-                        \makebox[6.2\hscale][c]{\rule[-2\vscale]{1pt}{27.4\vscale+\f@size mm}}%
+                        \makebox[6.2\hscale][c]{\color{accent_r_1}\rule[-2\vscale]{1pt}{27.4\vscale+\f@size mm}}%
 	    				\parbox[b]{\textwidth}{\flushleft{##3}}%
 	    			}}%
 	    		}
 	    	\else%
 	    		\smash{\makebox[0pt][l]{%
                     \parbox[b]{\textwidth - 6.2\hscale}{\flushright{##3}}%
-                    \makebox[6.2\hscale][c]{\rule[-2\vscale]{1pt}{27.4\vscale+\f@size mm}}%
+                    \makebox[6.2\hscale][c]{\color{accent_r_1}\rule[-2\vscale]{1pt}{27.4\vscale+\f@size mm}}%
                     \parbox[b]{\marginparwidth}{##2}%
 	    		}}%
 	    	\fi%
 	    }%
     }{%
         \renewcommand*{\chapterformat}{%
-	    	\mbox{\chapappifchapterprefix{\nobreakspace}\scalebox{2.85}{\thechapter\autodot}}%
+	    	% \mbox{\chapappifchapterprefix{\nobreakspace}\scalebox{2.85}{\thechapter\autodot}}%
+			\mbox{\chapappifchapterprefix{\nobreakspace}\scalebox{2.85}{\thechapter}}%
+	    	% \mbox{\chapappifchapterprefix{\nobreakspace}\scalebox{2.85}{\textcolor{accent_r_1}{\thechapter}}}%
 	    }%
 	    \renewcommand\chapterlinesformat[3]{%
 	    	\vspace{3.5\vscale}%
@@ -208,20 +212,20 @@
 	    		\Ifthispageodd{%
 	    			\smash{\makebox[0pt][l]{%
 	    				\parbox[b]{\textwidth}{\flushright{##3}}%
-	    				\makebox[\marginparsep][c]{\rule[-2\vscale]{1pt}{27.4\vscale+\f@size mm}}%
+	    				\makebox[\marginparsep][c]{\color{accent_r_1}\rule[-2\vscale]{1pt}{27.4\vscale+\f@size mm}}%
 	    				\parbox[b]{\marginparwidth}{##2}%
 	    			}}%
 	    		}{
 	    			\smash{\makebox[\textwidth][r]{%
 	    				\parbox[b]{\marginparwidth}{\flushright{##2}}%
-	    				\makebox[\marginparsep][c]{\rule[-2\vscale]{1pt}{27.4\vscale+\f@size mm}}%
+	    				\makebox[\marginparsep][c]{\color{accent_r_1}\rule[-2\vscale]{1pt}{27.4\vscale+\f@size mm}}%
 	    				\parbox[b]{\textwidth}{\flushleft{##3}}%
 	    			}}%
 	    		}
 	    	\else%
 	    		\smash{\makebox[0pt][l]{%
 	    			\parbox[b]{\textwidth}{\flushright{##3}}%
-	    			\makebox[\marginparsep][c]{\rule[-2\vscale]{1pt}{27.4\vscale+\f@size mm}}%
+	    			\makebox[\marginparsep][c]{\color{accent_r_1}\rule[-2\vscale]{1pt}{27.4\vscale+\f@size mm}}%
 	    			\parbox[b]{\marginparwidth}{##2}%
 	    		}}%
 	    	\fi%

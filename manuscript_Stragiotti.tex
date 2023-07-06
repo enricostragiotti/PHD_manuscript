@@ -1,9 +1,9 @@
 % Load the kaobook class
 \documentclass[
-	fontsize=10pt, % Base font size
-	twoside=false, % Use different layouts for even and odd pages (in particular, if twoside=true, the margin column will be always on the outside)
+	fontsize=11pt, % Base font size
+	twoside=true, % Use different layouts for even and odd pages (in particular, if twoside=true, the margin column will be always on the outside)
 	%open=any, % If twoside=true, uncomment this to force new chapters to start on any page, not only on right (odd) pages
-	secnumdepth=1, % How deep to number headings. Defaults to 1 (sections)
+	secnumdepth=2, % How deep to number headings. Defaults to 1 (sections)
 ]{kaobook}
 
 % Choose the language
@@ -17,7 +17,7 @@
 
 % Load the bibliography package
 \usepackage{kaobiblio}
-\addbibresource{minimal.bib} % Bibliography file
+\addbibresource{biblio.bib} % Bibliography file
 
 % Load mathematical packages for theorems and related environments
 \usepackage{kaotheorems}
@@ -55,6 +55,7 @@
 
 \makeindex[columns=3, title=Alphabetical Index, intoc] % Make LaTeX produce the files required to compile the index
 
+\setcounter{margintocdepth}{\sectiontocdepth} % Only sections in the toc of the chapter
 
 \begin{document}
 
@@ -62,7 +63,7 @@
 %	BOOK INFORMATION
 %----------------------------------------------------------------------------------------
 
-\titlehead{1st year PhD report}
+\titlehead{PhD manuscript}
 \title[Design and optimisation of lattice structures for aerospace applications]{Design and optimisation of lattice structures for aerospace applications}
 \author[ES]{Enrico Stragiotti}
 \date{\today}
@@ -115,7 +116,7 @@ joseph.morlier@isae-supaero.fr\\
 	}%
 	\@date
 	\vfill
-	{\Large 1st year PhD report}\par
+	{\Large \@titlehead}\par
 	\medskip
 	\@publishers
 \end{titlepage}
@@ -132,7 +133,7 @@ This document was typeset with the help of \href{https://sourceforge.net/project
 %	PREFACE
 %----------------------------------------------------------------------------------------
 
-\chapter*{Abstract}
+
 
 %----------------------------------------------------------------------------------------
 %	TABLE OF CONTENTS & LIST OF FIGURES/TABLES
@@ -161,6 +162,12 @@ This document was typeset with the help of \href{https://sourceforge.net/project
 
 \endgroup
 
+%-------------------------------------------------------------------------------
+%	ABBREVIATIONS
+%-------------------------------------------------------------------------------
+
+\printglossary[type=\acronymtype,title={List of Abbreviations}]
+
 %----------------------------------------------------------------------------------------
 %	MAIN BODY
 %----------------------------------------------------------------------------------------
@@ -170,22 +177,24 @@ This document was typeset with the help of \href{https://sourceforge.net/project
 
 \include{chapters/1_intro}
 
-\include{chapters/2_bibreview}
+\include{chapters/2_literature_review}
 
-\include{chapters/3_results}
+\include{chapters/3_comparison_TO_TTO}
 
-\include{chapters/4_conclusion}
+\include{chapters/4_TTO_upgrades}
+
+\include{chapters/5_cellular_structures}
+
+\include{chapters/6_DMO}
+
+\include{chapters/7_advanced_applications}
+
+\include{chapters/8_conclusion}
 
 %----------------------------------------------------------------------------------------
 
-\backmatter % Denotes the end of the main document content
-\setchapterstyle{plain} % Output plain chapters from this point onwards
-
-%-------------------------------------------------------------------------------
-%	ABBREVIATIONS
-%-------------------------------------------------------------------------------
-
-\printglossary[type=\acronymtype,title={List of Abbreviations}]
+% \backmatter % Denotes the end of the main document content
+% \setchapterstyle{plain} % Output plain chapters from this point onwards
 
 %----------------------------------------------------------------------------------------
 %	BIBLIOGRAPHY
@@ -205,5 +214,15 @@ This document was typeset with the help of \href{https://sourceforge.net/project
 % The index needs to be compiled on the command line with 'makeindex main' from the template directory
 
 \printindex % Output the index
+
+
+\appendix % From here onwards, chapters are numbered with letters, as is the appendix convention
+
+\pagelayout{wide} % No margins
+\addpart{Appendix}
+\pagelayout{margin} % Restore margins
+
+\include{chapters/app/A_geometry}
+
 
 \end{document}

@@ -41,13 +41,13 @@
   >
 ]>
 <requests version="1.0">
-  <internal package="biblatex" priority="9" active="1">
+  <internal package="biblatex" priority="9" active="0">
     <generic>latex</generic>
     <provides type="dynamic">
-      <file>main.bcf</file>
+      <file>manuscript_Stragiotti.bcf</file>
     </provides>
     <requires type="dynamic">
-      <file>main.bbl</file>
+      <file>manuscript_Stragiotti.bbl</file>
     </requires>
     <requires type="static">
       <file>blx-dm.def</file>
@@ -60,26 +60,26 @@
       <file>english.lbx</file>
     </requires>
   </internal>
-  <external package="biblatex" priority="5" active="1">
+  <external package="biblatex" priority="5" active="0">
     <generic>biber</generic>
     <cmdline>
       <binary>biber</binary>
-      <infile>main</infile>
+      <infile>manuscript_Stragiotti</infile>
     </cmdline>
     <input>
-      <file>main.bcf</file>
+      <file>manuscript_Stragiotti.bcf</file>
     </input>
     <output>
-      <file>main.bbl</file>
+      <file>manuscript_Stragiotti.bbl</file>
     </output>
     <provides type="dynamic">
-      <file>main.bbl</file>
+      <file>manuscript_Stragiotti.bbl</file>
     </provides>
     <requires type="dynamic">
-      <file>main.bcf</file>
+      <file>manuscript_Stragiotti.bcf</file>
     </requires>
     <requires type="editable">
-      <file>minimal.bib</file>
+      <file>biblio.bib</file>
     </requires>
   </external>
 </requests>

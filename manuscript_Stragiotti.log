@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.7.3)  3 JUL 2023 18:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.7.3)  6 JUL 2023 15:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**d:/estragio/PhD/99_Github/PHD_manuscript/main.tex
-(d:/estragio/PhD/99_Github/PHD_manuscript/main.tex
+**d:/estragio/PhD/99_Github/PHD_manuscript/manuscript_Stragiotti.tex
+(d:/estragio/PhD/99_Github/PHD_manuscript/manuscript_Stragiotti.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-03-30> (kaobook.cls
 Document Class: kaobook 2021/08/23 v0.9.8 kaobook
@@ -34,9 +34,9 @@ Package: tocbasic 2022/10/12 v3.38 KOMA-Script package (handling toc-files)
 Package tocbasic Info: omitting babel extension for `toc'
 (tocbasic)             because of feature `nobabel' available
 (tocbasic)             for `toc' on input line 137.
-Class scrbook Info: File `scrsize10pt.clo' used to setup font sizes on input line 2617.
- (C:\Program Files\MiKTeX\tex/latex/koma-script\scrsize10pt.clo
-File: scrsize10pt.clo 2022/10/12 v3.38 KOMA-Script font size class option (10pt)
+Class scrbook Info: File `scrsize11pt.clo' used to setup font sizes on input line 2617.
+ (C:\Program Files\MiKTeX\tex/latex/koma-script\scrsize11pt.clo
+File: scrsize11pt.clo 2022/10/12 v3.38 KOMA-Script font size class option (11pt)
 ) (C:\Program Files\MiKTeX\tex/latex/koma-script\typearea.sty
 Package: typearea 2022/10/12 v3.38 KOMA-Script package (type area)
 \ta@bcor=\skip49
@@ -46,21 +46,21 @@ Package: typearea 2022/10/12 v3.38 KOMA-Script package (type area)
 \ta@temp=\skip52
 \footheight=\skip53
 Package typearea Info: These are the values describing the layout:
-(typearea)             DIV  = 8
+(typearea)             DIV  = 10
 (typearea)             BCOR = 0.0pt
 (typearea)             \paperwidth      = 597.50793pt
-(typearea)              \textwidth      = 373.44246pt
-(typearea)              DIV departure   = -4%
-(typearea)              \evensidemargin = 39.76274pt
-(typearea)              \oddsidemargin  = 39.76274pt
+(typearea)              \textwidth      = 418.25555pt
+(typearea)              DIV departure   = -6%
+(typearea)              \evensidemargin = 47.2316pt
+(typearea)              \oddsidemargin  = -12.5192pt
 (typearea)             \paperheight     = 845.04694pt
-(typearea)              \textheight     = 538.0pt
-(typearea)              \topmargin      = 0.36087pt
-(typearea)              \headheight     = 15.0pt
-(typearea)              \headsep        = 18.0pt
-(typearea)              \topskip        = 10.0pt
-(typearea)              \footskip       = 42.0pt
-(typearea)              \baselineskip   = 12.0pt
+(typearea)              \textheight     = 595.80026pt
+(typearea)              \topmargin      = -25.16531pt
+(typearea)              \headheight     = 17.0pt
+(typearea)              \headsep        = 20.40001pt
+(typearea)              \topskip        = 11.0pt
+(typearea)              \footskip       = 47.6pt
+(typearea)              \baselineskip   = 13.6pt
 (typearea)              on input line 1767.
 )
 \c@part=\count186
@@ -1085,47 +1085,215 @@ Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
 File: bkm-pdftex.def 2020-11-06 v1.29 bookmark driver for pdfTeX (HO)
 \BKM@id=\count373
 ))
-Package hyperref Info: Option `unicode' set `true' on input line 1149.
-Package hyperref Info: Option `bookmarksopen' set `true' on input line 1149.
-Package hyperref Info: Option `breaklinks' set `true' on input line 1149.
-Package hyperref Info: Option `colorlinks' set `true' on input line 1149.
- (D:\estragio\AppData\Roaming\MiKTeX\tex/latex/enumitem\enumitem.sty
+Package hyperref Info: Option `unicode' set `true' on input line 1148.
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 1148.
+Package hyperref Info: Option `breaklinks' set `true' on input line 1148.
+Package hyperref Info: Option `colorlinks' set `true' on input line 1148.
+ (img_header.tex (C:\Program Files\MiKTeX\tex/latex/tools\bm.sty
+Package: bm 2022/01/05 v1.2f Bold Symbol Support (DPC/FMi)
+\symboldoperators=\mathgroup10
+\symboldletters=\mathgroup11
+\symboldsymbols=\mathgroup12
+\symboldlargesymbols=\mathgroup13
+Package bm Info: No bold for \U/msa/m/n, using \pmb.
+Package bm Info: No bold for \U/msb/m/n, using \pmb.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 149.
+) (D:\estragio\AppData\Roaming\MiKTeX\tex/latex/stanli\stanli.sty
+Package: stanli 
+ (D:\estragio\AppData\Roaming\MiKTeX\tex/latex/xargs\xargs.sty
+Package: xargs 2008/03/22 v1.1  extended macro definitions  (mpg)
+\xargs@max=\count374
+\xargs@toksa=\toks55
+\xargs@toksb=\toks56
+) (C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshapes.code.tex
+File: tikzlibraryshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+ (C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshapes.geometric.code.tex
+File: tikzlibraryshapes.geometric.code.tex 2023-01-15 v3.1.10 (3.1.10)
+ (C:\Program Files\MiKTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.geometric.code.tex
+File: pgflibraryshapes.geometric.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)) (C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshapes.misc.code.tex
+File: tikzlibraryshapes.misc.code.tex 2023-01-15 v3.1.10 (3.1.10)
+ (C:\Program Files\MiKTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.misc.code.tex
+File: pgflibraryshapes.misc.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)) (C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshapes.symbols.code.tex
+File: tikzlibraryshapes.symbols.code.tex 2023-01-15 v3.1.10 (3.1.10)
+ (C:\Program Files\MiKTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.symbols.code.tex
+File: pgflibraryshapes.symbols.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)) (C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshapes.arrows.code.tex
+File: tikzlibraryshapes.arrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+ (C:\Program Files\MiKTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.arrows.code.tex
+File: pgflibraryshapes.arrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)) (C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshapes.callouts.code.tex (C:\Program Files\MiKTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.callouts.code.tex)) (C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshapes.multipart.code.tex
+File: tikzlibraryshapes.multipart.code.tex 2023-01-15 v3.1.10 (3.1.10)
+ (C:\Program Files\MiKTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.multipart.code.tex
+File: pgflibraryshapes.multipart.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfnodepartlowerbox=\box130
+\pgfnodeparttwobox=\box131
+\pgfnodepartthreebox=\box132
+\pgfnodepartfourbox=\box133
+\pgfnodeparttwentybox=\box134
+\pgfnodepartnineteenbox=\box135
+\pgfnodeparteighteenbox=\box136
+\pgfnodepartseventeenbox=\box137
+\pgfnodepartsixteenbox=\box138
+\pgfnodepartfifteenbox=\box139
+\pgfnodepartfourteenbox=\box140
+\pgfnodepartthirteenbox=\box141
+\pgfnodeparttwelvebox=\box142
+\pgfnodepartelevenbox=\box143
+\pgfnodeparttenbox=\box144
+\pgfnodepartninebox=\box145
+\pgfnodeparteightbox=\box146
+\pgfnodepartsevenbox=\box147
+\pgfnodepartsixbox=\box148
+\pgfnodepartfivebox=\box149
+))) (C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryarrows.code.tex
+File: tikzlibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+ (C:\Program Files\MiKTeX\tex/generic/pgf/libraries\pgflibraryarrows.code.tex
+File: pgflibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\arrowsize=\dimen318
+)) (C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarypositioning.code.tex
+File: tikzlibrarypositioning.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (C:\Program Files\MiKTeX\tex/latex/tools\verbatim.sty
+Package: verbatim 2022-07-02 v1.5u LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks57
+\verbatim@line=\toks58
+\verbatim@in@stream=\read5
+) (C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryautomata.code.tex
+File: tikzlibraryautomata.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarycalc.code.tex
+File: tikzlibrarycalc.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrary3d.code.tex
+File: tikzlibrary3d.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarydecorations.pathreplacing.code.tex (C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarydecorations.code.tex (C:\Program Files\MiKTeX\tex/generic/pgf/modules\pgfmoduledecorations.code.tex
+\pgfdecoratedcompleteddistance=\dimen319
+\pgfdecoratedremainingdistance=\dimen320
+\pgfdecoratedinputsegmentcompleteddistance=\dimen321
+\pgfdecoratedinputsegmentremainingdistance=\dimen322
+\pgf@decorate@distancetomove=\dimen323
+\pgf@decorate@repeatstate=\count375
+\pgfdecorationsegmentamplitude=\dimen324
+\pgfdecorationsegmentlength=\dimen325
+)
+\tikz@lib@dec@box=\box150
+) (C:\Program Files\MiKTeX\tex/generic/pgf/libraries/decorations\pgflibrarydecorations.pathreplacing.code.tex)) (C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarydecorations.pathmorphing.code.tex (C:\Program Files\MiKTeX\tex/generic/pgf/libraries/decorations\pgflibrarydecorations.pathmorphing.code.tex)) (C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarypatterns.code.tex
+File: tikzlibrarypatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
+ (C:\Program Files\MiKTeX\tex/generic/pgf/libraries\pgflibrarypatterns.code.tex
+File: pgflibrarypatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))) (D:\estragio\AppData\Roaming\MiKTeX\tex/latex/siunitx\siunitx.sty
+Package: siunitx 2023-04-13 v3.2.5 A comprehensive (SI) units package
+\l__siunitx_angle_tmp_dim=\dimen326
+\l__siunitx_angle_marker_box=\box151
+\l__siunitx_angle_unit_box=\box152
+\l__siunitx_compound_count_int=\count376
+ (D:\estragio\AppData\Roaming\MiKTeX\tex/latex/translations\translations.sty
+Package: translations 2022/02/05 v1.12 internationalization of LaTeX2e packages (CN)
+)
+\l__siunitx_number_exponent_fixed_int=\count377
+\l__siunitx_number_min_decimal_int=\count378
+\l__siunitx_number_min_integer_int=\count379
+\l__siunitx_number_round_precision_int=\count380
+\l__siunitx_number_lower_threshold_int=\count381
+\l__siunitx_number_upper_threshold_int=\count382
+\l__siunitx_number_group_first_int=\count383
+\l__siunitx_number_group_size_int=\count384
+\l__siunitx_number_group_minimum_int=\count385
+\l__siunitx_table_tmp_box=\box153
+\l__siunitx_table_tmp_dim=\dimen327
+\l__siunitx_table_column_width_dim=\dimen328
+\l__siunitx_table_integer_box=\box154
+\l__siunitx_table_decimal_box=\box155
+\l__siunitx_table_uncert_box=\box156
+\l__siunitx_table_before_box=\box157
+\l__siunitx_table_after_box=\box158
+\l__siunitx_table_before_dim=\dimen329
+\l__siunitx_table_carry_dim=\dimen330
+\l__siunitx_unit_tmp_int=\count386
+\l__siunitx_unit_position_int=\count387
+\l__siunitx_unit_total_int=\count388
+) (C:\Program Files\MiKTeX\tex/latex/pgfplots\pgfplots.sty (C:\Program Files\MiKTeX\tex/generic/pgfplots\pgfplots.revision.tex)
+Package: pgfplots 2021/05/15 v1.18.1 Data Visualization (1.18.1)
+ (C:\Program Files\MiKTeX\tex/generic/pgfplots\pgfplots.code.tex (C:\Program Files\MiKTeX\tex/generic/pgfplots\pgfplotscore.code.tex
+\t@pgfplots@toka=\toks59
+\t@pgfplots@tokb=\toks60
+\t@pgfplots@tokc=\toks61
+\pgfplots@tmpa=\dimen331
+\c@pgfplots@coordindex=\count389
+\c@pgfplots@scanlineindex=\count390
+ (C:\Program Files\MiKTeX\tex/generic/pgfplots/sys\pgfplotssysgeneric.code.tex)) (C:\Program Files\MiKTeX\tex/generic/pgfplots/libs\pgfplotslibrary.code.tex) (C:\Program Files\MiKTeX\tex/generic/pgfplots/oldpgfcompatib\pgfplotsoldpgfsupp_loader.code.tex (C:\Program Files\MiKTeX\tex/generic/pgf/libraries\pgflibraryfpu.code.tex)
+Package pgfplots: loading complementary utilities for your pgf version...
+\t@pgf@toka=\toks62
+\t@pgf@tokb=\toks63
+\t@pgf@tokc=\toks64
+(C:\Program Files\MiKTeX\tex/generic/pgfplots/oldpgfcompatib\pgfplotsoldpgfsupp_pgfutil-common-lists.tex)) (C:\Program Files\MiKTeX\tex/generic/pgfplots/util\pgfplotsutil.code.tex (C:\Program Files\MiKTeX\tex/generic/pgfplots/liststructure\pgfplotsliststructure.code.tex) (C:\Program Files\MiKTeX\tex/generic/pgfplots/liststructure\pgfplotsliststructureext.code.tex) (C:\Program Files\MiKTeX\tex/generic/pgfplots/liststructure\pgfplotsarray.code.tex
+\c@pgfplotsarray@tmp=\count391
+) (C:\Program Files\MiKTeX\tex/generic/pgfplots/liststructure\pgfplotsmatrix.code.tex) (C:\Program Files\MiKTeX\tex/generic/pgfplots/numtable\pgfplotstableshared.code.tex
+\c@pgfplotstable@counta=\count392
+\t@pgfplotstable@a=\toks65
+) (C:\Program Files\MiKTeX\tex/generic/pgfplots/liststructure\pgfplotsdeque.code.tex) (C:\Program Files\MiKTeX\tex/generic/pgfplots/util\pgfplotsbinary.code.tex (C:\Program Files\MiKTeX\tex/generic/pgfplots/util\pgfplotsbinary.data.code.tex)) (C:\Program Files\MiKTeX\tex/generic/pgfplots/util\pgfplotsutil.verb.code.tex) (C:\Program Files\MiKTeX\tex/generic/pgfplots/libs\pgflibrarypgfplots.surfshading.code.tex
+\c@pgfplotslibrarysurf@no=\count393
+ (C:\Program Files\MiKTeX\tex/generic/pgfplots/sys\pgflibrarypgfplots.surfshading.pgfsys-pdftex.def))) (C:\Program Files\MiKTeX\tex/generic/pgfplots/util\pgfplotscolormap.code.tex (C:\Program Files\MiKTeX\tex/generic/pgfplots/util\pgfplotscolor.code.tex)) (C:\Program Files\MiKTeX\tex/generic/pgfplots\pgfplotsstackedplots.code.tex) (C:\Program Files\MiKTeX\tex/generic/pgfplots\pgfplotsplothandlers.code.tex (C:\Program Files\MiKTeX\tex/generic/pgfplots\pgfplotsmeshplothandler.code.tex (C:\Program Files\MiKTeX\tex/generic/pgfplots\pgfplotsmeshplotimage.code.tex))) (C:\Program Files\MiKTeX\tex/generic/pgfplots\pgfplots.scaling.code.tex) (C:\Program Files\MiKTeX\tex/generic/pgfplots\pgfplotscoordprocessing.code.tex) (C:\Program Files\MiKTeX\tex/generic/pgfplots\pgfplots.errorbars.code.tex) (C:\Program Files\MiKTeX\tex/generic/pgfplots\pgfplots.markers.code.tex) (C:\Program Files\MiKTeX\tex/generic/pgfplots\pgfplotsticks.code.tex) (C:\Program Files\MiKTeX\tex/generic/pgfplots\pgfplots.paths.code.tex) (C:\Program Files\MiKTeX\tex/generic/pgfplots/libs\tikzlibrarypgfplots.contourlua.code.tex)
+\pgfplots@numplots=\count394
+\pgfplots@xmin@reg=\dimen332
+\pgfplots@xmax@reg=\dimen333
+\pgfplots@ymin@reg=\dimen334
+\pgfplots@ymax@reg=\dimen335
+\pgfplots@zmin@reg=\dimen336
+\pgfplots@zmax@reg=\dimen337
+) (C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryplotmarks.code.tex
+File: tikzlibraryplotmarks.code.tex 2023-01-15 v3.1.10 (3.1.10)
+ (C:\Program Files\MiKTeX\tex/generic/pgf/libraries\pgflibraryplotmarks.code.tex
+File: pgflibraryplotmarks.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))) (C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryspy.code.tex
+File: tikzlibraryspy.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\tikz@lib@spybox=\box159
+) (C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryfit.code.tex
+File: tikzlibraryfit.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (C:\Program Files\MiKTeX\tex/generic/pgf/libraries\pgflibraryarrows.meta.code.tex
+File: pgflibraryarrows.meta.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfarrowinset=\dimen338
+\pgfarrowlength=\dimen339
+\pgfarrowwidth=\dimen340
+\pgfarrowlinewidth=\dimen341
+)
+\pgf@layerbox@background=\box160
+\pgf@layerboxsaved@background=\box161
+)
+
+Package hyperref Warning: Option `pagecolor' is not available anymore.
+
+(D:\estragio\AppData\Roaming\MiKTeX\tex/latex/enumitem\enumitem.sty
 Package: enumitem 2019/06/20 v3.9 Customized lists
 \labelindent=\skip121
-\enit@outerparindent=\dimen318
-\enit@toks=\toks55
-\enit@inbox=\box130
-\enit@count@id=\count374
-\enitdp@description=\count375
+\enit@outerparindent=\dimen342
+\enit@toks=\toks66
+\enit@inbox=\box162
+\enit@count@id=\count395
+\enitdp@description=\count396
 ) (C:\Program Files\MiKTeX\tex/latex/tcolorbox\tcolorbox.sty
 Package: tcolorbox 2023/03/17 version 6.0.3 text color boxes
- (C:\Program Files\MiKTeX\tex/latex/tools\verbatim.sty
-Package: verbatim 2022-07-02 v1.5u LaTeX2e package for verbatim enhancements
-\every@verbatim=\toks56
-\verbatim@line=\toks57
-\verbatim@in@stream=\read5
-) (C:\Program Files\MiKTeX\tex/latex/environ\environ.sty
+ (C:\Program Files\MiKTeX\tex/latex/environ\environ.sty
 Package: environ 2014/05/04 v0.3 A new way to define environments
  (C:\Program Files\MiKTeX\tex/latex/trimspaces\trimspaces.sty
 Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 ))
-\tcb@titlebox=\box131
-\tcb@upperbox=\box132
-\tcb@lowerbox=\box133
-\tcb@phantombox=\box134
-\c@tcbbreakpart=\count376
-\c@tcblayer=\count377
-\c@tcolorbox@number=\count378
-\tcb@temp=\box135
-\tcb@temp=\box136
-\tcb@temp=\box137
-\tcb@temp=\box138
+\tcb@titlebox=\box163
+\tcb@upperbox=\box164
+\tcb@lowerbox=\box165
+\tcb@phantombox=\box166
+\c@tcbbreakpart=\count397
+\c@tcblayer=\count398
+\c@tcolorbox@number=\count399
+\tcb@temp=\box167
+\tcb@temp=\box168
+\tcb@temp=\box169
+\tcb@temp=\box170
  (C:\Program Files\MiKTeX\tex/latex/tcolorbox\tcbraster.code.tex
 Library (tcolorbox): 'tcbraster.code.tex' version '6.0.3'
-\c@tcbrastercolumn=\count379
-\c@tcbrasterrow=\count380
-\c@tcbrasternum=\count381
-\c@tcbraster=\count382
+\c@tcbrastercolumn=\count400
+\c@tcbrasterrow=\count401
+\c@tcbrasternum=\count402
+\c@tcbraster=\count403
 ) (C:\Program Files\MiKTeX\tex/latex/tcolorbox\tcbskins.code.tex
 Library (tcolorbox): 'tcbskins.code.tex' version '6.0.3'
 (D:\estragio\AppData\Roaming\MiKTeX\tex/latex/tikzfill\tikzfill.image.sty
@@ -1134,7 +1302,7 @@ Package: tikzfill.image 2022/07/20 v1.0.0 Image filling library for TikZ
 Package: tikzfill-common 2022/07/20 v1.0.0 Auxiliary code for tikzfill
 ) (D:\estragio\AppData\Roaming\MiKTeX\tex/latex/tikzfill\tikzlibraryfill.image.code.tex
 File: tikzlibraryfill.image.code.tex 2022/07/20 v1.0.0 Image filling library
-\l__tikzfill_img_box=\box139
+\l__tikzfill_img_box=\box171
 )) (C:\Program Files\MiKTeX\tex/latex/tcolorbox\tcbskinsjigsaw.code.tex
 Library (tcolorbox): 'tcbskinsjigsaw.code.tex' version '6.0.3'
 )) (C:\Program Files\MiKTeX\tex/latex/tcolorbox\tcbbreakable.code.tex
@@ -1143,19 +1311,19 @@ Library (tcolorbox): 'tcbbreakable.code.tex' version '6.0.3'
 Package: pdfcol 2022-09-21 v1.7 Handle new color stacks for pdfTeX (HO)
 )
 Package pdfcol Info: New color stack `tcb@breakable' = 1 on input line 23.
-\tcb@testbox=\box140
-\tcb@totalupperbox=\box141
-\tcb@totallowerbox=\box142
+\tcb@testbox=\box172
+\tcb@totalupperbox=\box173
+\tcb@totallowerbox=\box174
 ) (C:\Program Files\MiKTeX\tex/latex/tcolorbox\tcbhooks.code.tex
 Library (tcolorbox): 'tcbhooks.code.tex' version '6.0.3'
 ) (C:\Program Files\MiKTeX\tex/latex/tcolorbox\tcbtheorems.code.tex
 Library (tcolorbox): 'tcbtheorems.code.tex' version '6.0.3'
 ) (C:\Program Files\MiKTeX\tex/latex/tcolorbox\tcbfitting.code.tex
 Library (tcolorbox): 'tcbfitting.code.tex' version '6.0.3'
-\tcbfitdim=\dimen319
-\tcb@lowerfitdim=\dimen320
-\tcb@upperfitdim=\dimen321
-\tcb@cur@hbadness=\count383
+\tcbfitdim=\dimen343
+\tcb@lowerfitdim=\dimen344
+\tcb@upperfitdim=\dimen345
+\tcb@cur@hbadness=\count404
 ) (C:\Program Files\MiKTeX\tex/latex/tcolorbox\tcblistingsutf8.code.tex
 Library (tcolorbox): 'tcblistingsutf8.code.tex' version '6.0.3'
 (C:\Program Files\MiKTeX\tex/latex/tcolorbox\tcblistings.code.tex
@@ -1168,7 +1336,7 @@ Library (tcolorbox): 'tcbprocessing.code.tex' version '6.0.3'
 Package: shellesc 2019/11/08 v1.0c unified shell escape interface for LaTeX
 Package shellesc Info: Restricted shell escape enabled on input line 77.
 ))
-\c@tcblisting=\count384
+\c@tcblisting=\count405
 )) (D:\estragio\AppData\Roaming\MiKTeX\tex/latex/listingsutf8\listingsutf8.sty
 Package: listingsutf8 2019-12-10 v1.5 Allow UTF-8 in listings input (HO)
  (D:\estragio\AppData\Roaming\MiKTeX\tex/generic/stringenc\stringenc.sty
@@ -1186,30 +1354,30 @@ File: pgflibraryfadings.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ))) (C:\Program Files\MiKTeX\tex/latex/tcolorbox\tcbposter.code.tex
 Library (tcolorbox): 'tcbposter.code.tex' version '6.0.3'
 ))
-\c@kaocounter=\count385
+\c@kaocounter=\count406
 Package tocbasic Info: omitting babel extension for `loi'
-(tocbasic)             because of missing \bbl@set@language on input line 1303.
+(tocbasic)             because of missing \bbl@set@language on input line 1320.
  (D:\estragio\AppData\Roaming\MiKTeX\tex/latex/pdfpages\pdfpages.sty
 Package: pdfpages 2022/12/19 v0.5x Insert pages of external PDF documents (AM)
  (D:\estragio\AppData\Roaming\MiKTeX\tex/latex/eso-pic\eso-pic.sty
 Package: eso-pic 2023/03/23 v3.0b eso-pic (RN)
-\ESO@tempdima=\dimen322
-\ESO@tempdimb=\dimen323
+\ESO@tempdima=\dimen346
+\ESO@tempdimb=\dimen347
 )
-\AM@pagewidth=\dimen324
-\AM@pageheight=\dimen325
-\AM@fboxrule=\dimen326
+\AM@pagewidth=\dimen348
+\AM@pageheight=\dimen349
+\AM@fboxrule=\dimen350
  (D:\estragio\AppData\Roaming\MiKTeX\tex/latex/pdfpages\pppdftex.def
 File: pppdftex.def 2022/12/19 v0.5x Pdfpages driver for pdfTeX (AM)
 )
-\pdfpages@includegraphics@status=\count386
-\AM@pagebox=\box143
-\AM@global@opts=\toks58
-\AM@pagecnt=\count387
-\AM@toc@title=\toks59
-\AM@lof@heading=\toks60
-\c@AM@survey=\count388
-\AM@templatesizebox=\box144
+\pdfpages@includegraphics@status=\count407
+\AM@pagebox=\box175
+\AM@global@opts=\toks67
+\AM@pagecnt=\count408
+\AM@toc@title=\toks68
+\AM@lof@heading=\toks69
+\c@AM@survey=\count409
+\AM@templatesizebox=\box176
 ) (D:\estragio\AppData\Roaming\MiKTeX\tex/latex/subfiles\subfiles.sty
 Package: subfiles 2020/11/14 v2.2 Multi-file projects (package)
  (D:\estragio\AppData\Roaming\MiKTeX\tex/latex/import\import.sty
@@ -1217,13 +1385,10 @@ Package: import 2020/04/01  v 6.2
 )) (D:\estragio\AppData\Roaming\MiKTeX\tex/latex/todonotes\todonotes.sty
 Package: todonotes 2023/01/31 v1.1.6 Todonotes source and documentation.
 Package: todonotes 2023/01/31
- (C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarypositioning.code.tex
-File: tikzlibrarypositioning.code.tex 2023-01-15 v3.1.10 (3.1.10)
-)
-\c@@todonotes@numberoftodonotes=\count389
+\c@@todonotes@numberoftodonotes=\count410
 ) (D:\estragio\AppData\Roaming\MiKTeX\tex/latex/algorithm2e\algorithm2e.sty
 Package: algorithm2e 2017/07/18 v5.2 algorithms environments
-\c@AlgoLine=\count390
+\c@AlgoLine=\count411
 \algocf@hangindent=\skip122
  (D:\estragio\AppData\Roaming\MiKTeX\tex/latex/relsize\relsize.sty
 Package: relsize 2013/03/29 ver 4.1
@@ -1236,66 +1401,66 @@ Package: relsize 2013/03/29 ver 4.1
 \skiplength=\skip128
 \algomargin=\skip129
 \skipalgocfslide=\skip130
-\algowidth=\dimen327
-\inoutsize=\dimen328
-\inoutindent=\dimen329
-\interspacetitleruled=\dimen330
-\interspacealgoruled=\dimen331
-\interspacetitleboxruled=\dimen332
+\algowidth=\dimen351
+\inoutsize=\dimen352
+\inoutindent=\dimen353
+\interspacetitleruled=\dimen354
+\interspacealgoruled=\dimen355
+\interspacetitleboxruled=\dimen356
 \algocf@ruledwidth=\skip131
-\algocf@inoutbox=\box145
-\algocf@inputbox=\box146
+\algocf@inoutbox=\box177
+\algocf@inputbox=\box178
 \AlCapSkip=\skip132
 \AlCapHSkip=\skip133
 \algoskipindent=\skip134
-\algocf@nlbox=\box147
-\algocf@hangingbox=\box148
-\algocf@untilbox=\box149
+\algocf@nlbox=\box179
+\algocf@hangingbox=\box180
+\algocf@untilbox=\box181
 \algocf@skipuntil=\skip135
-\algocf@capbox=\box150
+\algocf@capbox=\box182
 \algocf@lcaptionbox=\skip136
 \algoheightruledefault=\skip137
 \algoheightrule=\skip138
 \algotitleheightruledefault=\skip139
 \algotitleheightrule=\skip140
-\c@algocfline=\count391
-\c@algocfproc=\count392
-\c@algocf=\count393
-\algocf@algoframe=\box151
-\algocf@algobox=\box152
+\c@algocfline=\count412
+\c@algocfproc=\count413
+\c@algocf=\count414
+\algocf@algoframe=\box183
+\algocf@algobox=\box184
 ) (D:\estragio\AppData\Roaming\MiKTeX\tex/latex/ccicons\ccicons.sty
 Package: ccicons 2017/10/30 v1.6 LaTeX support for Creative Commons icons
 ) (D:\estragio\AppData\Roaming\MiKTeX\tex/latex/glossaries/base\glossaries.sty
 Package: glossaries 2022/11/03 v4.52 (NLCT)
  (D:\estragio\AppData\Roaming\MiKTeX\tex/latex/mfirstuc\mfirstuc.sty
 Package: mfirstuc 2022/10/14 v2.08 (NLCT)
-\@glsmfirst=\toks61
-\@glsmrest=\toks62
+\@glsmfirst=\toks70
+\@glsmrest=\toks71
 ) (D:\estragio\AppData\Roaming\MiKTeX\tex/latex/xfor\xfor.sty
 Package: xfor 2009/02/05 v1.05 (NLCT)
 ) (D:\estragio\AppData\Roaming\MiKTeX\tex/latex/datatool\datatool-base.sty
 Package: datatool-base 2019/09/27 v2.32 (NLCT)
  (D:\estragio\AppData\Roaming\MiKTeX\tex/latex/substr\substr.sty
 Package: substr 2009/10/20 v1.2 Handle substrings
-\c@su@anzahl=\count394
+\c@su@anzahl=\count415
 ) (D:\estragio\AppData\Roaming\MiKTeX\tex/latex/datatool\datatool-fp.sty
 Package: datatool-fp 2019/09/27 v2.32 (NLCT)
  (D:\estragio\AppData\Roaming\MiKTeX\tex/latex/fp\fp.sty
 Package: fp 1995/04/02
  `Fixed Point Package', Version 0.8, April 2, 1995 (C) Michael Mehlich (D:\estragio\AppData\Roaming\MiKTeX\tex/latex/fp\defpattern.sty
 Package: defpattern 1994/10/12
-\actioncount=\count395
+\actioncount=\count416
 ) (D:\estragio\AppData\Roaming\MiKTeX\tex/latex/fp\fp-basic.sty
 Package: fp-basic 1996/05/13
-\FP@xs=\count396
-\FP@xia=\count397
-\FP@xib=\count398
-\FP@xfa=\count399
-\FP@xfb=\count400
-\FP@rega=\count401
-\FP@regb=\count402
-\FP@regs=\count403
-\FP@times=\count404
+\FP@xs=\count417
+\FP@xia=\count418
+\FP@xib=\count419
+\FP@xfa=\count420
+\FP@xfb=\count421
+\FP@rega=\count422
+\FP@regb=\count423
+\FP@regs=\count424
+\FP@times=\count425
 ) (D:\estragio\AppData\Roaming\MiKTeX\tex/latex/fp\fp-addons.sty
 Package: fp-addons 1995/03/15
 ) (D:\estragio\AppData\Roaming\MiKTeX\tex/latex/fp\fp-snap.sty
@@ -1308,7 +1473,7 @@ Package: fp-trigo 1995/04/14
 Package: fp-pas 1994/08/29
 ) (D:\estragio\AppData\Roaming\MiKTeX\tex/latex/fp\fp-random.sty
 Package: fp-random 1995/02/23
-\FPseed=\count405
+\FPseed=\count426
 ) (D:\estragio\AppData\Roaming\MiKTeX\tex/latex/fp\fp-eqn.sty
 Package: fp-eqn 1995/04/03
 ) (D:\estragio\AppData\Roaming\MiKTeX\tex/latex/fp\fp-upn.sty
@@ -1316,23 +1481,23 @@ Package: fp-upn 1996/10/21
 ) (D:\estragio\AppData\Roaming\MiKTeX\tex/latex/fp\fp-eval.sty
 Package: fp-eval 1995/04/03
 )))
-\@dtl@toks=\toks63
-\@dtl@tmpcount=\count406
+\@dtl@toks=\toks72
+\@dtl@tmpcount=\count427
 \dtl@tmplength=\skip141
-\dtl@sortresult=\count407
-\@dtl@numgrpsepcount=\count408
-\@dtl@datatype=\count409
-\dtl@codeA=\count410
-\dtl@codeB=\count411
-\@dtl@foreach@level=\count412
+\dtl@sortresult=\count428
+\@dtl@numgrpsepcount=\count429
+\@dtl@datatype=\count430
+\dtl@codeA=\count431
+\dtl@codeB=\count432
+\@dtl@foreach@level=\count433
 )
-\gls@level=\count413
-\@gls@tmpb=\toks64
+\gls@level=\count434
+\@gls@tmpb=\toks73
 \gls@tmplen=\skip142
-\glskeylisttok=\toks65
-\glslabeltok=\toks66
-\glsshorttok=\toks67
-\glslongtok=\toks68
+\glskeylisttok=\toks74
+\glslabeltok=\toks75
+\glsshorttok=\toks76
+\glslongtok=\toks77
  (D:\estragio\AppData\Roaming\MiKTeX\tex/latex/glossaries/styles\glossary-hypernav.sty
 Package: glossary-hypernav 2022/11/03 v4.52 (NLCT)
 ) (D:\estragio\AppData\Roaming\MiKTeX\tex/latex/glossaries/styles\glossary-list.sty
@@ -1346,18 +1511,18 @@ Package: longtable 2021-09-01 v4.17 Multi-page Table package (DPC)
 \LTright=\skip145
 \LTpre=\skip146
 \LTpost=\skip147
-\LTchunksize=\count414
-\LTcapwidth=\dimen333
-\LT@head=\box153
-\LT@firsthead=\box154
-\LT@foot=\box155
-\LT@lastfoot=\box156
-\LT@gbox=\box157
-\LT@cols=\count415
-\LT@rows=\count416
-\c@LT@tables=\count417
-\c@LT@chunks=\count418
-\LT@p@ftn=\toks69
+\LTchunksize=\count435
+\LTcapwidth=\dimen357
+\LT@head=\box185
+\LT@firsthead=\box186
+\LT@foot=\box187
+\LT@lastfoot=\box188
+\LT@gbox=\box189
+\LT@cols=\count436
+\LT@rows=\count437
+\c@LT@tables=\count438
+\c@LT@chunks=\count439
+\LT@p@ftn=\toks78
 )
 Class scrbook Info: longtable captions redefined on input line 47.
 \glsdescwidth=\skip148
@@ -1366,21 +1531,21 @@ Class scrbook Info: longtable captions redefined on input line 47.
 Package: glossary-super 2022/11/03 v4.52 (NLCT)
  (D:\estragio\AppData\Roaming\MiKTeX\tex/latex/supertabular\supertabular.sty
 Package: supertabular 2020/02/02 v4.1g the supertabular environment
-\c@tracingst=\count419
-\ST@wd=\dimen334
+\c@tracingst=\count440
+\ST@wd=\dimen358
 \ST@rightskip=\skip150
 \ST@leftskip=\skip151
 \ST@parfillskip=\skip152
-\ST@pageleft=\dimen335
-\ST@headht=\dimen336
-\ST@tailht=\dimen337
-\ST@pagesofar=\dimen338
-\ST@pboxht=\dimen339
-\ST@lineht=\dimen340
-\ST@prevht=\dimen341
-\ST@toadd=\dimen342
-\ST@dimen=\dimen343
-\ST@pbox=\box158
+\ST@pageleft=\dimen359
+\ST@headht=\dimen360
+\ST@tailht=\dimen361
+\ST@pagesofar=\dimen362
+\ST@pboxht=\dimen363
+\ST@lineht=\dimen364
+\ST@prevht=\dimen365
+\ST@toadd=\dimen366
+\ST@dimen=\dimen367
+\ST@pbox=\box190
 )) (D:\estragio\AppData\Roaming\MiKTeX\tex/latex/glossaries/styles\glossary-tree.sty
 Package: glossary-tree 2022/11/03 v4.52 (NLCT)
 \glstreeindent=\skip153
@@ -1390,17 +1555,17 @@ Package tocbasic Info: omitting babel extension for `nlo'
 (tocbasic)             because of missing \bbl@set@language on input line 187.
 Package tocbasic Info: omitting babel extension for `nls'
 (tocbasic)             because of missing \bbl@set@language on input line 188.
-\nomlabelwidth=\dimen344
-\nom@tempdim=\dimen345
+\nomlabelwidth=\dimen368
+\nom@tempdim=\dimen369
 \nomitemsep=\skip154
 ))) (C:\Program Files\MiKTeX\tex/generic/babel\babel.sty
 Package: babel 2023/03/28 3.87 The Babel package
-\babel@savecnt=\count420
-\U@D=\dimen346
+\babel@savecnt=\count441
+\U@D=\dimen370
 \l@unhyphenated=\language80
  (C:\Program Files\MiKTeX\tex/generic/babel\txtbabel.def)
 \bbl@readstream=\read6
-\bbl@dirlevel=\count421
+\bbl@dirlevel=\count442
 
 *************************************
 * Local config file bblopts.cfg used
@@ -1420,13 +1585,13 @@ Package babel Info: Importing font and identification data for english
 (babel)             from babel-en.ini. Reported on input line 11.
 ) (D:\estragio\AppData\Roaming\MiKTeX\tex/latex/csquotes\csquotes.sty
 Package: csquotes 2022-09-14 v5.2n context-sensitive quotations (JAW)
-\csq@reset=\count422
-\csq@gtype=\count423
-\csq@glevel=\count424
-\csq@qlevel=\count425
-\csq@maxlvl=\count426
-\csq@tshold=\count427
-\csq@ltx@everypar=\toks70
+\csq@reset=\count443
+\csq@gtype=\count444
+\csq@glevel=\count445
+\csq@qlevel=\count446
+\csq@maxlvl=\count447
+\csq@tshold=\count448
+\csq@ltx@everypar=\toks79
  (D:\estragio\AppData\Roaming\MiKTeX\tex/latex/csquotes\csquotes.def
 File: csquotes.def 2022-09-14 v5.2n csquotes generic definitions (JAW)
 )
@@ -1438,29 +1603,29 @@ File: csquotes.cfg
 Package csquotes Info: Redefining alias 'english' -> 'english/british'.
 ) (C:\Program Files\MiKTeX\tex/latex/blindtext\blindtext.sty
 Package: blindtext 2012/01/06 V2.0 blindtext-Package
-\c@blindtext=\count428
-\c@Blindtext=\count429
-\c@blind@countparstart=\count430
-\blind@countxx=\count431
-\blindtext@numBlindtext=\count432
-\blind@countyy=\count433
-\c@blindlist=\count434
-\c@blindlistlevel=\count435
-\c@blindlist@level=\count436
-\blind@listitem=\count437
-\c@blind@listcount=\count438
-\c@blind@levelcount=\count439
-\blind@mathformula=\count440
-\blind@Mathformula=\count441
-\c@blind@randomcount=\count442
-\c@blind@randommax=\count443
-\c@blind@pangramcount=\count444
-\c@blind@pangrammax=\count445
+\c@blindtext=\count449
+\c@Blindtext=\count450
+\c@blind@countparstart=\count451
+\blind@countxx=\count452
+\blindtext@numBlindtext=\count453
+\blind@countyy=\count454
+\c@blindlist=\count455
+\c@blindlistlevel=\count456
+\c@blindlist@level=\count457
+\blind@listitem=\count458
+\c@blind@listcount=\count459
+\c@blind@levelcount=\count460
+\blind@mathformula=\count461
+\blind@Mathformula=\count462
+\c@blind@randomcount=\count463
+\c@blind@randommax=\count464
+\c@blind@pangramcount=\count465
+\c@blind@pangrammax=\count466
 ) (kaobiblio.sty
 Package: kaobiblio 
  (D:\estragio\AppData\Roaming\MiKTeX\tex/latex/bigfoot\perpage.sty
 Package: perpage 2014/10/25 2.0 Reset/sort counters per page
-\c@abspage=\count446
+\c@abspage=\count467
 ) (C:\Program Files\MiKTeX\tex/generic/oberdiek\iflang.sty
 Package: iflang 2018/01/21 v1.7 Checks for the current language (HO)
 Package iflang Info: Naming convention for patterns: babel.
@@ -1468,53 +1633,53 @@ Package iflang Info: Naming convention for patterns: babel.
 Package: biblatex 2023/03/05 v3.19 programmable bibliographies (PK/MW)
  (D:\estragio\AppData\Roaming\MiKTeX\tex/latex/logreq\logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count447
+\lrq@indent=\count468
  (D:\estragio\AppData\Roaming\MiKTeX\tex/latex/logreq\logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 ))
-\c@tabx@nest=\count448
-\c@listtotal=\count449
-\c@listcount=\count450
-\c@liststart=\count451
-\c@liststop=\count452
-\c@citecount=\count453
-\c@citetotal=\count454
-\c@multicitecount=\count455
-\c@multicitetotal=\count456
-\c@instcount=\count457
-\c@maxnames=\count458
-\c@minnames=\count459
-\c@maxitems=\count460
-\c@minitems=\count461
-\c@citecounter=\count462
-\c@maxcitecounter=\count463
-\c@savedcitecounter=\count464
-\c@uniquelist=\count465
-\c@uniquename=\count466
-\c@refsection=\count467
-\c@refsegment=\count468
-\c@maxextratitle=\count469
-\c@maxextratitleyear=\count470
-\c@maxextraname=\count471
-\c@maxextradate=\count472
-\c@maxextraalpha=\count473
-\c@abbrvpenalty=\count474
-\c@highnamepenalty=\count475
-\c@lownamepenalty=\count476
-\c@maxparens=\count477
-\c@parenlevel=\count478
-\blx@tempcnta=\count479
-\blx@tempcntb=\count480
-\blx@tempcntc=\count481
-\c@blx@maxsection=\count482
-\blx@maxsegment@0=\count483
-\blx@notetype=\count484
-\blx@parenlevel@text=\count485
-\blx@parenlevel@foot=\count486
-\blx@sectionciteorder@0=\count487
-\blx@sectionciteorderinternal@0=\count488
-\blx@entrysetcounter=\count489
-\blx@biblioinstance=\count490
+\c@tabx@nest=\count469
+\c@listtotal=\count470
+\c@listcount=\count471
+\c@liststart=\count472
+\c@liststop=\count473
+\c@citecount=\count474
+\c@citetotal=\count475
+\c@multicitecount=\count476
+\c@multicitetotal=\count477
+\c@instcount=\count478
+\c@maxnames=\count479
+\c@minnames=\count480
+\c@maxitems=\count481
+\c@minitems=\count482
+\c@citecounter=\count483
+\c@maxcitecounter=\count484
+\c@savedcitecounter=\count485
+\c@uniquelist=\count486
+\c@uniquename=\count487
+\c@refsection=\count488
+\c@refsegment=\count489
+\c@maxextratitle=\count490
+\c@maxextratitleyear=\count491
+\c@maxextraname=\count492
+\c@maxextradate=\count493
+\c@maxextraalpha=\count494
+\c@abbrvpenalty=\count495
+\c@highnamepenalty=\count496
+\c@lownamepenalty=\count497
+\c@maxparens=\count498
+\c@parenlevel=\count499
+\blx@tempcnta=\count500
+\blx@tempcntb=\count501
+\blx@tempcntc=\count502
+\c@blx@maxsection=\count503
+\blx@maxsegment@0=\count504
+\blx@notetype=\count505
+\blx@parenlevel@text=\count506
+\blx@parenlevel@foot=\count507
+\blx@sectionciteorder@0=\count508
+\blx@sectionciteorderinternal@0=\count509
+\blx@entrysetcounter=\count510
+\blx@biblioinstance=\count511
 \labelnumberwidth=\skip155
 \labelalphawidth=\skip156
 \biblabelsep=\skip157
@@ -1526,9 +1691,9 @@ File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 \blx@bcfin=\read7
 \blx@bcfout=\write19
 \blx@langwohyphens=\language81
-\c@mincomprange=\count491
-\c@maxcomprange=\count492
-\c@mincompwidth=\count493
+\c@mincomprange=\count512
+\c@maxcomprange=\count513
+\c@mincompwidth=\count514
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
  (C:\Program Files\MiKTeX\tex/latex/biblatex\blx-dm.def
@@ -1540,74 +1705,74 @@ Package biblatex Info: Trying to load biblatex bibstyle data model...
 Package biblatex Info: ... file 'numeric.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count494
-\c@savedafterword=\count495
-\c@annotator=\count496
-\c@savedannotator=\count497
-\c@author=\count498
-\c@savedauthor=\count499
-\c@bookauthor=\count500
-\c@savedbookauthor=\count501
-\c@commentator=\count502
-\c@savedcommentator=\count503
-\c@editor=\count504
-\c@savededitor=\count505
-\c@editora=\count506
-\c@savededitora=\count507
-\c@editorb=\count508
-\c@savededitorb=\count509
-\c@editorc=\count510
-\c@savededitorc=\count511
-\c@foreword=\count512
-\c@savedforeword=\count513
-\c@holder=\count514
-\c@savedholder=\count515
-\c@introduction=\count516
-\c@savedintroduction=\count517
-\c@namea=\count518
-\c@savednamea=\count519
-\c@nameb=\count520
-\c@savednameb=\count521
-\c@namec=\count522
-\c@savednamec=\count523
-\c@translator=\count524
-\c@savedtranslator=\count525
-\c@shortauthor=\count526
-\c@savedshortauthor=\count527
-\c@shorteditor=\count528
-\c@savedshorteditor=\count529
-\c@labelname=\count530
-\c@savedlabelname=\count531
-\c@institution=\count532
-\c@savedinstitution=\count533
-\c@lista=\count534
-\c@savedlista=\count535
-\c@listb=\count536
-\c@savedlistb=\count537
-\c@listc=\count538
-\c@savedlistc=\count539
-\c@listd=\count540
-\c@savedlistd=\count541
-\c@liste=\count542
-\c@savedliste=\count543
-\c@listf=\count544
-\c@savedlistf=\count545
-\c@location=\count546
-\c@savedlocation=\count547
-\c@organization=\count548
-\c@savedorganization=\count549
-\c@origlocation=\count550
-\c@savedoriglocation=\count551
-\c@origpublisher=\count552
-\c@savedorigpublisher=\count553
-\c@publisher=\count554
-\c@savedpublisher=\count555
-\c@language=\count556
-\c@savedlanguage=\count557
-\c@origlanguage=\count558
-\c@savedoriglanguage=\count559
-\c@pageref=\count560
-\c@savedpageref=\count561
+\c@afterword=\count515
+\c@savedafterword=\count516
+\c@annotator=\count517
+\c@savedannotator=\count518
+\c@author=\count519
+\c@savedauthor=\count520
+\c@bookauthor=\count521
+\c@savedbookauthor=\count522
+\c@commentator=\count523
+\c@savedcommentator=\count524
+\c@editor=\count525
+\c@savededitor=\count526
+\c@editora=\count527
+\c@savededitora=\count528
+\c@editorb=\count529
+\c@savededitorb=\count530
+\c@editorc=\count531
+\c@savededitorc=\count532
+\c@foreword=\count533
+\c@savedforeword=\count534
+\c@holder=\count535
+\c@savedholder=\count536
+\c@introduction=\count537
+\c@savedintroduction=\count538
+\c@namea=\count539
+\c@savednamea=\count540
+\c@nameb=\count541
+\c@savednameb=\count542
+\c@namec=\count543
+\c@savednamec=\count544
+\c@translator=\count545
+\c@savedtranslator=\count546
+\c@shortauthor=\count547
+\c@savedshortauthor=\count548
+\c@shorteditor=\count549
+\c@savedshorteditor=\count550
+\c@labelname=\count551
+\c@savedlabelname=\count552
+\c@institution=\count553
+\c@savedinstitution=\count554
+\c@lista=\count555
+\c@savedlista=\count556
+\c@listb=\count557
+\c@savedlistb=\count558
+\c@listc=\count559
+\c@savedlistc=\count560
+\c@listd=\count561
+\c@savedlistd=\count562
+\c@liste=\count563
+\c@savedliste=\count564
+\c@listf=\count565
+\c@savedlistf=\count566
+\c@location=\count567
+\c@savedlocation=\count568
+\c@organization=\count569
+\c@savedorganization=\count570
+\c@origlocation=\count571
+\c@savedoriglocation=\count572
+\c@origpublisher=\count573
+\c@savedorigpublisher=\count574
+\c@publisher=\count575
+\c@savedpublisher=\count576
+\c@language=\count577
+\c@savedlanguage=\count578
+\c@origlanguage=\count579
+\c@savedoriglanguage=\count580
+\c@pageref=\count581
+\c@savedpageref=\count582
 \shorthandwidth=\skip163
 \shortjournalwidth=\skip164
 \shortserieswidth=\skip165
@@ -1631,19 +1796,19 @@ Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
  (C:\Program Files\MiKTeX\tex/latex/biblatex\biblatex.def
 File: biblatex.def 2023/03/05 v3.19 biblatex compatibility (PK/MW)
-\c@textcitecount=\count562
-\c@textcitetotal=\count563
-\c@textcitemaxnames=\count564
-\c@biburlbigbreakpenalty=\count565
-\c@biburlbreakpenalty=\count566
-\c@biburlnumpenalty=\count567
-\c@biburlucpenalty=\count568
-\c@biburllcpenalty=\count569
+\c@textcitecount=\count583
+\c@textcitetotal=\count584
+\c@textcitemaxnames=\count585
+\c@biburlbigbreakpenalty=\count586
+\c@biburlbreakpenalty=\count587
+\c@biburlnumpenalty=\count588
+\c@biburlucpenalty=\count589
+\c@biburllcpenalty=\count590
 \biburlbigskip=\muskip18
 \biburlnumskip=\muskip19
 \biburlucskip=\muskip20
 \biburllcskip=\muskip21
-\c@smartand=\count570
+\c@smartand=\count591
 )
 Package biblatex Info: Trying to load bibliography style 'numeric'...
 Package biblatex Info: ... file 'numeric.bbx' found.
@@ -1653,17 +1818,17 @@ Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
  (C:\Program Files\MiKTeX\tex/latex/biblatex/bbx\standard.bbx
 File: standard.bbx 2023/03/05 v3.19 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count571
-\c@bbx:relatedtotal=\count572
+\c@bbx:relatedcount=\count592
+\c@bbx:relatedtotal=\count593
 ))
 Package biblatex Info: Trying to load citation style 'numeric-comp'...
 Package biblatex Info: ... file 'numeric-comp.cbx' found.
  (C:\Program Files\MiKTeX\tex/latex/biblatex/cbx\numeric-comp.cbx
 File: numeric-comp.cbx 2023/03/05 v3.19 biblatex citation style (PK/MW)
-\c@cbx@tempcnta=\count573
-\c@cbx@tempcntb=\count574
-\c@cbx@tempcntc=\count575
-\c@cbx@tempcntd=\count576
+\c@cbx@tempcnta=\count594
+\c@cbx@tempcntb=\count595
+\c@cbx@tempcntc=\count596
+\c@cbx@tempcntd=\count597
 Package biblatex Info: Redefining '\cite'.
 Package biblatex Info: Redefining '\parencite'.
 Package biblatex Info: Redefining '\footcite'.
@@ -1690,32 +1855,32 @@ Package biblatex Info: ... and expl3
  (C:\Program Files\MiKTeX\tex/latex/biblatex\blx-case-expl3.sty
 Package: blx-case-expl3 2023/03/05 v3.19 expl3 case changing code for biblatex
 ))
-Package biblatex Info: Redefining '\fullcite' on input line 412.
+Package biblatex Info: Redefining '\fullcite' on input line 1025.
 ) (kaotheorems.sty
 Package: kaotheorems 
  (D:\estragio\AppData\Roaming\MiKTeX\tex/latex/amscls\amsthm.sty
 Package: amsthm 2020/05/29 v2.20.6
-\thm@style=\toks71
-\thm@bodyfont=\toks72
-\thm@headfont=\toks73
-\thm@notefont=\toks74
-\thm@headpunct=\toks75
+\thm@style=\toks80
+\thm@bodyfont=\toks81
+\thm@headfont=\toks82
+\thm@notefont=\toks83
+\thm@headpunct=\toks84
 \thm@preskip=\skip177
 \thm@postskip=\skip178
 \thm@headsep=\skip179
-\dth@everypar=\toks76
+\dth@everypar=\toks85
 LaTeX Info: Redefining \textsquare on input line 427.
 )
 Class scrbook Info: amsthm's \deferred@thm@head patched.
  (D:\estragio\AppData\Roaming\MiKTeX\tex/latex/thmtools\thmtools.sty
 Package: thmtools 2023/02/17 v0.75
-\thmt@toks=\toks77
-\c@thmt@dummyctr=\count577
+\thmt@toks=\toks86
+\c@thmt@dummyctr=\count598
  (D:\estragio\AppData\Roaming\MiKTeX\tex/latex/thmtools\thm-patch.sty
 Package: thm-patch 2023/02/17 v0.75
  (D:\estragio\AppData\Roaming\MiKTeX\tex/latex/thmtools\parseargs.sty
 Package: parseargs 2023/02/17 v0.75
-\@parsespec=\toks78
+\@parsespec=\toks87
 )) (D:\estragio\AppData\Roaming\MiKTeX\tex/latex/thmtools\thm-kv.sty
 Package: thm-kv 2023/02/17 v0.75
 Package thm-kv Info: Theorem names will be uppercased on input line 42.
@@ -1730,14 +1895,14 @@ Package: thm-listof 2023/02/17 v0.75
 Package: thm-restate 2023/02/17 v0.75
 ) (D:\estragio\AppData\Roaming\MiKTeX\tex/latex/thmtools\thm-amsthm.sty
 Package: thm-amsthm 2023/02/17 v0.75
-\thmt@style@headstyle=\toks79
+\thmt@style@headstyle=\toks88
 ))
-\c@theorem=\count578
-\c@definition=\count579
-\c@assumption=\count580
-\c@remark=\count581
-\c@example=\count582
-\c@exercise=\count583
+\c@theorem=\count599
+\c@definition=\count600
+\c@assumption=\count601
+\c@remark=\count602
+\c@example=\count603
+\c@exercise=\count604
 ) (kaorefs.sty
 Package: kaorefs 
  (D:\estragio\AppData\Roaming\MiKTeX\tex/latex/cleveref\cleveref.sty
@@ -1767,77 +1932,24 @@ Package cleveref Info: include cross-reference names in hyperlinks on input line
 Package cleveref Info: always capitalise cross-reference names on input line 7852.
 Package cleveref Info: include cross-reference names in hyperlinks on input line 7852.
 Package cleveref Info: no abbreviation of names on input line 7852.
-)) (C:\Program Files\MiKTeX\tex/latex/tools\bm.sty
-Package: bm 2022/01/05 v1.2f Bold Symbol Support (DPC/FMi)
-\symboldoperators=\mathgroup10
-\symboldletters=\mathgroup11
-\symboldsymbols=\mathgroup12
-\symboldlargesymbols=\mathgroup13
-Package bm Info: No bold for \U/msa/m/n, using \pmb.
-Package bm Info: No bold for \U/msb/m/n, using \pmb.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 149.
-) (D:\estragio\AppData\Roaming\MiKTeX\tex/latex/caption\subcaption.sty
+)) (D:\estragio\AppData\Roaming\MiKTeX\tex/latex/caption\subcaption.sty
 Package: subcaption 2023/02/19 v1.6 Sub-captions (AR)
 Package caption Info: New subtype `subfigure' on input line 239.
-\c@subfigure=\count584
+\c@subfigure=\count605
 Package caption Info: New subtype `subtable' on input line 239.
-\c@subtable=\count585
-) (C:\Program Files\MiKTeX\tex/latex/pgfplots\pgfplots.sty (C:\Program Files\MiKTeX\tex/generic/pgfplots\pgfplots.revision.tex)
-Package: pgfplots 2021/05/15 v1.18.1 Data Visualization (1.18.1)
- (C:\Program Files\MiKTeX\tex/generic/pgfplots\pgfplots.code.tex (C:\Program Files\MiKTeX\tex/generic/pgfplots\pgfplotscore.code.tex
-\t@pgfplots@toka=\toks80
-\t@pgfplots@tokb=\toks81
-\t@pgfplots@tokc=\toks82
-\pgfplots@tmpa=\dimen347
-\c@pgfplots@coordindex=\count586
-\c@pgfplots@scanlineindex=\count587
- (C:\Program Files\MiKTeX\tex/generic/pgfplots/sys\pgfplotssysgeneric.code.tex)) (C:\Program Files\MiKTeX\tex/generic/pgfplots/libs\pgfplotslibrary.code.tex) (C:\Program Files\MiKTeX\tex/generic/pgfplots/oldpgfcompatib\pgfplotsoldpgfsupp_loader.code.tex (C:\Program Files\MiKTeX\tex/generic/pgf/libraries\pgflibraryfpu.code.tex)
-Package pgfplots: loading complementary utilities for your pgf version...
-\t@pgf@toka=\toks83
-\t@pgf@tokb=\toks84
-\t@pgf@tokc=\toks85
-(C:\Program Files\MiKTeX\tex/generic/pgfplots/oldpgfcompatib\pgfplotsoldpgfsupp_pgfutil-common-lists.tex)) (C:\Program Files\MiKTeX\tex/generic/pgfplots/util\pgfplotsutil.code.tex (C:\Program Files\MiKTeX\tex/generic/pgfplots/liststructure\pgfplotsliststructure.code.tex) (C:\Program Files\MiKTeX\tex/generic/pgfplots/liststructure\pgfplotsliststructureext.code.tex) (C:\Program Files\MiKTeX\tex/generic/pgfplots/liststructure\pgfplotsarray.code.tex
-\c@pgfplotsarray@tmp=\count588
-) (C:\Program Files\MiKTeX\tex/generic/pgfplots/liststructure\pgfplotsmatrix.code.tex) (C:\Program Files\MiKTeX\tex/generic/pgfplots/numtable\pgfplotstableshared.code.tex
-\c@pgfplotstable@counta=\count589
-\t@pgfplotstable@a=\toks86
-) (C:\Program Files\MiKTeX\tex/generic/pgfplots/liststructure\pgfplotsdeque.code.tex) (C:\Program Files\MiKTeX\tex/generic/pgfplots/util\pgfplotsbinary.code.tex (C:\Program Files\MiKTeX\tex/generic/pgfplots/util\pgfplotsbinary.data.code.tex)) (C:\Program Files\MiKTeX\tex/generic/pgfplots/util\pgfplotsutil.verb.code.tex) (C:\Program Files\MiKTeX\tex/generic/pgfplots/libs\pgflibrarypgfplots.surfshading.code.tex
-\c@pgfplotslibrarysurf@no=\count590
- (C:\Program Files\MiKTeX\tex/generic/pgfplots/sys\pgflibrarypgfplots.surfshading.pgfsys-pdftex.def))) (C:\Program Files\MiKTeX\tex/generic/pgfplots/util\pgfplotscolormap.code.tex (C:\Program Files\MiKTeX\tex/generic/pgfplots/util\pgfplotscolor.code.tex)) (C:\Program Files\MiKTeX\tex/generic/pgfplots\pgfplotsstackedplots.code.tex) (C:\Program Files\MiKTeX\tex/generic/pgfplots\pgfplotsplothandlers.code.tex (C:\Program Files\MiKTeX\tex/generic/pgfplots\pgfplotsmeshplothandler.code.tex (C:\Program Files\MiKTeX\tex/generic/pgfplots\pgfplotsmeshplotimage.code.tex))) (C:\Program Files\MiKTeX\tex/generic/pgfplots\pgfplots.scaling.code.tex) (C:\Program Files\MiKTeX\tex/generic/pgfplots\pgfplotscoordprocessing.code.tex) (C:\Program Files\MiKTeX\tex/generic/pgfplots\pgfplots.errorbars.code.tex) (C:\Program Files\MiKTeX\tex/generic/pgfplots\pgfplots.markers.code.tex) (C:\Program Files\MiKTeX\tex/generic/pgfplots\pgfplotsticks.code.tex) (C:\Program Files\MiKTeX\tex/generic/pgfplots\pgfplots.paths.code.tex) (C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarydecorations.code.tex (C:\Program Files\MiKTeX\tex/generic/pgf/modules\pgfmoduledecorations.code.tex
-\pgfdecoratedcompleteddistance=\dimen348
-\pgfdecoratedremainingdistance=\dimen349
-\pgfdecoratedinputsegmentcompleteddistance=\dimen350
-\pgfdecoratedinputsegmentremainingdistance=\dimen351
-\pgf@decorate@distancetomove=\dimen352
-\pgf@decorate@repeatstate=\count591
-\pgfdecorationsegmentamplitude=\dimen353
-\pgfdecorationsegmentlength=\dimen354
+\c@subtable=\count606
 )
-\tikz@lib@dec@box=\box159
-) (C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarydecorations.pathmorphing.code.tex (C:\Program Files\MiKTeX\tex/generic/pgf/libraries/decorations\pgflibrarydecorations.pathmorphing.code.tex)) (C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarydecorations.pathreplacing.code.tex (C:\Program Files\MiKTeX\tex/generic/pgf/libraries/decorations\pgflibrarydecorations.pathreplacing.code.tex)) (C:\Program Files\MiKTeX\tex/generic/pgfplots/libs\tikzlibrarypgfplots.contourlua.code.tex)
-\pgfplots@numplots=\count592
-\pgfplots@xmin@reg=\dimen355
-\pgfplots@xmax@reg=\dimen356
-\pgfplots@ymin@reg=\dimen357
-\pgfplots@ymax@reg=\dimen358
-\pgfplots@zmin@reg=\dimen359
-\pgfplots@zmax@reg=\dimen360
-) (C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryplotmarks.code.tex
-File: tikzlibraryplotmarks.code.tex 2023-01-15 v3.1.10 (3.1.10)
- (C:\Program Files\MiKTeX\tex/generic/pgf/libraries\pgflibraryplotmarks.code.tex
-File: pgflibraryplotmarks.code.tex 2023-01-15 v3.1.10 (3.1.10)
-)))
 \glswrite=\write20
 \glo@main@file=\write21
-\openout4 = `main.glo'.
+\openout4 = `manuscript_Stragiotti.glo'.
 
-Package glossaries Info: Writing glossary file main.glo on input line 43.
+Package glossaries Info: Writing glossary file manuscript_Stragiotti.glo on input line 43.
  (abbreviations.tex)
-\main@idxfile=\write22
-\openout4 = `main.idx'.
+\manuscript_Stragiotti@idxfile=\write22
+\openout4 = `manuscript_Stragiotti.idx'.
 
 
-Writing index file main.idx
+Writing index file manuscript_Stragiotti.idx
 (C:\Program Files\MiKTeX\tex/latex/koma-script\scrhack.sty
 Package: scrhack 2022/10/12 v3.38 KOMA-Script package (hacking other packages)
 Package scrhack Info: hyperref hack deactivated because of
@@ -1875,80 +1987,80 @@ Package scrhack Warning: unknown \doublespacing definition found!
 (scrhack)                Maybe you are using a unsupported setpace version on input line 118.
 
 ))
-LaTeX Font Info:    Trying to load font information for T1+zplLF on input line 59.
+LaTeX Font Info:    Trying to load font information for T1+zplLF on input line 60.
  (D:\estragio\AppData\Roaming\MiKTeX\tex/latex/newpx\t1zpllf.fd
 File: t1zpllf.fd 2021/05/25 v1.0 font definition file for T1/zpl/LF
 )
 LaTeX Font Info:    Font shape `T1/zplLF/m/n' will be
-(Font)              scaled to size 9.70001pt on input line 59.
+(Font)              scaled to size 10.6215pt on input line 60.
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'english'.
- (main.aux)
-\openout1 = `main.aux'.
+ (manuscript_Stragiotti.aux (chapters/1_intro.aux) (chapters/2_literature_review.aux) (chapters/3_comparison_TO_TTO.aux) (chapters/4_TTO_upgrades.aux) (chapters/5_cellular_structures.aux) (chapters/6_DMO.aux) (chapters/7_advanced_applications.aux) (chapters/8_conclusion.aux) (chapters/app/A_geometry.aux))
+\openout1 = `manuscript_Stragiotti.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/npxmi/m/it on input line 59.
-LaTeX Font Info:    Trying to load font information for OML+npxmi on input line 59.
+LaTeX Font Info:    Checking defaults for OML/npxmi/m/it on input line 60.
+LaTeX Font Info:    Trying to load font information for OML+npxmi on input line 60.
  (D:\estragio\AppData\Roaming\MiKTeX\tex/latex/newpx\omlnpxmi.fd
 File: omlnpxmi.fd 2013/03/21 Fontinst v1.933 font definitions for OML/npxmi.
 )
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for U/npxexa/m/n on input line 59.
-LaTeX Font Info:    Trying to load font information for U+npxexa on input line 59.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for U/npxexa/m/n on input line 60.
+LaTeX Font Info:    Trying to load font information for U+npxexa on input line 60.
  (D:\estragio\AppData\Roaming\MiKTeX\tex/latex/newpx\unpxexa.fd
 File: unpxexa.fd 2013/03/24 Fontinst v1.933 font definitions for U/npxexa.
 )
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for LMS/npxsy/m/n on input line 59.
-LaTeX Font Info:    Trying to load font information for LMS+npxsy on input line 59.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for LMS/npxsy/m/n on input line 60.
+LaTeX Font Info:    Trying to load font information for LMS+npxsy on input line 60.
  (D:\estragio\AppData\Roaming\MiKTeX\tex/latex/newpx\lmsnpxsy.fd
 File: lmsnpxsy.fd 2016/07/04 Fontinst v1.933 font definitions for LMS/npxsy.
 )
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for LMX/npxexx/m/n on input line 59.
-LaTeX Font Info:    Trying to load font information for LMX+npxexx on input line 59.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for LMX/npxexx/m/n on input line 60.
+LaTeX Font Info:    Trying to load font information for LMX+npxexx on input line 60.
  (D:\estragio\AppData\Roaming\MiKTeX\tex/latex/newpx\lmxnpxexx.fd
 File: lmxnpxexx.fd 2016/07/04 Fontinst v1.933 font definitions for LMX/npxexx.
 )
-LaTeX Font Info:    ... okay on input line 59.
-Package scrbase Info: activating english \partname on input line 59.
-Package scrbase Info: activating english \chaptername on input line 59.
-Package scrbase Info: activating english \appendixname on input line 59.
-Package scrbase Info: activating english \figurename on input line 59.
-Package scrbase Info: activating english \tablename on input line 59.
-Package scrbase Info: activating english \contentsname on input line 59.
-Package scrbase Info: activating english \listfigurename on input line 59.
-Package scrbase Info: activating english \listtablename on input line 59.
-Package scrbase Info: activating english \bibname on input line 59.
-Package scrbase Info: activating english \indexname on input line 59.
+LaTeX Font Info:    ... okay on input line 60.
+Package scrbase Info: activating english \partname on input line 60.
+Package scrbase Info: activating english \chaptername on input line 60.
+Package scrbase Info: activating english \appendixname on input line 60.
+Package scrbase Info: activating english \figurename on input line 60.
+Package scrbase Info: activating english \tablename on input line 60.
+Package scrbase Info: activating english \contentsname on input line 60.
+Package scrbase Info: activating english \listfigurename on input line 60.
+Package scrbase Info: activating english \listtablename on input line 60.
+Package scrbase Info: activating english \bibname on input line 60.
+Package scrbase Info: activating english \indexname on input line 60.
  (C:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count593
-\scratchdimen=\dimen361
-\scratchbox=\box160
-\nofMPsegments=\count594
-\nofMParguments=\count595
-\everyMPshowfont=\toks87
-\MPscratchCnt=\count596
-\MPscratchDim=\dimen362
-\MPnumerator=\count597
-\makeMPintoPDFobject=\count598
-\everyMPtoPDFconversion=\toks88
+\scratchcounter=\count607
+\scratchdimen=\dimen371
+\scratchbox=\box191
+\nofMPsegments=\count608
+\nofMParguments=\count609
+\everyMPshowfont=\toks89
+\MPscratchCnt=\count610
+\MPscratchDim=\dimen372
+\MPnumerator=\count611
+\makeMPintoPDFobject=\count612
+\everyMPtoPDFconversion=\toks90
 ) (C:\Program Files\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -1962,30 +2074,30 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 * paper: custom
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: 
-* h-part:(L,W,R)=(89.62662pt, 418.25148pt, 89.62663pt)
+* modes: twoside 
+* h-part:(L,W,R)=(71.7013pt, 418.25148pt, 107.55196pt)
 * v-part:(T,H,B)=(101.4061pt, 591.5271pt, 152.1092pt)
 * \paperwidth=597.50473pt
 * \paperheight=845.0424pt
 * \textwidth=418.25148pt
 * \textheight=591.5271pt
-* \oddsidemargin=17.35663pt
-* \evensidemargin=17.35663pt
-* \topmargin=-3.86389pt
-* \headheight=15.0pt
+* \oddsidemargin=-0.5687pt
+* \evensidemargin=35.28197pt
+* \topmargin=-8.2639pt
+* \headheight=17.0pt
 * \headsep=31.29787pt
-* \topskip=10.0pt
-* \footskip=42.0pt
-* \marginparwidth=74.68849pt
+* \topskip=11.0pt
+* \footskip=47.6pt
+* \marginparwidth=89.62619pt
 * \marginparsep=12.8401pt
 * \columnsep=10.0pt
-* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
 * \@twocolumnfalse
-* \@twosidefalse
-* \@mparswitchfalse
+* \@twosidetrue
+* \@mparswitchtrue
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
@@ -1994,7 +2106,7 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 * paper: custom
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: 
+* modes: twoside 
 * h-part:(L,W,R)=(70.56247pt, 304.44289pt, 222.49937pt)
 * v-part:(T,H,B)=(77.96011pt, 689.12218pt, 77.96011pt)
 * \paperwidth=597.50473pt
@@ -2002,38 +2114,38 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 * \textwidth=304.44289pt
 * \textheight=689.12218pt
 * \oddsidemargin=-1.70752pt
-* \evensidemargin=-1.70752pt
-* \topmargin=-40.60774pt
-* \headheight=15.0pt
+* \evensidemargin=150.22939pt
+* \topmargin=-42.60774pt
+* \headheight=17.0pt
 * \headsep=31.29787pt
-* \topskip=10.0pt
-* \footskip=42.0pt
+* \topskip=11.0pt
+* \footskip=47.6pt
 * \marginparwidth=135.71892pt
 * \marginparsep=17.6406pt
 * \columnsep=10.0pt
-* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
 * \@twocolumnfalse
-* \@twosidefalse
-* \@mparswitchfalse
+* \@twosidetrue
+* \@mparswitchtrue
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Redefining \microtypecontext on input line 59.
-Package microtype Info: Applying patch `item' on input line 59.
-Package microtype Info: Applying patch `toc' on input line 59.
-Package microtype Info: Applying patch `eqnum' on input line 59.
-Package microtype Info: Applying patch `footnote' on input line 59.
-Package microtype Info: Applying patch `verbatim' on input line 59.
+LaTeX Info: Redefining \microtypecontext on input line 60.
+Package microtype Info: Applying patch `item' on input line 60.
+Package microtype Info: Applying patch `toc' on input line 60.
+Package microtype Info: Applying patch `eqnum' on input line 60.
+Package microtype Info: Applying patch `footnote' on input line 60.
+Package microtype Info: Applying patch `verbatim' on input line 60.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 59.
+LaTeX Info: Redefining \showhyphens on input line 60.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -2043,8 +2155,8 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             See the microtype manual for details.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: changepage package is loaded.
-\caption@adjustwidth@hsize=\dimen363
-\caption@adjustwidth@linewidth=\dimen364
+\caption@adjustwidth@hsize=\dimen373
+\caption@adjustwidth@linewidth=\dimen374
 Package caption Info: float package is loaded.
 Package caption Info: floatrow package is loaded.
 Package caption Info: floatrow package is loaded.
@@ -2059,19 +2171,26 @@ Package caption Info: rotating package is loaded.
 Package caption Info: supertabular package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \@sidenotes@extrawidth=\skip180
-Package hyperref Info: Link coloring ON on input line 59.
-\c@lstlisting=\count599
+Package hyperref Info: Link coloring ON on input line 60.
+\c@lstlisting=\count613
  (D:\estragio\AppData\Roaming\MiKTeX\tex/latex/floatrow\fr-longtable.sty
 Package: fr-longtable 2007/11/28 v0.1b (beta) floatrow: additions for longtable
-\flrow@LT@lasthead=\box161
-\flrow@LT@prelastfoot=\box162
-\c@FBLTpage=\count600
+\flrow@LT@lasthead=\box192
+\flrow@LT@prelastfoot=\box193
+\c@FBLTpage=\count614
 )
-No file main.toc.
-\c@mv@tabular=\count601
-\c@mv@boldtabular=\count602
-LaTeX Info: Command `\dddot' is already robust on input line 59.
-LaTeX Info: Command `\ddddot' is already robust on input line 59.
+\Etoc@tf=\read8
+\c@mv@tabular=\count615
+\c@mv@boldtabular=\count616
+LaTeX Info: Command `\dddot' is already robust on input line 60.
+LaTeX Info: Command `\ddddot' is already robust on input line 60.
+ (D:\estragio\AppData\Roaming\MiKTeX\tex/latex/translations/dicts\translations-basic-dictionary-english.trsl
+File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
+)
+Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 60.
+
+Package pgfplots notification 'compat/show suggested version=true': you might benefit from \pgfplotsset{compat=1.18} (current compat level: 1.11).
+
 (D:\estragio\AppData\Roaming\MiKTeX\tex/latex/pdflscape\pdflscape.sty
 Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
  (D:\estragio\AppData\Roaming\MiKTeX\tex/latex/pdflscape\pdflscape-nometadata.sty
@@ -2095,849 +2214,127 @@ File: english.lbx 2023/03/05 v3.19 biblatex localization (PK/MW)
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
-\openout4 = `main.bcf'.
+\openout4 = `manuscript_Stragiotti.bcf'.
 
-\openout4 = `main.mw'.
+\openout4 = `manuscript_Stragiotti.mw'.
 
-\openout4 = `main.mw'.
+\openout4 = `manuscript_Stragiotti.mw'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'main.bbl' not found.
+Package biblatex Info: ... file 'manuscript_Stragiotti.bbl' found.
+ (manuscript_Stragiotti.bbl)
+Package biblatex Info: Reference section=0 on input line 60.
+Package biblatex Info: Reference segment=0 on input line 60.
+Package scrhack Info: undefining \float@addtolists on input line 60.
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: pdftex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(70.56247pt, 456.37979pt, 70.56247pt)
+* v-part:(T,H,B)=(77.96011pt, 689.12218pt, 77.96011pt)
+* \paperwidth=597.50473pt
+* \paperheight=845.0424pt
+* \textwidth=456.37979pt
+* \textheight=689.12218pt
+* \oddsidemargin=-1.70752pt
+* \evensidemargin=-1.70752pt
+* \topmargin=-42.60774pt
+* \headheight=17.0pt
+* \headsep=31.29787pt
+* \topskip=11.0pt
+* \footskip=47.6pt
+* \marginparwidth=0.0pt
+* \marginparsep=0.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-No file main.bbl.
-Package biblatex Info: Reference section=0 on input line 59.
-Package biblatex Info: Reference segment=0 on input line 59.
-Package pgfplots notification 'compat/show suggested version=true': you might benefit from \pgfplotsset{compat=1.18} (current compat level: 1.11).
-
-Package scrhack Info: undefining \float@addtolists on input line 59.
-d:/estragio/PhD/99_Github/PHD_manuscript/main.tex:71: Undefined control sequence.
-l.71 \titlepageauthor
-                     {François-Xavier Irisarri$^{1}$, Cédric Julien$^{1}$ ...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-LaTeX Font Info:    Trying to load font information for OT1+zplTLF on input line 71.
-(D:\estragio\AppData\Roaming\MiKTeX\tex/latex/newpx\ot1zpltlf.fd
+<figures/00_intro/megep.png, id=42, 184.2885pt x 171.039pt>
+File: figures/00_intro/megep.png Graphic file (type png)
+<use figures/00_intro/megep.png>
+Package pdftex.def Info: figures/00_intro/megep.png  used on input line 98.
+(pdftex.def)             Requested size: 45.98483pt x 42.67873pt.
+<figures/00_intro/ONERA_logo.svg.png, id=44, 1284.8pt x 297.11pt>
+File: figures/00_intro/ONERA_logo.svg.png Graphic file (type png)
+<use figures/00_intro/ONERA_logo.svg.png>
+Package pdftex.def Info: figures/00_intro/ONERA_logo.svg.png  used on input line 98.
+(pdftex.def)             Requested size: 184.55623pt x 42.67862pt.
+<figures/00_intro/Logo-ISAE-SUPAERO.png, id=45, 452.1693pt x 274.3851pt>
+File: figures/00_intro/Logo-ISAE-SUPAERO.png Graphic file (type png)
+<use figures/00_intro/Logo-ISAE-SUPAERO.png>
+Package pdftex.def Info: figures/00_intro/Logo-ISAE-SUPAERO.png  used on input line 98.
+(pdftex.def)             Requested size: 70.327pt x 42.67578pt.
+LaTeX Font Info:    Font shape `T1/zplLF/m/n' will be
+(Font)              scaled to size 24.13362pt on input line 100.
+LaTeX Font Info:    Font shape `T1/zplLF/m/n' will be
+(Font)              scaled to size 16.76161pt on input line 103.
+LaTeX Font Info:    Font shape `T1/zplLF/m/sc' will be
+(Font)              scaled to size 16.76161pt on input line 103.
+Package microtype Info: Character `029' is missing
+(microtype)             in font `T1/zplLF/m/sc/17.28'.
+(microtype)             Ignoring protrusion settings for this character.
+LaTeX Font Info:    Font shape `T1/zplLF/m/n' will be
+(Font)              scaled to size 11.64001pt on input line 106.
+LaTeX Font Info:    Font shape `T1/zplLF/b/n' will be
+(Font)              scaled to size 11.64001pt on input line 107.
+LaTeX Font Info:    Trying to load font information for OT1+zplTLF on input line 107.
+ (D:\estragio\AppData\Roaming\MiKTeX\tex/latex/newpx\ot1zpltlf.fd
 File: ot1zpltlf.fd 2021/05/25 v1.0 font definition file for OT1/zpl/TLF
 )
 LaTeX Font Info:    Font shape `OT1/zplTLF/m/n' will be
-(Font)              scaled to size 9.70001pt on input line 71.
+(Font)              scaled to size 11.64001pt on input line 107.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `zplTLF' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `OT1/zplTLF/m/n' will be
-(Font)              scaled to size 7.08101pt on input line 71.
+(Font)              scaled to size 8.53601pt on input line 107.
 LaTeX Font Info:    Font shape `OT1/zplTLF/m/n' will be
-(Font)              scaled to size 5.335pt on input line 71.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 71.
+(Font)              scaled to size 6.40201pt on input line 107.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 107.
  (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ) (D:\estragio\AppData\Roaming\MiKTeX\tex/latex/microtype\mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 71.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 107.
  (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (D:\estragio\AppData\Roaming\MiKTeX\tex/latex/microtype\mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+npxmia on input line 71.
+LaTeX Font Info:    Trying to load font information for U+npxmia on input line 107.
  (D:\estragio\AppData\Roaming\MiKTeX\tex/latex/newpx\unpxmia.fd
 File: unpxmia.fd 2013/03/24 Fontinst v1.933 font definitions for U/npxmia.
 )
-LaTeX Font Info:    Trying to load font information for U+npxsym on input line 71.
+LaTeX Font Info:    Trying to load font information for U+npxsym on input line 107.
  (D:\estragio\AppData\Roaming\MiKTeX\tex/latex/newpx\unpxsym.fd
 File: unpxsym.fd 2015/03/21 Fontinst v1.933 font definitions for U/npxsym.
 )
-LaTeX Font Info:    Trying to load font information for U+npxsyc on input line 71.
+LaTeX Font Info:    Trying to load font information for U+npxsyc on input line 107.
  (D:\estragio\AppData\Roaming\MiKTeX\tex/latex/newpx\unpxsyc.fd
 File: unpxsyc.fd 2013/03/24 Fontinst v1.933 font definitions for U/npxsyc.
 )
 LaTeX Font Info:    Font shape `OT1/zplTLF/b/n' will be
-(Font)              scaled to size 9.70001pt on input line 71.
+(Font)              scaled to size 11.64001pt on input line 107.
 LaTeX Font Info:    Font shape `OT1/zplTLF/b/n' will be
-(Font)              scaled to size 7.08101pt on input line 71.
+(Font)              scaled to size 8.53601pt on input line 107.
 LaTeX Font Info:    Font shape `OT1/zplTLF/b/n' will be
-(Font)              scaled to size 5.335pt on input line 71.
-
-d:/estragio/PhD/99_Github/PHD_manuscript/main.tex:73: Undefined control sequence.
-l.73 \address
-             {1: ONERA - The French Aerospace Lab\\
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 73--84
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 73--84
-
- []
-
-LaTeX Font Info:    Font shape `T1/zplLF/m/sl' will be
-(Font)              scaled to size 9.70001pt on input line 87.
-\openout4 = `main.mw'.
-
-[1
-
-
-{D:/estragio/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{D:/estragio/AppData/Roaming/MiKTeX/fonts/enc/dvips/newtx/ntx-ec-lf.enc}{D:/estragio/AppData/Roaming/MiKTeX/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}] (main.mw)
-\openout4 = `main.mw'.
-
-\openout4 = `main.xdy'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.mw'.
-
-\openout4 = `main.xdy'.
-
-*geometry* verbose mode - [ newgeometry ] result:
-* driver: pdftex
-* paper: custom
-* layout: <same size as paper>
-* layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: 
-* h-part:(L,W,R)=(70.56247pt, 456.37979pt, 70.56247pt)
-* v-part:(T,H,B)=(77.96011pt, 689.12218pt, 77.96011pt)
-* \paperwidth=597.50473pt
-* \paperheight=845.0424pt
-* \textwidth=456.37979pt
-* \textheight=689.12218pt
-* \oddsidemargin=-1.70752pt
-* \evensidemargin=-1.70752pt
-* \topmargin=-40.60774pt
-* \headheight=15.0pt
-* \headsep=31.29787pt
-* \topskip=10.0pt
-* \footskip=42.0pt
-* \marginparwidth=0.0pt
-* \marginparsep=0.0pt
-* \columnsep=10.0pt
-* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
-* \hoffset=0.0pt
-* \voffset=0.0pt
-* \mag=1000
-* \@twocolumnfalse
-* \@twosidefalse
-* \@mparswitchfalse
-* \@reversemarginfalse
-* (1in=72.27pt=25.4mm, 1cm=28.453pt)
-
-
-
-LaTeX Warning: File `figures/00_intro/megep.png' not found on input line 97.
-
-
-d:/estragio/PhD/99_Github/PHD_manuscript/main.tex:97: Package pdftex.def Error: File `figures/00_intro/megep.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.97 ...[height=1.5cm]{figures/00_intro/megep.png}
-                                                  \hfill\includegraphics[hei...
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-LaTeX Font Info:    Trying to load font information for T1+fvm on input line 97.
-(D:\estragio\AppData\Roaming\MiKTeX\tex/latex/bera\t1fvm.fd
-File: t1fvm.fd 2004/09/07 scalable font definitions for T1/fvm.
-)
-LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
-(Font)              scaled to size 8.50006pt on input line 97.
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `fvm' (encoding: T1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-
-
-LaTeX Warning: File `figures/00_intro/ONERA_logo.svg.png' not found on input line 97.
-
-
-d:/estragio/PhD/99_Github/PHD_manuscript/main.tex:97: Package pdftex.def Error: File `figures/00_intro/ONERA_logo.svg.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.97 ....5cm]{figures/00_intro/ONERA_logo.svg.png}
-                                                  \hfill\includegraphics[hei...
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: File `figures/00_intro/Logo-ISAE-SUPAERO.png' not found on input line 97.
-
-
-d:/estragio/PhD/99_Github/PHD_manuscript/main.tex:97: Package pdftex.def Error: File `figures/00_intro/Logo-ISAE-SUPAERO.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.97 ...m]{figures/00_intro/Logo-ISAE-SUPAERO.png}
-                                                  \par
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+(Font)              scaled to size 6.40201pt on input line 107.
 LaTeX Font Info:    Font shape `T1/zplLF/m/n' will be
-(Font)              scaled to size 24.13362pt on input line 99.
+(Font)              scaled to size 10.67001pt on input line 112.
 LaTeX Font Info:    Font shape `T1/zplLF/m/n' will be
-(Font)              scaled to size 16.76161pt on input line 102.
-LaTeX Font Info:    Font shape `T1/zplLF/m/sc' will be
-(Font)              scaled to size 16.76161pt on input line 102.
-Package microtype Info: Character `029' is missing
-(microtype)             in font `T1/zplLF/m/sc/17.28'.
-(microtype)             Ignoring protrusion settings for this character.
-LaTeX Font Info:    Font shape `T1/zplLF/m/n' will be
-(Font)              scaled to size 11.64001pt on input line 105.
-LaTeX Font Info:    Font shape `T1/zplLF/b/n' will be
-(Font)              scaled to size 11.64001pt on input line 106.
-d:/estragio/PhD/99_Github/PHD_manuscript/main.tex:106: Undefined control sequence.
-l.106 	\bfseries\@titlepageauthor
-                                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-LaTeX Font Info:    Font shape `T1/zplLF/m/n' will be
-(Font)              scaled to size 10.67001pt on input line 111.
-d:/estragio/PhD/99_Github/PHD_manuscript/main.tex:113: Undefined control sequence.
-l.113 		\normalfont\@address
-                            
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-LaTeX Font Info:    Font shape `T1/zplLF/m/n' will be
-(Font)              scaled to size 13.968pt on input line 118.
-\openout4 = `main.mw'.
-
-[1
-
-
-
-
-{C:/Program Files/MiKTeX/fonts/enc/dvips/base/8r.enc}{D:/estragio/AppData/Roaming/MiKTeX/fonts/enc/dvips/newtx/ntx-ec-lf-pc.enc}] (main.mw)
-\openout4 = `main.mw'.
-
-Package marginnote Info: Using workaround for absolute page number on input line 121.
-LaTeX Font Info:    Trying to load font information for T1+qhv on input line 126.
- (D:\estragio\AppData\Roaming\MiKTeX\tex/latex/tex-gyre\t1qhv.fd
-File: t1qhv.fd 2009/09/25 v1.2 font definition file for T1/qhv
-)
-LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
-(Font)              scaled to size 9.02084pt on input line 126.
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `qhv' (encoding: T1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-LaTeX Font Info:    Font shape `T1/zplLF/m/n' will be
-(Font)              scaled to size 7.08101pt on input line 126.
-\openout4 = `main.mw'.
-
- [2{D:/estragio/AppData/Roaming/MiKTeX/fonts/enc/dvips/tex-gyre/q-ec.enc}] (main.mw)
-\openout4 = `main.mw'.
-
-LaTeX Font Info:    Font shape `T1/qhv/b/n' will be
-(Font)              scaled to size 9.02084pt on input line 135.
-LaTeX Font Info:    Font shape `T1/qhv/b/n' will be
-(Font)              scaled to size 18.70923pt on input line 135.
-LaTeX Font Info:    Font shape `T1/zplLF/m/n' will be
-(Font)              scaled to size 20.11783pt on input line 135.
-LaTeX Font Info:    Font shape `T1/zplLF/b/n' will be
-(Font)              scaled to size 20.11783pt on input line 135.
-
-
-Package etoc Warning: \etocstandarddisplaystyle on input line 149
-(etoc)                is deprecated.  Please use \etocclasstocstyle.
-
-\tf@toc=\write23
-\openout4 = `main.toc'.
-
-\openout4 = `main.mw'.
-
-[3
-
-
-] (main.mw)
-\openout4 = `main.mw'.
-
-Package tocbasic Info: character protrusion at toc deactivated on input line 153.
-\openout4 = `main.mw'.
-
- [4
-
-
-] (main.mw)
-\openout4 = `main.mw'.
-
-Package tocbasic Info: character protrusion at lof deactivated on input line 154.
-
-No file main.lof.
-\tf@lof=\write24
-\openout4 = `main.lof'.
-
-Package tocbasic Info: character protrusion at lot deactivated on input line 160.
-No file main.lot.
-\tf@lot=\write25
-\openout4 = `main.lot'.
-
-\openout4 = `main.mw'.
-
-[5
-
-
-] (main.mw)
-\openout4 = `main.mw'.
-
-*geometry* verbose mode - [ newgeometry ] result:
-* driver: pdftex
-* paper: custom
-* layout: <same size as paper>
-* layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: 
-* h-part:(L,W,R)=(70.56247pt, 304.44289pt, 222.49937pt)
-* v-part:(T,H,B)=(77.96011pt, 689.12218pt, 77.96011pt)
-* \paperwidth=597.50473pt
-* \paperheight=845.0424pt
-* \textwidth=304.44289pt
-* \textheight=689.12218pt
-* \oddsidemargin=-1.70752pt
-* \evensidemargin=-1.70752pt
-* \topmargin=-40.60774pt
-* \headheight=15.0pt
-* \headsep=31.29787pt
-* \topskip=10.0pt
-* \footskip=42.0pt
-* \marginparwidth=135.71892pt
-* \marginparsep=17.6406pt
-* \columnsep=10.0pt
-* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
-* \hoffset=0.0pt
-* \voffset=0.0pt
-* \mag=1000
-* \@twocolumnfalse
-* \@twosidefalse
-* \@mparswitchfalse
-* \@reversemarginfalse
-* (1in=72.27pt=25.4mm, 1cm=28.453pt)
-
-\openout2 = `chapters/1_intro.aux'.
-
-
-No file chapters/1_intro.tex.
-\openout2 = `chapters/2_bibreview.aux'.
-
-No file chapters/2_bibreview.tex.
-\openout2 = `chapters/3_results.aux'.
-
-No file chapters/3_results.tex.
-\openout2 = `chapters/4_conclusion.aux'.
-
-No file chapters/4_conclusion.tex.
-*geometry* verbose mode - [ newgeometry ] result:
-* driver: pdftex
-* paper: custom
-* layout: <same size as paper>
-* layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: 
-* h-part:(L,W,R)=(70.56247pt, 456.37979pt, 70.56247pt)
-* v-part:(T,H,B)=(77.96011pt, 689.12218pt, 77.96011pt)
-* \paperwidth=597.50473pt
-* \paperheight=845.0424pt
-* \textwidth=456.37979pt
-* \textheight=689.12218pt
-* \oddsidemargin=-1.70752pt
-* \evensidemargin=-1.70752pt
-* \topmargin=-40.60774pt
-* \headheight=15.0pt
-* \headsep=31.29787pt
-* \topskip=10.0pt
-* \footskip=42.0pt
-* \marginparwidth=0.0pt
-* \marginparsep=0.0pt
-* \columnsep=10.0pt
-* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
-* \hoffset=0.0pt
-* \voffset=0.0pt
-* \mag=1000
-* \@twocolumnfalse
-* \@twosidefalse
-* \@mparswitchfalse
-* \@reversemarginfalse
-* (1in=72.27pt=25.4mm, 1cm=28.453pt)
-
-No file main.gls.
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.196 \pagelayout{margin}
-                          % Restore margins
-\openout4 = `main.mw'.
+(Font)              scaled to size 13.968pt on input line 119.
+\openout4 = `manuscript_Stragiotti.mw'.
 
  [1
 
@@ -2947,26 +2344,574 @@ l.196 \pagelayout{margin}
 
 
 
+{D:/estragio/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{D:/estragio/AppData/Roaming/MiKTeX/fonts/enc/dvips/newtx/ntx-ec-lf.enc}{D:/estragio/AppData/Roaming/MiKTeX/fonts/enc/dvips/newtx/ntx-ec-lf-pc.enc}{D:/estragio/AppData/Roaming/MiKTeX/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc} <./figures/00_intro/megep.png> <./figures/00_intro/ONERA_logo.svg.png> <./figures/00_intro/Logo-ISAE-SUPAERO.png>] (manuscript_Stragiotti.mw)
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.xdy'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.xdy'.
+
+LaTeX Font Info:    Trying to load font information for T1+qhv on input line 127.
+ (D:\estragio\AppData\Roaming\MiKTeX\tex/latex/tex-gyre\t1qhv.fd
+File: t1qhv.fd 2009/09/25 v1.2 font definition file for T1/qhv
+)
+LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
+(Font)              scaled to size 9.8778pt on input line 127.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `qhv' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+LaTeX Font Info:    Font shape `OT1/zplTLF/m/n' will be
+(Font)              scaled to size 10.6215pt on input line 127.
+LaTeX Font Info:    Font shape `OT1/zplTLF/m/n' will be
+(Font)              scaled to size 7.76001pt on input line 127.
+LaTeX Font Info:    Font shape `OT1/zplTLF/m/n' will be
+(Font)              scaled to size 5.917pt on input line 127.
+LaTeX Font Info:    Font shape `OT1/zplTLF/b/n' will be
+(Font)              scaled to size 10.6215pt on input line 127.
+LaTeX Font Info:    Font shape `OT1/zplTLF/b/n' will be
+(Font)              scaled to size 7.76001pt on input line 127.
+LaTeX Font Info:    Font shape `OT1/zplTLF/b/n' will be
+(Font)              scaled to size 5.917pt on input line 127.
+LaTeX Font Info:    Font shape `T1/zplLF/m/n' will be
+(Font)              scaled to size 7.76001pt on input line 127.
 
 
+Package etoc Warning: \etocstandarddisplaystyle on input line 150
+(etoc)                is deprecated.  Please use \etocclasstocstyle.
+
+\tf@toc=\write23
+\openout4 = `manuscript_Stragiotti.toc'.
+
+LaTeX Font Info:    Font shape `T1/zplLF/m/sl' will be
+(Font)              scaled to size 10.6215pt on input line 154.
+\openout4 = `manuscript_Stragiotti.mw'.
+
+[2{D:/estragio/AppData/Roaming/MiKTeX/fonts/enc/dvips/tex-gyre/q-ec.enc}] (manuscript_Stragiotti.mw)
+\openout4 = `manuscript_Stragiotti.mw'.
+
+LaTeX Font Info:    Font shape `T1/qhv/b/n' will be
+(Font)              scaled to size 9.8778pt on input line 154.
+LaTeX Font Info:    Font shape `T1/qhv/b/n' will be
+(Font)              scaled to size 18.70923pt on input line 154.
+LaTeX Font Info:    Font shape `T1/zplLF/m/n' will be
+(Font)              scaled to size 20.11783pt on input line 154.
+LaTeX Font Info:    Font shape `T1/zplLF/b/n' will be
+(Font)              scaled to size 20.11783pt on input line 154.
+Package tocbasic Info: character protrusion at toc deactivated on input line 154.
+LaTeX Font Info:    Font shape `T1/zplLF/b/n' will be
+(Font)              scaled to size 10.6215pt on input line 154.
+\openout4 = `manuscript_Stragiotti.mw'.
+
+ [3
 
 
+] (manuscript_Stragiotti.mw)
+\openout4 = `manuscript_Stragiotti.mw'.
+
+LaTeX Font Info:    Font shape `T1/qhv/b/n' will be
+(Font)              scaled to size 10.82501pt on input line 154.
+LaTeX Font Info:    Font shape `T1/zplLF/m/sc' will be
+(Font)              scaled to size 11.64001pt on input line 154.
+Package microtype Info: Character `029' is missing
+(microtype)             in font `T1/zplLF/m/sc/12'.
+(microtype)             Ignoring protrusion settings for this character.
+LaTeX Font Info:    Font shape `T1/zplLF/b/sc' will be
+(Font)              scaled to size 11.64001pt on input line 154.
+Package microtype Info: Character `029' is missing
+(microtype)             in font `T1/zplLF/b/sc/12'.
+(microtype)             Ignoring protrusion settings for this character.
+\openout4 = `manuscript_Stragiotti.mw'.
+
+ [4] (manuscript_Stragiotti.mw)
+\openout4 = `manuscript_Stragiotti.mw'.
+
+Package tocbasic Info: character protrusion at lof deactivated on input line 155.
+ (manuscript_Stragiotti.lof)
+\tf@lof=\write24
+\openout4 = `manuscript_Stragiotti.lof'.
+
+Package tocbasic Info: character protrusion at lot deactivated on input line 161.
+ (manuscript_Stragiotti.lot)
+\tf@lot=\write25
+\openout4 = `manuscript_Stragiotti.lot'.
 
 
+No file manuscript_Stragiotti.gls.
+\openout4 = `manuscript_Stragiotti.mw'.
+
+[5
 
 
+] (manuscript_Stragiotti.mw)
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+ [6
 
 
-] (main.mw)
-\openout4 = `main.mw'.
+] (manuscript_Stragiotti.mw)
+\openout4 = `manuscript_Stragiotti.mw'.
 
-Package marginnote Info: Using workaround for absolute page number on input line 196.
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: custom
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: 
+* modes: twoside 
 * h-part:(L,W,R)=(70.56247pt, 304.44289pt, 222.49937pt)
 * v-part:(T,H,B)=(77.96011pt, 689.12218pt, 77.96011pt)
 * \paperwidth=597.50473pt
@@ -2974,35 +2919,441 @@ Package marginnote Info: Using workaround for absolute page number on input line
 * \textwidth=304.44289pt
 * \textheight=689.12218pt
 * \oddsidemargin=-1.70752pt
-* \evensidemargin=-1.70752pt
-* \topmargin=-40.60774pt
-* \headheight=15.0pt
+* \evensidemargin=150.22939pt
+* \topmargin=-42.60774pt
+* \headheight=17.0pt
 * \headsep=31.29787pt
-* \topskip=10.0pt
-* \footskip=42.0pt
+* \topskip=11.0pt
+* \footskip=47.6pt
 * \marginparwidth=135.71892pt
 * \marginparsep=17.6406pt
 * \columnsep=10.0pt
-* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
 * \@twocolumnfalse
-* \@twosidefalse
-* \@mparswitchfalse
+* \@twosidetrue
+* \@mparswitchtrue
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
+\openout2 = `chapters/1_intro.aux'.
+
+ (chapters/1_intro.tex
+LaTeX Font Info:    Font shape `T1/qhv/b/n' will be
+(Font)              scaled to size 12.99pt on input line 5.
+LaTeX Font Info:    Font shape `T1/zplLF/b/n' will be
+(Font)              scaled to size 13.968pt on input line 5.
+)
+\openout4 = `manuscript_Stragiotti.mw'.
+
+ [1
 
 
-LaTeX Warning: Empty bibliography on input line 197.
+
+
+] (manuscript_Stragiotti.mw)
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout2 = `chapters/2_literature_review.aux'.
+
+ (chapters/2_literature_review.tex
+\openout4 = `manuscript_Stragiotti.mw'.
+
+ [2
+
+
+
+
+
+] (manuscript_Stragiotti.mw)
+\openout4 = `manuscript_Stragiotti.mw'.
+
+
+chapter 1.
+LaTeX Font Info:    Font shape `T1/zplLF/b/n' will be
+(Font)              scaled to size 9.70001pt on input line 2.
+LaTeX Font Info:    Font shape `T1/zplLF/m/n' will be
+(Font)              scaled to size 9.70001pt on input line 2.
+Package marginnote Info: Margin note 9.1 is on absolute page 9 on input line 2.
+Package marginnote Info: xpos seems to be 70.56247pt on input line 2.
+LaTeX Font Info:    Font shape `T1/zplLF/m/n' will be
+(Font)              scaled to size 8.73001pt on input line 2.
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--2
+ [][][][]\T1/zplLF/b/n/10 (+20) An in-tro-duc-tion to 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--2
+ [][][][]\T1/zplLF/b/n/10 (+20) Ultra-lightweight 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--2
+ [][][][]\T1/zplLF/b/n/10 (+20) Cellular struc-tures 
+ []
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 5.
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+
+Underfull \hbox (badness 3189) in paragraph at lines 5--5
+[][][][][][]\T1/zplLF/m/n/9 (+20) 3.[] [][]Fleck et al. ([]2010), []`  Micro-
+ []
+
+LaTeX Font Info:    Font shape `T1/zplLF/m/it' will be
+(Font)              scaled to size 10.6215pt on input line 5.
+
+LaTeX Warning: Marginpar on page 3 moved.
+
+)
+\openout4 = `manuscript_Stragiotti.mw'.
+
+ [3] (manuscript_Stragiotti.mw)
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout2 = `chapters/3_comparison_TO_TTO.aux'.
+
+ (chapters/3_comparison_TO_TTO.tex
+\openout4 = `manuscript_Stragiotti.mw'.
+
+ [4
+
+
+
+
+
+] (manuscript_Stragiotti.mw)
+\openout4 = `manuscript_Stragiotti.mw'.
+
+
+chapter 2.
+Package marginnote Info: Margin note 11.1 is on absolute page 11 on input line 2.
+Package marginnote Info: xpos seems to be 70.56247pt on input line 2.
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--2
+ [][][][]\T1/zplLF/b/n/10 (+20) The for-mu-la-tion of 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--2
+ \T1/zplLF/b/n/10 (+20) a com-mon prob-lem: 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--2
+ \T1/zplLF/b/n/10 (+20) vol-ume min-i-miza-tion 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--2
+ [][][][]\T1/zplLF/b/n/10 (+20) Comparison be-tween 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--2
+ \T1/zplLF/b/n/10 (+20) con-tin-u-ous and truss 
+ []
+
+)
+\openout4 = `manuscript_Stragiotti.mw'.
+
+ [5] (manuscript_Stragiotti.mw)
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+ [6{D:/estragio/AppData/Roaming/MiKTeX/fonts/enc/dvips/newtx/ntx-ecth-tlf.enc}] (manuscript_Stragiotti.mw)
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout2 = `chapters/4_TTO_upgrades.aux'.
+
+ (chapters/4_TTO_upgrades.tex
+chapter 3.
+Package marginnote Info: Margin note 13.1 is on absolute page 13 on input line 2.
+Package marginnote Info: xpos seems to be 70.56247pt on input line 2.
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--2
+ [][][][]\T1/zplLF/b/n/10 (+20) Local buck-ling and 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--2
+ \T1/zplLF/b/n/10 (+20) kine-matic com-pat-i-bil- 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--2
+ [][][][]\T1/zplLF/b/n/10 (+20) Optimization for-mu- 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--2
+ \T1/zplLF/b/n/10 (+20) la-tion and solv-ing 
+ []
+
+)
+\openout4 = `manuscript_Stragiotti.mw'.
+
+ [7
+
+
+
+
+
+] (manuscript_Stragiotti.mw)
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout2 = `chapters/5_cellular_structures.aux'.
+
+ (chapters/5_cellular_structures.tex
+\openout4 = `manuscript_Stragiotti.mw'.
+
+ [8
+
+
+
+
+
+] (manuscript_Stragiotti.mw)
+\openout4 = `manuscript_Stragiotti.mw'.
+
+
+chapter 4.
+Package marginnote Info: Margin note 15.1 is on absolute page 15 on input line 2.
+Package marginnote Info: xpos seems to be 70.56247pt on input line 2.
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--2
+ [][][][]\T1/zplLF/b/n/10 (+20) Formulation of a 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--2
+ \T1/zplLF/b/n/10 (+20) cel-lu-lar struc-ture 
+ []
+
+)
+\openout4 = `manuscript_Stragiotti.mw'.
+
+ [9] (manuscript_Stragiotti.mw)
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout2 = `chapters/6_DMO.aux'.
+
+ (chapters/6_DMO.tex
+\openout4 = `manuscript_Stragiotti.mw'.
+
+ [10
+
+
+
+
+
+] (manuscript_Stragiotti.mw)
+\openout4 = `manuscript_Stragiotti.mw'.
+
+
+chapter 5.
+Package marginnote Info: Margin note 17.1 is on absolute page 17 on input line 2.
+Package marginnote Info: xpos seems to be 70.56247pt on input line 2.
+)
+\openout4 = `manuscript_Stragiotti.mw'.
+
+ [11] (manuscript_Stragiotti.mw)
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout2 = `chapters/7_advanced_applications.aux'.
+
+ (chapters/7_advanced_applications.tex
+\openout4 = `manuscript_Stragiotti.mw'.
+
+ [12
+
+
+
+
+
+] (manuscript_Stragiotti.mw)
+\openout4 = `manuscript_Stragiotti.mw'.
+
+
+chapter 6.
+Package marginnote Info: Margin note 19.1 is on absolute page 19 on input line 2.
+Package marginnote Info: xpos seems to be 70.56247pt on input line 2.
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--2
+ [][][][]\T1/zplLF/b/n/10 (+1) 3D CRM wing-box with 
+ []
+
+)
+\openout4 = `manuscript_Stragiotti.mw'.
+
+ [13] (manuscript_Stragiotti.mw)
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout2 = `chapters/8_conclusion.aux'.
+
+ (chapters/8_conclusion.tex
+\openout4 = `manuscript_Stragiotti.mw'.
+
+ [14
+
+
+
+
+
+] (manuscript_Stragiotti.mw)
+\openout4 = `manuscript_Stragiotti.mw'.
+
+)
+\openout4 = `manuscript_Stragiotti.mw'.
+
+ [15] (manuscript_Stragiotti.mw)
+\openout4 = `manuscript_Stragiotti.mw'.
 
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: custom
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: 
+* modes: twoside 
+* h-part:(L,W,R)=(70.56247pt, 304.44289pt, 222.49937pt)
+* v-part:(T,H,B)=(77.96011pt, 689.12218pt, 77.96011pt)
+* \paperwidth=597.50473pt
+* \paperheight=845.0424pt
+* \textwidth=304.44289pt
+* \textheight=689.12218pt
+* \oddsidemargin=-1.70752pt
+* \evensidemargin=150.22939pt
+* \topmargin=-42.60774pt
+* \headheight=17.0pt
+* \headsep=31.29787pt
+* \topskip=11.0pt
+* \footskip=47.6pt
+* \marginparwidth=135.71892pt
+* \marginparsep=17.6406pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+ [16
+
+
+
+
+
+] (manuscript_Stragiotti.mw)
+\openout4 = `manuscript_Stragiotti.mw'.
+
+
+chapter without number
+LaTeX Font Info:    Font shape `T1/zplLF/m/sc' will be
+(Font)              scaled to size 10.6215pt on input line 206.
+Package microtype Info: Character `029' is missing
+(microtype)             in font `T1/zplLF/m/sc/10.95'.
+(microtype)             Ignoring protrusion settings for this character.
+LaTeX Font Info:    Trying to load font information for T1+fvm on input line 206.
+(D:\estragio\AppData\Roaming\MiKTeX\tex/latex/bera\t1fvm.fd
+File: t1fvm.fd 2004/09/07 scalable font definitions for T1/fvm.
+)
+LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
+(Font)              scaled to size 9.30756pt on input line 206.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `fvm' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+\openout4 = `manuscript_Stragiotti.mw'.
+
+ [17{C:/Program Files/MiKTeX/fonts/enc/dvips/base/8r.enc}] (manuscript_Stragiotti.mw)
+\openout4 = `manuscript_Stragiotti.mw'.
+
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: pdftex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
 * h-part:(L,W,R)=(70.56247pt, 456.37979pt, 70.56247pt)
 * v-part:(T,H,B)=(77.96011pt, 689.12218pt, 77.96011pt)
 * \paperwidth=597.50473pt
@@ -3011,97 +3362,820 @@ LaTeX Warning: Empty bibliography on input line 197.
 * \textheight=689.12218pt
 * \oddsidemargin=-1.70752pt
 * \evensidemargin=-1.70752pt
-* \topmargin=-40.60774pt
-* \headheight=15.0pt
+* \topmargin=-42.60774pt
+* \headheight=17.0pt
 * \headsep=31.29787pt
-* \topskip=10.0pt
-* \footskip=42.0pt
+* \topskip=11.0pt
+* \footskip=47.6pt
 * \marginparwidth=0.0pt
 * \marginparsep=0.0pt
 * \columnsep=10.0pt
-* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
 * \@twocolumnfalse
-* \@twosidefalse
-* \@mparswitchfalse
+* \@twosidetrue
+* \@mparswitchtrue
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\openout4 = `main.idx'.
+\openout4 = `manuscript_Stragiotti.mw'.
 
-runsystem(makeindex main.idx)...executed safely (allowed).
+ [18
 
-(main.ind) (main.aux
-\openout4 = `main.mw'.
 
-\openout4 = `main.mw'.
 
-\openout4 = `main.mw'.
+] (manuscript_Stragiotti.mw)
+\openout4 = `manuscript_Stragiotti.mw'.
 
-\openout4 = `main.mw'.
+\openout4 = `manuscript_Stragiotti.idx'.
 
-\openout4 = `main.mw'.
+runsystem(makeindex manuscript_Stragiotti.idx)...executed safely (allowed).
 
-\openout4 = `main.mw'.
+ (manuscript_Stragiotti.ind)
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: pdftex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(70.56247pt, 456.37979pt, 70.56247pt)
+* v-part:(T,H,B)=(77.96011pt, 689.12218pt, 77.96011pt)
+* \paperwidth=597.50473pt
+* \paperheight=845.0424pt
+* \textwidth=456.37979pt
+* \textheight=689.12218pt
+* \oddsidemargin=-1.70752pt
+* \evensidemargin=-1.70752pt
+* \topmargin=-42.60774pt
+* \headheight=17.0pt
+* \headsep=31.29787pt
+* \topskip=11.0pt
+* \footskip=47.6pt
+* \marginparwidth=0.0pt
+* \marginparsep=0.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\openout4 = `main.mw'.
 
-\openout4 = `main.mw'.
+part without number
+LaTeX Font Info:    Font shape `T1/qhv/b/n' will be
+(Font)              scaled to size 22.44386pt on input line 222.
+LaTeX Font Info:    Font shape `T1/zplLF/m/sc' will be
+(Font)              scaled to size 24.13362pt on input line 222.
+Package microtype Info: Character `029' is missing
+(microtype)             in font `T1/zplLF/m/sc/24.88'.
+(microtype)             Ignoring protrusion settings for this character.
+LaTeX Font Info:    Font shape `T1/zplLF/b/sc' will be
+(Font)              scaled to size 24.13362pt on input line 222.
+Package microtype Info: Character `029' is missing
+(microtype)             in font `T1/zplLF/b/sc/24.88'.
+(microtype)             Ignoring protrusion settings for this character.
+\openout4 = `manuscript_Stragiotti.mw'.
 
-\openout4 = `main.mw'.
+[19
 
-\openout4 = `main.mw'.
 
- (chapters/1_intro.aux) (chapters/2_bibreview.aux) (chapters/3_results.aux) (chapters/4_conclusion.aux)
-\openout4 = `main.mw'.
 
-\openout4 = `main.mw'.
+] (manuscript_Stragiotti.mw)
+\openout4 = `manuscript_Stragiotti.mw'.
 
-\openout4 = `main.mw'.
+\openout4 = `manuscript_Stragiotti.mw'.
 
-\openout4 = `main.mw'.
+ [20] (manuscript_Stragiotti.mw)
+\openout4 = `manuscript_Stragiotti.mw'.
+
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: pdftex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(70.56247pt, 304.44289pt, 222.49937pt)
+* v-part:(T,H,B)=(77.96011pt, 689.12218pt, 77.96011pt)
+* \paperwidth=597.50473pt
+* \paperheight=845.0424pt
+* \textwidth=304.44289pt
+* \textheight=689.12218pt
+* \oddsidemargin=-1.70752pt
+* \evensidemargin=150.22939pt
+* \topmargin=-42.60774pt
+* \headheight=17.0pt
+* \headsep=31.29787pt
+* \topskip=11.0pt
+* \footskip=47.6pt
+* \marginparwidth=135.71892pt
+* \marginparsep=17.6406pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+\openout2 = `chapters/app/A_geometry.aux'.
+
+ (chapters/app/A_geometry.tex
+chapter A.
+)
+\openout4 = `manuscript_Stragiotti.mw'.
+
+ [21
+
+
+
+
+] (manuscript_Stragiotti.mw)
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+ (manuscript_Stragiotti.aux
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+ (chapters/1_intro.aux
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+) (chapters/2_literature_review.aux
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+) (chapters/3_comparison_TO_TTO.aux
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+) (chapters/4_TTO_upgrades.aux
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+) (chapters/5_cellular_structures.aux
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+) (chapters/6_DMO.aux
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+) (chapters/7_advanced_applications.aux
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+) (chapters/8_conclusion.aux
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
 
 )
+\openout4 = `manuscript_Stragiotti.mw'.
 
-LaTeX Warning: There were undefined references.
+\openout4 = `manuscript_Stragiotti.mw'.
 
+\openout4 = `manuscript_Stragiotti.mw'.
 
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                main
-(biblatex)                and rerun LaTeX afterwards.
+\openout4 = `manuscript_Stragiotti.mw'.
 
-\openout4 = `main.mw'.
+\openout4 = `manuscript_Stragiotti.mw'.
 
-\openout4 = `main.mw'.
+\openout4 = `manuscript_Stragiotti.mw'.
 
-\openout4 = `main.bcf'.
+\openout4 = `manuscript_Stragiotti.mw'.
 
-Package logreq Info: Writing requests to 'main.run.xml'.
-\openout1 = `main.run.xml'.
+\openout4 = `manuscript_Stragiotti.mw'.
 
-\openout4 = `main.glo'.
+ (chapters/app/A_geometry.aux
+\openout4 = `manuscript_Stragiotti.mw'.
 
-\openout4 = `main.toc'.
+\openout4 = `manuscript_Stragiotti.mw'.
 
-\openout4 = `main.lof'.
+\openout4 = `manuscript_Stragiotti.mw'.
 
-\openout4 = `main.lot'.
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+)
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+)
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.bcf'.
+
+Package logreq Info: Writing requests to 'manuscript_Stragiotti.run.xml'.
+\openout1 = `manuscript_Stragiotti.run.xml'.
+
+\openout4 = `manuscript_Stragiotti.glo'.
+
+\openout4 = `manuscript_Stragiotti.toc'.
+
+\openout4 = `manuscript_Stragiotti.lof'.
+
+\openout4 = `manuscript_Stragiotti.lot'.
 
  ) 
 Here is how much of TeX's memory you used:
- 73539 strings out of 476331
- 1632949 string characters out of 5797590
- 2945053 words of memory out of 5000000
- 92658 multiletter control sequences out of 15000+600000
- 581966 words of font info for 122 fonts, out of 8000000 for 9000
+ 81487 strings out of 476331
+ 1862025 string characters out of 5797590
+ 3236003 words of memory out of 5000000
+ 100214 multiletter control sequences out of 15000+600000
+ 650631 words of font info for 226 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 133i,17n,159p,10641b,1830s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/bera/fvmr8a.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/tex-gyre/qhvr.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newpx/zplb.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newpx/zplr.pfb>
-Output written on main.pdf (7 pages, 117129 bytes).
+ 133i,18n,159p,10658b,2903s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newpx/NewPXMI.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/bera/fvmr8a.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newpx/pxsys.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/tex-gyre/qhvr.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newpx/zplb.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newpx/zplr.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newpx/zplri.pfb>
+Output written on manuscript_Stragiotti.pdf (27 pages, 479942 bytes).
 PDF statistics:
- 120 PDF objects out of 1000 (max. 8388607)
- 12 named destinations out of 1000 (max. 500000)
- 34469 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 666 PDF objects out of 1000 (max. 8388607)
+ 135 named destinations out of 1000 (max. 500000)
+ 66484 words of extra memory for PDF output out of 74296 (max. 10000000)
 

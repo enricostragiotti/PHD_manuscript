@@ -37,7 +37,6 @@
 %----------------------------------------------------------------------------------------
 %	KAO-SPECIFIC OPTIONS
 %----------------------------------------------------------------------------------------
-
 % Set up the package options
 \SetupKeyvalOptions{
 	family = kao,
@@ -266,15 +265,15 @@
 \renewpagestyle{scrheadings}{%
 	{\smash{\hspace{-\headmarginparwidth}\hspace{-\headmarginparsep}\makebox[\headtotal][l]{%
 		\makebox[7\hscale][r]{\thepage}%
-		\makebox[3\hscale]{}\rule[-1mm]{0.5pt}{19\vscale-1mm}\makebox[3\hscale]{}%
+		\makebox[3\hscale]{}\color{accent_r_1}\rule[-1mm]{0.5pt}{19\vscale-1mm}\color{black}\makebox[3\hscale]{}%
 		\makebox[\headtextwidth][l]{\leftmark}}}}%
 	{\smash{\makebox[0pt][l]{\makebox[\headtotal][r]{%
 		\makebox[\headtextwidth][r]{\hfill\rightmark}%
-		\makebox[3\hscale]{}\rule[-1mm]{0.5pt}{19\vscale-1mm}\makebox[3\hscale]{}%
+		\makebox[3\hscale]{}\color{accent_r_1}\rule[-1mm]{0.5pt}{19\vscale-1mm}\color{black}\makebox[3\hscale]{}%
 		\makebox[7\hscale][l]{\thepage}}}}}%
 	{\smash{\makebox[0pt][l]{\makebox[\headtotal][r]{%
 		\makebox[\headtextwidth][r]{\hfill\rightmark}%
-		\makebox[3\hscale]{}\rule[-1mm]{0.5pt}{19\vscale-1mm}\makebox[3\hscale]{}%
+		\makebox[3\hscale]{}\color{accent_r_1}\rule[-1mm]{0.5pt}{19\vscale-1mm}\color{black}\makebox[3\hscale]{}%
 		\makebox[7\hscale][l]{\thepage}}}}}%
 }{%
 	{}%
@@ -1190,32 +1189,50 @@
 %----------------------------------------------------------------------------------------
 %	COLOURS
 %----------------------------------------------------------------------------------------
+% Define the thesis colors
 
 % Uncomment to have coloured headings
 %\addtokomafont{title}{\color{Maroon}}
 %\addtokomafont{part}{\color{Maroon}}
-%\addtokomafont{chapter}{\color{Maroon}}
+%\addtokomafont{chapter}{\color{accent_r_1}}
 %\addtokomafont{section}{\color{Maroon}}
 %\addtokomafont{subsection}{\color{Maroon}}
 %\addtokomafont{subsubsection}{\color{Maroon}}
 %\addtokomafont{paragraph}{\color{Maroon}}
 %\addtokomafont{captionlabel}{\color{Blue}}
-%\addtokomafont{pagenumber}{\color{Maroon}}
+% \addtokomafont{pagenumber}{\color{accent_r_1}}
 
-% Choose the default colors
+% MOD
+\input{img_header}
+
 \hypersetup{
-	%allcolors=DarkGreen,
 	%anchorcolor=Red,
 	%citecolor=DarkOrange!70!black,
-	citecolor=OliveGreen,
-	filecolor=OliveGreen,
-	%linkcolor=Blue,
-	linkcolor=Black,
-	%pagecolor = Blue,
+	citecolor=accent_r_1,
+	filecolor=accent_r_1,
+    %linkcolor=Blue,
+	linkcolor=Black!80,
+	pagecolor = accent_r_1,
 	%menucolor=Red,
 	%runcolor=Red,
-	urlcolor=OliveGreen,
+	urlcolor=accent_r_1,
 }
+
+
+% % Choose the default colors
+% \hypersetup{
+% 	%allcolors=DarkGreen,
+% 	%anchorcolor=Red,
+% 	%citecolor=DarkOrange!70!black,
+% 	citecolor=OliveGreen,
+% 	filecolor=OliveGreen,
+% 	%linkcolor=Blue,
+% 	linkcolor=Black,
+% 	%pagecolor = Blue,
+% 	%menucolor=Red,
+% 	%runcolor=Red,
+% 	urlcolor=OliveGreen,
+% }
 
 %----------------------------------------------------------------------------------------
 %	ITEMS
@@ -1425,3 +1442,7 @@
 \newcommand{\monthyear}{\ifcase\month\or January\or February\or March\or 
 April\or May\or June\or July\or August\or September\or October\or 
 November\or December\fi\space\number\year}
+
+%%% Modified by Enrico Stragiotti
+\newcommand{\address}[1]{\gdef\@address{#1}}
+\newcommand{\titlepageauthor}[1]{\gdef\@titlepageauthor{#1}}

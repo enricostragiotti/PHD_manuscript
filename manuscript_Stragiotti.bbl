@@ -1,0 +1,168 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{kohn_optimal_1986}{article}{}
+      \name{author}{2}{}{%
+        {{hash=efed0d9f0d90b38fea25e014b8a1740b}{%
+           family={Kohn},
+           familyi={K\bibinitperiod},
+           given={Robert\bibnamedelima V.},
+           giveni={R\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=93733dfde0c47db226efad798ab3b662}{%
+           family={Strang},
+           familyi={S\bibinitperiod},
+           given={Gilbert},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{3e120e21c3727cd5a44aa58a32779ab2}
+      \strng{fullhash}{3e120e21c3727cd5a44aa58a32779ab2}
+      \strng{bibnamehash}{3e120e21c3727cd5a44aa58a32779ab2}
+      \strng{authorbibnamehash}{3e120e21c3727cd5a44aa58a32779ab2}
+      \strng{authornamehash}{3e120e21c3727cd5a44aa58a32779ab2}
+      \strng{authorfullhash}{3e120e21c3727cd5a44aa58a32779ab2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1097-0312}
+      \field{journaltitle}{Communications on Pure and Applied Mathematics}
+      \field{number}{1}
+      \field{title}{Optimal design and relaxation of variational problems}
+      \field{urlday}{14}
+      \field{urlmonth}{9}
+      \field{urlyear}{2021}
+      \field{volume}{39}
+      \field{year}{1986}
+      \field{urldateera}{ce}
+      \field{pages}{113\bibrangedash 137}
+      \range{pages}{25}
+      \verb{doi}
+      \verb 10.1002/cpa.3160390107
+      \endverb
+    \endentry
+    \entry{allaire_optimal_1999}{article}{}
+      \name{author}{2}{}{%
+        {{hash=01ec1538b00db5bf5f81d6d2221f5693}{%
+           family={Allaire},
+           familyi={A\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+        {{hash=90c35e87a61102299d149d1587272017}{%
+           family={Aubry},
+           familyi={A\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{f91c3d47d6616007ec45d79dd4606b4a}
+      \strng{fullhash}{f91c3d47d6616007ec45d79dd4606b4a}
+      \strng{bibnamehash}{f91c3d47d6616007ec45d79dd4606b4a}
+      \strng{authorbibnamehash}{f91c3d47d6616007ec45d79dd4606b4a}
+      \strng{authornamehash}{f91c3d47d6616007ec45d79dd4606b4a}
+      \strng{authorfullhash}{f91c3d47d6616007ec45d79dd4606b4a}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1615-1488}
+      \field{journaltitle}{Structural optimization}
+      \field{month}{4}
+      \field{number}{2}
+      \field{title}{On optimal microstructures for a plane shape optimization problem}
+      \field{urlday}{14}
+      \field{urlmonth}{9}
+      \field{urlyear}{2021}
+      \field{volume}{17}
+      \field{year}{1999}
+      \field{urldateera}{ce}
+      \field{pages}{86\bibrangedash 94}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1007/BF01195933
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/BF01195933
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/BF01195933
+      \endverb
+    \endentry
+    \entry{fleck_micro-architectured_2010}{article}{}
+      \name{author}{3}{}{%
+        {{hash=e2b30fe12c7d9bde635a5c2346741c56}{%
+           family={Fleck},
+           familyi={F\bibinitperiod},
+           given={N.\bibnamedelimi A.},
+           giveni={N\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=5233a32272aa7ffdd5842786a86d44a7}{%
+           family={Deshpande},
+           familyi={D\bibinitperiod},
+           given={V.\bibnamedelimi S.},
+           giveni={V\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=4efbe37e741cfa6637ad06d22dcb5217}{%
+           family={Ashby},
+           familyi={A\bibinitperiod},
+           given={M.\bibnamedelimi F.},
+           giveni={M\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+      }
+      \strng{namehash}{b47cc7c4ab4698e0ecb086516c2b3b9f}
+      \strng{fullhash}{b47cc7c4ab4698e0ecb086516c2b3b9f}
+      \strng{bibnamehash}{b47cc7c4ab4698e0ecb086516c2b3b9f}
+      \strng{authorbibnamehash}{b47cc7c4ab4698e0ecb086516c2b3b9f}
+      \strng{authornamehash}{b47cc7c4ab4698e0ecb086516c2b3b9f}
+      \strng{authorfullhash}{b47cc7c4ab4698e0ecb086516c2b3b9f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{journaltitle}{Proceedings of the Royal Society A: Mathematical, Physical and Engineering Sciences}
+      \field{month}{9}
+      \field{note}{Publisher: Royal Society}
+      \field{number}{2121}
+      \field{shorttitle}{Micro-architectured materials}
+      \field{title}{Micro-architectured materials: past, present and future}
+      \field{urlday}{2}
+      \field{urlmonth}{10}
+      \field{urlyear}{2020}
+      \field{volume}{466}
+      \field{year}{2010}
+      \field{urldateera}{ce}
+      \field{pages}{2495\bibrangedash 2516}
+      \range{pages}{22}
+      \verb{doi}
+      \verb 10.1098/rspa.2010.0215
+      \endverb
+      \verb{urlraw}
+      \verb https://royalsocietypublishing.org/doi/full/10.1098/rspa.2010.0215
+      \endverb
+      \verb{url}
+      \verb https://royalsocietypublishing.org/doi/full/10.1098/rspa.2010.0215
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
