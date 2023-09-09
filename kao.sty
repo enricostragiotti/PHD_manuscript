@@ -34,6 +34,9 @@
 	\let\Ifthispageodd\ifthispageodd%
 }
 
+% MOD single spacing for titles
+\RequirePackage{setspace}
+
 %----------------------------------------------------------------------------------------
 %	KAO-SPECIFIC OPTIONS
 %----------------------------------------------------------------------------------------
@@ -192,8 +195,10 @@
 	\newgeometry{
 		top=27.4\vscale,
 		bottom=27.4\vscale,
-		inner=24.8\hscale,
-		textwidth=107\hscale,
+		inner=27.4\hscale,
+		% inner=24.8\hscale,
+		% textwidth=107\hscale,
+		textwidth=112\hscale,
 		marginparsep=6.2\hscale,
 		marginparwidth=47.7\hscale,
 	}%
@@ -412,7 +417,7 @@
 \extrafloats{100} % Require more floats
 
 \RequirePackage{marginnote} % Provides options for margin notes
-%\RequirePackage{marginfix} % Make marginpars float freely; it should not be loaded as it prevents the marginnotes to stay aligned with the main text
+\RequirePackage{marginfix} % Make marginpars float freely; it should not be loaded as it prevents the marginnotes to stay aligned with the main text
 \RequirePackage{sidenotes} % Use sidenotes
 \RequirePackage{chngcntr} % Reset counters at sections
 
@@ -563,9 +568,9 @@
 \setlength\columnseprule{.4pt} % Set the width of vertical rules in tables
 
 % The marginfix package prevents the margin notes to stay aligned with the main text, so it cannot be used. However, we define the \marginskip command, which is the only command we need from that package.
-\newcommand\marginskip[1]{%
-	\marginpar{\@margin@par\vspace{#1 - \baselineskip}}% We subtract the \baselineskip that we have in margin pars.
-}
+% \newcommand\marginskip[1]{%
+% 	\marginpar{\@margin@par\vspace{#1 - \baselineskip}}% We subtract the \baselineskip that we have in margin pars.
+% }
 
 \newlength{\kaomarginskipabove} % Specify the space above a marginfigure, margintable or marginlisting
 \newlength{\kaomarginskipbelow} % Specify the space below a marginfigure, margintable or marginlisting
@@ -1004,6 +1009,7 @@
 % Command to print a table of contents in the margin
 \NewDocumentCommand{\margintoc}{O{\mtocshift}}{ % The first parameter is the vertical offset; by default it is \mtocshift
 	\begingroup%
+	\hypersetup{linkcolor=black!60} % MOD color
 		% Move regular section and subsection to level 6 so that they won't be included and instead set let the mtoc versions take their place.
 		% Adapted from https://tex.stackexchange.com/a/133559/226693
 		\etocsetlevel{section}{6}
@@ -1060,7 +1066,8 @@
 		{\makebox[0pt][r]{\makebox[\margintocnumwidth][l]{\mdseries\etocnumber}}{\mdseries\etocname\nobreak\leaders\hbox{\hbox to 1.5ex {\hss.\hss}}\hfill\rlap{\makebox[\margintocpagenumwidth][r]{\mdseries\etocpage}}}\par}%
 		{\parskip 2.5pt}%
 		% Set the global style of the toc
-		\etocsettocstyle{\usekomafont{section}\small}{}%
+		\etocsettocstyle{\usekomafont{section}\mdseries\small}{}%
+		% \etocsettocstyle{\mdseries\small}{}% MOD no bf
 		\etocsetnexttocdepth{\themargintocdepth}%
 		% Print the table of contents in the margin
 		\marginnote[#1]{\localtableofcontents}%
@@ -1211,8 +1218,7 @@
 	citecolor=accent_r_1,
 	filecolor=accent_r_1,
     %linkcolor=Blue,
-	linkcolor=Black!80,
-	pagecolor = accent_r_1,
+	linkcolor=Black,
 	%menucolor=Red,
 	%runcolor=Red,
 	urlcolor=accent_r_1,
@@ -1329,7 +1335,7 @@
 % Productivity
 \RequirePackage{pdfpages} % Insert PDF pages
 \RequirePackage{subfiles} % Adopt a modular structure
-\RequirePackage{todonotes} % Add useful notes in the margins
+% \RequirePackage{todonotes} % Add useful notes in the margins
 
 % Listings code
 \RequirePackage{listings} % Code
@@ -1405,7 +1411,6 @@
 
 % Index, glossary and nomenclature
 \RequirePackage{imakeidx}
-\RequirePackage[xindy,toc,numberedsection=nameref]{glossaries}
 \RequirePackage[intoc]{nomencl}
 
 % Commands to print specific words always in the same way
@@ -1428,8 +1433,8 @@
 \newcommand{\adhoc}{\textit{ad hoc}\xspace}
 \newcommand{\etcetera}{\textit{et cetera}\xspace}
 \newcommand{\etc}{\textit{etc.}\xspace}
-\newcommand{\ie}{\textit{i.\nobreak\hairsp{}e.}\xspace}
-\newcommand{\eg}{\textit{e.\nobreak\hairsp{}g.}\xspace}
+% \newcommand{\ie}{\textit{i.\nobreak\hairsp{}e.}\xspace}
+% \newcommand{\eg}{\textit{e.\nobreak\hairsp{}g.}\xspace}
 \newcommand{\vs}{\textit{vs}\xspace}
 \newcommand{\cfr}{\textit{cfr.}\xspace}
 

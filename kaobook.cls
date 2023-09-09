@@ -232,6 +232,8 @@
 	    }%
     }%
 	\RedeclareSectionCommand[beforeskip=0cm,afterskip=10\vscale]{chapter}%
+	% \RedeclareSectionCommand[beforeskip=1.5\vscale,afterskip=\vscale]{section}% MOD
+	\RedeclareSectionCommand[beforeskip=2\vscale,afterskip=0.5\vscale]{subsection}% MOD
 	\setlength{\mtocshift}{-3.5\vscale}%
 }
 
@@ -256,15 +258,15 @@
 
 % Set KOMA fonts for book-specific elements
 \addtokomafont{part}{\normalfont\scshape\bfseries}
-\addtokomafont{partentry}{\normalfont\scshape\bfseries}
-\addtokomafont{chapter}{\normalfont\bfseries}
+\addtokomafont{partentry}{\normalfont\bfseries}
+\addtokomafont{chapter}{\normalfont\scshape\bfseries\setstretch{0.7}}
 \addtokomafont{chapterentry}{\normalfont\bfseries}
 
 % Set KOMA fonts for elements common to all classes
-\addtokomafont{section}{\normalfont\bfseries}
-\addtokomafont{subsection}{\normalfont\bfseries}
-\addtokomafont{subsubsection}{\normalfont\bfseries}
-\addtokomafont{paragraph}{\normalfont\bfseries}
+\addtokomafont{section}{\normalfont\scshape\bfseries\large\setstretch{0.8}}
+\addtokomafont{subsection}{\normalfont\scshape\bfseries\normalsize\setstretch{0.8}}
+\addtokomafont{subsubsection}{\normalfont\scshape\bfseries\setstretch{0.8}}
+\addtokomafont{paragraph}{\normalfont\scshape\bfseries\setstretch{0.8}}
 \setkomafont{descriptionlabel}{\normalfont\bfseries}
 
 %----------------------------------------------------------------------------------------

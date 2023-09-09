@@ -4,6 +4,7 @@
 	twoside=true, % Use different layouts for even and odd pages (in particular, if twoside=true, the margin column will be always on the outside)
 	%open=any, % If twoside=true, uncomment this to force new chapters to start on any page, not only on right (odd) pages
 	secnumdepth=2, % How deep to number headings. Defaults to 1 (sections)
+	listof=totoc, % list of figures and tables in toc
 ]{kaobook}
 
 % Choose the language
@@ -38,8 +39,7 @@
 \usepackage{tikz,pgfplots}  % TikZ and PGF
 \pgfplotsset{compat=1.11}
 
-\usepackage[toc]{glossaries}
-% \usepackage[nopostdot,style=super,nonumberlist,toc]{glossaries}
+\usepackage[nopostdot,style=super,nonumberlist,toc]{glossaries}
 \makeglossaries % Start the abbreviation package
 \input{abbreviations.tex} % Abbreviation archive
 \setlength{\glsdescwidth}{0.8\textwidth} % Extend the line
@@ -53,9 +53,25 @@
 \newcommand{\rhofil}{ \widetilde{\rho} }
 \newcommand{\derfrac}[2]{\frac{\partial#1}{\partial#2}}
 
+\newcommand{\vect}[1]{\bm{#1}}
+\newcommand{\matr}[1]{\bm{#1}}
+\newcommand{\norm}[1]{\lVert#1\rVert}
+\newcommand{\secref}[1]{Section~\ref{#1}}
+\newcommand{\figref}[1]{Fig.~\ref{#1}}
+\newcommand{\tabref}[1]{Table~\ref{#1}}
+\renewcommand{\eqref}[1]{Equation~\ref{#1}}
+\newcommand{\eqsref}[1]{Equations~\ref{#1},}
+\newcommand{\eqrefnotext}[1]{\ref{#1}}
+% \newcommand{\eqreftext}[1]{Equation~(\ref{#1})}
+\newcommand{\ie}{i.e.\xspace}
+\newcommand{\eg}{e.g.\xspace}
+
 \makeindex[columns=3, title=Alphabetical Index, intoc] % Make LaTeX produce the files required to compile the index
 
 \setcounter{margintocdepth}{\sectiontocdepth} % Only sections in the toc of the chapter
+
+\newcommand{\todo}[1]{\textcolor{green}{#1}}
+
 
 \begin{document}
 
@@ -64,7 +80,7 @@
 %----------------------------------------------------------------------------------------
 
 \titlehead{PhD manuscript}
-\title[Design and optimisation of lattice structures for aerospace applications]{Design and optimisation of lattice structures for aerospace applications}
+\title[Design and optimisation of lattice structures for aerospace applications]{Design and optimization of lattice structures for aerospace applications}
 \author[ES]{Enrico Stragiotti}
 \date{\today}
 \publishers{ONERA -- ISAE Supaero}
@@ -95,12 +111,12 @@ joseph.morlier@isae-supaero.fr\\
 
 \begin{titlepage}
 	\centering
-	\includegraphics[height=1.5cm]{figures/00_intro/megep.png}\hfill\includegraphics[height=1.5cm]{figures/00_intro/ONERA_logo.svg.png}\hfill\includegraphics[height=1.5cm]{figures/00_intro/Logo-ISAE-SUPAERO.png}\par
+	\includegraphics[height=1.5cm]{figures/01_intro/megep.png}\hfill\includegraphics[height=1.5cm]{figures/01_intro/ONERA_logo.svg.png}\hfill\includegraphics[height=1.5cm]{figures/01_intro/Logo-ISAE-SUPAERO.png}\par
 	\vspace{4\baselineskip}
-	{\Huge 
+	{\Huge\scshape 
 	\@title\par}
 	\vspace{4\baselineskip}
-	{\LARGE\textsc{\@author}\par}
+	{\LARGE\@author\par}
 	\vspace{4\baselineskip}
 	{% author
 	\fontsize{12}{14}\selectfont
@@ -160,13 +176,17 @@ This document was typeset with the help of \href{https://sourceforge.net/project
 
 \listoftables % Output the list of tables
 
+% Comment both of the following lines to have the LOF and the LOT on different pages
+\let\cleardoublepage\bigskip
+\let\clearpage\bigskip
+
+\printglossary[type=\acronymtype,title={List of Abbreviations}]
 \endgroup
 
 %-------------------------------------------------------------------------------
 %	ABBREVIATIONS
 %-------------------------------------------------------------------------------
 
-\printglossary[type=\acronymtype,title={List of Abbreviations}]
 
 %----------------------------------------------------------------------------------------
 %	MAIN BODY
@@ -175,21 +195,23 @@ This document was typeset with the help of \href{https://sourceforge.net/project
 \mainmatter % Denotes the start of the main document content, resets page numbering and uses arabic numbers
 \setchapterstyle{kao} % Choose the default chapter heading style
 
-\include{chapters/1_intro}
+% \include{chapters/1_intro}
 
-\include{chapters/2_literature_review}
+% \include{chapters/2_literature_review}
 
 \include{chapters/3_comparison_TO_TTO}
 
-\include{chapters/4_TTO_upgrades}
+% \include{chapters/4_TTO_upgrades}
 
-\include{chapters/5_cellular_structures}
+% \include{chapters/5_cellular_structures}
 
-\include{chapters/6_DMO}
+% \include{chapters/6_DMO}
 
-\include{chapters/7_advanced_applications}
+% \include{chapters/7_advanced_applications}
 
-\include{chapters/8_conclusion}
+% \include{chapters/8_3D_printing}
+
+% \include{chapters/9_conclusion}
 
 %----------------------------------------------------------------------------------------
 
@@ -216,13 +238,13 @@ This document was typeset with the help of \href{https://sourceforge.net/project
 \printindex % Output the index
 
 
-\appendix % From here onwards, chapters are numbered with letters, as is the appendix convention
+% \appendix % From here onwards, chapters are numbered with letters, as is the appendix convention
 
-\pagelayout{wide} % No margins
-\addpart{Appendix}
-\pagelayout{margin} % Restore margins
+% \pagelayout{wide} % No margins
+% \addpart{Appendix}
+% \pagelayout{margin} % Restore margins
 
-\include{chapters/app/A_geometry}
+% \include{chapters/app/A_geometry}
 
 
 \end{document}

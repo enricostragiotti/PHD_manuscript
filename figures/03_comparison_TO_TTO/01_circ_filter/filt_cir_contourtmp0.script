@@ -1,0 +1,1 @@
+unset surface; set cntrparam levels discrete 0.2; set contour; set table "filt_cir_contourtmp0.table"; splot "filt_cir_contourtmp0.dat";

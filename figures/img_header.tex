@@ -1,0 +1,179 @@
+% For large-sized journals the figures should be 84 mm (for double-column text areas), 
+% or 174 mm (for single-column text areas) wide and not higher than 234 mm. SAMO
+
+
+\usepackage[utf8]{inputenc}
+\usepackage{bm} % bold math letter
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{stanli} % Structure Analisys tikz package
+\usepackage{structmech}
+\usepackage{siunitx}
+
+% Tikz settings
+\usepackage{pgfplots}
+\usepackage{tikz}
+\usetikzlibrary{decorations.pathreplacing,spy}
+\usetikzlibrary{fit}
+\usetikzlibrary{shapes.geometric}
+\usetikzlibrary{shapes.arrows}
+\usetikzlibrary{positioning}
+\usetikzlibrary{decorations.pathreplacing,spy}
+\usetikzlibrary{arrows.meta}
+
+\tikzstyle{decision} = [diamond, aspect=1.8, text centered, fill=white, draw=black, thick]
+\tikzstyle{block} = [rectangle, draw=black, thick, fill=white, text centered, rounded corners, minimum height=2em]
+\pgfdeclarelayer{background}
+\pgfsetlayers{background, main}
+
+
+
+\pgfplotsset{compat=1.18}
+
+\pgfplotsset{
+    colormap={coolwarm}{
+        rgb255(0cm)=(58,76,192);
+        rgb255(1cm)=(64,84,199);
+        rgb255(2cm)=(70,93,207);
+        rgb255(3cm)=(76,102,214);
+        rgb255(4cm)=(82,110,220);
+        rgb255(5cm)=(90,120,227);
+        rgb255(6cm)=(96,128,232);
+        rgb255(7cm)=(103,136,237);
+        rgb255(8cm)=(109,144,241);
+        rgb255(9cm)=(117,152,246);
+        rgb255(10cm)=(124,160,249);
+        rgb255(11cm)=(131,166,251);
+        rgb255(12cm)=(138,173,253);
+        rgb255(13cm)=(145,179,254);
+        rgb255(14cm)=(153,186,254);
+        rgb255(15cm)=(160,191,254);
+        rgb255(16cm)=(167,196,253);
+        rgb255(17cm)=(174,201,252);
+        rgb255(18cm)=(182,206,249);
+        rgb255(19cm)=(188,209,246);
+        rgb255(20cm)=(194,212,243);
+        rgb255(21cm)=(200,215,239);
+        rgb255(22cm)=(206,217,235);
+        rgb255(23cm)=(213,219,229);
+        rgb255(24cm)=(218,220,223);
+        rgb255(25cm)=(223,219,217);
+        rgb255(26cm)=(228,216,209);
+        rgb255(27cm)=(233,212,201);
+        rgb255(28cm)=(237,208,193);
+        rgb255(29cm)=(240,204,185);
+        rgb255(30cm)=(242,199,178);
+        rgb255(31cm)=(244,194,170);
+        rgb255(32cm)=(246,187,160);
+        rgb255(33cm)=(247,181,152);
+        rgb255(34cm)=(247,174,145);
+        rgb255(35cm)=(246,167,137);
+        rgb255(36cm)=(245,158,127);
+        rgb255(37cm)=(243,150,120);
+        rgb255(38cm)=(241,142,112);
+        rgb255(39cm)=(238,134,105);
+        rgb255(40cm)=(234,125,97);
+        rgb255(41cm)=(230,114,89);
+        rgb255(42cm)=(225,104,82);
+        rgb255(43cm)=(220,94,75);
+        rgb255(44cm)=(215,84,68);
+        rgb255(45cm)=(207,70,61);
+        rgb255(46cm)=(201,59,55);
+        rgb255(47cm)=(194,45,49);
+        rgb255(48cm)=(187,26,43);
+        rgb255(49cm)=(179,3,38);
+        }
+        }
+
+        \pgfplotsset{
+    colormap={coolwarm_r}{
+        rgb255(27cm)=(233,212,201);
+        rgb255(28cm)=(237,208,193);
+        rgb255(29cm)=(240,204,185);
+        rgb255(30cm)=(242,199,178);
+        rgb255(31cm)=(244,194,170);
+        rgb255(32cm)=(246,187,160);
+        rgb255(33cm)=(247,181,152);
+        rgb255(34cm)=(247,174,145);
+        rgb255(35cm)=(246,167,137);
+        rgb255(36cm)=(245,158,127);
+        rgb255(37cm)=(243,150,120);
+        rgb255(38cm)=(241,142,112);
+        rgb255(39cm)=(238,134,105);
+        rgb255(40cm)=(234,125,97);
+        rgb255(41cm)=(230,114,89);
+        rgb255(42cm)=(225,104,82);
+        rgb255(43cm)=(220,94,75);
+        rgb255(44cm)=(215,84,68);
+        rgb255(45cm)=(207,70,61);
+        rgb255(46cm)=(201,59,55);
+        rgb255(47cm)=(194,45,49);
+        rgb255(48cm)=(187,26,43);
+        rgb255(49cm)=(179,3,38);
+        }
+        }
+
+\pgfplotsset{
+    colormap={coolwarm_b}{
+        rgb255(0cm)=(58,76,192);
+        rgb255(1cm)=(64,84,199);
+        rgb255(2cm)=(70,93,207);
+        rgb255(3cm)=(76,102,214);
+        rgb255(4cm)=(82,110,220);
+        rgb255(5cm)=(90,120,227);
+        rgb255(6cm)=(96,128,232);
+        rgb255(7cm)=(103,136,237);
+        rgb255(8cm)=(109,144,241);
+        rgb255(9cm)=(117,152,246);
+        rgb255(10cm)=(124,160,249);
+        rgb255(11cm)=(131,166,251);
+        rgb255(12cm)=(138,173,253);
+        rgb255(13cm)=(145,179,254);
+        rgb255(14cm)=(153,186,254);
+        rgb255(15cm)=(160,191,254);
+        rgb255(16cm)=(167,196,253);
+        rgb255(17cm)=(174,201,252);
+        rgb255(18cm)=(182,206,249);
+        rgb255(19cm)=(188,209,246);
+        rgb255(20cm)=(194,212,243);
+        rgb255(21cm)=(200,215,239);
+        rgb255(22cm)=(206,217,235);
+        rgb255(23cm)=(213,219,229);
+        rgb255(24cm)=(218,220,223);
+        rgb255(25cm)=(223,219,217);
+        }
+        }
+%-----------------------------
+%- CUSTOM COLORS
+%-----------------------------
+\definecolor{accent_b_1}{RGB}{58,76,192}
+\definecolor{accent_b_2}{RGB}{103,136,237}
+\definecolor{accent_b_3}{RGB}{153,186,254}
+\definecolor{accent_b_4}{RGB}{200,215,239}
+
+\definecolor{accent_r_1}{RGB}{179,3,38}
+\definecolor{accent_r_2}{RGB}{225,104,82}
+\definecolor{accent_r_3}{RGB}{246,167,137}
+\definecolor{accent_r_4}{RGB}{237,208,193}
+
+%-----------------------------
+%- CUSTOM NODES
+%-----------------------------
+\tikzstyle{lab} = [align=center, fill=white,rounded corners=2pt, inner sep=1pt, font=\footnotesize]
+%-----------------------------
+%- MACROS
+%-----------------------------
+% Circled letters
+\makeatletter
+\usetikzlibrary{calc}
+\newcommand*\circled[1]{\tikz[baseline=(char.base)]{
+    \node[shape=circle, draw, inner sep=0pt, 
+        minimum height={\f@size*1.4},] (char) {\vphantom{WAH1g}#1};}}
+\makeatother
+
+
+\newcommand{\norm}[1]{\lVert#1\rVert}
+\newcommand{\vect}[1]{\bm{#1}}
+\newcommand{\matr}[1]{\bm{#1}}
+
+\def\ie{\textit{i.e.}~}

@@ -1,0 +1,18 @@
+\documentclass[12pt, varwidth=16cm]{standalone}
+
+\input{../img_header.tex}
+
+\begin{document}
+
+    \begin{tikzpicture}
+        \pgfplotscolorbardrawstandalone[
+            colormap={example}{
+            samples of colormap=(4 of coolwarm)
+            },
+            colorbar horizontal,
+            colormap access=map,
+            ]
+
+    \end{tikzpicture}
+
+\end{document}

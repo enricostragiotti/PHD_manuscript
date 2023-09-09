@@ -1,0 +1,253 @@
+\documentclass[12pt, varwidth=15cm]{standalone}
+
+\input{../../img_header}
+
+\begin{document}
+
+\begin{center}
+    \begin{tikzpicture}[
+        force/.style={draw=accent_r_1,-stealth,very thick},
+        point/.style={circle,fill=white,draw,inner sep=0pt,minimum size=4pt },
+    ]
+    % \begin{scope}[spy using outlines={circle, magnification=3.5, size=6cm, connect spies}]
+    \tikzstyle{every node}=[font=\footnotesize]
+    
+    \point{a}{0}{0};
+	\point{b}{0}{5};
+	\point{c}{2.5}{5};
+	\point{d}{2.5}{2.5};
+	\point{e}{5}{2.5};
+	\point{f}{5}{0};
+	
+    \point{g}{4}{2.5};
+    \point{h}{4}{2.2};
+    \point{i}{5}{2.2};
+	
+	\beam{2}{a}{b}[1][1];
+	\beam{2}{b}{c}[1][1];
+	\beam{2}{c}{d}[1][1];
+	\beam{2}{d}{e}[1][1];
+	\beam{2}{e}{f}[1][1];
+	\beam{2}{f}{a}[1][1];
+
+    \beam{3}{g}{h}[1][1];
+    \beam{3}{h}{i}[1][1];
+	
+	\notation{5}{f}{a}[$L$][.5][below=2mm];
+	\notation{5}{e}{f}[$0.5L$][.5][right=2mm][1];
+	\notation{5}{a}{b}[$L$][.5][left=2mm][1];
+	\notation{5}{b}{c}[$0.5L$][.5][above=4mm][1];
+	
+	\fill[pattern=north east lines] (-0.3,5.3) -- (-0.3,5) -- (2.8,5) -- (2.8,5.3);
+	
+	% \load{1}{e}[90][1][0]
+    \draw[force] (5,3.3) -- (5,2.6) node[right] {\footnotesize$f$};
+    \draw[force] (4.8,3.3) -- (4.8,2.6);
+    \draw[force] (4.6,3.3) -- (4.6,2.6);
+    \draw[force] (4.4,3.3) -- (4.4,2.6);
+    \draw[force] (4.2,3.3) -- (4.2,2.6);
+    \draw[force] (4,3.3) -- (4,2.6);
+
+    % TTO
+    % GS
+	\foreach \x in {7,8.25,9.5,10.75,12}
+	\foreach \y in {-3,-1.75,-0.5}  
+	\foreach \xx in {7,8.25,9.5,10.75,12}
+	\foreach \yy in {-3,-1.75,-0.5}  
+	\draw[gray] (\x,\y) -- (\xx,\yy);
+
+    \foreach \x in {7,8.25,9.5}
+	\foreach \y in {-3,-1.75,-0.5,0.75,2}  
+	\foreach \xx in {7,8.25,9.5}
+	\foreach \yy in {-3,-1.75,-0.5,0.75,2}  
+	\draw[gray] (\x,\y) -- (\xx,\yy);
+
+    \point{a1}{5+2+0}{-3+0};
+	\point{b1}{5+2+0}{-3+5};
+	\point{c1}{5+2+2.5}{-3+5};
+	\point{d1}{5+2+2.5}{-3+2.5};
+	\point{e1}{5+2+5}{-3+2.5};
+	\point{f1}{5+2+5}{-3+0};
+		
+	\beam{2}{a1}{b1}[1][1];
+	\beam{2}{b1}{c1}[1][1];
+	\beam{2}{c1}{d1}[1][1];
+	\beam{2}{d1}{e1}[1][1];
+	\beam{2}{e1}{f1}[1][1];
+	\beam{2}{f1}{a1}[1][1];
+    % TO
+    \draw[ help lines , step =0.5] ( 7 , 3) grid (12, 5.5) ;
+    \draw[ help lines , step =0.5] ( 7 , 5.5) grid (9.5, 8) ;
+
+    \point{a2}{5+2+0}{3+0};
+	\point{b2}{5+2+0}{3+5};
+	\point{c2}{5+2+2.5}{3+5};
+	\point{d2}{5+2+2.5}{3+2.5};
+	\point{e2}{5+2+5}{3+2.5};
+	\point{f2}{5+2+5}{3+0};
+		
+	\beam{2}{a2}{b2}[1][1];
+	\beam{2}{b2}{c2}[1][1];
+	\beam{2}{c2}{d2}[1][1];
+	\beam{2}{d2}{e2}[1][1];
+	\beam{2}{e2}{f2}[1][1];
+	\beam{2}{f2}{a2}[1][1];
+    	
+    	% \draw [decorate,decoration={brace, mirror,amplitude=10pt},xshift=0pt,yshift=-.2cm]
+        % (0,-0.5) -- (6,-0.5) node [black,midway,yshift=-.6cm] {\footnotesize $N_{x}$};
+        
+        % \draw [decorate,decoration={brace,amplitude=10pt},xshift=0.6cm,yshift=0cm]
+        % (6.7,6) -- (6.7,0) node [black,midway,xshift=.6cm] {\footnotesize $N_{y}$};
+        
+        % \draw[ help lines , step = .25] (-5.8, -.2) grid (-2.25, 3.25) ;
+        % \spy[red] on (0.5,0.5) in node (a)  at (-4,1.5);
+        
+        % \draw [decorate,decoration={brace,amplitude=10pt},xshift=0pt,yshift=0cm]
+        % (-5.8,3.25) -- (-2.25,3.25) node [black,midway,yshift=.6cm] {\footnotesize $n_{x}$};
+        
+        % \draw [decorate,decoration={brace,amplitude=10pt},xshift=0cm,yshift=0cm]
+        % (-2.25,3.25) -- (-2.25,-.2) node [black,midway,xshift=.6cm] {\footnotesize $n_{y}$};
+        
+        % \filldraw[white,fill=white] (-4,1.5) circle (18pt);
+        
+        % \node[] at (-4,1.5) {\LARGE $\Omega_c$};
+        \node[] at (1.5,1.5) {\Large $\Omega$};
+        
+        % \end{scope} 
+    	
+        
+    \end{tikzpicture}
+
+    % \begin{tikzpicture}
+    %     \begin{scope}[spy using outlines={circle, magnification=4, size=4.5cm, connect spies}]
+        
+    %         \draw[ help lines , step = 0.67] ( 0 , 0) grid (6, 2) ;
+        
+    %         \point{a}{0}{0};
+    %         \point{b}{0}{2};
+    %         \point{c}{4}{2};
+    %         \point{d}{6}{2};
+    %         \point{e}{6}{1};
+    %         \point{f}{6}{0};
+            
+    %         \beam{2}{a}{b}[1][1];
+    %         \beam{2}{b}{c}[1][1];
+    %         \beam{2}{c}{d}[1][1];
+    %         \beam{2}{d}{e}[1][1];
+    %         \beam{2}{e}{f}[1][1];
+    %         \beam{2}{f}{a}[1][1];
+            
+    %         \load{1}{f}[90][1][-0.5]
+            
+    %         \notation{1}{f}{$F$}[below right]
+        
+            
+    %         \fill[pattern=north east lines] (-0.3,-0.3) -- (-0.3,2.3) -- (0,2.3) -- (0,-0.3);
+            
+    %         \draw [decorate,decoration={brace,amplitude=10pt},xshift=0pt,yshift=.2cm]
+    %         (0,2) -- (6,2) node [black,midway,yshift=.6cm] {\footnotesize $N_{c,x}$};
+            
+    %         \draw [decorate,decoration={brace,amplitude=10pt},xshift=0.6cm,yshift=0cm]
+    %         (6,2) -- (6,0) node [black,midway,xshift=.6cm] {\footnotesize $N_{c,y}$};
+            
+    %         %\draw[ help lines , step = .25] (-5.8, -.2) grid (-2.25, 3.25) ;
+            
+    %         \spy[red] on (0.33,0.33) in node (a)  at (-4,1);
+    %         \draw [decorate,decoration={brace,amplitude=10pt},xshift=0pt,yshift=0cm]
+    %         (-5.20,2.4) -- (-2.65,2.35) node [black,midway,yshift=.6cm] {\footnotesize $m_{x}$};
+            
+    %         \draw [decorate,decoration={brace,amplitude=10pt},xshift=0cm,yshift=0cm]
+    %         (-2.65,2.35) -- (-2.65,-.25) node [black,midway,xshift=.6cm] {\footnotesize $m_{y}$};
+            
+            
+    %         % Ground Structure
+    %         % xy plane
+            
+    %         \foreach \x in {-5.2,-3.925,-2.65}
+    %         \foreach \y in {-.25,1.075,2.35}  
+    %         \foreach \xx in {-5.2,-3.925,-2.65}
+    %         \foreach \yy in {-.25,1.075,2.35}  
+    %         \draw[gray] (\x,\y) -- (\xx,\yy);
+            
+    %         \filldraw[white,fill=white] (-4,1) circle (12pt);
+            
+    %         \node[] at (-4,1) {\large $\Omega_c$};
+    %         \node[] at (3,1) {\large $\Omega$};
+    %         \end{scope} 
+    %     \end{tikzpicture}
+
+% \begin{tikzpicture}[
+%     force/.style={draw=accent_r_1,-stealth,thick},
+%     point/.style={circle,fill=white,draw,inner sep=0pt,minimum size=4pt }
+% ]
+
+%     \tikzstyle{every node}=[font=\footnotesize]
+%     % \pgfmathsetmacro{\xmin}{0};
+% 	% \pgfmathsetmacro{\xmax}{5};
+% 	% \pgfmathsetmacro{\ymin}{-4.5};
+% 	% \pgfmathsetmacro{\ymax}{1.5};
+
+%     \begin{axis}[
+%         width	= 6cm,
+% 		height	= 6cm,
+%         axis x line=middle, 
+%         axis y line=middle, 
+%         xlabel={$x$}, ylabel={$y$}, 
+%         axis equal, 
+%         % enlargelimits, % no need to add padding
+%         axis line style={-stealth,semithick},
+%         % xmin	= \xmin,
+%         % xmax	= \xmax,
+%         % ymin	= \ymin,
+%         % ymax	= \ymax,
+%         no markers,
+%         xtick={-1,1}, 
+%         ytick={-1,1},
+%         xticklabels={$-a$, $a$},
+%         yticklabels={$-a$, $a$},
+%         xmin=-1.2, xmax=1.2,  
+%         ymin=-1.8, ymax=1.8,
+%         xticklabel style={anchor=north west},
+%         xticklabel shift=-4pt,
+%         yticklabel style={anchor=north west},
+%         yticklabel shift=-4pt,
+%         minor tick num=5,
+%         axis line style={-stealth,semithick},
+%         ]
+%     \draw[thick, accent_b_3] (-1,-1) rectangle (1,1);
+    
+%     % Gauss point
+%     \node[circle,draw,fill=white,font=\scriptsize,inner sep=2pt] at (0, 0)   (gp) {GP}; 
+    
+%     % Node 1
+%     \node[point,label={235:1}] at (-1,-1) (A) {};
+%     \draw[force] (A.north) -- ++(axis direction cs:0,0.4) node[right] {$v_1$};
+%     \draw[force] (A.east) -- ++(axis direction cs:0.4,0) node[below] {$u_1$};
+
+%     % Node 2
+%     \node[point,label={235:2}] at (1,-1) (B) {};
+%     \draw[force] (B.north) -- ++(axis direction cs:0,0.4) node[right] {$v_2$};
+%     \draw[force] (B.east) -- ++(axis direction cs:0.4,0) node[below] {$u_2$};
+
+%     % Node 3
+%     \node[point,label={235:3}] at (1,1) (C) {};
+%     \draw[force] (C.north) -- ++(axis direction cs:0,0.4) node[right] {$v_3$};
+%     \draw[force] (C.east) -- ++(axis direction cs:0.4,0) node[below] {$u_3$};
+
+%     % Node 4
+%     \node[point,label={235:4}] at (-1,1) (D) {};
+%     \draw[force] (D.north) -- ++(axis direction cs:0,0.4) node[right] {$v_4$};
+%     \draw[force] (D.east) -- ++(axis direction cs:0.4,0) node[below] {$u_4$};
+    
+
+%     \end{axis}
+
+    
+
+    
+    
+% \end{tikzpicture}
+
+\end{center}
+
+\end{document}
