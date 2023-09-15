@@ -1,0 +1,150 @@
+\documentclass[12pt, varwidth=20cm]{standalone}
+
+\input{../../img_header}
+
+\pgfdeclarelayer{background}
+\pgfsetlayers{background,main}
+
+\begin{document}
+
+\begin{tikzpicture}    
+  \begin{axis}[
+  curves,
+  width = 8cm,
+  height = 4.5cm,
+  % y axis line style={accent_b_1},
+  % every y tick label/.append style ={accent_b_1},
+  % every y tick/.append style={color=accent_b_1},
+  legend columns=-1,
+  legend style={
+                at={(0.5,1)},
+                anchor=south,
+                column sep=0.15cm,
+            },
+  ylabel={ $C$},
+  xlabel={ $V_\text{f}$},
+  xmin=0, xmax=50.02,
+  xtick={0,10,20,30,40,50},
+  xticklabels={0\%,10\%,20\%,30\%,40\%,50\%},
+  ymin=0, ymax=25030,
+  ytick={0,5000,10000,15000,20000,25000},
+  name=ax1,
+  ]
+
+  \addplot [scatter_plot_smooth, accent_b_1]
+    table {%
+    1.18 6992.1
+    1.6 3837.08
+    1.74 2765.6
+    1.89 2243.31
+    2.17 1823.12
+    2.67 1423.54
+    3 1132.79
+    4.04 781.48
+    7.28 403.53
+    8.09 364.8
+    8.82 331.95
+    10.05 291.89
+    11.8 250.23
+    14.18 213.01
+    18.03 169.9
+    21.12 148.13
+    26.21 125.69
+    34.71 104.3
+    48.08 76.56
+    };
+    \addlegendentry{Continuous mesh}
+    \addplot [scatter_plot_smooth, accent_r_1]
+    table {%
+    0.124169 23281.62
+    0.310422 9312.65
+    0.620843 4656.32
+    0.776054 3725.06
+    1.034739 2793.79
+    1.241686 2328.16
+    1.552108 1862.53
+    2.069477 1396.9
+    3.104216 931.26
+    6.208431 465.63
+    6.898257 419.07
+    7.760539 372.51
+    8.869187 325.94
+    10.347385 279.38
+    12.416862 232.82
+    };
+    \addlegendentry{Truss mesh}
+
+    \coordinate (c1) at (0,8000);
+    \coordinate (c2) at (6,6000);
+    \coordinate (c3) at (21,10000);
+
+    \draw[axis_gray, thick] (c1) rectangle (axis cs:5,0);
+    \draw[axis_gray] (c2)  to[out=0,in=180] (c3);
+  
+\end{axis}
+
+\begin{axis}[
+  curves,
+  % anchor is south west
+  at={($(ax1.south east)-(4cm,0)+(0,1.5cm)$)},
+  width = 4cm,
+  height = 2.5cm,
+  xmin=0, xmax=5.02,
+  xtick={0,2.5,5},
+  xticklabels={0\%,2.5\%,5\%},
+  ymin=0, ymax=7530,
+  ytick={0,2500,5000,7500},
+  yticklabels={0,0.25,0.5,0.75},
+  clip=true,
+  ]
+  \addplot [scatter_plot_smooth, accent_b_1]
+    table {%
+    1.18 6992.1
+    1.6 3837.08
+    1.74 2765.6
+    1.89 2243.31
+    2.17 1823.12
+    2.67 1423.54
+    3 1132.79
+    4.04 781.48
+    7.28 403.53
+    8.09 364.8
+    8.82 331.95
+    10.05 291.89
+    11.8 250.23
+    14.18 213.01
+    18.03 169.9
+    21.12 148.13
+    26.21 125.69
+    34.71 104.3
+    54.48 74.127
+    };
+
+    \addplot [scatter_plot_smooth, accent_r_1]
+    table {%
+    0.124169 23281.62
+    0.310422 9312.65
+    0.620843 4656.32
+    0.776054 3725.06
+    1.034739 2793.79
+    1.241686 2328.16
+    1.552108 1862.53
+    2.069477 1396.9
+    3.104216 931.26
+    6.208431 465.63
+    6.898257 419.07
+    7.760539 372.51
+    8.869187 325.94
+    10.347385 279.38
+    12.416862 232.82
+    };
+
+    \begin{pgfonlayer}{background}
+      \draw[fill=white, draw=axis_gray, thick] 
+      ([xshift=-1cm,yshift=-0.65cm]current axis.south west) rectangle 
+      ([xshift=+0.3cm,yshift=+0.2cm]current axis.north east);
+    \end{pgfonlayer}
+\end{axis}
+\end{tikzpicture}
+
+\end{document}

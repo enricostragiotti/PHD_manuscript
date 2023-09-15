@@ -6,30 +6,12 @@
 
 \begin{document}
 
-\begin{tikzpicture}[
-    force/.style={draw=accent_r_1,-stealth,very thick},
-    point/.style={circle,fill=white,draw,inner sep=0pt,minimum size=4pt }
-]
-
-    \tikzstyle{every node}=[font=\footnotesize]
-    % \pgfmathsetmacro{\xmin}{0};
-	% \pgfmathsetmacro{\xmax}{5};
-	% \pgfmathsetmacro{\ymin}{-4.5};
-	% \pgfmathsetmacro{\ymax}{1.5};
+\begin{tikzpicture}
 
     \begin{axis}[
-        width	= 6cm,
-		height	= 6cm,
-        axis x line=middle, 
-        axis y line=middle, 
-        xlabel={$x$}, ylabel={$y$}, 
-        axis equal, 
-        % enlargelimits, % no need to add padding
-        axis line style={-stealth,semithick},
-        % xmin	= \xmin,
-        % xmax	= \xmax,
-        % ymin	= \ymin,
-        % ymax	= \ymax,
+        general2D,
+        width	= 4.5cm,
+		height	= 4.5cm,
         no markers,
         xtick={-1,1}, 
         ytick={-1,1},
@@ -42,7 +24,6 @@
         yticklabel style={anchor=north west},
         yticklabel shift=-4pt,
         minor tick num=5,
-        axis line style={-stealth,semithick},
         ]
     \draw[very thick, black!50] (-1,-1) rectangle (1,1);
     
@@ -72,10 +53,6 @@
 
     \end{axis}
 
-    
-
-    
-    
 \end{tikzpicture}
 
 \end{document}

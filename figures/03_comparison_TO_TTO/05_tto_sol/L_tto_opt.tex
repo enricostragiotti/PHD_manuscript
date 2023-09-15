@@ -6,29 +6,34 @@
 
 \begin{document}
 
-\begin{tikzpicture}[
-        force/.style={draw=accent_r_1,-stealth,very thick},
-        point/.style={circle,fill=white,draw,inner sep=0pt,minimum size=4pt },
-    ]
+\begin{tikzpicture}
+    \dscaling{2}{.7};
+
+    \node[inner sep=0pt] (figA) at (2,2) {\includegraphics[width=4.05cm, height=4.07cm]{top_tto.pdf}};
+
+	\fill[pattern=north east lines] (-0.3,4.3) -- (-0.3,4) -- (2.3,4) -- (2.3,4.3);
+
+    \point{1}{2}{2};
+    \point{2}{0}{1.75};
+    \point{3}{0.125}{1.25};
+    \point{4}{0.25}{1};
+    \point{5}{0.615}{0.5};
+    \point{6}{0}{4};
+    \point{7}{2}{4};
+    \point{8}{0.5}{0.625};
+    \point{9}{1}{0.25};
+    \point{10}{1.25}{0.125};
+    \point{11}{1.75}{0};
     
-    \tikzstyle{every node}=[font=\footnotesize]
-    %\draw[ help lines , step =.2] ( 0 , 0) grid (6, 3) ;
-    \node[inner sep=0pt] (min1) at (3,3) {\includegraphics[width=6.08cm, height=6.1cm]{top_tto.pdf}};
-
-	\fill[pattern=north east lines] (-0.3,6.3) -- (-0.3,6) -- (3.3,6) -- (3.3,6.3);
-
-    \point{1}{3}{3};
-    \point{2}{0}{2.5};
-    \point{3}{0.5}{1.5};
-    \point{4}{6}{3};
-    \point{5}{6}{2.5};
-    \point{6}{0}{6};
-    \point{7}{3}{6};
-    \point{8}{1.5}{0.5};
-    \point{9}{2.5}{0};
-    \point{10}{3.5}{0};
-    \point{11}{4.5}{0.5};
-    \point{12}{5.5}{1.5};
+    \point{12}{2.25}{0};
+    \point{13}{2.75}{0.125};
+    \point{14}{3}{0.25};
+    \point{15}{3.375}{0.5};
+    \point{16}{3.5}{0.625};
+    \point{17}{3.75}{1};
+    \point{18}{3.875}{1.25};
+    \point{19}{4}{1.75};
+    \point{20}{4}{2};
     
     \dhinge{1}{1}
     \dhinge{1}{2}
@@ -42,8 +47,23 @@
     \dhinge{1}{10}
     \dhinge{1}{11}
     \dhinge{1}{12}
+    \dhinge{1}{13}
+    \dhinge{1}{14}
+    \dhinge{1}{15}
+    \dhinge{1}{16}
+    \dhinge{1}{17}
+    \dhinge{1}{18}
+    \dhinge{1}{19}
+    \dhinge{1}{20}
     
-    \draw[force] (6,4) -- (6,3.2) node[right] {\footnotesize$f$};
+    \draw[force] (4,2.7) -- (4,2.2) node[right] {\scriptsize $f$};
+
+    % Legend[below= 0.2cm of figA, outer sep=0]
+    \matrix [draw= none, column sep=0.3cm, below= 0.2cm of figA, outer sep=0] {
+        \node [shape=rectangle,draw,fill=accent_r_1,label=right:\footnotesize$q>0$] {}; & 
+        \node [shape=rectangle,draw,fill=accent_b_1,label=right:\footnotesize$q<0$] {}; \\
+        };
+
 
 \end{tikzpicture}
 

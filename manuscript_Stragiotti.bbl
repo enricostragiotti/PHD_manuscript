@@ -54,8 +54,8 @@
       \strng{authorbibnamehash}{299f30aa7c3f4b47ec8bbbc9ba700864}
       \strng{authornamehash}{299f30aa7c3f4b47ec8bbbc9ba700864}
       \strng{authorfullhash}{c6a32d38ed1b00a934977cd0a4f8c680}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{booktitle}{{AeroBest} 2021 {International} {Conference} on {Multidisciplinary} {Design} {Optimization} of {Aerospace} {Systems}. {Book} of proceedings}
@@ -107,8 +107,8 @@
       \strng{authorbibnamehash}{cfb42fb5cc62cb831bec503f75cd4c6a}
       \strng{authornamehash}{cfb42fb5cc62cb831bec503f75cd4c6a}
       \strng{authorfullhash}{cfb42fb5cc62cb831bec503f75cd4c6a}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{J. Mécanique}
@@ -136,8 +136,8 @@
       \strng{authorbibnamehash}{67486fcf525af448814c4c33547119d4}
       \strng{authornamehash}{67486fcf525af448814c4c33547119d4}
       \strng{authorfullhash}{67486fcf525af448814c4c33547119d4}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{College of Aeronautics Report Aero 175}
@@ -175,8 +175,8 @@
       \strng{authorbibnamehash}{2582d45fcb57e3014533a29b290a9394}
       \strng{authornamehash}{2582d45fcb57e3014533a29b290a9394}
       \strng{authorfullhash}{2582d45fcb57e3014533a29b290a9394}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{isbn}{978-0-19-856110-1}
@@ -777,8 +777,8 @@
       \strng{authornamehash}{d76f1c09e8d8d06e1b7c3c254efeae1a}
       \strng{authorfullhash}{d76f1c09e8d8d06e1b7c3c254efeae1a}
       \field{extraname}{2}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Design of {Material} {Structures} using {Topology} {Optimization}}
@@ -806,8 +806,8 @@
       \strng{authornamehash}{d76f1c09e8d8d06e1b7c3c254efeae1a}
       \strng{authorfullhash}{d76f1c09e8d8d06e1b7c3c254efeae1a}
       \field{extraname}{3}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0890-5452}
@@ -851,8 +851,8 @@
       \strng{authornamehash}{d76f1c09e8d8d06e1b7c3c254efeae1a}
       \strng{authorfullhash}{d76f1c09e8d8d06e1b7c3c254efeae1a}
       \field{extraname}{4}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Structural and Multidisciplinary Optimization}
@@ -1036,7 +1036,10 @@
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
+      \field{abstract}{We introduce an extension of current technologies for topology optimization of continuum structures which allows for treating local stress criteria. We first consider relevant stress criteria for porous composite materials, initially by studying the stress states of the so-called rank 2 layered materials. Then, on the basis of the theoretical study of the rank 2 microstructures, we propose an empirical model that extends the power penalized stiffness model (also called SIMP for Solid Isotropic Microstructure with Penalization for inter-mediate densities). In a second part, solution aspects of topology problems are considered. To deal with the so-called ‘singularity’ phenomenon of stress constraints in topology design, an ϵ-constraint relaxation of the stress constraints is used. We describe the mathematical programming approach that is used to solve the numerical optimization problems, and show results for a number of example applications. © 1998 John Wiley \& Sons, Ltd.}
+      \field{issn}{1097-0207}
       \field{journaltitle}{International Journal for Numerical Methods in Engineering}
+      \field{note}{\_eprint: https://onlinelibrary.wiley.com/doi/pdf/10.1002/\%28SICI\%291097-0207\%2819981230\%2943\%3A8\%3C1453\%3A\%3AAID-NME480\%3E3.0.CO\%3B2-2}
       \field{number}{8}
       \field{title}{Topology optimization of continuum structures with local stress constraints}
       \field{urlday}{23}
@@ -1050,7 +1053,16 @@
       \verb{doi}
       \verb 10.1002/(SICI)1097-0207(19981230)43:8<1453::AID-NME480>3.0.CO;2-2
       \endverb
-      \keyw{continua,stress constraints,topology optimization}
+      \verb{file}
+      \verb Full Text PDF:D\:\\estragio\\Zotero\\storage\\WR64FMTM\\Duysinx and Bendsøe - 1998 - Topology optimization of continuum structures with.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1002/%28SICI%291097-0207%2819981230%2943%3A8%3C1453%3A%3AAID-NME480%3E3.0.CO%3B2-2
+      \endverb
+      \verb{url}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1002/%28SICI%291097-0207%2819981230%2943%3A8%3C1453%3A%3AAID-NME480%3E3.0.CO%3B2-2
+      \endverb
+      \keyw{topology optimization,stress constraints,continua}
     \endentry
     \entry{le_stress-based_2010}{article}{}
       \name{author}{5}{}{%
@@ -1093,6 +1105,8 @@
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
+      \field{abstract}{We propose an effective algorithm to resolve the stress-constrained topology optimization problem. Our procedure combines a density ﬁlter for length scale control, the solid isotropic material with penalization (SIMP) to generate black-and-white designs, a SIMP-motivated stress deﬁnition to resolve the stress singularity phenomenon, and a global/regional stress measure combined with an adaptive normalization scheme to control the local stress level.}
+      \field{issn}{1615-147X, 1615-1488}
       \field{journaltitle}{Structural and Multidisciplinary Optimization}
       \field{month}{4}
       \field{number}{4}
@@ -1107,6 +1121,15 @@
       \range{pages}{16}
       \verb{doi}
       \verb 10.1007/s00158-009-0440-y
+      \endverb
+      \verb{file}
+      \verb Le et al. - 2010 - Stress-based topology optimization for continua.pdf:D\:\\estragio\\Zotero\\storage\\HK6G4IST\\Le et al. - 2010 - Stress-based topology optimization for continua.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://link.springer.com/10.1007/s00158-009-0440-y
+      \endverb
+      \verb{url}
+      \verb http://link.springer.com/10.1007/s00158-009-0440-y
       \endverb
     \endentry
     \entry{verbart_unified_2017}{article}{}
@@ -1140,6 +1163,8 @@
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
+      \field{abstract}{In this paper, we propose a unified aggregation and relaxation approach for topology optimization with stress constraints. Following this approach, we first reformulate the original optimization problem with a design-dependent set of constraints into an equivalent optimization problem with a fixed design-independent set of constraints. The next step is to perform constraint aggregation over the reformulated local constraints using a lower bound aggregation function. We demonstrate that this approach concurrently aggregates the constraints and relaxes the feasible domain, thereby making singular optima accessible. The main advantage is that no separate constraint relaxation techniques are necessary, which reduces the parameter dependence of the problem. Furthermore, there is a clear relationship between the original feasible domain and the perturbed feasible domain via this aggregation parameter.}
+      \field{issn}{1615-1488}
       \field{journaltitle}{Structural and Multidisciplinary Optimization}
       \field{month}{2}
       \field{number}{2}
@@ -1154,6 +1179,15 @@
       \range{pages}{17}
       \verb{doi}
       \verb 10.1007/s00158-016-1524-0
+      \endverb
+      \verb{file}
+      \verb Submitted Version:D\:\\estragio\\Zotero\\storage\\AQPB9XNT\\Verbart et al. - 2017 - A unified aggregation and relaxation approach for .pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s00158-016-1524-0
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s00158-016-1524-0
       \endverb
     \endentry
     \entry{holmberg_stress_2013}{article}{}
@@ -1266,7 +1300,7 @@
       \verb{url}
       \verb https://www.sciencedirect.com/science/article/pii/S0045782518305231
       \endverb
-      \keyw{Manufacturing uncertainties,Robust design,Stress constraints,Topology optimization}
+      \keyw{Topology optimization,Stress constraints,Manufacturing uncertainties,Robust design}
     \endentry
     \entry{rozvany_design-dependent_2001}{article}{}
       \name{author}{1}{}{%
@@ -1932,6 +1966,421 @@
       \endverb
       \keyw{Truss structure,Layout optimization,K-means clustering,Member-type constraints}
     \endentry
+    \entry{parkes_joints_1975}{article}{}
+      \name{author}{1}{}{%
+        {{hash=ae75b1273e2b72d1d88ba56eea634690}{%
+           family={Parkes},
+           familyi={P\bibinitperiod},
+           given={E.W.},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{ae75b1273e2b72d1d88ba56eea634690}
+      \strng{fullhash}{ae75b1273e2b72d1d88ba56eea634690}
+      \strng{bibnamehash}{ae75b1273e2b72d1d88ba56eea634690}
+      \strng{authorbibnamehash}{ae75b1273e2b72d1d88ba56eea634690}
+      \strng{authornamehash}{ae75b1273e2b72d1d88ba56eea634690}
+      \strng{authorfullhash}{ae75b1273e2b72d1d88ba56eea634690}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Solids and Structures}
+      \field{month}{9}
+      \field{number}{9}
+      \field{title}{Joints in optimum frameworks}
+      \field{urlday}{24}
+      \field{urlmonth}{6}
+      \field{urlyear}{2021}
+      \field{volume}{11}
+      \field{year}{1975}
+      \field{urldateera}{ce}
+      \field{pages}{1017\bibrangedash 1022}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1016/0020-7683(75)90044-X
+      \endverb
+    \endentry
+    \entry{svanberg_method_1987}{article}{}
+      \name{author}{1}{}{%
+        {{hash=4c3f01f4598088ac379577d4d80943b7}{%
+           family={Svanberg},
+           familyi={S\bibinitperiod},
+           given={Krister},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{4c3f01f4598088ac379577d4d80943b7}
+      \strng{fullhash}{4c3f01f4598088ac379577d4d80943b7}
+      \strng{bibnamehash}{4c3f01f4598088ac379577d4d80943b7}
+      \strng{authorbibnamehash}{4c3f01f4598088ac379577d4d80943b7}
+      \strng{authornamehash}{4c3f01f4598088ac379577d4d80943b7}
+      \strng{authorfullhash}{4c3f01f4598088ac379577d4d80943b7}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal for Numerical Methods in Engineering}
+      \field{number}{2}
+      \field{title}{The method of moving asymptotes—a new method for structural optimization}
+      \field{urlday}{13}
+      \field{urlmonth}{1}
+      \field{urlyear}{2021}
+      \field{volume}{24}
+      \field{year}{1987}
+      \field{urldateera}{ce}
+      \field{pages}{359\bibrangedash 373}
+      \range{pages}{15}
+      \verb{doi}
+      \verb https://doi.org/10.1002/nme.1620240207
+      \endverb
+    \endentry
+    \entry{NLopt_2007}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=f271cef1e5ae0aff0d07deccf21fd368}{%
+           family={Johnson},
+           familyi={J\bibinitperiod},
+           given={Steven\bibnamedelima G.},
+           giveni={S\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \strng{namehash}{f271cef1e5ae0aff0d07deccf21fd368}
+      \strng{fullhash}{f271cef1e5ae0aff0d07deccf21fd368}
+      \strng{bibnamehash}{f271cef1e5ae0aff0d07deccf21fd368}
+      \strng{authorbibnamehash}{f271cef1e5ae0aff0d07deccf21fd368}
+      \strng{authornamehash}{f271cef1e5ae0aff0d07deccf21fd368}
+      \strng{authorfullhash}{f271cef1e5ae0aff0d07deccf21fd368}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://github.com/stevengj/nlopt}}
+      \field{title}{The {NLopt} nonlinear-optimization package}
+      \field{year}{2007}
+    \endentry
+    \entry{diamond_cvxpy_2016}{misc}{}
+      \name{author}{2}{}{%
+        {{hash=d50bdcda78beb231a5057a4372dac2fd}{%
+           family={Diamond},
+           familyi={D\bibinitperiod},
+           given={Steven},
+           giveni={S\bibinitperiod}}}%
+        {{hash=ec94d94cc487dd71939a90cbeaaf47d0}{%
+           family={Boyd},
+           familyi={B\bibinitperiod},
+           given={Stephen},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{7cce040882870150496852f2140da7fb}
+      \strng{fullhash}{7cce040882870150496852f2140da7fb}
+      \strng{bibnamehash}{7cce040882870150496852f2140da7fb}
+      \strng{authorbibnamehash}{7cce040882870150496852f2140da7fb}
+      \strng{authornamehash}{7cce040882870150496852f2140da7fb}
+      \strng{authorfullhash}{7cce040882870150496852f2140da7fb}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{CVXPY}: {A} {Python}-{Embedded} {Modeling} {Language} for {Convex} {Optimization}}
+      \field{year}{2016}
+      \field{pages}{5}
+      \range{pages}{1}
+    \endentry
+    \entry{domahidi_ecos_2013}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=65509ad17c3ebe7d343fc93576249e6c}{%
+           family={Domahidi},
+           familyi={D\bibinitperiod},
+           given={Alexander},
+           giveni={A\bibinitperiod}}}%
+        {{hash=a9b44e6e637f2b45f96e1c9c60803c93}{%
+           family={Chu},
+           familyi={C\bibinitperiod},
+           given={Eric},
+           giveni={E\bibinitperiod}}}%
+        {{hash=ec94d94cc487dd71939a90cbeaaf47d0}{%
+           family={Boyd},
+           familyi={B\bibinitperiod},
+           given={Stephen},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{location}{1}{%
+        {Zurich}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{b18d5df085a5b31c591b33eaffa01215}
+      \strng{fullhash}{b18d5df085a5b31c591b33eaffa01215}
+      \strng{bibnamehash}{b18d5df085a5b31c591b33eaffa01215}
+      \strng{authorbibnamehash}{b18d5df085a5b31c591b33eaffa01215}
+      \strng{authornamehash}{b18d5df085a5b31c591b33eaffa01215}
+      \strng{authorfullhash}{b18d5df085a5b31c591b33eaffa01215}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In this paper, we describe the embedded conic solver (ECOS), an interior-point solver for second-order cone programming (SOCP) designed speciﬁcally for embedded applications. ECOS is written in low footprint, single-threaded, library-free ANSI-C and so runs on most embedded platforms. The main interior-point algorithm is a standard primal-dual Mehrotra predictor-corrector method with Nesterov-Todd scaling and self-dual embedding, with search directions found via a symmetric indeﬁnite KKT system, chosen to allow stable factorization with a ﬁxed pivoting order. The indeﬁnite system is solved using Davis’ SparseLDL package, which we modify by adding dynamic regularization and iterative reﬁnement for stability and reliability, as is done in the CVXGEN code generation system, allowing us to avoid all numerical pivoting; the elimination ordering is found entirely symbolically. This keeps the solver simple, only 750 lines of code, with virtually no variation in run time. For small problems, ECOS is faster than most existing SOCP solvers; it is still competitive for mediumsized problems up to tens of thousands of variables.}
+      \field{booktitle}{2013 {European} {Control} {Conference} ({ECC})}
+      \field{isbn}{978-3-033-03962-9}
+      \field{month}{7}
+      \field{title}{{ECOS}: {An} {SOCP} solver for embedded systems}
+      \field{urlday}{17}
+      \field{urlmonth}{1}
+      \field{urlyear}{2023}
+      \field{year}{2013}
+      \field{urldateera}{ce}
+      \field{pages}{3071\bibrangedash 3076}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.23919/ECC.2013.6669541
+      \endverb
+      \verb{file}
+      \verb Domahidi et al. - 2013 - ECOS An SOCP solver for embedded systems.pdf:D\:\\estragio\\Zotero\\storage\\L69QPGKJ\\Domahidi et al. - 2013 - ECOS An SOCP solver for embedded systems.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://ieeexplore.ieee.org/document/6669541/
+      \endverb
+      \verb{url}
+      \verb https://ieeexplore.ieee.org/document/6669541/
+      \endverb
+    \endentry
+    \entry{sigmund_non-optimality_2016}{article}{}
+      \name{author}{3}{}{%
+        {{hash=d76f1c09e8d8d06e1b7c3c254efeae1a}{%
+           family={Sigmund},
+           familyi={S\bibinitperiod},
+           given={Ole},
+           giveni={O\bibinitperiod}}}%
+        {{hash=fa5a136030c946f96655797e3220c1bb}{%
+           family={Aage},
+           familyi={A\bibinitperiod},
+           given={Niels},
+           giveni={N\bibinitperiod}}}%
+        {{hash=bde89e664977164160a3e7e4a1a9ad34}{%
+           family={Andreassen},
+           familyi={A\bibinitperiod},
+           given={Erik},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{d9640e2615b8860628d64015691fc806}
+      \strng{fullhash}{d9640e2615b8860628d64015691fc806}
+      \strng{bibnamehash}{d9640e2615b8860628d64015691fc806}
+      \strng{authorbibnamehash}{d9640e2615b8860628d64015691fc806}
+      \strng{authornamehash}{d9640e2615b8860628d64015691fc806}
+      \strng{authorfullhash}{d9640e2615b8860628d64015691fc806}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Structural and Multidisciplinary Optimization}
+      \field{month}{8}
+      \field{number}{2}
+      \field{title}{On the (non-)optimality of {Michell} structures}
+      \field{urlday}{16}
+      \field{urlmonth}{6}
+      \field{urlyear}{2021}
+      \field{volume}{54}
+      \field{year}{2016}
+      \field{urldateera}{ce}
+      \field{pages}{361\bibrangedash 373}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1007/s00158-016-1420-7
+      \endverb
+    \endentry
+    \entry{bruggi_topology_2012}{article}{}
+      \name{author}{2}{}{%
+        {{hash=a59dab04e567acdb5c9d56e5f573819f}{%
+           family={Bruggi},
+           familyi={B\bibinitperiod},
+           given={Matteo},
+           giveni={M\bibinitperiod}}}%
+        {{hash=55bbf59917324962aed0534c9e5595b5}{%
+           family={Duysinx},
+           familyi={D\bibinitperiod},
+           given={Pierre},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{7692f8ed7491b619414e8112f69b6e8b}
+      \strng{fullhash}{7692f8ed7491b619414e8112f69b6e8b}
+      \strng{bibnamehash}{7692f8ed7491b619414e8112f69b6e8b}
+      \strng{authorbibnamehash}{7692f8ed7491b619414e8112f69b6e8b}
+      \strng{authornamehash}{7692f8ed7491b619414e8112f69b6e8b}
+      \strng{authorfullhash}{7692f8ed7491b619414e8112f69b6e8b}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The paper deals with a formulation for the topology optimization of elastic structures that aims at minimizing the structural weight subject to compliance and local stress constraints. The global constraint provides the expected stiffness to the optimal design while a selected set of local enforcements require feasibility with respect to the assigned strength of material. The Drucker–Prager failure criterion is implemented to handle materials with either equal or unequal behavior in tension and compression. A suitable relaxation of the equivalent stress measure is implemented to overcome the difficulties related to the singularity problem. Numerical examples are presented to discuss the features of the achieved optimal designs along with performances of the adopted procedure. Comparisons with pure compliance–based or pure stress–based strategies are also provided to point out differences arising in the optimal design with respect to conventional approaches, depending on the assumed material behavior.}
+      \field{issn}{1615-1488}
+      \field{journaltitle}{Structural and Multidisciplinary Optimization}
+      \field{month}{9}
+      \field{number}{3}
+      \field{title}{Topology optimization for minimum weight with compliance and stress constraints}
+      \field{urlday}{15}
+      \field{urlmonth}{9}
+      \field{urlyear}{2023}
+      \field{volume}{46}
+      \field{year}{2012}
+      \field{urldateera}{ce}
+      \field{pages}{369\bibrangedash 384}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.1007/s00158-012-0759-7
+      \endverb
+      \verb{file}
+      \verb Full Text PDF:D\:\\estragio\\Zotero\\storage\\2R38SI97\\Bruggi and Duysinx - 2012 - Topology optimization for minimum weight with comp.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s00158-012-0759-7
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s00158-012-0759-7
+      \endverb
+      \keyw{Compliance constraint,Drucker–Prager failure criterion,Singularity problem,Stress constraints,Topology optimization}
+    \endentry
+    \entry{paris_block_2010}{article}{}
+      \name{author}{4}{}{%
+        {{hash=d5358f941b9ce3b868ad60b0b25d313f}{%
+           family={París},
+           familyi={P\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=bd604f402c50664e2d14ddc89fbc6359}{%
+           family={Navarrina},
+           familyi={N\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod}}}%
+        {{hash=e9c7d9afdc5ae7d037a0d57750df1044}{%
+           family={Colominas},
+           familyi={C\bibinitperiod},
+           given={I.},
+           giveni={I\bibinitperiod}}}%
+        {{hash=f47b7cc888194e51521c9000aa87546a}{%
+           family={Casteleiro},
+           familyi={C\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{3c10530b8e6c27884ec21425903e726a}
+      \strng{fullhash}{c47c3d885eca2002a428255daa62a4aa}
+      \strng{bibnamehash}{3c10530b8e6c27884ec21425903e726a}
+      \strng{authorbibnamehash}{3c10530b8e6c27884ec21425903e726a}
+      \strng{authornamehash}{3c10530b8e6c27884ec21425903e726a}
+      \strng{authorfullhash}{c47c3d885eca2002a428255daa62a4aa}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Structural topology optimization problems have been traditionally stated and solved by means of maximum stiffness formulations. On the other hand, some effort has been devoted to stating and solving this kind of problems by means of minimum weight formulations with stress (and/or displacement) constraints. It seems clear that the latter approach is closer to the engineering point of view, but it also leads to more complicated optimization problems, since a large number of highly non-linear (local) constraints must be taken into account to limit the maximum stress (and/or displacement) at the element level. In this paper, we explore the feasibility of defining a so-called global constraint, which basic aim is to limit the maximum stress (and/or displacement) simultaneously within all the structure by means of one single inequality. Should this global constraint perform adequately, the complexity of the underlying mathematical programming problem would be drastically reduced. However, a certain weakening of the feasibility conditions is expected to occur when a large number of local constraints are lumped into one single inequality. With the aim of mitigating this undesirable collateral effect, we group the elements into blocks. Then, the local constraints corresponding to all the elements within each block can be combined to produce a single aggregated constraint per block. Finally, we compare the performance of these three approaches (local, global and block aggregated constraints) by solving several topology optimization problems.}
+      \field{issn}{0965-9978}
+      \field{journaltitle}{Advances in Engineering Software}
+      \field{month}{3}
+      \field{number}{3}
+      \field{series}{Advances in optimum engineering design}
+      \field{title}{Block aggregation of stress constraints in topology optimization of structures}
+      \field{urlday}{15}
+      \field{urlmonth}{9}
+      \field{urlyear}{2023}
+      \field{volume}{41}
+      \field{year}{2010}
+      \field{urldateera}{ce}
+      \field{pages}{433\bibrangedash 441}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1016/j.advengsoft.2009.03.006
+      \endverb
+      \verb{file}
+      \verb ScienceDirect Full Text PDF:D\:\\estragio\\Zotero\\storage\\EYHU43NS\\París et al. - 2010 - Block aggregation of stress constraints in topolog.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0965997809000568
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0965997809000568
+      \endverb
+      \keyw{Block aggregated constraints,FEM,Global constraints,Local constraints,Minimum weight,Stress constraints,Structural topology optimization}
+    \endentry
+    \entry{norato_maximum-rectifier-function_2022}{article}{}
+      \name{author}{4}{}{%
+        {{hash=1707fd6c8a20694afeda449ef30c7b5f}{%
+           family={Norato},
+           familyi={N\bibinitperiod},
+           given={Julián\bibnamedelima A.},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=cac315242fa5563f0f2cb2471f87983a}{%
+           family={Smith},
+           familyi={S\bibinitperiod},
+           given={Hollis\bibnamedelima A.},
+           giveni={H\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=ec86e4aa7ab8383da34f05060fed48a7}{%
+           family={Deaton},
+           familyi={D\bibinitperiod},
+           given={Joshua\bibnamedelima D.},
+           giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=4900e507a4a31bf76075ee3258a5b5f8}{%
+           family={Kolonay},
+           familyi={K\bibinitperiod},
+           given={Raymond\bibnamedelima M.},
+           giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{28f219a86dad6b996901d1e339f792c7}
+      \strng{fullhash}{e810072abc997706d26b00b697d90bc1}
+      \strng{bibnamehash}{28f219a86dad6b996901d1e339f792c7}
+      \strng{authorbibnamehash}{28f219a86dad6b996901d1e339f792c7}
+      \strng{authornamehash}{28f219a86dad6b996901d1e339f792c7}
+      \strng{authorfullhash}{e810072abc997706d26b00b697d90bc1}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper introduces a novel method for stress-constrained topology optimization in which the stress constraint is a differentiable approximation of the maximum element stress violation in the structure. The element stress violation is given by a differentiable rectifier function. A key feature of the proposed method is its ability to render designs that satisfy the stress limit without renormalization of the constraint, as in some existing aggregation approaches. Numerical experiments demonstrate that the proposed technique exhibits better convergence and is less sensitive to the aggregation parameter than aggregation methods that employ renormalization. The effectiveness of the proposed method is demonstrated by several examples.}
+      \field{issn}{1615-1488}
+      \field{journaltitle}{Structural and Multidisciplinary Optimization}
+      \field{month}{9}
+      \field{number}{10}
+      \field{title}{A maximum-rectifier-function approach to stress-constrained topology optimization}
+      \field{urlday}{15}
+      \field{urlmonth}{9}
+      \field{urlyear}{2023}
+      \field{volume}{65}
+      \field{year}{2022}
+      \field{urldateera}{ce}
+      \field{pages}{286}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1007/s00158-022-03357-z
+      \endverb
+      \verb{file}
+      \verb Full Text PDF:D\:\\estragio\\Zotero\\storage\\R4GWDGM9\\Norato et al. - 2022 - A maximum-rectifier-function approach to stress-co.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s00158-022-03357-z
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s00158-022-03357-z
+      \endverb
+      \keyw{Aggregation functions,Constraint scaling,Stress constraints}
+    \endentry
     \entry{lewinski_extended_1994}{article}{}
       \name{author}{3}{}{%
         {{hash=417b620beb41937e6ad39fabaaed560f}{%
@@ -1959,8 +2408,8 @@
       \strng{authorbibnamehash}{ed2c491ed02bf15f6b8a278441395d58}
       \strng{authornamehash}{ed2c491ed02bf15f6b8a278441395d58}
       \strng{authorfullhash}{ed2c491ed02bf15f6b8a278441395d58}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{abstract}{The paper deals with new applications of Michell's theory for determining the layout of least-weight trusses under a single load condition and the same permissible stress for all bars. Considering cantilever trusses with a horizontal axis of symmetry, the optimal layout was derived in a closed analytical form by A. S. L. Chan and H. S. Y. Chan for a limited length: height ratio. Solutions beyond the above ratio are investigated in this paper. The results will be extended to non-symmetric cantilever trusses in Part II of this study. In both parts, a novel method is used for deriving adjoint displacements. The results are also confirmed by comparisons with discretized solutions for trusses and perforated plates.}
@@ -1988,6 +2437,74 @@
       \endverb
       \verb{url}
       \verb https://www.sciencedirect.com/science/article/pii/0020740394900434
+      \endverb
+    \endentry
+    \entry{watts_simple_2019}{article}{}
+      \name{author}{5}{}{%
+        {{hash=71baf31625fa1536b2c32e1e2c07e97d}{%
+           family={Watts},
+           familyi={W\bibinitperiod},
+           given={Seth},
+           giveni={S\bibinitperiod}}}%
+        {{hash=f09774962ebba4d0026a48cf2109df81}{%
+           family={Arrighi},
+           familyi={A\bibinitperiod},
+           given={William},
+           giveni={W\bibinitperiod}}}%
+        {{hash=60d0e334c4a514fc59970c0ae5e62c3f}{%
+           family={Kudo},
+           familyi={K\bibinitperiod},
+           given={Jun},
+           giveni={J\bibinitperiod}}}%
+        {{hash=2dc94736fafc9292d9d5fe6bbacf2606}{%
+           family={Tortorelli},
+           familyi={T\bibinitperiod},
+           given={Daniel\bibnamedelima A.},
+           giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=4215597d2c71e616e31751f6b8ed0e31}{%
+           family={White},
+           familyi={W\bibinitperiod},
+           given={Daniel\bibnamedelima A.},
+           giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{a5e426b96d7e6c3c5ee5569f2a045ca2}
+      \strng{fullhash}{ea681b2d1cea0ead3ec69409cf164740}
+      \strng{bibnamehash}{a5e426b96d7e6c3c5ee5569f2a045ca2}
+      \strng{authorbibnamehash}{a5e426b96d7e6c3c5ee5569f2a045ca2}
+      \strng{authornamehash}{a5e426b96d7e6c3c5ee5569f2a045ca2}
+      \strng{authorfullhash}{ea681b2d1cea0ead3ec69409cf164740}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Elastic meta-materials are those whose unique properties come from their micro-architecture, rather than, e.g., from their chemistry. The introduction of such architecture, which is increasingly able to be fabricated due to advances in additive manufacturing, expands the design domain and enables improved design, from the most complex multi-physics design problems to the simple compliance design problem that is our focus. Unfortunately, concurrent design of both the micro-scale and the macroscale is computationally very expensive when the former can vary spatially, particularly in three dimensions. Instead, we provide simple, accurate surrogate models of the homogenized linear elastic response of the isotruss, the octet truss, and the ORC truss based on high-fidelity continuum finite element analyses. These surrogate models are relatively accurate over the full range of relative densities, in contrast to analytical models in the literature, which we show lose accuracy as relative density increases. The surrogate models are also simple to implement, which we demonstrate by modifying Sigmund’s 99-line code to solve a three-dimensional, multiscale compliance design problem with spatially varying relative density. We use this code to generate examples in both two and three dimensions that illustrate the advantage of elastic meta-materials over structures with a single length scale, i.e., those without micro-architectures.}
+      \field{issn}{1615-1488}
+      \field{journaltitle}{Structural and Multidisciplinary Optimization}
+      \field{month}{11}
+      \field{number}{5}
+      \field{title}{Simple, accurate surrogate models of the elastic response of three-dimensional open truss micro-architectures with applications to multiscale topology design}
+      \field{urlday}{16}
+      \field{urlmonth}{12}
+      \field{urlyear}{2020}
+      \field{volume}{60}
+      \field{year}{2019}
+      \field{urldateera}{ce}
+      \field{pages}{1887\bibrangedash 1920}
+      \range{pages}{34}
+      \verb{doi}
+      \verb 10.1007/s00158-019-02297-5
+      \endverb
+      \verb{file}
+      \verb Springer Full Text PDF:D\:\\estragio\\Zotero\\storage\\3QL6FSVV\\Watts et al. - 2019 - Simple, accurate surrogate models of the elastic r.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s00158-019-02297-5
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s00158-019-02297-5
       \endverb
     \endentry
   \enddatalist

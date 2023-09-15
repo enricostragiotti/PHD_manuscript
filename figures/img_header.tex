@@ -21,14 +21,12 @@
 \usetikzlibrary{decorations.pathreplacing,spy}
 \usetikzlibrary{arrows.meta}
 
-\tikzstyle{decision} = [diamond, aspect=1.8, text centered, fill=white, draw=black, thick]
-\tikzstyle{block} = [rectangle, draw=black, thick, fill=white, text centered, rounded corners, minimum height=2em]
 \pgfdeclarelayer{background}
 \pgfsetlayers{background, main}
-
-
-
 \pgfplotsset{compat=1.18}
+
+\tikzstyle{decision} = [diamond, aspect=1.8, text centered, fill=white, draw=black, thick]
+\tikzstyle{block} = [rectangle, draw=black, thick, fill=white, text centered, rounded corners, minimum height=2em]
 
 \pgfplotsset{
     colormap={coolwarm}{
@@ -156,10 +154,14 @@
 \definecolor{accent_r_3}{RGB}{246,167,137}
 \definecolor{accent_r_4}{RGB}{237,208,193}
 
+\definecolor{axis_gray}{RGB}{120,120,120}
+\definecolor{legend_gray}{RGB}{204,204,204}
+
 %-----------------------------
 %- CUSTOM NODES
 %-----------------------------
-\tikzstyle{lab} = [align=center, fill=white,rounded corners=2pt, inner sep=1pt, font=\footnotesize]
+\tikzstyle{point} = [circle,fill=white,draw,inner sep=0pt,minimum size=4pt]
+\tikzstyle{force} = [draw=accent_r_1,-stealth,very thick]
 %-----------------------------
 %- MACROS
 %-----------------------------
@@ -176,4 +178,121 @@
 \newcommand{\vect}[1]{\bm{#1}}
 \newcommand{\matr}[1]{\bm{#1}}
 
-\def\ie{\textit{i.e.}~}
+%-----------------------------
+%- STYLE
+%-----------------------------
+
+% plot axis styles
+\pgfplotsset{general2D/.style={ 
+    footnotesize,
+    scale only axis,
+    axis x line=middle, 
+    axis y line=middle, 
+    xlabel={$x$}, ylabel={$y$}, 
+    axis equal, 
+    axis line style={-stealth,semithick},
+    } 
+}
+
+\pgfplotsset{general3D/.style={ 
+    scale only axis, 
+    axis line style={-stealth,semithick},
+    } 
+}
+
+\pgfplotsset{curves/.style={ 
+        footnotesize,
+        scale only axis, 
+        xtick pos=left,
+        ytick pos=left,
+        axis x line*=bottom, % asterisk = no arrow
+        axis y line*=left,
+        clip=false,
+        enlarge x limits={abs=0.15cm,lower},
+        enlarge y limits={abs=0.15cm,lower},
+        axis line style={thick, axis_gray, shorten <=0.136cm},
+        every axis label/.append style ={axis_gray},
+        every tick label/.append style ={axis_gray},
+        every x tick/.style={color=axis_gray, thick},
+        every y tick/.style={color=axis_gray, thick},
+        tick align=outside,
+        xlabel near ticks,
+        ylabel near ticks,
+        legend style={draw=none, font=\scriptsize},
+        /pgf/number format/.cd,
+        1000 sep={}
+    } 
+}
+
+\pgfplotsset{curves_left/.style={ 
+        scale only axis, 
+        xtick pos=left,
+        ytick pos=left,
+        axis x line*=bottom, % asterisk = no arrow
+        axis y line*=left,
+        clip=false,
+        tick label style={font=\scriptsize},
+        every axis label/.append style ={axis_gray, font=\scriptsize},
+        every tick label/.append style ={axis_gray},
+        every x tick/.style={color=axis_gray, thick},
+        every y tick/.style={color=axis_gray, thick},
+        enlarge x limits={abs=0.15cm},
+        enlarge y limits={abs=0.15cm},
+        axis line style={axis_gray,thick, shorten <=0.136cm, shorten >= 0.136cm},
+        tick align=outside,
+        xlabel near ticks,
+        ylabel near ticks,
+        legend style={draw=none, font=\scriptsize\color{axis_gray}},
+        /pgf/number format/.cd,
+        1000 sep={}
+    } 
+}
+
+\pgfplotsset{curves_right/.style={ 
+        scale only axis, 
+        xtick pos=left,
+        ytick pos=right,
+        axis y line*=right,
+        x axis line style={draw=none},
+        x tick style={draw=none},
+        ytick pos=right,
+        axis x line*=bottom, % asterisk = no arrow
+        axis y line*=left,
+        clip=false,
+        tick label style={font=\scriptsize},
+        every axis label/.append style ={axis_gray, font=\scriptsize},
+        every tick label/.append style ={axis_gray},
+        every y tick/.style={color=axis_gray, thick},
+        enlarge x limits={abs=0.15cm},
+        enlarge y limits={abs=0.15cm},
+        axis line style={thick, shorten <=0.136cm, shorten >= 0.136cm},
+        every y tick/.style={thick},
+        tick align=outside,
+        ylabel near ticks,
+        legend style={draw=none, font=\scriptsize},
+        xticklabels={,,},
+        /pgf/number format/.cd,
+        1000 sep={}
+    } 
+}
+
+\pgfplotsset{line_plot/.style={ 
+            thick} 
+}
+
+\pgfplotsset{scatter_plot_smooth/.style={ 
+    thick,
+    mark size=1.5, 
+    mark=*,
+    mark options={solid}, 
+    smooth }
+}
+
+\pgfplotsset{scatter_plot/.style={ 
+    thick,
+    mark size=1.5, 
+    mark=*,
+    mark options={solid}, 
+    only marks} 
+}
+

@@ -1,0 +1,79 @@
+\documentclass[12pt, varwidth=10cm]{standalone}
+
+\input{../../img_header}
+
+
+
+\begin{document}
+
+\begin{tikzpicture}
+    \dscaling{2}{.7};
+
+    \node[inner sep=0pt] (figA) at (2,2) {\includegraphics[width=4.05cm, height=4.07cm]{top_tto_str.pdf}};
+
+	\fill[pattern=north east lines] (-0.3,4.3) -- (-0.3,4) -- (2.3,4) -- (2.3,4.3);
+
+    \point{1}{2}{2};
+    \point{2}{0}{1.75};
+    \point{3}{0.125}{1.25};
+    \point{4}{0.25}{1};
+    \point{5}{0.615}{0.5};
+    \point{6}{0}{4};
+    \point{7}{2}{4};
+    \point{8}{0.5}{0.625};
+    \point{9}{1}{0.25};
+    \point{10}{1.25}{0.125};
+    \point{11}{1.75}{0};
+    
+    \point{12}{2.25}{0};
+    \point{13}{2.75}{0.125};
+    \point{14}{3}{0.25};
+    \point{15}{3.375}{0.5};
+    \point{16}{3.5}{0.625};
+    \point{17}{3.75}{1};
+    \point{18}{3.875}{1.25};
+    \point{19}{4}{1.75};
+    \point{20}{4}{2};
+    
+    \dhinge{1}{1}
+    \dhinge{1}{2}
+    \dhinge{1}{3}
+    \dhinge{1}{4}
+    \dhinge{1}{5}
+    \dhinge{1}{6}
+    \dhinge{1}{7}
+    \dhinge{1}{8}
+    \dhinge{1}{9}
+    \dhinge{1}{10}
+    \dhinge{1}{11}
+    \dhinge{1}{12}
+    \dhinge{1}{13}
+    \dhinge{1}{14}
+    \dhinge{1}{15}
+    \dhinge{1}{16}
+    \dhinge{1}{17}
+    \dhinge{1}{18}
+    \dhinge{1}{19}
+    \dhinge{1}{20}
+    
+    \draw[force] (4,2.7) -- (4,2.2) node[right] {\scriptsize $f$};
+
+    % Colorbar
+
+    \node[below= 0.2cm of figA, outer sep=0] (colormap){\pgfplotscolorbardrawstandalone[ 
+        colormap name={coolwarm_r},
+        colorbar horizontal,
+        point meta min=0,
+        point meta max=30,
+        colorbar style={
+            width=3.5cm,
+            height=0.3cm,
+            xtick={0,30},
+            xticklabels={\footnotesize 0, \footnotesize $\sigma_\text{L}$}}]
+        
+    };
+
+
+\end{tikzpicture}
+
+\end{document}

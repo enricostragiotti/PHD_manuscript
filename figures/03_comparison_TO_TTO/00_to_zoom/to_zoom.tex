@@ -1,0 +1,23 @@
+\documentclass[12pt, varwidth=15cm]{standalone}
+
+\input{../../img_header}
+
+\usetikzlibrary{spy}
+
+\begin{document}
+
+\begin{tikzpicture}
+    \begin{scope}[spy using outlines={rectangle, color=accent_r_1, magnification=7, width=2cm, height=1cm, connect spies}]
+
+    \spy[accent_r_1] on (-2,-1.32) in node (a)  at (-1.25cm,-3.5cm);
+    \spy[accent_r_1] on (0.35,-2) in node (b)  at (+1.25cm,-3.5cm);
+    \spy[accent_r_1] on (0,0.03) in node (c)  at (+1.25cm,1.5cm);
+
+    \node[outer sep=0, inner sep=0] (figA) at (0,0){
+        \includegraphics[width=5cm]{fig0_10.pdf}
+    };
+
+    \end{scope}
+    
+\end{tikzpicture}
+\end{document}

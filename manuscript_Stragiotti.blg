@@ -1,19 +1,15 @@
 [0] Config.pm:307> INFO - This is Biber 2.19
 [0] Config.pm:310> INFO - Logfile is 'manuscript_Stragiotti.blg'
-[194] biber-MSWIN64:340> INFO - === 
-[250] Biber.pm:419> INFO - Reading 'manuscript_Stragiotti.bcf'
-[504] Biber.pm:979> INFO - Found 42 citekeys in bib section 0
-[521] Biber.pm:4419> INFO - Processing section 0
-[534] Biber.pm:4610> INFO - Looking for bibtex file 'biblio.bib' for section 0
-[615] bibtex.pm:1713> INFO - LaTeX decoding ...
-[877] bibtex.pm:1519> INFO - Found BibTeX data source 'biblio.bib'
-[1166] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[1166] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[1167] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
-[1167] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
-[1201] bbl.pm:660> INFO - Writing 'manuscript_Stragiotti.bbl' with encoding 'UTF-8'
-[1226] bbl.pm:763> INFO - Output to manuscript_Stragiotti.bbl
-[1227] Biber.pm:131> WARN - Duplicate entry key: 'hashin_variational_1963' in file 'biblio.bib', skipping ...
-[1227] Biber.pm:131> WARN - Duplicate entry key: 'maxwell_l_1864' in file 'biblio.bib', skipping ...
-[1227] Biber.pm:131> WARN - Duplicate entry key: 'michell_limits_1904' in file 'biblio.bib', skipping ...
-[1227] Biber.pm:133> INFO - WARNINGS: 3
+[166] biber-MSWIN64:340> INFO - === 
+[222] Biber.pm:419> INFO - Reading 'manuscript_Stragiotti.bcf'
+[529] Biber.pm:979> INFO - Found 52 citekeys in bib section 0
+[547] Biber.pm:4419> INFO - Processing section 0
+[560] Biber.pm:4610> INFO - Looking for bibtex file 'biblio.bib' for section 0
+[642] bibtex.pm:1713> INFO - LaTeX decoding ...
+[936] bibtex.pm:1519> INFO - Found BibTeX data source 'biblio.bib'
+[1303] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1303] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1303] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[1303] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[1346] bbl.pm:660> INFO - Writing 'manuscript_Stragiotti.bbl' with encoding 'UTF-8'
+[1380] bbl.pm:763> INFO - Output to manuscript_Stragiotti.bbl

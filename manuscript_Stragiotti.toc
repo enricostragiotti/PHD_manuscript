@@ -27,11 +27,13 @@
 \contentsline {section}{\numberline {1.2}Comparison between continuous and truss discretization}{13}{section.1.2}%
 \contentsline {mtocsection}{\numberline {1.2}Comparison between continuous and truss discretization}{13}{section.1.2}%
 \contentsline {subsection}{\numberline {1.2.1}Definition of a common test case}{14}{subsection.1.2.1}%
-\contentsline {subsection}{\numberline {1.2.2}Numerical application}{14}{subsection.1.2.2}%
-\contentsline {subsection}{\numberline {1.2.3}Discussion}{15}{subsection.1.2.3}%
-\contentsline {paragraph}{\nonumberline Compliance-volume graph}{15}{paragraph*.40}%
-\contentsline {paragraph}{\nonumberline Compliance-stress graph}{15}{paragraph*.42}%
-\contentsline {paragraph}{\nonumberline Stress-volume graph}{15}{paragraph*.44}%
-\contentsline {section}{\numberline {1.3}Conclusion}{16}{section.1.3}%
-\contentsline {mtocsection}{\numberline {1.3}Conclusion}{16}{section.1.3}%
-\contentsline {chapter}{\nonumberline Bibliography}{17}{chapter*.45}%
+\contentsline {subsection}{\numberline {1.2.2}Numerical application}{15}{subsection.1.2.2}%
+\contentsline {paragraph}{\nonumberline Coninuous mesh optimization results}{15}{figure.caption.41}%
+\contentsline {paragraph}{\nonumberline Truss mesh optimization results}{18}{paragraph*.47}%
+\contentsline {subsection}{\numberline {1.2.3}Discussion}{20}{subsection.1.2.3}%
+\contentsline {paragraph}{\nonumberline Stress-compliance graph}{20}{figure.caption.54}%
+\contentsline {paragraph}{\nonumberline Stress-volume graph}{20}{figure.caption.57}%
+\contentsline {paragraph}{\nonumberline Volume-compliance graph}{20}{figure.caption.60}%
+\contentsline {section}{\numberline {1.3}Conclusion}{22}{section.1.3}%
+\contentsline {mtocsection}{\numberline {1.3}Conclusion}{22}{section.1.3}%
+\contentsline {chapter}{\nonumberline Bibliography}{23}{chapter*.62}%

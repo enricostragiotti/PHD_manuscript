@@ -556,7 +556,6 @@
   keywords  = {Boundary Value Problems, Linear Elasticity, Newton Raphson Method, Numerical Optimization, Optimization Algorithm, Poisson's Ratio, Sensitivity Analysis, Stiffness Matrices, Structural Analysis, Structural Optimization}
 }
 
-
 @article{calladine_buckminster_1978,
   title    = {Buckminster {Fuller}'s “{Tensegrity}” structures and {Clerk} {Maxwell}'s rules for the construction of stiff frames},
   volume   = {14},
@@ -572,7 +571,6 @@
   year     = {1978},
   pages    = {161--172}
 }
-
 
 @article{chan_optimum_1964,
   title    = {Optimum structural design and linear programming},
@@ -600,6 +598,7 @@
   keywords = {Homogenization, Additive manufacturing, Lattice structure topology optimization, Stress constraint},
   pages    = {334--359}
 }
+
 
 @article{cheng_relaxed_1997,
   title    = {$\varepsilon$-relaxed approach in structural topology optimization},
@@ -634,6 +633,7 @@
   pages    = {129--148}
 }
 
+
 @article{cheung_reversibly_2013,
   title     = {Reversibly {Assembled} {Cellular} {Composite} {Materials}},
   volume    = {341},
@@ -653,6 +653,7 @@
                Section: Report},
   pages     = {1219--1221}
 }
+
 
 @article{coelho_scale-size_2016,
   series   = {{CIVIL}-{COMP}},
@@ -684,7 +685,6 @@
   note     = {arXiv: 2008.11925},
   keywords = {Computer Science - Multiagent Systems, Computer Science - Robotics, J.6}
 }
-
 
 @article{cramer_elastic_2019,
   title    = {Elastic shape morphing of ultralight structures by programmable assembly},
@@ -721,7 +721,6 @@
   file       = {Full Text:D\:\\estragio\\Zotero\\storage\\XKFNV4QM\\da Silva et al. - 2021 - Local versus global stress constraint strategies i.pdf:application/pdf}
 }
 
-
 @article{da_silva_stress-constrained_2019,
   title    = {Stress-constrained topology optimization considering uniform manufacturing uncertainties},
   volume   = {344},
@@ -734,9 +733,92 @@
   author   = {da Silva, Gustavo Assis and Beck, André Teófilo and Sigmund, Ole},
   month    = feb,
   year     = {2019},
-  keywords = {Manufacturing uncertainties, Robust design, Stress constraints, Topology optimization},
+  keywords = {Topology optimization, Stress constraints, Manufacturing uncertainties, Robust design},
   pages    = {512--537},
   file     = {ScienceDirect Full Text PDF:D\:\\estragio\\Zotero\\storage\\CGEBVEZR\\da Silva et al. - 2019 - Stress-constrained topology optimization consideri.pdf:application/pdf}
+}
+
+@inproceedings{domahidi_ecos_2013,
+	address = {Zurich},
+	title = {{ECOS}: {An} {SOCP} solver for embedded systems},
+	isbn = {978-3-033-03962-9},
+	url = {https://ieeexplore.ieee.org/document/6669541/},
+	doi = {10.23919/ECC.2013.6669541},
+	abstract = {In this paper, we describe the embedded conic solver (ECOS), an interior-point solver for second-order cone programming (SOCP) designed speciﬁcally for embedded applications. ECOS is written in low footprint, single-threaded, library-free ANSI-C and so runs on most embedded platforms. The main interior-point algorithm is a standard primal-dual Mehrotra predictor-corrector method with Nesterov-Todd scaling and self-dual embedding, with search directions found via a symmetric indeﬁnite KKT system, chosen to allow stable factorization with a ﬁxed pivoting order. The indeﬁnite system is solved using Davis’ SparseLDL package, which we modify by adding dynamic regularization and iterative reﬁnement for stability and reliability, as is done in the CVXGEN code generation system, allowing us to avoid all numerical pivoting; the elimination ordering is found entirely symbolically. This keeps the solver simple, only 750 lines of code, with virtually no variation in run time. For small problems, ECOS is faster than most existing SOCP solvers; it is still competitive for mediumsized problems up to tens of thousands of variables.},
+	language = {en},
+	urldate = {2023-01-17},
+	booktitle = {2013 {European} {Control} {Conference} ({ECC})},
+	publisher = {IEEE},
+	author = {Domahidi, Alexander and Chu, Eric and Boyd, Stephen},
+	month = jul,
+	year = {2013},
+	pages = {3071--3076},
+	file = {Domahidi et al. - 2013 - ECOS An SOCP solver for embedded systems.pdf:D\:\\estragio\\Zotero\\storage\\L69QPGKJ\\Domahidi et al. - 2013 - ECOS An SOCP solver for embedded systems.pdf:application/pdf},
+}
+
+
+@article{paris_block_2010,
+	series = {Advances in optimum engineering design},
+	title = {Block aggregation of stress constraints in topology optimization of structures},
+	volume = {41},
+	issn = {0965-9978},
+	url = {https://www.sciencedirect.com/science/article/pii/S0965997809000568},
+	doi = {10.1016/j.advengsoft.2009.03.006},
+	abstract = {Structural topology optimization problems have been traditionally stated and solved by means of maximum stiffness formulations. On the other hand, some effort has been devoted to stating and solving this kind of problems by means of minimum weight formulations with stress (and/or displacement) constraints. It seems clear that the latter approach is closer to the engineering point of view, but it also leads to more complicated optimization problems, since a large number of highly non-linear (local) constraints must be taken into account to limit the maximum stress (and/or displacement) at the element level. In this paper, we explore the feasibility of defining a so-called global constraint, which basic aim is to limit the maximum stress (and/or displacement) simultaneously within all the structure by means of one single inequality. Should this global constraint perform adequately, the complexity of the underlying mathematical programming problem would be drastically reduced. However, a certain weakening of the feasibility conditions is expected to occur when a large number of local constraints are lumped into one single inequality. With the aim of mitigating this undesirable collateral effect, we group the elements into blocks. Then, the local constraints corresponding to all the elements within each block can be combined to produce a single aggregated constraint per block. Finally, we compare the performance of these three approaches (local, global and block aggregated constraints) by solving several topology optimization problems.},
+	number = {3},
+	urldate = {2023-09-15},
+	journal = {Advances in Engineering Software},
+	author = {París, J. and Navarrina, F. and Colominas, I. and Casteleiro, M.},
+	month = mar,
+	year = {2010},
+	keywords = {Block aggregated constraints, FEM, Global constraints, Local constraints, Minimum weight, Stress constraints, Structural topology optimization},
+	pages = {433--441},
+	file = {ScienceDirect Full Text PDF:D\:\\estragio\\Zotero\\storage\\EYHU43NS\\París et al. - 2010 - Block aggregation of stress constraints in topolog.pdf:application/pdf},
+}
+
+@article{norato_maximum-rectifier-function_2022,
+	title = {A maximum-rectifier-function approach to stress-constrained topology optimization},
+	volume = {65},
+	issn = {1615-1488},
+	url = {https://doi.org/10.1007/s00158-022-03357-z},
+	doi = {10.1007/s00158-022-03357-z},
+	abstract = {This paper introduces a novel method for stress-constrained topology optimization in which the stress constraint is a differentiable approximation of the maximum element stress violation in the structure. The element stress violation is given by a differentiable rectifier function. A key feature of the proposed method is its ability to render designs that satisfy the stress limit without renormalization of the constraint, as in some existing aggregation approaches. Numerical experiments demonstrate that the proposed technique exhibits better convergence and is less sensitive to the aggregation parameter than aggregation methods that employ renormalization. The effectiveness of the proposed method is demonstrated by several examples.},
+	language = {en},
+	number = {10},
+	urldate = {2023-09-15},
+	journal = {Structural and Multidisciplinary Optimization},
+	author = {Norato, Julián A. and Smith, Hollis A. and Deaton, Joshua D. and Kolonay, Raymond M.},
+	month = sep,
+	year = {2022},
+	keywords = {Aggregation functions, Constraint scaling, Stress constraints},
+	pages = {286},
+	file = {Full Text PDF:D\:\\estragio\\Zotero\\storage\\R4GWDGM9\\Norato et al. - 2022 - A maximum-rectifier-function approach to stress-co.pdf:application/pdf},
+}
+
+@article{bruggi_topology_2012,
+	title = {Topology optimization for minimum weight with compliance and stress constraints},
+	volume = {46},
+	issn = {1615-1488},
+	url = {https://doi.org/10.1007/s00158-012-0759-7},
+	doi = {10.1007/s00158-012-0759-7},
+	abstract = {The paper deals with a formulation for the topology optimization of elastic structures that aims at minimizing the structural weight subject to compliance and local stress constraints. The global constraint provides the expected stiffness to the optimal design while a selected set of local enforcements require feasibility with respect to the assigned strength of material. The Drucker–Prager failure criterion is implemented to handle materials with either equal or unequal behavior in tension and compression. A suitable relaxation of the equivalent stress measure is implemented to overcome the difficulties related to the singularity problem. Numerical examples are presented to discuss the features of the achieved optimal designs along with performances of the adopted procedure. Comparisons with pure compliance–based or pure stress–based strategies are also provided to point out differences arising in the optimal design with respect to conventional approaches, depending on the assumed material behavior.},
+	language = {en},
+	number = {3},
+	urldate = {2023-09-15},
+	journal = {Structural and Multidisciplinary Optimization},
+	author = {Bruggi, Matteo and Duysinx, Pierre},
+	month = sep,
+	year = {2012},
+	keywords = {Compliance constraint, Drucker–Prager failure criterion, Singularity problem, Stress constraints, Topology optimization},
+	pages = {369--384},
+	file = {Full Text PDF:D\:\\estragio\\Zotero\\storage\\2R38SI97\\Bruggi and Duysinx - 2012 - Topology optimization for minimum weight with comp.pdf:application/pdf},
+}
+
+@misc{NLopt_2007,
+  title = {The {NLopt} nonlinear-optimization package},
+  author = {Steven G. Johnson},
+  year = {2007},
+  howpublished = {\url{https://github.com/stevengj/nlopt}}
 }
 
 @article{descamps_lower-bound_2013,
@@ -775,7 +857,6 @@
   pages    = {1747--1769}
 }
 
-
 @article{deshpande_foam_2001,
   title      = {Foam topology: bending versus stretching dominated architectures},
   volume     = {49},
@@ -791,6 +872,7 @@
   keywords   = {Foams, Mechanical properties, Structure},
   pages      = {1035--1040}
 }
+
 
 @misc{diamond_cvxpy_2016,
   title    = {{CVXPY}: {A} {Python}-{Embedded} {Modeling} {Language} for {Convex} {Optimization}},
@@ -848,21 +930,28 @@
   year     = {1964}
 }
 
-
 @article{duysinx_topology_1998,
   title     = {Topology optimization of continuum structures with local stress constraints},
   volume    = {43},
   copyright = {Copyright © 1998 John Wiley \& Sons, Ltd.},
+  issn      = {1097-0207},
+  url       = {https://onlinelibrary.wiley.com/doi/abs/10.1002/%28SICI%291097-0207%2819981230%2943%3A8%3C1453%3A%3AAID-NME480%3E3.0.CO%3B2-2},
   doi       = {10.1002/(SICI)1097-0207(19981230)43:8<1453::AID-NME480>3.0.CO;2-2},
+  abstract  = {We introduce an extension of current technologies for topology optimization of continuum structures which allows for treating local stress criteria. We first consider relevant stress criteria for porous composite materials, initially by studying the stress states of the so-called rank 2 layered materials. Then, on the basis of the theoretical study of the rank 2 microstructures, we propose an empirical model that extends the power penalized stiffness model (also called SIMP for Solid Isotropic Microstructure with Penalization for inter-mediate densities). In a second part, solution aspects of topology problems are considered. To deal with the so-called ‘singularity’ phenomenon of stress constraints in topology design, an ϵ-constraint relaxation of the stress constraints is used. We describe the mathematical programming approach that is used to solve the numerical optimization problems, and show results for a number of example applications. © 1998 John Wiley \& Sons, Ltd.},
   language  = {en},
   number    = {8},
   urldate   = {2021-06-23},
   journal   = {International Journal for Numerical Methods in Engineering},
   author    = {Duysinx, P. and Bendsøe, M. P.},
   year      = {1998},
-  keywords  = {continua, stress constraints, topology optimization},
-  pages     = {1453--1478}
+  note      = {\_eprint: https://onlinelibrary.wiley.com/doi/pdf/10.1002/\%28SICI\%291097-0207\%2819981230\%2943\%3A8\%3C1453\%3A\%3AAID-NME480\%3E3.0.CO\%3B2-2},
+  keywords  = {topology optimization, stress constraints, continua},
+  pages     = {1453--1478},
+  file      = {Full Text PDF:D\:\\estragio\\Zotero\\storage\\WR64FMTM\\Duysinx and Bendsøe - 1998 - Topology optimization of continuum structures with.pdf:application/pdf}
 }
+
+
+
 
 @article{ejlebjerg_jensen_anisotropic_2016,
   title    = {Anisotropic {Mesh} {Adaptation} and {Topology} {Optimization} in {Three} {Dimensions}},
@@ -876,6 +965,7 @@
   month    = jun,
   year     = {2016}
 }
+
 
 @article{evans_concepts_2010,
   title     = {Concepts for {Enhanced} {Energy} {Absorption} {Using} {Hollow} {Micro}-{Lattices}},
@@ -903,8 +993,6 @@
   year       = {2019}
 }
 
-
-
 @article{ferrari_new_2020,
   title    = {A new generation 99 line {Matlab} code for compliance topology optimization and its extension to {3D}},
   volume   = {62},
@@ -924,8 +1012,6 @@
   file     = {Full Text PDF:D\:\\estragio\\Zotero\\storage\\V33SC4NV\\Ferrari and Sigmund - 2020 - A new generation 99 line Matlab code for complianc.pdf:application/pdf}
 }
 
-
-
 @article{fleck_micro-architectured_2010,
   title      = {Micro-architectured materials: past, present and future},
   volume     = {466},
@@ -941,6 +1027,7 @@
   note       = {Publisher: Royal Society},
   pages      = {2495--2516}
 }
+
 
 @article{gershenfeld_macrofabrication_2015,
   title      = {Macrofabrication with {Digital} {Materials}: {Robotic} {Assembly}},
@@ -958,6 +1045,8 @@
   keywords   = {‘Geoprinting’, carbon-fibre loops, cuboct digital composite structure, digital composites project, finite element analysis (FEA), ganged resin transfer moulding (GRTM), Hurricane Katrina, James Clerk Maxwell, MIT's Center for Bits and Atoms, superstorm Sandy},
   pages      = {122--127}
 }
+
+
 
 @article{gilbert_layout_2003,
   title    = {Layout optimization of large‐scale pin‐jointed frames},
@@ -1027,6 +1116,7 @@
 }
 
 
+
 @article{hashin_variational_1963,
   title    = {A variational approach to the theory of the elastic behaviour of multiphase materials},
   volume   = {11},
@@ -1044,23 +1134,6 @@
 }
 
 
-@article{hashin_variational_1963,
-  title    = {A variational approach to the theory of the elastic behaviour of multiphase materials},
-  volume   = {11},
-  issn     = {00225096},
-  url      = {https://linkinghub.elsevier.com/retrieve/pii/0022509663900607},
-  doi      = {10.1016/0022-5096(63)90060-7},
-  language = {en},
-  number   = {2},
-  urldate  = {2020-10-06},
-  journal  = {Journal of the Mechanics and Physics of Solids},
-  author   = {Hashin, Z. and Shtrikman, S.},
-  month    = mar,
-  year     = {1963},
-  pages    = {127--140},
-  file     = {Hashin et Shtrikman - 1963 - A variational approach to the theory of the elasti.pdf:D\:\\estragio\\Zotero\\storage\\UVJQMVTV\\Hashin et Shtrikman - 1963 - A variational approach to the theory of the elasti.pdf:application/pdf}
-}
-
 
 @article{he_python_2019,
   title    = {A {Python} script for adaptive layout optimization of trusses},
@@ -1075,6 +1148,7 @@
   year     = {2019},
   pages    = {835--847}
 }
+
 
 @article{he_rationalization_2015,
   title    = {Rationalization of trusses generated via layout optimization},
@@ -1104,6 +1178,7 @@
   year      = {1973},
   note      = {Google-Books-ID: cJhpAAAAMAAJ}
 }
+
 
 @article{holmberg_stress_2013,
   title    = {Stress constrained topology optimization},
@@ -1172,8 +1247,6 @@
   year      = {2017}
 }
 
-
-
 @article{jenett_digital_2017,
   title    = {Digital {Morphing} {Wing}: {Active} {Wing} {Shaping} {Concept} {Using} {Composite} {Lattice}-{Based} {Cellular} {Structures}},
   volume   = {4},
@@ -1203,7 +1276,6 @@
   year    = {2009}
 }
 
-
 @article{kicher_optimum_1966,
   title    = {Optimum {Design} — {Minimum} {Weight} {Versus} {Fully} {Stressed}},
   url      = {https://www.semanticscholar.org/paper/Optimum-Design-%E2%80%94-Minimum-Weight-Versus-Fully-Kicher/adf2684f75afa97b56d690a4d850012f70ca3553},
@@ -1232,7 +1304,6 @@
 }
 
 
-
 @article{kreisselmeier_systematic_1979,
   series   = {{IFAC} {Symposium} on computer {Aided} {Design} of {Control} {Systems}, {Zurich}, {Switzerland}, 29-31 {August}},
   title    = {Systematic {Control} {Design} by {Optimizing} a {Vector} {Performance} {Index}},
@@ -1249,10 +1320,14 @@
   pages    = {113--117}
 }
 
+
 @article{le_stress-based_2010,
   title    = {Stress-based topology optimization for continua},
   volume   = {41},
+  issn     = {1615-147X, 1615-1488},
+  url      = {http://link.springer.com/10.1007/s00158-009-0440-y},
   doi      = {10.1007/s00158-009-0440-y},
+  abstract = {We propose an effective algorithm to resolve the stress-constrained topology optimization problem. Our procedure combines a density ﬁlter for length scale control, the solid isotropic material with penalization (SIMP) to generate black-and-white designs, a SIMP-motivated stress deﬁnition to resolve the stress singularity phenomenon, and a global/regional stress measure combined with an adaptive normalization scheme to control the local stress level.},
   language = {en},
   number   = {4},
   urldate  = {2021-06-23},
@@ -1260,8 +1335,12 @@
   author   = {Le, Chau and Norato, Julian and Bruns, Tyler and Ha, Christopher and Tortorelli, Daniel},
   month    = apr,
   year     = {2010},
-  pages    = {605--620}
+  pages    = {605--620},
+  file     = {Le et al. - 2010 - Stress-based topology optimization for continua.pdf:D\:\\estragio\\Zotero\\storage\\HK6G4IST\\Le et al. - 2010 - Stress-based topology optimization for continua.pdf:application/pdf}
 }
+
+
+
 
 
 
@@ -1283,7 +1362,6 @@
   file       = {ScienceDirect Full Text PDF:D\:\\estragio\\Zotero\\storage\\8Q2Q9AQS\\Lewiński et al. - 1994 - Extended exact solutions for least-weight truss la.pdf:application/pdf}
 }
 
-
 @article{liu_two-scale_2020,
   title    = {Two-scale concurrent topology optimization of lattice structures with connectable microstructures},
   volume   = {36},
@@ -1299,6 +1377,8 @@
   keywords = {Connectable microstructures, Designable connective region, Homogenization, Multiple lattice materials, Two-scale concurrent topology optimization},
   pages    = {101427}
 }
+
+
 
 @article{lu_heat_1998,
   title    = {Heat transfer in open-cell metal foams},
@@ -1336,7 +1416,6 @@
   pages    = {52},
   file     = {Full Text PDF:D\:\\estragio\\Zotero\\storage\\QAEPP9DL\\Lu and Xie - 2023 - Reducing the number of different members in truss .pdf:application/pdf}
 }
-
 
 @book{martins_engineering_2021,
   title     = {Engineering {Design} {Optimization}},
@@ -1382,20 +1461,8 @@
   pages   = {294--299}
 }
 
-@article{maxwell_l_1864,
-  title   = {L. {On} the calculation of the equilibrium and stiffness of frames},
-  volume  = {27},
-  issn    = {1941-5982},
-  url     = {https://doi.org/10.1080/14786446408643668},
-  doi     = {10.1080/14786446408643668},
-  number  = {182},
-  urldate = {2021-09-21},
-  journal = {The London, Edinburgh, and Dublin Philosophical Magazine and Journal of Science},
-  author  = {Maxwell, J.   Clerk},
-  month   = apr,
-  year    = {1864},
-  pages   = {294--299}
-}
+
+
 
 @article{michell_limits_1904,
   title   = {The limits of economy of material in frame-structures},
@@ -1416,19 +1483,6 @@
 }
 
 
-@article{michell_limits_1904,
-  title   = {The limits of economy of material in frame-structures},
-  volume  = {8},
-  doi     = {10.1080/14786440409463229},
-  number  = {47},
-  urldate = {2021-01-14},
-  journal = {The London, Edinburgh, and Dublin Philosophical Magazine and Journal of Science},
-  author  = {Michell, A. G. M.},
-  month   = nov,
-  year    = {1904},
-  pages   = {589--597}
-}
-
 @article{mota_additive_2015,
   title    = {Additive manufacturing techniques for the production of tissue engineering constructs},
   volume   = {9},
@@ -1444,6 +1498,7 @@
   keywords = {additive manufacturing, Animals, Humans, Printing, Three-Dimensional, regenerative medicine, scaffold, solid freeform fabrication, tissue and organ printing, tissue engineering, Tissue Engineering, Tissue Scaffolds},
   pages    = {174--190}
 }
+
 
 @inproceedings{niehs_recognition_2020,
   title     = {Recognition and {Reconfiguration} of {Lattice}-{Based} {Cellular} {Structures} by {Simple} {Robots}},
@@ -1509,7 +1564,6 @@
   pages    = {306--327}
 }
 
-
 @book{ohsaki_optimization_2011,
   edition   = {0},
   title     = {Optimization of {Finite} {Dimensional} {Structures}},
@@ -1537,6 +1591,7 @@
   year      = {2018}
 }
 
+
 @article{opgenoord_design_2019,
   title    = {Design for additive manufacturing: cellular structures in early-stage aerospace design},
   volume   = {60},
@@ -1551,14 +1606,12 @@
   pages    = {411--428}
 }
 
-
 @phdthesis{opgenoord_transonic_2018,
   title  = {Transonic {Flutter} {Prediction} and {Aeroelastic} {Tailoring} for {Next}-{Generation} {Transport} {Aircraft}},
   author = {Opgenoord, Max},
   month  = aug,
   year   = {2018}
 }
-
 
 @article{ozdemir_energy_2016,
   title      = {Energy absorption in lattice structures in dynamics: {Experiments}},
@@ -1577,6 +1630,7 @@
   pages      = {49--61}
 }
 
+
 @article{parkes_joints_1975,
   title    = {Joints in optimum frameworks},
   volume   = {11},
@@ -1590,6 +1644,7 @@
   year     = {1975},
   pages    = {1017--1022}
 }
+
 
 @article{pedersen_optimal_1973,
   title     = {Optimal {Joint} {Positions} for {Space} {Trusses}},
@@ -1608,7 +1663,6 @@
   note      = {Publisher: American Society of Civil Engineers},
   pages     = {2459--2476}
 }
-
 
 @article{rozvany_design-dependent_2001,
   title    = {On design-dependent constraints and singular topologies},
@@ -1673,6 +1727,7 @@
   pages    = {276--283}
 }
 
+
 @article{schmidt_structural_2020,
   title    = {Structural topology optimization with smoothly varying fiber orientations},
   issn     = {1615-1488},
@@ -1696,7 +1751,6 @@
   year     = {1994},
   file     = {Sigmund - Design of Material Structures using Topology Optim.pdf:D\:\\estragio\\Zotero\\storage\\ZHN5QX3A\\Sigmund - Design of Material Structures using Topology Optim.pdf:application/pdf}
 }
-
 
 @article{sigmund_design_1997,
   title    = {On the {Design} of {Compliant} {Mechanisms} {Using} {Topology} {Optimization}},
@@ -1816,7 +1870,6 @@
   file     = {Springer Full Text PDF:D\:\\estragio\\Zotero\\storage\\XWY9ZUUE\\Stolpe and Svanberg - 2001 - An alternative interpolation scheme for minimum co.pdf:application/pdf}
 }
 
-
 @article{stolpe_fail-safe_2019,
   title    = {Fail-safe truss topology optimization},
   volume   = {60},
@@ -1832,6 +1885,7 @@
   year     = {2019},
   pages    = {1605--1618}
 }
+
 
 @article{stolpe_global_2004,
   title     = {Global optimization of minimum weight truss topology problems with stress, displacement, and local buckling constraints using branch-and-bound},
@@ -1859,8 +1913,6 @@
   year     = {2003},
   note     = {Publisher: Matematik}
 }
-
-
 
 @article{stolpe_stress_constrained_2004,
   title    = {A stress-constrained truss-topology and material-selection problem that can be solved by linear programming},
@@ -1895,6 +1947,8 @@
   file       = {HAL PDF Full Text:D\:\\estragio\\Zotero\\storage\\LTHX869B\\Stragiotti et al. - 2021 - Towards manufactured lattice structures a compari.pdf:application/pdf}
 }
 
+
+
 @article{svanberg_method_1987,
   title     = {The method of moving asymptotes—a new method for structural optimization},
   volume    = {24},
@@ -1924,7 +1978,6 @@
   pages    = {803--805}
 }
 
-
 @article{tortorelli_design_1994,
   title      = {Design sensitivity analysis: {Overview} and review},
   volume     = {1},
@@ -1950,7 +2003,10 @@
 @article{verbart_unified_2017,
   title    = {A unified aggregation and relaxation approach for stress-constrained topology optimization},
   volume   = {55},
+  issn     = {1615-1488},
+  url      = {https://doi.org/10.1007/s00158-016-1524-0},
   doi      = {10.1007/s00158-016-1524-0},
+  abstract = {In this paper, we propose a unified aggregation and relaxation approach for topology optimization with stress constraints. Following this approach, we first reformulate the original optimization problem with a design-dependent set of constraints into an equivalent optimization problem with a fixed design-independent set of constraints. The next step is to perform constraint aggregation over the reformulated local constraints using a lower bound aggregation function. We demonstrate that this approach concurrently aggregates the constraints and relaxes the feasible domain, thereby making singular optima accessible. The main advantage is that no separate constraint relaxation techniques are necessary, which reduces the parameter dependence of the problem. Furthermore, there is a clear relationship between the original feasible domain and the perturbed feasible domain via this aggregation parameter.},
   language = {en},
   number   = {2},
   urldate  = {2021-03-25},
@@ -1958,7 +2014,8 @@
   author   = {Verbart, Alexander and Langelaar, Matthijs and Keulen, Fred van},
   month    = feb,
   year     = {2017},
-  pages    = {663--679}
+  pages    = {663--679},
+  file     = {Submitted Version:D\:\\estragio\\Zotero\\storage\\AQPB9XNT\\Verbart et al. - 2017 - A unified aggregation and relaxation approach for .pdf:application/pdf}
 }
 
 
@@ -1977,6 +2034,7 @@
   note     = {Conference Name: THERMEC 2006},
   pages    = {242--247}
 }
+
 
 @article{wang_concurrent_2020,
   title    = {Concurrent design of hierarchical structures with three-dimensional parameterized lattice microstructures for additive manufacturing},
@@ -2013,7 +2071,6 @@
   file     = {ScienceDirect Full Text PDF:D\:\\estragio\\Zotero\\storage\\7PK6LKHP\\Wang et al. - 2003 - A level set method for structural topology optimiz.pdf:application/pdf}
 }
 
-
 @article{wang_projection_2011,
   title    = {On projection methods, convergence and robust formulations in topology optimization},
   volume   = {43},
@@ -2046,6 +2103,25 @@
   keywords = {elasticity, finite element methods, topology design},
   pages    = {1564--1588},
   file     = {Full Text PDF:D\:\\estragio\\Zotero\\storage\\5Q4LQ6RJ\\Watts and Tortorelli - 2017 - A geometric projection method for designing three-.pdf:application/pdf}
+}
+
+
+@article{watts_simple_2019,
+  title    = {Simple, accurate surrogate models of the elastic response of three-dimensional open truss micro-architectures with applications to multiscale topology design},
+  volume   = {60},
+  issn     = {1615-1488},
+  url      = {https://doi.org/10.1007/s00158-019-02297-5},
+  doi      = {10.1007/s00158-019-02297-5},
+  abstract = {Elastic meta-materials are those whose unique properties come from their micro-architecture, rather than, e.g., from their chemistry. The introduction of such architecture, which is increasingly able to be fabricated due to advances in additive manufacturing, expands the design domain and enables improved design, from the most complex multi-physics design problems to the simple compliance design problem that is our focus. Unfortunately, concurrent design of both the micro-scale and the macroscale is computationally very expensive when the former can vary spatially, particularly in three dimensions. Instead, we provide simple, accurate surrogate models of the homogenized linear elastic response of the isotruss, the octet truss, and the ORC truss based on high-fidelity continuum finite element analyses. These surrogate models are relatively accurate over the full range of relative densities, in contrast to analytical models in the literature, which we show lose accuracy as relative density increases. The surrogate models are also simple to implement, which we demonstrate by modifying Sigmund’s 99-line code to solve a three-dimensional, multiscale compliance design problem with spatially varying relative density. We use this code to generate examples in both two and three dimensions that illustrate the advantage of elastic meta-materials over structures with a single length scale, i.e., those without micro-architectures.},
+  language = {en},
+  number   = {5},
+  urldate  = {2020-12-16},
+  journal  = {Structural and Multidisciplinary Optimization},
+  author   = {Watts, Seth and Arrighi, William and Kudo, Jun and Tortorelli, Daniel A. and White, Daniel A.},
+  month    = nov,
+  year     = {2019},
+  pages    = {1887--1920},
+  file     = {Springer Full Text PDF:D\:\\estragio\\Zotero\\storage\\3QL6FSVV\\Watts et al. - 2019 - Simple, accurate surrogate models of the elastic r.pdf:application/pdf}
 }
 
 @article{wu_design_2021,

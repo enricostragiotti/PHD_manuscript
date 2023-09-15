@@ -1,0 +1,82 @@
+\documentclass[12pt, varwidth=9cm]{standalone}
+
+\input{../../img_header}
+
+\begin{document}
+% This file was created with tikzplotlib v0.10.1.
+\begin{tikzpicture}    
+    \begin{axis}[
+    curves_left,
+    width = 5cm,
+    height = 3.5cm,
+    y axis line style={accent_b_1},
+    every y tick label/.append style ={accent_b_1},
+    every y tick/.append style={color=accent_b_1},
+    legend cell align={left},
+    xmin=0, xmax=50,
+    % xtick={0,0.5,1,10,50},
+    xlabel={ $\sigma_\text{L}$},
+    ylabel={ \color{accent_b_1}$V_\text{f}$},
+    ymin=0, ymax=14.02,
+    ytick={0,2,4,6,8,10,12,14},
+    yticklabels={0\%,2\%,4\%,6\%,8\%,10\%,12\%,14\%}
+    ]
+    
+    \addplot [scatter_plot_smooth, accent_b_1]
+    table {%
+    50 0.124169
+    20 0.310422
+    10 0.620843
+    8 0.776054
+    6 1.034739
+    5 1.241686
+    4 1.552108
+    3 2.069477
+    2 3.104216
+    1 6.208431
+    0.9 6.898257
+    0.8 7.760539
+    0.7 8.869187
+    0.6 10.347385
+    0.5 12.416862
+    };
+  \end{axis}
+
+    \begin{axis}[
+      curves_right,
+      width = 5cm,
+      height = 3.5cm,
+      y axis line style={accent_r_1},
+      every y tick label/.append style ={accent_r_1},
+      every y tick/.append style={color=accent_r_1},
+      ylabel={\color{accent_r_1}$C$},
+      ymin=0, ymax=25030,
+      ytick={0,5000,10000,15000,20000,25000,30000},
+      yticklabel style={anchor=west},
+      ]
+    \addplot [scatter_plot_smooth, accent_r_1]
+    table {%
+    50 23281.62
+    20 9312.65
+    10 4656.32
+    8 3725.06
+    6 2793.79
+    5 2328.16
+    4 1862.53
+    3 1396.9
+    2 931.26
+    1 465.63
+    0.9 419.07
+    0.8 372.51
+    0.7 325.94
+    0.6 279.38
+    0.5 232.82
+    };
+
+    \end{axis}
+
+
+    
+    \end{tikzpicture}
+
+\end{document}

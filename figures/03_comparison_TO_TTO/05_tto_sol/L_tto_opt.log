@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.8.29)  7 SEP 2023 11:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.8.29)  14 SEP 2023 09:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -591,11 +591,12 @@ Package translations Info: loading dictionary `translations-basic-dictionary' fo
 
 Package pgfplots notification 'compat/show suggested version=true': document has been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
 
-<top_tto.pdf, id=4, 286.07378pt x 286.84589pt>
+Missing character: There is no ; in font nullfont!
+<top_tto.pdf, id=4, 285.64095pt x 286.62947pt>
 File: top_tto.pdf Graphic file (type pdf)
 <use top_tto.pdf>
-Package pdftex.def Info: top_tto.pdf  used on input line 16.
-(pdftex.def)             Requested size: 172.99876pt x 173.56198pt.
+Package pdftex.def Info: top_tto.pdf  used on input line 12.
+(pdftex.def)             Requested size: 115.235pt x 115.80438pt.
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
@@ -608,28 +609,36 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
-LaTeX Font Info:    Trying to load font information for U+msa on input line 46.
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+LaTeX Font Info:    Trying to load font information for U+msa on input line 59.
 (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 46.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 59.
  (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
 {D:/estragio/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./top_tto.pdf>] (L_tto_opt.aux) ) 
 Here is how much of TeX's memory you used:
- 32253 strings out of 476331
- 850686 string characters out of 5797589
- 1858660 words of memory out of 5000000
- 52146 multiletter control sequences out of 15000+600000
+ 32376 strings out of 476331
+ 852954 string characters out of 5797589
+ 1865660 words of memory out of 5000000
+ 52269 multiletter control sequences out of 15000+600000
  524157 words of font info for 76 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 122i,9n,121p,828b,816s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
-Output written on L_tto_opt.pdf (1 page, 19240 bytes).
+ 122i,17n,121p,828b,1127s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb>
+Output written on L_tto_opt.pdf (1 page, 44215 bytes).
 PDF statistics:
- 72 PDF objects out of 1000 (max. 8388607)
+ 130 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  22 words of extra memory for PDF output out of 10000 (max. 10000000)
 

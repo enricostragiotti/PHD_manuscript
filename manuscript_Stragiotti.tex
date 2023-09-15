@@ -35,6 +35,7 @@
 \usepackage{multirow} % table
 \usepackage{subcaption} % multiple images
 \usepackage[ruled,vlined]{algorithm2e} % Algorithm
+\usepackage[export]{adjustbox} % Image alignement
 
 \usepackage{tikz,pgfplots}  % TikZ and PGF
 \pgfplotsset{compat=1.11}
@@ -46,16 +47,16 @@
 \renewcommand{\glsnamefont}[1]{\textbf{#1}} % Acronym in bold
 \renewcommand{\glsgroupskip}{} %No space between different group of letters
 
-
 %%% User-defined commands
+\input{figures/img_header}
 
 \newcommand{\rhophys}{ \overline{\widetilde{\rho}} }
 \newcommand{\rhofil}{ \widetilde{\rho} }
 \newcommand{\derfrac}[2]{\frac{\partial#1}{\partial#2}}
 
-\newcommand{\vect}[1]{\bm{#1}}
-\newcommand{\matr}[1]{\bm{#1}}
-\newcommand{\norm}[1]{\lVert#1\rVert}
+\renewcommand{\vect}[1]{\bm{#1}}
+\renewcommand{\matr}[1]{\bm{#1}}
+\renewcommand{\norm}[1]{\lVert#1\rVert}
 \newcommand{\secref}[1]{Section~\ref{#1}}
 \newcommand{\figref}[1]{Fig.~\ref{#1}}
 \newcommand{\tabref}[1]{Table~\ref{#1}}
@@ -182,11 +183,6 @@ This document was typeset with the help of \href{https://sourceforge.net/project
 
 \printglossary[type=\acronymtype,title={List of Abbreviations}]
 \endgroup
-
-%-------------------------------------------------------------------------------
-%	ABBREVIATIONS
-%-------------------------------------------------------------------------------
-
 
 %----------------------------------------------------------------------------------------
 %	MAIN BODY

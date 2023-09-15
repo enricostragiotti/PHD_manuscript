@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1694001662 "d:/estragio/PhD/99_Github/PHD_manuscript/figures/03_comparison_TO_TTO/02_gauss_point/gp.tex" "gp.pdf" "gp" 1694001666 0
-  "../../img_header.tex" 1693906184 5857 91c9abf74869c2aa7985d3c1c9eda17b ""
+["pdflatex"] 1694443452 "d:/estragio/PhD/99_Github/PHD_manuscript/figures/03_comparison_TO_TTO/02_gauss_point/gp.tex" "gp.pdf" "gp" 1694443457 0
+  "../../img_header.tex" 1694443428 7381 3df6d6cef05f1e906ac63cf9b7d94dc1 ""
   "C:/Program Files/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1233955448 1120 1e8878807317373affa7f7bba4cf2f6a ""
   "C:/Program Files/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm" 1233955448 1124 14ccf5552bc7f77ca02a8a402bea8bfb ""
   "C:/Program Files/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmbsy7.tfm" 1233955448 1120 7f9f170e8aa57527ad6c49feafd45d54 ""
@@ -36,8 +36,8 @@
   "C:/Program Files/MiKTeX/fonts/tfm/public/cm/cmsy6.tfm" 1136768653 1116 933a60c408fc0a863a92debe84b2d294 ""
   "C:/Program Files/MiKTeX/fonts/tfm/public/cm/cmsy8.tfm" 1136768653 1120 8b7d695260f3cff42e636090a8002094 ""
   "C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1247596667 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
-  "C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1247596667 35752 024fb6c41858982481f6968b5fc26508 ""
-  "C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1247596667 32762 7fee39e011c23b3589931effd97b9702 ""
+  "C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb" 1247596667 36741 0ee9e374ec3e30da87cdfb0ea3575226 ""
+  "C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1247596667 32722 d7379af29a190c3f453aba36302ff5a9 ""
   "C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1247596667 32726 39f0f9e62e84beb801509898a605dbd5 ""
   "C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1247596667 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "C:/Program Files/MiKTeX/tex/context/base/mkii/supp-pdf.mkii" 1580393758 71627 94eb9990bed73c364d7f53f960cc8c5b ""
@@ -227,9 +227,9 @@
   "D:/estragio/AppData/Roaming/MiKTeX/tex/latex/varwidth/varwidth.sty" 1238469540 10894 d359a13923460b2a73d4312d613554c8 ""
   "D:/estragio/AppData/Roaming/MiKTeX/tex/latex/xargs/xargs.sty" 1206234660 12403 a11204384274e5980f17ec9564088fa4 ""
   "D:/estragio/AppData/Roaming/MiKTeX/tex/latex/xstring/xstring.sty" 1673965817 123 a302f2c651a95033260db60e51527ae8 ""
-  "d:/estragio/PhD/99_Github/PHD_manuscript/figures/03_comparison_TO_TTO/02_gauss_point/gp.tex" 1694001661 2425 ccaff69ec0a35708b4ad15c741f76e58 ""
-  "gp.aux" 1694001666 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
-  "gp.tex" 1694001661 2425 ccaff69ec0a35708b4ad15c741f76e58 ""
+  "d:/estragio/PhD/99_Github/PHD_manuscript/figures/03_comparison_TO_TTO/02_gauss_point/gp.tex" 1694424260 1741 de7e39f6bb3d6520c6bac1ee8748f4be ""
+  "gp.aux" 1694443456 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "gp.tex" 1694424260 1741 de7e39f6bb3d6520c6bac1ee8748f4be ""
   (generated)
   "gp.aux"
   "gp.log"

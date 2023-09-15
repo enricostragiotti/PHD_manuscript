@@ -200,7 +200,7 @@
 		% textwidth=107\hscale,
 		textwidth=112\hscale,
 		marginparsep=6.2\hscale,
-		marginparwidth=47.7\hscale,
+		marginparwidth=48\hscale,
 	}%
 	\recalchead%
 	\widelayoutfalse%
@@ -531,7 +531,7 @@
 %----------------------------------------------------------------------------------------
 
 \RequirePackage{graphicx} % Include figures
-\setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio} % Improves figure scaling
+% \setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio} % Improves figure scaling
 \RequirePackage{tikz} % Allows to draw custom shapes
 \RequirePackage{tikzpagenodes} % Allows to anchor tikz nodes to page elements
 \RequirePackage{booktabs} % Nicer tables
@@ -1451,3 +1451,45 @@ November\or December\fi\space\number\year}
 %%% Modified by Enrico Stragiotti
 \newcommand{\address}[1]{\gdef\@address{#1}}
 \newcommand{\titlepageauthor}[1]{\gdef\@titlepageauthor{#1}}
+
+%%% HMS formatter
+\usepackage{xparse}
+
+\ExplSyntaxOn
+
+\NewDocumentCommand{\hms}{ >{\SplitArgument{2}{;}}m }
+ {
+  \ensuremath{\andrec_hms:nnn #1}
+ }
+
+\cs_new_protected:Nn \andrec_hms:nnn
+ {
+  \group_begin:
+  \bool_set_false:N \l__andrec_hms_thinspace_bool
+  \__andrec_hms_print:nn { 0#1 } { h }
+  \tl_if_novalue:nTF { #2 }
+   {
+    \__andrec_hms_print:nn { 0 } { m }
+   }
+   {
+    \__andrec_hms_print:nn { 0#2 } { m }
+   }
+  \tl_if_novalue:nTF { #3 }
+   {
+    \__andrec_hms_print:nn { 0 } { s }
+   }
+   {
+    \__andrec_hms_print:nn { 0#3 } { s }
+   }
+  \group_end:
+}
+\cs_new_protected:Nn \__andrec_hms_print:nn
+ {
+  \int_compare:nT { #1 != 0 }
+   {
+    \bool_if:NT \l__andrec_hms_thinspace_bool { \, }
+    \int_eval:n { #1 } \, \mathrm{#2}
+    \bool_set_true:N \l__andrec_hms_thinspace_bool
+   }
+ }
+\ExplSyntaxOff
