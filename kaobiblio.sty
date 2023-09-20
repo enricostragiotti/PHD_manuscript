@@ -42,6 +42,7 @@
 	ibidtracker=context,
 	autopunct=true,
 	autocite=plain,
+  maxbibnames=99,
 }{biblatex}
 
 % Pass the unknown options to biblatex, overwriting the previous settings. Avoid passing the kao-specific options.
@@ -61,7 +62,7 @@
 % Remove some unwanted entries from the bibliography
 \AtEveryBibitem{
 	\clearfield{issn}
-	\clearfield{isbn}
+	% \clearfield{isbn}
 	\clearfield{archivePrefix}
 	\clearfield{arxivId}
 	\clearfield{pmid}
@@ -459,13 +460,17 @@
        {%
          \iffieldundef{isbn}%
            {}%
-           %{\addperiod\\\printfield{isbn}}%
-           {\addperiod\\\href{http://books.google.com/books?vid=ISBN\thefield{isbn}}{\printfield{isbn}}}%
+          %  {\addperiod\\\printfield{isbn}}%
+           {\addperiod\\\scriptsize\textsc{ISBN: \normalsize\href{http://books.google.com/books?vid=ISBN\thefield{isbn}}{\thefield{isbn}}}}%
          }%
        {}%
    }
 
 % These modification are needed to change the order of the elements in the bibliography
+
+% Titles normal and with virg
+\DeclareFieldFormat*{title}{'#1'}
+\DeclareFieldFormat*{citetitle}{'#1'}
 
 % New bibliography drivers, using the required order of fields. These
 % are mainly copied from standard.bbx then modified.
@@ -543,9 +548,6 @@
   \usebibmacro{finentry}%
   \newunit\newblock
   \usebibmacro{isbn}%
-  \usebibmacro{finentry}%
-  \newunit\newblock
-  \usebibmacro{doi+eprint+url}%
   \usebibmacro{finentry}%
 }
 
