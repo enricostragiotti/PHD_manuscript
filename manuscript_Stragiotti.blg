@@ -1,9 +1,9 @@
 [0] Config.pm:307> INFO - This is Biber 2.19
 [0] Config.pm:310> INFO - Logfile is 'manuscript_Stragiotti.blg'
-[161] biber-MSWIN64:340> INFO - === 
-[219] Biber.pm:419> INFO - Reading 'manuscript_Stragiotti.bcf'
-[379] Biber.pm:979> INFO - Found 0 citekeys in bib section 0
-[400] bbl.pm:660> INFO - Writing 'manuscript_Stragiotti.bbl' with encoding 'UTF-8'
-[400] bbl.pm:763> INFO - Output to manuscript_Stragiotti.bbl
-[400] Biber.pm:131> WARN - The file 'manuscript_Stragiotti.bcf' does not contain any citations!
-[400] Biber.pm:133> INFO - WARNINGS: 1
+[152] biber-MSWIN64:340> INFO - === 
+[225] Biber.pm:419> INFO - Reading 'manuscript_Stragiotti.bcf'
+[375] Biber.pm:979> INFO - Found 0 citekeys in bib section 0
+[395] bbl.pm:660> INFO - Writing 'manuscript_Stragiotti.bbl' with encoding 'UTF-8'
+[395] bbl.pm:763> INFO - Output to manuscript_Stragiotti.bbl
+[396] Biber.pm:131> WARN - The file 'manuscript_Stragiotti.bcf' does not contain any citations!
+[396] Biber.pm:133> INFO - WARNINGS: 1

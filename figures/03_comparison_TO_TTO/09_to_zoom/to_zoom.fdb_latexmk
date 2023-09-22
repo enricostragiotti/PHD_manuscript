@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1694597848 "d:/estragio/PhD/99_Github/PHD_manuscript/figures/03_comparison_TO_TTO/00_to_zoom/to_zoom.tex" "to_zoom.pdf" "to_zoom" 1694597852 0
-  "../../img_header.tex" 1694532354 9373 f3499b866a4ca0abf74908a741450d1a ""
+["pdflatex"] 1695388229 "d:/estragio/PhD/99_Github/PHD_manuscript/figures/03_comparison_TO_TTO/09_to_zoom/to_zoom.tex" "to_zoom.pdf" "to_zoom" 1695388232 0
+  "../../img_header.tex" 1694615855 9390 ed35e2ca6c3cb2be9b2bc199cc256f07 ""
   "C:/Program Files/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm" 1233955448 1124 14ccf5552bc7f77ca02a8a402bea8bfb ""
   "C:/Program Files/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmbsy8.tfm" 1233955448 1120 200be8b775682cdf80acad4be5ef57e4 ""
   "C:/Program Files/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233955448 1004 54797486969f23fa377b128694d548df ""
@@ -212,9 +212,9 @@
   "D:/estragio/AppData/Roaming/MiKTeX/tex/latex/varwidth/varwidth.sty" 1238469540 10894 d359a13923460b2a73d4312d613554c8 ""
   "D:/estragio/AppData/Roaming/MiKTeX/tex/latex/xargs/xargs.sty" 1206234660 12403 a11204384274e5980f17ec9564088fa4 ""
   "D:/estragio/AppData/Roaming/MiKTeX/tex/latex/xstring/xstring.sty" 1673965817 123 a302f2c651a95033260db60e51527ae8 ""
-  "d:/estragio/PhD/99_Github/PHD_manuscript/figures/03_comparison_TO_TTO/00_to_zoom/to_zoom.tex" 1694597848 648 ee4d2f4bfa0f9b282818ceacd1e4312b ""
+  "d:/estragio/PhD/99_Github/PHD_manuscript/figures/03_comparison_TO_TTO/09_to_zoom/to_zoom.tex" 1694597848 648 ee4d2f4bfa0f9b282818ceacd1e4312b ""
   "fig0_10.pdf" 1694521499 18866 fd789daab44c3e03bfc81b86c7cf49bb ""
-  "to_zoom.aux" 1694597852 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "to_zoom.aux" 1695388231 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
   "to_zoom.tex" 1694597848 648 ee4d2f4bfa0f9b282818ceacd1e4312b ""
   (generated)
   "to_zoom.aux"
