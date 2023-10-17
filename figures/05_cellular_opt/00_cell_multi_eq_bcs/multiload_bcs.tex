@@ -1,0 +1,47 @@
+\documentclass[12pt, varwidth=10cm]{standalone}
+
+\input{../../img_header}
+
+
+
+\begin{document}
+
+\begin{tikzpicture}
+
+    % \foreach \x in {0,0.5,1,1.5,2,2.5,3,3.5,4}
+	% \foreach \y in {0,0.5,1,1.5,2,2.5,3,3.5,4}  
+	% % \foreach \xx in {0,0.5,1,1.5,2,2.5,3,3.5,4}
+	% % \foreach \yy in {0,0.5,1,1.5,2,2.5,3,3.5,4}  
+	% % \draw[gray] (\x,\y) -- (\xx,\yy);
+	% \draw[gray] (\x,\y);
+
+    \point{a}{0}{0};
+	\point{b}{0}{4};
+	\point{c}{4}{4};
+	\point{d}{4}{0};
+	\point{e}{1.5}{0};
+	\point{f}{2.5}{0};
+	
+	
+	\beam{2}{a}{b}[1][1];
+	\beam{2}{b}{c}[1][1];
+	\beam{2}{c}{d}[1][1];
+	\beam{2}{d}{a}[1][1];
+
+    \draw[force, accent_r_1] (1.5,-0.2) -- (1.5,-1) node[right] {$P_1$};
+    \draw[force, accent_b_1] (2.5,-0.2) -- (2.5,-1) node[right] {$P_2$};
+	\notation{5}{c}{d}[$L$][.5][right=3mm][1];
+
+    \node[text width=2cm, align=center, fill=white] at (2,2) {\small 15x15 fully connected ground structure};
+
+    \SleeveSupport{0,2}[.06]{4}
+    \SleeveSupport{4,2}[.06]{4}
+    \support{1}{a}
+    \hinge{1}{a}
+    \support{1}{d}
+    \hinge{1}{d}
+
+    
+\end{tikzpicture}
+
+\end{document}

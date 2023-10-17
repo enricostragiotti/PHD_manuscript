@@ -1,0 +1,11 @@
+Vol: 82.48 mm3, Weight: 0.00000 kg
+Vol_star: 0.82483 PL/sigma
+Vol_fraction: 0.824835%
+Vol_fraction with real thickness: 1.307636%
+Max section: 0.312 mm2
+Optimization SLP time: 4.70 seconds
+N candidate bars: 25200 
+N active bars: 31 
+Min slenderness ratio: inf
+Min slenderness ratio_2: 45.295
+L, A and R of the minimum slenderness: 7.143, 0.312499999955, 0.315391565230

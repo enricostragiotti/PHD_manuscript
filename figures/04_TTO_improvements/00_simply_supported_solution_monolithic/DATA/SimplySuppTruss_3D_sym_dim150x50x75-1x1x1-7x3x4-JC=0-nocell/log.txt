@@ -1,0 +1,8 @@
+Vol: 2476.78 mm3, Weight: 0.00282 kg
+Vol_fraction: 0.440316%
+Compliance: 927.47 mJ
+Max section: 18.806 mm2
+Optimization time: 0.11 seconds
+N candidate bars: 12 
+N active bars: 12 
+Min slenderness ratio: 31.516

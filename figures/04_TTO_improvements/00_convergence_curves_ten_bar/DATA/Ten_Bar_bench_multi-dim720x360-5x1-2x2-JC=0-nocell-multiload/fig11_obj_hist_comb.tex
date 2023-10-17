@@ -1,0 +1,101 @@
+% This file was created with tikzplotlib v0.10.1.
+\begin{tikzpicture}
+
+\definecolor{darkgray176}{RGB}{176,176,176}
+\definecolor{firebrick180438}{RGB}{180,4,38}
+\definecolor{lightgray204}{RGB}{204,204,204}
+\definecolor{royalblue5976192}{RGB}{59,76,192}
+
+\begin{axis}[
+legend cell align={left},
+legend style={fill opacity=0.8, draw opacity=1, text opacity=1, draw=lightgray204},
+tick align=outside,
+tick pos=left,
+title={Convergence history},
+x grid style={darkgray176},
+xlabel={Iteration N},
+xmajorgrids,
+xmin=-2.1, xmax=44.1,
+xtick style={color=black},
+xtick={-10,0,10,20,30,40,50},
+xticklabels={
+  \(\displaystyle {\ensuremath{-}10}\),
+  \(\displaystyle {0}\),
+  \(\displaystyle {10}\),
+  \(\displaystyle {20}\),
+  \(\displaystyle {30}\),
+  \(\displaystyle {40}\),
+  \(\displaystyle {50}\)
+},
+y grid style={darkgray176},
+ylabel={Volume},
+ymajorgrids,
+ymin=92459.359610334, ymax=237806.618260586,
+ytick style={color=black},
+ytick={80000,100000,120000,140000,160000,180000,200000,220000,240000},
+yticklabels={
+  \(\displaystyle {80000}\),
+  \(\displaystyle {100000}\),
+  \(\displaystyle {120000}\),
+  \(\displaystyle {140000}\),
+  \(\displaystyle {160000}\),
+  \(\displaystyle {180000}\),
+  \(\displaystyle {200000}\),
+  \(\displaystyle {220000}\),
+  \(\displaystyle {240000}\)
+}
+]
+\addplot [semithick, firebrick180438]
+table {%
+0 231199.924685575
+1 139115.71466262
+2 105883.891802433
+3 99406.9798995348
+4 99085.9900030204
+5 99084.934126946
+6 99084.9341136118
+7 99084.9341136118
+8 107248.829074952
+9 103020.371408933
+10 100759.571286058
+11 99250.5183147928
+12 99084.9340849363
+13 99084.9341136118
+};
+\addlegendentry{SLP}
+\addplot [semithick, royalblue5976192]
+table {%
+14 99066.0531853454
+15 99066.0531853454
+16 99257.5651575967
+17 107997.641783494
+18 162574.922660599
+19 190636.992194726
+20 190700.242014915
+21 178633.5322492
+22 176881.372477471
+23 175130.663571965
+24 173963.405200494
+25 173008.763165691
+26 172886.108892368
+27 172886.108892368
+28 172756.273550626
+29 150086.797850829
+30 141278.236051614
+31 136369.166142955
+32 135045.869080736
+33 134305.182289336
+34 134281.17508875
+35 134279.382090986
+36 134279.340537351
+37 134279.326357676
+38 134279.324484325
+39 134279.324422338
+40 134279.324421918
+41 134279.324421918
+42 134279.324421918
+};
+\addlegendentry{NLP}
+\end{axis}
+
+\end{tikzpicture}

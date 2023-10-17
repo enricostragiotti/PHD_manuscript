@@ -1,0 +1,8 @@
+Vol: 91.34 mm3, Weight: 0.00000 kg
+Vol_star: 0.91343 PL/sigma
+Vol_fraction: 0.913433%
+Max section: 0.318 mm2
+Optimization time: 0.65 seconds
+N candidate bars: 31 
+N active bars: 27 
+Min slenderness ratio: 44.917

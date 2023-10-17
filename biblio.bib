@@ -256,6 +256,7 @@
   pages     = {84--86}
 }
 
+
 @article{achtziger_equivalent_1992,
   title    = {Equivalent displacement based formulations for maximum strength truss topology design},
   volume   = {4},
@@ -275,6 +276,45 @@
 }
 
 
+
+
+@article{achtziger_local_1999,
+  title      = {Local stability of trusses in the context of topology optimization {Part} {I}: {Exact} modelling},
+  volume     = {17},
+  issn       = {0934-4373, 1615-1488},
+  shorttitle = {Local stability of trusses in the context of topology optimization {Part} {I}},
+  doi        = {10.1007/BF01206999},
+  language   = {en},
+  number     = {4},
+  urldate    = {2021-10-14},
+  journal    = {Structural Optimization},
+  author     = {Achtziger, W.},
+  month      = dec,
+  year       = {1999},
+  pages      = {235--246}
+}
+
+
+@article{achtziger_local_1999b,
+  title      = {Local stability of trusses in the context of topology optimization {Part} {II}: {A} numerical approach},
+  volume     = {17},
+  issn       = {1615-1488},
+  shorttitle = {Local stability of trusses in the context of topology optimization {Part} {II}},
+  doi        = {10.1007/BF01207000},
+  abstract   = {The paper considers the problem of optimal truss topology design with respect to stress, slenderness, and local buckling constraints. An exact problem formulation is used dealing with the inherent difficulty that the local buckling constraints are discontinuous functions in the bar areas due to the topology aspect. This exact problem formulation has been derived in Part I. In this paper, a numerical approach to this nonconvex and largescale problem is proposed. First, discontinuity of constraints is erased by providing an equivalent formulation in standard form of nonlinear programming. Then a linearization concept is proposed partly preserving the given problem structure. It is proved that the resulting sequential linear programming algorithm is a descent method generating truss designs feasible for the original problem. A numerical test on a nontrivial example shows that the exact treatment of the problem leads to different designs than the usual local buckling constraints neglecting the difficulties induced by the topology aspect.},
+  language   = {en},
+  number     = {4},
+  urldate    = {2022-02-02},
+  journal    = {Structural optimization},
+  author     = {Achtziger, W.},
+  month      = dec,
+  year       = {1999},
+  pages      = {247--258}
+}
+
+
+
+
 @article{achtziger_mathematical_2008,
   title      = {Mathematical programs with vanishing constraints: optimality conditions and constraint qualifications},
   volume     = {114},
@@ -289,6 +329,7 @@
   year       = {2008},
   pages      = {69--99}
 }
+
 
 @article{achtziger_simultaneous_2007,
   title    = {On simultaneous optimization of truss geometry and topology},
@@ -308,6 +349,20 @@
   file     = {Springer Full Text PDF:D\:\\estragio\\Zotero\\storage\\EWLSUFX6\\Achtziger - 2007 - On simultaneous optimization of truss geometry and.pdf:application/pdf}
 }
 
+@article{alappat_recursive_2020,
+  title    = {A {Recursive} {Algebraic} {Coloring} {Technique} for {Hardware}-efficient {Symmetric} {Sparse} {Matrix}-vector {Multiplication}},
+  volume   = {7},
+  issn     = {2329-4949},
+  doi      = {10.1145/3399732},
+  abstract = {The symmetric sparse matrix-vector multiplication (SymmSpMV) is an important building block for many numerical linear algebra kernel operations or graph traversal applications. Parallelizing SymmSpMV on today’s multicore platforms with up to 100 cores is difficult due to the need to manage conflicting updates on the result vector. Coloring approaches can be used to solve this problem without data duplication, but existing coloring algorithms do not take load balancing and deep memory hierarchies into account, hampering scalability and full-chip performance. In this work, we propose the recursive algebraic coloring engine (RACE), a novel coloring algorithm and open-source library implementation that eliminates the shortcomings of previous coloring methods in terms of hardware efficiency and parallelization overhead. We describe the level construction, distance-k coloring, and load balancing steps in RACE, use it to parallelize SymmSpMV, and compare its performance on 31 sparse matrices with other state-of-the-art coloring techniques and Intel MKL on two modern multicore processors. RACE outperforms all other approaches substantially. By means of a parameterized roofline model, we analyze the SymmSpMV performance in detail and discuss outliers. While we focus on SymmSpMV in this article, our algorithm and software are applicable to any sparse matrix operation with data dependencies that can be resolved by distance-k coloring.},
+  number   = {3},
+  urldate  = {2023-01-17},
+  journal  = {ACM Transactions on Parallel Computing},
+  author   = {Alappat, Christie and Basermann, Achim and Bishop, Alan R. and Fehske, Holger and Hager, Georg and Schenk, Olaf and Thies, Jonas and Wellein, Gerhard},
+  year     = {2020},
+  keywords = {graph algorithms, graph coloring, memory hierarchies, scheduling, Sparse matrix, sparse symmetric matrix-vector multiplication},
+  pages    = {19:1--19:37}
+}
 
 @article{allaire_level-set_2002,
   title    = {A level-set method for shape optimization},
@@ -328,8 +383,6 @@
   pages    = {1125--1130},
   file     = {ScienceDirect Full Text PDF:D\:\\estragio\\Zotero\\storage\\YI6UXJA4\\Allaire et al. - 2002 - A level-set method for shape optimization.pdf:application/pdf}
 }
-
-
 @article{allaire_optimal_1999,
   title    = {On optimal microstructures for a plane shape optimization problem},
   volume   = {17},
@@ -365,7 +418,6 @@
   file     = {Allaire et al. - 2004 - Structural optimization using sensitivity analysis.pdf:D\:\\estragio\\Zotero\\storage\\QHT3ZQRP\\Allaire et al. - 2004 - Structural optimization using sensitivity analysis.pdf:application/pdf}
 }
 
-
 @article{amini_spatial_2018,
   author        = {Alexander Amini and
                    Ava Soleimany and
@@ -398,7 +450,6 @@
   pages    = {1--16}
 }
 
-
 @book{ashby_materials_1999,
   address   = {Oxford, OX ; Boston, MA},
   edition   = {2nd ed},
@@ -425,7 +476,6 @@
   pages   = {15--30}
 }
 
-
 @article{ben-tal_new_1993,
   title    = {A {New} {Method} for {Optimal} {Truss} {Topology} {Design}},
   volume   = {3},
@@ -443,6 +493,22 @@
   keywords = {73K40, 90C31, 90C50, nonsmooth optimization, truss topology design},
   pages    = {322--358},
   file     = {Ben-Tal and Bendsøe - 1993 - A New Method for Optimal Truss Topology Design.pdf:D\:\\estragio\\Zotero\\storage\\6AQVK3WM\\Ben-Tal and Bendsøe - 1993 - A New Method for Optimal Truss Topology Design.pdf:application/pdf}
+}
+
+@article{ben-tal_optimal_2000,
+  title    = {Optimal {Design} of {Trusses} {Under} a {Nonconvex} {Global} {Buckling} {Constraint}},
+  volume   = {1},
+  issn     = {1573-2924},
+  doi      = {10.1023/A:1010091831812},
+  abstract = {We propose a novel formulation of a truss design problem involving a constraint on the global stability of the structure due to the linear buckling phenomenon. The optimization problem is modelled as a nonconvex semidefinite programming problem. We propose two techniques for the numerical solution of the problem and apply them to a series of numerical examples.},
+  language = {en},
+  number   = {2},
+  journal  = {Optimization and Engineering},
+  author   = {Ben-Tal, Aharon and Jarre, Florian and Kočvara, Michal and Nemirovski, Arkadi and Zowe, Jochem},
+  month    = jul,
+  year     = {2000},
+  keywords = {buckling, nonconvex semidefinite programming, truss design},
+  pages    = {189--213}
 }
 
 @article{bendsoe_generating_1988,
@@ -476,10 +542,13 @@
   pages    = {635--654}
 }
 
+
 @article{bendsoe_optimal_1989,
   title    = {Optimal shape design as a material distribution problem},
   volume   = {1},
+  issn     = {1615-1488},
   doi      = {10.1007/BF01650949},
+  abstract = {Shape optimization in a general setting requires the determination of the optimal spatial material distribution for given loads and boundary conditions. Every point in space is thus a material point or a void and the optimization problem is a discrete variable one. This paper describes various ways of removing this discrete nature of the problem by the introduction of a density function that is a continuous design variable. Domains of high density then define the shape of the mechanical element. For intermediate densities, material parameters given by an artificial material law can be used. Alternatively, the density can arise naturally through the introduction of periodically distributed, microscopic voids, so that effective material parameters for intermediate density values can be computed through homogenization. Several examples in two-dimensional elasticity illustrate that these methods allow a determination of the topology of a mechanical element, as required for a boundary variations shape optimization technique.},
   language = {en},
   number   = {4},
   urldate  = {2020-10-13},
@@ -487,12 +556,27 @@
   author   = {Bendsøe, M. P.},
   month    = dec,
   year     = {1989},
+  keywords = {Topology optimisation, Otimization, Algorithm},
   pages    = {193--202}
 }
+
+@book{bendsoe_optimization_1995,
+  address   = {Berlin, Heidelberg},
+  title     = {Optimization of {Structural} {Topology}, {Shape}, and {Material}},
+  isbn      = {978-3-662-03117-9 978-3-662-03115-5},
+  language  = {en},
+  publisher = {Springer Berlin Heidelberg},
+  author    = {Bends{\o}e, Martin P.},
+  year      = {1995},
+  doi       = {10.1007/978-3-662-03115-5}
+}
+
+
 
 @book{bendsoe_topology_2004,
   address   = {Berlin, Heidelberg},
   title     = {Topology {Optimization}},
+  isbn      = {978-3-642-07698-5 978-3-662-05086-6},
   language  = {en},
   urldate   = {2020-11-05},
   publisher = {Springer Berlin Heidelberg},
@@ -513,13 +597,14 @@
   keywords  = {Asymptotic theory, Boundary value problems, Differential equations, Partial, Numerical solutions, Probabilities}
 }
 
+
+
 @article{bourdin_filters_2001,
   title    = {Filters in topology optimization},
   volume   = {50},
   issn     = {0029-5981, 1097-0207},
   url      = {http://doi.wiley.com/10.1002/nme.116},
   doi      = {10.1002/nme.116},
-  abstract = {In this article, a modiÿed (‘ÿltered’) version of the minimum compliance topology optimization problem is studied. The direct dependence of the material properties on its pointwise density is replaced by a regularization of the density ÿeld by the mean of a convolution operator. In this setting it is possible to establish the existence of solutions. Moreover, convergence of an approximation by means of ÿnite elements can be obtained. This is illustrated through some numerical experiments. The ‘ÿltering’ technique is also shown to cope with two important numerical problems in topology optimization, checkerboards and mesh dependent designs. Copyright ? 2001 John Wiley \& Sons, Ltd.},
   language = {en},
   number   = {9},
   urldate  = {2020-12-08},
@@ -535,12 +620,28 @@
   title    = {Topology {Optimization} for {Additive} {Manufacturing}},
   abstract = {This paper gives an overview of the issues and opportunities for the application of topology optimization methods for additive manufacturing (AM). The main analysis issues discussed are: how to achieve the maximum geometric resolution to allow the fine features easily manufacturable by AM to be represented in the optimization model; the manufacturing constraints to be considered, and the workflow modifications required to handle the geometric complexity in the post optimization stages. The main manufacturing issues discussed are the potential for realizing intermediate density regions, in the case of the solid isotropic material with penalization (SIMP) approach, the use of small scale lattice structures, the use of multiple material AM processes, and an approach to including support structure requirement as a manufacturing constraint.},
   language = {en},
+  doi      = {10.26153/tsw/15300},
   author   = {Brackett, D and Ashcroft, I and Hague, R},
   year     = {2011},
   pages    = {15},
   file     = {Brackett et al. - TOPOLOGY OPTIMIZATION FOR ADDITIVE MANUFACTURING.pdf:D\:\\estragio\\Zotero\\storage\\WY259A29\\Brackett et al. - TOPOLOGY OPTIMIZATION FOR ADDITIVE MANUFACTURING.pdf:application/pdf}
 }
 
+
+@article{brooks_benchmark_2018,
+  title    = {Benchmark {Aerostructural} {Models} for the {Study} of {Transonic} {Aircraft} {Wings}},
+  volume   = {56},
+  issn     = {0001-1452, 1533-385X},
+  doi      = {10.2514/1.J056603},
+  language = {en},
+  number   = {7},
+  urldate  = {2022-09-12},
+  journal  = {AIAA Journal},
+  author   = {Brooks, Timothy R. and Kenway, Gaetan K. W. and Martins, Joaquim R. R. A.},
+  month    = jul,
+  year     = {2018},
+  pages    = {2840--2855}
+}
 
 @article{bruggi_topology_2012,
   title    = {Topology optimization for minimum weight with compliance and stress constraints},
@@ -590,7 +691,6 @@
   year     = {1978},
   pages    = {161--172}
 }
-
 @article{chan_optimum_1964,
   title    = {Optimum structural design and linear programming},
   url      = {https://repository.tudelft.nl/islandora/object/uuid%3Ae255d625-3602-4e2e-a486-debcb2447320},
@@ -602,6 +702,20 @@
   note     = {Publisher: College of Aeronautics Cranfield}
 }
 
+@article{cheng_aspects_1995,
+  title    = {Some aspects of truss topology optimization},
+  volume   = {10},
+  issn     = {0934-4373, 1615-1488},
+  doi      = {10.1007/BF01742589},
+  language = {en},
+  number   = {3-4},
+  urldate  = {2022-02-22},
+  journal  = {Structural Optimization},
+  author   = {Cheng, G.},
+  month    = dec,
+  year     = {1995},
+  pages    = {173--179}
+}
 
 @article{cheng_functionally_2019,
   title    = {Functionally graded lattice structure topology optimization for the design of additive manufactured components with stress constraints},
@@ -618,6 +732,7 @@
   keywords = {Homogenization, Additive manufacturing, Lattice structure topology optimization, Stress constraint},
   pages    = {334--359}
 }
+
 
 @article{cheng_relaxed_1997,
   title    = {$\varepsilon$-relaxed approach in structural topology optimization},
@@ -691,6 +806,23 @@
   pages    = {21--32}
 }
 
+@article{coniglio_generalized_2020,
+  title      = {Generalized {Geometry} {Projection}: {A} {Unified} {Approach} for {Geometric} {Feature} {Based} {Topology} {Optimization}},
+  volume     = {27},
+  issn       = {1134-3060, 1886-1784},
+  shorttitle = {Generalized {Geometry} {Projection}},
+  doi        = {10.1007/s11831-019-09362-8},
+  language   = {en},
+  number     = {5},
+  urldate    = {2023-04-11},
+  journal    = {Archives of Computational Methods in Engineering},
+  author     = {Coniglio, Simone and Morlier, Joseph and Gogu, Christian and Amargier, Rémi},
+  month      = nov,
+  year       = {2020},
+  pages      = {1573--1610},
+  file       = {Coniglio et al. - 2020 - Generalized Geometry Projection A Unified Approac.pdf:D\:\\estragio\\Zotero\\storage\\PZTD74AT\\Coniglio et al. - 2020 - Generalized Geometry Projection A Unified Approac.pdf:application/pdf}
+}
+
 @article{costa_algorithmic_2020,
   title    = {Algorithmic {Approaches} to {Reconfigurable} {Assembly} {Systems}},
   url      = {http://arxiv.org/abs/2008.11925},
@@ -708,7 +840,9 @@
 @article{cramer_elastic_2019,
   title    = {Elastic shape morphing of ultralight structures by programmable assembly},
   volume   = {28},
+  issn     = {0964-1726},
   doi      = {10.1088/1361-665X/ab0ea2},
+  abstract = {Ultralight materials present an opportunity to dramatically increase the efficiency of load-bearing aerostructures. To date, however, these ultralight materials have generally been confined to the laboratory bench-top, due to dimensional constraints of the manufacturing processes. We show a programmable material system applied as a large-scale, ultralight, and conformable aeroelastic structure. The use of a modular, lattice-based, ultralight material results in stiffness typical of an elastomer (2.6 MPa) at a mass density typical of an aerogel . This, combined with a building block based manufacturing and configuration strategy, enables the rapid realization of new adaptive structures and mechanisms. The heterogeneous design with programmable anisotropy allows for enhanced elastic and global shape deformation in response to external loading, making it useful for tuned fluid-structure interaction. We demonstrate an example application experiment using two building block types for the primary structure of a 4.27 m wingspan aircraft, where we spatially program elastic shape morphing to increase aerodynamic efficiency and improve roll control authority, demonstrated with full-scale wind tunnel testing.},
   language = {en},
   number   = {5},
   urldate  = {2020-10-02},
@@ -738,74 +872,6 @@
   pages      = {6003--6036},
   file       = {Full Text:D\:\\estragio\\Zotero\\storage\\XKFNV4QM\\da Silva et al. - 2021 - Local versus global stress constraint strategies i.pdf:application/pdf}
 }
-
-
-@article{brackett_topology_2011,
-	title = {Topology {Optimization} for {Additive} {Manufacturing}},
-	abstract = {This paper gives an overview of the issues and opportunities for the application of topology optimization methods for additive manufacturing (AM). The main analysis issues discussed are: how to achieve the maximum geometric resolution to allow the fine features easily manufacturable by AM to be represented in the optimization model; the manufacturing constraints to be considered, and the workflow modifications required to handle the geometric complexity in the post optimization stages. The main manufacturing issues discussed are the potential for realizing intermediate density regions, in the case of the solid isotropic material with penalization (SIMP) approach, the use of small scale lattice structures, the use of multiple material AM processes, and an approach to including support structure requirement as a manufacturing constraint.},
-	language = {en},
-	author = {Brackett, D and Ashcroft, I and Hague, R},
-	year = {2011},
-	pages = {15},
-	file = {Brackett et al. - TOPOLOGY OPTIMIZATION FOR ADDITIVE MANUFACTURING.pdf:D\:\\estragio\\Zotero\\storage\\WY259A29\\Brackett et al. - TOPOLOGY OPTIMIZATION FOR ADDITIVE MANUFACTURING.pdf:application/pdf},
-}
-
-@article{sigmund_manufacturing_2009,
-	title = {Manufacturing tolerant topology optimization},
-	volume = {25},
-	issn = {1614-3116},
-	url = {https://doi.org/10.1007/s10409-009-0240-z},
-	doi = {10.1007/s10409-009-0240-z},
-	abstract = {In this paper we present an extension of the topology optimization method to include uncertainties during the fabrication of macro, micro and nano structures. More specifically, we consider devices that are manufactured using processes which may result in (uniformly) too thin (eroded) or too thick (dilated) structures compared to the intended topology. Examples are MEMS devices manufactured using etching processes, nano-devices manufactured using e-beam lithography or laser micro-machining and macro structures manufactured using milling processes. In the suggested robust topology optimization approach, under- and over-etching is modelled by image processing-based “erode” and “dilate” operators and the optimization problem is formulated as a worst case design problem. Applications of the method to the design of macro structures for minimum compliance and micro compliant mechanisms show that the method provides manufacturing tolerant designs with little decrease in performance. As a positive side effect the robust design formulation also eliminates the longstanding problem of one-node connected hinges in compliant mechanism design using topology optimization.},
-	language = {en},
-	number = {2},
-	urldate = {2021-09-26},
-	journal = {Acta Mechanica Sinica},
-	author = {Sigmund, Ole},
-	month = apr,
-	year = {2009},
-	pages = {227--239},
-	file = {Springer Full Text PDF:D\:\\estragio\\Zotero\\storage\\BUN2KRQV\\Sigmund - 2009 - Manufacturing tolerant topology optimization.pdf:application/pdf},
-}
-
-@article{guest_achieving_2004,
-	title = {Achieving minimum length scale in topology optimization using nodal design variables and projection functions},
-	volume = {61},
-	issn = {1097-0207},
-	url = {https://onlinelibrary.wiley.com/doi/abs/10.1002/nme.1064},
-	doi = {10.1002/nme.1064},
-	abstract = {A methodology for imposing a minimum length scale on structural members in discretized topology optimization problems is described. Nodal variables are implemented as the design variables and are projected onto element space to determine the element volume fractions that traditionally define topology. The projection is made via mesh independent functions that are based upon the minimum length scale. A simple linear projection scheme and a non-linear scheme using a regularized Heaviside step function to achieve nearly 0–1 solutions are examined. The new approach is demonstrated on the minimum compliance problem and the popular SIMP method is used to penalize the stiffness of intermediate volume fraction elements. Solutions are shown to meet user-defined length scale criterion without additional constraints, penalty functions or sensitivity filters. No instances of mesh dependence or checkerboard patterns have been observed. Copyright © 2004 John Wiley \& Sons, Ltd.},
-	language = {en},
-	number = {2},
-	urldate = {2021-09-26},
-	journal = {International Journal for Numerical Methods in Engineering},
-	author = {Guest, J. K. and Prévost, J. H. and Belytschko, T.},
-	year = {2004},
-	note = {\_eprint: https://onlinelibrary.wiley.com/doi/pdf/10.1002/nme.1064},
-	keywords = {topology optimization, length scale},
-	pages = {238--254},
-	file = {Full Text PDF:D\:\\estragio\\Zotero\\storage\\RFNNMZJF\\Guest et al. - 2004 - Achieving minimum length scale in topology optimiz.pdf:application/pdf},
-}
-
-
-@article{munro_local_2017,
-	title = {Local stress-constrained and slope-constrained {SAND} topology optimisation},
-	volume = {110},
-	issn = {00295981},
-	shorttitle = {Local stress-constrained and slope-constrained {SAND} topology optimisation},
-	url = {https://onlinelibrary.wiley.com/doi/10.1002/nme.5360},
-	doi = {10.1002/nme.5360},
-	language = {en},
-	number = {5},
-	urldate = {2022-02-18},
-	journal = {International Journal for Numerical Methods in Engineering},
-	author = {Munro, Dirk and Groenwold, Albert},
-	month = may,
-	year = {2017},
-	pages = {420--439},
-	file = {Numerical Meth Engineering - 2016 - Munro - Local stress‐constrained and slope‐constrained SAND topology optimisation.pdf:D\:\\estragio\\Zotero\\storage\\9I666R5Q\\Numerical Meth Engineering - 2016 - Munro - Local stress‐constrained and slope‐constrained SAND topology optimisation.pdf:application/pdf},
-}
-
 
 @article{da_silva_stress-constrained_2019,
   title    = {Stress-constrained topology optimization considering uniform manufacturing uncertainties},
@@ -860,6 +926,7 @@
   pages    = {1747--1769}
 }
 
+
 @article{deshpande_foam_2001,
   title      = {Foam topology: bending versus stretching dominated architectures},
   volume     = {49},
@@ -876,6 +943,7 @@
   pages      = {1035--1040}
 }
 
+
 @misc{diamond_cvxpy_2016,
   title    = {{CVXPY}: {A} {Python}-{Embedded} {Modeling} {Language} for {Convex} {Optimization}},
   language = {en},
@@ -883,6 +951,7 @@
   pages    = {5},
   year     = {2016}
 }
+
 
 @article{diaz_checkerboard_1995,
   title    = {Checkerboard patterns in layout optimization},
@@ -941,6 +1010,9 @@
 }
 
 
+
+
+
 @article{dorn_automatic_1964,
   title    = {Automatic design of optimal structures},
   language = {en},
@@ -949,6 +1021,7 @@
   author   = {Dorn, W. S. and Gomory, Ralph E. and Greenberg, H.},
   year     = {1964}
 }
+
 
 @article{duysinx_topology_1998,
   title     = {Topology optimization of continuum structures with local stress constraints},
@@ -970,6 +1043,9 @@
 }
 
 
+
+
+
 @article{ejlebjerg_jensen_anisotropic_2016,
   title    = {Anisotropic {Mesh} {Adaptation} and {Topology} {Optimization} in {Three} {Dimensions}},
   volume   = {138},
@@ -981,6 +1057,21 @@
   author   = {Ejlebjerg Jensen, Kristian},
   month    = jun,
   year     = {2016}
+}
+
+
+@misc{enrico_stragiotti_truss_2023,
+  title        = {Truss {Topology} {Optimization} with {Topological} {Buckling} {Constraints} {Data} {Set}},
+  copyright    = {Creative Commons Attribution 4.0 International},
+  url          = {https://data.mendeley.com/datasets/bw7xb2w6st/1},
+  doi          = {10.17632/BW7XB2W6ST.1},
+  abstract     = {This data set contains the starting point and the results of the article "3D Truss topology optimization with topological buckling constraints and reduced sensitivity to the initialization point" (Temporary name).},
+  urldate      = {2023-05-03},
+  publisher    = {Mendeley},
+  author       = {Enrico Stragiotti},
+  collaborator = {Joseph Morlier and Enrico Stragiotti and Cédric  Julien and François-Xavier Irisarri},
+  month        = may,
+  year         = {2023}
 }
 
 
@@ -996,6 +1087,7 @@
   year      = {2010}
 }
 
+
 @phdthesis{fairclough_layout_2019,
   title      = {Layout {Optimization} of {Structures}: {Novel} {Methods} and {Applications}},
   copyright  = {cc\_by\_nc\_sa},
@@ -1010,6 +1102,19 @@
 }
 
 
+@article{fakhimi_discrete_2021,
+  title      = {Discrete multi-load truss sizing optimization: model analysis and computational experiments},
+  issn       = {1389-4420, 1573-2924},
+  shorttitle = {Discrete multi-load truss sizing optimization},
+  doi        = {10.1007/s11081-021-09672-6},
+  abstract   = {Discrete multi-load truss sizing optimization (MTSO) problems are challenging to solve due to their combinatorial, nonlinear, and non-convex nature. This study highlights two important characteristics of the feasible set of MTSO problems considered here, in which force balance equations, Hooke’s law, yield stress, bound constraints on displacements, and local bucking are taken into account. Namely, we use the linear or bilinear nature of the problem to take advantage of re-scaling properties of both the problem’s design and auxiliary variables, as well as to extend the superposition principle to the case in which nonlinear stress constraints are considered. Taking advantage of these characteristics, we extend the neighborhood search mixed-integer linear optimization (NS-MILO) method (Shahabsafa et al. in SMO 63: 21–38, 2018), which provides an effective heuristic solution approach based on exact solution methods for MILO problems. Through extensive computational experiments, we demonstrate that the extended NS-MILO method provides highquality solutions for large-scale discrete MTSO problems in a reasonable time.},
+  language   = {en},
+  urldate    = {2022-06-23},
+  journal    = {Optimization and Engineering},
+  author     = {Fakhimi, Ramin and Shahabsafa, Mohammad and Lei, Weiming and He, Sicheng and Martins, Joaquim R. R. A. and Terlaky, Tamás and Zuluaga, Luis F.},
+  month      = sep,
+  year       = {2021}
+}
 
 
 @article{ferrari_new_2020,
@@ -1046,6 +1151,35 @@
   year       = {2010},
   note       = {Publisher: Royal Society},
   pages      = {2495--2516}
+}
+
+
+@article{fleron1964minimum,
+  title     = {Minimum weight of trusses},
+  author    = {Fleron, P},
+  journal   = {Bygningsstatiske Meddelelser},
+  volume    = {35},
+  number    = {3},
+  pages     = {81},
+  year      = {1964},
+  publisher = {DANSK SELSKAB BYGNINGSSTATIK STRUCTURAL RES LAB TECH UNIV DENMARK-BLDG 118~…}
+}
+
+
+@article{gao_topology_2015,
+  title    = {Topology optimization of continuum structures under buckling constraints},
+  volume   = {157},
+  issn     = {00457949},
+  doi      = {10.1016/j.compstruc.2015.05.020},
+  abstract = {This paper presents a study on topology optimization of continuum structures under buckling constraints. New algorithms are developed for minimization of structural compliance considering constraints on volume and buckling load factors. The SIMP (Solid Isotropic Material with Penalization) material model is employed and nodal relative densities are used as topology design variables. A new approach based on the eigenvalue shift and pseudo mode identiﬁcation is proposed for eliminating the effect of pseudo buckling modes. Two-phase optimization algorithms are also proposed for achieving better optimized designs. Numerical examples are presented to illustrate the effectiveness of the new methods.},
+  language = {en},
+  urldate  = {2023-02-28},
+  journal  = {Computers \& Structures},
+  author   = {Gao, Xingjun and Ma, Haitao},
+  month    = sep,
+  year     = {2015},
+  pages    = {142--152},
+  file     = {Gao and Ma - 2015 - Topology optimization of continuum structures unde.pdf:D\:\\estragio\\Zotero\\storage\\ZGUAG4BH\\Gao and Ma - 2015 - Topology optimization of continuum structures unde.pdf:application/pdf}
 }
 
 
@@ -1099,11 +1233,35 @@
 }
 
 
+
+
+@article{guo_confirmation_2014,
+  title    = {A confirmation of a conjecture on the existence of symmetric optimal solution under multiple loads},
+  volume   = {50},
+  issn     = {1615-1488},
+  url      = {https://doi.org/10.1007/s00158-014-1089-8},
+  doi      = {10.1007/s00158-014-1089-8},
+  abstract = {In this note, a conjecture on the existence of symmetric optimal solution under multiple loads made in Rozvany (Struct Multidisc Optim 43:297–317, 2011, Conjecture 4) has been confirmed.},
+  language = {en},
+  number   = {4},
+  urldate  = {2023-10-04},
+  journal  = {Structural and Multidisciplinary Optimization},
+  author   = {Guo, Xu and Du, Zongliang and Cheng, Gengdong},
+  month    = oct,
+  year     = {2014},
+  keywords = {Multi-load case, Optimal solution, Symmetry},
+  pages    = {659--661},
+  file     = {Full Text PDF:D\:\\estragio\\Zotero\\storage\\2R4ZQJJ2\\Guo et al. - 2014 - A confirmation of a conjecture on the existence of.pdf:application/pdf}
+}
+
+
+
+
+
 @article{guo_doing_2014,
   title   = {Doing {Topology} {Optimization} {Explicitly} and {Geometrically}—{A} {New} {Moving} {Morphable} {Components} {Based} {Framework}},
   volume  = {81},
   issn    = {0021-8936},
-  url     = {https://doi.org/10.1115/1.4027609},
   doi     = {10.1115/1.4027609},
   number  = {8},
   urldate = {2021-09-26},
@@ -1113,8 +1271,6 @@
   year    = {2014},
   file    = {Full Text PDF:D\:\\estragio\\Zotero\\storage\\IMBT3WAH\\Guo et al. - 2014 - Doing Topology Optimization Explicitly and Geometr.pdf:application/pdf}
 }
-
-
 
 @article{guo_explicit_2016,
   title    = {Explicit structural topology optimization based on moving morphable components ({MMC}) with curved skeletons},
@@ -1134,6 +1290,22 @@
 }
 
 
+@article{guo_new_2001,
+  title    = {A new approach for the solution of singular optima in truss topology optimization with stress and local buckling constraints},
+  volume   = {22},
+  issn     = {1615-147X, 1615-1488},
+  doi      = {10.1007/s00158-001-0156-0},
+  abstract = {The present paper investigates problems of truss topology optimization under local buckling constraints. A new approach for the solution of singular problems caused by stress and local buckling constraints is proposed. At ﬁrst, a second order smooth-extended technique is used to make the disjoint feasible domains connect, then the so-called ε-relaxed method is applied to eliminate the singular optima from problem formulation. By means of this approach, the singular optimum of the original problem caused by stress and local buckling constraints can be searched approximately by employing the algorithms developed for sizing optimization problems with high accuracy. Therefore, the numerical problem resulting from stress and local buckling constraints can be solved in an elegant way. The applications of the proposed approach and its eﬀectiveness are illustrated with several numerical examples.},
+  language = {en},
+  number   = {5},
+  urldate  = {2022-06-16},
+  journal  = {Structural and Multidisciplinary Optimization},
+  author   = {Guo, X. and Cheng, G. and Yamazaki, K.},
+  month    = dec,
+  year     = {2001},
+  pages    = {364--373}
+}
+
 
 @article{hashin_variational_1963,
   title    = {A variational approach to the theory of the elastic behaviour of multiphase materials},
@@ -1151,6 +1323,7 @@
   pages    = {127--140}
 }
 
+
 @article{he_python_2019,
   title    = {A {Python} script for adaptive layout optimization of trusses},
   volume   = {60},
@@ -1164,6 +1337,7 @@
   year     = {2019},
   pages    = {835--847}
 }
+
 
 @article{he_rationalization_2015,
   title    = {Rationalization of trusses generated via layout optimization},
@@ -1183,8 +1357,6 @@
   file     = {SMOGeometryOptimization_Part2.pdf:D\:\\estragio\\Zotero\\storage\\Q2MPHQNA\\SMOGeometryOptimization_Part2.pdf:application/pdf}
 }
 
-
-
 @book{hemp_optimum_1973,
   title     = {Optimum {Structures}},
   isbn      = {978-0-19-856110-1},
@@ -1193,7 +1365,9 @@
   author    = {Hemp, W. S.},
   year      = {1973},
   note      = {Google-Books-ID: cJhpAAAAMAAJ}
-}
+} 
+
+
 
 
 
@@ -1213,6 +1387,7 @@
   pages    = {33--47},
   file     = {Submitted Version:D\:\\estragio\\Zotero\\storage\\TNMAU4KW\\Holmberg et al. - 2013 - Stress constrained topology optimization.pdf:application/pdf}
 }
+
 
 
 @article{hunt_wraptor_2019,
@@ -1252,6 +1427,7 @@
 }
 
 
+
 @inproceedings{jenett_bill-e_2017,
   address   = {Grapevine, Texas},
   title     = {{BILL}-{E}: {Robotic} {Platform} for {Locomotion} and {Manipulation} of {Lightweight} {Space} {Structures}},
@@ -1265,6 +1441,7 @@
   month     = jan,
   year      = {2017}
 }
+
 
 @article{jenett_digital_2017,
   title    = {Digital {Morphing} {Wing}: {Active} {Wing} {Shaping} {Concept} {Using} {Composite} {Lattice}-{Based} {Cellular} {Structures}},
@@ -1280,7 +1457,6 @@
   pages    = {33--48}
 }
 
-
 @article{kalamkarov_asymptotic_2009,
   title   = {Asymptotic {Homogenization} of {Composite} {Materials} and {Structures}},
   volume  = {62},
@@ -1295,6 +1471,23 @@
   year    = {2009}
 }
 
+@article{kazemi_multi-material_2020,
+  title    = {Multi-material topology optimization of lattice structures using geometry projection},
+  volume   = {363},
+  issn     = {0045-7825},
+  doi      = {10.1016/j.cma.2020.112895},
+  abstract = {This work presents a computational method for the design of architected truss lattice materials where each strut can be made of one of a set of available materials. We design the lattices to extremize effective properties. As customary in topology optimization, we design a periodic unit cell of the lattice and obtain the effective properties via numerical homogenization. Each bar is represented as a cylindrical offset surface of a medial axis parameterized by the positions of the endpoints of the medial axis. These parameters are smoothly mapped onto a continuous density field for the primal and sensitivity analysis via the geometry projection method. A size variable per material is ascribed to each bar and penalized as in density-based topology optimization to facilitate the entire removal of bars from the design. During the optimization, we allow bars to be made of a mixture of the available materials. However, to ensure each bar is either exclusively made of one material or removed altogether from the optimal design, we impose optimization constraints that ensure each size variable is 0 or 1, and that at most one material size variable is 1. The proposed material interpolation scheme readily accommodates any number of materials. To obtain lattices with desired material symmetries, we design only a reference region of the unit cell and reflect its geometry projection with respect to the appropriate planes of symmetry. Also, to ensure bars remain whole upon reflection inside the unit cell or with respect to the periodic boundaries, we impose a no-cut constraint on the bars. We demonstrate the efficacy of our method via numerical examples of bulk and shear moduli maximization and Poisson’s ratio minimization for two- and three-material lattices with cubic symmetry.},
+  language = {en},
+  urldate  = {2020-10-13},
+  journal  = {Computer Methods in Applied Mechanics and Engineering},
+  author   = {Kazemi, Hesaneh and Vaziri, Ashkan and Norato, Julián A.},
+  month    = may,
+  year     = {2020},
+  keywords = {Topology optimization, Lattice structures, Multi-material},
+  pages    = {112895},
+  file     = {ScienceDirect Full Text PDF:D\:\\estragio\\Zotero\\storage\\6BCIRJE4\\Kazemi et al. - 2020 - Multi-material topology optimization of lattice st.pdf:application/pdf}
+}
+
 @article{kicher_optimum_1966,
   title    = {Optimum {Design} — {Minimum} {Weight} {Versus} {Fully} {Stressed}},
   url      = {https://www.semanticscholar.org/paper/Optimum-Design-%E2%80%94-Minimum-Weight-Versus-Fully-Kicher/adf2684f75afa97b56d690a4d850012f70ca3553},
@@ -1305,6 +1498,99 @@
   author   = {Kicher, T.},
   year     = {1966}
 }
+@article{kirsch_effect_1989,
+  title     = {Effect of {Compatibility} and {Prestressing} on {Optimized} {Trusses}},
+  volume    = {115},
+  copyright = {Copyright © 1989 ASCE},
+  issn      = {0733-9445},
+  doi       = {10.1061/(ASCE)0733-9445(1989)115:3(724)},
+  abstract  = {Assuming force method analysis formulation, the effect of compatibility conditions on optimal design of trusses is studied. Neglecting the latter conditions, a linear programming (LP) formulation is obtained. The possibility of applying prestressing forces by “lack of fit” to maintain compatibility at the LP optimum is demonstrated. It has been shown that for structures subjected to a single loading condition, the LP lower‐bound solution is the final optimum. Prestressing might be required to maintain compatibility in cases where the optimal solution represents a statically indeterminate structure. The various possible solutions for structures subjected to multiple loading conditions are discussed. It is shown that under certain circumstances, compatibility conditions can be satisfied at the LP optimum only by applying different sets of prestressing forces for the various loadings. For certain geometries, the LP solution represents multiple optimal topologies, part of them being statically determinate structures. In such cases, the LP lower‐bound solution is the final optimum, and no prestressing is required to maintain compatibility. In cases where compatibility conditions considerably affect the solution, prestressing by lack of fit might significantly improve the final optimum.},
+  language  = {EN},
+  number    = {3},
+  urldate   = {2021-10-22},
+  journal   = {Journal of Structural Engineering},
+  author    = {Kirsch, Uri},
+  month     = mar,
+  year      = {1989},
+  keywords  = {Design, Prestressing, Trusses},
+  pages     = {724--737}
+}
+
+@article{kirsch_optimal_1980,
+  title    = {Optimal design of trusses by approximate compatibility},
+  volume   = {12},
+  issn     = {0045-7949},
+  doi      = {10.1016/0045-7949(80)90097-8},
+  abstract = {Optimal design of elastic trusses is formulated as an approximate linear programming problem. Using the force method of analysis, the redundant forces are expressed in linearized terms of the design variables. The solution of the resulting linear programming problem can be viewed as an exact optimum for a truss with different displacements corresponding to the unknown redundants. The latter displacements, computed directly from the linear programming solution, indicate the degree of not satisfying the compatibility conditions. This information can be used to introduce imaginary displacements in subsequent iteration cycles. An iterative procedure of solution is proposed in which both the design and the imaginary displacements are modified until the compatible optimal solution is reached. Each iteration cycle requires the solution of a linear programming problem. The proposed procedure provides more flexibility in the solution process than the usual algorithms based on a sequence of linear programs and may improve the convergence. Numerical examples illustrate the application of this procedure in optimal design of simple trusses.},
+  language = {en},
+  number   = {1},
+  urldate  = {2021-10-22},
+  journal  = {Computers \& Structures},
+  author   = {Kirsch, Uri},
+  month    = jul,
+  year     = {1980},
+  pages    = {93--98},
+  file     = {ScienceDirect Full Text PDF:D\:\\estragio\\Zotero\\storage\\GKBN3PGB\\Kirsch - 1980 - Optimal design of trusses by approximate compatibi.pdf:application/pdf}
+}
+@article{kirsch_optimal_1980,
+  title    = {Optimal design of trusses by approximate compatibility},
+  volume   = {12},
+  issn     = {0045-7949},
+  doi      = {10.1016/0045-7949(80)90097-8},
+  abstract = {Optimal design of elastic trusses is formulated as an approximate linear programming problem. Using the force method of analysis, the redundant forces are expressed in linearized terms of the design variables. The solution of the resulting linear programming problem can be viewed as an exact optimum for a truss with different displacements corresponding to the unknown redundants. The latter displacements, computed directly from the linear programming solution, indicate the degree of not satisfying the compatibility conditions. This information can be used to introduce imaginary displacements in subsequent iteration cycles. An iterative procedure of solution is proposed in which both the design and the imaginary displacements are modified until the compatible optimal solution is reached. Each iteration cycle requires the solution of a linear programming problem. The proposed procedure provides more flexibility in the solution process than the usual algorithms based on a sequence of linear programs and may improve the convergence. Numerical examples illustrate the application of this procedure in optimal design of simple trusses.},
+  language = {en},
+  number   = {1},
+  urldate  = {2021-10-22},
+  journal  = {Computers \& Structures},
+  author   = {Kirsch, Uri},
+  month    = jul,
+  year     = {1980},
+  pages    = {93--98},
+  file     = {ScienceDirect Full Text PDF:D\:\\estragio\\Zotero\\storage\\GKBN3PGB\\Kirsch - 1980 - Optimal design of trusses by approximate compatibi.pdf:application/pdf}
+}
+@article{kirsch_optimal_1989,
+  title    = {Optimal topologies of truss structures},
+  volume   = {72},
+  issn     = {0045-7825},
+  doi      = {10.1016/0045-7825(89)90119-9},
+  abstract = {The topology of truss structures is optimized by assuming zero lower bounds on cross-sections. It is shown that the optimal topology might correspond to a singular solution even for simple structures. Assuming the force method analysis formulation, the problem can be stated in a linear programming (LP) form under certain assumptions. It is then possible to derive analytically some conditions related to optimal topologies. In addition, the difficulty of singular optimal solutions is eliminated. The effect of compatibility conditions on optimal topologies is studied. It is shown that for particular geometries or loading conditions, where some element forces change from tension to compression or vice versa, the optimal topology might represent an unstable structure. Analytical conditions are derived to obtain geometries of multiple optimal topologies. Part of the latter solutions usually represent statically determinate structures. It is shown that a transition in the set of active constraints at the optimum occurs at these particular geometries. The phenomena presented in this study might lead to a better understanding of some properties associated with optimum structural topologies, and to improved design procedures.},
+  language = {en},
+  number   = {1},
+  urldate  = {2021-03-21},
+  journal  = {Computer Methods in Applied Mechanics and Engineering},
+  author   = {Kirsch, Uri},
+  month    = jan,
+  year     = {1989},
+  pages    = {15--28}
+}
+
+
+
+@article{kocvara_how_1996,
+  title    = {How mathematics can help in design of mechanical structures},
+  volume   = {Numerical Analysis 1995},
+  language = {en},
+  number   = {D.F. Griffiths and G.A. Watson},
+  author   = {Kočvara, Michal and Zowe, Jochem},
+  year     = {1996},
+  pages    = {76--93}
+}
+
+@article{kocvara_modelling_2002,
+  title    = {On the modelling and solving of the truss design problem with global stability constraints},
+  volume   = {23},
+  doi      = {10.1007/s00158-002-0177-3},
+  abstract = {The goal of this paper is to ﬁnd a computationally tractable formulation of the optimum truss design problem involving a constraint on the global stability of the structure. The stability constraint is based on the linear buckling phenomenon. We formulate the problem as a nonconvex semideﬁnite programming problem and brieﬂy discuss an interior point technique for the numerical solution of this problem. We further discuss relation to other models. The paper is concluded by a series of numerical examples.},
+  language = {en},
+  number   = {3},
+  journal  = {Structural and Multidisciplinary Optimization},
+  author   = {Kočvara, M.},
+  month    = apr,
+  year     = {2002},
+  pages    = {189--203}
+}
+
+
 
 @article{kohn_optimal_1986,
   title    = {Optimal design and relaxation of variational problems},
@@ -1319,7 +1605,6 @@
   year     = {1986},
   pages    = {113--137}
 }
-
 
 @article{kreisselmeier_systematic_1979,
   series   = {{IFAC} {Symposium} on computer {Aided} {Design} of {Control} {Systems}, {Zurich}, {Switzerland}, 29-31 {August}},
@@ -1355,8 +1640,6 @@
   file     = {Le et al. - 2010 - Stress-based topology optimization for continua.pdf:D\:\\estragio\\Zotero\\storage\\HK6G4IST\\Le et al. - 2010 - Stress-based topology optimization for continua.pdf:application/pdf}
 }
 
-
-
 @article{lewinski_extended_1994,
   title      = {Extended exact solutions for least-weight truss layouts—{Part} {I}: {Cantilever} with a horizontal axis of symmetry},
   volume     = {36},
@@ -1376,6 +1659,30 @@
 }
 
 
+@article{liu_current_2018,
+  title     = {Current and future trends in topology optimization for additive manufacturing},
+  volume    = {57},
+  copyright = {2018 Springer-Verlag GmbH Germany, part of Springer Nature},
+  issn      = {1615-1488},
+  doi       = {10.1007/s00158-018-1994-3},
+  abstract  = {Manufacturing-oriented topology optimization has been extensively studied the past two decades, in particular for the conventional manufacturing methods, for example, machining and injection molding or casting. Both design and manufacturing engineers have benefited from these efforts because of the close-to-optimal and friendly-to-manufacture design solutions. Recently, additive manufacturing (AM) has received significant attention from both academia and industry. AM is characterized by producing geometrically complex components layer-by-layer, and greatly reduces the geometric complexity restrictions imposed on topology optimization by conventional manufacturing. In other words, AM can make near-full use of the freeform structural evolution of topology optimization. Even so, new rules and restrictions emerge due to the diverse and intricate AM processes, which should be carefully addressed when developing the AM-specific topology optimization algorithms. Therefore, the motivation of this perspective paper is to summarize the state-of-art topology optimization methods for a variety of AM topics. At the same time, this paper also expresses the authors’ perspectives on the challenges and opportunities in these topics. The hope is to inspire both researchers and engineers to meet these challenges with innovative solutions.},
+  language  = {en},
+  number    = {6},
+  urldate   = {2023-06-09},
+  journal   = {Structural and Multidisciplinary Optimization},
+  author    = {Liu, Jikai and Gaynor, Andrew T. and Chen, Shikui and Kang, Zhan and Suresh, Krishnan and Takezawa, Akihiro and Li, Lei and Kato, Junji and Tang, Jinyuan and Wang, Charlie C. L. and Cheng, Lin and Liang, Xuan and To, Albert C.},
+  month     = jun,
+  year      = {2018},
+  note      = {Company: Springer
+               Distributor: Springer
+               Institution: Springer
+               Label: Springer
+               Number: 6
+               Publisher: Springer Berlin Heidelberg},
+  pages     = {2457--2483},
+  file      = {Submitted Version:D\:\\estragio\\Zotero\\storage\\T7NHFIUU\\Liu et al. - 2018 - Current and future trends in topology optimization.pdf:application/pdf}
+}
+
 @article{liu_two-scale_2020,
   title    = {Two-scale concurrent topology optimization of lattice structures with connectable microstructures},
   volume   = {36},
@@ -1391,7 +1698,6 @@
   keywords = {Connectable microstructures, Designable connective region, Homogenization, Multiple lattice materials, Two-scale concurrent topology optimization},
   pages    = {101427}
 }
-
 
 @article{lu_heat_1998,
   title    = {Heat transfer in open-cell metal foams},
@@ -1409,7 +1715,6 @@
   note     = {Publisher: Elsevier Limited},
   pages    = {3619--3635}
 }
-
 
 
 
@@ -1434,6 +1739,7 @@
   file     = {Full Text PDF:D\:\\estragio\\Zotero\\storage\\QAEPP9DL\\Lu and Xie - 2023 - Reducing the number of different members in truss .pdf:application/pdf}
 }
 
+
 @book{martins_engineering_2021,
   title     = {Engineering {Design} {Optimization}},
   isbn      = {978-1-108-83341-7},
@@ -1442,8 +1748,6 @@
   author    = {Martins, J.R.R.A. and Ning, A.},
   year      = {2021}
 }
-
-
 
 @article{maxwell_ireciprocal_1870,
   title    = {I.—{On} {Reciprocal} {Figures}, {Frames}, and {Diagrams} of {Forces}},
@@ -1461,7 +1765,6 @@
   pages    = {1--40}
 }
 
-
 @article{maxwell_l_1864,
   title   = {{On} the calculation of the equilibrium and stiffness of frames},
   volume  = {27},
@@ -1475,6 +1778,22 @@
   month   = apr,
   year    = {1864},
   pages   = {294--299}
+}
+
+@article{mela_resolving_2014,
+  title    = {Resolving issues with member buckling in truss topology optimization using a mixed variable approach},
+  volume   = {50},
+  issn     = {1615-147X, 1615-1488},
+  doi      = {10.1007/s00158-014-1095-x},
+  abstract = {In this paper, several issues related to member buckling in truss topology optimization are treated. In the conventional formulations, where cross-sectional areas of ground structure members are the design variables, member buckling constraints are known to be very difficult to handle, both numerically and theoretically. Buckling constraints produce a feasible set that is non-connected and non-convex. Furthermore, the so-called jump in the buckling length phenomenon introduces severe difficulties for determining the correct buckling strength of parallel consecutive compression members. These issues are handled in the paper by employing a mixed variable formulation of truss topology optimization problems. In this formulation, member buckling constraints become linear. Parallel consecutive members of the ground structure are identified as chains, and overlapping members are added to the ground structure between each pair of nodes of a chain. Buckling constraints are written for every member, and linear constraints on the binary member existence variables disallow impractical topologies. In the proposed approach, Euler buckling as well as buckling according to various design codes, can be incorporated. Numerical examples demonstrate that the optimum topology depends on whether the buckling constraints are derived from Euler’s theory or from design codes.},
+  language = {en},
+  number   = {6},
+  urldate  = {2022-02-18},
+  journal  = {Structural and Multidisciplinary Optimization},
+  author   = {Mela, Kristo},
+  month    = dec,
+  year     = {2014},
+  pages    = {1037--1049}
 }
 
 @article{michell_limits_1904,
@@ -1494,6 +1813,14 @@
 }
 
 
+@misc{Moore_Mechmotum,
+  title   = {cyipopt: Cython interface for the interior point optimzer IPOPT},
+  year    = {2018},
+  url     = {https://github.com/mechmotum/cyipopt},
+  journal = {GitHub},
+  author  = {Moore, Jason&nbsp;  K. and Mechmotum}
+}
+
 @article{mota_additive_2015,
   title    = {Additive manufacturing techniques for the production of tissue engineering constructs},
   volume   = {9},
@@ -1511,6 +1838,24 @@
 }
 
 
+@article{munro_local_2017,
+  title      = {Local stress-constrained and slope-constrained {SAND} topology optimisation},
+  volume     = {110},
+  issn       = {00295981},
+  shorttitle = {Local stress-constrained and slope-constrained {SAND} topology optimisation},
+  url        = {https://onlinelibrary.wiley.com/doi/10.1002/nme.5360},
+  doi        = {10.1002/nme.5360},
+  language   = {en},
+  number     = {5},
+  urldate    = {2022-02-18},
+  journal    = {International Journal for Numerical Methods in Engineering},
+  author     = {Munro, Dirk and Groenwold, Albert},
+  month      = may,
+  year       = {2017},
+  pages      = {420--439},
+  file       = {Numerical Meth Engineering - 2016 - Munro - Local stress‐constrained and slope‐constrained SAND topology optimisation.pdf:D\:\\estragio\\Zotero\\storage\\9I666R5Q\\Numerical Meth Engineering - 2016 - Munro - Local stress‐constrained and slope‐constrained SAND topology optimisation.pdf:application/pdf}
+}
+
 @inproceedings{niehs_recognition_2020,
   title     = {Recognition and {Reconfiguration} of {Lattice}-{Based} {Cellular} {Structures} by {Simple} {Robots}},
   doi       = {10.1109/ICRA40945.2020.9196700},
@@ -1522,8 +1867,6 @@
   keywords  = {Robot sensing systems, Autonomous robots, Lattices, Shape, Tiles},
   pages     = {8252--8259}
 }
-
-
 
 
 @article{nikolova_recent_2019,
@@ -1551,7 +1894,6 @@
   howpublished = {\url{https://github.com/stevengj/nlopt}}
 }
 
-
 @article{norato_geometry_2004,
   title    = {A geometry projection method for shape optimization},
   volume   = {60},
@@ -1570,11 +1912,13 @@
   file     = {Full Text PDF:D\:\\estragio\\Zotero\\storage\\4XYD8JRK\\Norato et al. - 2004 - A geometry projection method for shape optimizatio.pdf:application/pdf}
 }
 
+
+
+
 @article{norato_geometry_2015,
   title    = {A geometry projection method for continuum-based topology optimization with discrete elements},
   volume   = {293},
   issn     = {0374-2830},
-  url      = {http://www.scopus.com/inward/record.url?scp=84930933711&partnerID=8YFLogxK},
   doi      = {10.1016/j.cma.2015.05.005},
   abstract = {This article describes a method for the continuum-based topology optimization of structures made of discrete elements. In particular, we examine the optimization of linearly elastic planar structures made of bars of fixed width and semicircular ends. The design space for the optimization consists of the endpoint locations of the bar's medial axes and their out-of-plane thicknesses. To circumvent re-meshing upon design changes, we project the design onto a fixed analysis grid using a differentiable geometry projection that results in a density field indicating the fraction of solid material anywhere in the design space, as in density-based topology optimization methods. The out-of-plane thickness is penalized so that the optimizer is capable of removing bars during the optimization. The differentiability of the projection allows for the computation via the chain rule of design sensitivities of responses of interest, and therefore it allows for the use of robust and efficient gradient-based optimization methods. Notably, this approach makes it easier to fabricate optimal designs by using off-the-shelf stock material. Furthermore, the method considers the case where bars overlap at their joints (i.e. their thicknesses are added at the joint) and when they do not. Finally, our proposed method naturally accommodates the imposition of several fixed length scales. We demonstrate the proposed approach on classical problems of compliance-based topology optimization and identify its benefits as well as research directions to be addressed in the future.},
   urldate  = {2021-09-26},
@@ -1582,9 +1926,11 @@
   author   = {Norato, J. A. and Bell, B. K. and Tortorelli, D. A.},
   month    = aug,
   year     = {2015},
-  keywords = {Geometry projection, Manufacturability, Multiscale topology optimization, Topology optimization},
+  keywords = {Topology optimization, Geometry projection, Manufacturability, Multiscale topology optimization},
   pages    = {306--327}
 }
+
+
 
 @article{norato_maximum-rectifier-function_2022,
   title    = {A maximum-rectifier-function approach to stress-constrained topology optimization},
@@ -1618,6 +1964,7 @@
   doi       = {10.1201/EBK1439820032}
 }
 
+
 @inproceedings{opgenoord_aeroelastic_2018,
   address   = {Atlanta, Georgia},
   title     = {Aeroelastic {Tailoring} using {Additively} {Manufactured} {Lattice} {Structures}},
@@ -1632,6 +1979,12 @@
   year      = {2018}
 }
 
+
+
+
+
+
+
 @article{opgenoord_design_2019,
   title    = {Design for additive manufacturing: cellular structures in early-stage aerospace design},
   volume   = {60},
@@ -1645,7 +1998,6 @@
   year     = {2019},
   pages    = {411--428}
 }
-
 
 @phdthesis{opgenoord_transonic_2018,
   title  = {Transonic {Flutter} {Prediction} and {Aeroelastic} {Tailoring} for {Next}-{Generation} {Transport} {Aircraft}},
@@ -1671,6 +2023,8 @@
   pages      = {49--61}
 }
 
+
+
 @article{paris_block_2010,
   series   = {Advances in optimum engineering design},
   title    = {Block aggregation of stress constraints in topology optimization of structures},
@@ -1691,6 +2045,7 @@
 }
 
 
+
 @article{parkes_joints_1975,
   title    = {Joints in optimum frameworks},
   volume   = {11},
@@ -1704,6 +2059,9 @@
   year     = {1975},
   pages    = {1017--1022}
 }
+
+
+
 
 
 @article{pedersen_optimal_1973,
@@ -1724,10 +2082,31 @@
   pages     = {2459--2476}
 }
 
+
+
+@article{reinschmidt_applications_1974,
+  title    = {Applications of linear programming in structural layout and optimization},
+  volume   = {4},
+  issn     = {0045-7949},
+  doi      = {10.1016/0045-7949(74)90049-2},
+  abstract = {Various computer methods have been developed for the optimal design of indeterminate structures, but it is not possible to guarantee that the result of any method will be a global optimum, rather than merely a local optimum. By temporarily neglecting the conditions of elastic compatibility and formulating a mathematical optimization problem based on the equilibrium conditions and the stress constraints, it is possible to obtain an approximate design which avoids merely local optima. In the cases examined, this design is close to the exact global optimum obtained by enforcing the compatibility conditions and is therefore a good starting point for an optimizing procedure. Examples include a graphical solution of a simple grillage known to have multiple local optima, and a sequence of planar trusses under alternate loading conditions. Linear programming is used to find the minimum weight truss designs satisfying equilibrium; this method eliminates extraneous members and leads to better indeterminate truss configurations than does a stress-ratio type algorithm.},
+  language = {en},
+  number   = {4},
+  urldate  = {2021-10-21},
+  journal  = {Computers \& Structures},
+  author   = {Reinschmidt, Kenneth F. and Russell, Alan D.},
+  month    = aug,
+  year     = {1974},
+  pages    = {855--869}
+}
+
+
 @article{rozvany_design-dependent_2001,
   title    = {On design-dependent constraints and singular topologies},
   volume   = {21},
+  issn     = {1615-1488},
   doi      = {10.1007/s001580050181},
+  abstract = {A historical perspective of design-dependent constraints and singular topologies is presented and their theoretical background as well as fundamental features discussed, together with methods for treating computational difficulties. This note contains some rather surprising new facts about singular topologies and it is hoped that it will provide both a comprehensive review and additional insights.},
   language = {en},
   number   = {2},
   urldate  = {2021-04-07},
@@ -1738,11 +2117,84 @@
   pages    = {164--172}
 }
 
+
+
+
+
+@article{rozvany_difficulties_1996,
+  title    = {Difficulties in truss topology optimization with stress, local buckling and system stability constraints},
+  volume   = {11},
+  issn     = {1615-1488},
+  doi      = {10.1007/BF01197036},
+  abstract = {A serlous difficulty in topology optimization with only stress andlocal buckling constraints was pointed out recently by Zhou (1996a). Possibilities for avoiding this pitfall are (i) inclusion of system stability constraints and (ii) application of imperfections in the ground structure. However, it is shown in this study that the above modified procedures may also lead to erroneous solutions which cannot be avoided without changing the ground structure.},
+  language = {en},
+  number   = {3},
+  journal  = {Structural optimization},
+  author   = {Rozvany, G. I. N.},
+  month    = jun,
+  year     = {1996},
+  pages    = {213--217}
+}
+
+@article{rozvany_layout_1995,
+  title    = {Layout {Optimization} of {Structures}},
+  volume   = {48},
+  issn     = {0003-6900, 2379-0407},
+  doi      = {10.1115/1.3005097},
+  abstract = {Layout or topology optimization deals with the selection of the best configuration for structural systems and constitutes one of the newest and most rapidly expanding fields of structural design, although some of its basic concepts were established almost a century ago. While mathematically and computationally perhaps the most challenging, it is also economically the most rewarding design task. This review article is based on a unified formulation and covers in detail both exact, analytical methods and approximate, discretized methods of layout optimization. Although discretized solutions are unavoidable for most practical, real-world problems, only explicit analytical solutions provide (i) a reliable means for checking the validity and convergence of numerical methods and (ii) a basis for assessing the relative economy of other designs. Moreover, some of the most efficient new numerical methods of layout optimization are iterative versions of analytical methods. Particularly promising are recent extensions of the exact layout theory to multiload, multipurpose elastic systems.},
+  language = {en},
+  number   = {2},
+  urldate  = {2021-03-30},
+  journal  = {Applied Mechanics Reviews},
+  author   = {Rozvany, G. I. N. and Bends{\o}e, M. P. and Kirsch, U.},
+  month    = feb,
+  year     = {1995},
+  pages    = {41--119}
+}
+
+
+
+@article{rozvany_symmetry_2011,
+  title    = {On symmetry and non-uniqueness in exact topology optimization},
+  volume   = {43},
+  issn     = {1615-1488},
+  url      = {https://doi.org/10.1007/s00158-010-0564-0},
+  doi      = {10.1007/s00158-010-0564-0},
+  abstract = {The aim of this article is to initiate an exchange of ideas on symmetry and non-uniqueness in topology optimization. These concepts are discussed in the context of 2D trusses and grillages, but could be extended to other structures and design constraints, including 3D problems and numerical solutions. The treatment of the subject is pitched at the background of engineering researchers, and principles of mechanics are given preference to those of pure mathematics. The author hopes to provide some new insights into fundamental properties of exact optimal topologies. Combining elements of the optimal layout theory (of Prager and the author) with those of linear programming, it is concluded that for the considered problems the optimal topology is in general unique and symmetric if the loads, domain boundaries and supports are symmetric. However, in some special cases the number of optimal solutions may be infinite, and some of these may be non-symmetric. The deeper reasons for the above findings are explained in the light of the above layout theory.},
+  language = {en},
+  number   = {3},
+  urldate  = {2023-10-04},
+  journal  = {Structural and Multidisciplinary Optimization},
+  author   = {Rozvany, George I. N.},
+  month    = mar,
+  year     = {2011},
+  keywords = {Grillages, Non-uniqueness, Optimal layout theory, Symmetry, Topology optimization, Trusses},
+  pages    = {297--317},
+  file     = {Full Text PDF:D\:\\estragio\\Zotero\\storage\\6WZJC9FY\\Rozvany - 2011 - On symmetry and non-uniqueness in exact topology o.pdf:application/pdf}
+}
+
+
+@article{salazar_de_troya_adaptive_2018,
+  title    = {Adaptive mesh refinement in stress-constrained topology optimization},
+  volume   = {58},
+  issn     = {1615-147X, 1615-1488},
+  doi      = {10.1007/s00158-018-2084-2},
+  abstract = {We present a topology structural optimization framework with adaptive mesh refinement and stress-constraints. Finite element approximation and geometry representation benefit from such refinement by enabling more accurate stress field predictions and greater resolution of the optimal structural boundaries. We combine a volume fraction filter to impose a minimum design feature size, the RAMP penalization to generate “black-and-white designs” and a RAMP-like stress definition to resolve the “stress singularity problem.” Regions with stress concentrations dominate the optimized design. As such, rigorous simulations are required to accurately approximate the stress field. To achieve this goal, we invoke a threshold operation and mesh refinement during the optimization. We do so in an optimal fashion, by applying adaptive mesh refinement techniques that use error indicators to refine and coarsen the mesh as needed. In this way, we obtain more accurate simulations and greater resolution of the design domain. We present results in two dimensions to demonstrate the efficiency of our method.},
+  language = {en},
+  number   = {6},
+  urldate  = {2022-06-27},
+  journal  = {Structural and Multidisciplinary Optimization},
+  author   = {Salazar de Troya, Miguel A. and Tortorelli, Daniel A.},
+  month    = dec,
+  year     = {2018},
+  pages    = {2369--2386}
+}
+
+
 @article{sankaranarayanan_truss_1994,
   title    = {Truss topology optimization with simultaneous analysis and design},
   volume   = {32},
   issn     = {0001-1452, 1533-385X},
-  url      = {https://arc.aiaa.org/doi/10.2514/3.12000},
   doi      = {10.2514/3.12000},
   language = {en},
   number   = {2},
@@ -1754,6 +2206,30 @@
   pages    = {420--424},
   file     = {Sankaranarayanan et al. - 1994 - Truss topology optimization with simultaneous anal.pdf:D\:\\estragio\\Zotero\\storage\\XVREBJT5\\Sankaranarayanan et al. - 1994 - Truss topology optimization with simultaneous anal.pdf:application/pdf}
 }
+
+
+
+
+
+
+@article{savine_component-based_2021,
+  title    = {A component-based method for the optimization of stiffener layout on large cylindrical rib-stiffened shell structures},
+  volume   = {64},
+  issn     = {1615-1488},
+  doi      = {10.1007/s00158-021-02945-9},
+  abstract = {In the present work, an optimization method is proposed in order to produce innovative stiffening layouts for large stiffened cylindrical shell structures, as they appear in the aerospace industry. A component-based logic is applied on a ground mesh of structural elements (shells and beams), which was inspired by techniques of explicit topology optimization on solid elements (plane or tridimensional massive models). Geometric components, representing the layout of the stiffeners (i.e. location, shape and size), are projected onto the ground mesh, resulting in controlled sets of active beam elements. These sets constitute the structural representation of the stiffeners’ layout in the optimization model, which is then used to evaluate the objective and constraint functions of the optimization problem as well as their semi-analytical sensitivities. By applying the optimization method to compliance minimization problems, we show the efficiency and accuracy of the proposed method and its capability to handle a typical aerospace structure, such as a space-launcher part: a stiffened cylindrical shell in presence of an access hatch.},
+  language = {en},
+  number   = {4},
+  urldate  = {2023-06-08},
+  journal  = {Structural and Multidisciplinary Optimization},
+  author   = {Savine, Florent and Irisarri, François-Xavier and Julien, Cédric and Vincenti, Angela and Guerin, Yannick},
+  month    = oct,
+  year     = {2021},
+  keywords = {Component-based method, Explicit topology optimization, Ground structure, Stiffened shell structure, Stiffener layout optimization},
+  pages    = {1843--1861},
+  file     = {Full Text PDF:D\:\\estragio\\Zotero\\storage\\RII6JRR9\\Savine et al. - 2021 - A component-based method for the optimization of s.pdf:application/pdf}
+}
+
 
 
 @article{schaedler_architected_2016,
@@ -1772,6 +2248,7 @@
   pages    = {187--210}
 }
 
+
 @article{schaedler_designing_2014,
   title    = {Designing {Metallic} {Microlattices} for {Energy} {Absorber} {Applications}},
   volume   = {16},
@@ -1786,7 +2263,6 @@
   year     = {2014},
   pages    = {276--283}
 }
-
 
 @article{schmidt_structural_2020,
   title    = {Structural topology optimization with smoothly varying fiber orientations},
@@ -1803,6 +2279,60 @@
   file     = {Springer Full Text PDF:D\:\\estragio\\Zotero\\storage\\VB682B6B\\Schmidt et al. - 2020 - Structural topology optimization with smoothly var.pdf:application/pdf}
 }
 
+
+@article{schwarz_efficient_2018,
+  title    = {Efficient size and shape optimization of truss structures subject to stress and local buckling constraints using sequential linear programming},
+  volume   = {58},
+  issn     = {1615-147X, 1615-1488},
+  doi      = {10.1007/s00158-017-1885-z},
+  abstract = {The advance in digital fabrication technologies and additive manufacturing allows for the fabrication of complex truss structure designs but at the same time posing challenging structural optimization problems to capitalize on this new design freedom. In response to this, an iterative approach in which Sequential Linear Programming (SLP) is used to simultaneously solve a size and shape optimization sub-problem subject to local stress and Euler buckling constraints is proposed in this work. To accomplish this, a first order Taylor expansion for the nodal movement and the buckling constraint is derived to conform to the SLP problem formulation. At each iteration a post-processing step is initiated to map a design vector to the exact buckling constraint boundary in order to facilitate the overall efficiency. The method is verified against an exact non-linear optimization problem formulation on a range of benchmark examples obtained from the literature. The results show that the proposed method produces optimized designs that are either close or identical to the solutions obtained by the non-linear problem formulation while significantly decreasing the computational time. This enables more efficient size and shape optimization of truss structures considering practical engineering constraints.},
+  language = {en},
+  number   = {1},
+  urldate  = {2021-10-18},
+  journal  = {Structural and Multidisciplinary Optimization},
+  author   = {Schwarz, Jonas and Chen, Tian and Shea, Kristina and Stanković, Tino},
+  month    = jul,
+  year     = {2018},
+  pages    = {171--184}
+}
+
+
+@article{shahabsafa_novel_2018,
+  title    = {A novel approach to discrete truss design problems using mixed integer neighborhood search},
+  volume   = {58},
+  issn     = {1615-147X, 1615-1488},
+  doi      = {10.1007/s00158-018-2099-8},
+  abstract = {Discrete truss sizing problems are very challenging to solve due to their combinatorial, nonlinear, non-convex nature. Consequently, truss sizing problems become unsolvable as the size of the truss grows. To address this issue, we consider various mathematical formulations for the truss design problem with the objective of minimizing weight, while the crosssectional areas of the bars take only discrete values. Euler buckling constraints, Hooke’s law, and bounds for stress and displacements are also considered. We propose mixed integer linear optimization (MILO) reformulations of the non-convex mixed integer models. The resulting MILO models are not solvable with existing MILO solvers as the size of the problem grows. Our novel methodology provides high-quality solutions for large-scale real truss sizing problems, as demonstrated through extensive numerical experiments.},
+  language = {en},
+  number   = {6},
+  urldate  = {2022-06-23},
+  journal  = {Structural and Multidisciplinary Optimization},
+  author   = {Shahabsafa, Mohammad and Mohammad-Nezhad, Ali and Terlaky, Tamás and Zuluaga, Luis and He, Sicheng and Hwang, John T. and Martins, Joaquim R. R. A.},
+  month    = dec,
+  year     = {2018},
+  pages    = {2411--2429}
+}
+
+
+
+
+@article{shahabsafa_truss_2021,
+  title    = {Truss topology design and sizing optimization with guaranteed kinematic stability},
+  volume   = {63},
+  issn     = {1615-147X, 1615-1488},
+  doi      = {10.1007/s00158-020-02698-x},
+  abstract = {Kinematic stability is an often overlooked, but crucial, aspect when mathematical optimization models are developed for truss topology design and sizing optimization (TTDSO) problems. In this paper, we propose a novel mixed integer linear optimization (MILO) model for the TTDSO problem with discrete cross-sectional areas and Euler buckling constraints. Random perturbations of external forces are used to obtain kinematically stable structures. We prove that, by considering appropriate perturbed external forces, the resulting structure is kinematically stable with probability one. Furthermore, we show that necessary conditions for kinematic stability can be used to speed up the solution of discrete TTDSO problems. Using the proposed TTDSO model, the MILO solver provides optimal or near optimal solutions for trusses with up to 990 bars.},
+  language = {en},
+  number   = {1},
+  urldate  = {2022-02-18},
+  journal  = {Structural and Multidisciplinary Optimization},
+  author   = {Shahabsafa, Mohammad and Fakhimi, Ramin and Lei, Weiming and He, Sicheng and Martins, Joaquim R. R. A. and Terlaky, Tamás and Zuluaga, Luis F.},
+  month    = jan,
+  year     = {2021},
+  pages    = {21--38}
+}
+
+
 @phdthesis{sigmund_design_1994,
   title    = {Design of {Material} {Structures} using {Topology} {Optimization}},
   language = {en},
@@ -1811,6 +2341,7 @@
   year     = {1994},
   file     = {Sigmund - Design of Material Structures using Topology Optim.pdf:D\:\\estragio\\Zotero\\storage\\ZHN5QX3A\\Sigmund - Design of Material Structures using Topology Optim.pdf:application/pdf}
 }
+
 
 @article{sigmund_design_1997,
   title    = {On the {Design} of {Compliant} {Mechanisms} {Using} {Topology} {Optimization}},
@@ -1827,6 +2358,8 @@
   year     = {1997},
   pages    = {493--524}
 }
+
+
 
 @article{sigmund_manufacturing_2009,
   title    = {Manufacturing tolerant topology optimization},
@@ -1845,7 +2378,6 @@
   pages    = {227--239},
   file     = {Springer Full Text PDF:D\:\\estragio\\Zotero\\storage\\BUN2KRQV\\Sigmund - 2009 - Manufacturing tolerant topology optimization.pdf:application/pdf}
 }
-
 
 @article{sigmund_materials_1994,
   title      = {Materials with prescribed constitutive parameters: {An} inverse homogenization problem},
@@ -1881,6 +2413,8 @@
 }
 
 
+
+
 @article{sigmund_non-optimality_2016,
   title    = {On the (non-)optimality of {Michell} structures},
   volume   = {54},
@@ -1911,6 +2445,22 @@
   pages    = {589--596}
 }
 
+@article{silva_smith_topology_1997,
+  title      = {Topology optimization of trusses with local stability constraints and multiple loading conditions?a heuristic approach},
+  volume     = {13},
+  issn       = {0934-4373, 1615-1488},
+  shorttitle = {Topology optimization of trusses with local stability constraints and multiple loading conditions?},
+  doi        = {10.1007/BF01199235},
+  language   = {en},
+  number     = {2-3},
+  urldate    = {2023-02-14},
+  journal    = {Structural Optimization},
+  author     = {Silva Smith, O.},
+  month      = apr,
+  year       = {1997},
+  pages      = {155--166}
+}
+
 
 @article{stolpe_alternative_2001,
   title    = {An alternative interpolation scheme for minimum compliance topology optimization},
@@ -1930,6 +2480,7 @@
   file     = {Springer Full Text PDF:D\:\\estragio\\Zotero\\storage\\XWY9ZUUE\\Stolpe and Svanberg - 2001 - An alternative interpolation scheme for minimum co.pdf:application/pdf}
 }
 
+
 @article{stolpe_fail-safe_2019,
   title    = {Fail-safe truss topology optimization},
   volume   = {60},
@@ -1945,7 +2496,6 @@
   year     = {2019},
   pages    = {1605--1618}
 }
-
 
 @article{stolpe_global_2004,
   title     = {Global optimization of minimum weight truss topology problems with stress, displacement, and local buckling constraints using branch-and-bound},
@@ -1963,7 +2513,6 @@
   pages     = {1270--1309}
 }
 
-
 @phdthesis{stolpe_models_2003,
   title    = {On {Models} and {Methods} for {Global} {Optimization} of {Structural} {Topology}},
   url      = {http://urn.kb.se/resolve?urn=urn:nbn:se:kth:diva-3478},
@@ -1973,6 +2522,26 @@
   year     = {2003},
   note     = {Publisher: Matematik}
 }
+
+
+@article{stolpe_note_2003,
+  title    = {A note on stress-constrained truss topology optimization},
+  volume   = {25},
+  issn     = {1615-147X, 1615-1488},
+  doi      = {10.1007/s00158-002-0273-4},
+  abstract = {The purpose of this brief note is to demonstrate that general-purpose optimization methods and codes should not be discarded when dealing with stressconstrained truss topology optimization. By using a disaggregated formulation of the considered problem, such methods may ﬁnd also “singular optima”, without using perturbation techniques like the ε-relaxed approach.},
+  language = {en},
+  number   = {1},
+  urldate  = {2021-03-25},
+  journal  = {Structural and Multidisciplinary Optimization},
+  author   = {Stolpe, M. and Svanberg, K.},
+  month    = mar,
+  year     = {2003},
+  pages    = {62--64}
+}
+
+
+
 
 @article{stolpe_stress_constrained_2004,
   title    = {A stress-constrained truss-topology and material-selection problem that can be solved by linear programming},
@@ -1990,7 +2559,6 @@
   pages    = {126--129}
 }
 
-
 @inproceedings{stragiotti_towards_2021,
   address    = {Lisbon, Portugal},
   title      = {Towards manufactured lattice structures: a comparison between layout and topology optimization},
@@ -2007,8 +2575,6 @@
   file       = {HAL PDF Full Text:D\:\\estragio\\Zotero\\storage\\LTHX869B\\Stragiotti et al. - 2021 - Towards manufactured lattice structures a compari.pdf:application/pdf}
 }
 
-
-
 @article{svanberg_method_1987,
   title     = {The method of moving asymptotes—a new method for structural optimization},
   volume    = {24},
@@ -2023,7 +2589,6 @@
   pages     = {359--373}
 }
 
-
 @article{sved_structural_1968,
   title    = {Structural optimization under multiple loading},
   volume   = {10},
@@ -2037,6 +2602,7 @@
   year     = {1968},
   pages    = {803--805}
 }
+
 
 @article{tortorelli_design_1994,
   title      = {Design sensitivity analysis: {Overview} and review},
@@ -2058,6 +2624,27 @@
 }
 
 
+
+
+@article{tyas_practical_2006,
+  title    = {Practical plastic layout optimization of trusses incorporating stability considerations},
+  volume   = {84},
+  issn     = {0045-7949},
+  doi      = {10.1016/j.compstruc.2005.09.032},
+  abstract = {Frequently the topologies generated using conventional discrete structural layout optimization methods may be shown to be in unstable equilibrium with the specified applied loading. Previously proposed methods to overcome this problem have tended to suffer from either a lack of rigour in identifying unstable solutions, a failure to properly consider all means of ensuring the stability of a framework, or are likely to be very computationally expensive. This paper discusses the drawbacks of current methods and introduces a conceptually simple approach that incorporates nominal lateral force load cases in a plastic linear programming problem formulation. Examples of stable solutions identified by this approach are discussed along with future developments to increase the practicality and efficiency of the method.},
+  language = {en},
+  number   = {3},
+  urldate  = {2021-10-05},
+  journal  = {Computers \& Structures},
+  author   = {Tyas, A. and Gilbert, M. and Pritchard, T.},
+  month    = jan,
+  year     = {2006},
+  keywords = {Structural optimization, Truss, Buckling, Linear programming, Plastic, Stability},
+  pages    = {115--126}
+}
+
+
+
 @article{verbart_unified_2017,
   title    = {A unified aggregation and relaxation approach for stress-constrained topology optimization},
   volume   = {55},
@@ -2074,6 +2661,22 @@
   year     = {2017},
   pages    = {663--679},
   file     = {Submitted Version:D\:\\estragio\\Zotero\\storage\\AQPB9XNT\\Verbart et al. - 2017 - A unified aggregation and relaxation approach for .pdf:application/pdf}
+}
+
+@article{wachter_implementation_2006,
+  title    = {On the implementation of an interior-point filter line-search algorithm for large-scale nonlinear programming},
+  volume   = {106},
+  issn     = {1436-4646},
+  doi      = {10.1007/s10107-004-0559-y},
+  abstract = {We present a primal-dual interior-point algorithm with a filter line-search method for nonlinear programming. Local and global convergence properties of this method were analyzed in previous work. Here we provide a comprehensive description of the algorithm, including the feasibility restoration phase for the filter method, second-order corrections, and inertia correction of the KKT matrix. Heuristics are also considered that allow faster performance. This method has been implemented in the IPOPT code, which we demonstrate in a detailed numerical study based on 954 problems from the CUTEr test set. An evaluation is made of several line-search options, and a comparison is provided with two state-of-the-art interior-point codes for nonlinear programming.},
+  language = {en},
+  number   = {1},
+  urldate  = {2021-11-29},
+  journal  = {Mathematical Programming},
+  author   = {Wächter, Andreas and Biegler, Lorenz T.},
+  month    = mar,
+  year     = {2006},
+  pages    = {25--57}
 }
 
 
@@ -2129,6 +2732,7 @@
   file     = {ScienceDirect Full Text PDF:D\:\\estragio\\Zotero\\storage\\7PK6LKHP\\Wang et al. - 2003 - A level set method for structural topology optimiz.pdf:application/pdf}
 }
 
+
 @article{wang_projection_2011,
   title    = {On projection methods, convergence and robust formulations in topology optimization},
   volume   = {43},
@@ -2142,6 +2746,7 @@
   year     = {2011},
   pages    = {767--784}
 }
+
 
 
 @article{watts_geometric_2017,
@@ -2181,6 +2786,25 @@
   file     = {Springer Full Text PDF:D\:\\estragio\\Zotero\\storage\\3QL6FSVV\\Watts et al. - 2019 - Simple, accurate surrogate models of the elastic r.pdf:application/pdf}
 }
 
+@article{wein_review_2020,
+  title    = {A review on feature-mapping methods for structural optimization},
+  volume   = {62},
+  issn     = {1615-1488},
+  doi      = {10.1007/s00158-020-02649-6},
+  abstract = {In this review we identify a new category of methods for implementing and solving structural optimization problems that has emerged over the last 20 years, which we propose to call feature-mapping methods. The two defining aspects of these methods are that the design is parameterized by a high-level geometric description and that features are mapped onto a non-body-fitted mesh for analysis. One motivation for using these methods is to gain better control over the geometry to, for example, facilitate imposing direct constraints on geometric features, while avoiding issues with re-meshing. The review starts by providing some key definitions and then examines the ingredients that these methods use to map geometric features onto a fixed mesh. One of these ingredients corresponds to the mechanism for mapping the geometry of a single feature onto a fixed analysis grid, from which an ersatz material or an immersed-boundary approach is used for the analysis. For the former case, which we refer to as the pseudo-density approach, a test problem is formulated to investigate aspects of the material interpolation, boundary smoothing, and numerical integration. We also review other ingredients of feature-mapping techniques, including approaches for combining features (which are required to perform topology optimization) and methods for imposing a minimum separation distance among features. A literature review of feature-mapping methods is provided for shape optimization, combined feature/free-form optimization, and topology optimization. Finally, we discuss potential future research directions for feature-mapping methods.},
+  language = {en},
+  number   = {4},
+  urldate  = {2023-05-30},
+  journal  = {Structural and Multidisciplinary Optimization},
+  author   = {Wein, Fabian and Dunning, Peter D. and Norato, Julián A.},
+  month    = oct,
+  year     = {2020},
+  keywords = {Feature-mapping, Fixed-grid, High-level design, Structural optimization},
+  pages    = {1597--1638},
+  file     = {Full Text PDF:D\:\\estragio\\Zotero\\storage\\4BKZVZ2Z\\Wein et al. - 2020 - A review on feature-mapping methods for structural.pdf:application/pdf}
+}
+
+
 @article{wu_design_2021,
   title    = {Design of metamaterial mechanisms using robust topology optimization and variable linking scheme},
   volume   = {63},
@@ -2194,6 +2818,7 @@
   year     = {2021},
   pages    = {1975--1988}
 }
+
 
 @article{wu_infill_2018,
   title    = {Infill {Optimization} for {Additive} {Manufacturing}—{Approaching} {Bone}-{Like} {Porous} {Structures}},
@@ -2225,6 +2850,60 @@
   year       = {2021}
 }
 
+@article{zegard_bridging_2016,
+  title    = {Bridging topology optimization and additive manufacturing},
+  volume   = {53},
+  issn     = {1615-1488},
+  doi      = {10.1007/s00158-015-1274-4},
+  abstract = {Topology optimization is a technique that allows for increasingly efficient designs with minimal a priori decisions. Because of the complexity and intricacy of the solutions obtained, topology optimization was often constrained to research and theoretical studies. Additive manufacturing, a rapidly evolving field, fills the gap between topology optimization and application. Additive manufacturing has minimal limitations on the shape and complexity of the design, and is currently evolving towards new materials, higher precision and larger build sizes. Two topology optimization methods are addressed: the ground structure method and density-based topology optimization. The results obtained from these topology optimization methods require some degree of post-processing before they can be manufactured. A simple procedure is described by which output suitable for additive manufacturing can be generated. In this process, some inherent issues of the optimization technique may be magnified resulting in an unfeasible or bad product. In addition, this work aims to address some of these issues and propose methodologies by which they may be alleviated. The proposed framework has applications in a number of fields, with specific examples given from the fields of health, architecture and engineering. In addition, the generated output allows for simple communication, editing, and combination of the results into more complex designs. For the specific case of three-dimensional density-based topology optimization, a tool suitable for result inspection and generation of additive manufacturing output is also provided.},
+  language = {en},
+  number   = {1},
+  urldate  = {2023-06-09},
+  journal  = {Structural and Multidisciplinary Optimization},
+  author   = {Zegard, Tomás and Paulino, Glaucio H.},
+  month    = jan,
+  year     = {2016},
+  keywords = {Additive manufacturing, Density-based topology optimization, Ground structure method, Structural manufacturing, Three-dimensional optimal structures},
+  pages    = {175--192},
+  file     = {Full Text PDF:D\:\\estragio\\Zotero\\storage\\T98REX6E\\Zegard and Paulino - 2016 - Bridging topology optimization and additive manufa.pdf:application/pdf}
+}
+
+@article{zhang_adaptive_2020,
+  title    = {Adaptive mesh refinement for topology optimization with discrete geometric components},
+  volume   = {364},
+  issn     = {0045-7825},
+  doi      = {10.1016/j.cma.2020.112930},
+  abstract = {This work introduces an Adaptive Mesh Refinement (AMR) strategy for the topology optimization of structures made of discrete geometric components using the geometry projection method. Practical structures made of geometric shapes such as bars and plates typically exhibit low volume fractions with respect to the volume of the design region they occupy. To maintain an accurate analysis and to ensure well-defined sensitivities in the geometry projection, it is required that the element size is smaller than the smallest dimension of each component. For low-volume-fraction structures, this leads to finite element meshes with very large numbers of elements. To improve the efficiency of the analysis and optimization, we propose a strategy to adaptively refine the mesh and reduce the number of elements by having a finer mesh on the geometric components, and a coarser mesh away from them. The refinement indicator stems very naturally from the geometry projection and is thus straightforward to implement. We demonstrate the effectiveness of the proposed AMR method by performing topology optimization for the design of minimum-compliance and stress-constrained structures made of bars and plates.},
+  language = {en},
+  urldate  = {2023-04-11},
+  journal  = {Computer Methods in Applied Mechanics and Engineering},
+  author   = {Zhang, Shanglong and Gain, Arun L. and Norato, Julián A.},
+  month    = jun,
+  year     = {2020},
+  keywords = {Adaptive mesh refinement, Geometry projection, Topology optimization},
+  pages    = {112930},
+  file     = {ScienceDirect Full Text PDF:D\:\\estragio\\Zotero\\storage\\BUQXUEQ7\\Zhang et al. - 2020 - Adaptive mesh refinement for topology optimization.pdf:application/pdf}
+}
+
+
+@article{zhang_geometry_2016,
+  title    = {A geometry projection method for the topology optimization of plate structures},
+  volume   = {54},
+  issn     = {1615-1488},
+  doi      = {10.1007/s00158-016-1466-6},
+  abstract = {We introduce a topology optimization method for the stiffness-based design of structures made of plates. Our method renders topologies made distinctly of plates, thereby producing designs that better conform to manufacturing processes tailored to plate structures, such as those that employ stock plates that are cut and joined by various means. To force the structural members to be plates, we employ the geometry projection method to project an analytical description of a set of fixed-thickness plates onto a continuous density field defined over a 3-dimensional, uniform finite element grid for analysis. A size variable is assigned to each plate and penalized so that the optimizer can entirely remove a plate from the design. The proposed method accommodates the case where the plates in the topology are rectangular and solid, and the case where the boundaries of the plates can change and holes can be introduced. The latter case is attained by composition with a free density field. We present examples that demonstrate the effectiveness of our method and discuss future work.},
+  language = {en},
+  number   = {5},
+  urldate  = {2023-04-11},
+  journal  = {Structural and Multidisciplinary Optimization},
+  author   = {Zhang, Shanglong and Norato, Julián A. and Gain, Arun L. and Lyu, Naesung},
+  month    = nov,
+  year     = {2016},
+  keywords = {Design for manufacturing, Geometry projection, Plate structures, Topology optimization},
+  pages    = {1173--1190},
+  file     = {Full Text PDF:D\:\\estragio\\Zotero\\storage\\ULXDGZ6W\\Zhang et al. - 2016 - A geometry projection method for the topology opti.pdf:application/pdf}
+}
+
 
 @article{zhang_multiscale_2018,
   title    = {Multiscale concurrent topology optimization for cellular structures with multiple microstructures based on ordered {SIMP} interpolation},
@@ -2242,6 +2921,23 @@
   pages    = {74--91}
 }
 
+@article{zhang_new_2017,
+  title    = {A new three-dimensional topology optimization method based on moving morphable components ({MMCs})},
+  volume   = {59},
+  issn     = {1432-0924},
+  doi      = {10.1007/s00466-016-1365-0},
+  abstract = {In the present paper, a new method for solving three-dimensional topology optimization problem is proposed. This method is constructed under the so-called moving morphable components based solution framework. The novel aspect of the proposed method is that a set of structural components is introduced to describe the topology of a three-dimensional structure and the optimal structural topology is found by optimizing the layout of the components explicitly. The standard finite element method with ersatz material is adopted for structural response analysis and the shape sensitivity analysis only need to be carried out along the structural boundary. Compared to the existing methods, the description of structural topology is totally independent of the finite element/finite difference resolution in the proposed solution framework and therefore the number of design variables can be reduced substantially. Some widely investigated benchmark examples, in the three-dimensional topology optimization designs, are presented to demonstrate the effectiveness of the proposed approach.},
+  language = {en},
+  number   = {4},
+  urldate  = {2023-04-11},
+  journal  = {Computational Mechanics},
+  author   = {Zhang, Weisheng and Li, Dong and Yuan, Jie and Song, Junfu and Guo, Xu},
+  month    = apr,
+  year     = {2017},
+  keywords = {Moving morphable components method, Shape sensitivity analysis, Three-dimensional problem, Topology optimization},
+  pages    = {647--665},
+  file     = {Full Text PDF:D\:\\estragio\\Zotero\\storage\\A6DFZE6H\\Zhang et al. - 2017 - A new three-dimensional topology optimization meth.pdf:application/pdf}
+}
 
 @article{zhang_scale-related_2006,
   title     = {Scale-related topology optimization of cellular materials and structures},
@@ -2293,6 +2989,38 @@
   year       = {1991},
   pages      = {309--336},
   file       = {ScienceDirect Full Text PDF:D\:\\estragio\\Zotero\\storage\\4VK2TZP2\\Zhou and Rozvany - 1991 - The COC algorithm, Part II Topological, geometric.pdf:application/pdf}
+}
+
+
+@article{zhou_difficulties_1996,
+  title    = {Difficulties in truss topology optimization with stress and local buckling constraints},
+  volume   = {11},
+  issn     = {1615-1488},
+  doi      = {10.1007/BF01376857},
+  abstract = {The aim of this note is to discuss problems associated with local buckling constraints in the context of topology optimization. It is shown that serious difficulties are encountered unless additional measures are introduced.},
+  language = {en},
+  number   = {2},
+  journal  = {Structural optimization},
+  author   = {Zhou, M.},
+  month    = apr,
+  year     = {1996},
+  keywords = {Additional Measure, Civil Engineer, Topology Optimization, Truss Topology, Truss Topology Optimization},
+  pages    = {134--136}
+}
+
+@inproceedings{zhou_progress_2002,
+  address   = {Atlanta, Georgia},
+  title     = {Progress in {Topology} {Optimization} with {Manufacturing} {Constraints}},
+  isbn      = {978-1-62410-120-5},
+  doi       = {10.2514/6.2002-5614},
+  abstract  = {Topology optimization has been shown to be an extremely powerful tool in generating efficient design concepts in the early stage of a design process. Unfortunately, very often designs suggested by topology optimization turn out to be infeasible for certain manufacturing process. At such occasions, it is often very difficult, if not impossible, to transform a design proposal to a manufacturable design. In this paper, design requirements for casting and extrusion production are addressed for topology optimization.},
+  language  = {en},
+  urldate   = {2022-05-06},
+  booktitle = {9th {AIAA}/{ISSMO} {Symposium} on {Multidisciplinary} {Analysis} and {Optimization}},
+  publisher = {American Institute of Aeronautics and Astronautics},
+  author    = {Zhou, Ming and Fleury, Raphael and Shyy, Yaw-Kang and Thomas, Harold and Brennan, Jeffrey},
+  month     = sep,
+  year      = {2002}
 }
 
 

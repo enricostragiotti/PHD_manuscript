@@ -376,6 +376,8 @@ where $M$ represents the number of nodes of the structure.
 In classic works, the ground structure is used as the start of the optimization, where the optimized structure is obtained as a subset of the initial ground structure, but multiple alternative approaches have been proposed since then, \eg starting from a very coarse ground structure that is enriched during the analysis~\sidecite{gilbert_layout_2003}, or giving the nodes of a coarse ground structure the possibility to move, during~\sidecite{pedersen_optimal_1973, achtziger_simultaneous_2007, descamps_lower-bound_2013}, or after the optimization, simultaneously reducing the number of active members of the solution~\sidecite{he_rationalization_2015, lu_reducing_2023}.
 
 \paragraph{Optimization formulation}
+\todo{add g\_stress g\_eq}
+
 The volume minimization formulation with maximum stress constraints is stated in terms of members' cross-sectional areas $\vect{a}$ and member forces $\vect{q}$ as follows:
 \begin{equation}
     \begin{aligned}
@@ -431,7 +433,7 @@ We employ the same isotropic material and structure dimensions for the two optim
     \label{tab:03_mat}
 \end{margintable}
 
-\subsection{Numerical application}
+\subsection{Numerical application} \label{sec:03_applications}
 The focus of this section is to provide the numerical framework used to carry out the comparative analysis of the optimization results obtained from continuous and truss discretizations. The optimization formulations previously described have been implemented using Python.
 
 The optimizing algorithm chosen for the continuous mesh is the \gls{mma}~\sidecite{svanberg_method_1987}. The parameter called \textit{movelimit}\sidenote{More information on the implementation of the \textit{movelimit} parameter can be found on the paper by Verbart \cite{verbart_unified_2017}} is set to $0.1$ while the other algorithm's parameters are set to their default value. A continuation scheme for the aggressiveness of the projection parameter $\beta$ is set to increase by one every 200 iterations, the number of max iteration is set to 7500, the stopping criteria is calculated as $\Vert r_k \Vert_2 / \sqrt{N_\text{e}}$ on the physical densities $\rhophys$ \cite{ferrari_new_2020}, and it is set to $10^{-4}$. The aggregation parameter $P$ of the aggregation function $G_{\text{KS}}^\text{L}$ is set to 32. The numerical implementation is carried out using the NLopt Python optimization framework~\sidecite{NLopt_2007}, analytically evaluating the sensitivity using \eqsref{eq:03_01} and \eqrefnotext{eq:03_sens-2}.
@@ -457,7 +459,7 @@ The optimizations presented in this section are performed on a server equipped w
     \subcaptionbox{}{\includegraphics[width=0.23\linewidth ]{figures/03_comparison_TO_TTO/07_to_sol/stress_04.pdf}}
     \hfill
     \subcaptionbox{}{\includegraphics[width=0.23\linewidth ]{figures/03_comparison_TO_TTO/07_to_sol/stress_025.pdf}}
-    \caption{(a-d) topology optimized structures for different material admissibles $\sigma_\text{L}=10.00,2.00,0.40\text{ and }0.25$, showing a volum fraction of $V_\text{f}=1.60\%,4.04\%,18.03\%\text{ and }34.71\%$, respectively. (e-h) Von Mises stress distribution of the optimized structures.}
+    \caption{(a-d) topology optimized structures for different material admissibles $\sigma_\text{L}=10.00,2.00,0.40\text{ and }0.25$, showing a volume fraction of $V_\text{f}=1.60\%,4.04\%,18.03\%\text{ and }34.71\%$, respectively. (e-h) Von Mises stress distribution of the optimized structures.}
     \label{fig:03_to_sol}
 \end{figure*}
 In this section, we generate multiple optimized structures with different volume fractions $V_\text{f}$ by launching the optimization code for continuous mesh with different values of the material admissible $\sigma_\text{L}$ spanning from $0.2$ to $20$.
@@ -508,7 +510,7 @@ Looking again at \tabref{tab:TO_results}, we notice that the optimization proces
     0.20  & 0.27  & 48.08 \ppercent    & 76.56      & \qty{1.26}{\percent} & \color{accent_r_1}7500     & $\hms{91;46;00}$ \\ \bottomrule
     \end{tabular}
     \caption{Numerical results of the topology optimization method of the L-shape beam load case with varying material admissible $\sigma_\text{L}$ on a $600 \times 600$ elements mesh.}
-    \label{tab:TO_results}
+    \label{tab:03_TO_results}
     \end{table}
     
 \begin{marginfigure}
@@ -557,7 +559,7 @@ Additionally, the following equation consistently holds:
 \begin{equation} \label{eq:03_V_star}
     V^*=\frac{fL}{\sigma_\text{L}}\cdot \text{const.},
 \end{equation}
-where the multiplicative constant depends on the load case and the ground structure used to discretize the design space $\Omega$ \sidecite{lewinski_extended_1994}. The execution time of the optimization is approximately \qty{90}{\second} and does not change with respect to the maximum stress $\sigma_\text{L}$. The results of the multiple optimizations can be found in \tabref{tab:TTO_results}.
+where the multiplicative constant depends on the load case and the ground structure used to discretize the design space $\Omega$ \sidecite{lewinski_extended_1994}. The execution time of the optimization is approximately \qty{90}{\second} and does not change with respect to the maximum stress $\sigma_\text{L}$. The results of the multiple optimizations can be found in \tabref{tab:03_TTO_results}.
 
 \begin{table}[]
     \centering
@@ -588,7 +590,7 @@ where the multiplicative constant depends on the load case and the ground struct
     \bottomrule    
     \end{tabular}
     \caption{Numerical results of the \gls{tto} method of the L-shape beam load case with varying material admissible $\sigma_\text{L}$ on a $33 \times 33$ ground structure.}
-    \label{tab:TTO_results}
+    \label{tab:03_TTO_results}
     \end{table}
 
     \begin{marginfigure}
@@ -599,7 +601,7 @@ where the multiplicative constant depends on the load case and the ground struct
     \end{marginfigure}
 It's worth noting that we have intentionally opted for a fine mesh here to achieve a design variable count roughly equivalent to that of the continuous mesh case. We have utilized a fully connected ground structure with $33 \times 33$ nodes, but in reality, we obtain satisfactory results even with just $13 \times 13$ nodes (see \figref{fig:03_L_tto_13}). In this case we obtain a normalized volume $V^*=4.705 \; fL/\sigma_\text{L}$, signifying a \qty{1.05}{\percent} increase compared to the $33 \times 33$ case with $V^*=4.656 \; fL/\sigma_\text{L}$ with a variable count reduction of \qty{97.4}{\percent} (\num[group-separator={$\,$}]{305728} vs \num[group-separator={$\,$}]{7705} candidates). The computational time remains below one second.
 
-In assessing solution quality, we employ a distinct metric known as the slenderness ratio, denoted as $\lambda$, which represents the ratio between the length and the radius of gyration of the bar. In our specific case, we have established a minimum slenderness ratio of 15. For a bar with a circular cross-sectional area, this corresponds to a radius of $R_\lambda$ for a bar length of $7.5\;R_\lambda$. We higlighted in red the optimized structures that does not repect the minimum slenderness ratio in \tabref{tab:TTO_results}. It is important to note that this metric is very sensible to the ground structure used: for example in the $13\times13$ nodes test case, $\lambda$ becomes critical ($\lambda=14.8$) only when $\sigma_\text{L}=0.25$ and $V_\text{f}=25.09$, suggesting that a control of this parameter during the optimization should be beneficial.
+In assessing solution quality, we employ a distinct metric known as the slenderness ratio, denoted as $\lambda$, which represents the ratio between the length and the radius of gyration of the bar. In our specific case, we have established a minimum slenderness ratio of 15. For a bar with a circular cross-sectional area, this corresponds to a radius of $R_\lambda$ for a bar length of $7.5\;R_\lambda$. We higlighted in red the optimized structures that does not repect the minimum slenderness ratio in \tabref{tab:03_TTO_results}. It is important to note that this metric is very sensible to the ground structure used: for example in the $13\times13$ nodes test case, $\lambda$ becomes critical ($\lambda=14.8$) only when $\sigma_\text{L}=0.25$ and $V_\text{f}=25.09$, suggesting that a control of this parameter during the optimization should be beneficial.
 
 Lastly, \figref{fig:03_tto_plot} provides a visual summary of our findings, emphasizing in red the observed limits. To effectively show the different orders of magnitude present in the plot and how already done for the continuous mesh case, we have used both linear and logarithmic scales simultaneously. In this case, the compliance exhibits a perfectly linear relationship, while the volume follows a hyperbolic law in accordance with \eqref{eq:03_V_star}.
 

@@ -36,6 +36,10 @@
 \usepackage{subcaption} % multiple images
 \usepackage[ruled,vlined]{algorithm2e} % Algorithm
 \usepackage[export]{adjustbox} % Image alignement
+\usepackage{array} % for defining a new column type
+\usepackage{varwidth} %for the varwidth minipage environment
+\newcolumntype{M}{>{\begin{varwidth}{1cm}}l<{\end{varwidth}}} %M is for Maximal column
+
 
 \usepackage{tikz,pgfplots}  % TikZ and PGF
 \pgfplotsset{compat=1.11}
@@ -197,7 +201,7 @@ This document was typeset with the help of \href{https://sourceforge.net/project
 
 % \include{chapters/2_literature_review}
 
-% \include{chapters/3_comparison_TO_TTO}
+\include{chapters/3_comparison_TO_TTO}
 
 \include{chapters/4_TTO_upgrades}
 

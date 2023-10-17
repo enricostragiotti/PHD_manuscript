@@ -1,6 +1,6 @@
-PWD d:\estragio\PhD\99_Github\PHD_manuscript\figures\03_comparison_TO_TTO\00_stress_vol
+PWD d:\estragio\PhD\99_Github\PHD_manuscript\figures\03_comparison_TO_TTO\15_stress_vol
 INPUT D:\estragio\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT d:\estragio\PhD\99_Github\PHD_manuscript\figures\03_comparison_TO_TTO\00_stress_vol\stress_vol.tex
+INPUT d:\estragio\PhD\99_Github\PHD_manuscript\figures\03_comparison_TO_TTO\15_stress_vol\stress_vol.tex
 OUTPUT stress_vol.log
 INPUT C:\Program Files\MiKTeX\tex\latex\standalone\standalone.cls
 INPUT C:\Program Files\MiKTeX\tex\latex\standalone\standalone.cls

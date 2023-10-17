@@ -1,0 +1,41 @@
+\documentclass[10pt, varwidth=170mm]{standalone}
+
+\input{../img_header}
+
+\tikzset{font=\small}
+
+\begin{document}
+
+\begin{tikzpicture} [
+  line/.style     = { draw, thick, -stealth, shorten >=2pt },
+  ]
+    
+\pgfmathsetmacro{\textlen}{2cm};
+% Define nodes
+\begin{scope}[node distance=1.8cm and 3cm, on grid]
+\node [text centered] at (0,0) (inp1) {$\bm{a}_0$}; 
+\node [block, text width=\textlen, below=of inp1] (slp) {Solve relaxed Problem $\mathbb{P}_2$\\using SLP};
+\node [decision, ,label={290:No}, label={10:Yes}, text width=\textlen, inner sep=0pt, node distance=4.9cm, right=of slp] (check) {\scriptsize Statically\\indeterminate?};
+\node [block, node distance=3.7cm, text width=2.5cm, right=of check] (simpl) {Ground structure\\simplification};
+\node [block, text width=\textlen, right=of simpl] (nlp) {Solve Problem $\mathbb{P}_1$\\using NLP};
+\node [text centered, below=of nlp] (out1) {$\bm{x}^*=[\bm{a}^*,\; \bm{q}^*,\; \bm{U}^*]$}; 
+\end{scope}
+  
+% connect all nodes defined above
+\begin{scope} [every path/.style=line]
+    \path (inp1)        --    (slp);
+    \draw (slp.east) to[in=270, out=-45, looseness=3.5] node(reinit)[pos=0.5, fill=accent_r_1!10,anchor=center,inner sep=0.5em] {$\quad$Reinitialization} (slp.south);
+    \path (slp)       --   (check);
+    \path (check)       --   (simpl);
+    \path (simpl)       --   (nlp);
+    \path (nlp)       --   (out1);
+    \path (check)        |- node[pos=0.8, text width=2.15cm, fill = white,anchor=center,text centered,inner sep=0.5em] {$\bm{U}^*$ evaluation\\using Eq.$\;$(7)}    (out1);
+\end{scope}
+  
+\begin{pgfonlayer}{background}
+  \node[label={[label distance=0cm,color=accent_r_1]45:SLP step},draw, color=accent_r_1, fill=accent_r_1!10, very thick, inner ysep=1em, inner xsep=1em, rounded corners=0.5cm, fit=(slp) (reinit)] (box) {};
+  \node[label={[label distance=0cm,color=accent_b_1]30:NLP step},draw, color=accent_b_1, fill=accent_b_1!10, very thick, inner ysep=1em, inner xsep=1em, rounded corners=0.5cm, fit= (simpl) (nlp)] (box) {};
+\end{pgfonlayer}
+\end{tikzpicture}
+
+\end{document}

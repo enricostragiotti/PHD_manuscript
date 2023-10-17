@@ -1,0 +1,10 @@
+Area tol: 1.00E-06
+Area tol (brutal): 1.00E-16
+q tol: 1.00E-05
+U tol: 1.00E-03
+Original number of bars: 315
+Updated number of bars: 257
+Bars eliminated: 58
+Number of bars under threshold: 95
+Number of bars that would be eliminated by force: 84
+Number of bars that would be eliminated by displacement: 58

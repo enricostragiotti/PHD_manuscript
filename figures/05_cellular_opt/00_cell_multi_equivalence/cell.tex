@@ -1,0 +1,43 @@
+\documentclass[12pt, varwidth=10cm]{standalone}
+
+\input{../../img_header}
+
+
+
+\begin{document}
+
+\begin{tikzpicture}
+
+	\node[outer sep=0, inner sep=0] (figA) at (4,2){
+        \includegraphics[width=8cm]{cell_data.pdf}
+    };
+
+    \point{a}{0}{0};
+	\point{b}{0}{4};
+	\point{c}{8}{4};
+	\point{d}{8}{0};
+	\point{g}{4}{4};
+	\point{h}{4}{0};
+	
+	\beam{2}{a}{b}[1][1];
+	\beam{2}{b}{c}[1][1];
+	\beam{2}{c}{d}[1][1];
+	\beam{2}{d}{a}[1][1];
+	\beam{3}{g}{h}[1][1];
+	
+    \SleeveSupport{0,2}[.06]{4}
+    \SleeveSupport{8,2}[.06]{4}
+    \support{1}{a}
+    \hinge{1}{a}
+    \support{1}{d}
+    \hinge{1}{d}
+    \support{1}{h}
+    \hinge{1}{h}
+
+    \draw[force, black] (1.5,-0.2) -- (1.5,-1) node[right] { $P$};
+    \draw[force, black] (6.5,-0.2) -- (6.5,-1) node[right] { $P$};
+	\notation{5}{c}{d}[$L$][.5][right=3mm][1];
+    
+\end{tikzpicture}
+
+\end{document}

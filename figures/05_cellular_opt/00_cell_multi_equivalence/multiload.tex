@@ -1,0 +1,42 @@
+\documentclass[12pt, varwidth=10cm]{standalone}
+
+\input{../../img_header}
+
+
+
+\begin{document}
+
+\begin{tikzpicture}
+
+    \node[outer sep=0, inner sep=0] (figA) at (2,2){
+        \includegraphics[width=4cm]{multiload_data.pdf}
+    };
+
+    \point{a}{0}{0};
+	\point{b}{0}{4};
+	\point{c}{4}{4};
+	\point{d}{4}{0};
+	\point{e}{1.5}{0};
+	\point{f}{2.5}{0};
+	
+	
+	\beam{2}{a}{b}[1][1];
+	\beam{2}{b}{c}[1][1];
+	\beam{2}{c}{d}[1][1];
+	\beam{2}{d}{a}[1][1];
+
+    \draw[force, accent_r_1] (1.5,-0.2) -- (1.5,-1) node[right] {$P_1$};
+    \draw[force, accent_b_1] (2.5,-0.2) -- (2.5,-1) node[right] {$P_2$};
+	\notation{5}{c}{d}[$L$][.5][right=3mm][1];
+
+    \SleeveSupport{0,2}[.06]{4}
+    \SleeveSupport{4,2}[.06]{4}
+    \support{1}{a}
+    \hinge{1}{a}
+    \support{1}{d}
+    \hinge{1}{d}
+
+    
+\end{tikzpicture}
+
+\end{document}
