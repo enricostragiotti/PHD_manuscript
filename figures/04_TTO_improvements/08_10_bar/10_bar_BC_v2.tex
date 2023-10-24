@@ -1,0 +1,42 @@
+\documentclass[10pt, varwidth=16cm]{standalone}
+
+\input{../img_header}
+
+
+
+\begin{document}
+
+\begin{tikzpicture}
+    %\draw[ help lines , step =.2] ( 0 , 0) grid (6, 3) ;
+    \node[inner sep=0pt] (min1) at (2.5,1.25) {\includegraphics[width=5cm]{topology.pdf}};
+
+    \point{a}{0}{0};
+    \point{b}{0}{2.5};
+    \point{c}{5}{2.5};
+    \point{e}{5}{1.25};
+    \point{f}{5}{0};
+    \point{g}{2.5}{2.5};
+
+    
+    % \beam{2}{a}{b}[1][1];
+    % \beam{2}{b}{c}[1][1];
+    % \beam{2}{c}{e}[1][1];
+    % \beam{2}{e}{f}[1][1];
+    % \beam{2}{f}{a}[1][1];
+    
+    \notation{1}{g}{$P$}[above right]
+    \notation{1}{c}{$P$}[above right]
+    \notation{5}{f}{a}[2L][.5][below=2mm];
+    \notation{5}{c}{f}[L][.5][right=2mm][1];
+    
+    \fill[pattern=north east lines] (-0.2,-0.2) -- (-0.2,2.5+.2) -- (0,2.5+.2) -- (0,-0.2);
+    
+    \load{1}{g}[90][1][0]
+    \load{1}{c}[90][1][0]
+        
+
+
+
+\end{tikzpicture}
+
+\end{document}

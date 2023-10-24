@@ -1,0 +1,72 @@
+\documentclass[10pt, varwidth=16cm]{standalone}
+
+\input{../img_header}
+
+
+
+\begin{document}
+
+\begin{tikzpicture}
+    %\draw[ help lines , step =.2] ( 0 , 0) grid (6, 3) ;
+    % \node[inner sep=0pt] (min1) at (2.5,1.25) {\includegraphics[width=5cm]{topology.pdf}};
+
+    \point{a}{0}{0};
+    \point{b}{2.5}{0};
+    \point{c}{5}{0};
+    \point{d}{0}{2.5};
+    \point{e}{2.5}{2.5};
+    \point{f}{5}{2.5};
+    % \point{b}{0}{2.5};
+    % \point{c}{2.5}{2.5};
+    % \point{c}{5}{2.5};
+    % \point{e}{5}{1.25};
+    % \point{f}{5}{0};
+    % \point{g}{2.5}{2.5};
+
+    \fill[pattern=north east lines] (-0.3,-0.3) -- (-0.3,2.5+.3) -- (0,2.5+.3) -- (0,-0.3);
+    
+    \beam{2}{a}{b}[1][1];
+    \beam{2}{b}{c}[1][1];
+    \beam{2}{c}{f}[1][1];
+    \beam{2}{d}{e}[1][1];
+    \beam{2}{e}{f}[1][1];
+    \beam{2}{a}{e}[1][1];
+    \beam{2}{d}{b}[1][1];
+    \beam{2}{e}{c}[1][1];
+    \beam{2}{b}{f}[1][1];
+    \beam{2}{b}{e}[1][1];
+
+    \hinge{1}{a}
+    \hinge{1}{b}
+    \hinge{1}{c}
+    \hinge{1}{d}
+    \hinge{1}{e}
+    \hinge{1}{f}
+
+    \notation{5}{a}{b}[\textcolor{axis_gray}{3}];
+    \notation{5}{b}{c}[\textcolor{axis_gray}{4}];
+    \notation{5}{c}{f}[\textcolor{axis_gray}{6}][.5][left][1];
+    \notation{5}{d}{e}[\textcolor{axis_gray}{1}];
+    \notation{5}{e}{f}[\textcolor{axis_gray}{2}];
+    \notation{5}{a}{e}[\textcolor{axis_gray}{8}][.2];
+    \notation{5}{d}{b}[\textcolor{axis_gray}{7}][.2];
+    \notation{5}{e}{c}[\textcolor{axis_gray}{9}][.2];
+    \notation{5}{b}{f}[\textcolor{axis_gray}{10}][.2];
+    \notation{5}{b}{e}[\textcolor{axis_gray}{5}][.5][left][1];
+    
+    % \notation{1}{e}{$P$}[above right]
+    % \notation{1}{f}{$P$}[above right]
+    \notation{5}{a}{c}[2L][.5][below=2mm];
+    \notation{5}{c}{f}[L][.5][right=2mm][1];
+    
+    \draw[force] (2.5,2.5+0.9) -- (2.5,2.5+0.2) node[right] {$P$};
+    \draw[force] (5,2.5+0.9) -- (5,2.5+0.2) node[right] {$P$};
+    % \load{1}{e}[90][1][0]
+    % \load{1}{f}[90][1][0]
+        
+
+
+
+\end{tikzpicture}
+
+\end{document}

@@ -1,0 +1,45 @@
+% This file was created with tikzplotlib v0.10.1.
+\begin{tikzpicture}
+
+\definecolor{darkgray176}{RGB}{176,176,176}
+
+\begin{axis}[
+hide x axis,
+hide y axis,
+tick align=outside,
+tick pos=left,
+title={Buckling check},
+x grid style={darkgray176},
+xmin=0, xmax=720,
+xtick style={color=black},
+y grid style={darkgray176},
+ymin=-88.258064516129, ymax=448.258064516129,
+ytick style={color=black}
+]
+\path [draw=black, line width=0.0568514837655823pt]
+(axis cs:0,360)
+--(axis cs:360,360);
+
+\path [draw=black, line width=0.0568514837586226pt]
+(axis cs:360,360)
+--(axis cs:720,360);
+
+\path [draw=black, thick]
+(axis cs:0,0)
+--(axis cs:360,0);
+
+\path [draw=black, line width=0.461880215343528pt]
+(axis cs:360,0)
+--(axis cs:360,360);
+
+\path [draw=black, line width=0.160800278760839pt]
+(axis cs:360,0)
+--(axis cs:0,360);
+
+\path [draw=black, line width=0.776786834688105pt]
+(axis cs:360,0)
+--(axis cs:720,360);
+
+\end{axis}
+
+\end{tikzpicture}

@@ -1,6 +1,6 @@
-PWD d:\estragio\PhD\99_Github\PHD_manuscript\figures\03_comparison_TO_TTO\02_gauss_point
+PWD d:\estragio\PhD\99_Github\PHD_manuscript\figures\03_comparison_TO_TTO\03_gauss_point
 INPUT D:\estragio\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT d:\estragio\PhD\99_Github\PHD_manuscript\figures\03_comparison_TO_TTO\02_gauss_point\gp.tex
+INPUT d:\estragio\PhD\99_Github\PHD_manuscript\figures\03_comparison_TO_TTO\03_gauss_point\gp.tex
 OUTPUT gp.log
 INPUT C:\Program Files\MiKTeX\tex\latex\standalone\standalone.cls
 INPUT C:\Program Files\MiKTeX\tex\latex\standalone\standalone.cls

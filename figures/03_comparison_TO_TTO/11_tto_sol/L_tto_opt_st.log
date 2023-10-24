@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.8.29)  14 SEP 2023 09:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.8.29)  18 OCT 2023 15:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**d:/estragio/PhD/99_Github/PHD_manuscript/figures/03_comparison_TO_TTO/05_tto_sol/L_tto_opt_st.tex
-(d:/estragio/PhD/99_Github/PHD_manuscript/figures/03_comparison_TO_TTO/05_tto_sol/L_tto_opt_st.tex
+**d:/estragio/PhD/99_Github/PHD_manuscript/figures/03_comparison_TO_TTO/11_tto_sol/L_tto_opt_st.tex
+(d:/estragio/PhD/99_Github/PHD_manuscript/figures/03_comparison_TO_TTO/11_tto_sol/L_tto_opt_st.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-03-30> (C:\Program Files\MiKTeX\tex/latex/standalone\standalone.cls
 Document Class: standalone 2022/10/10 v1.3b Class to compile TeX sub-files standalone
@@ -628,10 +628,10 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 {D:/estragio/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./top_tto_str.pdf>] (L_tto_opt_st.aux) ) 
 Here is how much of TeX's memory you used:
- 32732 strings out of 476331
- 863849 string characters out of 5797589
+ 32734 strings out of 476331
+ 863896 string characters out of 5797589
  1866660 words of memory out of 5000000
- 52625 multiletter control sequences out of 15000+600000
+ 52627 multiletter control sequences out of 15000+600000
  524157 words of font info for 76 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  122i,15n,121p,831b,3033s stack positions out of 10000i,1000n,20000p,200000b,200000s

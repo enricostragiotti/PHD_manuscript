@@ -1,6 +1,6 @@
 \documentclass[10pt, varwidth=170mm]{standalone}
 
-\input{../img_header}
+\input{../../img_header}
 
 \tikzset{font=\small}
 
@@ -29,7 +29,7 @@
     \path (check)       --   (simpl);
     \path (simpl)       --   (nlp);
     \path (nlp)       --   (out1);
-    \path (check)        |- node[pos=0.8, text width=2.15cm, fill = white,anchor=center,text centered,inner sep=0.5em] {$\bm{U}^*$ evaluation\\using Eq.$\;$(7)}    (out1);
+    \path (check)        |- node[pos=0.8, text width=2.15cm, fill = white,anchor=center,text centered,inner sep=0.5em] {$\bm{U}^*$ evaluation\\using $g_\text{comp}$}    (out1);
 \end{scope}
   
 \begin{pgfonlayer}{background}

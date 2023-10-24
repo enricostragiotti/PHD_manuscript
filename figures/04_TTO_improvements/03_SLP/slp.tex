@@ -1,6 +1,6 @@
 \documentclass[10pt, varwidth=16cm]{standalone}
 
-\input{../img_header}
+\input{../../img_header}
 
 
 
@@ -24,7 +24,9 @@
             legend pos= south west,
             % axis equal,
             enlargelimits, % no need to add padding
-            axis line style={-stealth,semithick},
+            axis line style={-stealth,semithick, axis_gray},
+            every axis label/.append style ={axis_gray},
+            every tick label/.append style ={axis_gray},
             xmin	= \xmin,
             xmax	= \xmax,
             % ymin	= \ymin,
@@ -64,12 +66,12 @@
         \addplot[domain=1.5:4,samples=5, accent_b_2, dashed, thick] {-1.2*x+1.8} node[lab, above right=1mm, pos=0.95] {$\tilde{g}_{\mathrm{ buck}}$};
 
         % Plot lines
-        \draw [thin] (a_0) -- (a_0_x);
-        \draw [thin] (a_1_l) -- (a_1_x);
+        \draw [thin, axis_gray] (a_0) -- (a_0_x);
+        \draw [thin, axis_gray] (a_1_l) -- (a_1_x);
 
         % Plot arrows
-        \draw [line width=0.4mm, accent_r_1, -latex] (a_0) -- (a_1);
-        \draw [line width=0.3mm, accent_r_1, -latex] (a_1) -- (a_1_l);
+        \draw [line width=0.4mm, forces] (a_0) -- (a_1);
+        \draw [line width=0.3mm, forces] (a_1) -- (a_1_l);
 
         % Plot important points
         \node at (a_0) [{circle, fill, inner sep=1pt, node contents={}}];

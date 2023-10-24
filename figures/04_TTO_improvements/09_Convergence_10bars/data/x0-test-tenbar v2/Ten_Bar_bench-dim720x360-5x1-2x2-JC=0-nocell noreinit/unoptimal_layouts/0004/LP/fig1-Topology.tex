@@ -1,0 +1,108 @@
+% This file was created with tikzplotlib v0.10.1.
+\begin{tikzpicture}
+
+\definecolor{darkgray176}{RGB}{176,176,176}
+\definecolor{lightgray}{RGB}{211,211,211}
+
+\begin{axis}[
+hide x axis,
+hide y axis,
+tick align=outside,
+tick pos=left,
+title={Final Structure - Vol = 102059.766},
+x grid style={darkgray176},
+xmin=-36, xmax=756,
+xtick style={color=black},
+y grid style={darkgray176},
+ymin=-115.083870967742, ymax=475.083870967742,
+ytick style={color=black}
+]
+\addplot [line width=0.08pt, lightgray, dotted]
+table {%
+0 0
+0 360
+};
+\addplot [line width=0.08pt, lightgray, dotted]
+table {%
+0 360
+720 360
+};
+\addplot [line width=0.08pt, lightgray, dotted]
+table {%
+720 360
+720 0
+};
+\addplot [line width=0.08pt, lightgray, dotted]
+table {%
+720 0
+0 0
+};
+\addplot [line width=0.124204174100783pt, red]
+table {%
+0 360
+360 360
+};
+\addplot [fill=black, mark=*, only marks]
+table{%
+x  y
+0 360
+360 360
+};
+\addplot [line width=0.336358566129809pt, blue]
+table {%
+0 0
+360 0
+};
+\addplot [fill=black, mark=*, only marks]
+table{%
+x  y
+0 0
+360 0
+};
+\addplot [line width=0.336358566092593pt, blue]
+table {%
+360 0
+720 0
+};
+\addplot [fill=black, mark=*, only marks]
+table{%
+x  y
+360 0
+720 0
+};
+\addplot [line width=0.336358566092583pt, blue]
+table {%
+720 0
+720 360
+};
+\addplot [fill=black, mark=*, only marks]
+table{%
+x  y
+720 0
+720 360
+};
+\addplot [thick, blue]
+table {%
+0 0
+360 360
+};
+\addplot [fill=black, mark=*, only marks]
+table{%
+x  y
+0 0
+360 360
+};
+\addplot [line width=0.058550409161592pt, red]
+table {%
+720 0
+360 360
+};
+\addplot [fill=black, mark=*, only marks]
+table{%
+x  y
+720 0
+360 360
+};
+\end{axis}
+
+\end{tikzpicture}

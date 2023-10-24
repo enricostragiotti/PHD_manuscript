@@ -2,60 +2,21 @@
 \babel@toc {english}{}\relax
 \contentsline {chapter}{\nonumberline Contents}{iii}{chapter*.1}%
 \contentsline {chapter}{\nonumberline List of Figures}{v}{chapter*.2}%
-\contentsline {chapter}{\nonumberline List of Tables}{vi}{chapter*.3}%
-\contentsline {chapter}{List of Abbreviations}{vi}{section*.4}%
-\contentsline {chapter}{\numberline {1}Evaluating discretization approaches for ultralight structure optimization}{1}{chapter.1}%
+\contentsline {chapter}{\nonumberline List of Tables}{v}{chapter*.3}%
+\contentsline {chapter}{\numberline {1}Optimizing modular structures}{1}{chapter.1}%
 \etoc@startlocaltoc {2}
 \etoc@startlocaltoc {3}
-\contentsline {section}{\numberline {1.1}The formulation of a common problem: volume minimization with stress constraints}{1}{section.1.1}%
-\contentsline {mtocsection}{\numberline {1.1}The formulation of a common problem: volume minimization with stress constraints}{1}{section.1.1}%
-\contentsline {subsection}{\numberline {1.1.1}Continuous discretization \gls {nand} minimum volume formulation}{2}{subsection.1.1.1}%
-\contentsline {paragraph}{\nonumberline Minimum compliance formulation}{2}{figure.caption.8}%
-\contentsline {paragraph}{\nonumberline Spatial filtering and projection}{3}{paragraph*.10}%
-\contentsline {paragraph}{\nonumberline Objective and constraint functions}{5}{paragraph*.13}%
-\contentsline {paragraph}{\nonumberline Von Mises stress evaluation}{5}{paragraph*.15}%
-\contentsline {paragraph}{\nonumberline Microscopic and macroscopic stress}{6}{paragraph*.18}%
-\contentsline {paragraph}{\nonumberline Constraints aggregation and relaxation}{7}{paragraph*.20}%
-\contentsline {paragraph}{\nonumberline Minimum volume formulation}{8}{paragraph*.22}%
-\contentsline {paragraph}{\nonumberline Sensitivity analysis of the objective function}{8}{paragraph*.24}%
-\contentsline {paragraph}{\nonumberline Sensitivity analysis of the constraint function}{9}{paragraph*.26}%
-\contentsline {subsection}{\numberline {1.1.2}Truss discretization \gls {sand} minimum volume formulation}{11}{subsection.1.1.2}%
-\contentsline {paragraph}{\nonumberline Classical Michell structures}{11}{paragraph*.28}%
-\contentsline {paragraph}{\nonumberline Plastic material formulation}{12}{paragraph*.30}%
-\contentsline {paragraph}{\nonumberline The ground structure approach}{12}{paragraph*.32}%
-\contentsline {paragraph}{\nonumberline Optimization formulation}{13}{paragraph*.35}%
-\contentsline {section}{\numberline {1.2}Comparison between continuous and truss discretization}{13}{section.1.2}%
-\contentsline {mtocsection}{\numberline {1.2}Comparison between continuous and truss discretization}{13}{section.1.2}%
-\contentsline {subsection}{\numberline {1.2.1}Definition of a common test case}{14}{subsection.1.2.1}%
-\contentsline {subsection}{\numberline {1.2.2}Numerical application}{15}{subsection.1.2.2}%
-\contentsline {paragraph}{\nonumberline Coninuous mesh optimization results}{15}{figure.caption.41}%
-\contentsline {paragraph}{\nonumberline Truss mesh optimization results}{18}{paragraph*.47}%
-\contentsline {subsection}{\numberline {1.2.3}Discussion}{20}{subsection.1.2.3}%
-\contentsline {section}{\numberline {1.3}Conclusion}{23}{section.1.3}%
-\contentsline {mtocsection}{\numberline {1.3}Conclusion}{23}{section.1.3}%
-\contentsline {chapter}{\numberline {2}Enriching the classic TTO formulation with advanced mechanical constraints}{25}{chapter.2}%
-\etoc@startlocaltoc {4}
-\etoc@startlocaltoc {5}
-\contentsline {section}{\numberline {2.1}Advanced mechanical constraints}{26}{section.2.1}%
-\contentsline {mtocsection}{\numberline {2.1}Advanced mechanical constraints}{26}{section.2.1}%
-\contentsline {subsection}{\numberline {2.1.1}Minimum slenderness constraints}{26}{subsection.2.1.1}%
-\contentsline {subsection}{\numberline {2.1.2}Local and topological buckling constraints}{27}{subsection.2.1.2}%
-\contentsline {subsection}{\numberline {2.1.3}Kinematic compatibility constraints}{29}{subsection.2.1.3}%
-\contentsline {section}{\numberline {2.2}Optimization formulation and solving strategy}{29}{section.2.2}%
-\contentsline {mtocsection}{\numberline {2.2}Optimization formulation and solving strategy}{29}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Optimization strategy}{30}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}First step: SLP optimization}{31}{subsection.2.2.2}%
-\contentsline {subsection}{\numberline {2.2.3}Handling local minima: reinitialization strategy}{33}{subsection.2.2.3}%
-\contentsline {subsection}{\numberline {2.2.4}Second step: NLP optimization}{33}{subsection.2.2.4}%
-\contentsline {section}{\numberline {2.3}Numerical application}{33}{section.2.3}%
-\contentsline {mtocsection}{\numberline {2.3}Numerical application}{33}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}L-shaped beam}{33}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}Ten-bar truss}{34}{subsection.2.3.2}%
-\contentsline {subsection}{\numberline {2.3.3}2D cantilever beam}{34}{subsection.2.3.3}%
-\contentsline {subsection}{\numberline {2.3.4}Simply supported 3D beam}{34}{subsection.2.3.4}%
-\contentsline {subsection}{\numberline {2.3.5}Ten-bar truss with multiple load cases}{34}{subsection.2.3.5}%
-\contentsline {section}{\numberline {2.4}Conclusion}{34}{section.2.4}%
-\contentsline {mtocsection}{\numberline {2.4}Conclusion}{34}{section.2.4}%
-\contentsline {section}{\numberline {2.5}temporary}{34}{section.2.5}%
-\contentsline {mtocsection}{\numberline {2.5}temporary}{34}{section.2.5}%
-\contentsline {chapter}{\nonumberline Bibliography}{37}{chapter*.65}%
+\contentsline {section}{\numberline {1.1}Formulation of a modular structure optimization algorithm}{1}{section.1.1}%
+\contentsline {mtocsection}{\numberline {1.1}Formulation of a modular structure optimization algorithm}{1}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Variable linking}{1}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}Topological buckling of modular structures}{3}{subsection.1.1.2}%
+\contentsline {section}{\numberline {1.2}Optimization formulation}{3}{section.1.2}%
+\contentsline {mtocsection}{\numberline {1.2}Optimization formulation}{3}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Sensitivity analysis}{4}{subsection.1.2.1}%
+\contentsline {section}{\numberline {1.3}Numerical application}{4}{section.1.3}%
+\contentsline {mtocsection}{\numberline {1.3}Numerical application}{4}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}On the equivalence of multi load cases and modular structures}{4}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.2}Parametric study on the number, the shape, and the complexity of the module}{4}{subsection.1.3.2}%
+\contentsline {subsection}{\numberline {1.3.3}Comparison with the optimized octet truss}{4}{subsection.1.3.3}%
+\contentsline {section}{\numberline {1.4}Conclusion}{5}{section.1.4}%
+\contentsline {mtocsection}{\numberline {1.4}Conclusion}{5}{section.1.4}%

@@ -1,0 +1,33 @@
+\documentclass[10pt, varwidth=174mm]{standalone} % Figure*
+% \documentclass[11pt, varwidth=87mm]{standalone} % Figure
+
+\input{../../img_header}
+
+% \tikzset{font=\scriptsize}
+\usetikzlibrary{calc}
+
+\begin{document}
+\begin{tikzpicture}
+
+    \node[inner sep=0pt, label={[label distance=-1mm,color=black]270:(a)}] (min1) at (0cm,0cm) {\includegraphics[width=6cm]{04_Topology_NLP_XZ-min.png}};
+    \node[inner sep=0pt, label={[label distance=5mm,color=black]270:(b)}] (min2) at (8.5cm,0cm) {\includegraphics[width=3.8cm]{04_Topology_NLP_YZ-min.png}};
+    \node[inner sep=0pt, label={[label distance=-1mm,color=black]270:(c)}] (min3) at (0cm,-4cm){\includegraphics[width=6cm]{04_Topology_NLP_XY-min.png}};
+    \node[inner sep=0pt, label={[label distance=-1mm,color=black]270:(d)}] (min4) at (8.5cm,-4cm) {\includegraphics[width=6cm]{04_Topology_NLP_iso-min.png}};
+
+    \draw[arrow_reference] (0-4.5,-.7) -- (0.9-4.5,0-.7) node[midway,below] {$x$};
+    \draw[arrow_reference] (0-4.5,-.7) -- (0-4.5,0.9-.7) node[midway,left] {$z$};
+
+    \draw[arrow_reference] (0-4.5,-.7-4) -- (0.9-4.5,0-.7-4) node[midway,below] {$x$};
+    \draw[arrow_reference] (0-4.5,-.7-4) -- (0-4.5,0.9-.7-4) node[midway,left] {$y$};
+
+    \draw[arrow_reference] (0-4+10,-.7) -- (0.9-4+10,0-.7) node[midway,below] {$y$};
+    \draw[arrow_reference] (0-4+10,-.7) -- (0-4+10,0.9-.7) node[midway,left] {$z$};
+
+    \begin{scope}[coords]
+        \dscaling{3}{0.65};
+        \daxis{1}{9,-5.3 ,+0.2
+        }[right][above][right];
+    \end{scope}
+
+\end{tikzpicture}
+\end{document}

@@ -1,4 +1,5 @@
 \setchapterpreamble[u]{\margintoc}
+\glsresetall % reset glossary
 \chapter{Evaluating discretization approaches for ultralight structure optimization}
 The process of topology optimization for a structure involves the selection and sizing of optimal elements within a predetermined set. As discussed in the previous chapter, in our context this set could be composed of either continuum elements (shell or volumetric) or truss-like elements. This chapter aims to assess the suitability and the inherent advantages and disadvantages of both methodologies when optimizing ultralight structures \ie structures that exhibit \marginnote{Part of the content presented in this chapter has been published and showcased during a conference as:\\Stragiotti, E. et al. (2021) "Towards manufactured lattice structures: a comparison between layout and topology optimization", in \textit{AeroBest 2021 International Conference on Multidisciplinary Design Optimization of Aerospace Systems}. Book of proceedings. Lisbon, Portugal: ECCOMAS~\cite{stragiotti_towards_2021}.} an extremely low volume fraction, typically below 1\%. 
 
@@ -344,16 +345,16 @@ The sensitivity of the aggregated constraint function with respect to the design
 We are now shifting our focus from continuous structures to discrete truss systems, describing the \acrfull{tto} (also known in early literature as layout optimization), a structure optimization method that focuses on discrete structures. In his most used formulation, \gls{tto} aims at reducing material usage while meeting stress criteria using a \gls{sand} approach. The problem is already well-posed for comparison with continuous discretization, and we intend to explore specific key concepts within its established framework.
 \paragraph{Classical Michell structures} \label{sec:03_michell}
 The characteristics of these structures are described by some simple criteria that date to the end of the 19th and the beginning of the 20th century. When a structure is statically determinate — \ie the structure is not a mechanism, and it is not over-constrained by the supports — the Maxwell theorem~\sidecite{maxwell_ireciprocal_1870} states that:
-\begin{equation} \label{eq:maxwell-th}
+\begin{equation} \label{eq:03_maxwell-th}
     \sum_{\forall i | q_i>0}\ell_iq_i + \sum_{\forall i | q_i<0}\ell_iq_i = \textrm{const.}
 \end{equation}
-where $\ell_i$ and $q_i$ represent the length and the axial force of the $i$-th member, respectively. The constant value at the right of~\eqref{eq:maxwell-th} depends on the nature of the boundary conditions and the material used. The Maxwell theorem dictates that any increment in compression forces must be counterbalanced by an equivalent increase in tension forces when the structure remains topologically unchanged. So for statically determinate structures the structure layout is not influenced by the ratio between $\sigma_\text{c}$ and $\sigma_\text{t}$, Young's modulus $E$ of the material, nor the force magnitude.
+where $\ell_i$ and $q_i$ represent the length and the axial force of the $i$-th member, respectively. The constant value at the right of~\eqref{eq:03_maxwell-th} depends on the nature of the boundary conditions and the material used. The Maxwell theorem dictates that any increment in compression forces must be counterbalanced by an equivalent increase in tension forces when the structure remains topologically unchanged. So for statically determinate structures the structure layout is not influenced by the ratio between $\sigma_\text{c}$ and $\sigma_\text{t}$, Young's modulus $E$ of the material, nor the force magnitude.
 
 Starting from Maxwell's findings, Michell theorized two further criteria for optimal truss structures~\sidecite{michell_limits_1904} valid when the maximum allowable stress is equal in tension and compression ($\sigma_\text{t} = \sigma_\text{c}$) and when the supports of the structure are statically determinate. The first one states that all the members of an optimal structure should present internal stress equal in magnitude to the maximum allowable value of the material -- \ie the structure is \textit{fully stressed}. The second criterion asserts that the strain of all the members of the structure should be equal and there should be no other point having a strain higher than this value. As formulated, these two criteria are known as the Michell criteria. The second criterion was later generalized by Hemp~\sidecite{hemp_optimum_1973} as:
-\begin{equation} \label{eq:hemp}
+\begin{equation} \label{eq:03_hemp}
     -\frac{1}{\sigma_\text{c}}\leq \varepsilon \leq \frac{1}{\sigma_\text{t}}.
 \end{equation}
-Compared to the second Michell criterion, \eqref{eq:hemp} permits to correct identification of the minimum volume structure even when different strength values for compression and tension and different support types are taken. These criteria are known as the Michell-Hemp criteria.
+Compared to the second Michell criterion, \eqref{eq:03_hemp} permits to correct identification of the minimum volume structure even when different strength values for compression and tension and different support types are taken. These criteria are known as the Michell-Hemp criteria.
 
 \paragraph{Plastic material formulation}
 The rigid-plastic formulation characterizes the material as entirely rigid up to the point of reaching the yield stress, denoted as $\sigma_y$, and subsequently assumes a constant stress level of $\sigma_y$ once that threshold is exceeded. This formulation is a clear consequence of the application of the Michell-Hemp criteria and has thus been used in the very first work of layout optimization (also known as \gls{tto})~\sidecite{dorn_automatic_1964,chan_optimum_1964,hemp_optimum_1973}. 
@@ -376,28 +377,26 @@ where $M$ represents the number of nodes of the structure.
 In classic works, the ground structure is used as the start of the optimization, where the optimized structure is obtained as a subset of the initial ground structure, but multiple alternative approaches have been proposed since then, \eg starting from a very coarse ground structure that is enriched during the analysis~\sidecite{gilbert_layout_2003}, or giving the nodes of a coarse ground structure the possibility to move, during~\sidecite{pedersen_optimal_1973, achtziger_simultaneous_2007, descamps_lower-bound_2013}, or after the optimization, simultaneously reducing the number of active members of the solution~\sidecite{he_rationalization_2015, lu_reducing_2023}.
 
 \paragraph{Optimization formulation}
-\todo{add g\_stress g\_eq}
-
 The volume minimization formulation with maximum stress constraints is stated in terms of members' cross-sectional areas $\vect{a}$ and member forces $\vect{q}$ as follows:
 \begin{equation}
     \begin{aligned}
-    \min_{\vect{a}, \vect{q}}   && V &= \vect{\ell}^{T}\vect{a} && \textrm{(Volume)}\\
-    \textrm{s.t.}   && \matr{B}_s\vect{q} &= \vect{f} && \textrm{(Force equilibrium)}\\
-    && -\sigma_\text{c}\vect{a} &\leq \vect{q} \leq \sigma_\text{t}\vect{a} && \textrm{(Stress constraints)} \\
+    \min_{\vect{a}, \vect{q}}   && V &= \vect{\ell}^{T}\vect{a} && \textrm{(Volume minimization)}\\
+    \textrm{s.t.}   && \matr{B}_s\vect{q} &= \vect{f} && (g_\text{eq})\\
+    && -\sigma_\text{c}\vect{a} &\leq \vect{q} \leq \sigma_\text{t}\vect{a} && (g_\text{st,c}, \; g_\text{st,t}) \\
     && \vect{a} &\geq 0, \\
     \end{aligned}
     \tag{$\mathbb{P}_0$}
     \label{eq:03_optim_original}
 \end{equation}
-where $\matr{B}_s$ is a $N_{\text{dof}} \times N_{\text{el}}$ matrix containing the direction cosines of the $j$-th member with respect to the $i$-th degree of freedom to calculate the nodal force equilibrium, and where $N_{\text{dof}}$ is the number of \gls{dofs}, equal to $2M$ or $3M$ for a two- or a three-dimensional load case, respectively. $\vect{q} = [q_1, q_2, \ldots,q_{N_{\text{el}}}]^T$ is the vector containing the internal member forces, with a positive sign when in tension, caused by the external load $\vect{f} = [f_1, f_2, \ldots,f_{N_{\text{dof}}}]^T$. The state variable $\vect{a} = [a_1, a_2, \ldots,a_{N_{\text{el}}}]^T$ represents the cross-sectional area of the $N_{\text{el}}$ members of the structure. $\sigma_\text{c}$ and $\sigma_\text{t}$ are the compressive and tensile maximum allowable stresses of the material, respectively. This formulation takes into account only the linear behavior of the structure and is equivalent to the original and well-studied member force formulation~\sidecite{dorn_automatic_1964, bendsoe_topology_2004}.
+where $\matr{B}_s$ is a $N_{\text{dof}} \times N_{\text{el}}$ matrix containing the direction cosines of the $j$-th member with respect to the $i$-th degree of freedom to calculate the nodal force equilibrium constraints $\vect{g}_\text{eq}$, and where $N_{\text{dof}}$ is the number of \gls{dofs}, equal to $2M$ or $3M$ for a two- or a three-dimensional load case, respectively. $\vect{q} = [q_1, q_2, \ldots,q_{N_{\text{el}}}]^T$ is the vector containing the internal member forces, with a positive sign when in tension, caused by the external load $\vect{f} = [f_1, f_2, \ldots,f_{N_{\text{dof}}}]^T$. The state variable $\vect{a} = [a_1, a_2, \ldots,a_{N_{\text{el}}}]^T$ represents the cross-sectional area of the $N_{\text{el}}$ members of the structure. $\sigma_\text{c}$ and $\sigma_\text{t}$ are the compressive and tensile maximum allowable stresses of the material, respectively, used in the stress constraints $\vect{g}_\text{st,c}$ and $\vect{g}_\text{st,t}$. This formulation takes into account only the linear behavior of the structure and is equivalent to the original and well-studied member force formulation~\sidecite{dorn_automatic_1964, bendsoe_topology_2004}.
 
-The resolution of Problem \ref{eq:03_optim_original} frequently produces complex structures made up of a multitude of small members that tend to the shapes of Michell structures (see Fig~\ref{fig:truss-ex})~\sidecite{michell_limits_1904,gilbert_layout_2003}. While it is known that these structures are nearly optimal, one would want to limit the complexity of the resulting structure. Substituting $\vect{\ell}$ with $\vect{\tilde{\ell}} = [\ell_1 + s, \ell_2 + s, \ldots,\ell_{N\text{el}} + s]^T$ in the objective function of \ref{eq:03_optim_original}, one would penalize the appearance of small members~\sidecite{parkes_joints_1975}. $\vect{\tilde{\ell}}$ is called augmented member length and $s$ the joint cost. This approach mimics the mesh-independency regularization filter of topology optimization, avoiding the inevitable apparition of structures with tiny features when a fine mesh is adopted.
+The resolution of Problem \ref{eq:03_optim_original} frequently produces complex structures made up of a multitude of small members that tend to the shapes of Michell structures (see Fig~\ref{fig:03_truss-ex})~\sidecite{michell_limits_1904,gilbert_layout_2003}. While it is known that these structures are nearly optimal, one would want to limit the complexity of the resulting structure. Substituting $\vect{\ell}$ with $\vect{\tilde{\ell}} = [\ell_1 + s, \ell_2 + s, \ldots,\ell_{N\text{el}} + s]^T$ in the objective function of \ref{eq:03_optim_original}, one would penalize the appearance of small members~\sidecite{parkes_joints_1975}. $\vect{\tilde{\ell}}$ is called augmented member length and $s$ the joint cost. This approach mimics the mesh-independency regularization filter of topology optimization, avoiding the inevitable apparition of structures with tiny features when a fine mesh is adopted.
 
 \begin{marginfigure}
     \centering
     \includegraphics[width=\linewidth]{figures/03_comparison_TO_TTO/truss-ex.png}
     \caption{The optimal structures found by layout optimization tend at Michell-like structures, made up of a very large number of infinitesimal struts \cite{gilbert_layout_2003}.}
-    \label{fig:truss-ex}
+    \label{fig:03_truss-ex}
 \end{marginfigure}
 
 \section{Comparison between continuous and truss discretization} \label{sec:03_comparison}
@@ -418,7 +417,8 @@ To permit the discretization comparison, the structure is divided into two disti
 
 We employ the same isotropic material and structure dimensions for the two optimizations, and the complete data is resumed in \tabref{tab:03_mat}. The value of the maximum material admissible $\sigma_\text{L}$ is used as the parameter that influences the volume fraction of the solutions. For simplicity, all numeric values are assumed normalized and dimensionless.
 
-\begin{margintable}[]
+\begin{margintable}
+    \small
     \centering
     \begin{tabular}{cc}
     \toprule
@@ -443,7 +443,7 @@ Formulation \ref{eq:03_optim_original} represents a \gls{lp} problem that can be
 The optimizations presented in this section are performed on a server equipped with an Intel® Xeon® CPU E5-2650 @ \qty{2.20}{GHz} and using \qty{8}{GB} of RAM.
 
 \paragraph{Coninuous mesh optimization results}
-\begin{figure*}[]
+\begin{figure*}
     \subcaptionbox{}{\includegraphics[width=0.23\linewidth ]{figures/03_comparison_TO_TTO/07_to_sol/fig0_10.pdf}}
     \hfill
     \subcaptionbox{}{\includegraphics[width=0.23\linewidth ]{figures/03_comparison_TO_TTO/07_to_sol/fig0_2.pdf}}
@@ -476,7 +476,8 @@ In the lower part of \figref{fig:03_to_sol} (e-f), we plot the equivalent Von Mi
 
 Looking again at \tabref{tab:TO_results}, we notice that the optimization processes exhibit long execution times, especially when dealing with extreme cases like high-volume fractions. This effect is likely caused by the very fine mesh used to discretize the design domain $\Omega$, by the sensitivity calculation by means of the adjoint method, and by the increasing difficulty of satisfying the stress constraints.
 
-\begin{table}[]
+\begin{table}
+    \small
     \centering
     \sisetup{table-auto-round}
     \begin{tabular}{S[table-format = 2.2]
@@ -532,7 +533,7 @@ Conversely, when dealing with exceedingly strong material -- \ie materials that 
 the limit case when $\sigma_\text{L}=10.0$ and $V_\text{f}=\qty{1.60}{\percent}$.
 
 Finally, in \figref{fig:03_to_plot} are the plots summarizing our findings, with the limits highlighted. To effectively show the different orders of magnitude present in the plot, we have used both linear and logarithmic scales simultaneously.
-\begin{figure*}[]
+\begin{figure*}
     \hspace*{\fill}
     \subcaptionbox{\label{fig:03_to_plot_lin}}{\includegraphics{figures/03_comparison_TO_TTO/10a_to_graph_lin/to_c_lin.pdf}}
     \hfill
@@ -561,7 +562,8 @@ Additionally, the following equation consistently holds:
 \end{equation}
 where the multiplicative constant depends on the load case and the ground structure used to discretize the design space $\Omega$ \sidecite{lewinski_extended_1994}. The execution time of the optimization is approximately \qty{90}{\second} and does not change with respect to the maximum stress $\sigma_\text{L}$. The results of the multiple optimizations can be found in \tabref{tab:03_TTO_results}.
 
-\begin{table}[]
+\begin{table}
+    \small
     \centering
     \sisetup{table-auto-round}
     \begin{tabular}{S[table-format = 2.1]
@@ -605,7 +607,7 @@ In assessing solution quality, we employ a distinct metric known as the slendern
 
 Lastly, \figref{fig:03_tto_plot} provides a visual summary of our findings, emphasizing in red the observed limits. To effectively show the different orders of magnitude present in the plot and how already done for the continuous mesh case, we have used both linear and logarithmic scales simultaneously. In this case, the compliance exhibits a perfectly linear relationship, while the volume follows a hyperbolic law in accordance with \eqref{eq:03_V_star}.
 
-\begin{figure*}[]
+\begin{figure*}
     \hspace*{\fill}
     \subcaptionbox{\label{fig:03_tto_plot_lin}}{\includegraphics{figures/03_comparison_TO_TTO/13a_tto_graph_lin/tto_c_lin.pdf}}
     \hfill
@@ -656,7 +658,7 @@ The notable difference in computation time for stress-based topology optimizatio
 
 To sum up, in comparing truss and continuous discretization methods, the advantages of truss structures become evident when considering the limitations of continuous discretization for the optimization of ultralight structures. One key drawback of continuous discretization is its increasing need for more elements as the desired level of refinement becomes finer at low volume fractions. Additionally, continuous discretization faces challenges with stress limits in optimized structures, which often exceed the specified admissible limits. Strategies exist to address this issue, but they come at the cost of increased computation time. Furthermore, stress constraints in continuous discretization are often defined for equivalent Von Mises stress, making it more challenging to distinguish between asymmetric bounds for tension and compression. Finally, truss structures are naturally subject to local buckling as a mode of failure~\sidecite{sigmund_non-optimality_2016}, a phenomenon that can be more easily and directly modeled in a truss discretization. 
 
-While truss discretization offers advantages in terms of computational efficiency, it does come with certain limitations. In the minimum volume formulation, the problem is linear and cost-effective to solve. However, the linearity is lost when additional constraints, such as local buckling, are introduced. Moreover, the formulation does not inherently account for the kinematic compatibility of the problem. This limitation restricts its applicability to relatively simple problems and can pose issues when dealing with complex scenarios involving multiple loads or constraints that may lead to overconstraint structures.
+While truss discretization offers advantages in terms of computational efficiency, it does come with certain limitations. In the minimum volume formulation, the problem is linear and cost-effective to solve. However, the linearity is lost when additional constraints, such as local buckling, are introduced. Moreover, the formulation does not inherently account for the kinematic compatibility of the problem. This limitation restricts its applicability to relatively simple problems and can pose issues when dealing with complex scenarios involving multiple loads or constraints that may lead to structures that are statically indeterminate.
 
 Despite these challenges, we decided to favor truss discretization for our research. In the upcoming chapter, we will address and explore potential solutions to address its main limitations to further enhance its applicability and effectiveness.
 

@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.8.29)  13 SEP 2023 11:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.8.29)  18 OCT 2023 15:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**d:/estragio/PhD/99_Github/PHD_manuscript/figures/03_comparison_TO_TTO/04_L_bc/L_bc.tex
-(d:/estragio/PhD/99_Github/PHD_manuscript/figures/03_comparison_TO_TTO/04_L_bc/L_bc.tex
+**d:/estragio/PhD/99_Github/PHD_manuscript/figures/03_comparison_TO_TTO/06_L_bc/L_bc.tex
+(d:/estragio/PhD/99_Github/PHD_manuscript/figures/03_comparison_TO_TTO/06_L_bc/L_bc.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-03-30> (C:\Program Files\MiKTeX\tex/latex/standalone\standalone.cls
 Document Class: standalone 2022/10/10 v1.3b Class to compile TeX sub-files standalone
@@ -648,10 +648,10 @@ Missing character: There is no ; in font nullfont!
 
 {D:/estragio/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] (L_bc.aux) ) 
 Here is how much of TeX's memory you used:
- 32361 strings out of 476331
- 852585 string characters out of 5797589
+ 32363 strings out of 476331
+ 852632 string characters out of 5797589
  1896660 words of memory out of 5000000
- 52253 multiletter control sequences out of 15000+600000
+ 52255 multiletter control sequences out of 15000+600000
  526623 words of font info for 85 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  122i,9n,121p,820b,764s stack positions out of 10000i,1000n,20000p,200000b,200000s

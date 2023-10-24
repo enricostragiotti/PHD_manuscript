@@ -1,0 +1,9 @@
+Vol: 77.78 mm3, Weight: 7778.18614 kg
+Vol_star: 7.77819 PL/sigma
+Vol_fraction: 388.909307%
+Compliance: 38.59 mJ
+Max section: 5.000 mm2
+Optimization time: 0.08 seconds
+N candidate bars: 31 
+N active bars: 31 
+NLP volume add: -0.000000 %

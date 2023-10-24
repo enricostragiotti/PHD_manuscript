@@ -1,0 +1,120 @@
+\documentclass[12pt, varwidth=15cm]{standalone}
+
+\input{../../img_header}
+
+\begin{document}
+
+\begin{tikzpicture}
+
+
+% \fill[pattern=north east lines] (-0.3,-0.3) -- (-0.3,3.3) -- (0,3.3) -- (0,-0.3);
+    
+% \point{a}{0}{0};
+% \point{b}{0}{3};
+% \point{c}{6}{3};
+% \point{d}{6}{0};
+
+% \beam{2}{a}{b}[1][1];
+% \beam{2}{b}{c}[1][1];
+% \beam{2}{c}{d}[1][1];
+% \beam{2}{d}{a}[1][1];
+
+% \begin{scope}[accent_r_1]
+%     \foreach \x in {0,\xstep,...,4.5} {
+%         \draw [line width = 2.5pt] (0+\x,3) -- (1.5+\x,3);
+%         \draw [line width = 1pt]   (0+\x,1.5) -- (1.5+\x,3);
+%         \draw [line width = 1pt]   (0+\x,3) -- (1.5+\x,1.5);
+%         \draw [line width = 1pt]   (1.5+\x,3) -- (1.5+\x,1.5);
+%         \fill (0+\x,1.5) circle (1pt/2);
+%         \fill (1.5+\x,1.5) circle (1pt/2);
+%         \fill (0+\x,3) circle (2.5pt/2);
+%         \fill (1.5+\x,3) circle (2.5pt/2);
+%     }
+% \end{scope}
+
+% \begin{scope}[accent_b_1]
+%     \foreach \x in {0,\xstep,...,4.5} {
+%         \draw [line width = 2.5pt] (0+\x,0) -- (1.5+\x,0);
+%         \draw [line width = 1pt]   (0+\x,1.5) -- (1.5+\x,0);
+%         \draw [line width = 1pt]   (0+\x,0) -- (1.5+\x,1.5);
+%         \draw [line width = 1pt]   (1.5+\x,0) -- (1.5+\x,1.5);
+%         \fill (0+\x,1.5) circle (1pt/2);
+%         \fill (1.5+\x,1.5) circle (1pt/2);
+%         \fill (0+\x,0) circle (2.5pt/2);
+%         \fill (1.5+\x,0) circle (2.5pt/2);
+%     }
+% \end{scope}
+
+% % \begin{scope}[accent_b_1]
+% %     \draw [line width = 2.5pt] (b2) -- (c2);
+% %     \draw [line width = 1pt]   (d2) -- (c2);
+% %     \draw [line width = 1pt]   (b2) -- (d2);
+% %     \draw [line width = 1pt]   (a2) -- (c2);
+% %     \fill (a2) circle (1pt/2);
+% %     \fill (d2) circle (1pt/2);
+% %     \fill (b2) circle (2.5pt/2);
+% %     \fill (c2) circle (2.5pt/2);
+% % \end{scope}
+
+% \draw[forces] (6.2,1.5) -- (6.2,1.5-0.7) node[right] {\footnotesize$f$};
+
+% \draw [decorate,decoration={brace,amplitude=10pt},xshift=0pt,yshift=0cm]
+%     (0,3.15) -- (6,3.15) node [black,midway,yshift=.6cm] {\footnotesize $N_\text{sub,x}$};
+    
+% \draw [decorate,decoration={brace,amplitude=10pt},xshift=0cm,yshift=0cm]
+%     (6.5,3) -- (6.5,0) node [black,midway,xshift=.9cm] {\footnotesize $N_\text{sub,y}$};
+
+% \node [black,yshift=-.5cm] at (3,0) {\footnotesize $N_\text{sub}=N_\text{sub,x} \times N_\text{sub,y}$};
+	
+% Subdomains
+
+\foreach \xa in {0,1.25,2.5}
+            \foreach \ya in {0,1.25,2.5}  
+                    \foreach \xx in {0,1.25,2.5}
+                        \foreach \yy  in {0,1.25,2.5}  
+                                \draw[axis_gray, thin] (\xa, \ya) -- (\xx, \yy);
+
+\foreach \xa in {0,1.25,2.5}
+\foreach \ya in {0,1.25,2.5}  
+        \foreach \xx in {0,1.25,2.5}
+            \foreach \yy  in {0,1.25,2.5}  
+                    \draw[axis_gray, thin] (\xa+4.5, \ya) -- (\xx+4.5, \yy);
+
+\point{a1}{0}{0};
+\point{b1}{0}{2.5};
+\point{c1}{2.5}{2.5};
+\point{d1}{2.5}{0};
+
+\beam{2}{a1}{b1}[1][1];
+\beam{2}{b1}{c1}[1][1];
+\beam{2}{c1}{d1}[1][1];
+\beam{2}{d1}{a1}[1][1];
+
+
+\point{b2}{4.5}{0};
+\point{a2}{4.5}{2.5};
+\point{d2}{7}{2.5};
+\point{c2}{7}{0};
+
+\beam{2}{a2}{b2}[1][1];
+\beam{2}{b2}{c2}[1][1];
+\beam{2}{c2}{d2}[1][1];
+\beam{2}{d2}{a2}[1][1];
+
+\node at (3.5,1.25) {...};
+
+\node[black,yshift=-.5cm] at (1.25,0) {$\dots$};
+\node[black,yshift=-.5cm] at (5.75,0) {$\dots$};
+\node[black,yshift=-.5cm] at (3.5,-1) {${\bar{\vect{a}}} :=  \{ \bar{\vect{a}}_t \in \mathbb{R}_+^{\bar{n}} \;|\; \forall t \in [1,\dots,N_T]\}$};
+
+
+
+\draw [decorate,decoration={brace,amplitude=10pt},xshift=0cm,yshift=0cm]
+    (0,2.65) -- (7,2.65) node [black,midway,yshift=.6cm] {\footnotesize $N_\text{T}$ modules};
+
+\draw [decorate,decoration={brace,amplitude=10pt},xshift=0cm,yshift=0cm]
+    (7.15,2.5) -- (7.15,0) node [black,midway,xshift=1.5cm, text width = 2cm] {\footnotesize $\bar{n}$ candidates per module};
+
+\end{tikzpicture}
+
+\end{document}

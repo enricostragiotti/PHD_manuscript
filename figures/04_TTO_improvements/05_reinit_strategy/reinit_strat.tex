@@ -1,0 +1,79 @@
+\documentclass[10pt, varwidth=16cm]{standalone}
+\input{../../img_header}
+
+\begin{document}
+
+\begin{tikzpicture}
+
+	\pgfmathsetmacro{\xmin}{0};
+	\pgfmathsetmacro{\xmax}{5};
+	\pgfmathsetmacro{\ymin}{-4.5};
+	\pgfmathsetmacro{\ymax}{1.5};
+
+
+
+    \begin{axis}
+        [
+            width	= 8.4cm,
+		    height	= 7cm,
+            axis lines = middle,
+            legend entries=\footnotesize{Feasible domain at iteration $i$},
+            legend pos= south west,
+            % axis equal,
+            enlargelimits, % no need to add padding
+            axis line style={-stealth,semithick, axis_gray},
+            every axis label/.append style ={axis_gray},
+            every tick label/.append style ={axis_gray},
+            xmin	= \xmin,
+            xmax	= \xmax,
+            % ymin	= \ymin,
+            % ymax	= \ymax,
+            restrict y to domain=\ymin:2,
+            xtick={\empty},
+            ytick={\empty},
+            xlabel=$a$,
+            ylabel=$q$,
+            xlabel style={at={(ticklabel* cs:1)},anchor=south},
+            ylabel style={at={(ticklabel* cs:1)},anchor=east},
+        ]
+
+        \coordinate (a_0) at (0.15, 0); % linearization point P0
+        \coordinate (a_') at (1.5, 0); % linearization point P0
+        \coordinate (P_') at (1.5, -0.45); % linearization point P0
+        
+
+        \addlegendimage{only marks, mark=square*,color=accent_r_1!10};
+        \path [mark=square, fill=accent_r_1, opacity=0.1]  (0,0) -- (0.8, 0) -- (5,-2.55)  -- (5,2) -- (2.66667,2) -- cycle;
+        % SL tension
+        \addplot[domain=0:\xmax,samples=5, thick, forget plot] {.75*x} node[lab, above left, pos=1] {$\sigma_t$};
+        % SL compression
+        \addplot[domain=0:\xmax,samples=5, thick, forget plot] {-.75*x} node[lab, below, pos=1] {$\sigma_c$};
+        % Exact buckling
+        \addplot[domain=0:\xmax,samples=200, accent_b_3, thick, forget plot] {-0.2*x^2} node[left=2mm, lab, pos=0.85] {$g_{\mathrm{ buck}}$};
+        % Linearized buckling at point = (2,-1.5)
+        \addplot[domain=0:5,samples=5, accent_b_2, dashed, thick] {-0.03*x} node[lab, below=1mm, pos=0.9] {$\tilde{g}_{\mathrm{ buck}}$};
+        % Linearized buckling at point = (2,-1.5)
+        \addplot[domain=0.8:5,samples=5, accent_b_1, dashed, thick] {-0.6*x + 0.45} node[lab, below, pos=1] {$\overline{\tilde{g}}_{\mathrm{ buck}}$};
+
+        \draw [thin, axis_gray] (a_') -- (P_');
+
+        
+
+        % Plot important points
+        \node [fill=white,rounded corners=2pt,inner sep=1pt] at (0.35,0.35) {\footnotesize{$P_{i}$}};
+        \node [fill=white,rounded corners=2pt,inner sep=1pt] at (1.5+0.3,0.35) {\footnotesize{$\overline a^{i} = \phi_k \norm{\vect{a}^i}_\infty$}};
+        \node [fill=white,rounded corners=2pt,inner sep=1pt] at (1.5+0.3,-0.45-0.3) {\footnotesize{$\overline P_{i}$}};
+        \node at (a_') [{circle, fill, inner sep=1pt, node contents={}}];
+        \draw [line width=0.4mm, forces] (a_0) -- (a_'); % Plot arrows
+        \node at (a_0) [{circle, fill, inner sep=1pt, node contents={}}];
+        \node at (P_') [{circle, fill, inner sep=1pt, node contents={}}];
+
+
+        
+        
+	\end{axis}
+
+    % \node[above] at (A){$\sigma$};
+\end{tikzpicture}
+
+\end{document}

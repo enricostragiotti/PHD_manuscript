@@ -1,29 +1,6 @@
 \babel@toc {english}{}\relax
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces The domain $\Omega $ is discretized using $N_\text {e}=N_\text {x} N_\text {y}$ continuous 4-nodes elements.}}{2}{figure.caption.8}%
-\contentsline {figure}{\numberline {1.2}{\ignorespaces Kernel of the 2D convolution operator.}}{4}{figure.caption.11}%
-\contentsline {figure}{\numberline {1.3}{\ignorespaces A four-node quadrilateral element. GP is the Gaussian integration point for which the equivalent stress is evaluated.}}{6}{figure.caption.16}%
-\contentsline {figure}{\numberline {1.4}{\ignorespaces The domain $\Omega $ is discretized using a set of straight members connecting a set of nodes. This framework is known as the ground structure.}}{12}{figure.caption.33}%
-\contentsline {figure}{\numberline {1.5}{\ignorespaces The optimal structures found by layout optimization tend at Michell-like structures, made up of a very large number of infinitesimal struts \blx@tocontentsinit {0}\cite {gilbert_layout_2003}.}}{13}{figure.caption.36}%
-\contentsline {figure}{\numberline {1.6}{\ignorespaces On the left, plot of the L-shape beam test case, on the right the graphical representations of the two discretizations used, the continuous (above) and the truss-like (below).}}{14}{figure.caption.37}%
-\contentsline {figure}{\numberline {1.7}{\ignorespaces (a-d) topology optimized structures for different material admissibles $\sigma _\text {L}=10.00,2.00,0.40\text { and }0.25$, showing a volume fraction of $V_\text {f}=1.60\%,4.04\%,18.03\%\text { and }34.71\%$, respectively. (e-h) Von Mises stress distribution of the optimized structures.}}{16}{figure.caption.41}%
-\contentsline {figure}{\numberline {1.8}{\ignorespaces The optimized structure for $\sigma _\text {L}=0.2$ with $V_\text {f}=\qty {48.08}{\percent }$, but does not converge after 7500 iterations.}}{17}{figure.caption.43}%
-\contentsline {figure}{\numberline {1.9}{\ignorespaces The optimized structure for $\sigma _\text {L}=10.0$ with $V_\text {f}=\qty {1.60}{\percent }$. Some of the structure's features present not even a fully-dense element in their thickness.}}{18}{figure.caption.44}%
-\contentsline {figure}{\numberline {1.10}{\ignorespaces Linear (a) and logarithmic (b) plot of the volume fraction $V_\text {f}$ and the compliance $C$ with respect to the maximum material admissible $\sigma _\text {L}$ for the continuous mesh structures. Areas in red represent the boundaries of the applied method.}}{18}{figure.caption.45}%
-\contentsline {figure}{\numberline {1.11}{\ignorespaces Topology (a) and stress (b) plot for the truss-like discretization.}}{19}{figure.caption.48}%
-\contentsline {figure}{\numberline {1.12}{\ignorespaces Optimized structure obtained a fully connected ground structure with $13 \times 13$ and \num [group-separator={$\,$}]{7705} candidates.}}{19}{figure.caption.50}%
-\contentsline {figure}{\numberline {1.13}{\ignorespaces Linear (a) and logarithmic (b) plot of the volume fraction $V_\text {f}$ and the compliance $C$ with respect to the maximum material admissible $\sigma _\text {L}$ for the truss-like structures. Areas in red represent the boundaries of the applied method.}}{20}{figure.caption.51}%
-\contentsline {figure}{\numberline {1.14}{\ignorespaces Compliance -- Maximum material admissible plot for the continuous and truss discretizations.}}{21}{figure.caption.52}%
-\contentsline {figure}{\numberline {1.15}{\ignorespaces Maximum material admissible -- Volume fraction plot for the continuous and truss discretizations.}}{21}{figure.caption.53}%
-\contentsline {figure}{\numberline {1.16}{\ignorespaces Compliance -- Volume fraction plot for the continuous and truss discretizations.}}{22}{figure.caption.54}%
-\contentsline {figure}{\numberline {1.17}{\ignorespaces Time -- Volume fraction plot for the continuous and truss discretizations.}}{22}{figure.caption.55}%
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces The three ground structures loaded in compression are used to highlight the topological buckling problem in \gls {tto}. (a) Two-bar ground structure loaded in compression; (b) single bar ground structure; (c) overlap of the $a$ and $b$ ground structures.}}{28}{figure.caption.57}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Flowchart of the two-step optimization strategy used to solve Problem \ref {eq:optim_complete}.}}{31}{figure.caption.58}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces \textcolor {green}{magari mettila nel margin} Linearization of the local buckling constraints for a single bar.}}{32}{figure.caption.59}%
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Topology of the optimized truss structures for different material admissibles $\sigma _\text {L}=1.0,0.8,0.3\text { and }0.2$ with a minimum slenderness limit $\lambda <15$.}}{34}{figure.caption.60}%
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Iteration history of the ten-bar truss with multiple load cases example solved with the 2S-1R algorithm; (a) objective function history for the SLP and NLP step (b) constraint violation for the NLP step.}}{35}{figure.caption.62}%
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Iteration history of the CRM-315 example solved with the 2S-5R algorithm; (a) objective function history for the SLP and NLP step (b) constraint violation for the NLP step.}}{35}{figure.caption.63}%
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Iteration history of the CRM-2370 example solved with the 2S-5R algorithm; (a) objective function history for the SLP and NLP step (b) constraint violation for the NLP step.}}{35}{figure.caption.64}%
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Notations used for the definition of the variable linking approach used to apply the modularity constraints.}}{1}{figure.caption.4}%
+\contentsline {figure}{\numberline {1.2}{\ignorespaces \relax }}{4}{figure.caption.5}%
+\contentsline {figure}{\numberline {1.3}{\ignorespaces \relax }}{5}{figure.caption.6}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file

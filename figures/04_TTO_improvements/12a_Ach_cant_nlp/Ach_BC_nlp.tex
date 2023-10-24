@@ -1,0 +1,139 @@
+\documentclass[10pt, varwidth=16cm]{standalone}
+
+\input{../../img_header}
+
+
+
+\begin{document}
+
+\begin{tikzpicture}
+    %\draw[ help lines , step =.2] ( 0 , 0) grid (6, 3) ;
+    \node[inner sep=0pt] (min1) at (3,0.6) {\includegraphics[width=6.10cm]{topology.pdf}};
+
+    \point{1}{0}{0};
+    \point{2}{.6}{0};
+    \point{3}{1.2}{0};
+    \point{4}{1.8}{0};
+    \point{5}{2.4}{0};
+    \point{6}{3.0}{0};
+    \point{7}{3.6}{0};
+    \point{8}{4.2}{0};
+    \point{9}{4.8}{0};
+    \point{10}{5.4}{0};
+    \point{11}{6.0}{0};
+    \point{12}{0}{.6};
+    \point{13}{.6}{.6};
+    \point{14}{1.2}{.6};
+    \point{15}{1.8}{.6};
+    \point{16}{2.4}{.6};
+    \point{17}{3.0}{.6};
+    \point{18}{3.6}{.6};
+    \point{19}{4.2}{.6};
+    \point{20}{4.8}{.6};
+    \point{21}{5.4}{.6};
+    \point{22}{6.0}{.6};
+    \point{23}{0}{1.2};
+    \point{24}{.6}{1.2};
+    \point{25}{1.2}{1.2};
+    \point{26}{1.8}{1.2};
+    \point{27}{2.4}{1.2};
+    \point{28}{3.0}{1.2};
+    \point{29}{3.6}{1.2};
+    \point{30}{4.2}{1.2};
+    \point{31}{4.8}{1.2};
+    \point{32}{5.4}{1.2};
+    \point{33}{6.0}{1.2};
+    
+    % \beam{2}{1}{11}[1][1];
+    % \beam{2}{12}{22}[1][1];
+    % \beam{2}{23}{33}[1][1];
+
+    % \beam{2}{2}{24}[1][1];
+    % \beam{2}{3}{25}[1][1];
+    % \beam{2}{4}{26}[1][1];
+    % \beam{2}{5}{27}[1][1];
+    % \beam{2}{6}{28}[1][1];
+    % \beam{2}{7}{29}[1][1];
+    % \beam{2}{8}{30}[1][1];
+    % \beam{2}{9}{31}[1][1];
+    % \beam{2}{10}{32}[1][1];
+    % \beam{2}{11}{33}[1][1];
+
+    % \beam{2}{1}{25}[1][1];
+    % \beam{2}{2}{26}[1][1];
+    % \beam{2}{3}{27}[1][1];
+    % \beam{2}{4}{28}[1][1];
+    % \beam{2}{5}{29}[1][1];
+    % \beam{2}{6}{30}[1][1];
+    % \beam{2}{7}{31}[1][1];
+    % \beam{2}{8}{32}[1][1];
+    % \beam{2}{9}{33}[1][1];
+
+    % \beam{2}{3}{23}[1][1];
+    % \beam{2}{4}{24}[1][1];
+    % \beam{2}{5}{25}[1][1];
+    % \beam{2}{6}{26}[1][1];
+    % \beam{2}{7}{27}[1][1];
+    % \beam{2}{8}{28}[1][1];
+    % \beam{2}{9}{29}[1][1];
+    % \beam{2}{10}{30}[1][1];
+    % \beam{2}{11}{31}[1][1];
+    
+    % \beam{2}{12}{24}[1][1];
+    % \beam{2}{12}{2}[1][1];
+    % \beam{2}{10}{22}[1][1];
+    % \beam{2}{32}{22}[1][1];
+    
+    \fill[pattern=north east lines] (-0.2,-0.2) -- (-0.2,1.2+.2) -- (0,1.2+.2) -- (0,-0.2);
+    
+    \draw[forces] (6,-0.1) -- (6,-0.7) node[right] {$P$};
+
+    % \load{1}{11}[90][0.7][-0.7]
+    % \notation{1}{11}{$P$}[below right]
+    \dhinge{1}{1}
+    \dhinge{1}{2}
+    \dhinge{1}{3}
+    \dhinge{1}{4}
+    \dhinge{1}{5}
+    \dhinge{1}{6}
+    \dhinge{1}{7}
+    \dhinge{1}{8}
+    \dhinge{1}{9}
+    \dhinge{1}{10}
+    \dhinge{1}{11}
+    \dhinge{1}{12}
+    \dhinge{1}{13}
+    \dhinge{1}{14}
+    \dhinge{1}{15}
+    \dhinge{1}{16}
+    \dhinge{1}{17}
+    \dhinge{1}{18}
+    \dhinge{1}{19}
+    \dhinge{1}{20}
+    \dhinge{1}{21}
+    \dhinge{1}{22}
+    \dhinge{1}{23}
+    \dhinge{1}{24}
+    \dhinge{1}{25}
+    \dhinge{1}{26}
+    \dhinge{1}{27}
+    \dhinge{1}{28}
+    \dhinge{1}{29}
+    \dhinge{1}{30}
+    \dhinge{1}{31}
+    \dhinge{1}{32}
+    % \dhinge{1}{33}
+    \dscaling{2}{.05}
+
+    % \notation{1}{11}{$P$}[below right]
+    % \notation{5}{1}{11}[$10L$][.5][below=2mm];
+    % \notation{5}{11}{33}[$2L$][.5][right=2mm][1];
+    
+    
+        
+
+
+
+\end{tikzpicture}
+
+\end{document}

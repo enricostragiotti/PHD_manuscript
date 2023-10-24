@@ -1,0 +1,136 @@
+\documentclass[10pt, varwidth=174mm]{standalone} % Figure*
+% \documentclass[11pt, varwidth=87mm]{standalone} % Figure
+
+\input{../img_header}
+
+\tikzset{font=\scriptsize}
+\usetikzlibrary{calc}
+
+\begin{document}
+\begin{tikzpicture}
+	\begin{axis}[
+		height 	= 5.5cm,
+		width 	= 7cm,
+        xmin=-1.65, xmax=29.65,
+        ymin=82150.9670023847, ymax=145911,
+		grid	= major,
+		xlabel	= {Iteration},
+		ylabel	= {Volume},
+        legend pos = north east,
+        legend style = {fill opacity=0.8, draw opacity=1, text opacity=1},
+        scaled y ticks=manual:{$\times 10^5$}{\pgfmathparse{#1/100000}},
+		% y label style={at={(-0.24,0.5)}},
+		% xtick   = {0, 1000, 2000},
+		% ytick   = {0, 1000, 2000},
+		% xmajorticks=false,
+		% ymajorticks=false,
+		]
+        \addplot [thick, accent_r_1]
+        table {%
+        0 140911.688245431
+        1 117136.12957433
+        2 99306.3977851674
+        3 89713.0347337737
+        4 88447.8231936127
+        5 88149.8022646135
+        6 88003.8552265436
+        7 87930.8625998437
+        8 87894.3824722834
+        9 87876.1428742291
+        10 87867.0227007413
+        11 87857.9117264413
+        12 87857.9099110549
+        13 87857.9099110549
+        14 113411.869163129
+        15 93505.0018928242
+        16 89235.3739919802
+        17 87381.5435937093
+        18 86457.9647265101
+        19 85996.1762151249
+        20 85765.2818448855
+        21 85649.8347229188
+        22 85592.111109354
+        23 85563.2495461307
+        24 85548.8186778522
+        25 85541.6032833189
+        26 85534.3889301574
+        27 85534.3879737762
+        28 85534.3879737762
+        };
+        \addlegendentry{SLP}
+		%
+        \addplot[mark=*] coordinates {(0, 140911.463484828)} node[pin=-20:\circled{a}]{} ;
+        \addplot[mark=*] coordinates {(13, 87857.9099110549)} node[pin=170:\circled{b}]{} ;
+        \addplot[mark=*] coordinates {(14, 113411.869163129)} node[pin={[pin distance=0.3cm]80:\circled{c}}]{} ;
+        \addplot[mark=*] coordinates {(28, 85534.3879737762)} node[pin={[pin distance=0.3cm]90:\circled{d}}]{} ;
+	\end{axis}
+
+    \node[inner sep=0pt, label={[label distance=1mm,color=black]270:\circled{a}}] (min1) at (8cm,3.5cm) {\includegraphics[width=4.15cm]{x0_Stolpe_init.pdf}};
+    \node[inner sep=0pt, label={[label distance=1mm,color=black]270:\circled{b}}] (min2) at (8cm,0.5cm) {\includegraphics[width=4.1cm]{min_1.pdf}};
+    \node[inner sep=0pt, label={[label distance=1mm,color=black]270:\circled{c}}] (min3) at (12.5cm,3.5cm) {\includegraphics[width=4.1cm]{after_reinit.pdf}};
+    \node[inner sep=0pt, label={[label distance=1mm,color=black]270:\circled{d}}] (min4) at (12.5cm,0.5cm) {\includegraphics[width=4.1cm]{min_2.pdf}};
+
+    \point{1}{6cm}{4.5cm};
+    \point{2}{8cm}{4.5cm};
+    \point{3}{10cm}{4.5cm};
+    \point{4}{6cm}{2.5cm};
+    \point{5}{8cm}{2.5cm};
+    \point{6}{10cm}{2.5cm};
+    
+    \point{7}{6cm}{1.5cm};
+    \point{8}{8cm}{1.5cm};
+    \point{9}{10cm}{1.5cm};
+    \point{10}{6cm}{-.5cm};
+    \point{11}{8cm}{-.5cm};
+    \point{12}{10cm}{-.5cm};
+
+    \point{13}{10.5cm}{4.5cm};
+    \point{14}{12.5cm}{4.5cm};
+    \point{15}{14.5cm}{4.5cm};
+    \point{16}{10.5cm}{2.5cm};
+    \point{17}{12.5cm}{2.5cm};
+    \point{18}{14.5cm}{2.5cm};
+
+    \point{19}{10.5cm}{1.5cm};
+    \point{20}{12.5cm}{1.5cm};
+    \point{21}{10.5cm}{-.5cm};
+    \point{22}{12.5cm}{-.5cm};
+    \point{23}{14.5cm}{1.5cm};
+
+    \dhinge{1}{1}
+    \dhinge{1}{2}
+    \dhinge{1}{3}
+    \dhinge{1}{4}
+    \dhinge{1}{5}
+    \dhinge{1}{6}
+
+    \dhinge{1}{7}
+    \dhinge{1}{8}
+    \dhinge{1}{9}
+    \dhinge{1}{10}
+    \dhinge{1}{11}
+    \dhinge{1}{12}
+
+    \dhinge{1}{13}
+    \dhinge{1}{14}
+    \dhinge{1}{15}
+    \dhinge{1}{16}
+    \dhinge{1}{17}
+    \dhinge{1}{18}
+
+    \dhinge{1}{19}
+    \dhinge{1}{20}
+    \dhinge{1}{21}
+    \dhinge{1}{22}
+    \dhinge{1}{23}
+
+
+    \dscaling{2}{.05}
+
+    % Legend
+    \matrix [draw, column sep=0.3cm] at (10.25cm,-1.2cm) {
+        \node [shape=rectangle,draw,fill=accent_r_1,label=right:$q>0$] {}; & 
+        \node [shape=rectangle,draw,fill=accent_b_1,label=right:$q<0$] {}; \\
+        };
+\end{tikzpicture}
+\end{document}

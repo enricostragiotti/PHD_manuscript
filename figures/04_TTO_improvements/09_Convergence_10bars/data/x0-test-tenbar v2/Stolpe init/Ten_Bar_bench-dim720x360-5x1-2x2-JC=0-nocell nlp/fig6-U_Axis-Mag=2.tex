@@ -1,0 +1,119 @@
+% This file was created with tikzplotlib v0.10.1.
+\begin{tikzpicture}
+
+\definecolor{darkgray176}{RGB}{176,176,176}
+\definecolor{lightgray}{RGB}{211,211,211}
+
+\begin{axis}[
+hide x axis,
+hide y axis,
+tick align=outside,
+tick pos=left,
+title={ },
+x grid style={darkgray176},
+xmin=-36.006789642835, xmax=756.142582499536,
+xtick style={color=black},
+y grid style={darkgray176},
+ymin=-119.260476177762, ymax=471.018572096069,
+ytick style={color=black}
+]
+\addplot [semithick, lightgray]
+table {%
+0 0
+0 360
+};
+\addplot [semithick, lightgray]
+table {%
+0 360
+720 360
+};
+\addplot [semithick, lightgray]
+table {%
+720 360
+720 0
+};
+\addplot [semithick, lightgray]
+table {%
+720 0
+0 0
+};
+\addplot [line width=0.142128709422436pt, black]
+table {%
+0 360
+361.439999956464 356.562339188992
+};
+\addplot [fill=black, mark=*, only marks]
+table{%
+x  y
+0 360
+361.439999956464 356.562339188992
+};
+\addplot [line width=2pt, black]
+table {%
+0 0
+359.693001988213 -3.18699798399171
+};
+\addplot [fill=black, mark=*, only marks]
+table{%
+x  y
+0 0
+359.693001988213 -3.18699798399171
+};
+\addplot [line width=1.154700538315pt, black]
+table {%
+359.693001988213 -3.18699798399171
+719.515756603872 -8.24190408169227
+};
+\addplot [fill=black, mark=*, only marks]
+table{%
+x  y
+359.693001988213 -3.18699798399171
+719.515756603872 -8.24190408169227
+};
+\addplot [line width=1.63299316180333pt, black]
+table {%
+359.693001988213 -3.18699798399171
+361.439999956464 356.562339188992
+};
+\addplot [fill=black, mark=*, only marks]
+table{%
+x  y
+359.693001988213 -3.18699798399171
+361.439999956464 356.562339188992
+};
+\addplot [line width=1.154700538315pt, black]
+table {%
+719.515756603872 -8.24190408169227
+720.135792856701 351.580850533597
+};
+\addplot [fill=black, mark=*, only marks]
+table{%
+x  y
+719.515756603872 -8.24190408169227
+720.135792856701 351.580850533597
+};
+\addplot [line width=0.402000696932621pt, black]
+table {%
+359.693001988213 -3.18699798399171
+0 360
+};
+\addplot [fill=black, mark=*, only marks]
+table{%
+x  y
+359.693001988213 -3.18699798399171
+0 360
+};
+\addplot [line width=0.201000348448847pt, black]
+table {%
+719.515756603872 -8.24190408169227
+361.439999956464 356.562339188992
+};
+\addplot [fill=black, mark=*, only marks]
+table{%
+x  y
+719.515756603872 -8.24190408169227
+361.439999956464 356.562339188992
+};
+\end{axis}
+
+\end{tikzpicture}

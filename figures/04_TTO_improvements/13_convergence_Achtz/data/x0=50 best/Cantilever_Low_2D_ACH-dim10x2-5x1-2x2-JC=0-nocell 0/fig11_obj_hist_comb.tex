@@ -1,0 +1,63 @@
+% This file was created with tikzplotlib v0.10.1.
+\begin{tikzpicture}
+
+\definecolor{darkgray176}{RGB}{176,176,176}
+\definecolor{firebrick180438}{RGB}{180,4,38}
+\definecolor{lightgray204}{RGB}{204,204,204}
+\definecolor{royalblue5976192}{RGB}{59,76,192}
+
+\begin{axis}[
+legend cell align={left},
+legend style={fill opacity=0.8, draw opacity=1, text opacity=1, draw=lightgray204},
+tick align=outside,
+tick pos=left,
+title={Convergence history},
+x grid style={darkgray176},
+xlabel={Iteration N},
+xmajorgrids,
+xmin=-1.3, xmax=27.3,
+xtick style={color=black},
+y grid style={darkgray176},
+ylabel={Volume [cm3]},
+ymajorgrids,
+ymin=-0.0511234619750033, ymax=2.70892240204926,
+ytick style={color=black}
+]
+\addplot [semithick, firebrick180438]
+table {%
+0 2.58346577186634
+1 1.28661839069071
+2 0.642716623378337
+3 0.326627350116668
+4 0.177332209181748
+5 0.113558293000679
+6 0.0886583843939807
+7 0.0809525099862532
+8 0.0778051536139612
+9 0.0759760671341315
+10 0.0750731830605044
+11 0.0746408539816807
+12 0.0744356437280787
+13 0.0743331682079179
+14 0.075743850466049
+15 0.0947899060860732
+16 0.0944561764526792
+17 0.0932055970115009
+18 0.0931753844686597
+19 0.0931753504245733
+20 0.0931753504245657
+};
+\addlegendentry{SLP}
+\addplot [semithick, royalblue5976192]
+table {%
+21 0.0798770766679979
+22 0.0798829062515617
+23 0.0799481718416682
+24 0.0798849131452622
+25 0.0798776683945953
+26 0.0798770915692706
+};
+\addlegendentry{NLP}
+\end{axis}
+
+\end{tikzpicture}

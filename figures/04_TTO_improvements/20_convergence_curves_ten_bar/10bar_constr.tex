@@ -1,0 +1,202 @@
+\documentclass[10pt, varwidth=8cm]{standalone}
+
+\input{../../img_header}
+
+\pgfdeclarelayer{background}
+\pgfsetlayers{background,main}
+
+\begin{document}
+
+\begin{tikzpicture}    
+  \begin{axis}[
+  curves,
+  width = 6.5cm,
+  height = 4cm,
+  % y axis line style={accent_b_1},
+  % every y tick label/.append style ={accent_b_1},
+  % every y tick/.append style={color=accent_b_1},
+  legend columns=-1,
+  legend cell align={center},
+  legend image post style={scale=0.7},
+  legend style={
+                at={(0.5,1.05)},
+                anchor=south,
+                column sep=0.08cm,
+            },
+  xlabel={NLP Iteration},
+  xmin=32, xmax=60.02,
+  xtick=      {32,40,50,60},
+  % xticklabels={14,20, 25,30,35,40},
+  ylabel={Constraint violation},
+  ymin=0, ymax=3.01,
+  ytick={0,1,2,3},
+  name=ax1,
+  axis on top,
+  clip=true,
+  clip mode=individual,
+  ]
+
+  \addplot [scatter_plot_smooth, mark size=0, accent_r_1]
+  table {%
+  32 2.52722998084209e-09
+  33 2.52722998084209e-09
+  34 1.70153897669792e-06
+  35 0.0346199404814627
+  36 0.113947633861334
+  37 0.112626294957579
+  38 0.0143342161724007
+  39 0.000204643929407666
+  40 3.21292406095439e-07
+  41 1.27791395243548e-08
+  42  4.90089746563172e-10
+  43  4.90089746563172e-10
+  44  3.37692540597345e-10
+  45  5.08716109791678e-08
+  46  3.0920847481376e-07
+  47  1.08056227077213e-07
+  48  1.97013615974044e-06
+  49  1.32945019505992e-07
+  50  1.06929718413085e-08
+  51  5.4834309548475e-09
+  52  4.388691265309e-10
+  53  1.33618434650551e-11
+  54  6.35036406732476e-14
+  55  2.8421709430404e-14
+  56  1.45193950879008e-14
+  57  1.4210854715202e-14
+  58  1.4210854715202e-14
+  };
+  \addlegendentry{$g_{\text{eq}}$}
+  \addplot [scatter_plot_smooth, mark size=0, accent_r_2]
+  table {%
+  32 0
+  33 0
+  34 0
+  35  0
+  36  0
+  37  0
+  38  0
+  39  0
+  40  0
+  41  0
+  42  0
+  43  0
+  44  0
+  45  0
+  46  0
+  47  0
+  48  0
+  49  0
+  50  0
+  51  0
+  52  0
+  53  0
+  54  0
+  55  0
+  56  0
+  57  0
+  58  0 
+  };
+  \addlegendentry{$g_{\text{st,c}}$}
+  \addplot [scatter_plot_smooth, mark size=0, accent_r_3]
+  table {%
+  32 1.48342877347253
+  33 1.48342877347253
+  34 1.48110527339227
+  35 0
+  36 0
+  37 0
+  38 0
+  39 0
+  40 0
+  41 0
+  42 0
+  43 0
+  44 0
+  45 0
+  46 0
+  47 0
+  48 0
+  49 0
+  50 0
+  51 0
+  52 0
+  53 0
+  54 0
+  55 0
+  56 9.7535348686506e-09
+  57 9.99798999146151e-09
+  58 9.99801841317094e-09
+  };
+  \addlegendentry{$g_{\text{st,t}}$}
+  \addplot [scatter_plot_smooth, axis on top, clip = true,  clip mode=individual, mark size=0, accent_b_3]
+  table {%
+  32 1.15809939416067e-09
+  33 1.15809939416067e-09
+  34 1.58761005764063e-05
+  35 5 %433.657047485109
+  36 5 %1046.70401039681
+  37 5 %1038.69862947682
+  38 5 %255.563345441197
+  39 5 %20.6851168771851
+  40 0.698502815856358
+  41 0.172331793900611
+  42 0.0104205617668924
+  43 0.0104205617668924
+  44 0.010473753941568
+  45 5 %32.1489740051864
+  46 5 %29.674040093138
+  47 5 %24.4626459985962
+  48 5 %12.8231167216454
+  49 5 %7.29112778669457
+  50 0.759157029863822
+  51 0.0382503552023934
+  52 4.60132299906491e-05
+  53 9.26665558154127e-05
+  54 9.77977822884668e-05
+  55 9.99784606250387e-05
+  56 0.000100009748258856
+  57 0.000100009997993311
+  58 0.000100009997993311
+  };
+  \addlegendentry{$g_{\text{comp}}$}
+
+  \addplot [scatter_plot_smooth, axis on top, mark size=0, accent_b_1]
+  table {%
+  32 0
+  33 0
+  34 0
+  35 0
+  36 0
+  37 0
+  38 0
+  39 0
+  40 0
+  41 0
+  42 0
+  43 0
+  44 0
+  45 0
+  46 0
+  47 0
+  48 0
+  49 0
+  50 0
+  51 0
+  52 0
+  53 0
+  54 0
+  55 0
+  56 0
+  57 0
+  58 0
+  };
+  \addlegendentry{$g_{\text{buck}}$}
+
+  \draw [fill=white, draw=none] (32,-0.177) rectangle (60,-0.01);
+  
+\end{axis}
+
+\end{tikzpicture}
+
+\end{document}

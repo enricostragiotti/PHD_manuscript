@@ -1,0 +1,10 @@
+# Generate random x0
+    plot_different = False
+    n_random = 100 -1
+    x0 = 50
+    max_variation = x0
+    rng = np.random.default_rng(seed=12)
+    optimized_vol = np.zeros(n_random+1)
+    
+    x0_area = rng.random((10,n_random)) * max_variation*2 - max_variation # Generate random areas
+    x0_area = np.hstack([np.zeros((10,1)),x0_area]) + x0

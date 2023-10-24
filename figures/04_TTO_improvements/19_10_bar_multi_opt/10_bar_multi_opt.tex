@@ -1,0 +1,169 @@
+\documentclass[12pt, varwidth=174mm]{standalone} % Figure*
+% \documentclass[11pt, varwidth=87mm]{standalone} % Figure
+
+\input{../../img_header}
+
+\tikzset{font=\footnotesize}
+\usetikzlibrary{calc}
+
+\begin{document}
+\begin{tikzpicture}
+
+    \node[label={[label distance=2.8cm,color=black]270:(a)}] (A) at (4.2cm,0){};
+
+    \node[left=2mm] (figA) at (A){
+        \includegraphics[width=3.6cm]{s1.pdf}
+    };
+    \node[right=2mm] (figB) at (A){
+        \includegraphics[width=3.6cm]{s2.pdf}
+    };
+
+    \node[label={[label distance=2.8cm,color=black]270:(b)}] (B) at (17cm-4.2cm,0){};
+
+    \node[left=2mm] (figC) at (B){
+        \includegraphics[width=3.6cm]{b1.pdf}
+    };
+    \node[right=2mm] (figD) at (B){
+        \includegraphics[width=3.6cm]{b2.pdf}
+    };
+
+    % \node[inner sep=0pt, label={[label distance=3mm,color=black]270:(a)}] (figA) at (2cm,0cm) {\includegraphics[width=3.5cm]{s1.pdf}};
+    % \node[inner sep=0pt, label={[label distance=3mm,color=black]270:(b)}] (figB) at (6.334cm,0cm) {\includegraphics[width=3.5cm]{s2.pdf}};
+    % \node[inner sep=0pt, label={[label distance=3mm,color=black]270:(c)}] (figC) at (10.667cm,0cm) {\includegraphics[width=3.5cm]{b1.pdf}};
+    % \node[inner sep=0pt, label={[label distance=3mm,color=black]270:(d)}] (figD) at (15cm,0cm) {\includegraphics[width=3.5cm]{b2.pdf}};
+
+    \node[below=of A, yshift=-0.8cm] (colormapA){\pgfplotscolorbardrawstandalone[ 
+        colormap name={coolwarm},
+        colorbar horizontal,
+        point meta min=0,
+        point meta max=50,
+        colorbar style={
+            width=7.5cm,
+            height=0.4cm,
+            xtick={0,25,50},
+            xticklabels={$-\frac{q}{\sigma_c a}$,0,$+\frac{q}{\sigma_t a}$}}]
+        
+    };
+
+    \node[below=of B, yshift=-0.8cm] (colormapB){\pgfplotscolorbardrawstandalone[ 
+        colormap={buckling}{
+        indices of colormap={
+            \pgfplotscolormaplastindexof{coolwarm_b},...,0 of coolwarm_b}
+    },
+        colorbar horizontal,
+        point meta min=0,
+        point meta max=25,
+        colorbar style={
+            width=7.5cm,
+            height=0.4cm,
+            xtick={0,25},
+            xticklabels={0,$\frac{q}{q_{\text{crit}}}$}}]
+        
+    };
+    \point{a1}{2.075-1.8}{-0.9};
+    \point{b1}{2.075}{-0.9};
+    \point{c1}{2.075+1.8}{-0.9};
+    \point{d1}{2.075-1.8}{0.9};
+    \point{e1}{2.075}{0.9};
+    \point{f1}{2.075+1.8}{0.9};
+
+    \draw[forces, accent_r_1] (2.075+1.8,-0.9-0.1) -- (2.075+1.8,-0.9-0.6) node[right] {$P_1$};
+    \dhinge{1}{a1}
+    \dhinge{1}{b1}
+    \dhinge{1}{c1}
+    \dhinge{1}{d1}
+    \dhinge{1}{e1}
+    \dhinge{1}{f1}
+    
+    % \notation{1}{c1}{$P_1$}[below left]
+    % \load{1}{c1}[90][0.5][-0.7]
+    % \load{1}{f1}[270][0.5][-0.7]
+    % \notation{1}{f}{$P_2$}[above right]
+
+    \point{a2}{6.325-1.8}{-0.9};
+    \point{b2}{6.325}{-0.9};
+    \point{c2}{6.325+1.8}{-0.9};
+    \point{d2}{6.325-1.8}{0.9};
+    \point{e2}{6.325}{0.9};
+    \point{f2}{6.325+1.8}{0.9};
+
+    \draw[forces, accent_b_1] (6.325+1.8,0.9+0.1) -- (6.325+1.8,0.9+0.6) node[left] {$P_2$};
+    \dhinge{1}{a2}
+    \dhinge{1}{b2}
+    \dhinge{1}{c2}
+    \dhinge{1}{d2}
+    \dhinge{1}{e2}
+    \dhinge{1}{f2}
+    
+    % \notation{1}{c2}{$P_1$}[below left]
+    % \load{1}{c2}[90][0.5][-0.7]
+    % \load{1}{f2}[270][0.5][-0.7]
+    % \notation{1}{f2}{$P_2$}[above left]
+
+    \point{a3}{10.675-1.8}{-0.9};
+    \point{b3}{10.675}{-0.9};
+    \point{c3}{10.675+1.8}{-0.9};
+    \point{d3}{10.675-1.8}{0.9};
+    \point{e3}{10.675}{0.9};
+    \point{f3}{10.675+1.8}{0.9};
+
+    \draw[forces, accent_r_1] (10.675+1.8,-0.9-0.1) -- (10.675+1.8,-0.9-0.6) node[right] {$P_1$};
+    \dhinge{1}{a3}
+    \dhinge{1}{b3}
+    \dhinge{1}{c3}
+    \dhinge{1}{d3}
+    \dhinge{1}{e3}
+    \dhinge{1}{f3}
+    
+    % \notation{1}{c3}{$P_1$}[below left]
+    % \load{1}{c3}[90][0.5][-0.7]
+    % \load{1}{f2}[270][0.5][-0.7]
+    % \notation{1}{f2}{$P_2$}[above left]
+
+    \point{a4}{14.925-1.8}{-0.9};
+    \point{b4}{14.925}{-0.9};
+    \point{c4}{14.925+1.8}{-0.9};
+    \point{d4}{14.925-1.8}{0.9};
+    \point{e4}{14.925}{0.9};
+    \point{f4}{14.925+1.8}{0.9};
+
+    \draw[forces, accent_b_1] (14.925+1.8,0.9+0.1) -- (14.925+1.8,0.9+0.6) node[left] {$P_2$};
+    \dhinge{1}{a4}
+    \dhinge{1}{b4}
+    \dhinge{1}{c4}
+    \dhinge{1}{d4}
+    \dhinge{1}{e4}
+    \dhinge{1}{f4}
+    
+    % \notation{1}{c3}{$P_1$}[below left]
+    % \load{1}{c3}[90][0.5][-0.7]
+    % \load{1}{f4}[270][0.5][-0.7]
+    % \notation{1}{f4}{$P_2$}[above left]
+
+
+    \dscaling{2}{.000005}
+
+    
+
+    % \pgfplotscolorbardrawstandalone[ 
+    %     at={(1.05,1)}
+    %     colormap name={coolwarm},
+    %     colorbar horizontal,
+    %     point meta min=50,
+    %     point meta max=0,
+    %     colorbar style={
+    %         width=6cm,
+    %         height=0.4cm,
+    %         xtick={0,25,50},
+    %         xticklabels={-$\sigma_c$,0,$\sigma_t$}}]
+
+    % \pgfplotscolorbardrawstandalone[ 
+    % colormap/jet,
+    % colorbar horizontal,
+    % point meta min=18,
+    % point meta max=45,
+    % colorbar style={
+    %     width=7cm,
+    %     xtick={18,20,25,...,45}}]
+\end{tikzpicture}
+\end{document}

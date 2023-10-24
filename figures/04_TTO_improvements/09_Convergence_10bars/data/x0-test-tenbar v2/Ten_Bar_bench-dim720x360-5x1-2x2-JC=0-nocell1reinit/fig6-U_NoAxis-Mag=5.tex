@@ -1,0 +1,108 @@
+% This file was created with tikzplotlib v0.10.1.
+\begin{tikzpicture}
+
+\definecolor{darkgray176}{RGB}{176,176,176}
+\definecolor{lightgray}{RGB}{211,211,211}
+
+\begin{axis}[
+hide x axis,
+hide y axis,
+tick align=outside,
+tick pos=left,
+title={ },
+x grid style={darkgray176},
+xmin=-36.3600000000358, xmax=763.560000000751,
+xtick style={color=black},
+y grid style={darkgray176},
+ymin=-122.018457193325, ymax=474.050962162099,
+ytick style={color=black}
+]
+\addplot [semithick, lightgray]
+table {%
+0 0
+0 360
+};
+\addplot [semithick, lightgray]
+table {%
+0 360
+720 360
+};
+\addplot [semithick, lightgray]
+table {%
+720 360
+720 0
+};
+\addplot [semithick, lightgray]
+table {%
+720 0
+0 0
+};
+\addplot [line width=0.056851483770104pt, black]
+table {%
+0 360
+363.600000000358 351.589391506026
+};
+\addplot [fill=black, mark=*, only marks]
+table{%
+x  y
+0 360
+363.600000000358 351.589391506026
+};
+\addplot [line width=0.056851483770104pt, black]
+table {%
+363.600000000358 351.589391506026
+727.200000000715 343.319784892346
+};
+\addplot [fill=black, mark=*, only marks]
+table{%
+x  y
+363.600000000358 351.589391506026
+727.200000000715 343.319784892346
+};
+\addplot [thick, black]
+table {%
+0 0
+359.232504969027 -7.96749503122593
+};
+\addplot [fill=black, mark=*, only marks]
+table{%
+x  y
+0 0
+359.232504969027 -7.96749503122593
+};
+\addplot [line width=0.461880215336321pt, black]
+table {%
+359.232504969027 -7.96749503122593
+363.600000000358 351.589391506026
+};
+\addplot [fill=black, mark=*, only marks]
+table{%
+x  y
+359.232504969027 -7.96749503122593
+363.600000000358 351.589391506026
+};
+\addplot [line width=0.160800278787741pt, black]
+table {%
+359.232504969027 -7.96749503122593
+0 360
+};
+\addplot [fill=black, mark=*, only marks]
+table{%
+x  y
+359.232504969027 -7.96749503122593
+0 360
+};
+\addplot [line width=0.77678683471719pt, black]
+table {%
+359.232504969027 -7.96749503122593
+727.200000000715 343.319784892346
+};
+\addplot [fill=black, mark=*, only marks]
+table{%
+x  y
+359.232504969027 -7.96749503122593
+727.200000000715 343.319784892346
+};
+\end{axis}
+
+\end{tikzpicture}

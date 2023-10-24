@@ -1,6 +1,6 @@
-PWD d:\estragio\PhD\07_Articles\05_SAMO\FIG\11_Solution_algo
+PWD d:\estragio\PhD\99_Github\PHD_manuscript\figures\04_TTO_improvements\02_solution_algo
 INPUT D:\estragio\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT d:\estragio\PhD\07_Articles\05_SAMO\FIG\11_Solution_algo\sol_algo.tex
+INPUT d:\estragio\PhD\99_Github\PHD_manuscript\figures\04_TTO_improvements\02_solution_algo\sol_algo.tex
 OUTPUT sol_algo.log
 INPUT C:\Program Files\MiKTeX\tex\latex\standalone\standalone.cls
 INPUT C:\Program Files\MiKTeX\tex\latex\standalone\standalone.cls
@@ -96,13 +96,13 @@ INPUT D:\estragio\AppData\Roaming\MiKTeX\tex\latex\varwidth\varwidth.sty
 INPUT D:\estragio\AppData\Roaming\MiKTeX\tex\latex\varwidth\varwidth.sty
 INPUT D:\estragio\AppData\Roaming\MiKTeX\tex\latex\varwidth\varwidth.sty
 INPUT D:\estragio\AppData\Roaming\MiKTeX\tex\latex\varwidth\varwidth.sty
-INPUT ..\img_header.tex
-INPUT ..\img_header.tex
-INPUT ..\img_header.tex
-INPUT ..\img_header.tex
-INPUT ..\img_header.tex
-INPUT ..\img_header.tex
-INPUT ..\img_header.tex
+INPUT ..\..\img_header.tex
+INPUT ..\..\img_header.tex
+INPUT ..\..\img_header.tex
+INPUT ..\..\img_header.tex
+INPUT ..\..\img_header.tex
+INPUT ..\..\img_header.tex
+INPUT ..\..\img_header.tex
 INPUT C:\Program Files\MiKTeX\tex\latex\base\inputenc.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\base\inputenc.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\base\inputenc.sty
@@ -556,6 +556,98 @@ INPUT C:\Program Files\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzl
 INPUT C:\Program Files\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarypatterns.code.tex
 INPUT C:\Program Files\MiKTeX\tex\generic\pgf\libraries\pgflibrarypatterns.code.tex
 INPUT C:\Program Files\MiKTeX\tex\generic\pgf\libraries\pgflibrarypatterns.code.tex
+INPUT D:\estragio\AppData\Roaming\MiKTeX\tex\latex\structmech\structmech.sty
+INPUT D:\estragio\AppData\Roaming\MiKTeX\tex\latex\structmech\structmech.sty
+INPUT D:\estragio\AppData\Roaming\MiKTeX\tex\latex\structmech\structmech.sty
+INPUT D:\estragio\AppData\Roaming\MiKTeX\tex\latex\structmech\structmech.sty
+INPUT D:\estragio\AppData\Roaming\MiKTeX\tex\latex\structmech\structmech.sty
+INPUT D:\estragio\AppData\Roaming\MiKTeX\tex\latex\structmech\structmech.sty
+INPUT D:\estragio\AppData\Roaming\MiKTeX\tex\latex\structmech\structmech.sty
+INPUT D:\estragio\AppData\Roaming\MiKTeX\tex\latex\structmech\structmech.sty
+INPUT D:\estragio\AppData\Roaming\MiKTeX\tex\latex\structmech\structmech.sty
+INPUT D:\estragio\AppData\Roaming\MiKTeX\tex\latex\structmech\structmech.sty
+INPUT D:\estragio\AppData\Roaming\MiKTeX\tex\latex\structmech\structmech.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\base\ifthen.sty
+INPUT D:\estragio\AppData\Roaming\MiKTeX\tex\latex\kvoptions\kvoptions.sty
+INPUT D:\estragio\AppData\Roaming\MiKTeX\tex\latex\kvoptions\kvoptions.sty
+INPUT D:\estragio\AppData\Roaming\MiKTeX\tex\latex\kvoptions\kvoptions.sty
+INPUT D:\estragio\AppData\Roaming\MiKTeX\tex\latex\kvoptions\kvoptions.sty
+INPUT D:\estragio\AppData\Roaming\MiKTeX\tex\latex\kvoptions\kvoptions.sty
+INPUT D:\estragio\AppData\Roaming\MiKTeX\tex\latex\kvoptions\kvoptions.sty
+INPUT D:\estragio\AppData\Roaming\MiKTeX\tex\latex\kvoptions\kvoptions.sty
+INPUT D:\estragio\AppData\Roaming\MiKTeX\tex\latex\kvoptions\kvoptions.sty
+INPUT D:\estragio\AppData\Roaming\MiKTeX\tex\latex\kvoptions\kvoptions.sty
+INPUT D:\estragio\AppData\Roaming\MiKTeX\tex\latex\kvoptions\kvoptions.sty
+INPUT D:\estragio\AppData\Roaming\MiKTeX\tex\latex\kvoptions\kvoptions.sty
+INPUT D:\estragio\AppData\Roaming\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
+INPUT D:\estragio\AppData\Roaming\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
+INPUT D:\estragio\AppData\Roaming\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
+INPUT D:\estragio\AppData\Roaming\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
+INPUT D:\estragio\AppData\Roaming\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
+INPUT D:\estragio\AppData\Roaming\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
+INPUT D:\estragio\AppData\Roaming\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
+INPUT D:\estragio\AppData\Roaming\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
+INPUT D:\estragio\AppData\Roaming\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
+INPUT D:\estragio\AppData\Roaming\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
+INPUT D:\estragio\AppData\Roaming\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
+INPUT D:\estragio\AppData\Roaming\MiKTeX\tex\latex\kvsetkeys\kvsetkeys.sty
+INPUT D:\estragio\AppData\Roaming\MiKTeX\tex\latex\kvsetkeys\kvsetkeys.sty
+INPUT D:\estragio\AppData\Roaming\MiKTeX\tex\latex\kvsetkeys\kvsetkeys.sty
+INPUT D:\estragio\AppData\Roaming\MiKTeX\tex\latex\kvsetkeys\kvsetkeys.sty
+INPUT D:\estragio\AppData\Roaming\MiKTeX\tex\latex\kvsetkeys\kvsetkeys.sty
+INPUT D:\estragio\AppData\Roaming\MiKTeX\tex\latex\kvsetkeys\kvsetkeys.sty
+INPUT D:\estragio\AppData\Roaming\MiKTeX\tex\latex\kvsetkeys\kvsetkeys.sty
+INPUT D:\estragio\AppData\Roaming\MiKTeX\tex\latex\kvsetkeys\kvsetkeys.sty
+INPUT D:\estragio\AppData\Roaming\MiKTeX\tex\latex\kvsetkeys\kvsetkeys.sty
+INPUT D:\estragio\AppData\Roaming\MiKTeX\tex\latex\kvsetkeys\kvsetkeys.sty
+INPUT D:\estragio\AppData\Roaming\MiKTeX\tex\latex\kvsetkeys\kvsetkeys.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\pgf\frontendlayer\tikz.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\xkeyval\xkeyval.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\l3packages\xparse\xparse.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\l3packages\xparse\xparse.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\l3packages\xparse\xparse.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\l3packages\xparse\xparse.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\l3packages\xparse\xparse.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\l3packages\xparse\xparse.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\l3packages\xparse\xparse.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\l3packages\xparse\xparse.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\l3packages\xparse\xparse.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\l3packages\xparse\xparse.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\l3packages\xparse\xparse.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\l3kernel\expl3.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\l3kernel\expl3.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\l3kernel\expl3.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\l3kernel\expl3.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\l3kernel\expl3.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\l3kernel\expl3.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\l3kernel\expl3.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\l3kernel\expl3.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\l3kernel\expl3.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\l3kernel\expl3.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\l3kernel\expl3.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
+INPUT C:\Program Files\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
+INPUT C:\Program Files\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
+INPUT C:\Program Files\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
+INPUT C:\Program Files\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
+INPUT C:\Program Files\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
+INPUT C:\Program Files\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
+INPUT C:\Program Files\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
+INPUT C:\Program Files\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
+INPUT C:\Program Files\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
+INPUT C:\Program Files\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
+INPUT D:\estragio\AppData\Roaming\MiKTeX\tex\latex\xstring\xstring.sty
+INPUT D:\estragio\AppData\Roaming\MiKTeX\tex\latex\xstring\xstring.sty
+INPUT D:\estragio\AppData\Roaming\MiKTeX\tex\latex\xstring\xstring.sty
+INPUT D:\estragio\AppData\Roaming\MiKTeX\tex\latex\xstring\xstring.sty
+INPUT D:\estragio\AppData\Roaming\MiKTeX\tex\latex\xstring\xstring.sty
+INPUT D:\estragio\AppData\Roaming\MiKTeX\tex\latex\xstring\xstring.sty
+INPUT D:\estragio\AppData\Roaming\MiKTeX\tex\latex\xstring\xstring.sty
+INPUT D:\estragio\AppData\Roaming\MiKTeX\tex\latex\xstring\xstring.sty
+INPUT D:\estragio\AppData\Roaming\MiKTeX\tex\latex\xstring\xstring.sty
+INPUT D:\estragio\AppData\Roaming\MiKTeX\tex\latex\xstring\xstring.sty
+INPUT D:\estragio\AppData\Roaming\MiKTeX\tex\latex\xstring\xstring.sty
+INPUT D:\estragio\AppData\Roaming\MiKTeX\tex\generic\xstring\xstring.tex
 INPUT D:\estragio\AppData\Roaming\MiKTeX\tex\latex\siunitx\siunitx.sty
 INPUT D:\estragio\AppData\Roaming\MiKTeX\tex\latex\siunitx\siunitx.sty
 INPUT D:\estragio\AppData\Roaming\MiKTeX\tex\latex\siunitx\siunitx.sty
@@ -613,16 +705,6 @@ INPUT D:\estragio\AppData\Roaming\MiKTeX\tex\generic\infwarerr\infwarerr.sty
 INPUT D:\estragio\AppData\Roaming\MiKTeX\tex\generic\infwarerr\infwarerr.sty
 INPUT D:\estragio\AppData\Roaming\MiKTeX\tex\generic\infwarerr\infwarerr.sty
 INPUT C:\Program Files\MiKTeX\tex\generic\iftex\iftex.sty
-INPUT D:\estragio\AppData\Roaming\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
-INPUT D:\estragio\AppData\Roaming\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
-INPUT D:\estragio\AppData\Roaming\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
-INPUT D:\estragio\AppData\Roaming\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
-INPUT D:\estragio\AppData\Roaming\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
-INPUT D:\estragio\AppData\Roaming\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
-INPUT D:\estragio\AppData\Roaming\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
-INPUT D:\estragio\AppData\Roaming\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
-INPUT D:\estragio\AppData\Roaming\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
-INPUT D:\estragio\AppData\Roaming\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
 INPUT D:\estragio\AppData\Roaming\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\amsmath\amstext.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\tools\array.sty
@@ -702,17 +784,6 @@ INPUT C:\Program Files\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzl
 INPUT C:\Program Files\MiKTeX\tex\generic\pgf\libraries\pgflibraryarrows.meta.code.tex
 INPUT C:\Program Files\MiKTeX\tex\generic\pgf\libraries\pgflibraryarrows.meta.code.tex
 INPUT C:\Program Files\MiKTeX\tex\generic\pgf\libraries\pgflibraryarrows.meta.code.tex
-INPUT C:\Program Files\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
-INPUT C:\Program Files\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
-INPUT C:\Program Files\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
-INPUT C:\Program Files\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
-INPUT C:\Program Files\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
-INPUT C:\Program Files\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
-INPUT C:\Program Files\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
-INPUT C:\Program Files\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
-INPUT C:\Program Files\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
-INPUT C:\Program Files\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
-INPUT C:\Program Files\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
 INPUT .\sol_algo.aux
 INPUT sol_algo.aux
 INPUT sol_algo.aux

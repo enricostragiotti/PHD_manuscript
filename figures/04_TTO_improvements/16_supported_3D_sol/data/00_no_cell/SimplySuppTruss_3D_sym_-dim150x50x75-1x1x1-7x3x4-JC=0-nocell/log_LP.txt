@@ -1,0 +1,7 @@
+Vol: 2476.78 mm3, Weight: 0.00282 kg
+Vol_fraction: 0.440316%
+Max section: 18.806 mm2
+Optimization SLP time: 3.14 seconds
+N candidate bars: 496 
+N active bars: 13 
+Min slenderness ratio: 20.436

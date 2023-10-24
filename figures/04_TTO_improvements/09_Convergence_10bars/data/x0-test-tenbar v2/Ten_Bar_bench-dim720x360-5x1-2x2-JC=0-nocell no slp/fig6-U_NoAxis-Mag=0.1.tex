@@ -1,0 +1,108 @@
+% This file was created with tikzplotlib v0.10.1.
+\begin{tikzpicture}
+
+\definecolor{darkgray176}{RGB}{176,176,176}
+\definecolor{lightgray}{RGB}{211,211,211}
+
+\begin{axis}[
+hide x axis,
+hide y axis,
+tick align=outside,
+tick pos=left,
+title={ },
+x grid style={darkgray176},
+xmin=-36.0071999998331, xmax=756.151199996496,
+xtick style={color=black},
+y grid style={darkgray176},
+ymin=-115.227795417271, ymax=475.057980063865,
+ytick style={color=black}
+]
+\addplot [semithick, lightgray]
+table {%
+0 0
+0 360
+};
+\addplot [semithick, lightgray]
+table {%
+0 360
+720 360
+};
+\addplot [semithick, lightgray]
+table {%
+720 360
+720 0
+};
+\addplot [semithick, lightgray]
+table {%
+720 0
+0 0
+};
+\addplot [line width=0.338040945010493pt, black]
+table {%
+0 360
+360.071999999912 359.902184646776
+};
+\addplot [fill=black, mark=*, only marks]
+table{%
+x  y
+0 360
+360.071999999912 359.902184646776
+};
+\addplot [line width=0.084510236252163pt, black]
+table {%
+360.071999999912 359.902184646776
+720.143999996663 359.486560294732
+};
+\addplot [fill=black, mark=*, only marks]
+table{%
+x  y
+360.071999999912 359.902184646776
+720.143999996663 359.486560294732
+};
+\addplot [line width=0.169020472500453pt, black]
+table {%
+359.815280144786 -0.16981535340622
+360.071999999912 359.902184646776
+};
+\addplot [fill=black, mark=*, only marks]
+table{%
+x  y
+359.815280144786 -0.16981535340622
+360.071999999912 359.902184646776
+};
+\addplot [line width=1.15470053831385pt, black]
+table {%
+359.815280144786 -0.16981535340622
+0 360
+};
+\addplot [fill=black, mark=*, only marks]
+table{%
+x  y
+359.815280144786 -0.16981535340622
+0 360
+};
+\addplot [line width=2pt, black]
+table {%
+0 0
+360.071999999912 359.902184646776
+};
+\addplot [fill=black, mark=*, only marks]
+table{%
+x  y
+0 0
+360.071999999912 359.902184646776
+};
+\addplot [line width=1.15470053839442pt, black]
+table {%
+359.815280144786 -0.16981535340622
+720.143999996663 359.486560294732
+};
+\addplot [fill=black, mark=*, only marks]
+table{%
+x  y
+359.815280144786 -0.16981535340622
+720.143999996663 359.486560294732
+};
+\end{axis}
+
+\end{tikzpicture}

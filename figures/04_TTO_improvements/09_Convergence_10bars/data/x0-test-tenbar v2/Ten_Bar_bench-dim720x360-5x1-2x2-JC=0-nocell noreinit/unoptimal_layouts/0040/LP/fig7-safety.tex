@@ -1,0 +1,79 @@
+% This file was created with tikzplotlib v0.10.1.
+\begin{tikzpicture}
+
+\definecolor{darkgray176}{RGB}{176,176,176}
+\definecolor{steelblue31119180}{RGB}{31,119,180}
+
+\begin{axis}[
+colorbar,
+colorbar style={ytick={0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1,1.1},yticklabels={
+  \(\displaystyle {0.1}\),
+  \(\displaystyle {0.2}\),
+  \(\displaystyle {0.3}\),
+  \(\displaystyle {0.4}\),
+  \(\displaystyle {0.5}\),
+  \(\displaystyle {0.6}\),
+  \(\displaystyle {0.7}\),
+  \(\displaystyle {0.8}\),
+  \(\displaystyle {0.9}\),
+  \(\displaystyle {1.0}\),
+  \(\displaystyle {1.1}\)
+},ylabel={}},
+colormap={mymap}{[1pt]
+  rgb(0pt)=(0.647058823529412,0,0.149019607843137);
+  rgb(1pt)=(0.843137254901961,0.188235294117647,0.152941176470588);
+  rgb(2pt)=(0.956862745098039,0.427450980392157,0.262745098039216);
+  rgb(3pt)=(0.992156862745098,0.682352941176471,0.380392156862745);
+  rgb(4pt)=(0.996078431372549,0.87843137254902,0.545098039215686);
+  rgb(5pt)=(1,1,0.749019607843137);
+  rgb(6pt)=(0.850980392156863,0.937254901960784,0.545098039215686);
+  rgb(7pt)=(0.650980392156863,0.850980392156863,0.415686274509804);
+  rgb(8pt)=(0.4,0.741176470588235,0.388235294117647);
+  rgb(9pt)=(0.101960784313725,0.596078431372549,0.313725490196078);
+  rgb(10pt)=(0,0.407843137254902,0.215686274509804)
+},
+hide x axis,
+hide y axis,
+point meta max=1.00000000252795,
+point meta min=0.10350347842354,
+tick align=outside,
+tick pos=left,
+title={Reserve Factor},
+x grid style={darkgray176},
+xmin=0, xmax=720,
+xtick style={color=black},
+y grid style={darkgray176},
+ymin=-155.322580645161, ymax=515.322580645161,
+ytick style={color=black}
+]
+\path [draw=steelblue31119180, line width=0.135216377961668pt]
+(axis cs:0,360)
+--(axis cs:360,360);
+
+\path [draw=steelblue31119180, line width=0.27463561917598pt]
+(axis cs:360,0)
+--(axis cs:720,0);
+
+\path [draw=steelblue31119180, line width=0.0338040944125428pt]
+(axis cs:360,0)
+--(axis cs:360,360);
+
+\path [draw=steelblue31119180, line width=0.274635619175983pt]
+(axis cs:720,0)
+--(axis cs:720,360);
+
+\path [draw=steelblue31119180, line width=0.461880215207633pt]
+(axis cs:360,0)
+--(axis cs:0,360);
+
+\path [draw=steelblue31119180, thick]
+(axis cs:0,0)
+--(axis cs:360,360);
+
+\path [draw=steelblue31119180, line width=0.0478062088327719pt]
+(axis cs:720,0)
+--(axis cs:360,360);
+
+\end{axis}
+
+\end{tikzpicture}

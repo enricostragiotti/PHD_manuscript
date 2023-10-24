@@ -1,0 +1,215 @@
+% This file was created with tikzplotlib v0.10.1.
+\begin{tikzpicture}
+
+\definecolor{crimson2143940}{RGB}{214,39,40}
+\definecolor{darkgray176}{RGB}{176,176,176}
+\definecolor{darkorange25512714}{RGB}{255,127,14}
+\definecolor{forestgreen4416044}{RGB}{44,160,44}
+\definecolor{lightgray204}{RGB}{204,204,204}
+\definecolor{mediumpurple148103189}{RGB}{148,103,189}
+\definecolor{steelblue31119180}{RGB}{31,119,180}
+
+\begin{axis}[
+legend cell align={left},
+legend style={
+  fill opacity=0.8,
+  draw opacity=1,
+  text opacity=1,
+  at={(0.91,0.5)},
+  anchor=east,
+  draw=lightgray204
+},
+tick align=outside,
+tick pos=left,
+title={Constraints history},
+x grid style={darkgray176},
+xlabel={Iteration N},
+xmajorgrids,
+xmin=-1.3, xmax=27.3,
+xtick style={color=black},
+xtick={-5,0,5,10,15,20,25,30},
+xticklabels={
+  \(\displaystyle {\ensuremath{-}5}\),
+  \(\displaystyle {0}\),
+  \(\displaystyle {5}\),
+  \(\displaystyle {10}\),
+  \(\displaystyle {15}\),
+  \(\displaystyle {20}\),
+  \(\displaystyle {25}\),
+  \(\displaystyle {30}\)
+},
+y grid style={darkgray176},
+ylabel={Constraint violation},
+ymajorgrids,
+ymin=-0.1, ymax=1.05,
+ytick style={color=black},
+ytick={-0.2,0,0.2,0.4,0.6,0.8,1,1.2},
+yticklabels={
+  \(\displaystyle {\ensuremath{-}0.2}\),
+  \(\displaystyle {0.0}\),
+  \(\displaystyle {0.2}\),
+  \(\displaystyle {0.4}\),
+  \(\displaystyle {0.6}\),
+  \(\displaystyle {0.8}\),
+  \(\displaystyle {1.0}\),
+  \(\displaystyle {1.2}\)
+}
+]
+\addplot [semithick, steelblue31119180]
+table {%
+0 2.52722998084209e-09
+1 2.52722998084209e-09
+2 1.70153901485733e-06
+3 0.0346199387237789
+4 0.11394764087216
+5 0.112626299042361
+6 0.0143342189516034
+7 0.000204644676259136
+8 3.21292564231579e-07
+9 1.27791395243548e-08
+10 4.90103957417887e-10
+11 4.90103957417887e-10
+12 3.37692540597345e-10
+13 5.08716006837605e-08
+14 3.09208108302563e-07
+15 1.08056227077213e-07
+16 1.97013238502809e-06
+17 1.32949228797822e-07
+18 1.06929860521632e-08
+19 5.48343427539821e-09
+20 4.38870725477752e-10
+21 1.33564076333326e-11
+22 6.34051772564261e-14
+23 2.8421709430404e-14
+24 2.8421709430404e-14
+25 1.4210854715202e-14
+26 1.42604710936782e-14
+};
+\addlegendentry{Equilibrium}
+\addplot [semithick, darkorange25512714]
+table {%
+0 0
+1 0
+2 0
+3 0
+4 0
+5 0
+6 0
+7 0
+8 0
+9 0
+10 0
+11 0
+12 0
+13 0
+14 0
+15 0
+16 0
+17 0
+18 0
+19 0
+20 0
+21 0
+22 0
+23 0
+24 0
+25 0
+26 0
+};
+\addlegendentry{Stress Compression}
+\addplot [semithick, forestgreen4416044]
+table {%
+0 1.48342922130536
+1 1.48342922130536
+2 1.48110572094581
+3 0
+4 0
+5 0
+6 0
+7 0
+8 0
+9 0
+10 0
+11 0
+12 0
+13 0
+14 0
+15 0
+16 0
+17 0
+18 0
+19 0
+20 0
+21 0
+22 0
+23 0
+24 9.7535348686506e-09
+25 9.99801841317094e-09
+26 9.99798999146151e-09
+};
+\addlegendentry{Stress Tension}
+\addplot [semithick, crimson2143940]
+table {%
+0 1.1581278158701e-09
+1 1.1581278158701e-09
+2 1.58761005764063e-05
+3 433.657001519379
+4 1046.70413955131
+5 1038.69875390375
+6 255.56339657052
+7 20.6851239713953
+8 0.698501223189595
+9 0.1723316241509
+10 0.0104205452396684
+11 0.0104205452396684
+12 0.0104737373483772
+13 32.1489678812741
+14 29.6740348914895
+15 24.4626489538632
+16 12.8231378840847
+17 7.29113460716712
+18 0.75915706341285
+19 0.0382503588381908
+20 4.60132222031007e-05
+21 9.26659501985228e-05
+22 9.7797710232328e-05
+23 9.99784606534604e-05
+24 0.00010000974825175
+25 0.000100009997993311
+26 0.000100009997986206
+};
+\addlegendentry{Compatibility}
+\addplot [semithick, mediumpurple148103189]
+table {%
+0 0
+1 0
+2 0
+3 0
+4 0
+5 0
+6 0
+7 0
+8 0
+9 0
+10 0
+11 0
+12 0
+13 0
+14 0
+15 0
+16 0
+17 0
+18 0
+19 0
+20 0
+21 0
+22 0
+23 0
+24 0
+25 0
+26 0
+};
+\addlegendentry{Euler Buckling}
+\end{axis}
+
+\end{tikzpicture}
