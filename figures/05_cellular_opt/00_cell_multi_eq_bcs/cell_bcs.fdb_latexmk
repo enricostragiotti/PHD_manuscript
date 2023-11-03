@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1697199928 "d:/estragio/PhD/99_Github/PHD_manuscript/figures/05_cellular_opt/00_cell_multi_eq_bcs/cell_bcs.tex" "cell_bcs.pdf" "cell_bcs" 1697199931 0
-  "../../img_header.tex" 1696515399 9363 7d79f52525b7639fd112610f1c2a7292 ""
+["pdflatex"] 1698236207 "d:/estragio/PhD/99_Github/PHD_manuscript/figures/05_cellular_opt/00_cell_multi_eq_bcs/cell_bcs.tex" "cell_bcs.pdf" "cell_bcs" 1698236210 0
+  "../../img_header.tex" 1697646911 9545 43f5223f736c0f75fd8635006e766f5d ""
   "C:/Program Files/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm" 1233955448 1124 14ccf5552bc7f77ca02a8a402bea8bfb ""
   "C:/Program Files/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmbsy8.tfm" 1233955448 1120 200be8b775682cdf80acad4be5ef57e4 ""
   "C:/Program Files/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233955448 1004 54797486969f23fa377b128694d548df ""
@@ -200,7 +200,7 @@
   "C:/Program Files/MiKTeX/tex/latex/tools/verbatim.sty" 1667245866 7392 f19cdc68ae9f1190dbd54eee6d29fb7c ""
   "C:/Program Files/MiKTeX/tex/latex/xcolor/xcolor.sty" 1656236890 56148 51a9a8571c07b9921892ae11063ae853 ""
   "C:/Program Files/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
-  "D:/estragio/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1694678462 396640 1ea46da25f7076f387bd7ec940bbd5e4 ""
+  "D:/estragio/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1698138633 396640 1ea46da25f7076f387bd7ec940bbd5e4 ""
   "D:/estragio/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1693317776 23169136 c485cd3e477948afde4cec34d0e0dec6 ""
   "D:/estragio/AppData/Roaming/MiKTeX/tex/generic/infwarerr/infwarerr.sty" 1575403108 8356 7bbb2c2373aa810be568c29e333da8ed ""
   "D:/estragio/AppData/Roaming/MiKTeX/tex/generic/ltxcmds/ltxcmds.sty" 1601735609 18568 4409f8f50cd365c68e684407e5350b1b ""
@@ -216,9 +216,9 @@
   "D:/estragio/AppData/Roaming/MiKTeX/tex/latex/varwidth/varwidth.sty" 1238469540 10894 d359a13923460b2a73d4312d613554c8 ""
   "D:/estragio/AppData/Roaming/MiKTeX/tex/latex/xargs/xargs.sty" 1206234660 12403 a11204384274e5980f17ec9564088fa4 ""
   "D:/estragio/AppData/Roaming/MiKTeX/tex/latex/xstring/xstring.sty" 1673965817 123 a302f2c651a95033260db60e51527ae8 ""
-  "cell_bcs.aux" 1697199930 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
-  "cell_bcs.tex" 1697199927 1166 fcfac2e285d1ea6506b550ae3c781352 ""
-  "d:/estragio/PhD/99_Github/PHD_manuscript/figures/05_cellular_opt/00_cell_multi_eq_bcs/cell_bcs.tex" 1697199927 1166 fcfac2e285d1ea6506b550ae3c781352 ""
+  "cell_bcs.aux" 1698236210 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "cell_bcs.tex" 1698236207 1168 a359a28e3da52fbcdb7c98e55f77a881 ""
+  "d:/estragio/PhD/99_Github/PHD_manuscript/figures/05_cellular_opt/00_cell_multi_eq_bcs/cell_bcs.tex" 1698236207 1168 a359a28e3da52fbcdb7c98e55f77a881 ""
   (generated)
   "cell_bcs.aux"
   "cell_bcs.log"

@@ -1,0 +1,86 @@
+\documentclass[12pt, varwidth=174mm]{standalone} % Figure*
+% \documentclass[11pt, varwidth=87mm]{standalone} % Figure
+
+\input{../../img_header}
+
+\tikzset{font=\footnotesize}
+\usetikzlibrary{calc}
+
+\begin{document}
+\begin{tikzpicture}
+
+    \node[] (A) at (0cm,0){};
+
+    \node[left=.5cm, label={[label distance=.5cm,color=black]270:(a)}] (figA) at (A){
+        \includegraphics[width=7cm]{mul04_STRESS_NLP_LC001_iso.png}
+    };
+    \node[right=.5cm, label={[label distance=.5cm,color=black]270:(b)}] (figB) at (A){
+        \includegraphics[width=7cm]{mul04_BUCK_NLP_LC001_iso.png}
+    };
+
+
+    \begin{scope}[coords]
+        \dscaling{3}{0.65};
+        \daxis{1}{2,-1.5,-0.5
+        }[right][above][right];
+    \end{scope}
+
+    \begin{scope}[coords]
+        \dscaling{3}{0.65};
+        \daxis{1}{-5,-3.2,-0.95
+        }[right][above][right];
+    \end{scope}
+
+    \node[] (B) at (0cm,-6cm){};
+
+    \node[left=.5cm, label={[label distance=1.5cm,color=black]270:(c)}] (figC) at (B){
+        \includegraphics[width=7cm]{04_STRESS_NLP_LC001_iso.png}
+    };
+    \node[right=.5cm, label={[label distance=1.5cm,color=black]270:(d)}] (figD) at (B){
+        \includegraphics[width=7cm]{04_BUCK_NLP_LC001_iso.png}
+    };
+
+
+    \node[below=.2cm of figC] (colormapA){\pgfplotscolorbardrawstandalone[ 
+        colormap name={coolwarm},
+        colorbar horizontal,
+        point meta min=0,
+        point meta max=50,
+        colorbar style={
+            width=7cm,
+            height=0.4cm,
+            xtick={0,25,50},
+            xticklabels={$-\frac{q}{\sigma_c a}$,0,$+\frac{q}{\sigma_t a}$}}]
+        
+    };
+
+    \node[below=.2cm of figD] (colormapB){\pgfplotscolorbardrawstandalone[ 
+        colormap={buckling}{
+        indices of colormap={
+            \pgfplotscolormaplastindexof{coolwarm_b},...,0 of coolwarm_b}
+    },
+        colorbar horizontal,
+        point meta min=0,
+        point meta max=25,
+        colorbar style={
+            width=7cm,
+            height=0.4cm,
+            xtick={0,25},
+            xticklabels={0,$\frac{q}{q_{\text{crit}}}$}}]
+                
+    };
+
+    \begin{scope}[coords]
+        \dscaling{3}{0.65};
+        \daxis{1}{2,-1.5,-6-0.5-0.5
+        }[right][above][right];
+    \end{scope}
+
+    \begin{scope}[coords]
+        \dscaling{3}{0.65};
+        \daxis{1}{-5,-3.2,-6-0.95-0.5
+        }[right][above][right];
+    \end{scope}
+    
+\end{tikzpicture}
+\end{document}

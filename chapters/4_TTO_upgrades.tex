@@ -156,7 +156,7 @@ The formulation has been extended to multiple load cases given by $N_p$ external
 
 The formulation follows the \gls{sand} approach \sidecite{sankaranarayanan_truss_1994}, where, in addition to the members' cross-sectional area $\vect{a}$, the member forces $\vect{q}$ and the structure displacements $\vect{U}$ are used as state variables. One of the advantages of \gls{sand} approach is that the state variables are independent of each other and, thus, the sensitivity calculation of the constraints functions is usually simpler and leads to sparse partial derivatives. Additionally, compared to \gls{nand} formulations, the problem stays well-posed even if the cross-sectional area goes to 0. As the linear system $\matr{K}\vect{U}=\vect{f}$ is never explicitly solved during the optimization, it is not necessary to impose a lower bound on the members' cross-sectional area $\vect{a}$ to avoid a singular stiffness matrix. The last important advantage is that thanks to $\vect{U}$ being design variables, it is trivial to add bound constraints on the nodal displacements of the structure if needed.
 
-\subsection{Optimization strategy}
+\subsection{Optimization strategy} \label{sec:04_2step_opt}
 Formulation \eqrefnotext{eq:04_optim_complete} presents multiple constraints and design variables for every physical bar of the ground structure. The quantity of constraints creates a highly non-linear design space and it proved to be hard for the optimizer to bring to zero the value of the cross-sectional areas. If a \gls{nlp} optimizer is directly used on Formulation \eqrefnotext{eq:04_optim_complete}, the resulting structure will be composed of a multitude of intersecting bars. The optimizer is, thus, working like it is performing sizing optimization instead of topology optimization. 
 
 Inspired by the early works by Reinschmidt \sidecite{reinschmidt_applications_1974}, we propose a novel two-step optimization strategy in which a first optimization solving a relaxed formulation is used to find a good starting point for the second optimization, solving the full Formulation \eqrefnotext{eq:04_optim_complete}. Doing that way, the first optimization explores extensively the relaxed and more regular design space and finds simpler structures, while the second optimization refines the solution imposing additional mechanical constraints. The complete solving strategy is graphically presented in \figref{fig:04_sol_alg}.
@@ -647,7 +647,7 @@ The material properties used for the optimization are given in \tabref{tab:04_3D
     Mass  &   \qty{11.294}{\gram}    \\
     a$_{\text{max}}$& \qty{37.61}{\milli\meter^2}       \\
     C         &  \qty{3.71}{\joule}             \\
-    t  & \qty{4}{\second}          \\ \bottomrule            
+    t  & \hms{0;0;4}          \\ \bottomrule            
     \end{tabular}
     \caption{Numerical results of the optimization of the simply supported 3D beam.}
     \label{tab:04_3D_supp_res}

@@ -1,0 +1,62 @@
+\documentclass[12pt, varwidth=20cm]{standalone}
+
+\input{../../img_header}
+
+\pgfdeclarelayer{background}
+\pgfsetlayers{background,main}
+
+\begin{document}
+
+\begin{tikzpicture}    
+  \begin{axis}[
+  curves_3D,
+  width = 6cm,
+  % width=\axisdefaultwidth,
+  % height = 5cm,
+  xmode=log,
+  ymode=log,
+  xlabel={ $\bar{n}$},
+  xmin=10, xmax=10000,
+  xtick={10,100,1000,10000},
+  % xticklabels={0\%,10\%,20\%,30\%,40\%,50\%},
+  ylabel={$N_\text{sub}$},
+  ymin=10, ymax=10000,
+  ytick={10,100,1000,10000},
+  zlabel={$t [\unit{s}]$},
+  zmin=0, zmax=2e5,
+  % clip=true,
+  ]
+  \addplot3[
+    surf,
+    line width=0.01pt,
+    samples=40,
+    domain=1.4:3.9,
+    domain y=1.55:3.7,
+    restrict z to domain=-10000:2e5
+] (10^x, 10^y, {4.024e-04*10^x*10^x-3.403e-03*10^y*10^y+2.456e-01*10^x*10^y
+-9.847e+00*10^x+1.069e+01*10^y-4.977e+03});
+\addplot3+ [
+        only marks,
+        draw=black, fill=black, line width=1pt,
+        mark=+,
+    ] table{%
+    x y z
+    28 36 6
+    28 288 48
+    28 972 306
+    28 4500 4620
+    351 36 342
+    351 288 2570
+    351 972 98220
+    2016 36 860
+    7750 36 11820
+    2016 288 115440
+    }; 
+
+% \addplot [draw=black, fill=black, mark=x, only marks]
+
+
+\end{axis}
+\end{tikzpicture}
+
+\end{document}

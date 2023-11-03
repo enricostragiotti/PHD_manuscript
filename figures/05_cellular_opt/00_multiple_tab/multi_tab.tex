@@ -1,0 +1,73 @@
+\documentclass[10pt, varwidth=20cm]{standalone}
+
+\input{../../img_header}
+
+\pgfdeclarelayer{background}
+\pgfsetlayers{background,main}
+
+\begin{document}
+
+\begin{tikzpicture}    
+  \begin{axis}[
+  curves_left,
+  ybar,
+  width = 3cm,
+  height = 3cm,
+  y axis line style={accent_b_1},
+    every y tick label/.append style ={accent_b_1},
+    every y tick/.append style={color=accent_b_1},
+  % y axis line style={accent_b_1},
+  % every y tick label/.append style ={accent_b_1},
+  % every y tick/.append style={color=accent_b_1},
+  % legend columns=-1,
+  % legend style={
+  %               at={(0.5,1.05)},
+  %               anchor=south,
+  %               column sep=0.15cm,
+  %           },
+  xlabel={$\bar{n}$},
+  bar width=0.2cm, bar shift=-0.1cm,
+  xtick={1,2,3},
+  xmin = 0.7, xmax = 3.3,
+  xticklabels={monol., $N_\text{T}=3$,$N_\text{T}=1$},
+  ylabel={\color{accent_b_1}$V [\unit{cm^3}]$},
+  ymin=0, ymax=25,
+  % xmode=log,
+  ytick={0,10,20,25},
+  ]
+  \addplot[draw=accent_b_2,fill=accent_b_1] coordinates {
+        (1,9.907) (2,12.032) (3,24.323)
+      };
+  
+\end{axis}
+
+  \begin{axis}[
+    curves_right,
+    ybar,
+    width = 3cm,
+    height = 3cm,
+    y axis line style={accent_r_1},
+    every y tick label/.append style ={accent_r_1},
+    every y tick/.append style={color=accent_r_1},
+    ylabel={\color{accent_r_1}$t$},
+    % ymin=0, ymax=8030,
+    % ytick={0,2000,4000,6000,8000},
+    yticklabel style={anchor=west},
+    % symbolic x coords={A,B,C,D},
+    bar width=0.2cm, bar shift=0.1cm,
+    xmin = 0.7, xmax = 3.3,
+    ymin=0, ymax=6,
+    ytick={0,2,4,6},
+    yticklabels={0,$2 \unit{m}$,$4 \unit{m}$,$6 \unit{m}$},
+    xtick={1,2,3},
+    xticklabels={monol., $N_\text{T}=3$,$N_\text{T}=1$},
+    ]
+    \addplot[draw=accent_r_2,fill=accent_r_1] coordinates {
+      (1,0.066) (2,3.34) (3,5.68)
+    };
+
+  \end{axis}
+
+\end{tikzpicture}
+
+\end{document}

@@ -1,0 +1,55 @@
+\documentclass[10pt, varwidth=20cm]{standalone}
+
+\input{../../img_header}
+
+\pgfdeclarelayer{background}
+\pgfsetlayers{background,main}
+
+\begin{document}
+
+\begin{tikzpicture}    
+  \begin{axis}[
+  curves,
+  width = 3cm,
+  height = 3cm,
+  % y axis line style={accent_b_1},
+  % every y tick label/.append style ={accent_b_1},
+  % every y tick/.append style={color=accent_b_1},
+  legend columns=-1,
+  legend style={
+                at={(0.5,1.05)},
+                anchor=south,
+                column sep=0.15cm,
+            },
+  xlabel={$\bar{n}$},
+  xmin=20, xmax=8200,
+  % xtick={0,10,20,30,40,50},
+  % xticklabels={0\%,10\%,20\%,30\%,40\%,50\%},
+  ylabel={$V [\unit{cm^3}]$},
+  ymin=0, ymax=75.4,
+  xmode=log,
+  ytick={0,25,50,75},
+  ]
+
+  \addplot [scatter_plot_smooth, accent_b_1]
+    table {%
+    28 27.074
+    351 24.323
+    2016 17.098
+    7750 17.083
+    };
+    \addlegendentry{6x2x3}
+    \addplot [scatter_plot_smooth, accent_r_1]
+    table {%
+    28 70.559 
+    351 65.723 
+    2016 60.368
+    };
+    \addlegendentry{12x4x6}
+
+  
+\end{axis}
+
+\end{tikzpicture}
+
+\end{document}

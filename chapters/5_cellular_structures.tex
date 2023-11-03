@@ -4,6 +4,8 @@
 Introduction
 \todo{change $N_T$ con $N_\text{T}$ }
 \todo{NO CELLS}
+\todo{metti slend min sulle barre}
+\todo{tables always small}
 \section{Formulation of a modular structure optimization algorithm}
 why modular, which are the advantages
 
@@ -27,39 +29,32 @@ the problem on the number of subsections needed to correctly foresee the mechani
     \label{fig:05_VL}
 \end{figure*}
 
-In this section, we take a closer look at the Variable Linking approach. This technique involves first dividing a structure into several subdomains, which are connected during the optimization process \ie subdomains that belong to the same module all share the same cross-sectional areas. The primary goal is to make the manufacturing phase simpler and more efficient, allowing to assemble big structures starting from smaller repetitive modules. With this approach, the optimization perspective shifts. Instead of focusing on the whole structure, the optimizer design space is now restricted to the optimization of the topology of the modules.
+In this section, we take a closer look at the Variable Linking approach. This technique involves first dividing a structure into several subdomains, which are connected during the optimization process \ie subdomains that belong to the same module all share the same cross-sectional areas. The primary goal is to make the manufacturing phase simpler and more efficient, allowing to assemble big structures starting from smaller repetitive modules. With this approach, the optimization perspective shifts. The optimizer design space using the variable linking approach is restricted to the optimization of the topology of the modules, using the whole structure just to impose the necessary mechanical constraints.
 
-We use \figref{fig:05_VL} to illustrate the notation employed in this thesis for modular structures. On the left-hand side of the image, we have the test case that we aim to optimize, which is already divided into $N_\text{sub}$ subdomains. Each of these subdomains is bound to exhibit the topology of one of the $N_\text{T}$ module topologies presented on the right side of the image. It is assumed that each module has the same external shape and the identical ground structure used for discretizing the module volume. Within this framework, $\bar{n}$ represents the number of candidate bars in one module, and if we assume a fully connected mesh, we can define $\bar{n}$ as $\bar{m} \cdot (\bar{m}-1)/2$, where $\bar{m}$ stands for the number of nodes in the module. Consequently, for the overall structure, we can write the relationship $N_{\text{el}} = N_{\text{sub}}\bar{n}$.
+We use \figref{fig:05_VL} to illustrate the notation employed in this thesis for modular structures. On the left-hand side of the image, we have the whole test case that we aim to optimize, which is already divided into $N_\text{sub}$ subdomains. Each of these subdomains is bound to exhibit the topology of one of the $N_\text{T}$ module topologies presented on the right side of the image. It is assumed that each module has the same external shape and the identical ground structure used for discretizing the module volume. Within this framework, $\bar{n}$ represents the number of candidate bars in one module, and if we assume a fully connected mesh, we can define $\bar{n} = \bar{m} \cdot (\bar{m}-1)/2$, where $\bar{m}$ stands for the number of nodes in the module. Consequently, for the overall structure, we can write the relationship $N_{\text{el}} = N_{\text{sub}}\bar{n}$.
 
-The vector that holds all the cross-sectional areas of the modules is represented as $\bar{\vect{a}}$, and it belongs to the set of positive real numbers $\mathbb{R}_+^{N_T \cdot \bar{n}}$. This vector is essentially a grouping of individual cross-sectional areas $\bar{\vect{a}}_t$ for each of the $N_T$ modules. In mathematical terms, $\bar{\vect{a}}$ is defined as follows:
+The vector that holds all the cross-sectional areas of the modules is represented by $\bar{\vect{a}}$, and it belongs to the set of positive real numbers $\mathbb{R}_+^{N_T \cdot \bar{n}}$. This vector is essentially a grouping of individual cross-sectional areas $\bar{\vect{a}}_t$ for each of the $N_T$ modules. In mathematical terms, $\bar{\vect{a}}$ is defined as follows:
 \begin{equation}
     \bar{\vect{a}} :=  \{ \bar{\vect{a}}_t \in \mathbb{R}_+^{\bar{n}} \;|\; \forall t \in [1,\dots,N_T]\}
 \end{equation}
+
 The topology of the entire structure $\vect{a}$, which originates from the submodules' topology $\bar{\vect{a}}$, is defined as follows:
 \begin{equation}
     \vect{a} :=  \{\vect{a}^j \;|\; \forall j \in [1,\dots,N_{\text{sub}}]\}
 \end{equation}
 and is evaluated using:
 \begin{equation}
-    \vect{a} = \sum_{t=1}^{N_T} \vect{g}_t\otimes\bar{\vect{a}}_t = \sum_{t=1}^{N_T} \begin{bmatrix}
-        g_{1,t} \: \bar{\vect{a}}_t \\
+    \vect{a} = \sum_{t=1}^{N_T} \vect{G}_t\otimes\bar{\vect{a}}_t = \sum_{t=1}^{N_T} \begin{bmatrix}
+        h_{1,t} \: \bar{\vect{a}}_t \\
         \vdots\\
-        g_{N_{\text{sub}},t} \: \bar{\vect{a}}_t 
+        h_{N_{\text{sub}},t} \: \bar{\vect{a}}_t 
         \end{bmatrix}
+        \label{eq:05_VL}
 \end{equation}
-where the $\otimes$ operator represents the Kronecher product and $g_{t}$ represents the $t$-th column of the mapping matrix $\matr{G} = [g_0,\dots,g_{N_T}] \in \mathbb{B}^{N_{\text{sub}},N_T}$, where $\mathbb{B}=\lbrace 0,1 \rbrace$ is the Boolean domain. $g_{j,t}$ is the element at the $j$-th row and $t$-th column of the matrix $\matr{G}$. The mapping matrix $\matr{G}$ indexes are defined as follows:
+where the $\otimes$ operator represents the Kronecher product and $\vect{h}_{t}$ is the $t$-th column of the mapping matrix $\matr{H} = [\vect{h}_0,\dots,\vect{h}_{N_T}] \in \mathbb{B}^{N_{\text{sub}},N_T}$, where $\mathbb{B}=\lbrace 0,1 \rbrace$ is the Boolean domain. $G_{j,t}$ is the element at the $j$-th row and $t$-th column of the matrix $\matr{H}$. The mapping matrix $\matr{H}$ indexes are defined as follows:
+\marginnote{In the case of the structure shown in \figref{fig:05_VL} we have:
 \begin{equation}
-    g_{j,t} =
-    \begin{cases}
-      1 & \text{if the $j$-th subdomain presents the topology of the $t$-th module,} \\
-      0 & \text{otherwise.} 
-    \end{cases}
-\end{equation}
-Lastly, we introduce some notation to denote specific bars within the modules and subdomains. We represent the cross-sectional area of the $i$-th bar of the $t$-th module as $\bar{\vect{a}}_{t,i}$, while the cross-sectional area of the $i$-th bar of the $j$-th subdomain as $\vect{a}^j_i$.
-
-In the case of the structure shown in \figref{fig:05_VL} we have:
-\begin{equation}
-    \matr{G}=
+    \matr{H}=
 \begin{bNiceMatrix}[first-row,last-col]
     \scriptstyle\textcolor{axis_gray}{t=0} &\scriptstyle\textcolor{axis_gray}{t=1}&  \\
     1 & 0 & \scriptstyle\textcolor{axis_gray}{\,j=0} \\
@@ -72,51 +67,96 @@ In the case of the structure shown in \figref{fig:05_VL} we have:
     0 & 1 & \scriptstyle\textcolor{axis_gray}{\,j=7} 
 \end{bNiceMatrix}
 \end{equation}
-as the lower submodules (numbered from 0 to 3) exhibit the topology of module 0, while the upper submodules (numbered 4 to 7) represent the topology of module 1.
-
+as the lower submodules (numbered from 0 to 3) exhibit the topology of module $t=0$, while the upper submodules (numbered 4 to 7) represent the topology of module $t=1$.}
+\begin{equation}
+    G_{j,t} =
+    \begin{cases}
+      1 & \text{if the $j$-th subdomain presents the topology of the $t$-th module,} \\
+      0 & \text{otherwise.} 
+    \end{cases}
+\end{equation}
+Lastly, we introduce some notation to denote specific bars within the modules and subdomains. We represent the cross-sectional area of the $i$-th bar of the $t$-th module as $\bar{\vect{a}}_{t,i}$, while the cross-sectional area of the $i$-th bar of the $j$-th subdomain as $\vect{a}^j_i$.
 \subsection{Topological buckling of modular structures}
-Explain only how the constraint is handled now that the cells are multiple $\bar{a}_{r}\geq \bar{a}_{r=1} \quad r \in \mathcal{C}_{l,r}(\bar{\vect{a}})$
+Addressing topological buckling in modular structures is a more complex task compared to monolithic structures. This complexity arises from the fact that we must not only consider bars within a single module's design space but also those connecting different modules. Since the nature of this problem heavily relies on how the modules are arranged within the structure, we have opted for a simplification. We focus only on the assessment of nodal instability within each module, modifying the length $\ell^*$ used to evaluate the critical buckling force of \eqrefnotext{eq:04_buck} and \eqref{eq:04_chain_len} only of compressive chains of bars that fall inside a module. Additionally, \eqref{eq:04_side_cons_chain} is modified as follows:
+\begin{equation}\label{eq:05_side_cons_chain_modular}
+    \bar{\vect{a}}_{t,r} \geq \bar{a}_{t,r=1} \quad r \in \mathcal{C}_{l,r}(\bar{\vect{a}}_t) \quad \forall t \in [1,\dots,N_T].
+\end{equation}
+We have made this choice knowing that the high connectivity of modular structures tends to reduce the occurrence of nodal instability within the structure. Any potential nodal instability in compressive chains at the structure level is addressed in a subsequent post-processing phase.
 
 \section{Optimization formulation}
-
-We concentrate on the simplest type, with $N_T=1$ as there is no method to chose where to put the different modules.
-
-the formulation $\bar{\mathbb{P}}_\text{1}$ is stated in terms of members' cross-sectional area $\bar{\vect{a}}$, member forces $\vect{q}$ and nodal displacements $\vect{U}$ as follows:
+Monolitic fomulation \ref{eq:04_optim_complete} is modified using \eqsref{eq:05_VL} and \eqrefnotext{eq:05_side_cons_chain_modular} to obtain the modular optimzation formulation \ref{eq:05_optim_complete_modular} that use the variable linking approach. Formulation~\ref{eq:05_optim_complete_modular} is stated in terms of modular cross-sectional areas $\bar{\vect{a}}$, member forces $\vect{q}$ and nodal displacements $\vect{U}$ as follows:
 \begin{equation}
     \begin{aligned}
     \min_{\bar{\vect{a}}, \vect{q}, \vect{U}}   && V &= \vect{\ell}^{T}\vect{a}\\
-    \textrm{s.t.}  && \vect{a} &= \sum_{t=1}^{N_T} \vect{g}_t\otimes\bar{\vect{a}}_t \\ 
+    \textrm{s.t.}  && \vect{a} &= \sum_{t=1}^{N_T} \vect{h}_t\otimes\bar{\vect{a}}_t \\ 
     && \matr{B}\vect{q} &= \vect{f} && \\
     && \vect{q} &= \frac{\vect{a}E}{\vect{\ell}}\vect{b}^T\vect{U} &&  \\
     && \vect{q} &\geq -\frac{s\vect{a}^2}{\vect{\ell}^{*2}} &&  \\
     && -\sigma_c\vect{a} &\leq \vect{q} \leq \sigma_t\vect{a} &&  \\
-    && \bar{a}_{r}&\geq \bar{a}_{r=1} && r \in \mathcal{C}_{l,r}(\bar{\vect{a}}) \\
+    && \bar{\vect{a}}_{t,r}&\geq \bar{a}_{t,r=1} && r \in \mathcal{C}_{l,r}(\bar{\vect{a}}_t),\, \forall t \\
     && \bar{\vect{a}} &\geq 0. \\
     \end{aligned}
-    \tag{$\bar{\mathbb{P}}_\text{1}$}
-    \label{eq:optim_complete}
+    \tag{${\mathbb{M}}_\text{1}$}
+    \label{eq:05_optim_complete_modular}
 \end{equation}
 
-$N_{\text{sub}}$
-${\bar{\vect{a}}} \in \mathbb{R}_+^{N_T \cdot \bar{n}} $ where $N_T$
-${\vect{a}} :=  \{\vect{a}^j \;|\; \forall j \in [1,\dots,N_{\text{sub}}]\}$
-${\bar{\vect{a}}} :=  \{ \bar{\vect{a}}_t \;|\; \forall t \in [1,\dots,N_T]\}$ represent the vector of the cross-sectional areas of the cells
-$\bar{n}$ is the number of candidate bars of one cell.
+The total number of constraints of the formulation is $N_T\bar{n} +N_{\text{sub}}\bar{n}+2M$ or $N_T\bar{n} +N_{\text{sub}}\bar{n}+3M$ in function of the test case is two or three dimensional. The number of constraints is, however, equal to the monolitich optimization, as stress, buckling and compatibility are all local grandeurs and are then referenced to the whole structure and not only the modules.
 
-Total number of design variables: $N_T\bar{n} +N_{\text{sub}}\bar{n}+2M$
+The formulation is solved appling the two step optimization algorithm with the use of the reinitialization heuristic to reduce the dependece to the starting point proposed in \secref{sec:04_2step_opt}. for that reason we state the relaxed formulation m2 that is solved instead of m1 to 
 
+\begin{equation}
+    \begin{aligned}
+    \min_{\bar{\vect{a}}, \vect{q}, \vect{U}}   && V &= \vect{\ell}^{T}\vect{a}\\
+    \textrm{s.t.}  && \vect{a} &= \sum_{t=1}^{N_T} \vect{h}_t\otimes\bar{\vect{a}}_t \\ 
+    && \matr{B}\vect{q} &= \vect{f} && \\
+    && \vect{q} &\geq -\frac{s\vect{a}^2}{\vect{\ell}^{*2}} &&  \\
+    && -\sigma_c\vect{a} &\leq \vect{q} \leq \sigma_t\vect{a} &&  \\
+    && \bar{\vect{a}}_{t,r}&\geq \bar{a}_{t,r=1} && r \in \mathcal{C}_{l,r}(\bar{\vect{a}}_t),\, \forall t \\
+    && \bar{\vect{a}} &\geq 0. \\
+    \end{aligned}
+    \tag{${\mathbb{M}}_\text{2}$}
+    \label{eq:05_optim_no_constr_modular}
+\end{equation}
 
-number of design variables is low, buth still high constraints
+Formulation m2 is solvable using a succession of linearized problem using a SLP algorithm. this is possible because the kronecher product is a linear operator and buckling constraints are linearized as already done on \secref{sec:04_2step_opt}
 
 \subsection{Sensitivity analysis}
 how the sensitivity is changed with respect to the variable linking
 
 just a sum more to do for constraints
 
+the idea is that we first evaluate all the gradients for all the candidates as there are no modularity constraints. then we sum the apport of every $i$-th bar that belongs to a single module topology $t$ togheter.
+
+mathematically we can writhe that  the result is a scalar
+
+% \begin{equation}
+%     \derfrac{(\cdot)}{\bar{a}_t} = \sum_{j=0}^{N_\text{sub}} z_j,\text{ where } z_j:=
+%     \begin{cases}
+%         \derfrac{(\cdot)}{a^j} & \text {if } G_{j,t}=1 \\
+%         0 & \text{otherwise.}
+%     \end{cases}
+% \end{equation}
+
+\begin{equation}
+    \derfrac{(\cdot)_i}{\bar{a}_{t,i}} =  \sum_{j=0}^{N_\text{sub}} \vect{h}_t^T \derfrac{(\cdot)_i}{a^j_i} 
+    \label{eq:05_VL_grad}
+\end{equation}
+
+where $(\cdot)$ is a function
 \todo{image for sensitivity ?}
+
+\begin{figure*}
+    \centering
+    \includegraphics{figures/05_cellular_opt/00_modules_VL_grad/modules_grad.pdf}
+    \caption{Notations used for the definition of the variable linking approach used to apply the modularity constraints.}
+    \label{fig:05_VL_grad}
+\end{figure*}
+
+
 \section{Numerical application}
 \todo{find some litterature case that we can use to compare at least visually, maybe the sandwich structure that joseph suggested me}
 \subsection{On the equivalence of multi load cases and modular structures}
+\todo{table results}
 \begin{figure}[]
     \hspace*{\fill}
     \subcaptionbox{}{\includegraphics[height=3cm]{figures/05_cellular_opt/00_cell_multi_eq_bcs/cell_bcs.pdf}}
@@ -136,16 +176,349 @@ just a sum more to do for constraints
     \caption{}
     \label{fig:05_cell_multi_eq}
 \end{figure}
+
+quindi conferma del bisogno di usare l nlp con i kinematic constraints
 \subsection{Parametric study on the number, the shape, and the complexity of the module}
+
+\begin{margintable}
+    \small
+    \centering
+    \begin{tabular}{cc}
+    \toprule
+    \textbf{Parameter}        & \textbf{Value} \\ \midrule
+    $E$              & \qty{2.7}{GPa}     \\
+    $\nu$            & 0.3   \\
+    $\sigma_\text{c}, \sigma_\text{t}$ & $\pm $\qty{55}{MPa} \\
+    $\rho$              & \qty{1.14}{\gram\per\cubic\centi\metre}   \\
+    $P$              & \qty{100}{N}   \\
+    \bottomrule
+    \end{tabular}
+    \caption{Material data used for the simply supported 3D beam optimization.}
+    \label{tab:04_3D_supp_mat}
+\end{margintable}
+
+Scale effect of the square RVE on the design results:
+add here the monolith
+\todo{il caso 30x mostra un lamda ridicolo, scrivilo, metti che hai messo 10}
+\begin{table*}
+    \centering
+    \small
+    \begin{tabular}{lx{1.4cm}x{1.4cm}x{1.4cm}x{1.4cm}x{1.4cm}x{1.4cm}x{1.4cm}x{1.4cm}x{1.4cm}}
+        \toprule
+        \multirow{2}{*}{\textbf{Quantity}}         & 7x3x4 &\multicolumn{4}{l}{2x2x2} & \multicolumn{3}{l}{3x3x3} \\ 
+             \cmidrule(lr){2-2} \cmidrule(lr){3-6} \cmidrule(lr){7-9} 
+     &1x1x1& 6x2x3      & 12x4x6     &  18x6x9    &  30x10x15    &   6x2x3      & 12x4x6     &  18x6x9      \\
+     & -- & \includegraphics[width=1.3cm]{figures/05_cellular_opt/00_module_scale_cell/6x2x3_2x2x2_c.png}    &\includegraphics[width=1.3cm]{figures/05_cellular_opt/00_module_scale_cell/12x4x6_2x2x2_c.png}&\includegraphics[width=1.3cm]{figures/05_cellular_opt/00_module_scale_cell/18x6x9-2x2x2_c.png}&\includegraphics[width=1.3cm]{figures/05_cellular_opt/00_module_scale_cell/30x10x15-2x2x2_c.png}&\includegraphics[width=1.3cm]{figures/05_cellular_opt/00_module_scale_cell/6x2x3_3x3x3_c.png}&\includegraphics[width=1.3cm]{figures/05_cellular_opt/00_module_scale_cell/12x4x6_3x3x3_c.png}&\includegraphics[width=1.3cm]{figures/05_cellular_opt/00_module_scale_cell/18x6x9-3x3x3_c.png}        \\
+    $\bar{n}_\text{opt}\;(\bar{n})$ &1984&9 (28)&9 (28) &8 (28)&8 (28)&19 (351)&15 (351)& 16 (351)\\
+    $N_\text{sub}$         &1&36&288&972&4500&36&288&972  \\
+    $N_\text{opt}\;(N_\text{el})$ &20 (1984)&324 (1008)&2592 (8064)&7776 (27216)&36000 (126000)&468 (12636)&4320 (101088)&  15552 (341172)       \\
+    V [\unit{cm^3}]&9.907&27.074&70.559&104.891&277.238&24.323&65.723&117.904         \\
+    V [\unit{\percent}] &1.761&4.812&12.544&18.648&49.288&4.324&11.684&20.960         \\
+    C [\unit{J}]    &3.71&4.22&3.35&3.19&1.12&3.63&1.84&2.02\\
+    $a_\text{max}$ [\unit{mm^2}]   &37.61&9.40&5.45&5.45&3.55&5.33&2.60&3.14         \\
+    t     &\hms{0;0;4}&\hms{0;0;6}&\hms{0;0;48}&\hms{0;5;6}&\hms{1;17;00}&\hms{0;5;42}&\hms{0;42;50}& \hms{27;17;00} \\ \bottomrule
+    \end{tabular}
+    \caption{}
+    \label{tab:05_}
+    \end{table*}
+
+    \begin{marginfigure}
+        \centering
+        \includegraphics{figures/05_cellular_opt/00_module_scale_tab/scale_tab.pdf}
+        \caption{}
+        \label{fig:05}
+    \end{marginfigure}
+
+    \begin{figure*}
+        \hspace*{\fill}
+        \subcaptionbox{}{\includegraphics[width=0.23\linewidth]{figures/05_cellular_opt/00_module_scale/6x2x3_2x2x2.png}}
+        \hfill
+        \subcaptionbox{}{\includegraphics[width=0.23\linewidth]{figures/05_cellular_opt/00_module_scale/12x4x6_2x2x2.png}}
+        \hfill
+        \subcaptionbox{}{\includegraphics[width=0.23\linewidth]{figures/05_cellular_opt/00_module_scale/18x6x9_2x2x2.png}}
+        \hfill
+        \subcaptionbox{}{\includegraphics[width=0.23\linewidth]{figures/05_cellular_opt/00_module_scale/30x10x15_2x2x2.png}}
+        \hspace*{\fill}
+        \bigskip
+        \hspace*{\fill}
+        \subcaptionbox{}{\includegraphics[width=0.23\linewidth]{figures/05_cellular_opt/00_module_scale/6x2x3_2x2x2_XZ.png}}
+        \hfill
+        \subcaptionbox{}{\includegraphics[width=0.23\linewidth]{figures/05_cellular_opt/00_module_scale/12x4x6_2x2x2_XZ.png}}
+        \hfill
+        \subcaptionbox{}{\includegraphics[width=0.23\linewidth]{figures/05_cellular_opt/00_module_scale/18x6x9_2x2x2_XZ.png}}
+        \hfill
+        \subcaptionbox{}{\includegraphics[width=0.23\linewidth]{figures/05_cellular_opt/00_module_scale/18x6x9_2x2x2_XZ.png}}
+        \hspace*{\fill}
+        \caption{(a-d) (e-h) \todo{add 30}}
+        \label{fig:05}
+    \end{figure*}
+
+    the iniffency cqn be observed for exqmle hqving q look qt figure xx where the stress and buckling constraints activate onlky on one submodules but force the whole structure to show it quqnd meme
+
+    \begin{figure}
+        \centering
+        \includegraphics[width=\linewidth]{figures/05_cellular_opt/00_module_scale_failure/12x4x6_mech.pdf}
+        \caption{\todo{todo}}
+        \label{fig:05}
+    \end{figure}
+
+Effects of the aspect ratio of the RVE on the design results
+
+Effects of the complexity of the 
+\begin{figure*}
+    \hspace*{\fill}
+    \subcaptionbox{}{\includegraphics[width=0.23\linewidth]{figures/05_cellular_opt/00_module_complexity/6x2x3_2x2x2.png}}
+    \hfill
+    \subcaptionbox{}{\includegraphics[width=0.23\linewidth]{figures/05_cellular_opt/00_module_complexity/6x2x3_3x3x3.png}}
+    \hfill
+    \subcaptionbox{}{\includegraphics[width=0.23\linewidth]{figures/05_cellular_opt/00_module_complexity/6x2x3_4x4x4.png}}
+    \hfill
+    \subcaptionbox{}{\includegraphics[width=0.23\linewidth]{figures/05_cellular_opt/00_module_complexity/6x2x3_5x5x5.png}}
+    \hspace*{\fill}
+    \bigskip
+    \hspace*{\fill}
+    \subcaptionbox{}{\includegraphics[width=0.23\linewidth]{figures/05_cellular_opt/00_module_complexity/6x2x3_2x2x2_XZ.png}}
+    \hfill
+    \subcaptionbox{}{\includegraphics[width=0.23\linewidth]{figures/05_cellular_opt/00_module_complexity/6x2x3_3x3x3_XZ.png}}
+    \hfill
+    \subcaptionbox{}{\includegraphics[width=0.23\linewidth]{figures/05_cellular_opt/00_module_complexity/6x2x3_4x4x4_XZ.png}}
+    \hfill
+    \subcaptionbox{}{\includegraphics[width=0.23\linewidth]{figures/05_cellular_opt/00_module_complexity/6x2x3_5x5x5_XZ.png}}
+    \hspace*{\fill}
+    \caption{(a-d) (e-h)}
+    \label{fig:05}
+\end{figure*}
+
+\begin{marginfigure}
+    \centering
+    \includegraphics{figures/05_cellular_opt/00_module_complexity_tab/comp_tab.pdf}
+    \caption{}
+    \label{fig:05}
+\end{marginfigure}
+
+\begin{table*}
+    \centering
+    \small
+    \begin{tabular}{lx{1.4cm}x{1.4cm}x{1.4cm}x{1.4cm}x{1.4cm}x{1.4cm}x{1.4cm}x{1.4cm}}
+        \toprule
+        \multirow{2}{*}{\textbf{Quantity}} & \multicolumn{4}{l}{6x2x3} & \multicolumn{3}{l}{12x4x6} \\ \cmidrule(lr){2-5} \cmidrule(lr){6-8} 
+     & 2x2x2      & 3x3x3     &  4x4x4    &  5x5x5    &   2x2x2      & 3x3x3        & 4x4x4      \\
+     &  \includegraphics[width=1.3cm]{figures/05_cellular_opt/00_module_complexity_cell/6x2x3_2x2x2_c.png}    &  \includegraphics[width=1.3cm]{figures/05_cellular_opt/00_module_complexity_cell/6x2x3_3x3x3_c.png}    & \includegraphics[width=1.3cm]{figures/05_cellular_opt/00_module_complexity_cell/6x2x3_4x4x4_c.png}     & \includegraphics[width=1.3cm]{figures/05_cellular_opt/00_module_complexity_cell/6x2x3_5x5x5_c.png}     & \includegraphics[width=1.3cm]{figures/05_cellular_opt/00_module_complexity_cell/12x4x6_2x2x2_c.png}        & \includegraphics[width=1.3cm]{figures/05_cellular_opt/00_module_complexity_cell/12x4x6_3x3x3_c.png}   &  \includegraphics[width=1.3cm]{figures/05_cellular_opt/00_module_complexity_cell/12x4x6_4x4x4_c.png}      \\
+    $\bar{n}_\text{opt}\;(\bar{n})$ &  9 (28) &   19 (351)   &  88  (2016)   &  88 (7750)    &   9 (28)   &    15 (351)        &   22   (2016)  \\
+    $N_\text{sub}$           &    36  &   36   &   36   &   36   &    288     &   288      &    288    \\
+    $N_\text{opt}\;(N_\text{el})$  &  324 (1008) &  468 (12636)   & 792  (72576)   & 792 (279000)     & 2592 (8064)     &   4320   (101088)       &  6336 (580608)     \\
+    V [\unit{cm^3}] & 27.074 & 24.323     & 17.098     & 17.083     &  70.559    &  65.723       & 60.368       \\
+    V [\unit{\percent}] &4.812&4.324&3.040&3.036&12.544&11.684&10.732        \\
+    C [\unit{J}]      & 4.22     &   3.63   & 4.49     & 3.91     &   3.35      &  1.84       & 2.43       \\
+    $a_\text{max}$ [\unit{mm^2}]      & 9.40     &   5.33   &   3.39   &  3.77    &  5.45       &   2.60      &   2.97    \\
+    t        & \hms{0;0;6}  &  \hms{0;5;42} & \hms{0;14;20} & \hms{3;17;00} & \hms{0;0;48} & \hms{0;42;50} &  \hms{32;4;00}      \\ \bottomrule
+    \end{tabular}
+    \caption{}
+    \label{tab:05_}
+    \end{table*}
 
 \todo{use blender to generate images}
 
 \todo{check always the number of design variables, constraints and time}
 
+\todo{devirendere i dati digesti, gare dei grafici di riepilogo delle cose interessanti. le tab servono da database ma non servono per spiegare}
+
 \todo{different tables for every parametric study with iteration count}
+
+\todo{name, table with number of candidates per module, number of subdomain and calculation time}
+
+\todo{doe with calc time and volume}
 Simply supported 3D beam
 
+\todo{fai il doe}
+we limit to cubic cell for semplicity
+here are the outcomes
+
+\begin{equation}
+    a\:x_1^2+b\:x_2^2+c\:x_1x_2+d\:x_1+e\:x_2+f
+\end{equation}
+
+\begin{margintable}
+    \small
+    \centering
+    \sisetup{table-auto-round}
+    \begin{tabular}{cS[table-number-alignment = center, table-format = 1.2e1]}
+    \toprule
+    \textbf{Coeff.} & {\textbf{Value}} \\ \midrule
+    $a$ & 1.225e-06    \\
+    $b$ &  -7.257e-06   \\
+    $c$ &  +4.491e-05   \\
+    $d$ &  -1.353e-02   \\
+    $e$ &   +8.577e-02  \\
+    $f$ &   +3.272e+01  \\
+    \bottomrule
+    \end{tabular}
+    \caption{Volume}
+    \label{tab:05}
+\end{margintable}
+
+\begin{margintable}
+    \small
+    \centering
+    \sisetup{table-auto-round}
+    \begin{tabular}{cS[table-number-alignment = center, table-format = 1.2e1]}
+    \toprule
+    \textbf{Coeff.} & {\textbf{Value}} \\ \midrule
+    $a$ & 4.024e-04    \\
+    $b$ & -3.403e-03    \\
+    $c$ &  2.456e-01   \\
+    $d$ &  -9.847e+00   \\
+    $e$ &  1.069e+01   \\
+    $f$ & -4.977e+03    \\
+    \bottomrule
+    \end{tabular}
+    \caption{Time}
+    \label{tab:05}
+\end{margintable}
+
+
+\begin{figure*}
+    \hspace*{\fill}
+    \subcaptionbox{}{\includegraphics{figures/05_cellular_opt/00_doe_vol/doe_vol.pdf}}
+    \hfill
+    \subcaptionbox{}{\includegraphics{figures/05_cellular_opt/00_doe_vol/doe_vol_cont.pdf}}
+    \hspace*{\fill}
+    \bigskip
+    \hspace*{\fill}
+    \subcaptionbox{}{\includegraphics{figures/05_cellular_opt/00_doe_time/doe_time.pdf}}
+    \hfill
+    \subcaptionbox{}{\includegraphics{figures/05_cellular_opt/00_doe_time/doe_time_cont.pdf}}
+    \hspace*{\fill}
+    \caption{limited to 500 and 2e5}
+    \label{fig:05}
+\end{figure*}
+
 \subsection{Comparison with the optimized octet truss}
+
+\begin{marginfigure}
+    \centering
+    \includegraphics[width=0.7\linewidth]{figures/05_cellular_opt/00_octet/05_Cell__Topology_NLP_iso.png}
+    \caption{}
+    \label{fig:05}
+\end{marginfigure}
+
+\begin{figure*}
+    \hspace*{\fill}
+    \subcaptionbox{}{\includegraphics[width=0.46\linewidth]{figures/05_cellular_opt/00_octet_truss_comp_6/octet.png}}
+    \hfill
+    \subcaptionbox{}{\includegraphics[width=0.46\linewidth]{figures/05_cellular_opt/00_octet_truss_comp_6/6x2x3_3x3x3.png}}
+    \hspace*{\fill}
+    \bigskip
+    \hspace*{\fill}
+    \subcaptionbox{}{\includegraphics[width=0.46\linewidth]{figures/05_cellular_opt/00_octet_truss_comp_6/octet_XZ.png}}
+    \hfill
+    \subcaptionbox{}{\includegraphics[width=0.46\linewidth]{figures/05_cellular_opt/00_octet_truss_comp_6/6x2x3_3x3x3_XZ.png}}
+    \hspace*{\fill}
+    \caption{\todo{todo}}
+    \label{fig:05}
+\end{figure*}
+
+\begin{figure*}
+    \hspace*{\fill}
+    \subcaptionbox{}{\includegraphics[width=0.46\linewidth]{figures/05_cellular_opt/00_octet_truss_comp_12/octet.png}}
+    \hfill
+    \subcaptionbox{}{\includegraphics[width=0.46\linewidth]{figures/05_cellular_opt/00_octet_truss_comp_12/12x4x6_3x3x3.png}}
+    \hspace*{\fill}
+    \bigskip
+    \hspace*{\fill}
+    \subcaptionbox{}{\includegraphics[width=0.46\linewidth]{figures/05_cellular_opt/00_octet_truss_comp_12/octet_XZ.png}}
+    \hfill
+    \subcaptionbox{}{\includegraphics[width=0.46\linewidth]{figures/05_cellular_opt/00_octet_truss_comp_12/12x4x6_3x3x3_XZ.png}}
+    \hspace*{\fill}
+    \caption{\todo{todo}}
+    \label{fig:05}
+\end{figure*}
+
+\begin{table}
+    \centering
+    \small
+    \begin{tabular}{lx{1.4cm}x{1.4cm}x{1.4cm}x{1.4cm}}
+        \toprule
+        \multirow{2}{*}{\textbf{Quantity}}         &\multicolumn{2}{l}{6x2x3} & \multicolumn{2}{l}{12x4x6} \\ 
+             \cmidrule(lr){2-3} \cmidrule(lr){4-5} 
+     &Octet& 3x3x3      & Octet     &  3x3x3    \\
+    $N_\text{sub}$       &36& 36&288&288   \\
+    $N_\text{opt}\;(N_\text{el})$ &1008& 468 (12636)&7488&4320 (101088) \\
+    V [\unit{cm^3}]& 65.752 & 24.323&121.038&65.723         \\
+    V [\unit{\percent}] &11.692&4.324&21.524&11.684         \\
+    C [\unit{J}]    &1.67&3.63&1.12&1.84         \\
+    $a_\text{max}$ [\unit{mm^2}]    & 3.69 &  5.33&1.83&2.60         \\ \bottomrule
+    \end{tabular}
+    \caption{}
+    \label{tab:05_}
+    \end{table}
+
+\subsection{Using multiple module's topologies}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.6\linewidth]{figures/05_cellular_opt/00_mutiple_bc/supported_3D_symm.pdf}
+    \caption{}
+    \label{fig:05}
+\end{figure}
+
+$\matr{H}=
+\begin{bmatrix}
+    1 & 0 & 0\\
+    1 & 0 & 0\\
+    1 & 0 & 0\\
+    0 & 0 & 0\\
+    0 & 1 & 0\\
+    0 & 1 & 0\\
+    0 & 1 & 0\\
+    0 & 0 & 1\\
+    0 & 0 & 1\\
+    0 & 0 & 1\\
+\end{bmatrix}$
+
+show a picture that the design is more stressed compared to before
+
+\begin{figure*}
+    \centering
+    \includegraphics{figures/05_cellular_opt/00_multiple_topology/support_sol.pdf}
+    \caption{}
+    \label{fig:05}
+\end{figure*}
+
+\begin{marginfigure}
+    \centering
+    \includegraphics[width=\linewidth]{figures/05_cellular_opt/00_multiple_tab/multi_tab.pdf}
+    \caption{}
+    \label{fig:05}
+\end{marginfigure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=\linewidth]{figures/05_cellular_opt/00_multiple_failure/mul_mech.pdf}
+    \caption{\todo{todo}}
+    \label{fig:05}
+\end{figure}
+
+\begin{table}
+    \centering
+    \small
+    \begin{tabular}{lx{1.4cm}x{1.4cm}x{1.4cm}x{1.4cm}x{1.4cm}}
+        \toprule
+        \multirow{2}{*}{\textbf{Quantity}}   & 7x3x4 & \multicolumn{3}{l}{6x2x3 $N_\text{t}=3$} & 6x2x3 $N_\text{t}=1$ \\ \cmidrule(lr){2-2} \cmidrule(lr){3-5} \cmidrule(lr){6-6} 
+     & --      & $t=0$    &  $t=1$    &  $t=2$    &   $t=0$       \\
+     & --  &  \includegraphics[width=1.3cm]{figures/05_cellular_opt/00_multiple_cell/05_Cell_000_Topology_NLP_iso.png}    & \includegraphics[width=1.3cm]{figures/05_cellular_opt/00_multiple_cell/05_Cell_001_Topology_NLP_iso.png}     & --  & \includegraphics[width=1.3cm]{figures/05_cellular_opt/00_module_complexity_cell/6x2x3_3x3x3_c.png} \\
+     $\bar{n}_\text{opt}\;(\bar{n})$ &1984 &   10 (351)   &  18  (351)       &   -- (351)   &    19 (351)  \\
+    $N_\text{sub}$           &    1  & \multicolumn{3}{c}{36}   &    36    \\
+    $N_\text{opt}\;(N_\text{el})$ &20 (1984) &  \multicolumn{3}{c}{336 (12636)}     &  468 (12636)     \\
+    V [\unit{cm^3}]&9.907 &  \multicolumn{3}{c}{12.032}   & 24.323       \\
+    V [\unit{\percent}] &1.761& \multicolumn{3}{c}{2.139} &4.324       \\
+    C [\unit{J}]    &3.71     & \multicolumn{3}{c}{6.14}  & 3.63       \\
+    $a_\text{max}$ [\unit{mm^2}]   &37.61   &  \multicolumn{3}{c}{7.13}   &   5.33    \\
+    t     &\hms{0;0;4}  & \multicolumn{3}{c}{\hms{00;3;22}} &  \hms{00;5;42}      \\ \bottomrule
+    \end{tabular}
+    \caption{}
+    \label{tab:05_}
+    \end{table}
 
 
 \section{Conclusion}
