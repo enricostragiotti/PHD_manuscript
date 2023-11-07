@@ -1,23 +1,23 @@
 # Fdb version 4
-["biber manuscript_Stragiotti"] 1699025122 "manuscript_Stragiotti.bcf" "manuscript_Stragiotti.bbl" "manuscript_Stragiotti" 1699025895 0
+["biber manuscript_Stragiotti"] 1699025122 "manuscript_Stragiotti.bcf" "manuscript_Stragiotti.bbl" "manuscript_Stragiotti" 1699026016 0
   "./biblio.bib" 1698068063 201556 7b47181d9f2d5c2323ba14e89c5963d2 ""
-  "manuscript_Stragiotti.bcf" 1699025894 108219 57e1e723eac876c0a9913f8dbff074ba "pdflatex"
+  "manuscript_Stragiotti.bcf" 1699026014 108219 57e1e723eac876c0a9913f8dbff074ba "pdflatex"
   (generated)
   "manuscript_Stragiotti.bbl"
   "manuscript_Stragiotti.blg"
   (rewritten before read)
-["cusdep glo gls manuscript_Stragiotti"] 1699025122 "manuscript_Stragiotti.glo" "manuscript_Stragiotti.gls" "manuscript_Stragiotti" 1699025895 0
-  "manuscript_Stragiotti.glo" 1699025894 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+["cusdep glo gls manuscript_Stragiotti"] 1699025122 "manuscript_Stragiotti.glo" "manuscript_Stragiotti.gls" "manuscript_Stragiotti" 1699026016 0
+  "manuscript_Stragiotti.glo" 1699026014 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   (generated)
   "manuscript_Stragiotti.gls"
   (rewritten before read)
-["makeindex manuscript_Stragiotti.idx"] 1699025121 "manuscript_Stragiotti.idx" "manuscript_Stragiotti.ind" "manuscript_Stragiotti" 1699025895 0
-  "manuscript_Stragiotti.idx" 1699025893 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+["makeindex manuscript_Stragiotti.idx"] 1699025121 "manuscript_Stragiotti.idx" "manuscript_Stragiotti.ind" "manuscript_Stragiotti" 1699026016 0
+  "manuscript_Stragiotti.idx" 1699026013 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   (generated)
   "manuscript_Stragiotti.ilg"
   "manuscript_Stragiotti.ind"
   (rewritten before read)
-["pdflatex"] 1699025867 "d:/estragio/PhD/99_Github/PHD_manuscript/manuscript_Stragiotti.tex" "manuscript_Stragiotti.pdf" "manuscript_Stragiotti" 1699025895 0
+["pdflatex"] 1699025982 "d:/estragio/PhD/99_Github/PHD_manuscript/manuscript_Stragiotti.tex" "manuscript_Stragiotti.pdf" "manuscript_Stragiotti" 1699026016 0
   "C:/Program Files/MiKTeX/fonts/tfm/jknappen/ec/ecrm1095.tfm" 993058524 3172 eb6efaa83c6c52473a1c403f376eab0f ""
   "C:/Program Files/MiKTeX/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1233951854 916 f87d7c45f9c908e672703b83b72241a3 ""
   "C:/Program Files/MiKTeX/fonts/tfm/public/amsfonts/symbols/msam5.tfm" 1233951854 924 9904cf1d39e9767e7a3622f2a125a565 ""
@@ -514,7 +514,7 @@
   "D:/estragio/AppData/Roaming/MiKTeX/tex/latex/xpatch/xpatch.sty" 1585221260 8510 7803f78066c4f9d008405191a4b43073 ""
   "D:/estragio/AppData/Roaming/MiKTeX/tex/latex/xstring/xstring.sty" 1673962217 123 a302f2c651a95033260db60e51527ae8 ""
   "abbreviations.tex" 1693569425 3000 515f2021cebe98f3e7edcb1502bbb3bc ""
-  "chapters/5_cellular_structures.aux" 1699025893 16470 6118db7210d32f810f6dba3ae718d6ae "pdflatex"
+  "chapters/5_cellular_structures.aux" 1699026013 16470 62a471fdc04aa8e986493201973bcab6 "pdflatex"
   "chapters/5_cellular_structures.tex" 1699024218 27866 d4c78f0a96e3213c95ffac808b550c93 ""
   "d:/estragio/PhD/99_Github/PHD_manuscript/manuscript_Stragiotti.tex" 1698940525 9273 3c64857fa0ab0dc91cf70794c852d83c ""
   "figures/01_intro/Logo-ISAE-SUPAERO.png" 1628085192 194003 676a6cb7d3296cbb2431a28bac670acf ""
@@ -561,7 +561,7 @@
   "figures/05_cellular_opt/00_module_scale_failure/12x4x6_mech.pdf" 1698936114 915009 c136f397541febb01295304753e02938 ""
   "figures/05_cellular_opt/00_module_scale_tab/scale_tab.pdf" 1698940628 50410 ee1a212c2fcacb8736425996b65c4251 ""
   "figures/05_cellular_opt/00_modules_VL_bc/modules_bc.pdf" 1698147847 85818 b1cc9e8efdeb76861ed9df6c70d324eb ""
-  "figures/05_cellular_opt/00_modules_VL_grad/modules_grad.pdf" 1699025858 133826 6b53d63e9bd18eb766e9ec1b9cefd4eb ""
+  "figures/05_cellular_opt/00_modules_VL_grad/modules_grad.pdf" 1699025951 133761 6729ae8a1b36841fb49d05a726de24a8 ""
   "figures/05_cellular_opt/00_multiple_cell/05_Cell_000_Topology_NLP_iso.png" 1699006728 11006 a01e4b865b05e2af2c6a23f5c2394375 ""
   "figures/05_cellular_opt/00_multiple_cell/05_Cell_001_Topology_NLP_iso.png" 1699006728 16093 4e14d0568af05b764781b095bd01aa08 ""
   "figures/05_cellular_opt/00_multiple_failure/mul_mech.pdf" 1698999754 2312445 1af06523f13f0960505aa518e7d6cf91 ""
@@ -584,16 +584,16 @@
   "kaobook.cls" 1693306131 11196 257e43e963392f1cba8de846b9c392bd ""
   "kaorefs.sty" 1688394461 11391 1417147ee13fc4482c03393a95e76931 ""
   "kaotheorems.sty" 1688394461 12185 9540b1857c6b9e97b449194962ccc5fa ""
-  "manuscript_Stragiotti.aux" 1699025893 7107 5749431c60f2abd1bf5911f220e7d7e1 "pdflatex"
+  "manuscript_Stragiotti.aux" 1699026014 7107 5749431c60f2abd1bf5911f220e7d7e1 "pdflatex"
   "manuscript_Stragiotti.bbl" 1699025125 486 ee04f40f768daeed26442158e95aba61 "biber manuscript_Stragiotti"
   "manuscript_Stragiotti.gls" 1699025122 7 9f404503043ec80c08484be9f659189e "cusdep glo gls manuscript_Stragiotti"
-  "manuscript_Stragiotti.ind" 1699025893 0 d41d8cd98f00b204e9800998ecf8427e "makeindex manuscript_Stragiotti.idx"
-  "manuscript_Stragiotti.lof" 1699025894 1941 6b8f8ba7e6ef13c0568d5c7489942e8c "pdflatex"
-  "manuscript_Stragiotti.lot" 1699025894 771 5860fc775d992e70997d62c384ca2779 "pdflatex"
-  "manuscript_Stragiotti.mw" 1699025894 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "manuscript_Stragiotti.run.xml" 1699025894 2425 ad1365c2cb12176cf957fc8f0a23d8e5 "pdflatex"
+  "manuscript_Stragiotti.ind" 1699026014 0 d41d8cd98f00b204e9800998ecf8427e "makeindex manuscript_Stragiotti.idx"
+  "manuscript_Stragiotti.lof" 1699026014 1941 cba8ed9c582814ae001716bbe161715e "pdflatex"
+  "manuscript_Stragiotti.lot" 1699026014 771 15c387cac0954e7dce4f90b407e1ef75 "pdflatex"
+  "manuscript_Stragiotti.mw" 1699026014 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "manuscript_Stragiotti.run.xml" 1699026014 2425 ad1365c2cb12176cf957fc8f0a23d8e5 "pdflatex"
   "manuscript_Stragiotti.tex" 1698940525 9273 3c64857fa0ab0dc91cf70794c852d83c ""
-  "manuscript_Stragiotti.toc" 1699025894 2032 b6e7369cb9b11f1db459c90201bc2f98 "pdflatex"
+  "manuscript_Stragiotti.toc" 1699026014 2032 b6e7369cb9b11f1db459c90201bc2f98 "pdflatex"
   (generated)
   "chapters/5_cellular_structures.aux"
   "manuscript_Stragiotti.aux"
