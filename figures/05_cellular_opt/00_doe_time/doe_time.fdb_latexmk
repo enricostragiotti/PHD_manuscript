@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1698916289 "d:/estragio/PhD/99_Github/PHD_manuscript/figures/05_cellular_opt/00_doe_time/doe_time.tex" "doe_time.pdf" "doe_time" 1698916303 0
-  "../../img_header.tex" 1698916232 10574 a61a65860c911c4d243f11e08eac337e ""
+["pdflatex"] 1699375762 "d:/estragio/PhD/99_Github/PHD_manuscript/figures/05_cellular_opt/00_doe_time/doe_time.tex" "doe_time.pdf" "doe_time" 1699375789 0
+  "../../img_header.tex" 1699372010 10574 756280486028bd5deafe5701d98598f8 ""
   "C:/Program Files/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1233951848 1120 1e8878807317373affa7f7bba4cf2f6a ""
   "C:/Program Files/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm" 1233951848 1124 14ccf5552bc7f77ca02a8a402bea8bfb ""
   "C:/Program Files/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmbsy7.tfm" 1233951848 1120 7f9f170e8aa57527ad6c49feafd45d54 ""
@@ -213,7 +213,7 @@
   "C:/Program Files/MiKTeX/tex/latex/tools/verbatim.sty" 1667242266 7392 f19cdc68ae9f1190dbd54eee6d29fb7c ""
   "C:/Program Files/MiKTeX/tex/latex/xcolor/xcolor.sty" 1656233290 56148 51a9a8571c07b9921892ae11063ae853 ""
   "C:/Program Files/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656233319 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
-  "D:/estragio/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1698135033 396640 1ea46da25f7076f387bd7ec940bbd5e4 ""
+  "D:/estragio/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1699026675 396640 1ea46da25f7076f387bd7ec940bbd5e4 ""
   "D:/estragio/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1693314176 23169136 c485cd3e477948afde4cec34d0e0dec6 ""
   "D:/estragio/AppData/Roaming/MiKTeX/tex/generic/infwarerr/infwarerr.sty" 1575399508 8356 7bbb2c2373aa810be568c29e333da8ed ""
   "D:/estragio/AppData/Roaming/MiKTeX/tex/generic/ltxcmds/ltxcmds.sty" 1601732009 18568 4409f8f50cd365c68e684407e5350b1b ""
@@ -229,9 +229,9 @@
   "D:/estragio/AppData/Roaming/MiKTeX/tex/latex/varwidth/varwidth.sty" 1238465940 10894 d359a13923460b2a73d4312d613554c8 ""
   "D:/estragio/AppData/Roaming/MiKTeX/tex/latex/xargs/xargs.sty" 1206231060 12403 a11204384274e5980f17ec9564088fa4 ""
   "D:/estragio/AppData/Roaming/MiKTeX/tex/latex/xstring/xstring.sty" 1673962217 123 a302f2c651a95033260db60e51527ae8 ""
-  "d:/estragio/PhD/99_Github/PHD_manuscript/figures/05_cellular_opt/00_doe_time/doe_time.tex" 1698916288 1279 4a9fc4e7f868e2ce87e3a5a7acede277 ""
-  "doe_time.aux" 1698916302 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
-  "doe_time.tex" 1698916288 1279 4a9fc4e7f868e2ce87e3a5a7acede277 ""
+  "d:/estragio/PhD/99_Github/PHD_manuscript/figures/05_cellular_opt/00_doe_time/doe_time.tex" 1699375761 1271 1957f28bd8a94664bf4d7addc8cfe8d8 ""
+  "doe_time.aux" 1699375788 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "doe_time.tex" 1699375761 1271 1957f28bd8a94664bf4d7addc8cfe8d8 ""
   (generated)
   "doe_time.aux"
   "doe_time.log"

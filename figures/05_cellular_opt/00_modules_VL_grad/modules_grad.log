@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.8.29)  3 NOV 2023 16:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.8.29)  7 NOV 2023 18:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -547,37 +547,104 @@ File: pgflibraryarrows.meta.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
 \pgf@layerbox@background=\box99
 \pgf@layerboxsaved@background=\box100
+) (D:\estragio\AppData\Roaming\MiKTeX\tex/latex/nicematrix\nicematrix.sty (C:\Program Files\MiKTeX\tex/latex/l3packages/l3keys2e\l3keys2e.sty
+Package: l3keys2e 2023-02-02 LaTeX2e option processing using LaTeX3 keys
 )
-Package translations Info: No language package found. I am going to use `english' as default language. on input line 5.
+Package: nicematrix 2023/09/28 v6.24 Enhanced arrays with the help of PGF/TikZ
+\g__nicematrix_env_int=\count322
+\g__nicematrix_NiceMatrixBlock_int=\count323
+\g__nicematrix_notes_caption_int=\count324
+\l__nicematrix_columns_width_dim=\dimen286
+\l__nicematrix_col_width_dim=\dimen287
+\g__nicematrix_row_total_int=\count325
+\g__nicematrix_col_total_int=\count326
+\g__nicematrix_last_row_node_int=\count327
+\l__nicematrix_key_nb_rows_int=\count328
+\g__nicematrix_blocks_wd_dim=\dimen288
+\g__nicematrix_blocks_ht_dim=\dimen289
+\g__nicematrix_blocks_dp_dim=\dimen290
+\l__nicematrix_block_ysep_dim=\dimen291
+\l__nicematrix_width_dim=\dimen292
+\l__nicematrix_tabular_width_dim=\dimen293
+\l__nicematrix_rule_width_dim=\dimen294
+\l__nicematrix_old_iRow_int=\count329
+\l__nicematrix_old_jCol_int=\count330
+\g__nicematrix_total_X_weight_int=\count331
+\l__nicematrix_X_columns_dim=\dimen295
+\l__nicematrix_x_initial_dim=\dimen296
+\l__nicematrix_y_initial_dim=\dimen297
+\l__nicematrix_x_final_dim=\dimen298
+\l__nicematrix_y_final_dim=\dimen299
+\l__nicematrix_tmpc_dim=\dimen300
+\l__nicematrix_tmpd_dim=\dimen301
+\g__nicematrix_width_last_col_dim=\dimen302
+\g__nicematrix_width_first_col_dim=\dimen303
+\l__nicematrix_row_min_int=\count332
+\l__nicematrix_row_max_int=\count333
+\l__nicematrix_col_min_int=\count334
+\l__nicematrix_col_max_int=\count335
+\g__nicematrix_static_num_of_col_int=\count336
+\l__nicematrix_rounded_corners_dim=\dimen304
+\l__nicematrix_tab_rounded_corners_dim=\dimen305
+\l__nicematrix_offset_dim=\dimen306
+\l__nicematrix_line_width_dim=\dimen307
+\g__nicematrix_block_box_int=\count337
+\l__nicematrix_submatrix_extra_height_dim=\dimen308
+\l__nicematrix_submatrix_left_xshift_dim=\dimen309
+\l__nicematrix_submatrix_right_xshift_dim=\dimen310
+\l__nicematrix_first_row_int=\count338
+\l__nicematrix_first_col_int=\count339
+\l__nicematrix_last_row_int=\count340
+\l__nicematrix_last_col_int=\count341
+\c@tabularnote=\count342
+\c@nicematrix_draft=\count343
+\l__nicematrix_cell_space_top_limit_dim=\dimen311
+\l__nicematrix_cell_space_bottom_limit_dim=\dimen312
+\l__nicematrix_xdots_inter_dim=\dimen313
+\l__nicematrix_xdots_shorten_start_dim=\dimen314
+\l__nicematrix_xdots_shorten_end_dim=\dimen315
+\l__nicematrix_xdots_radius_dim=\dimen316
+\l__nicematrix_notes_above_space_dim=\dimen317
+\l__nicematrix_left_margin_dim=\dimen318
+\l__nicematrix_right_margin_dim=\dimen319
+\l__nicematrix_extra_left_margin_dim=\dimen320
+\l__nicematrix_extra_right_margin_dim=\dimen321
+\c__nicematrix_max_l_dim=\dimen322
+\l__nicematrix_position_int=\count344
+\l__nicematrix_start_int=\count345
+\l__nicematrix_multiplicity_int=\count346
+\l__nicematrix_brace_yshift_dim=\dimen323
+)
+Package translations Info: No language package found. I am going to use `english' as default language. on input line 31.
  (modules_grad.aux)
 \openout1 = `modules_grad.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
  (C:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count322
-\scratchdimen=\dimen286
+\scratchcounter=\count347
+\scratchdimen=\dimen324
 \scratchbox=\box101
-\nofMPsegments=\count323
-\nofMParguments=\count324
+\nofMPsegments=\count348
+\nofMParguments=\count349
 \everyMPshowfont=\toks49
-\MPscratchCnt=\count325
-\MPscratchDim=\dimen287
-\MPnumerator=\count326
-\makeMPintoPDFobject=\count327
+\MPscratchCnt=\count350
+\MPscratchDim=\dimen325
+\MPnumerator=\count351
+\makeMPintoPDFobject=\count352
 \everyMPtoPDFconversion=\toks50
 ) (C:\Program Files\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -587,10 +654,13 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 )) (D:\estragio\AppData\Roaming\MiKTeX\tex/latex/translations/dicts\translations-basic-dictionary-english.trsl
 File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
 )
-Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 5.
+Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 31.
 
 Package pgfplots notification 'compat/show suggested version=true': document has been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
 
+\c__nicematrix_shift_Ldots_last_row_dim=\dimen326
+\c__nicematrix_shift_exterior_Vdots_dim=\dimen327
+\c__nicematrix_innersep_middle_dim=\dimen328
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
@@ -599,14 +669,18 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
-LaTeX Font Info:    Trying to load font information for U+msa on input line 59.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 85.
 (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 59.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 85.
  (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
+Overfull \hbox (53.24478pt too wide) detected at line 109
+[]
+ []
+
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
@@ -615,27 +689,42 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
+\g__nicematrix_max_cell_width_dim=\dimen329
+\c@iRow=\count353
+\c@jCol=\count354
+\l__nicematrix_cell_box=\box102
+\l__nicematrix_the_array_box=\box103
+\l__nicematrix_left_delim_dim=\dimen330
+\l__nicematrix_right_delim_dim=\dimen331
+\g__nicematrix_dp_row_zero_dim=\dimen332
+\g__nicematrix_ht_row_zero_dim=\dimen333
+\g__nicematrix_ht_row_one_dim=\dimen334
+\g__nicematrix_dp_ante_last_row_dim=\dimen335
+\g__nicematrix_ht_last_row_dim=\dimen336
+\g__nicematrix_dp_last_row_dim=\dimen337
+\g__nicematrix_ddots_int=\count355
+\g__nicematrix_iddots_int=\count356
+\g__nicematrix_delta_x_one_dim=\dimen338
+\g__nicematrix_delta_y_one_dim=\dimen339
+\g__nicematrix_delta_x_two_dim=\dimen340
+\g__nicematrix_delta_y_two_dim=\dimen341
+\l__nicematrix_initial_i_int=\count357
+\l__nicematrix_initial_j_int=\count358
+\l__nicematrix_final_i_int=\count359
+\l__nicematrix_final_j_int=\count360
 [1
 
 {D:/estragio/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] (modules_grad.aux) ) 
 Here is how much of TeX's memory you used:
- 32436 strings out of 476331
- 854657 string characters out of 5797589
- 1885660 words of memory out of 5000000
- 52324 multiletter control sequences out of 15000+600000
+ 35026 strings out of 476331
+ 939596 string characters out of 5797589
+ 1910660 words of memory out of 5000000
+ 54906 multiletter control sequences out of 15000+600000
  524158 words of font info for 76 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 122i,24n,121p,834b,943s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 122i,27n,121p,834b,1516s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmex9.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmmib7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmmib9.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy9.pfb>
-Output written on modules_grad.pdf (1 page, 133761 bytes).
+Output written on modules_grad.pdf (1 page, 134294 bytes).
 PDF statistics:
  80 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

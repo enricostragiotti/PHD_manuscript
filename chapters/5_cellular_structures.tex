@@ -7,19 +7,9 @@ Introduction
 \todo{metti slend min sulle barre}
 \todo{tables always small}
 \section{Formulation of a modular structure optimization algorithm}
-why modular, which are the advantages
+Assembled modular ultralight structures present an opportunity to greatly improve the performance and cost efficiency of modern aerostructures~\sidecite{cramer_elastic_2019}. The repetitive nature brings various interesting features among which reduced tooling, fast assembly, and short repair time. Additionally, as the mechanical performance of the structure is greatly influenced by the topology and the materials of the repetitive pattern, modular structures are naturally prone to optimization.
 
-define modules and subdomains
-
-intro there are different type of approach that we could use, full scale and multiscale
-
-intro multiscale.
-
-numerical homogenization
-
-intro full scale
-
-the problem on the number of subsections needed to correctly foresee the mechanical behaviour
+In the structure optimization field periodic materials are often modeled by means of asymptotic homogenization~\sidecite{zhou_design_2008}. The heterogeneous module topology (also called \gls{rve}) is treated as homogeneous material with associated mechanical properties \ie equivalent elastic tensor, shear modulus, etc. The homogenization approach is valid only if the \gls{rve} contains enough information about the heterogeneous material and if the structure presents significant periodicity~\sidecite{kalamkarov_asymptotic_2009,li_anisotropic_2020}. When designing modular structures (and not materials), no scale separation is assumed between the repetitive pattern and the structure itself. Consequently, the hypotheses of asymptotic homogenization are not always verified. For that reason, full-scale approaches~\sidecite{wu_topology_2021} have been developed.
 
 \subsection{Variable linking}
 \begin{figure*}
@@ -29,7 +19,7 @@ the problem on the number of subsections needed to correctly foresee the mechani
     \label{fig:05_VL}
 \end{figure*}
 
-In this section, we take a closer look at the Variable Linking approach. This technique involves first dividing a structure into several subdomains, which are connected during the optimization process \ie subdomains that belong to the same module all share the same cross-sectional areas. The primary goal is to make the manufacturing phase simpler and more efficient, allowing to assemble big structures starting from smaller repetitive modules. With this approach, the optimization perspective shifts. The optimizer design space using the variable linking approach is restricted to the optimization of the topology of the modules, using the whole structure just to impose the necessary mechanical constraints.
+The variable linking approach~\sidecite{zhang_scale-related_2006} is a full-scale technique that involves first dividing a structure into several subdomains, which are connected during the optimization process \ie subdomains that belong to the same module all share the same cross-sectional areas. The primary goal is to make the manufacturing phase simpler and more efficient, allowing to assemble big structures starting from smaller repetitive modules. With this approach, the optimization perspective shifts. The optimizer design space using the variable linking approach is restricted to the optimization of the topology of the modules, using the whole structure just to impose the necessary mechanical constraints.
 
 We use \figref{fig:05_VL} to illustrate the notation employed in this thesis for modular structures. On the left-hand side of the image, we have the whole test case that we aim to optimize, which is already divided into $N_\text{sub}$ subdomains. Each of these subdomains is bound to exhibit the topology of one of the $N_\text{T}$ module topologies presented on the right side of the image. It is assumed that each module has the same external shape and the identical ground structure used for discretizing the module volume. Within this framework, $\bar{n}$ represents the number of candidate bars in one module, and if we assume a fully connected mesh, we can define $\bar{n} = \bar{m} \cdot (\bar{m}-1)/2$, where $\bar{m}$ stands for the number of nodes in the module. Consequently, for the overall structure, we can write the relationship $N_{\text{el}} = N_{\text{sub}}\bar{n}$.
 
@@ -67,7 +57,7 @@ where the $\otimes$ operator represents the Kronecher product and $\vect{h}_{t}$
     0 & 1 & \scriptstyle\textcolor{axis_gray}{\,j=7} 
 \end{bNiceMatrix}
 \end{equation}
-as the lower submodules (numbered from 0 to 3) exhibit the topology of module $t=0$, while the upper submodules (numbered 4 to 7) represent the topology of module $t=1$.}
+as the lower submodules (numbered from 0 to 3) exhibit the topology of module $t=0$, while the upper submodules (numbered 4 to 7) the topology of module $t=1$.}
 \begin{equation}
     G_{j,t} =
     \begin{cases}
@@ -83,7 +73,7 @@ Addressing topological buckling in modular structures is a more complex task com
 \end{equation}
 We have made this choice knowing that the high connectivity of modular structures tends to reduce the occurrence of nodal instability within the structure. Any potential nodal instability in compressive chains at the structure level is addressed in a subsequent post-processing phase.
 
-\section{Optimization formulation}
+\subsection{Optimization formulation}
 Monolitic fomulation \ref{eq:04_optim_complete} is modified using \eqsref{eq:05_VL} and \eqrefnotext{eq:05_side_cons_chain_modular} to obtain the modular optimzation formulation \ref{eq:05_optim_complete_modular} that use the variable linking approach. Formulation~\ref{eq:05_optim_complete_modular} is stated in terms of modular cross-sectional areas $\bar{\vect{a}}$, member forces $\vect{q}$ and nodal displacements $\vect{U}$ as follows:
 \begin{equation}
     \begin{aligned}
@@ -152,10 +142,28 @@ where $(\cdot)$ is a function
     \label{fig:05_VL_grad}
 \end{figure*}
 
+\todo{put dotted lines on the modules}
+
 
 \section{Numerical application}
 \todo{find some litterature case that we can use to compare at least visually, maybe the sandwich structure that joseph suggested me}
 \subsection{On the equivalence of multi load cases and modular structures}
+\begin{margintable}
+    \small
+    \centering
+    \begin{tabular}{cc}
+    \toprule
+    \textbf{Parameter}        & \textbf{Value} \\ \midrule
+    $L$              & 100     \\
+    $E$              & 1     \\
+    $\sigma_\text{c}, \sigma_\text{t}$ & $\pm 1$\\
+    $P$              & 1   \\
+    \bottomrule
+    \end{tabular}
+    \caption{Material data used for the simply supported 3D beam optimization.}
+    \label{tab:05}
+\end{margintable}
+The firs test case we optimize is a section of bridge structure made by two submodules and with symmetric Bcs as shown in fig xx a.two vertical loads are applied in the lower side of the design space as shown in fig xx. the material and geometrical data are presented in Tab xx. Tevery subdomain of the structure is discretized using a 15x15 fully connected ground structure. buckling constraints are turned off in this examle. alongside the presented test case, we optimize another similar structure, this time made by only a single submodule loaded with two different load cases p1 and p2, positioned at exactly the same distance from the support (see fig xx b)
 \todo{table results}
 \begin{figure}[]
     \hspace*{\fill}
@@ -166,6 +174,26 @@ where $(\cdot)$ is a function
     \caption{}
     \label{fig:05_cell_multi_eq_bcs}
 \end{figure}
+\todo{add lenght for the loads, so the reader understands}
+
+\begin{table}
+    \centering
+    \small
+    \begin{tabular}{lx{1.4cm}x{1.4cm}}
+        \toprule
+        \multirow{2}{*}{\textbf{Quantity}}         &\multicolumn{2}{l}{6x2x3} \\ 
+             \cmidrule(lr){2-3}  
+     &Octet& 3x3x3\\
+    $N_\text{sub}$       &36& 36   \\
+    $N_\text{opt}\;(N_\text{el})$ &1008& 468 (12636) \\
+    V &  &   \\
+    $V^*$ &  &   \\\bottomrule
+    \end{tabular}
+    \caption{}
+    \label{tab:05_}
+    \end{table}
+
+we optimized the two load cases using p = 0.05 for the first case and p = 0.1 for the second. we get exactly the same topology with vol V1 = 2V2. this simple example mette in luce an interesting property of the optimization of modular structures that could have been theorized only using common sense. when a loaded structure is subdivided in multiple subdomains, every one subdomain, if isolated from the sturcture and apllying the correct boundary conditions made by the reaction forces of the adjacent bars and supports, is subject to different loading conditions. if then we apply some modularity constarints to all of these modules, we are looking for the best structure that optimize contemporanely all of these different load cases.
 
 \begin{figure}[]
     \hspace*{\fill}
@@ -173,13 +201,12 @@ where $(\cdot)$ is a function
     \hfill
     \subcaptionbox{}{\includegraphics[height=3cm]{figures/05_cellular_opt/00_cell_multi_equivalence/multiload.pdf}}
     \hspace*{\fill}
-    \caption{}
+    \caption{\todo{spiega colori as usual}}
     \label{fig:05_cell_multi_eq}
 \end{figure}
-
-quindi conferma del bisogno di usare l nlp con i kinematic constraints
+Furthermore, this examples confirm us that when dealing with modularity constraints, we need to solve the quindi conferma del bisogno di usare l nlp con i kinematic constraints
 \subsection{Parametric study on the number, the shape, and the complexity of the module}
-
+IN this section we set un a parametric study on the scale and on th ecomplexity of the module used for optimizing the 3d supported truss already treated in monolithic in section xx. in this study we limit to one single module and we do not study yet the effect that it has to have multiple module topologies on the optimized structure. we do a recap of the loading case and the geometric and material properties in table and in figure xx.
 \begin{margintable}
     \small
     \centering
@@ -194,9 +221,10 @@ quindi conferma del bisogno di usare l nlp con i kinematic constraints
     \bottomrule
     \end{tabular}
     \caption{Material data used for the simply supported 3D beam optimization.}
-    \label{tab:04_3D_supp_mat}
+    \label{tab:05_3D_supp_mat}
 \end{margintable}
 
+We first study the influence of the number (and consequently the scale) of the subdomains in the structure. the structure is divided in xx cubic and equals subdomqins
 Scale effect of the square RVE on the design results:
 add here the monolith
 \todo{il caso 30x mostra un lamda ridicolo, scrivilo, metti che hai messo 10}
@@ -247,18 +275,20 @@ add here the monolith
         \hfill
         \subcaptionbox{}{\includegraphics[width=0.23\linewidth]{figures/05_cellular_opt/00_module_scale/18x6x9_2x2x2_XZ.png}}
         \hfill
-        \subcaptionbox{}{\includegraphics[width=0.23\linewidth]{figures/05_cellular_opt/00_module_scale/18x6x9_2x2x2_XZ.png}}
+        \subcaptionbox{}{\includegraphics[width=0.23\linewidth]{figures/05_cellular_opt/00_module_scale/30x10x15_2x2x2_XZ.png}}
         \hspace*{\fill}
         \caption{(a-d) (e-h) \todo{add 30}}
         \label{fig:05}
     \end{figure*}
+
+    \todo{in the last one the buckling leght is so small that stress equals compressive and tensile failure}
 
     the iniffency cqn be observed for exqmle hqving q look qt figure xx where the stress and buckling constraints activate onlky on one submodules but force the whole structure to show it quqnd meme
 
     \begin{figure}
         \centering
         \includegraphics[width=\linewidth]{figures/05_cellular_opt/00_module_scale_failure/12x4x6_mech.pdf}
-        \caption{\todo{todo}}
+        \caption{\todo{metti undeformed}}
         \label{fig:05}
     \end{figure}
 
@@ -345,12 +375,12 @@ here are the outcomes
     \begin{tabular}{cS[table-number-alignment = center, table-format = 1.2e1]}
     \toprule
     \textbf{Coeff.} & {\textbf{Value}} \\ \midrule
-    $a$ & 1.225e-06    \\
-    $b$ &  -7.257e-06   \\
-    $c$ &  +4.491e-05   \\
-    $d$ &  -1.353e-02   \\
-    $e$ &   +8.577e-02  \\
-    $f$ &   +3.272e+01  \\
+    $a$ & 9.002e-08    \\
+    $b$ &  -1.022e-05   \\
+    $c$ &  -1.770e-06   \\
+    $d$ &  -2.644e-03   \\
+    $e$ &   1.011e-01  \\
+    $f$ &   2.881e+01  \\
     \bottomrule
     \end{tabular}
     \caption{Volume}
@@ -364,12 +394,12 @@ here are the outcomes
     \begin{tabular}{cS[table-number-alignment = center, table-format = 1.2e1]}
     \toprule
     \textbf{Coeff.} & {\textbf{Value}} \\ \midrule
-    $a$ & 4.024e-04    \\
-    $b$ & -3.403e-03    \\
-    $c$ &  2.456e-01   \\
-    $d$ &  -9.847e+00   \\
-    $e$ &  1.069e+01   \\
-    $f$ & -4.977e+03    \\
+    $a$ & 1.547e-03    \\
+    $b$ & -2.871e-04    \\
+    $c$ &  2.896e-01   \\
+    $d$ &  -2.084e+01   \\
+    $e$ &  -5.543e+00   \\
+    $f$ & 0    \\
     \bottomrule
     \end{tabular}
     \caption{Time}
@@ -394,6 +424,10 @@ here are the outcomes
 \end{figure*}
 
 \subsection{Comparison with the optimized octet truss}
+
+The \gls{tto} algorithm is here benchmarked against one of the most popular cell topologies present in the literature: the octet-truss (see Fig. xx). The octet-truss is a cell known for having very good effective mechanical properties that attain about half the theoretical values of the upper Hashi-Shtrikman bounds~\sidecite{deshpande_effective_2001}. 
+
+To perform the benchmark, the wing box of Figure~xxis meshed using 44×4×1 octet-truss cells of 125 mm of edge size (see Fig. xx). The cross-sectional areas of the cell members are all equal. The section value is evaluated by performing a parametric optimization on this section value, constrained by stress and local buckling for every member of the structure. The optimization is performed using Altair OptiStruct.
 
 \begin{marginfigure}
     \centering
@@ -454,6 +488,8 @@ here are the outcomes
     \end{table}
 
 \subsection{Using multiple module's topologies}
+
+this stuty suggest that we have here a compromise between volume (and then mass) and manufacturing complexity. we studyed till now the two extremities, the full modular and the monolithic structure. we want now to see what happens in between
 
 \begin{figure}
     \centering

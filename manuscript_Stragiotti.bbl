@@ -16,5 +16,420 @@
   {}
 \endgroup
 
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{cramer_elastic_2019}{article}{}
+      \name{author}{11}{}{%
+        {{hash=c4b92a262209610f7ca22dca389539e1}{%
+           family={Cramer},
+           familyi={C\bibinitperiod},
+           given={Nicholas\bibnamedelima B.},
+           giveni={N\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=313412b7b87239ec487a05e4bc1ebaa2}{%
+           family={Cellucci},
+           familyi={C\bibinitperiod},
+           given={Daniel\bibnamedelima W.},
+           giveni={D\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=de9d0dc74d4ec7c33f828b81e9dfbdbe}{%
+           family={Formoso},
+           familyi={F\bibinitperiod},
+           given={Olivia\bibnamedelima B.},
+           giveni={O\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=fb844abc5ed12a860277b3320573596f}{%
+           family={Gregg},
+           familyi={G\bibinitperiod},
+           given={Christine\bibnamedelima E.},
+           giveni={C\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=5230f55680a41212167d3ed2eab519f8}{%
+           family={Jenett},
+           familyi={J\bibinitperiod},
+           given={Benjamin\bibnamedelima E.},
+           giveni={B\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=28f4204999fd9d16ed6ccade9a80f85a}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Joseph\bibnamedelima H.},
+           giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=f01185d29620d0c738eb31cb2026e99d}{%
+           family={Lendraitis},
+           familyi={L\bibinitperiod},
+           given={Martynas},
+           giveni={M\bibinitperiod}}}%
+        {{hash=571cdbadfb89884af86de092b2141659}{%
+           family={Swei},
+           familyi={S\bibinitperiod},
+           given={Sean\bibnamedelima S.},
+           giveni={S\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=146a00e4727657311cad76f4624f3335}{%
+           family={Trinh},
+           familyi={T\bibinitperiod},
+           given={Greenfield\bibnamedelima T.},
+           giveni={G\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=46ad41b28a154ee54cae4788895b8137}{%
+           family={Trinh},
+           familyi={T\bibinitperiod},
+           given={Khanh\bibnamedelima V.},
+           giveni={K\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=167d96b89d4ec4a25094057c319979eb}{%
+           family={Cheung},
+           familyi={C\bibinitperiod},
+           given={Kenneth\bibnamedelima C.},
+           giveni={K\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{39bde62302bf3125a9aa2c761f488538}
+      \strng{fullhash}{66617fcfa0ce163c8f219ede752f7b5e}
+      \strng{bibnamehash}{66617fcfa0ce163c8f219ede752f7b5e}
+      \strng{authorbibnamehash}{66617fcfa0ce163c8f219ede752f7b5e}
+      \strng{authornamehash}{39bde62302bf3125a9aa2c761f488538}
+      \strng{authorfullhash}{66617fcfa0ce163c8f219ede752f7b5e}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Ultralight materials present an opportunity to dramatically increase the efficiency of load-bearing aerostructures. To date, however, these ultralight materials have generally been confined to the laboratory bench-top, due to dimensional constraints of the manufacturing processes. We show a programmable material system applied as a large-scale, ultralight, and conformable aeroelastic structure. The use of a modular, lattice-based, ultralight material results in stiffness typical of an elastomer (2.6 MPa) at a mass density typical of an aerogel . This, combined with a building block based manufacturing and configuration strategy, enables the rapid realization of new adaptive structures and mechanisms. The heterogeneous design with programmable anisotropy allows for enhanced elastic and global shape deformation in response to external loading, making it useful for tuned fluid-structure interaction. We demonstrate an example application experiment using two building block types for the primary structure of a 4.27 m wingspan aircraft, where we spatially program elastic shape morphing to increase aerodynamic efficiency and improve roll control authority, demonstrated with full-scale wind tunnel testing.}
+      \field{issn}{0964-1726}
+      \field{journaltitle}{Smart Materials and Structures}
+      \field{month}{4}
+      \field{number}{5}
+      \field{title}{Elastic shape morphing of ultralight structures by programmable assembly}
+      \field{urlday}{2}
+      \field{urlmonth}{10}
+      \field{urlyear}{2020}
+      \field{volume}{28}
+      \field{year}{2019}
+      \field{urldateera}{ce}
+      \field{pages}{055006}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1088/1361-665X/ab0ea2
+      \endverb
+    \endentry
+    \entry{zhou_design_2008}{article}{}
+      \name{author}{2}{}{%
+        {{hash=ccb8cae1fb9a304a529e14b66f624e7d}{%
+           family={Zhou},
+           familyi={Z\bibinitperiod},
+           given={Shiwei},
+           giveni={S\bibinitperiod}}}%
+        {{hash=16a77262afb7cc9b0229c21f168bd098}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Qing},
+           giveni={Q\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{9210aa6e395d74ea41a58b98f2bcc7ac}
+      \strng{fullhash}{9210aa6e395d74ea41a58b98f2bcc7ac}
+      \strng{bibnamehash}{9210aa6e395d74ea41a58b98f2bcc7ac}
+      \strng{authorbibnamehash}{9210aa6e395d74ea41a58b98f2bcc7ac}
+      \strng{authornamehash}{9210aa6e395d74ea41a58b98f2bcc7ac}
+      \strng{authorfullhash}{9210aa6e395d74ea41a58b98f2bcc7ac}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Being one of new generation of composites, functionally graded materials (FGMs) possess gradually changed physical properties due to their compositional and/or microstructural gradients. In literature, exhaustive studies have been carried out in compositional modeling and design, while limited reports are available for microstructural optimization. This article presents an inverse homogenization method for the design of two-phase (solid/void) FGM microstructures, whose periodic base cells (PBCs) vary in a direction parallel to the property gradient but periodically repeat themselves in the perpendicular direction. The effective elasticity tensor at each PBC is estimated in terms of the homogenization theory. The overall difference between the effective tensor and their target is minimized by seeking for an optimal PBC material topology. To preserve the connectivity between adjacent PBCs, three methods, namely connective constraint, pseudo load, and unified formulation with nonlinear diffusion are proposed herein. A number of two-dimensional examples possessing graded volume fraction and Young’s modulus but constant positive or negative Poisson’s ratios are presented to demonstrate this computational design procedure.}
+      \field{issn}{1573-4803}
+      \field{journaltitle}{Journal of Materials Science}
+      \field{month}{8}
+      \field{number}{15}
+      \field{title}{Design of graded two-phase microstructures for tailored elasticity gradients}
+      \field{urlday}{11}
+      \field{urlmonth}{1}
+      \field{urlyear}{2021}
+      \field{volume}{43}
+      \field{year}{2008}
+      \field{urldateera}{ce}
+      \field{pages}{5157\bibrangedash 5167}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1007/s10853-008-2722-y
+      \endverb
+      \verb{file}
+      \verb Springer Full Text PDF:D\:\\estragio\\Zotero\\storage\\ID6UJFGS\\Zhou et Li - 2008 - Design of graded two-phase microstructures for tai.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s00158-020-02556-w
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s00158-020-02556-w
+      \endverb
+    \endentry
+    \entry{kalamkarov_asymptotic_2009}{article}{}
+      \name{author}{3}{}{%
+        {{hash=0f4a30439cc4e75b3ea11370be79dc72}{%
+           family={Kalamkarov},
+           familyi={K\bibinitperiod},
+           given={Alexander\bibnamedelima L.},
+           giveni={A\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=48c8dfc63672fdbe0e36a33b376c4088}{%
+           family={Andrianov},
+           familyi={A\bibinitperiod},
+           given={Igor\bibnamedelima V.},
+           giveni={I\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=b8f68c60e75c7f00ed792b1f052f40f1}{%
+           family={Danishevs’kyy},
+           familyi={D\bibinitperiod},
+           given={Vladyslav\bibnamedelima V.},
+           giveni={V\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+      }
+      \strng{namehash}{315bbee390a83f7fcd549f17ab0ec6a2}
+      \strng{fullhash}{315bbee390a83f7fcd549f17ab0ec6a2}
+      \strng{bibnamehash}{315bbee390a83f7fcd549f17ab0ec6a2}
+      \strng{authorbibnamehash}{315bbee390a83f7fcd549f17ab0ec6a2}
+      \strng{authornamehash}{315bbee390a83f7fcd549f17ab0ec6a2}
+      \strng{authorfullhash}{315bbee390a83f7fcd549f17ab0ec6a2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The present paper provides details on the new trends in application of asymptotic homogenization techniques to the analysis of composite materials and thin-walled composite structures and their effective properties. The problems under consideration are important from both fundamental and applied points of view. We review a state-of-the-art in asymptotic homogenization of composites by presenting the variety of existing methods, by pointing out their advantages and shortcomings, and by discussing their applications. In addition to the review of existing results, some new original approaches are also introduced. In particular, we analyze a possibility of analytical solution of the unit cell problems obtained as a result of the homogenization procedure. Asymptotic homogenization of 3D thin-walled composite reinforced structures is considered, and the general homogenization model for a composite shell is introduced. In particular, analytical formulas for the effective stiffness moduli of wafer-reinforced shell and sandwich composite shell with a honeycomb filler are presented. We also consider random composites; use of two-point Padé approximants and asymptotically equivalent functions; correlation between conductivity and elastic properties of composites; and strength, damage, and boundary effects in composites. This article is based on a review of 205 references.}
+      \field{issn}{0003-6900}
+      \field{journaltitle}{Applied Mechanics Reviews}
+      \field{month}{3}
+      \field{number}{3}
+      \field{title}{Asymptotic {Homogenization} of {Composite} {Materials} and {Structures}}
+      \field{urlday}{15}
+      \field{urlmonth}{9}
+      \field{urlyear}{2021}
+      \field{volume}{62}
+      \field{year}{2009}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.1115/1.3090830
+      \endverb
+      \verb{file}
+      \verb Full Text PDF:D\:\\estragio\\Zotero\\storage\\TGC5RLE3\\Kalamkarov et al. - 2009 - Asymptotic Homogenization of Composite Materials a.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1115/1.3090830
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1115/1.3090830
+      \endverb
+    \endentry
+    \entry{li_anisotropic_2020}{article}{}
+      \name{author}{4}{}{%
+        {{hash=5d347014590ab2d9450a92400b1f5f00}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Dawei},
+           giveni={D\bibinitperiod}}}%
+        {{hash=9e6a22a80aceb54ab0cdf5f2db5382dd}{%
+           family={Liao},
+           familyi={L\bibinitperiod},
+           given={Wenhe},
+           giveni={W\bibinitperiod}}}%
+        {{hash=7cbe1c6cbd85cceaafcc34d0a22ec27a}{%
+           family={Dai},
+           familyi={D\bibinitperiod},
+           given={Ning},
+           giveni={N\bibinitperiod}}}%
+        {{hash=8378d5b4061a021880b29f2f73452923}{%
+           family={Xie},
+           familyi={X\bibinitperiod},
+           given={Yi\bibnamedelima Min},
+           giveni={Y\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{34744ed22b7e1b591e0dcfff89ba3714}
+      \strng{fullhash}{6f858291a2f0be4e07a15294119275d5}
+      \strng{bibnamehash}{6f858291a2f0be4e07a15294119275d5}
+      \strng{authorbibnamehash}{6f858291a2f0be4e07a15294119275d5}
+      \strng{authornamehash}{34744ed22b7e1b591e0dcfff89ba3714}
+      \strng{authorfullhash}{6f858291a2f0be4e07a15294119275d5}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In this work, we present a novel anisotropic lattice structure design and multi-scale optimization method that can generate conformal gradient lattice structures (CGLS). The goal of optimization is to achieve gradient density, adaptive orientation and variable scale (or periodic) lattice structures with the highest mechanical stiffness. The asymptotic homogenization method is employed for the calculation of the mechanical properties of various lattice structures. And an equation of elastic tensor and relative density of the unit cell is established. The established function above is then considered in the numerical optimization schemes. In the post-processing, we propose a numerical projecting method based on Fourier transform, which can synthesize conformal gradient lattice structure without changing the size and shape of the unit cells. Besides, the algorithm allows us to minimize distortion and prevent defects in the final lattice and keep the lattice structures smooth and continuous. Finally, in comparison with different parameters and methods are performed to demonstrate the superiority of our proposed method. The results show that the optimized anisotropic conformal gradient lattice structures are much stiffer and exhibit better structural robustness and buckling resistance than the uniform and the directly mapped designs.}
+      \field{issn}{0010-4485}
+      \field{journaltitle}{Computer-Aided Design}
+      \field{month}{2}
+      \field{title}{Anisotropic design and optimization of conformal gradient lattice structures}
+      \field{urlday}{13}
+      \field{urlmonth}{10}
+      \field{urlyear}{2020}
+      \field{volume}{119}
+      \field{year}{2020}
+      \field{urldateera}{ce}
+      \field{pages}{102787}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.cad.2019.102787
+      \endverb
+      \verb{file}
+      \verb ScienceDirect Full Text PDF:D\:\\estragio\\Zotero\\storage\\92HYV5MH\\Li et al. - 2020 - Anisotropic design and optimization of conformal g.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://www.sciencedirect.com/science/article/pii/S0010448519302386
+      \endverb
+      \verb{url}
+      \verb http://www.sciencedirect.com/science/article/pii/S0010448519302386
+      \endverb
+      \keyw{Anisotropic design,Conformal lattice,Lattice optimization,Multi-scale optimization,Synthesize algorithm}
+    \endentry
+    \entry{wu_topology_2021}{article}{}
+      \name{author}{3}{}{%
+        {{hash=aaf4818e3816b53809f264b2c1b2ecae}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Jun},
+           giveni={J\bibinitperiod}}}%
+        {{hash=d76f1c09e8d8d06e1b7c3c254efeae1a}{%
+           family={Sigmund},
+           familyi={S\bibinitperiod},
+           given={Ole},
+           giveni={O\bibinitperiod}}}%
+        {{hash=b3a28961a952de6972668feb8d306517}{%
+           family={Groen},
+           familyi={G\bibinitperiod},
+           given={Jeroen\bibnamedelima P.},
+           giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{880231f33403bb8f375a4a1b8fe4ced8}
+      \strng{fullhash}{880231f33403bb8f375a4a1b8fe4ced8}
+      \strng{bibnamehash}{880231f33403bb8f375a4a1b8fe4ced8}
+      \strng{authorbibnamehash}{880231f33403bb8f375a4a1b8fe4ced8}
+      \strng{authornamehash}{880231f33403bb8f375a4a1b8fe4ced8}
+      \strng{authorfullhash}{880231f33403bb8f375a4a1b8fe4ced8}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{journaltitle}{Structural and Multidisciplinary Optimization}
+      \field{month}{3}
+      \field{shorttitle}{Topology optimization of multi-scale structures}
+      \field{title}{Topology optimization of multi-scale structures: a review}
+      \field{urlday}{17}
+      \field{urlmonth}{3}
+      \field{urlyear}{2021}
+      \field{year}{2021}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.1007/s00158-021-02881-8
+      \endverb
+    \endentry
+    \entry{zhang_scale-related_2006}{article}{}
+      \name{author}{2}{}{%
+        {{hash=1703058ac1e82b63641879518d53a9de}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Weihong},
+           giveni={W\bibinitperiod}}}%
+        {{hash=6cfd394df702d7f435362facc53d5b53}{%
+           family={Sun},
+           familyi={S\bibinitperiod},
+           given={Shiping},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{ac463b22862efbb5f9082b51225c4519}
+      \strng{fullhash}{ac463b22862efbb5f9082b51225c4519}
+      \strng{bibnamehash}{ac463b22862efbb5f9082b51225c4519}
+      \strng{authorbibnamehash}{ac463b22862efbb5f9082b51225c4519}
+      \strng{authornamehash}{ac463b22862efbb5f9082b51225c4519}
+      \strng{authorfullhash}{ac463b22862efbb5f9082b51225c4519}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The integrated optimization of lightweight cellular materials and structures are discussed in this paper. By analysing the basic features of such a two-scale problem, it is shown that the optimal solution strongly depends upon the scale effect modelling of the periodic microstructure of material unit cell (MUC), i.e. the so-called representative volume element (RVE). However, with the asymptotic homogenization method used widely in actual topology optimization procedure, effective material properties predicted can give rise to limit values depending upon only volume fractions of solid phases, properties and spatial distribution of constituents in the microstructure regardless of scale effect. From this consideration, we propose the design element (DE) concept being able to deal with conventional designs of materials and structures in a unified way. By changing the scale and aspect ratio of the DE, scale-related effects of materials and structures are well revealed and distinguished in the final results of optimal design patterns. To illustrate the proposed approach, numerical design problems of 2D layered structures with cellular core are investigated. Copyright © 2006 John Wiley \& Sons, Ltd.}
+      \field{issn}{1097-0207}
+      \field{journaltitle}{International Journal for Numerical Methods in Engineering}
+      \field{number}{9}
+      \field{title}{Scale-related topology optimization of cellular materials and structures}
+      \field{urlday}{23}
+      \field{urlmonth}{6}
+      \field{urlyear}{2021}
+      \field{volume}{68}
+      \field{year}{2006}
+      \field{urldateera}{ce}
+      \field{pages}{993\bibrangedash 1011}
+      \range{pages}{19}
+      \verb{doi}
+      \verb 10.1002/nme.1743
+      \endverb
+      \verb{file}
+      \verb Full Text PDF:D\:\\estragio\\Zotero\\storage\\Z7G7EADZ\\Zhang and Sun - 2006 - Scale-related topology optimization of cellular ma.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1002/nme.1743
+      \endverb
+      \verb{url}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1002/nme.1743
+      \endverb
+      \keyw{topology optimization,cellular material design,homogenization method,scale effect,unit cell}
+    \endentry
+    \entry{deshpande_effective_2001}{article}{}
+      \name{author}{3}{}{%
+        {{hash=5233a32272aa7ffdd5842786a86d44a7}{%
+           family={Deshpande},
+           familyi={D\bibinitperiod},
+           given={V.\bibnamedelimi S.},
+           giveni={V\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=e2b30fe12c7d9bde635a5c2346741c56}{%
+           family={Fleck},
+           familyi={F\bibinitperiod},
+           given={N.\bibnamedelimi A.},
+           giveni={N\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=4efbe37e741cfa6637ad06d22dcb5217}{%
+           family={Ashby},
+           familyi={A\bibinitperiod},
+           given={M.\bibnamedelimi F.},
+           giveni={M\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{6938fda67f04d23e34e169a492c80b51}
+      \strng{fullhash}{6938fda67f04d23e34e169a492c80b51}
+      \strng{bibnamehash}{6938fda67f04d23e34e169a492c80b51}
+      \strng{authorbibnamehash}{6938fda67f04d23e34e169a492c80b51}
+      \strng{authornamehash}{6938fda67f04d23e34e169a492c80b51}
+      \strng{authorfullhash}{6938fda67f04d23e34e169a492c80b51}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0022-5096}
+      \field{journaltitle}{Journal of the Mechanics and Physics of Solids}
+      \field{month}{8}
+      \field{number}{8}
+      \field{title}{Effective properties of the octet-truss lattice material}
+      \field{urlday}{2}
+      \field{urlmonth}{10}
+      \field{urlyear}{2020}
+      \field{volume}{49}
+      \field{year}{2001}
+      \field{urldateera}{ce}
+      \field{pages}{1747\bibrangedash 1769}
+      \range{pages}{23}
+      \verb{doi}
+      \verb 10.1016/S0022-5096(01)00010-2
+      \endverb
+      \verb{urlraw}
+      \verb http://www.sciencedirect.com/science/article/pii/S0022509601000102
+      \endverb
+      \verb{url}
+      \verb http://www.sciencedirect.com/science/article/pii/S0022509601000102
+      \endverb
+      \keyw{A. Buckling,C. Finite elements,Collapse surfaces,Lattice materials,Porous solids}
+    \endentry
+  \enddatalist
+\endrefsection
 \endinput
 

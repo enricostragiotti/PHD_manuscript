@@ -16,11 +16,11 @@
   xmode=log,
   ymode=log,
   xlabel={ $\bar{n}$},
-  xmin=10, xmax=10000,
+  xmin=20, xmax=10000,
   xtick={10,100,1000,10000},
   % xticklabels={0\%,10\%,20\%,30\%,40\%,50\%},
   ylabel={$N_\text{sub}$},
-  ymin=10, ymax=10000,
+  ymin=30, ymax=10000,
   ytick={10,100,1000,10000},
   zlabel={$V [\unit{cm^3}]$},
   zmin=0, zmax=500,
@@ -33,8 +33,8 @@
     domain=1.4:3.9,
     domain y=1.55:3.7,
     restrict z to domain=-10000:500
-] (10^x, 10^y, {1.225e-06*10^x*10^x -7.257e-06*10^y*10^y +4.491e-05*10^x*10^y
--1.353e-02*10^x +8.577e-02*10^y +3.272e+01});
+] (10^x, 10^y, {9.002e-08*10^x*10^x -1.022e-05*10^y*10^y -1.770e-06*10^x*10^y
+-2.644e-03*10^x +1.011e-01*10^y +2.881e+01});
 \addplot3+ [
         only marks,
         draw=black, fill=black, line width=1pt,

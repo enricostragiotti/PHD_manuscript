@@ -16,11 +16,11 @@
   xmode=log,
   ymode=log,
   xlabel={ $\bar{n}$},
-  xmin=10, xmax=10000,
+  xmin=20, xmax=10000,
   xtick={10,100,1000,10000},
   % xticklabels={0\%,10\%,20\%,30\%,40\%,50\%},
   ylabel={$N_\text{sub}$},
-  ymin=10, ymax=10000,
+  ymin=15, ymax=10000,
   ytick={10,100,1000,10000},
   zlabel={$t [\unit{s}]$},
   zmin=0, zmax=2e5,
@@ -32,9 +32,9 @@
     samples=40,
     domain=1.4:3.9,
     domain y=1.55:3.7,
-    restrict z to domain=-10000:2e5
-] (10^x, 10^y, {4.024e-04*10^x*10^x-3.403e-03*10^y*10^y+2.456e-01*10^x*10^y
--9.847e+00*10^x+1.069e+01*10^y-4.977e+03});
+    restrict z to domain=-1000000:2e5
+] (10^x, 10^y, {1.547e-03*10^x*10^x-2.871e-04*10^y*10^y+2.896e-01*10^x*10^y
+-2.084e+01*10^x-5.543e+00*10^y});
 \addplot3+ [
         only marks,
         draw=black, fill=black, line width=1pt,

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.8.29)  1 NOV 2023 13:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.8.29)  7 NOV 2023 17:42
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -593,26 +593,26 @@ Package pgfplots notification 'compat/show suggested version=true': document has
 
 Package pgfplots info on input line 34: Using 'lua backend=false' for axis: xmode=log unsupported (yet).
 Package pgfplots info on input line 34: Using 'lua backend=false' for axis: ymode=log unsupported (yet).
-LaTeX Font Info:    Trying to load font information for U+msa on input line 3076.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 3463.
 (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 3076.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 3463.
  (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
 {D:/estragio/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] (doe_vol_cont.aux) ) 
 Here is how much of TeX's memory you used:
- 32544 strings out of 476331
- 861193 string characters out of 5797589
- 1879660 words of memory out of 5000000
- 52437 multiletter control sequences out of 15000+600000
+ 32550 strings out of 476331
+ 861369 string characters out of 5797589
+ 1881660 words of memory out of 5000000
+ 52443 multiletter control sequences out of 15000+600000
  524157 words of font info for 76 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  122i,12n,121p,826b,2101s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb>
-Output written on doe_vol_cont.pdf (1 page, 70581 bytes).
+Output written on doe_vol_cont.pdf (1 page, 72279 bytes).
 PDF statistics:
  34 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
