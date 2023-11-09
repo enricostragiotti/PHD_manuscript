@@ -1,6 +1,6 @@
-PWD d:\estragio\PhD\99_Github\PHD_manuscript\figures\04_TTO_improvements\00_supported_3D_mech
+PWD d:\estragio\PhD\99_Github\PHD_manuscript\figures\04_TTO_improvements\17_supported_3D_mech
 INPUT D:\estragio\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT d:\estragio\PhD\99_Github\PHD_manuscript\figures\04_TTO_improvements\00_supported_3D_mech\support_mech.tex
+INPUT d:\estragio\PhD\99_Github\PHD_manuscript\figures\04_TTO_improvements\17_supported_3D_mech\support_mech.tex
 OUTPUT support_mech.log
 INPUT C:\Program Files\MiKTeX\tex\latex\standalone\standalone.cls
 INPUT C:\Program Files\MiKTeX\tex\latex\standalone\standalone.cls

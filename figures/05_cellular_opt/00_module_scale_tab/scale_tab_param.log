@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.8.29)  2 NOV 2023 16:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.8.29)  9 NOV 2023 19:05
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**d:/estragio/PhD/99_Github/PHD_manuscript/figures/05_cellular_opt/00_module_scale_tab/scale_tab.tex
-(d:/estragio/PhD/99_Github/PHD_manuscript/figures/05_cellular_opt/00_module_scale_tab/scale_tab.tex
+**d:/estragio/PhD/99_Github/PHD_manuscript/figures/05_cellular_opt/00_module_scale_tab/scale_tab_param.tex
+(d:/estragio/PhD/99_Github/PHD_manuscript/figures/05_cellular_opt/00_module_scale_tab/scale_tab_param.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-03-30> (C:\Program Files\MiKTeX\tex/latex/standalone\standalone.cls
 Document Class: standalone 2022/10/10 v1.3b Class to compile TeX sub-files standalone
@@ -549,8 +549,8 @@ File: pgflibraryarrows.meta.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgf@layerboxsaved@background=\box100
 )
 Package translations Info: No language package found. I am going to use `english' as default language. on input line 8.
- (scale_tab.aux)
-\openout1 = `scale_tab.aux'.
+ (scale_tab_param.aux)
+\openout1 = `scale_tab_param.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
 LaTeX Font Info:    ... okay on input line 8.
@@ -591,29 +591,28 @@ Package translations Info: loading dictionary `translations-basic-dictionary' fo
 
 Package pgfplots notification 'compat/show suggested version=true': document has been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
 
-Package pgfplots info on input line 32: Using 'lua backend=false' for axis: xmode=log unsupported (yet).
-LaTeX Font Info:    Trying to load font information for U+msa on input line 51.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 43.
 (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 51.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 43.
  (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-{D:/estragio/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] (scale_tab.aux) ) 
+{D:/estragio/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] (scale_tab_param.aux) ) 
 Here is how much of TeX's memory you used:
- 32547 strings out of 476331
- 861365 string characters out of 5797589
- 1863660 words of memory out of 5000000
- 52443 multiletter control sequences out of 15000+600000
- 521692 words of font info for 67 fonts, out of 8000000 for 9000
+ 32503 strings out of 476331
+ 860923 string characters out of 5797589
+ 1864660 words of memory out of 5000000
+ 52412 multiletter control sequences out of 15000+600000
+ 516743 words of font info for 49 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 122i,20n,121p,832b,2376s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb>
-Output written on scale_tab.pdf (1 page, 50410 bytes).
+ 122i,12n,121p,838b,2477s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb>
+Output written on scale_tab_param.pdf (1 page, 30327 bytes).
 PDF statistics:
- 34 PDF objects out of 1000 (max. 8388607)
+ 24 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

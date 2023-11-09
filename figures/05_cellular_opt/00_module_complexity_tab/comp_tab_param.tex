@@ -1,0 +1,76 @@
+\documentclass[10pt, varwidth=20cm]{standalone}
+
+\input{../../img_header}
+
+\pgfdeclarelayer{background}
+\pgfsetlayers{background,main}
+
+\begin{document}
+
+\begin{tikzpicture}    
+  \begin{axis}[
+  curves_left,
+  width = 3cm,
+  height = 3cm,
+  y axis line style={accent_b_1},
+    every y tick label/.append style ={accent_b_1},
+    every y tick/.append style={color=accent_b_1},
+  % y axis line style={accent_b_1},
+  % every y tick label/.append style ={accent_b_1},
+  % every y tick/.append style={color=accent_b_1},
+  % legend columns=-1,
+  % legend style={
+  %               at={(0.5,1.05)},
+  %               anchor=south,
+  %               column sep=0.15cm,
+  %           },
+  xlabel={$\bar{n}$},
+  xmin=0, xmax=8030,
+  xtick={0,4000,8000},
+  ylabel={\color{accent_b_1}$\varphi$},
+  ymin=10, ymax=25,
+  % xmode=log,
+  ytick={10,15,20,25},
+  yticklabels={\qty{10}{\percent},\qty{15}{\percent},\qty{20}{\percent},\qty{25}{\percent}},
+  ]
+    \addplot [scatter_plot_lin, accent_b_1]
+    table {%
+    28  14.81
+    351 20.51
+    2016 12.12
+    7750 20.20
+    };
+\end{axis}
+
+  \begin{axis}[
+    curves_right,
+    width = 3cm,
+    height = 3cm,
+    y axis line style={accent_r_1},
+    every y tick label/.append style ={accent_r_1},
+    every y tick/.append style={color=accent_r_1},
+    % ymin=0, ymax=8030,
+    % ytick={0,2000,4000,6000,8000},
+    yticklabel style={anchor=west},
+    % symbolic x coords={A,B,C,D},
+    xlabel={$\bar{n}$},
+    xmin=0, xmax=8030,
+    xtick={0,4000,8000},
+    ylabel={\color{accent_r_1}$\psi$},
+    ymin=0.2, ymax=0.6,
+    % yticklabels={0,$2 \unit{m}$,$4 \unit{m}$,$6 \unit{m}$},
+    ytick={0.2,0.4,0.6},
+    ]
+    \addplot [scatter_plot_lin, accent_r_1]
+    table {%
+    28  0.446
+    351 0.327
+    2016 0.414
+    7750 0.419
+    };
+
+  \end{axis}
+
+\end{tikzpicture}
+
+\end{document}

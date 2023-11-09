@@ -22,30 +22,33 @@
                 column sep=0.15cm,
             },
   xlabel={$N_\text{sub}$},
-  xmin=20, xmax=5100,
-  % xtick={0,10,20,30,40,50},
+  xmin=0, xmax=5030,
+  xtick={0,2500,5000},
   % xticklabels={0\%,10\%,20\%,30\%,40\%,50\%},
-  ylabel={$V [\unit{cm^3}]$},
-  ymin=0, ymax=301,
-  xmode=log,
-  % ytick={0,10,20,30,40,50,60},
+  ylabel={$t [\text{m}]$},
+  ymin=1, ymax=2100,
+  % clip=true,
+  ymode=log,
+  ytick={1,10,100,1000,10000},
   ]
 
-  \addplot [scatter_plot_smooth, accent_b_1]
+  \addplot [scatter_plot_lin, accent_b_1]
     table {%
-    36 27.074
-    288 70.559
-    972 104.891
-    4500 277.238
+    36 1
+    288 2
+    972 6
+    4500 77
     };
     \addlegendentry{2x2x2}
-    \addplot [scatter_plot_smooth, accent_r_1]
+    \addplot [scatter_plot_lin, accent_r_1]
     table {%
-    36 24.323
-    288 65.723
-    972 117.904
+    36 6
+    288 43
+    972 1637
     };
     \addlegendentry{3x3x3}
+    \addplot[mark=none, black, thick, dotted, domain=0:5000]{1};
+    \node[] at (axis cs: 3800,1.6) {\footnotesize monolithic};
 
   
 \end{axis}

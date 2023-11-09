@@ -1,7 +1,7 @@
 PWD d:\estragio\PhD\99_Github\PHD_manuscript\figures\05_cellular_opt\00_module_scale_tab
 INPUT D:\estragio\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT d:\estragio\PhD\99_Github\PHD_manuscript\figures\05_cellular_opt\00_module_scale_tab\scale_tab.tex
-OUTPUT scale_tab.log
+INPUT d:\estragio\PhD\99_Github\PHD_manuscript\figures\05_cellular_opt\00_module_scale_tab\scale_tab_v.tex
+OUTPUT scale_tab_v.log
 INPUT C:\Program Files\MiKTeX\tex\latex\standalone\standalone.cls
 INPUT C:\Program Files\MiKTeX\tex\latex\standalone\standalone.cls
 INPUT C:\Program Files\MiKTeX\tex\latex\standalone\standalone.cls
@@ -784,10 +784,10 @@ INPUT C:\Program Files\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzl
 INPUT C:\Program Files\MiKTeX\tex\generic\pgf\libraries\pgflibraryarrows.meta.code.tex
 INPUT C:\Program Files\MiKTeX\tex\generic\pgf\libraries\pgflibraryarrows.meta.code.tex
 INPUT C:\Program Files\MiKTeX\tex\generic\pgf\libraries\pgflibraryarrows.meta.code.tex
-INPUT .\scale_tab.aux
-INPUT scale_tab.aux
-INPUT scale_tab.aux
-OUTPUT scale_tab.aux
+INPUT .\scale_tab_v.aux
+INPUT scale_tab_v.aux
+INPUT scale_tab_v.aux
+OUTPUT scale_tab_v.aux
 INPUT C:\Program Files\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Program Files\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Program Files\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
@@ -855,15 +855,13 @@ INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam7.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
-OUTPUT scale_tab.pdf
+OUTPUT scale_tab_v.pdf
 INPUT D:\estragio\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
-INPUT scale_tab.aux
+INPUT scale_tab_v.aux
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi10.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi10.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmr10.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmr10.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmr6.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmr6.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmr7.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmr7.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmr8.pfb

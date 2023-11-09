@@ -11,37 +11,37 @@
 
     \node[] (A) at (0cm,0){};
 
-    \node[left=.5cm, label={[label distance=1.5cm,color=black]270:(a)}] (figA) at (A){
-        \includegraphics[width=7cm]{04_U-STRESS_NLP_LC001_iso.png}
+    \node[left=.5cm, label={[label distance=.5cm,color=black]270:(a)}] (figA) at (A){
+        \includegraphics[width=7cm]{04_STRESS_NLP_LC001_iso-min.png}
     };
-    \node[right=.5cm, label={[label distance=1.5cm,color=black]270:(b)}] (figB) at (A){
-        \includegraphics[width=7cm]{04_U-BUCK_NLP_LC001_iso.png}
+    \node[right=.5cm, label={[label distance=.5cm,color=black]270:(b)}] (figB) at (A){
+        \includegraphics[width=7cm]{04_BUCK_NLP_LC001_iso-min.png}
     };
 
-    % \node[label={[label distance=1.9cm,color=black]270:(b)}] (B) at (0,-7cm){};
 
-    % \node[left=.5cm] (figC) at (B){
-    %     \includegraphics[width=7cm]{s2-min.png}
-    % };
-    % \node[right=.5cm] (figD) at (B){
-    %     \includegraphics[width=7cm]{b2-min.png}
-    % };
+    \begin{scope}[coords]
+        \dscaling{3}{0.65};
+        \daxis{1}{2,-1.5,-0.5
+        }[right][above][right];
+    \end{scope}
 
-    % \node[label={[label distance=1.5cm,color=black]270:(c)}] (C) at (0,-8.9cm){};
+    \begin{scope}[coords]
+        \dscaling{3}{0.65};
+        \daxis{1}{-5,-3.2,-0.95
+        }[right][above][right];
+    \end{scope}
 
-    % \node[left=.5cm] (figE) at (C){
-    %     \includegraphics[width=7cm]{s3-min.png}
-    % };
-    % \node[right=.5cm] (figF) at (C){
-    %     \includegraphics[width=7cm]{b3-min.png}
-    % };
+    \node[] (B) at (0cm,-6cm){};
 
-    % \node[inner sep=0pt, label={[label distance=3mm,color=black]270:(a)}] (figA) at (2cm,0cm) {\includegraphics[width=3.5cm]{s1.pdf}};
-    % \node[inner sep=0pt, label={[label distance=3mm,color=black]270:(b)}] (figB) at (6.334cm,0cm) {\includegraphics[width=3.5cm]{s2.pdf}};
-    % \node[inner sep=0pt, label={[label distance=3mm,color=black]270:(c)}] (figC) at (10.667cm,0cm) {\includegraphics[width=3.5cm]{b1.pdf}};
-    % \node[inner sep=0pt, label={[label distance=3mm,color=black]270:(d)}] (figD) at (15cm,0cm) {\includegraphics[width=3.5cm]{b2.pdf}};
+    \node[left=.5cm, label={[label distance=1.5cm,color=black]270:(c)}] (figC) at (B){
+        \includegraphics[width=7cm]{04_STRESS_NLP_LC001_iso.png}
+    };
+    \node[right=.5cm, label={[label distance=1.5cm,color=black]270:(d)}] (figD) at (B){
+        \includegraphics[width=7cm]{04_BUCK_NLP_LC001_iso.png}
+    };
 
-    \node[below=.2cm of figA] (colormapA){\pgfplotscolorbardrawstandalone[ 
+
+    \node[below=.2cm of figC] (colormapA){\pgfplotscolorbardrawstandalone[ 
         colormap name={coolwarm},
         colorbar horizontal,
         point meta min=0,
@@ -54,7 +54,7 @@
         
     };
 
-    \node[below=.2cm of figB] (colormapB){\pgfplotscolorbardrawstandalone[ 
+    \node[below=.2cm of figD] (colormapB){\pgfplotscolorbardrawstandalone[ 
         colormap={buckling}{
         indices of colormap={
             \pgfplotscolormaplastindexof{coolwarm_b},...,0 of coolwarm_b}
@@ -72,13 +72,13 @@
 
     \begin{scope}[coords]
         \dscaling{3}{0.65};
-        \daxis{1}{2,-1.5,-0.8
+        \daxis{1}{2,-1.5,-6-0.5-0.5
         }[right][above][right];
     \end{scope}
 
     \begin{scope}[coords]
         \dscaling{3}{0.65};
-        \daxis{1}{-5,-3.2,-1.25
+        \daxis{1}{-5,-3.2,-6-0.95-0.5
         }[right][above][right];
     \end{scope}
     

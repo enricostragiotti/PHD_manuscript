@@ -34,7 +34,7 @@ The topology of the entire structure $\vect{a}$, which originates from the submo
 \end{equation}
 and is evaluated using:
 \begin{equation}
-    \vect{a} = \sum_{t=1}^{N_T} \vect{G}_t\otimes\bar{\vect{a}}_t = \sum_{t=1}^{N_T} \begin{bmatrix}
+    \vect{a} = \sum_{t=1}^{N_T} \vect{h}_t\otimes\bar{\vect{a}}_t = \sum_{t=1}^{N_T} \begin{bmatrix}
         h_{1,t} \: \bar{\vect{a}}_t \\
         \vdots\\
         h_{N_{\text{sub}},t} \: \bar{\vect{a}}_t 
@@ -59,7 +59,7 @@ where the $\otimes$ operator represents the Kronecher product and $\vect{h}_{t}$
 \end{equation}
 as the lower submodules (numbered from 0 to 3) exhibit the topology of module $t=0$, while the upper submodules (numbered 4 to 7) the topology of module $t=1$.}
 \begin{equation}
-    G_{j,t} =
+    h_{j,t} =
     \begin{cases}
       1 & \text{if the $j$-th subdomain presents the topology of the $t$-th module,} \\
       0 & \text{otherwise.} 
@@ -84,12 +84,13 @@ Monolitic fomulation \ref{eq:04_optim_complete} is modified using \eqsref{eq:05_
     && \vect{q} &\geq -\frac{s\vect{a}^2}{\vect{\ell}^{*2}} &&  \\
     && -\sigma_c\vect{a} &\leq \vect{q} \leq \sigma_t\vect{a} &&  \\
     && \bar{\vect{a}}_{t,r}&\geq \bar{a}_{t,r=1} && r \in \mathcal{C}_{l,r}(\bar{\vect{a}}_t),\, \forall t \\
-    && \bar{\vect{a}} &\geq 0. \\
+    && 0 &\leq \bar{\vect{a}} \leq \frac{4 \pi \bar{\vect{\ell}}^2}{\lambda_{\text{max}}}, \\
     \end{aligned}
     \tag{${\mathbb{M}}_\text{1}$}
     \label{eq:05_optim_complete_modular}
 \end{equation}
-
+where $\bar{\vect{\ell}}$ represent the vector of the module's bar length.
+ 
 The total number of constraints of the formulation is $N_T\bar{n} +N_{\text{sub}}\bar{n}+2M$ or $N_T\bar{n} +N_{\text{sub}}\bar{n}+3M$ in function of the test case is two or three dimensional. The number of constraints is, however, equal to the monolitich optimization, as stress, buckling and compatibility are all local grandeurs and are then referenced to the whole structure and not only the modules.
 
 The formulation is solved appling the two step optimization algorithm with the use of the reinitialization heuristic to reduce the dependece to the starting point proposed in \secref{sec:04_2step_opt}. for that reason we state the relaxed formulation m2 that is solved instead of m1 to 
@@ -102,7 +103,7 @@ The formulation is solved appling the two step optimization algorithm with the u
     && \vect{q} &\geq -\frac{s\vect{a}^2}{\vect{\ell}^{*2}} &&  \\
     && -\sigma_c\vect{a} &\leq \vect{q} \leq \sigma_t\vect{a} &&  \\
     && \bar{\vect{a}}_{t,r}&\geq \bar{a}_{t,r=1} && r \in \mathcal{C}_{l,r}(\bar{\vect{a}}_t),\, \forall t \\
-    && \bar{\vect{a}} &\geq 0. \\
+    && 0 &\leq \bar{\vect{a}} \leq \frac{4 \pi \bar{\vect{\ell}}^2}{\lambda_{\text{max}}}. \\
     \end{aligned}
     \tag{${\mathbb{M}}_\text{2}$}
     \label{eq:05_optim_no_constr_modular}
@@ -146,7 +147,12 @@ where $(\cdot)$ is a function
 
 
 \section{Numerical application}
-\todo{find some litterature case that we can use to compare at least visually, maybe the sandwich structure that joseph suggested me}
+In this section we formulate multiple test cases used to expmpre the limits and the carachteristics of modular structures and the proposed modular structure optimization formulation \eqrefnotext{eq:05_optim_complete_modular}.
+
+The test cases are optimized using the two-step resolution strategy proposed in \secref{sec:04_2step_opt} implemented with five calls of reinitialization (2S-5R) with $k_{\text{max}}=5$. The reinitialization magnitude parameter $\vect{\phi}$ is set up using the same parameters listed in \tabref{tab:04_param}, that leads to $\vect{\phi} = \left[ 0.8000, 0.6400, 0.4096, 0.1677, 0.0281 \right]$.
+
+The optimizations are performed using the Python package CVXPY 1.2.2 \sidecite{diamond_cvxpy_2016} with the ECOS 2.0.7 \sidecite{domahidi_ecos_2013} solver to solve the relaxed \gls{lp} Problem \eqrefnotext{eq:05_optim_no_constr_modular}. The \gls{nlp} Problem \eqrefnotext{eq:05_optim_complete_modular} is solved using cyipopt \sidecite{Moore_Mechmotum}, a Python wrapper for IPOPT 3.14.11 \sidecite{wachter_implementation_2006}, a large-scale nonlinear optimization package using PARDISO 6.0 \sidecite{alappat_recursive_2020} as linear solver. 
+
 \subsection{On the equivalence of multi load cases and modular structures}
 \begin{margintable}
     \small
@@ -163,13 +169,13 @@ where $(\cdot)$ is a function
     \caption{Material data used for the simply supported 3D beam optimization.}
     \label{tab:05}
 \end{margintable}
-The firs test case we optimize is a section of bridge structure made by two submodules and with symmetric Bcs as shown in fig xx a.two vertical loads are applied in the lower side of the design space as shown in fig xx. the material and geometrical data are presented in Tab xx. Tevery subdomain of the structure is discretized using a 15x15 fully connected ground structure. buckling constraints are turned off in this examle. alongside the presented test case, we optimize another similar structure, this time made by only a single submodule loaded with two different load cases p1 and p2, positioned at exactly the same distance from the support (see fig xx b)
+The firs test case we optimize is a section of bridge structure made by two submodules $n_sub=2$ and with symmetric Bcs as shown in fig xx a.two vertical loads are applied in the lower side of the design space as shown in fig xx. the material and geometrical data are presented in Tab xx. Tevery subdomain of the structure is discretized using a 15x15 fully connected ground structure. buckling constraints are turned off in this examle. alongside the presented test case, we optimize another similar structure, this time made by only a single submodule loaded with two different load cases p1 and p2, positioned at exactly the same distance from the support (see fig xx b)
 \todo{table results}
 \begin{figure}[]
     \hspace*{\fill}
-    \subcaptionbox{}{\includegraphics[height=3cm]{figures/05_cellular_opt/00_cell_multi_eq_bcs/cell_bcs.pdf}}
+    \subcaptionbox{}{\includegraphics[height=4.15cm]{figures/05_cellular_opt/00_cell_multi_eq_bcs/cell_bcs.pdf}}
     \hfill
-    \subcaptionbox{}{\includegraphics[height=3cm]{figures/05_cellular_opt/00_cell_multi_eq_bcs/multiload_bcs.pdf}}
+    \subcaptionbox{}{\includegraphics[height=4.15cm]{figures/05_cellular_opt/00_cell_multi_eq_bcs/multiload_bcs.pdf}}
     \hspace*{\fill}
     \caption{}
     \label{fig:05_cell_multi_eq_bcs}
@@ -179,15 +185,12 @@ The firs test case we optimize is a section of bridge structure made by two subm
 \begin{table}
     \centering
     \small
-    \begin{tabular}{lx{1.4cm}x{1.4cm}}
+    \begin{tabular}{lcc}
         \toprule
-        \multirow{2}{*}{\textbf{Quantity}}         &\multicolumn{2}{l}{6x2x3} \\ 
-             \cmidrule(lr){2-3}  
-     &Octet& 3x3x3\\
-    $N_\text{sub}$       &36& 36   \\
-    $N_\text{opt}\;(N_\text{el})$ &1008& 468 (12636) \\
-    V &  &   \\
-    $V^*$ &  &   \\\bottomrule
+        \textbf{Quantity} & Multi-subdomain & Multi-loads \\ \midrule
+    $N_\text{sub}$       &1& 2   \\
+    $N_\text{opt}\;(N_\text{el})$ & 31 (25200)& 62 (50400) \\
+    $V$ & 91.346 & 182.692  \\ \bottomrule
     \end{tabular}
     \caption{}
     \label{tab:05_}
@@ -197,16 +200,23 @@ we optimized the two load cases using p = 0.05 for the first case and p = 0.1 fo
 
 \begin{figure}[]
     \hspace*{\fill}
-    \subcaptionbox{}{\includegraphics[height=3cm]{figures/05_cellular_opt/00_cell_multi_equivalence/cell.pdf}}
+    \subcaptionbox{}{\includegraphics[height=3.5cm]{figures/05_cellular_opt/00_cell_multi_equivalence/cell.pdf}}
     \hfill
-    \subcaptionbox{}{\includegraphics[height=3cm]{figures/05_cellular_opt/00_cell_multi_equivalence/multiload.pdf}}
+    \subcaptionbox{}{\includegraphics[height=3.5cm]{figures/05_cellular_opt/00_cell_multi_equivalence/multiload.pdf}}
     \hspace*{\fill}
     \caption{\todo{spiega colori as usual}}
     \label{fig:05_cell_multi_eq}
 \end{figure}
 Furthermore, this examples confirm us that when dealing with modularity constraints, we need to solve the quindi conferma del bisogno di usare l nlp con i kinematic constraints
-\subsection{Parametric study on the number, the shape, and the complexity of the module}
-IN this section we set un a parametric study on the scale and on th ecomplexity of the module used for optimizing the 3d supported truss already treated in monolithic in section xx. in this study we limit to one single module and we do not study yet the effect that it has to have multiple module topologies on the optimized structure. we do a recap of the loading case and the geometric and material properties in table and in figure xx.
+
+\subsection{Parametric study on the number of subdomains and the complexity of the module}
+
+\begin{marginfigure}
+    \centering
+    \includegraphics[width=\linewidth]{figures/05_cellular_opt/00_supported_bc/supported_3D_symm.pdf}
+    \caption{In gray the symmetry planes.}
+    \label{fig:05_symm_support_bc}
+\end{marginfigure}
 \begin{margintable}
     \small
     \centering
@@ -223,39 +233,78 @@ IN this section we set un a parametric study on the scale and on th ecomplexity 
     \caption{Material data used for the simply supported 3D beam optimization.}
     \label{tab:05_3D_supp_mat}
 \end{margintable}
+\begin{marginfigure}
+    \centering
+    \includegraphics[width=\linewidth]{figures/04_TTO_improvements/16_supported_3D_sol/04_Topology_NLP_iso-min.png}
+    \caption{with a vol of}
+    \label{fig:05}
+\end{marginfigure}
+We conduct here a parametric study on the 3d supported truss already treated in monolithic in section xx. in this study we limit to one single module Nt=1 and we do not study yet the effect that it has to have multiple module topologies on the optimized structure. additionally we limit to cubic cell shape. we do a recap of the loading case and the geometric and material properties in table and in \figref{fig:05_symm_support_bc}.
 
-We first study the influence of the number (and consequently the scale) of the subdomains in the structure. the structure is divided in xx cubic and equals subdomqins
-Scale effect of the square RVE on the design results:
-add here the monolith
-\todo{il caso 30x mostra un lamda ridicolo, scrivilo, metti che hai messo 10}
+we propose here two new metrics used to better understand how the modular structures are loaded. The first one is called structural efficency index $\varphi$ that we will use to quickly assesshow many bars are used approaching the fully stressed state described by Michell \sidecite{michell_limits_1904}. it is defined as :
+
+\begin{equation}
+    \varphi = \frac{N_\text{opt,f}\times100}{N_\text{opt}}
+\end{equation}
+where $N_\text{opt,f}$ is the number of bars that activate either the tensile stress, the compressive stress, or the buckling constraints, defined as follows:
+\begin{equation}
+    N_\text{opt,f} = \operatorname{card}(\{i\;|\;c_\text{f,i} > 0.95\})
+\end{equation}
+where $\vect{c}_\text{f}=\max{\left(-\vect{q} /\sigma_c \vect{a},\:\vect{q} /\sigma_t \vect{a},\:\vect{q}/\vect{q}_{\text{crit}}\right)}$ represent the normalized mechanical failure criterion and $\operatorname{card}(\{\cdot\})$ represent the cardinality of the set $\{\cdot\}$.
+
+The second metric is $\psi$ and is defined as the mean value of the normalized mechanical failure criterion $\vect{c}_\text{f}$ weighted on the volumes of the individual bars:
+\begin{equation}
+    \psi = \frac{1}{V} \left( \sum_{i=0}^{N_\text{opt}} c_\text{f,i} \right)
+\end{equation}
+
+This parameter is comprised betweent 0 and 1 and the more is near one the more the bars are averagely near a the upper bound of one of the mechanical failure constrants. major importance is given to more voluminoous bars.
+
+\paragraph{Influence of the number of the subdomains}
+We first study the influence of the number (and consequently the scale, we use here the two terms indistinguibely) of the subdomains in the structure. the structure is divided in a different number of cubic and equals subdomqins, while the test case and the material will be still the same. The entire structure is divided in 6x2x3, 12x4x6,18x6x9, and 30x10x15 submodules in the X, Y, and Z axis and every subdomain is discretized by a 2x2x2 fully connected ground structure with nbar=28. The very same thest is conducted also on a 3x3x3 fully connected ground structure with nbar=351 to be sure that the trends are invariant with the cell complexity.
+
+\begin{marginfigure}
+    \centering
+    \includegraphics{figures/05_cellular_opt/00_module_scale_tab/scale_tab_v.pdf}
+    \caption{\todo{add monolitic result with a line horizontal}}
+    \label{fig:05_scale_v}
+\end{marginfigure}
+
+\begin{marginfigure}
+    \centering
+    \includegraphics{figures/05_cellular_opt/00_module_scale_tab/scale_tab_t.pdf}
+    \caption{\todo{timel}}
+    \label{fig:05_scale_t}
+\end{marginfigure}
+
+The parametric results on the influence of the number of subdomains in the structure are resumed in \tabref{tab:05_scale_results}. in there we present the numeric results toghether with a graphical representation of the module of the optimized structures for the differnet size of the repeating module. The firs important finding is that the optimized volume is very influenced by the module scale. We observe that in \figref{fig:05_scale_v}, where the volume following almost a linear relationship with respect of the number of submodules. This relationship hold even when considering 3x3x3 modules. Concerning the comutanional time, we notice that we have a similar relationship. Even if the number of variable of design remains the same, This incease is due to the increasing number of constraints (we remember that in modular optimization the mechanical constraints are evalued for every member of the structure and not of the module). Another interesting findings is that the number of active bars in the optimized module is almost not dependent of the scale of the module.
+
+A graphical representation of the 3D structures can be observed in \figref{fig:05_scale_results}, where the isometric view, togheter with the view on the XZ planes are plotted for the case with the module with the 2x2x2 ground structure. It is really interesting to see how, when the physical dimensions of the module are high, the optimizer converge naturally towards solutions that  prioritize long tnesile members and short compressive members to comply with the local buckling constraints. However, as the size of the module shrinks (look at the 30x10x15 reusults) and with him the buckling effective length of the members, the optimized design shifts to something where tensile and compressive members are both presents. This fact is in accordance to Sigmund findings \sidecite{sigmund_non-optimality_2016}.
+
 \begin{table*}
     \centering
     \small
-    \begin{tabular}{lx{1.4cm}x{1.4cm}x{1.4cm}x{1.4cm}x{1.4cm}x{1.4cm}x{1.4cm}x{1.4cm}x{1.4cm}}
+    \begin{tabular}{lx{1.4cm}x{1.4cm}x{1.4cm}x{1.4cm}x{1.45cm}x{1.4cm}x{1.4cm}x{1.4cm}x{1.4cm}}
         \toprule
         \multirow{2}{*}{\textbf{Quantity}}         & 7x3x4 &\multicolumn{4}{l}{2x2x2} & \multicolumn{3}{l}{3x3x3} \\ 
              \cmidrule(lr){2-2} \cmidrule(lr){3-6} \cmidrule(lr){7-9} 
-     &1x1x1& 6x2x3      & 12x4x6     &  18x6x9    &  30x10x15    &   6x2x3      & 12x4x6     &  18x6x9      \\
+     &1x1x1& 6x2x3      & 12x4x6     &  18x6x9    &  30x10x15\textsuperscript{\emph{a}}   &   6x2x3      & 12x4x6     &  18x6x9      \\
      & -- & \includegraphics[width=1.3cm]{figures/05_cellular_opt/00_module_scale_cell/6x2x3_2x2x2_c.png}    &\includegraphics[width=1.3cm]{figures/05_cellular_opt/00_module_scale_cell/12x4x6_2x2x2_c.png}&\includegraphics[width=1.3cm]{figures/05_cellular_opt/00_module_scale_cell/18x6x9-2x2x2_c.png}&\includegraphics[width=1.3cm]{figures/05_cellular_opt/00_module_scale_cell/30x10x15-2x2x2_c.png}&\includegraphics[width=1.3cm]{figures/05_cellular_opt/00_module_scale_cell/6x2x3_3x3x3_c.png}&\includegraphics[width=1.3cm]{figures/05_cellular_opt/00_module_scale_cell/12x4x6_3x3x3_c.png}&\includegraphics[width=1.3cm]{figures/05_cellular_opt/00_module_scale_cell/18x6x9-3x3x3_c.png}        \\
     $\bar{n}_\text{opt}\;(\bar{n})$ &1984&9 (28)&9 (28) &8 (28)&8 (28)&19 (351)&15 (351)& 16 (351)\\
     $N_\text{sub}$         &1&36&288&972&4500&36&288&972  \\
     $N_\text{opt}\;(N_\text{el})$ &20 (1984)&324 (1008)&2592 (8064)&7776 (27216)&36000 (126000)&468 (12636)&4320 (101088)&  15552 (341172)       \\
-    V [\unit{cm^3}]&9.907&27.074&70.559&104.891&277.238&24.323&65.723&117.904         \\
-    V [\unit{\percent}] &1.761&4.812&12.544&18.648&49.288&4.324&11.684&20.960         \\
+    $V$ [\unit{cm^3}]&9.907&27.074&70.559&104.891&277.238&24.323&65.723&117.904         \\
+    $V$ [\unit{\percent}] &1.761&4.812&12.544&18.648&49.288&4.324&11.684&20.960         \\
     C [\unit{J}]    &3.71&4.22&3.35&3.19&1.12&3.63&1.84&2.02\\
     $a_\text{max}$ [\unit{mm^2}]   &37.61&9.40&5.45&5.45&3.55&5.33&2.60&3.14         \\
+    $\varphi$   &\qty{100.00}{\percent}&\qty{14.81}{\percent}&\qty{1.85}{\percent}&\qty{0.67}{\percent}&\qty{0.12}{\percent}&\qty{20.51}{\percent}&\qty{1.46}{\percent}&\qty{0.62}{\percent}         \\
+    $\psi$   &1.000&0.446&0.178&0.105&0.030&0.327&0.127&0.096\\
     t     &\hms{0;0;4}&\hms{0;0;6}&\hms{0;0;48}&\hms{0;5;6}&\hms{1;17;00}&\hms{0;5;42}&\hms{0;42;50}& \hms{27;17;00} \\ \bottomrule
     \end{tabular}
+    \\
+    \scriptsize{\textsuperscript{\emph{a}}In this test case the minimum slenderness limit is relaxed to $\lambda_\text{max}=10$ instead of 15.}
     \caption{}
-    \label{tab:05_}
+    \label{tab:05_scale_results}
     \end{table*}
-
-    \begin{marginfigure}
-        \centering
-        \includegraphics{figures/05_cellular_opt/00_module_scale_tab/scale_tab.pdf}
-        \caption{}
-        \label{fig:05}
-    \end{marginfigure}
 
     \begin{figure*}
         \hspace*{\fill}
@@ -277,24 +326,56 @@ add here the monolith
         \hfill
         \subcaptionbox{}{\includegraphics[width=0.23\linewidth]{figures/05_cellular_opt/00_module_scale/30x10x15_2x2x2_XZ.png}}
         \hspace*{\fill}
-        \caption{(a-d) (e-h) \todo{add 30}}
-        \label{fig:05}
+        \caption{(a-d) (e-h)}
+        \label{fig:05_scale_results}
     \end{figure*}
 
-    \todo{in the last one the buckling leght is so small that stress equals compressive and tensile failure}
-
-    the iniffency cqn be observed for exqmle hqving q look qt figure xx where the stress and buckling constraints activate onlky on one submodules but force the whole structure to show it quqnd meme
-
+    
+    willing to undertand why the volume is so influenced by the number of submodules, we plot the allure of the parameters $\varphi$ et $\psi$ in \figref{fig:05_scale_param}. As we can see every bar of the monolitic structure activates either the buckling or the stress constraint $\varphi=\qty{100}{\percent}$ and $\psi=1$, while this is  not true for any of the modular structures. 12x4x6-3x3x3 case with many bars that stays grays.
+    \begin{marginfigure}
+        \centering
+        \includegraphics[width=\linewidth]{figures/05_cellular_opt/00_module_scale_tab/scale_tab_param.pdf}
+        \caption{\todo{timel}}
+        \label{fig:05_scale_param}
+    \end{marginfigure}
+    
+    This can be observed more clearly in \figref{fig:05_scale_failure}, where the stress and buckling constraints applied to the optimized structures of the monolitic and the 12x4x6-3x3x3 case. In this image we can see that in the 12x4x6-3x3x3 case many bars stays grays. This effect cqn be explained having a look figure xx where the stress and buckling constraints activate onlky on one submodules but force the whole structure to show it quqnd meme. the modular structure is for that reason very redundant and fail safe, but pays this in terms of total volume.
+    
     \begin{figure}
         \centering
         \includegraphics[width=\linewidth]{figures/05_cellular_opt/00_module_scale_failure/12x4x6_mech.pdf}
-        \caption{\todo{metti undeformed}}
-        \label{fig:05}
+        \caption{\todo{metti undeformed e compara con no cell}}
+        \label{fig:05_scale_failure}
     \end{figure}
 
-Effects of the aspect ratio of the RVE on the design results
+\paragraph{Influence of the complexity of the module}
+We are now shifting our focus to another parameter of modular structures: the module complexiti, ovvero the number of candidates memeber inside a module. To understand how this parameter influence the optimized structure we set up an analysis similar to the one precedently done for the module scale. Using always the same test case, we divide the structure in 6x2x3 submodules in the X, Y, and Z axis respectively, and we discretize every module using a 2x2x2, a 3x3x3, a 4x4x4,and a 5x5x5 fully connected ground structure (nbar= nbar=). The very same thest is conducted again on a 12x4x6 structure to validate the test on a different modular structure.
 
-Effects of the complexity of the 
+\begin{table*}
+    \centering
+    \small
+    \begin{tabular}{lx{1.4cm}x{1.4cm}x{1.4cm}x{1.4cm}x{1.4cm}x{1.4cm}x{1.4cm}x{1.4cm}}
+        \toprule
+        \multirow{2}{*}{\textbf{Quantity}} & \multicolumn{4}{l}{6x2x3} & \multicolumn{3}{l}{12x4x6} \\ \cmidrule(lr){2-5} \cmidrule(lr){6-8} 
+     & 2x2x2      & 3x3x3     &  4x4x4    &  5x5x5    &   2x2x2      & 3x3x3        & 4x4x4      \\
+     &  \includegraphics[width=1.3cm]{figures/05_cellular_opt/00_module_complexity_cell/6x2x3_2x2x2_c.png}    &  \includegraphics[width=1.3cm]{figures/05_cellular_opt/00_module_complexity_cell/6x2x3_3x3x3_c.png}    & \includegraphics[width=1.3cm]{figures/05_cellular_opt/00_module_complexity_cell/6x2x3_4x4x4_c.png}     & \includegraphics[width=1.3cm]{figures/05_cellular_opt/00_module_complexity_cell/6x2x3_5x5x5_c.png}     & \includegraphics[width=1.3cm]{figures/05_cellular_opt/00_module_complexity_cell/12x4x6_2x2x2_c.png}        & \includegraphics[width=1.3cm]{figures/05_cellular_opt/00_module_complexity_cell/12x4x6_3x3x3_c.png}   &  \includegraphics[width=1.3cm]{figures/05_cellular_opt/00_module_complexity_cell/12x4x6_4x4x4_c.png}      \\
+    $\bar{n}_\text{opt}\;(\bar{n})$ &  9 (28) &   19 (351)   &  88  (2016)   &  88 (7750)    &   9 (28)   &    15 (351)        &   22   (2016)  \\
+    $N_\text{sub}$           &    36  &   36   &   36   &   36   &    288     &   288      &    288    \\
+    $N_\text{opt}\;(N_\text{el})$  &  324 (1008) &  468 (12636)   & 792  (72576)   & 792 (279000)     & 2592 (8064)     &   4320   (101088)       &  6336 (580608)     \\
+    $V$ [\unit{cm^3}] & 27.074 & 24.323     & 17.098     & 17.083     &  70.559    &  65.723       & 60.368       \\
+    $V$ [\unit{\percent}] &4.812&4.324&3.040&3.036&12.544&11.684&10.732        \\
+    C [\unit{J}]      & 4.22     &   3.63   & 4.49     & 3.91     &   3.35      &  1.84       & 2.43       \\
+    $a_\text{max}$ [\unit{mm^2}]      & 9.40     &   5.33   &   3.39   &  3.77    &  5.45       &   2.60      &   2.97    \\
+    $\varphi$   &\qty{14.81}{\percent}&\qty{20.51}{\percent}&\qty{12.12}{\percent}&\qty{20.20}{\percent}&\qty{1.85}{\percent}&\qty{1.46}{\percent}&\qty{1.32}{\percent}         \\
+    $\psi$& 0.446    &   0.327   & 0.414     & 0.419     &   0.178      &  0.127       & 0.136       \\
+    t        & \hms{0;0;6}  &  \hms{0;5;42} & \hms{0;14;20} & \hms{3;17;00} & \hms{0;0;48} & \hms{0;42;50} &  \hms{32;4;00}      \\ \bottomrule
+    \end{tabular}
+    \caption{}
+    \label{tab:05_comp_results}
+    \end{table*}
+
+The results of the parametric study are presented in a tabular way in \tabref{tab:05_comp_results}. once again we plotted the most interesting aspect in a separate plots. The first thing we look at is how the volume of the optimized structure is influenced by the module complexity. in \figref{fig:05_comp_v} we can observe tht the cell complexity has in general a beneficial effect on the volume. However the effect became less and less big the more we add complexity , and in this particular test case stagnates after 4x4x4. Concerning the comutanional time (see \figref{fig:05_comp_t}), we notice that we have a  relationship similar to the one we already observed for the subdomains scale. Even if the number of variable of design remains the same, This time the number of design variables increase with the module complexity, toghether with the increasing number of the candidates and thus the constraints. The 3d rendering of the optimized structures for the 6x2x3 case are presented in \figref{fig:05_comp_results}, in wich the reader can observe the evolution of the topology of the module toward more complex (we go from nbar active = xx to xx for the 2x2x2 and 5x5x5 case, respectively). While in the low complexity we prioritize tensile elements, in more complex we have shorter elements, less influenced by local buckling.
+
 \begin{figure*}
     \hspace*{\fill}
     \subcaptionbox{}{\includegraphics[width=0.23\linewidth]{figures/05_cellular_opt/00_module_complexity/6x2x3_2x2x2.png}}
@@ -316,51 +397,36 @@ Effects of the complexity of the
     \subcaptionbox{}{\includegraphics[width=0.23\linewidth]{figures/05_cellular_opt/00_module_complexity/6x2x3_5x5x5_XZ.png}}
     \hspace*{\fill}
     \caption{(a-d) (e-h)}
-    \label{fig:05}
+    \label{fig:05_comp_results}
 \end{figure*}
 
 \begin{marginfigure}
     \centering
-    \includegraphics{figures/05_cellular_opt/00_module_complexity_tab/comp_tab.pdf}
-    \caption{}
-    \label{fig:05}
+    \includegraphics{figures/05_cellular_opt/00_module_complexity_tab/comp_tab_v.pdf}
+    \caption{\todo{add monolitic result with a line horizontal}}
+    \label{fig:05_comp_v}
 \end{marginfigure}
 
-\begin{table*}
+\begin{marginfigure}
     \centering
-    \small
-    \begin{tabular}{lx{1.4cm}x{1.4cm}x{1.4cm}x{1.4cm}x{1.4cm}x{1.4cm}x{1.4cm}x{1.4cm}}
-        \toprule
-        \multirow{2}{*}{\textbf{Quantity}} & \multicolumn{4}{l}{6x2x3} & \multicolumn{3}{l}{12x4x6} \\ \cmidrule(lr){2-5} \cmidrule(lr){6-8} 
-     & 2x2x2      & 3x3x3     &  4x4x4    &  5x5x5    &   2x2x2      & 3x3x3        & 4x4x4      \\
-     &  \includegraphics[width=1.3cm]{figures/05_cellular_opt/00_module_complexity_cell/6x2x3_2x2x2_c.png}    &  \includegraphics[width=1.3cm]{figures/05_cellular_opt/00_module_complexity_cell/6x2x3_3x3x3_c.png}    & \includegraphics[width=1.3cm]{figures/05_cellular_opt/00_module_complexity_cell/6x2x3_4x4x4_c.png}     & \includegraphics[width=1.3cm]{figures/05_cellular_opt/00_module_complexity_cell/6x2x3_5x5x5_c.png}     & \includegraphics[width=1.3cm]{figures/05_cellular_opt/00_module_complexity_cell/12x4x6_2x2x2_c.png}        & \includegraphics[width=1.3cm]{figures/05_cellular_opt/00_module_complexity_cell/12x4x6_3x3x3_c.png}   &  \includegraphics[width=1.3cm]{figures/05_cellular_opt/00_module_complexity_cell/12x4x6_4x4x4_c.png}      \\
-    $\bar{n}_\text{opt}\;(\bar{n})$ &  9 (28) &   19 (351)   &  88  (2016)   &  88 (7750)    &   9 (28)   &    15 (351)        &   22   (2016)  \\
-    $N_\text{sub}$           &    36  &   36   &   36   &   36   &    288     &   288      &    288    \\
-    $N_\text{opt}\;(N_\text{el})$  &  324 (1008) &  468 (12636)   & 792  (72576)   & 792 (279000)     & 2592 (8064)     &   4320   (101088)       &  6336 (580608)     \\
-    V [\unit{cm^3}] & 27.074 & 24.323     & 17.098     & 17.083     &  70.559    &  65.723       & 60.368       \\
-    V [\unit{\percent}] &4.812&4.324&3.040&3.036&12.544&11.684&10.732        \\
-    C [\unit{J}]      & 4.22     &   3.63   & 4.49     & 3.91     &   3.35      &  1.84       & 2.43       \\
-    $a_\text{max}$ [\unit{mm^2}]      & 9.40     &   5.33   &   3.39   &  3.77    &  5.45       &   2.60      &   2.97    \\
-    t        & \hms{0;0;6}  &  \hms{0;5;42} & \hms{0;14;20} & \hms{3;17;00} & \hms{0;0;48} & \hms{0;42;50} &  \hms{32;4;00}      \\ \bottomrule
-    \end{tabular}
-    \caption{}
-    \label{tab:05_}
-    \end{table*}
+    \includegraphics{figures/05_cellular_opt/00_module_complexity_tab/comp_tab_t.pdf}
+    \caption{\todo{timel}}
+    \label{fig:05_comp_t}
+\end{marginfigure}
 
-\todo{use blender to generate images}
+\begin{marginfigure}
+    \centering
+    \includegraphics[width=\linewidth]{figures/05_cellular_opt/00_module_complexity_tab/comp_tab_param.pdf}
+    \caption{\todo{timel}}
+    \label{fig:05_comp_param}
+\end{marginfigure}
 
-\todo{check always the number of design variables, constraints and time}
+It is interesting to note that the number of active bars in the optimized stucture is quite dependent on the complexity of the module. However, in this specific case we see that it saturates at 88 in the 6x2x3 case,another thing that suggest suggesting that we reached the convergence of the discretization.
 
-\todo{devirendere i dati digesti, gare dei grafici di riepilogo delle cose interessanti. le tab servono da database ma non servono per spiegare}
+Finally in \figref{fig:05_comp_param} we plot the numeric values of phi and psi. Compared to what we observed before, here So we can conclude These index helps us understanding how much a truss is charged but they don't gives us per forza some hints on the optimality : a structure that is loaded to the max of the material helps to go towards lighter design but is not sufficient, as this example show us.
 
-\todo{different tables for every parametric study with iteration count}
-
-\todo{name, table with number of candidates per module, number of subdomain and calculation time}
-
-\todo{doe with calc time and volume}
-Simply supported 3D beam
-
-\todo{fai il doe}
+\paragraph{Design of experiments}
+\gls{doe}
 we limit to cubic cell for semplicity
 here are the outcomes
 
@@ -423,6 +489,10 @@ here are the outcomes
     \label{fig:05}
 \end{figure*}
 
+\paragraph{Discussion on the DOE}
+in general we want the least possible number of subdomains possible. there are however some constraints : we want the biggest possible that is possible to produce with the manufacturing technomogy chosen, or we have a lot of distributed loads
+the complexity cost a lot for the computational time and have a not so big influence on the optimization. se we use a medium one 3x3x3 (or 4x4 in 2D)
+
 \subsection{Comparison with the optimized octet truss}
 
 The \gls{tto} algorithm is here benchmarked against one of the most popular cell topologies present in the literature: the octet-truss (see Fig. xx). The octet-truss is a cell known for having very good effective mechanical properties that attain about half the theoretical values of the upper Hashi-Shtrikman bounds~\sidecite{deshpande_effective_2001}. 
@@ -478,8 +548,8 @@ To perform the benchmark, the wing box of Figure~xxis meshed using 44×4×1 octe
      &Octet& 3x3x3      & Octet     &  3x3x3    \\
     $N_\text{sub}$       &36& 36&288&288   \\
     $N_\text{opt}\;(N_\text{el})$ &1008& 468 (12636)&7488&4320 (101088) \\
-    V [\unit{cm^3}]& 65.752 & 24.323&121.038&65.723         \\
-    V [\unit{\percent}] &11.692&4.324&21.524&11.684         \\
+    $V$ [\unit{cm^3}]& 65.752 & 24.323&121.038&65.723         \\
+    $V$ [\unit{\percent}] &11.692&4.324&21.524&11.684         \\
     C [\unit{J}]    &1.67&3.63&1.12&1.84         \\
     $a_\text{max}$ [\unit{mm^2}]    & 3.69 &  5.33&1.83&2.60         \\ \bottomrule
     \end{tabular}
@@ -488,8 +558,8 @@ To perform the benchmark, the wing box of Figure~xxis meshed using 44×4×1 octe
     \end{table}
 
 \subsection{Using multiple module's topologies}
+we studyed till now the two extremities, the full modular and the monolithic structure. we want now to see what happens in between. Until now we limited our study to only a single topology of the module Ntop=1. This because when dealing with multiple module topologies there is another important question that arise: how to optimize the module layout? how to dispose the modules in the structure to minimize the volume of the part? This important question will be later discussed deeply later in the tesis, while for the moment we decided only to make a simplification and give the layout based only on good engineering common sense.
 
-this stuty suggest that we have here a compromise between volume (and then mass) and manufacturing complexity. we studyed till now the two extremities, the full modular and the monolithic structure. we want now to see what happens in between
 
 \begin{figure}
     \centering
@@ -497,6 +567,8 @@ this stuty suggest that we have here a compromise between volume (and then mass)
     \caption{}
     \label{fig:05}
 \end{figure}
+
+
 
 $\matr{H}=
 \begin{bmatrix}
@@ -534,7 +606,8 @@ show a picture that the design is more stressed compared to before
     \caption{\todo{todo}}
     \label{fig:05}
 \end{figure}
-
+SUPER important, talk about the fact that one cell is empty, it is very important to create empty zones in the structure
+We notice however that in some cases the module is even disconnected.
 \begin{table}
     \centering
     \small
@@ -542,12 +615,12 @@ show a picture that the design is more stressed compared to before
         \toprule
         \multirow{2}{*}{\textbf{Quantity}}   & 7x3x4 & \multicolumn{3}{l}{6x2x3 $N_\text{t}=3$} & 6x2x3 $N_\text{t}=1$ \\ \cmidrule(lr){2-2} \cmidrule(lr){3-5} \cmidrule(lr){6-6} 
      & --      & $t=0$    &  $t=1$    &  $t=2$    &   $t=0$       \\
-     & --  &  \includegraphics[width=1.3cm]{figures/05_cellular_opt/00_multiple_cell/05_Cell_000_Topology_NLP_iso.png}    & \includegraphics[width=1.3cm]{figures/05_cellular_opt/00_multiple_cell/05_Cell_001_Topology_NLP_iso.png}     & --  & \includegraphics[width=1.3cm]{figures/05_cellular_opt/00_module_complexity_cell/6x2x3_3x3x3_c.png} \\
+     & --  &  \includegraphics[width=1.3cm]{figures/05_cellular_opt/00_multiple_cell/05_Cell_000_Topology_NLP_iso.png}    & \includegraphics[width=0.85cm]{figures/05_cellular_opt/00_multiple_cell/05_Cell_001_Topology_NLP_iso.png}     & --  & \includegraphics[width=1.3cm]{figures/05_cellular_opt/00_module_complexity_cell/6x2x3_3x3x3_c.png} \\
      $\bar{n}_\text{opt}\;(\bar{n})$ &1984 &   10 (351)   &  18  (351)       &   -- (351)   &    19 (351)  \\
     $N_\text{sub}$           &    1  & \multicolumn{3}{c}{36}   &    36    \\
     $N_\text{opt}\;(N_\text{el})$ &20 (1984) &  \multicolumn{3}{c}{336 (12636)}     &  468 (12636)     \\
-    V [\unit{cm^3}]&9.907 &  \multicolumn{3}{c}{12.032}   & 24.323       \\
-    V [\unit{\percent}] &1.761& \multicolumn{3}{c}{2.139} &4.324       \\
+    $V$ [\unit{cm^3}]&9.907 &  \multicolumn{3}{c}{12.032}   & 24.323       \\
+    $V$ [\unit{\percent}] &1.761& \multicolumn{3}{c}{2.139} &4.324       \\
     C [\unit{J}]    &3.71     & \multicolumn{3}{c}{6.14}  & 3.63       \\
     $a_\text{max}$ [\unit{mm^2}]   &37.61   &  \multicolumn{3}{c}{7.13}   &   5.33    \\
     t     &\hms{0;0;4}  & \multicolumn{3}{c}{\hms{00;3;22}} &  \hms{00;5;42}      \\ \bottomrule
@@ -556,6 +629,13 @@ show a picture that the design is more stressed compared to before
     \label{tab:05_}
     \end{table}
 
+    this stuty suggest that we have here a compromise between volume (and then mass) and manufacturing complexity. 
+
 
 \section{Conclusion}
+we presented ecc
+
+some reccomandations: less submodules is better, module as big as possible. complexity is not very important.
 It's all part of our effort to strike a balance between mechanical performance and the ease of manufacturing, a topic we'll delve into further in the upcoming chapters.
+
+we identified two important ways to further optimize modular structures: empty subdomains and multiple module topologies, hence the next chapter.

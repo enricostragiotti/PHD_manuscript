@@ -813,21 +813,21 @@ INPUT D:\estragio\AppData\Roaming\MiKTeX\tex\latex\translations\dicts\translatio
 INPUT D:\estragio\AppData\Roaming\MiKTeX\tex\latex\translations\dicts\translations-basic-dictionary-english.trsl
 INPUT D:\estragio\AppData\Roaming\MiKTeX\tex\latex\translations\dicts\translations-basic-dictionary-english.trsl
 INPUT D:\estragio\AppData\Roaming\MiKTeX\tex\latex\translations\dicts\translations-basic-dictionary-english.trsl
-INPUT .\04_U-STRESS_NLP_LC001_iso.png
-INPUT .\04_U-STRESS_NLP_LC001_iso.png
-INPUT 04_U-STRESS_NLP_LC001_iso.png
-INPUT .\04_U-STRESS_NLP_LC001_iso.png
+INPUT .\04_STRESS_NLP_LC001_iso-min.png
+INPUT .\04_STRESS_NLP_LC001_iso-min.png
+INPUT 04_STRESS_NLP_LC001_iso-min.png
+INPUT .\04_STRESS_NLP_LC001_iso-min.png
 OUTPUT 12x4x6_mech.pdf
-INPUT .\04_U-STRESS_NLP_LC001_iso.png
-INPUT .\04_U-STRESS_NLP_LC001_iso.png
-INPUT .\04_U-STRESS_NLP_LC001_iso.png
-INPUT .\04_U-BUCK_NLP_LC001_iso.png
-INPUT .\04_U-BUCK_NLP_LC001_iso.png
-INPUT 04_U-BUCK_NLP_LC001_iso.png
-INPUT .\04_U-BUCK_NLP_LC001_iso.png
-INPUT .\04_U-BUCK_NLP_LC001_iso.png
-INPUT .\04_U-BUCK_NLP_LC001_iso.png
-INPUT .\04_U-BUCK_NLP_LC001_iso.png
+INPUT .\04_STRESS_NLP_LC001_iso-min.png
+INPUT .\04_STRESS_NLP_LC001_iso-min.png
+INPUT .\04_STRESS_NLP_LC001_iso-min.png
+INPUT .\04_BUCK_NLP_LC001_iso-min.png
+INPUT .\04_BUCK_NLP_LC001_iso-min.png
+INPUT 04_BUCK_NLP_LC001_iso-min.png
+INPUT .\04_BUCK_NLP_LC001_iso-min.png
+INPUT .\04_BUCK_NLP_LC001_iso-min.png
+INPUT .\04_BUCK_NLP_LC001_iso-min.png
+INPUT .\04_BUCK_NLP_LC001_iso-min.png
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmbx10.tfm
@@ -853,6 +853,20 @@ INPUT C:\Program Files\MiKTeX\tex\latex\amsfonts\umsb.fd
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm5.tfm
+INPUT .\04_STRESS_NLP_LC001_iso.png
+INPUT .\04_STRESS_NLP_LC001_iso.png
+INPUT 04_STRESS_NLP_LC001_iso.png
+INPUT .\04_STRESS_NLP_LC001_iso.png
+INPUT .\04_STRESS_NLP_LC001_iso.png
+INPUT .\04_STRESS_NLP_LC001_iso.png
+INPUT .\04_STRESS_NLP_LC001_iso.png
+INPUT .\04_BUCK_NLP_LC001_iso.png
+INPUT .\04_BUCK_NLP_LC001_iso.png
+INPUT 04_BUCK_NLP_LC001_iso.png
+INPUT .\04_BUCK_NLP_LC001_iso.png
+INPUT .\04_BUCK_NLP_LC001_iso.png
+INPUT .\04_BUCK_NLP_LC001_iso.png
+INPUT .\04_BUCK_NLP_LC001_iso.png
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmr8.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmr6.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmmi12.tfm

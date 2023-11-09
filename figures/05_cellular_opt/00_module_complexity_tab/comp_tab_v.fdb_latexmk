@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1698940625 "d:/estragio/PhD/99_Github/PHD_manuscript/figures/05_cellular_opt/00_module_scale_tab/scale_tab.tex" "scale_tab.pdf" "scale_tab" 1698940628 0
-  "../../img_header.tex" 1698916232 10574 a61a65860c911c4d243f11e08eac337e ""
+["pdflatex"] 1699552871 "d:/estragio/PhD/99_Github/PHD_manuscript/figures/05_cellular_opt/00_module_complexity_tab/comp_tab_v.tex" "comp_tab_v.pdf" "comp_tab_v" 1699552874 0
+  "../../img_header.tex" 1699464406 10695 989973cca69a9e9778b43ca688ada1f0 ""
   "C:/Program Files/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1233951848 1120 1e8878807317373affa7f7bba4cf2f6a ""
   "C:/Program Files/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm" 1233951848 1124 14ccf5552bc7f77ca02a8a402bea8bfb ""
   "C:/Program Files/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmbsy7.tfm" 1233951848 1120 7f9f170e8aa57527ad6c49feafd45d54 ""
@@ -32,7 +32,6 @@
   "C:/Program Files/MiKTeX/fonts/tfm/public/cm/cmsy8.tfm" 1136765053 1120 8b7d695260f3cff42e636090a8002094 ""
   "C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1247593067 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
   "C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1247593067 35752 024fb6c41858982481f6968b5fc26508 ""
-  "C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb" 1247593067 32734 69e00a6b65cedb993666e42eedb3d48f ""
   "C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1247593067 32762 7fee39e011c23b3589931effd97b9702 ""
   "C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1247593067 32726 39f0f9e62e84beb801509898a605dbd5 ""
   "C:/Program Files/MiKTeX/tex/context/base/mkii/supp-pdf.mkii" 1580390158 71627 94eb9990bed73c364d7f53f960cc8c5b ""
@@ -206,7 +205,7 @@
   "C:/Program Files/MiKTeX/tex/latex/tools/verbatim.sty" 1667242266 7392 f19cdc68ae9f1190dbd54eee6d29fb7c ""
   "C:/Program Files/MiKTeX/tex/latex/xcolor/xcolor.sty" 1656233290 56148 51a9a8571c07b9921892ae11063ae853 ""
   "C:/Program Files/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656233319 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
-  "D:/estragio/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1698135033 396640 1ea46da25f7076f387bd7ec940bbd5e4 ""
+  "D:/estragio/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1699026675 396640 1ea46da25f7076f387bd7ec940bbd5e4 ""
   "D:/estragio/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1693314176 23169136 c485cd3e477948afde4cec34d0e0dec6 ""
   "D:/estragio/AppData/Roaming/MiKTeX/tex/generic/infwarerr/infwarerr.sty" 1575399508 8356 7bbb2c2373aa810be568c29e333da8ed ""
   "D:/estragio/AppData/Roaming/MiKTeX/tex/generic/ltxcmds/ltxcmds.sty" 1601732009 18568 4409f8f50cd365c68e684407e5350b1b ""
@@ -222,11 +221,11 @@
   "D:/estragio/AppData/Roaming/MiKTeX/tex/latex/varwidth/varwidth.sty" 1238465940 10894 d359a13923460b2a73d4312d613554c8 ""
   "D:/estragio/AppData/Roaming/MiKTeX/tex/latex/xargs/xargs.sty" 1206231060 12403 a11204384274e5980f17ec9564088fa4 ""
   "D:/estragio/AppData/Roaming/MiKTeX/tex/latex/xstring/xstring.sty" 1673962217 123 a302f2c651a95033260db60e51527ae8 ""
-  "d:/estragio/PhD/99_Github/PHD_manuscript/figures/05_cellular_opt/00_module_scale_tab/scale_tab.tex" 1698940621 1149 dca83f85e60e4709588e9e58f63aba55 ""
-  "scale_tab.aux" 1698940628 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
-  "scale_tab.tex" 1698940621 1149 dca83f85e60e4709588e9e58f63aba55 ""
+  "comp_tab_v.aux" 1699552873 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "comp_tab_v.tex" 1699551739 1174 1d46add6e86af601ffd07b967f556ef9 ""
+  "d:/estragio/PhD/99_Github/PHD_manuscript/figures/05_cellular_opt/00_module_complexity_tab/comp_tab_v.tex" 1699551739 1174 1d46add6e86af601ffd07b967f556ef9 ""
   (generated)
-  "scale_tab.aux"
-  "scale_tab.log"
-  "scale_tab.pdf"
+  "comp_tab_v.aux"
+  "comp_tab_v.log"
+  "comp_tab_v.pdf"
   (rewritten before read)
