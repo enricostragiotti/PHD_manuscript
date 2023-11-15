@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.8.29)  3 NOV 2023 10:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.8.29)  14 NOV 2023 18:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -633,10 +633,10 @@ Missing character: There is no ; in font nullfont!
 
 {D:/estragio/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] (supported_3D_symm.aux) ) 
 Here is how much of TeX's memory you used:
- 32391 strings out of 476331
- 854173 string characters out of 5797589
+ 32393 strings out of 476331
+ 854248 string characters out of 5797589
  1868660 words of memory out of 5000000
- 52296 multiletter control sequences out of 15000+600000
+ 52298 multiletter control sequences out of 15000+600000
  524139 words of font info for 76 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  122i,9n,121p,834b,887s stack positions out of 10000i,1000n,20000p,200000b,200000s

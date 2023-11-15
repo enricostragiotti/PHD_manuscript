@@ -9,7 +9,9 @@ Introduction
 \section{Formulation of a modular structure optimization algorithm}
 Assembled modular ultralight structures present an opportunity to greatly improve the performance and cost efficiency of modern aerostructures~\sidecite{cramer_elastic_2019}. The repetitive nature brings various interesting features among which reduced tooling, fast assembly, and short repair time. Additionally, as the mechanical performance of the structure is greatly influenced by the topology and the materials of the repetitive pattern, modular structures are naturally prone to optimization.
 
-In the structure optimization field periodic materials are often modeled by means of asymptotic homogenization~\sidecite{zhou_design_2008}. The heterogeneous module topology (also called \gls{rve}) is treated as homogeneous material with associated mechanical properties \ie equivalent elastic tensor, shear modulus, etc. The homogenization approach is valid only if the \gls{rve} contains enough information about the heterogeneous material and if the structure presents significant periodicity~\sidecite{kalamkarov_asymptotic_2009,li_anisotropic_2020}. When designing modular structures (and not materials), no scale separation is assumed between the repetitive pattern and the structure itself. Consequently, the hypotheses of asymptotic homogenization are not always verified. For that reason, full-scale approaches~\sidecite{wu_topology_2021} have been developed.
+In the field of structure optimization, periodic materials are often modeled by means of asymptotic homogenization~\sidecite{zhou_design_2008}. The heterogeneous module topology (also called \gls{rve}) is treated as homogeneous material with associated mechanical properties \ie equivalent elastic tensor, shear modulus, etc. The homogenization approach is valid only if the \gls{rve} contains enough information about the heterogeneous material and if the structure presents significant periodicity~\sidecite{kalamkarov_asymptotic_2009,li_anisotropic_2020}. 
+
+Nevertheless, our work pertains to structures that frequently exhibit one or more dimensions significantly smaller than the remaining dimensions, such as the thickness of a wingbox or a sandwich panel. In the context of designing modular structures (and not materials), no scale separation is assumed between the repetitive pattern and the structure itself. Consequently, the assumptions of asymptotic homogenization are not always verified. To address this, full-scale approaches~\sidecite{wu_topology_2021} have been developed.
 
 \subsection{Variable linking}
 \begin{figure*}
@@ -19,16 +21,16 @@ In the structure optimization field periodic materials are often modeled by mean
     \label{fig:05_VL}
 \end{figure*}
 
-The variable linking approach~\sidecite{zhang_scale-related_2006} is a full-scale technique that involves first dividing a structure into several subdomains, which are connected during the optimization process \ie subdomains that belong to the same module all share the same cross-sectional areas. The primary goal is to make the manufacturing phase simpler and more efficient, allowing to assemble big structures starting from smaller repetitive modules. With this approach, the optimization perspective shifts. The optimizer design space using the variable linking approach is restricted to the optimization of the topology of the modules, using the whole structure just to impose the necessary mechanical constraints.
+The variable linking approach~\sidecite{zhang_scale-related_2006} is a full-scale optimization technique that involves first dividing a structure into several subdomains, which are connected in the optimization process -- \ie subdomains that belong to the same module all share the same cross-sectional areas. The primary goal is to make the manufacturing phase simpler and more efficient, allowing to assemble big structures starting from smaller repetitive modules. With this approach, the optimization perspective shifts. The optimizer design space using the variable linking approach is restricted to the optimization of the topology of the modules, using the whole structure just to evaluate and to impose the necessary mechanical constraints.
 
-We use \figref{fig:05_VL} to illustrate the notation employed in this thesis for modular structures. On the left-hand side of the image, we have the whole test case that we aim to optimize, which is already divided into $N_\text{sub}$ subdomains. Each of these subdomains is bound to exhibit the topology of one of the $N_\text{T}$ module topologies presented on the right side of the image. It is assumed that each module has the same external shape and the identical ground structure used for discretizing the module volume. Within this framework, $\bar{n}$ represents the number of candidate bars in one module, and if we assume a fully connected mesh, we can define $\bar{n} = \bar{m} \cdot (\bar{m}-1)/2$, where $\bar{m}$ stands for the number of nodes in the module. Consequently, for the overall structure, we can write the relationship $N_{\text{el}} = N_{\text{sub}}\bar{n}$.
+We use \figref{fig:05_VL} to illustrate the notation employed in this thesis for modular structures. On the left-hand side of the image, we have the whole test case that we aim to optimize, which is divided into $N_\text{sub}$ subdomains. Each of these subdomains is bound to exhibit the topology of one of the $N_\text{T}$ module topologies presented on the right side of the image. It is assumed for simplicity that each module has the same external shape and an identical ground structure used for discretizing the module volume. Within this framework, $\bar{n}$ represents the number of candidate bars in one module, and if we assume a fully connected mesh, we can define $\bar{n} = \bar{m} \cdot (\bar{m}-1)/2$, where $\bar{m}$ stands for the number of nodes in the module. Consequently, for the overall structure, we can write the relationship $N_{\text{el}} = N_{\text{sub}}\bar{n}$.
 
 The vector that holds all the cross-sectional areas of the modules is represented by $\bar{\vect{a}}$, and it belongs to the set of positive real numbers $\mathbb{R}_+^{N_T \cdot \bar{n}}$. This vector is essentially a grouping of individual cross-sectional areas $\bar{\vect{a}}_t$ for each of the $N_T$ modules. In mathematical terms, $\bar{\vect{a}}$ is defined as follows:
 \begin{equation}
     \bar{\vect{a}} :=  \{ \bar{\vect{a}}_t \in \mathbb{R}_+^{\bar{n}} \;|\; \forall t \in [1,\dots,N_T]\}
 \end{equation}
 
-The topology of the entire structure $\vect{a}$, which originates from the submodules' topology $\bar{\vect{a}}$, is defined as follows:
+The topology of the entire structure $\vect{a}$, which originates from the submodules' topology $\bar{\vect{a}}$, is the assembly of the individual cross-sectional areas of every one of the $N_{\text{sub}}$ subdomains and is defined as follows:
 \begin{equation}
     \vect{a} :=  \{\vect{a}^j \;|\; \forall j \in [1,\dots,N_{\text{sub}}]\}
 \end{equation}
@@ -41,7 +43,7 @@ and is evaluated using:
         \end{bmatrix}
         \label{eq:05_VL}
 \end{equation}
-where the $\otimes$ operator represents the Kronecher product and $\vect{h}_{t}$ is the $t$-th column of the mapping matrix $\matr{H} = [\vect{h}_0,\dots,\vect{h}_{N_T}] \in \mathbb{B}^{N_{\text{sub}},N_T}$, where $\mathbb{B}=\lbrace 0,1 \rbrace$ is the Boolean domain. $G_{j,t}$ is the element at the $j$-th row and $t$-th column of the matrix $\matr{H}$. The mapping matrix $\matr{H}$ indexes are defined as follows:
+where the $\otimes$ operator represents the Kronecher product and $\vect{h}_{t}$ is the $t$-th column of the module mapping matrix $\matr{H} = [\vect{h}_0,\dots,\vect{h}_{N_T}] \in \mathbb{B}^{N_{\text{sub}},N_T}$, where $\mathbb{B}=\lbrace 0,1 \rbrace$ is the Boolean domain. $h_{j,t}$ is the element at the $j$-th row and $t$-th column of the matrix $\matr{H}$. The module mapping matrix $\matr{H}$ indexes are defined as follows:
 \marginnote{In the case of the structure shown in \figref{fig:05_VL} we have:
 \begin{equation}
     \matr{H}=
@@ -67,7 +69,20 @@ as the lower submodules (numbered from 0 to 3) exhibit the topology of module $t
 \end{equation}
 Lastly, we introduce some notation to denote specific bars within the modules and subdomains. We represent the cross-sectional area of the $i$-th bar of the $t$-th module as $\bar{\vect{a}}_{t,i}$, while the cross-sectional area of the $i$-th bar of the $j$-th subdomain as $\vect{a}^j_i$.
 \subsection{Topological buckling of modular structures}
-Addressing topological buckling in modular structures is a more complex task compared to monolithic structures. This complexity arises from the fact that we must not only consider bars within a single module's design space but also those connecting different modules. Since the nature of this problem heavily relies on how the modules are arranged within the structure, we have opted for a simplification. We focus only on the assessment of nodal instability within each module, modifying the length $\ell^*$ used to evaluate the critical buckling force of \eqrefnotext{eq:04_buck} and \eqref{eq:04_chain_len} only of compressive chains of bars that fall inside a module. Additionally, \eqref{eq:04_side_cons_chain} is modified as follows:
+Addressing topological buckling in modular structures is a more complex task compared to monolithic structures. This complexity arises from the fact that we must not only consider bars within a single module's design space but also those connecting different modules. Since the nature of this problem heavily relies on how the modules are arranged within the structure, we have opted for a simplification. \marginnote{
+\eqref{eq:04_chain_len}:
+\begin{equation*}
+    \ell^*_j(\vect{a}):= 
+    \begin{cases}
+        \ell_j & \text { if } j \notin \mathcal{C}_{l,r}(\vect{a}) \\
+        \sum \ell_{r} \;|\; r \in \mathcal{C}_{l,r}(\vect{a})  & \text { otherwise.}
+    \end{cases}
+\end{equation*}
+\eqref{eq:04_side_cons_chain}: 
+\begin{equation*}
+    a_{r}\geq a_{r=1}, \; r \in \mathcal{C}_{l,r}(\vect{a}), \; \forall r \neq 1.
+\end{equation*}
+} We focus only on the assessment of nodal instability within each module, modifying the length $\ell^*$ used to evaluate the critical buckling force of \eqrefnotext{eq:04_buck} and \eqref{eq:04_chain_len} only of compressive chains of bars that fall inside a module. Additionally, \eqref{eq:04_side_cons_chain} is modified as follows:
 \begin{equation}\label{eq:05_side_cons_chain_modular}
     \bar{\vect{a}}_{t,r} \geq \bar{a}_{t,r=1} \quad r \in \mathcal{C}_{l,r}(\bar{\vect{a}}_t) \quad \forall t \in [1,\dots,N_T].
 \end{equation}
@@ -240,9 +255,9 @@ Furthermore, this examples confirm us that when dealing with modularity constrai
     \label{fig:05}
 \end{marginfigure}
 We conduct here a parametric study on the 3d supported truss already treated in monolithic in section xx. in this study we limit to one single module Nt=1 and we do not study yet the effect that it has to have multiple module topologies on the optimized structure. additionally we limit to cubic cell shape. we do a recap of the loading case and the geometric and material properties in table and in \figref{fig:05_symm_support_bc}.
+\todo{number of subdomains and not subdomain number}
 
 we propose here two new metrics used to better understand how the modular structures are loaded. The first one is called structural efficency index $\varphi$ that we will use to quickly assesshow many bars are used approaching the fully stressed state described by Michell \sidecite{michell_limits_1904}. it is defined as :
-
 \begin{equation}
     \varphi = \frac{N_\text{opt,f}\times100}{N_\text{opt}}
 \end{equation}
@@ -252,9 +267,9 @@ where $N_\text{opt,f}$ is the number of bars that activate either the tensile st
 \end{equation}
 where $\vect{c}_\text{f}=\max{\left(-\vect{q} /\sigma_c \vect{a},\:\vect{q} /\sigma_t \vect{a},\:\vect{q}/\vect{q}_{\text{crit}}\right)}$ represent the normalized mechanical failure criterion and $\operatorname{card}(\{\cdot\})$ represent the cardinality of the set $\{\cdot\}$.
 
-The second metric is $\psi$ and is defined as the mean value of the normalized mechanical failure criterion $\vect{c}_\text{f}$ weighted on the volumes of the individual bars:
+The second metric is $\psi$ and is defined as the mean value of the normalized mechanical failure criterion $\vect{c}_\text{f}$ weighted on the volumes of the individual bars $\vect{v}$:
 \begin{equation}
-    \psi = \frac{1}{V} \left( \sum_{i=0}^{N_\text{opt}} c_\text{f,i} \right)
+    \psi = \frac{1}{V} \left( \sum_{i=0}^{N_\text{opt}} v_i c_\text{f,i} \right)
 \end{equation}
 
 This parameter is comprised betweent 0 and 1 and the more is near one the more the bars are averagely near a the upper bound of one of the mechanical failure constrants. major importance is given to more voluminoous bars.
@@ -426,13 +441,13 @@ It is interesting to note that the number of active bars in the optimized stuctu
 Finally in \figref{fig:05_comp_param} we plot the numeric values of phi and psi. Compared to what we observed before, here So we can conclude These index helps us understanding how much a truss is charged but they don't gives us per forza some hints on the optimality : a structure that is loaded to the max of the material helps to go towards lighter design but is not sufficient, as this example show us.
 
 \paragraph{Design of experiments}
-\gls{doe}
-we limit to cubic cell for semplicity
-here are the outcomes
+With the data gathered until now we want to build the \gls{doe} of optimized modular structures. The goal is to monitor how the outcomes vary by introducing a change of the preconditions, which is represented by one or more independent variables. In our case the independent variables chosen are the subdomain number $N_\text{sub}$ ($x_1$) and module complexity $\bar{n}$ ($x_2$), while the response observed are the total structural volume $V$ and the computational time $t$. As done till now we limit to cubic cell for semplicity.
 
+We decided to use a quadratic model with interaction (the term $xy$) to try to capture a possible interference between x1 and x2 as follows:
 \begin{equation}
     a\:x_1^2+b\:x_2^2+c\:x_1x_2+d\:x_1+e\:x_2+f
 \end{equation}
+The coefficient are found solving a least squares system using the data presented before in this section.
 
 \begin{margintable}
     \small
@@ -450,7 +465,7 @@ here are the outcomes
     \bottomrule
     \end{tabular}
     \caption{Volume}
-    \label{tab:05}
+    \label{tab:05_doe_coeff_v}
 \end{margintable}
 
 \begin{margintable}
@@ -469,9 +484,11 @@ here are the outcomes
     \bottomrule
     \end{tabular}
     \caption{Time}
-    \label{tab:05}
+    \label{tab:05_doe_coeff_t}
 \end{margintable}
+We present here the outcomes of the \gls{doe}. In the upper part of \figref{fig:05_doe} we plot the surface response toghether with a scatter plot of the optimized structures (a) and also the isovalue lines plot (b). we can notice how the volume is very much influenced by the number of subdomains -- the isovalue lines tend to be horizontal, indicating that the steepest gradient of the function is in the vertical direction. The less voluminous modular structure tend to be then a structure made by few subdomains carachterized by a high complexity. However, when looking at the subfigures (c) and (d) that represent the surfqce response for the computational time, we see that an high module complexity is associated with an elevate computational time.
 
+The coefficients of the quadratic model are given in \tabref{tab:05_doe_coeff_v} and \tabref{tab:05_doe_coeff_t} for the volume and computational time, respectively. We see that for the volume the coefficient that defines the most the behavior of the response surface is $e$, the coefficient that relates to the linear term for the number of subdomains. The interaction between the two independent variable -- the coefficient $c$ -- is low, telling that the two variables doesent add up when modified toghether. This is not true for the computation time, where the interaction coefficent is relevant, toghether with the two linear term. Once again, the quadratic coefficent $a$ and $b$ are definetly less important, suggesting in general a linear response.
 
 \begin{figure*}
     \hspace*{\fill}
@@ -486,24 +503,34 @@ here are the outcomes
     \subcaptionbox{}{\includegraphics{figures/05_cellular_opt/00_doe_time/doe_time_cont.pdf}}
     \hspace*{\fill}
     \caption{limited to 500 and 2e5}
-    \label{fig:05}
+    \label{fig:05_doe}
 \end{figure*}
 
+We finally plot the main effects plot for the volume and the module complexity in \figref{fig:05_doe_main_eff}. The idea is to plot, for each factor or interaction, the effect (summed with the overall mean) as a function of the level; the advantage of this representation is to provide an immediate visualization of the various effects.
+\begin{figure}
+    \centering
+    \subcaptionbox{}{\includegraphics{figures/05_cellular_opt/00_doe_main_effect_plots/tab_v.pdf}}
+    \bigskip
+    \subcaptionbox{}{\includegraphics{figures/05_cellular_opt/00_doe_main_effect_plots/tab_t.pdf}}
+    \caption{(a-d)Main effects plot of }
+    \label{fig:05_doe_main_eff}
+\end{figure}
 \paragraph{Discussion on the DOE}
-in general we want the least possible number of subdomains possible. there are however some constraints : we want the biggest possible that is possible to produce with the manufacturing technomogy chosen, or we have a lot of distributed loads
+We can use this doe as a general reccomandation . while the numeric values and the magnitude of the values we got are specific to the example we presented, we suppose that the trends are correct and validi for modular structures in general. If we consider only the minimization of the mass, we want the least possible number of subdomains possible. there are however some constraints : we want the biggest possible that is possible to produce with the manufacturing technomogy chosen, or we have a lot of distributed loads
 the complexity cost a lot for the computational time and have a not so big influence on the optimization. se we use a medium one 3x3x3 (or 4x4 in 2D)
+
 
 \subsection{Comparison with the optimized octet truss}
 
-The \gls{tto} algorithm is here benchmarked against one of the most popular cell topologies present in the literature: the octet-truss (see Fig. xx). The octet-truss is a cell known for having very good effective mechanical properties that attain about half the theoretical values of the upper Hashi-Shtrikman bounds~\sidecite{deshpande_effective_2001}. 
+The proposed modular \gls{tto} algorithm is here benchmarked against one of the most popular cell topologies present in the literature: the octet-truss (see \figref{fig:05_octet_module}). The octet-truss is a cell known for having very good effective mechanical properties that attain about half the theoretical values of the upper Hashi-Shtrikman bounds~\sidecite{deshpande_effective_2001} for isotropic materials. 
 
-To perform the benchmark, the wing box of Figure~xxis meshed using 44×4×1 octet-truss cells of 125 mm of edge size (see Fig. xx). The cross-sectional areas of the cell members are all equal. The section value is evaluated by performing a parametric optimization on this section value, constrained by stress and local buckling for every member of the structure. The optimization is performed using Altair OptiStruct.
+To perform the benchmark, the simply supported 3D beam is divided into 6x2x3 and 12x4x6 cubic subdomains, then populated with the octet-truss topotlogy. The cross-sectional areas of the cell members are all equal. The cross-sectional value is evaluated by performing a parametric optimization on this section value, constrained by stress, local buckling, and kinematic compatibility constraints for every member of the structure. The optimization is performed using Altair OptiStruct.
 
 \begin{marginfigure}
     \centering
     \includegraphics[width=0.7\linewidth]{figures/05_cellular_opt/00_octet/05_Cell__Topology_NLP_iso.png}
     \caption{}
-    \label{fig:05}
+    \label{fig:05_octet_module}
 \end{marginfigure}
 
 \begin{figure*}
@@ -518,11 +545,7 @@ To perform the benchmark, the wing box of Figure~xxis meshed using 44×4×1 octe
     \hfill
     \subcaptionbox{}{\includegraphics[width=0.46\linewidth]{figures/05_cellular_opt/00_octet_truss_comp_6/6x2x3_3x3x3_XZ.png}}
     \hspace*{\fill}
-    \caption{\todo{todo}}
-    \label{fig:05}
-\end{figure*}
-
-\begin{figure*}
+    \bigskip
     \hspace*{\fill}
     \subcaptionbox{}{\includegraphics[width=0.46\linewidth]{figures/05_cellular_opt/00_octet_truss_comp_12/octet.png}}
     \hfill
@@ -535,8 +558,12 @@ To perform the benchmark, the wing box of Figure~xxis meshed using 44×4×1 octe
     \subcaptionbox{}{\includegraphics[width=0.46\linewidth]{figures/05_cellular_opt/00_octet_truss_comp_12/12x4x6_3x3x3_XZ.png}}
     \hspace*{\fill}
     \caption{\todo{todo}}
-    \label{fig:05}
+    \label{fig:05_octet_results}
 \end{figure*}
+
+\figref{fig:05_octet_results} shows the 3D rendering of the two optimized octet truss structures (left part of the image) compared to the modular \gls{tto} structures (right part of the image). It is noticable how the \gls{tto} algorithm drives the topology of the module toward higher efficency, creating vertical columns loaded in compression that sostengono thin wires loaded in tension. On the other hand, the octet truss topology is fixed and present a quasi-isotropic mechanical behaviour. The octet-truss is a module that exhibits good homogenized elastic properties in all directions thanks to its numerous plane of symmetry. It is, thus, less suitable for structural applications where all the subdomains present similar loading conditions, as the module will be as stiff and strong in every direction and not aligned to the principal stress directions. 
+
+We notice that in the octet-truss there are no members orientated exactly along the $z$ axis, while in the \gls{tto} optimized cell they are the most massive. This clearly tells us that this is the most efficient direction to put the material to get a strong cell. On top of that, the upper and lower faces of the cell present a cross design (see \figref{fig:05_octet_module}) that works well for torque but not for tension and compression loading. A new study exploring what happens if we rotate the cell could be interesting.
 
 \begin{table}
     \centering
@@ -551,25 +578,27 @@ To perform the benchmark, the wing box of Figure~xxis meshed using 44×4×1 octe
     $V$ [\unit{cm^3}]& 65.752 & 24.323&121.038&65.723         \\
     $V$ [\unit{\percent}] &11.692&4.324&21.524&11.684         \\
     C [\unit{J}]    &1.67&3.63&1.12&1.84         \\
-    $a_\text{max}$ [\unit{mm^2}]    & 3.69 &  5.33&1.83&2.60         \\ \bottomrule
+    $a_\text{max}$ [\unit{mm^2}]    & 3.69 &  5.33&1.83&2.60         \\ 
+    $\varphi$    &\qty{0.39}{\percent}&\qty{20.51}{\percent}&\qty{0.05}{\percent} & \qty{1.46}{\percent}        \\
+    $\psi$    &0.075&0.327&0.026&0.127         \\ \bottomrule
     \end{tabular}
     \caption{}
-    \label{tab:05_}
+    \label{tab:05_octet_results}
     \end{table}
+
+The numeric results are presented in \tabref{tab:05_octet_results} and confirm our observations. The volume of the octet-truss structures is environ trice and twice the volume of the modular \gls{tto} optimized for the 6x2x3 and the 12x4x6 test case respectively. This important efficiency gab between the two kind of structures is observable also taking a look at the value of $\varphi$ and $\psi$. we see that these values drops to very low values due to the fact that the cross sectional value of the whole structure is designed by the value for which a bar on the structure become critical. there are for these structures only 4 bars that are critical (due to symmetry). Better results could have been obtained giving more design freedom to the optimization of the octet truss, using multiple cross sectional design variables, but this bath has not been taken here. It is important to note that the comparison that we are presenting here does not take into account the weight of fasteners and joints necessary to link the cells together.
 
 \subsection{Using multiple module's topologies}
 we studyed till now the two extremities, the full modular and the monolithic structure. we want now to see what happens in between. Until now we limited our study to only a single topology of the module Ntop=1. This because when dealing with multiple module topologies there is another important question that arise: how to optimize the module layout? how to dispose the modules in the structure to minimize the volume of the part? This important question will be later discussed deeply later in the tesis, while for the moment we decided only to make a simplification and give the layout based only on good engineering common sense.
-
 
 \begin{figure}
     \centering
     \includegraphics[width=0.6\linewidth]{figures/05_cellular_opt/00_mutiple_bc/supported_3D_symm.pdf}
     \caption{}
-    \label{fig:05}
+    \label{fig:05_mutiple_bc}
 \end{figure}
 
-
-
+Let us take again the simply supported 3D beam divided into 6x2x3 subdomains and this time we optimize the structure using three different modules so Ntop=3. The module discretization used foor this example is a fully connected ground structure that shows 3x3x3 nodes. The module mapping matrix of the structure is given as an input of the optimization as:
 $\matr{H}=
 \begin{bmatrix}
     1 & 0 & 0\\
@@ -583,37 +612,41 @@ $\matr{H}=
     0 & 0 & 1\\
     0 & 0 & 1\\
 \end{bmatrix}$
+and it represent the module layout shown in \figref{fig:05_mutiple_bc}.
 
-show a picture that the design is more stressed compared to before
+The optimized structure present an interesting design made by two long spars that sustain some tensile members that ultimately sustain the prescribed loads. the spars presents as usual a design that prediliges long tensile members and are are connected between each other via some compressive bars. The optimized structure is plotted in \figref{fig:05_multiple_topology_sol}. 
+
+We have now a look on the modules that build the optimized structure. First, we notice that the optimizer set to zero alla the cross sectional areas of the module t=2, judging that is not interesting from the mass optimization of the structure. Thys higlight that taking into account the fact to have an empty topology is important and must be added  when optimizing the module layout in the structure. Second, We observe however that in some cases the module is even disconnected (t=0), potentially causing the need for additional post processing to obtain an easily manufacturable design.
 
 \begin{figure*}
     \centering
     \includegraphics{figures/05_cellular_opt/00_multiple_topology/support_sol.pdf}
     \caption{}
-    \label{fig:05}
+    \label{fig:05_multiple_topology_sol}
 \end{figure*}
 
 \begin{marginfigure}
     \centering
     \includegraphics[width=\linewidth]{figures/05_cellular_opt/00_multiple_tab/multi_tab.pdf}
     \caption{}
-    \label{fig:05}
+    \label{fig:05_multiple_topology_sol_graph}
 \end{marginfigure}
 
 \begin{figure}
     \centering
     \includegraphics[width=\linewidth]{figures/05_cellular_opt/00_multiple_failure/mul_mech.pdf}
     \caption{\todo{todo}}
-    \label{fig:05}
+    \label{fig:05_multiple_topology_sol_mech}
 \end{figure}
-SUPER important, talk about the fact that one cell is empty, it is very important to create empty zones in the structure
-We notice however that in some cases the module is even disconnected.
+
+The optimized structure with nt=3 is now compared to the reference moolitic structure and the 6x2x3-3x3x3 structure with nt=1 to assess the mechanical gains due to the increased solution complexity. we can notice in \tabref{tab:05_multiple_topology_sol}. Interestingly, the computational time of the nt=3 solution is lower ($t=\hms{00;3;22}$) when compared to the nt=1 structure ($t=\hms{00;5;42}$) . this comes as a surprise as the nt=3 optimization problem presents more design variables (as we are here optimizing three times the number of cross sectional areas). il s'avere, par contre, que the more design freedom rends l'optimisation plus facile as the constraints are easier to satisfy. The allure of the volume and computational time are given graphically in \figref{fig:05_multiple_topology_sol_graph}.
+
 \begin{table}
     \centering
     \small
     \begin{tabular}{lx{1.4cm}x{1.4cm}x{1.4cm}x{1.4cm}x{1.4cm}}
         \toprule
-        \multirow{2}{*}{\textbf{Quantity}}   & 7x3x4 & \multicolumn{3}{l}{6x2x3 $N_\text{t}=3$} & 6x2x3 $N_\text{t}=1$ \\ \cmidrule(lr){2-2} \cmidrule(lr){3-5} \cmidrule(lr){6-6} 
+        \multirow{2}{*}{\textbf{Quantity}}   & 7x3x4 & \multicolumn{3}{l}{6x2x3-3x3x3-$N_\text{t}=3$} & 6x2x3 3x3x3 $N_\text{t}=1$ \\ \cmidrule(lr){2-2} \cmidrule(lr){3-5} \cmidrule(lr){6-6} 
      & --      & $t=0$    &  $t=1$    &  $t=2$    &   $t=0$       \\
      & --  &  \includegraphics[width=1.3cm]{figures/05_cellular_opt/00_multiple_cell/05_Cell_000_Topology_NLP_iso.png}    & \includegraphics[width=0.85cm]{figures/05_cellular_opt/00_multiple_cell/05_Cell_001_Topology_NLP_iso.png}     & --  & \includegraphics[width=1.3cm]{figures/05_cellular_opt/00_module_complexity_cell/6x2x3_3x3x3_c.png} \\
      $\bar{n}_\text{opt}\;(\bar{n})$ &1984 &   10 (351)   &  18  (351)       &   -- (351)   &    19 (351)  \\
@@ -623,19 +656,23 @@ We notice however that in some cases the module is even disconnected.
     $V$ [\unit{\percent}] &1.761& \multicolumn{3}{c}{2.139} &4.324       \\
     C [\unit{J}]    &3.71     & \multicolumn{3}{c}{6.14}  & 3.63       \\
     $a_\text{max}$ [\unit{mm^2}]   &37.61   &  \multicolumn{3}{c}{7.13}   &   5.33    \\
+    $\varphi$    &\qty{100.00}{\percent}&\multicolumn{3}{c}{\qty{61.90}{\percent}}&\qty{20.51}{\percent}        \\
+    $\psi$    &1.000&\multicolumn{3}{c}{0.716}&0.327          \\ 
     t     &\hms{0;0;4}  & \multicolumn{3}{c}{\hms{00;3;22}} &  \hms{00;5;42}      \\ \bottomrule
     \end{tabular}
     \caption{}
-    \label{tab:05_}
+    \label{tab:05_multiple_topology_sol}
     \end{table}
 
-    this stuty suggest that we have here a compromise between volume (and then mass) and manufacturing complexity. 
+    The volume reduction is due to a more efficient use of the topology of the subdomains (that now varies with the subdomain position). this can be oserved taking a look at the more efficient use of the material, with more and more bars taht attain the mechaincal failure limit ($\varphi = \qty{61.90}{\percent}$ versus $\qty{61.90}{\percent}$ for the nt=1 test case) and in general a more uniform structure loading ($\psi=0.716$ vs $\psi=0.327$). We plot the stress and buckling failure criteria in \figref{fig:05_multiple_topology_sol_mech}.
+    
+    his stuty suggest that using more modules for the optimization permits to attain less voluminous structures. we have here a compromise between volume (and then mass) and manufacturing complexity. 
 
 
 \section{Conclusion}
 we presented ecc
 
-some reccomandations: less submodules is better, module as big as possible. complexity is not very important.
+some reccomandations: less submodules is better, module as big as possible. complexity plays a role but is not very important.
 It's all part of our effort to strike a balance between mechanical performance and the ease of manufacturing, a topic we'll delve into further in the upcoming chapters.
 
 we identified two important ways to further optimize modular structures: empty subdomains and multiple module topologies, hence the next chapter.
