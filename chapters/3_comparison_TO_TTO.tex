@@ -101,10 +101,10 @@ In this thesis, we assume that the elementary volume occupied by the $i$-th elem
 \end{equation}
 The normalized local stress constraint $\vect{g}_{\text{st}}$ are formulated as:
 \begin{equation}
-    \frac{\sigma_{\text{VM},j}}{\sigma_L}-1 \leq 0, \quad \forall j \in \Omega_{mat}(\bm{\rho})
+    \frac{\sigma_{\text{VM},i}}{\sigma_L}-1 \leq 0, \quad \forall i \in \Omega_{mat}(\bm{\rho})
     \tag{$g_{\text{st}}$}
 \end{equation}
-where $\Omega_{mat}(\bm{\rho}) \subseteq \Omega$ represents the design-dependent set of elements with a non-zero density, $\sigma_{\text{VM},j}$ is the equivalent Von Mises stress for the $j$-th element, and $\sigma_L$ is the maximum allowable of the material.
+where $\Omega_{mat}(\bm{\rho}) \subseteq \Omega$ represents the design-dependent set of elements with a non-zero density, $\sigma_{\text{VM},i}$ is the equivalent Von Mises stress for the $i$-th element, and $\sigma_L$ is the maximum allowable of the material.
 
 The first difficulty that arises is that the stress constraints are defined only for the elements where $\rhophys_i > 0$, while $\rhophys_i\in[0,1]$. Thus, the set of constraints changes during the optimization. This class of problems is called \acrfull{mpvc}~\sidecite{achtziger_mathematical_2008} and is known for being difficult to solve with a gradient descent optimization algorithm. The original set of constraints $\vect{g}_{\text{st}}$ is then reformulated into an equivalent design-independent set of constraints $\bar{\vect{g}}_{\text{st}}$ as follows~\sidecite{cheng_study_1992}:
 \begin{equation}
@@ -262,7 +262,10 @@ The sensitivity of the objective function can then be evaluated using \eqsref{eq
     \frac{d V}{d \rho_i} = \sum_{j \in \mathbb{N}_{i,R}} \derfrac{V}{\rhophys_j} \derfrac{\rhophys_j}{\rhofil_j} \derfrac{\rhofil_j}{\rho_i}.
 \end{equation}
 \paragraph{Sensitivity analysis of the constraint function}
-This section focuses on the details of the calculation of how the constraint function $G_{\text{KS}}^\text{L}$ changes with respect to the design variable $\vect{\rho}$.
+This section focuses on the details of the calculation of how the constraint function $G_{\text{KS}}^\text{L}$ changes with respect to the design variable $\vect{\rho}$. The sensitivity of the aggregated constraint function with respect to the design variable $\vect{\rho}$ is evaluated using:
+\begin{equation} \label{eq:03_chain_sens_fin}
+    \frac{d G_{\text{KS}}^\text{L}}{d \rho_i} = \sum_{j \in \mathbb{N}_{i,R}} \derfrac{G_{\text{KS}}^\text{L}}{\rhophys_j} \derfrac{\rhophys_j}{\rhofil_j} \derfrac{\rhofil_j}{\rho_i}.
+\end{equation}
 
 As the constraint function $G_{\text{KS}}^\text{L} = G(\vect{\rhophys}, \vect{u}(\vect{\rhophys}) )$ is explicitly and implicitly (via the relationship with $\vect{u}$) depending on $\vect{\rhophys}$, the first-order derivative is evaluated using the total derivative formula:
 \begin{equation} \label{eq:03_sens-0}
@@ -336,11 +339,6 @@ This formula is called \textit{adjoint equation}. This equation is solved for $\
 \marginnote{Solving linear system \ref{eq:03_sens-98} instead of directly calculating the inverse matrix of $\matr{K}$ is more efficient from a performance perspective. The cost of solving a system using the Cholesky decomposition is $\mathcal{O}(N^3/3)$, while a matrix inversion is $\mathcal{O}(N^3)$.} where $N$ represents the size of the square matrix describing the linear system.
 \eqref{eq:03_sens-99} represents the first-order derivative equation used to evaluate the sensitivity of the constraint function $G_{\text{KS}}^\text{L}$ with respect to the physical densities $\vect{\rhophys}$. The value of $\vect{\psi}$ is calculated every iteration solving the linear system \ref{eq:03_sens-98}.
 
-The sensitivity of the aggregated constraint function with respect to the design variable $\vect{\rho}$ is evaluated using \eqsref{eq:03_01} \eqrefnotext{eq:03_sens_filt}, \eqrefnotext{eq:03_sens_proj}, and \eqrefnotext{eq:03_chain} as follows:
-\begin{equation} \label{eq:03_chain_sens_fin}
-    \frac{d G_{\text{KS}}^\text{L}}{d \rho_i} = \sum_{j \in \mathbb{N}_{i,R}} \derfrac{G_{\text{KS}}^\text{L}}{\rhophys_j} \derfrac{\rhophys_j}{\rhofil_j} \derfrac{\rhofil_j}{\rho_i}.
-\end{equation}
-
 \subsection{Truss discretization \gls{sand} minimum volume formulation}
 We are now shifting our focus from continuous structures to discrete truss systems, describing the \acrfull{tto} (also known in early literature as layout optimization), a structure optimization method that focuses on discrete structures. In his most used formulation, \gls{tto} aims at reducing material usage while meeting stress criteria using a \gls{sand} approach. The problem is already well-posed for comparison with continuous discretization, and we intend to explore specific key concepts within its established framework.
 \paragraph{Classical Michell structures} \label{sec:03_michell}
@@ -388,7 +386,7 @@ The volume minimization formulation with maximum stress constraints is stated in
     \tag{$\mathbb{P}_0$}
     \label{eq:03_optim_original}
 \end{equation}
-where $\matr{B}_s$ is a $N_{\text{dof}} \times N_{\text{el}}$ matrix containing the direction cosines of the $j$-th member with respect to the $i$-th degree of freedom to calculate the nodal force equilibrium constraints $\vect{g}_\text{eq}$, and where $N_{\text{dof}}$ is the number of \gls{dofs}, equal to $2M$ or $3M$ for a two- or a three-dimensional load case, respectively. $\vect{q} = [q_1, q_2, \ldots,q_{N_{\text{el}}}]^T$ is the vector containing the internal member forces, with a positive sign when in tension, caused by the external load $\vect{f} = [f_1, f_2, \ldots,f_{N_{\text{dof}}}]^T$. The state variable $\vect{a} = [a_1, a_2, \ldots,a_{N_{\text{el}}}]^T$ represents the cross-sectional area of the $N_{\text{el}}$ members of the structure. $\sigma_\text{c}$ and $\sigma_\text{t}$ are the compressive and tensile maximum allowable stresses of the material, respectively, used in the stress constraints $\vect{g}_\text{st,c}$ and $\vect{g}_\text{st,t}$. This formulation takes into account only the linear behavior of the structure and is equivalent to the original and well-studied member force formulation~\sidecite{dorn_automatic_1964, bendsoe_topology_2004}.
+where $\matr{B}_s$ is a $N_{\text{dof}} \times N_{\text{el}}$ matrix containing the direction cosines of the $i$-th member with respect to the $i$-th degree of freedom to calculate the nodal force equilibrium constraints $\vect{g}_\text{eq}$, and where $N_{\text{dof}}$ is the number of \gls{dofs}, equal to $2M$ or $3M$ for a two- or a three-dimensional load case, respectively. $\vect{q} = [q_1, q_2, \ldots,q_{N_{\text{el}}}]^T$ is the vector containing the internal member forces, with a positive sign when in tension, caused by the external load $\vect{f} = [f_1, f_2, \ldots,f_{N_{\text{dof}}}]^T$. The state variable $\vect{a} = [a_1, a_2, \ldots,a_{N_{\text{el}}}]^T$ represents the cross-sectional area of the $N_{\text{el}}$ members of the structure. $\sigma_\text{c}$ and $\sigma_\text{t}$ are the compressive and tensile maximum allowable stresses of the material, respectively, used in the stress constraints $\vect{g}_\text{st,c}$ and $\vect{g}_\text{st,t}$. This formulation takes into account only the linear behavior of the structure and is equivalent to the original and well-studied member force formulation~\sidecite{dorn_automatic_1964, bendsoe_topology_2004}.
 
 The resolution of Problem \ref{eq:03_optim_original} frequently produces complex structures made up of a multitude of small members that tend to the shapes of Michell structures (see Fig~\ref{fig:03_truss-ex})~\sidecite{michell_limits_1904,gilbert_layout_2003}. While it is known that these structures are nearly optimal, one would want to limit the complexity of the resulting structure. Substituting $\vect{\ell}$ with $\vect{\tilde{\ell}} = [\ell_1 + s, \ell_2 + s, \ldots,\ell_{N\text{el}} + s]^T$ in the objective function of \ref{eq:03_optim_original}, one would penalize the appearance of small members~\sidecite{parkes_joints_1975}. $\vect{\tilde{\ell}}$ is called augmented member length and $s$ the joint cost. This approach mimics the mesh-independency regularization filter of topology optimization, avoiding the inevitable apparition of structures with tiny features when a fine mesh is adopted.
 

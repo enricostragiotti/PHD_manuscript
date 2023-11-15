@@ -20,7 +20,7 @@
             width	= 8.4cm,
 		    height	= 7cm,
             axis lines = middle,
-            legend entries=\footnotesize{Feasible domain at iteration $i$},
+            legend entries=\footnotesize{Feasible domain at iteration $k$},
             legend pos= south west,
             % axis equal,
             enlargelimits, % no need to add padding
@@ -45,16 +45,16 @@
 
         % Important points
         \coordinate (a_0) at (3, -1.8); % linearization point P0
-        \node [above right, lab] at (3.1, -1.8) {$P_i$};
+        \node [above right, lab] at (3.1, -1.8) {$P_k$};
         
         \coordinate (a_0_x) at (3, 0); % linearization point P0
-        \node [lab]  at (3, 0.35) {$a^{i}$};
+        \node [lab]  at (3, 0.35) {$a^{k}$};
 
         % \coordinate[label=right:\footnotesize$P'_{\mathrm{1}}$] (a_1) at (1.7, -0.24); % P1'
         \coordinate (a_1) at (1.7, -0.24); % P1'
         \coordinate (a_1_x) at (1.7, 0); % P1'
-        \node [lab] at (1.7, 0.35) {$a^{i+1}$}; % a_1
-        \coordinate[label=below:\footnotesize$P_{i+1}$] (a_1_l) at (1.7, -0.578); % P1
+        \node [lab] at (1.7, 0.35) {$a^{k+1}$}; % a_1
+        \coordinate[label=below:\footnotesize$P_{k+1}$] (a_1_l) at (1.7, -0.578); % P1
 
         % SL tension
         \addplot[domain=0:\xmax,samples=5, thick] {.75*x} node[lab, above left, pos=1] {$\sigma_t$};

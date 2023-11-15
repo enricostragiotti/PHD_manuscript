@@ -56,16 +56,16 @@ As previously discussed in \secref{sec:03_applications}, the \gls{tto} method sh
 \begin{equation}
     \lambda = \frac{\ell}{R_{\mathrm{g}}},
 \end{equation}
-where $R_{\mathrm{g}}$ represents the gyration radius of the cross-sectional area, defined as $R_{\mathrm{g}} = \sqrt{I/a_j}$.
+where $R_{\mathrm{g}}$ represents the gyration radius of the cross-sectional area, defined as $R_{\mathrm{g}} = \sqrt{I/a_i}$.
 The primary objective of this section is to introduce an upper limit constraint on the cross-sectional area design variable. This constraint prevents a bar from exceeding the bounds of its idealized model, thereby enhancing the optimization process's robustness.
 
-Remembering that for a circular cross-section $I = \pi r_j^4/4$, we can write
+Remembering that for a circular cross-section $I = \pi r_i^4/4$, we can write
 \begin{equation}
-    R_{\mathrm{g},j} = \frac{r_j}{2}.
+    R_{\mathrm{g},i} = \frac{r_i}{2}.
 \end{equation}
 The minimum slenderness limit constraints are then stated as:
 \begin{equation} \label{eq:04_slend_constraints}
-    a_j \leq \frac{4 \pi \ell_j^2}{\lambda_{\text{max}}}, \quad \forall j \in [1,\ldots, N_{\text{el}}]
+    a_i \leq \frac{4 \pi \ell_i^2}{\lambda_{\text{max}}}, \quad \forall i \in [1,\ldots, N_{\text{el}}]
     \tag{$\vect{g}_{\text{slend}}$}
 \end{equation}
 for a fixed $\lambda_{\text{max}}$. In this thesis we set $\lambda_{\text{max}}=15$.
@@ -73,16 +73,16 @@ for a fixed $\lambda_{\text{max}}$. In this thesis we set $\lambda_{\text{max}}=
 \subsection{Local and topological buckling constraints}
 Adding local buckling constraints to the optimization formulation is fundamental, as ultralight truss structures are often dominated by this mode of failure \sidecite{sigmund_non-optimality_2016}. By imposing local buckling constraints over a \gls{tto} problem (where the lower bound for the members' cross-sectional areas is 0), the optimization domain becomes disjointed \sidecite{cheng_aspects_1995}. The solution is to be searched inside a degenerate space of the design space of the optimization, known in the literature as singular optimum \sidecite{guo_new_2001}. Stolpe \sidecite{stolpe_note_2003} showed how using the \gls{sand} formulation with local buckling and kinematic compatibility constraints, it is possible to find well-optimized structures without the use of relaxation techniques. The authors, however, point out how the solution is still very sensitive to the initialization point of the \gls{nlp} formulation. The local buckling constraints $\vect{g}_{\text{buck}}$ are stated using Euler's critical load formula as:
 \begin{equation}
-    q_j  + \frac{s_j a_j^2}{\ell_j^2} \geq 0 \quad \forall j \in [1,\ldots, N_{\text{el}}],
+    q_i  + \frac{s_i a_i^2}{\ell_i^2} \geq 0 \quad \forall i \in [1,\ldots, N_{\text{el}}],
     \tag{$\vect{g}_{\text{buck}}$}
     \label{eq:04_buck}
 \end{equation}
-where $s_j$ is a parameter dependent on the member material and section topology as follows:
+where $s_i$ is a parameter dependent on the member material and section topology as follows:
 \begin{equation}
-    s_j=\pi^2 E \beta_j.
+    s_i=\pi^2 E \beta_i.
     \label{eq:04_s}
 \end{equation}
-$\beta_j=I_j/a^2_j$ is a positive constant dependent on the moment of inertia and the section of the $j$-th bar, and $E$ is Young's modulus of the material. Assuming that the shape of the cross-section is identical over the whole structure and is independent of $a$, it follows that  $\beta_j = \beta$ and $s_j = s, \; \forall j \in [1,\ldots, N_{\text{el}}]$.
+$\beta_i=I_i/a^2_i$ is a positive constant dependent on the moment of inertia and the section of the $i$-th bar, and $E$ is Young's modulus of the material. Assuming that the shape of the cross-section is identical over the whole structure and is independent of $a$, it follows that  $\beta_i = \beta$ and $s_i = s, \; \forall i \in [1,\ldots, N_{\text{el}}]$.
 
 Direct application of the local buckling constraint \eqrefnotext{eq:04_buck} in the optimization formulation tends to create "chains" of unstable compressive members \sidecite{bendsoe_optimization_1995, zhou_difficulties_1996, rozvany_difficulties_1996}. This problem is known in the literature as topological buckling \sidecite{achtziger_local_1999}, as the definition of the compressive chains is a function of the topology of the structure, and is one of the elements of the nodal stability of the structure. Additional forms of structure instability, such as global buckling \sidecite{ben-tal_optimal_2000,kocvara_modelling_2002, neves_generalized_1995, ferrari_topology_2021} or the use of lateral perturbing forces to obtain nodal stability \sidecite{tyas_practical_2006,mela_resolving_2014} have been studied in the literature. However, since they are beyond the scope of this work, they will not be discussed further.
 
@@ -95,7 +95,7 @@ Direct application of the local buckling constraint \eqrefnotext{eq:04_buck} in 
 
 To illustrate the topological buckling phenomenon, we consider the case shown in \figref{fig:04_chain_buck}a. It consists of a ground structure with $M=3$ nodes and $N_{\text{el}}=2$ bars with length $\ell_1=\ell_2=\ell$, and a compressive load of magnitude $F$ applied at the right-hand side node. For this trivial structure, we can state that $q_1=q_2=F$ and thus $a_1=a_2=a$. We suppose here that the allowables of the material are such that the local buckling (and not the stress) is the most limiting failure criterion for the bars. Assuming that the shape of the section is equal, the local buckling constraints are written as:
 \begin{equation}
-    q_j\geq -\frac{s a^2}{\ell^2}, \quad j\in[1,2].
+    q_i\geq -\frac{s a^2}{\ell^2}, \quad i\in[1,2].
     \label{eq:04_chain_1}
 \end{equation}
 However, the structure is unstable because the vertical force equilibrium equation evaluated on the central hinge is satisfied only in an ideal case where no structural imperfections are taken into account.
@@ -112,14 +112,14 @@ The easiest way to get rid of the instability of the compressive chains is to po
 
 For that reason, Achtziger proposes an update strategy to modify the length used to evaluate the critical buckling force of \eqrefnotext{eq:04_buck} as follows:
 \begin{equation}
-    \ell^*_j(\vect{a}):= 
+    \ell^*_i(\vect{a}):= 
     \begin{cases}
-        \ell_j & \text { if } j \notin \mathcal{C}_{l,r}(\vect{a}) \\
+        \ell_i & \text { if } i \notin \mathcal{C}_{l,r}(\vect{a}) \\
         \sum \ell_{r} \;|\; r \in \mathcal{C}_{l,r}(\vect{a})  & \text { otherwise,}
     \end{cases}
     \label{eq:04_chain_len}
 \end{equation}
-where $r$ represents the $r$-th bar of the $l$-th compression chain of the structure. The topology-dependent set $\mathcal{C}_{l,r}(\vect{a})$ is defined as the set of $r$ member indexes of the $l$-th buckling chain. As internal forces on buckling chains are constant, only the buckling length of the first member of the chain ($\ell^*_j(\vect{a}) \text{ with } j \in \mathcal{C}_{l,1}(\vect{a})$) is modified. Additionally, we add the following side constraints on the other members of the $l$-th chain to ensure feasibility:
+where $r$ represents the $r$-th bar of the $l$-th compression chain of the structure. The topology-dependent set $\mathcal{C}_{l,r}(\vect{a})$ is defined as the set of $r$ member indexes of the $l$-th buckling chain. As internal forces on buckling chains are constant, only the buckling length of the first member of the chain ($\ell^*_i(\vect{a}) \text{ with } i \in \mathcal{C}_{l,1}(\vect{a})$) is modified. Additionally, we add the following side constraints on the other members of the $l$-th chain to ensure feasibility:
 \begin{equation}
     a_{r}\geq a_{r=1} \quad \; r \in \mathcal{C}_{l,r}(\vect{a}), \; \forall r \neq 1.
     \label{eq:04_side_cons_chain}
@@ -128,10 +128,10 @@ where $r$ represents the $r$-th bar of the $l$-th compression chain of the struc
 \subsection{Kinematic compatibility constraints}
 To optimize test cases that result in statically indeterminate structures, such as structures loaded with multiple load cases or imposed symmetries, we add an additional mechanical constraint called kinematic compatibility \sidecite{kirsch_optimal_1989, rozvany_layout_1995}. Compatibility can be imposed as a nonlinear constraint in the optimization formulation \sidecite{kirsch_optimal_1980}, or can be taken into account by prestressing the initial structure \sidecite{kirsch_effect_1989}.
 
-The kinematic compatibility constraints restrict the displacement field $\vect{U} = [U_1, \ldots,U_{N_{\text{dof}}}]^T$ in such a way that strains $\varepsilon_j$ and internal stresses $\sigma_j$ comply with Hooke's law $\sigma_j = E_j \varepsilon_j$ with $j \in [1,\ldots, N_{\text{el}}]$. Recalling that in a truss the relationship between nodal displacements and member deformations is $\vect{b}^T_j \vect{U} = \ell_j \varepsilon_j$ with $\vect{b}$ as the $j$-th column of the $\matr{B}$ matrix, we can formulate the kinematic compatibility constraints $\vect{g}_{\textrm{comp}}$ as:
+The kinematic compatibility constraints restrict the displacement field $\vect{U} = [U_1, \ldots,U_{N_{\text{dof}}}]^T$ in such a way that strains $\varepsilon_i$ and internal stresses $\sigma_i$ comply with Hooke's law $\sigma_i = E_i \varepsilon_i$ with $i \in [1,\ldots, N_{\text{el}}]$. Recalling that in a truss the relationship between nodal displacements and member deformations is $\vect{b}^T_i \vect{U} = \ell_i \varepsilon_i$ with $\vect{b}$ as the $i$-th column of the $\matr{B}$ matrix, we can formulate the kinematic compatibility constraints $\vect{g}_{\textrm{comp}}$ as:
 \begin{equation}
 \label{eq:04_compatib}
-     q_j - \frac{a_j E_j}{\ell_j} \vect{b}_j^T\vect{U}  = 0  \quad \forall j \in [1,\ldots, N_{\text{el}}].
+     q_i - \frac{a_i E_i}{\ell_i} \vect{b}_i^T\vect{U}  = 0  \quad \forall i \in [1,\ldots, N_{\text{el}}].
      \tag{$\vect{g}_{\textrm{comp}}$}
 \end{equation}
 Kinematic compatibility constraints are non-linear as the design variable $\vect{q}$ is dependent on $\vect{a}$ and $\vect{U}$.
@@ -188,15 +188,15 @@ The first step of the proposed optimization strategy is here described in detail
     \label{eq:04_optim_no_constr}
 \end{equation}
 
-Since the objective function and all of its constraints are linear, except for the buckling constraint, this problem is solved by iteratively linearizing the non-linear buckling constraints and using a \gls{slp} algorithm. Following the work of \sidecite{schwarz_efficient_2018}, the Euler's critical load is iteratively updated using a first-order Taylor expansion for every $j$ member with cross-sectional area $a_{j}^i$ at the iteration $i$ in the neighborhood of the point $\vect{P}_{i}$ (see \figref{fig:04_SLP}):
+Since the objective function and all of its constraints are linear, except for the buckling constraint, this problem is solved by iteratively linearizing the non-linear buckling constraints and using a \gls{slp} algorithm. Following the work of \sidecite{schwarz_efficient_2018}, the Euler's critical load is iteratively updated using a first-order Taylor expansion for every $i$ member with cross-sectional area $a_{i}^k$ at the iteration $k$ in the neighborhood of the point $\vect{P}_{k}$ (see \figref{fig:04_SLP}):
 \begin{equation}
-    \tilde{q}_{i,j}^{\text{cr}} = q_{i,j}^{\text{cr}}(a_{j}^i) + (a_{j}^{i+1} - a_{j}^i)\left.\derfrac{q_{i,j}^{\text{cr}}(a_{j}^i)}{a}\right\rvert_{a=a_{j}^i}
+    \tilde{q}_{i,k}^{\text{cr}} = q_{i,k}^{\text{cr}}(a_{i}^k) + (a_{i}^{k+1} - a_{i}^k)\left.\derfrac{q_{i,k}^{\text{cr}}(a_{i}^k)}{a}\right\rvert_{a=a_{i}^k}
 \end{equation}
-where $a_{j}^{i+1}$ represent the design variable of the \gls{slp} at the current iteration and $q^{\text{cr}}_{i,j}(a_{j}^i) = -s ({a_{j}^i})^2/\ell^{*2}_j$ represents the Euler's critical load with cross-sectional area $a_{j}^i$ and modified buckling length $\ell^{*}_j$. 
+where $a_{i}^{k+1}$ represent the design variable of the \gls{slp} at the current iteration and $q^{\text{cr}}_{i,k}(a_{i}^k) = -s ({a_{i}^k})^2/\ell^{*2}_i$ represents the Euler's critical load with cross-sectional area $a_{i}^k$ and modified buckling length $\ell^{*}_i$. 
 
 The linearized local buckling constraints $\vect{\tilde{g}}_{\textrm{buck}}$ are then stated as:
 \begin{equation}
-    q_{j} \geq \tilde{q}^{\text{cr}}_{i,j},\text{ with } \tilde{q}^{\text{cr}}_{i,j}= - \frac{s a_{j}^i\left(2 a_{j}^{i+1} - a_{j}^i\right)}{\ell^{*2}_j} \quad \forall j \in [1,\ldots, N_{\text{el}}],
+    q_{i} \geq \tilde{q}^{\text{cr}}_{i,k},\text{ with } \tilde{q}^{\text{cr}}_{i,k}= - \frac{s a_{i}^k\left(2 a_{i}^{k+1} - a_{i}^k\right)}{\ell^{*2}_i} \quad \forall i \in [1,\ldots, N_{\text{el}}],
     \label{eq:04_buck_con_lin}
     \tag{$\vect{\tilde{g}}_{\textrm{buck}}$}
 \end{equation}
@@ -215,7 +215,7 @@ We can now state the relaxed linearized sub-problem $\tilde{\mathbb{P}}_2$ obtai
     \begin{aligned}
     \min_{\vect{a}, \vect{q}^0, \dots, \vect{q}^P}   && V &= \vect{\ell}^{T}\vect{a}\\
     \textrm{s.t.}   && \matr{B}\vect{q}^p &= \vect{f}^p && \forall p \in [0,\dots,N_p]\\
-    && \vect{q}^p \geq - &\frac{s \vect{a}^i\left(2 \vect{a}^{i+1} - \vect{a}^i\right)}{\vect{\ell}^{*2}} && \forall p \in [0,\dots,N_p] \\
+    && \vect{q}^p \geq - &\frac{s \vect{a}^k\left(2 \vect{a}^{k+1} - \vect{a}^k\right)}{\vect{\ell}^{*2}} && \forall p \in [0,\dots,N_p] \\
     && -\sigma_\text{c}\vect{a} &\leq \vect{q}^p \leq \sigma_\text{t}\vect{a} && \forall p \in [0,\dots,N_p] \\
     && a_{r}&\geq a_{r=1} && r \in \mathcal{C}_{l,r}(\vect{a}) \\
     && 0 &\leq \vect{a} \leq \frac{4 \pi \vect{\ell}^2}{\lambda_{\text{max}}}. \\
@@ -224,7 +224,7 @@ We can now state the relaxed linearized sub-problem $\tilde{\mathbb{P}}_2$ obtai
     \label{eq:04_optim_no_constr_lp}
 \end{equation}
 
-Since the objective function and all of its constraints are linear, we can approximate the solution of \eqrefnotext{eq:04_optim_no_constr} by iteratively solving the sub-problem \eqrefnotext{eq:04_optim_no_constr_lp}. At every iteration $i$, the vector of cross-sectional areas $\vect{a}^i$ is used to evaluate the linearization point $\vect{P}_{i}$ and calculate the set of linearized buckling constraints $\vect{\tilde{g}}_{\textrm{buck}}$ (see \figref{fig:04_SLP}). The sub-problem \eqrefnotext{eq:04_optim_no_constr_lp} is, then, solved using a \gls{lp} solver, and the updated vector of cross-sectional areas $\vect{a}^{i+1}$ is used to evaluate the set of linearized buckling constraints of the $i+1$ iteration. These steps are repeated until convergence \ie when $\norm{\Delta \vect{x}}_\infty\leq \text{tol}_{slp}$, where $\Delta \vect{x}$ represents the difference of the design variable vector $\vect{x}$ between two successive iterations. The vector $\vect{x}$ is scaled so that the difference $\Delta \vect{x}$ gives coherent results for the different physical quantities (cross-sectional areas and forces).
+Since the objective function and all of its constraints are linear, we can approximate the solution of \eqrefnotext{eq:04_optim_no_constr} by iteratively solving the sub-problem \eqrefnotext{eq:04_optim_no_constr_lp}. At every iteration $k$, the vector of cross-sectional areas $\vect{a}^k$ is used to evaluate the linearization point $\vect{P}_{k}$ and calculate the set of linearized buckling constraints $\vect{\tilde{g}}_{\textrm{buck}}$ (see \figref{fig:04_SLP}). The sub-problem \eqrefnotext{eq:04_optim_no_constr_lp} is, then, solved using a \gls{lp} solver, and the updated vector of cross-sectional areas $\vect{a}^{k+1}$ is used to evaluate the set of linearized buckling constraints of the $k+1$ iteration. These steps are repeated until convergence \ie when $\norm{\Delta \vect{x}}_\infty\leq \text{tol}_{slp}$, where $\Delta \vect{x}$ represents the difference of the design variable vector $\vect{x}$ between two successive iterations. The vector $\vect{x}$ is scaled so that the difference $\Delta \vect{x}$ gives coherent results for the different physical quantities (cross-sectional areas and forces).
 
 \subsection{Handling local minima: reinitialization strategy}
 \label{sec:04_reinit}
@@ -250,14 +250,14 @@ Since the objective function and all of its constraints are linear, we can appro
     \label{fig:04_reinit_strat}
 \end{figure}
 
-If at the end of iteration $i-1$ the cross-sectional area of bar $j$, $\vect{a}^i_{j}$, becomes very small, the gradient of the corresponding local buckling constraint at iteration $i$ will tend towards 0 and the feasible domain will be extremely reduced (see \figref{fig:04_tiny-area}). Any bar with near-zero sections will remain as such in future iterations since there is no incentive for the \gls{slp} optimizer to increase its value. This is one of the possible reasons why the \gls{slp} optimizer gets stuck in local minima.
+If at the end of iteration $k-1$ the cross-sectional area of bar $i$, $\vect{a}^k_{i}$, becomes very small, the gradient of the corresponding local buckling constraint at iteration $k$ will tend towards 0 and the feasible domain will be extremely reduced (see \figref{fig:04_tiny-area}). Any bar with near-zero sections will remain as such in future iterations since there is no incentive for the \gls{slp} optimizer to increase its value. This is one of the possible reasons why the \gls{slp} optimizer gets stuck in local minima.
 
-Subsequently, we propose a heuristic strategy to reinitialize the small cross-sectional area values $\vect{a}^{i}$ used to evaluate the linearized local buckling constraints $\tilde{g}_{\text{buck}}$ at iteration $i$. The strategy is called $k$ times during the optimization when the solver converges to a minimum, \ie when $ \norm{\Delta \vect{x}}_\infty \leq \text{tol}_{slp} $. It affects only the cross-sectional areas that are smaller than a fraction value $\tau$ of the maximum value at iteration $i$, $\norm{\vect{a^i}}_\infty$. The updated cross-sectional area $\overline{\vect{a}}^i$ used to evaluate the linearization point $\overline{\vect{P}}_{i}$ is updated as follows:
+Subsequently, we propose a heuristic strategy to reinitialize the small cross-sectional area values $\vect{a}^{k}$ used to evaluate the linearized local buckling constraints $\tilde{g}_{\text{buck}}$ at iteration $k$. The strategy is called multiple times during the optimization when the solver converges to a minimum, \ie when $ \norm{\Delta \vect{x}}_\infty \leq \text{tol}_{slp} $. It affects only the cross-sectional areas that are smaller than a fraction value $\tau$ of the maximum value at iteration $k$, $\norm{\vect{a^k}}_\infty$. The updated cross-sectional area $\overline{\vect{a}}^k$ used to evaluate the linearization point $\overline{\vect{P}}_{k}$ is updated as follows:
 \begin{equation}
-    \overline{a}^i_{j}:=
+    \overline{a}^k_{i}:=
     \begin{cases}
-        \phi_k \norm{\vect{a^i}}_\infty & \text{ if } a^i_{j} \leq \tau \norm{\vect{a^i}}_\infty\\
-        a^i_{j} & \text { otherwise.}  
+        \phi_n \norm{\vect{a^k}}_\infty & \text{ if } a^k_{i} \leq \tau \norm{\vect{a^k}}_\infty\\
+        a^i_{i} & \text { otherwise.}  
     \end{cases}
     \label{eq:04_reinit}
 \end{equation}
@@ -270,12 +270,12 @@ The effects of this approach are shown in \figref{fig:04_reinit_strat}, where it
     \label{fig:04_slp_solution}
 \end{figure}
 
-The $\phi_k$ parameter is used in \eqref{eq:04_reinit} to influence how much the reinitialization heuristic modifies the original formulation. Subsequently, to reach convergence, we propose a continuation scheme on $\phi_k$ to reduce its impact on the optimization following an exponential decay law:
+The $\phi_n$ parameter is used in \eqref{eq:04_reinit} to influence how much the reinitialization heuristic modifies the original formulation. Subsequently, to reach convergence, we propose a continuation scheme on $\phi_n$ to reduce its impact on the optimization following an exponential decay law:
 \begin{equation}
-    \phi_k = \phi_{k-1}^\beta \quad \forall k \in [1,\dots,k_{\text{max}}],
+    \phi_n = \phi_{n-1}^\beta \quad \forall n \in [1,\dots,n_{\text{max}}],
     \label{eq:04_phi}
 \end{equation}
-where $k_{\text{max}}$ represent the maximum number of reinitialization calls and the $\beta$ parameter control the steepness of the exponential progression. In that way, as the number of calls to the reinitialization strategy increases, its influence on the original formulation decreases.
+where $n_{\text{max}}$ represent the maximum number of reinitialization calls and the $\beta$ parameter control the steepness of the exponential progression. In that way, as the number of calls to the reinitialization strategy increases, its influence on the original formulation decreases.
 
 The complete \gls{slp} strategy with reinitialization used to solve Problem \eqrefnotext{eq:04_optim_no_constr} is presented in \figref{fig:04_slp_solution}, where the \gls{slp} optimized design variable vector is noted as $\vect{\tilde{x}}^*=[\tilde{\vect{a}}^*, \; \tilde{\vect{q}}^*]$.
 
@@ -290,7 +290,7 @@ with $r$ the number of fixed \gls{dofs} of the test case. If $\text{DSI}\leq0$, 
 
 To mitigate the risk of becoming trapped in local minima, the \gls{nlp} optimizer is employed on a reduced design space. The solution $\vect{\tilde{x}}^*$ of the \gls{slp} serves the purpose of simplifying the initial ground structure, thereby eliminating elements from the \gls{nlp} optimization that fall below the specified threshold value $a_{\text{thr}}$:
 \begin{equation}
-    a_j<a_{\text{thr}} \; \forall j, \text{ with }a_{\text{thr}} = \chi \; \max(\tilde{\vect{a}}^*),
+    a_i<a_{\text{thr}} \; \forall i, \text{ with }a_{\text{thr}} = \chi \; \max(\tilde{\vect{a}}^*),
     \label{eq:04_thr}
 \end{equation}
 with the parameter $\chi$ called the cross-sectional area threshold value.
@@ -305,7 +305,7 @@ An elastic \gls{fea} based on the direct stiffness method is performed to provid
 \section{Numerical application} \label{sec:04_numerical_app}
 In this section, the proposed method is benchmarked against four classical and innovative test cases. Firstly, we show how the proposed two-step solution strategy with reinitialization reduces the influence of the starting point on the optimization result compared to the direct \gls{nlp} optimization of Problem \eqrefnotext{eq:04_optim_complete}. Additionally, as the response surface of the \gls{slp} of the proposed method is more regular than the original \gls{nlp}, the two-step solution strategy generates simple structures \ie with a low number of active bars, as it is efficient at driving the cross-sectional areas to zero. To show that, we implement and optimize the ten-bar truss and the 2D cantilever beam, two of the most common benchmarks in \gls{tto} with buckling constraints. Secondly, to show the ability of the proposed method to work on structures with multiple load cases we implemented a modified ten-bar truss test case where several load cases are applied to the same ground structure. Finally, to assess the computational efficiency and to validate the proposed strategy on a large-scale structure, we optimize a three-dimensional wingbox test case based on the \acrfull{crm} with multiple discretization refinement.
 
-The test cases are optimized using different resolution strategies. The proposed method is compared against the direct \gls{nlp} optimization of Problem \eqrefnotext{eq:04_optim_complete}, denoted in our analysis as \gls{nlp}. The proposed two-step resolution strategy is implemented with three different maximum numbers of reinitialization calls $k_{\text{max}}$: no reinitialization (2S-0R) with $k_{\text{max}}=0$, one call of reinitialization (2S-1R) with $k_{\text{max}}=1$, and finally five calls of reinitialization (2S-5R) with $k_{\text{max}}=5$. The reinitialization magnitude parameter $\vect{\phi}$ is set up using \eqref{eq:04_phi} and the parameters listed in \tabref{tab:04_param}, leading to $\phi = 0.8000$ for the 2S-1R algorithm and to $\vect{\phi} = \left[ 0.8000, 0.6400, 0.4096, 0.1677, 0.0281 \right]$ for the five reinitialization calls of 2S-5R.
+The test cases are optimized using different resolution strategies. The proposed method is compared against the direct \gls{nlp} optimization of Problem \eqrefnotext{eq:04_optim_complete}, denoted in our analysis as \gls{nlp}. The proposed two-step resolution strategy is implemented with three different maximum numbers of reinitialization calls $n_{\text{max}}$: no reinitialization (2S-0R) with $n_{\text{max}}=0$, one call of reinitialization (2S-1R) with $n_{\text{max}}=1$, and finally five calls of reinitialization (2S-5R) with $n_{\text{max}}=5$. The reinitialization magnitude parameter $\vect{\phi}$ is set up using \eqref{eq:04_phi} and the parameters listed in \tabref{tab:04_param}, leading to $\phi = 0.8000$ for the 2S-1R algorithm and to $\vect{\phi} = \left[ 0.8000, 0.6400, 0.4096, 0.1677, 0.0281 \right]$ for the five reinitialization calls of 2S-5R.
 
 The optimizations are performed using the Python package CVXPY 1.2.2 \sidecite{diamond_cvxpy_2016} with the ECOS 2.0.7 \sidecite{domahidi_ecos_2013} solver to solve the relaxed \gls{lp} Problem \eqrefnotext{eq:04_optim_no_constr_lp}. The \gls{nlp} Problem \eqrefnotext{eq:04_optim_complete} is solved using cyipopt \sidecite{Moore_Mechmotum}, a Python wrapper for IPOPT 3.14.11 \sidecite{wachter_implementation_2006}, a large-scale nonlinear optimization package using PARDISO 6.0 \sidecite{alappat_recursive_2020} as linear solver. The Jacobian and the Hessian of the Lagrangian of the \gls{nlp} step are calculated at every optimization iteration to allow faster convergence. As every state variable of the optimization is independent of the others, these responses are derived analytically and will not be detailed there. The stopping criterion used for the \gls{slp} and \gls{nlp} optimizations are $\norm{\Delta \vect{x}}_\infty \leq \text{tol}_{slp}  \text{, and } \norm{\Delta_{\text{NLP}}}_\infty \leq \text{tol}_{nlp}$, with $\text{tol}_{slp}=10^{-6}$ and $\text{tol}_{nlp}=10^{-4}$ respectively. $\Delta_{\text{NLP}}$ represents the scaled \gls{nlp} error, a more comprehensive value used by IPOPT to take into account the optimality of the solution and the constraints violation. The objective function is scaled so that the initial volume is 1000, the areas are in the interval $[0,1000]$, the initial forces in $[0,1000]$, and the displacement in $[0,1000]$ for the \gls{slp} and the \gls{nlp}. The full list of parameters used to set up the variable scaling, the \gls{slp} optimization, the reinitialization, and the \gls{nlp} optimization is listed in \tabref{tab:04_param}. Several additional parameters are used in the \gls{nlp} step for cyipopt and IPOPT:
 \begin{itemize}
@@ -464,7 +464,7 @@ Let us consider only the first initialization point $\vect{a}^0_s$. In \figref{f
 
 It should be mentioned that the proposed heuristic comes with an increase in computational cost. While for the first initialization point, the 2S-0R algorithm converges in only 4 iterations, the single-step 2S-1R and the five-step 2S-5R algorithms converge after 17 and 73 iterations, respectively. The optimization time is slightly more than one second (see the last column of \tabref{tab:04_10_bar_solution}). However, this increase in calculation time is justified by the fact that a single initialization point should suffice to reach an acceptable solution, instead of using a multistart approach.
 
-It is advisable to select the highest number of reinitialization calls (parameter $k_{\text{max}}$ of \eqref{eq:04_phi}) that is compatible with the user's computational budget. Our research findings suggest that once the parameter $\phi_k$ (which determines the strength of the heuristic perturbation) drops below 0.01, the reinitialization has no more influence on the result of the linearized problem. Therefore, with the proposed parameterization of the continuation scheme, pursuing more than five reinitialization calls does not yield additional benefits in the studied test cases.
+It is advisable to select the highest number of reinitialization calls (parameter $n_{\text{max}}$ of \eqref{eq:04_phi}) that is compatible with the user's computational budget. Our research findings suggest that once the parameter $\phi_k$ (which determines the strength of the heuristic perturbation) drops below 0.01, the reinitialization has no more influence on the result of the linearized problem. Therefore, with the proposed parameterization of the continuation scheme, pursuing more than five reinitialization calls does not yield additional benefits in the studied test cases.
 
 \subsection{2D cantilever beam}
 \label{sec:04_2dcant}

@@ -72,9 +72,9 @@ Lastly, we introduce some notation to denote specific bars within the modules an
 Addressing topological buckling in modular structures is a more complex task compared to monolithic structures. This complexity arises from the fact that we must not only consider bars within a single module's design space but also those connecting different modules. Since the nature of this problem heavily relies on how the modules are arranged within the structure, we have opted for a simplification. \marginnote{
 \eqref{eq:04_chain_len}:
 \begin{equation*}
-    \ell^*_j(\vect{a}):= 
+    \ell^*_i(\vect{a}):= 
     \begin{cases}
-        \ell_j & \text { if } j \notin \mathcal{C}_{l,r}(\vect{a}) \\
+        \ell_i & \text { if } i \notin \mathcal{C}_{l,r}(\vect{a}) \\
         \sum \ell_{r} \;|\; r \in \mathcal{C}_{l,r}(\vect{a})  & \text { otherwise.}
     \end{cases}
 \end{equation*}
@@ -89,7 +89,7 @@ Addressing topological buckling in modular structures is a more complex task com
 We have made this choice knowing that the high connectivity of modular structures tends to reduce the occurrence of nodal instability within the structure. Any potential nodal instability in compressive chains at the structure level is addressed in a subsequent post-processing phase.
 
 \subsection{Optimization formulation}
-Monolitic fomulation \ref{eq:04_optim_complete} is modified using \eqsref{eq:05_VL} and \eqrefnotext{eq:05_side_cons_chain_modular} to obtain the modular optimzation formulation \ref{eq:05_optim_complete_modular} that use the variable linking approach. Formulation~\ref{eq:05_optim_complete_modular} is stated in terms of modular cross-sectional areas $\bar{\vect{a}}$, member forces $\vect{q}$ and nodal displacements $\vect{U}$ as follows:
+The monolithic fomulation \ref{eq:04_optim_complete} is updated using \eqsref{eq:05_VL} and \eqrefnotext{eq:05_side_cons_chain_modular} to obtain the modular optimzation formulation \ref{eq:05_optim_complete_modular} that use the variable linking approach. Formulation~\ref{eq:05_optim_complete_modular} is stated in terms of modular cross-sectional areas $\bar{\vect{a}}$, member forces $\vect{q}$ and nodal displacements $\vect{U}$ as follows:
 \begin{equation}
     \begin{aligned}
     \min_{\bar{\vect{a}}, \vect{q}, \vect{U}}   && V &= \vect{\ell}^{T}\vect{a}\\
@@ -104,11 +104,11 @@ Monolitic fomulation \ref{eq:04_optim_complete} is modified using \eqsref{eq:05_
     \tag{${\mathbb{M}}_\text{1}$}
     \label{eq:05_optim_complete_modular}
 \end{equation}
-where $\bar{\vect{\ell}}$ represent the vector of the module's bar length.
- 
-The total number of constraints of the formulation is $N_T\bar{n} +N_{\text{sub}}\bar{n}+2M$ or $N_T\bar{n} +N_{\text{sub}}\bar{n}+3M$ in function of the test case is two or three dimensional. The number of constraints is, however, equal to the monolitich optimization, as stress, buckling and compatibility are all local grandeurs and are then referenced to the whole structure and not only the modules.
+where $\bar{\vect{\ell}}$ represent the vector the lengths of the bars within the modules.
 
-The formulation is solved appling the two step optimization algorithm with the use of the reinitialization heuristic to reduce the dependece to the starting point proposed in \secref{sec:04_2step_opt}. for that reason we state the relaxed formulation m2 that is solved instead of m1 to 
+The total number of design variables in the formulation is expressed as $N_T\bar{n} + N_{\text{sub}}\bar{n} + 2M$ or $N_T\bar{n} + N_{\text{sub}}\bar{n} + 3M$, depending on whether the test case is two or three-dimensional. The number of constraints is, however, equal to the monolithic optimization. This fact arises due to the localized nature of stress, buckling, and compatibility constraints, which are all referenced not only to individual modules but to the entire structure.
+
+The formulation is solved reusing the proposed two-step optimization algorithm, incorporating the reinitialization heuristic to mitigate dependence on the optimization starting point, as detailed in \secref{sec:04_2step_opt}. We state here the formulation $\mathbb{M}_\text{2}$ with relaxed compatibility constraints that is solved as the first step of the optimization. 
 
 \begin{equation}
     \begin{aligned}
@@ -124,47 +124,42 @@ The formulation is solved appling the two step optimization algorithm with the u
     \label{eq:05_optim_no_constr_modular}
 \end{equation}
 
-Formulation m2 is solvable using a succession of linearized problem using a SLP algorithm. this is possible because the kronecher product is a linear operator and buckling constraints are linearized as already done on \secref{sec:04_2step_opt}
+We can solve Formulation $\mathbb{M}_2$ by breaking it down into simpler linearized problems using a \gls{slp} algorithm. This is possible because the Kronecker product is a linear operator, and the buckling constraints can be linearized, as previously demonstrated in \secref{sec:04_2step_opt}.
 
 \subsection{Sensitivity analysis}
-how the sensitivity is changed with respect to the variable linking
+During each iteration of the optimization process, the current state of the structure is determined by the values assigned to the design variables. In structure optimization, the evolution of the structure's design is guided by assessing sensitivities of both the objective function and constraints with respect to the design variables. In the specific context of modular structure optimization, the module (and not the structure divided in the subdomains) is identified as the design domain, and for that reason necessitating the derivation of corresponding modular sensitivities.
 
-just a sum more to do for constraints
-
-the idea is that we first evaluate all the gradients for all the candidates as there are no modularity constraints. then we sum the apport of every $i$-th bar that belongs to a single module topology $t$ togheter.
-
-mathematically we can writhe that  the result is a scalar
-
-% \begin{equation}
-%     \derfrac{(\cdot)}{\bar{a}_t} = \sum_{j=0}^{N_\text{sub}} z_j,\text{ where } z_j:=
-%     \begin{cases}
-%         \derfrac{(\cdot)}{a^j} & \text {if } G_{j,t}=1 \\
-%         0 & \text{otherwise.}
-%     \end{cases}
-% \end{equation}
-
+The approach involves initially computing gradients for all candidates for the full monolithic structure, without considering the modularity. Subsequently, the contributions of each $i$-th bar belonging to a specific module topology $t$ are summed together. Mathematically, this can be expressed as follows:
 \begin{equation}
     \derfrac{(\cdot)_i}{\bar{a}_{t,i}} =  \sum_{j=0}^{N_\text{sub}} \vect{h}_t^T \derfrac{(\cdot)_i}{a^j_i} 
     \label{eq:05_VL_grad}
 \end{equation}
-
-where $(\cdot)$ is a function
-\todo{image for sensitivity ?}
+where $(\cdot)$ is a generic function for wich the sensitivity is calculated. This process is graphically represented in \figref{fig:05_VL_grad}.
 
 \begin{figure*}
     \centering
     \includegraphics{figures/05_cellular_opt/00_modules_VL_grad/modules_grad.pdf}
-    \caption{Notations used for the definition of the variable linking approach used to apply the modularity constraints.}
+    \caption{Notations used for the evaluation of the sensitivities for the modular structure optmization based on the variable linking scheme.}
     \label{fig:05_VL_grad}
 \end{figure*}
-
-\todo{put dotted lines on the modules}
-
 
 \section{Numerical application}
 In this section we formulate multiple test cases used to expmpre the limits and the carachteristics of modular structures and the proposed modular structure optimization formulation \eqrefnotext{eq:05_optim_complete_modular}.
 
-The test cases are optimized using the two-step resolution strategy proposed in \secref{sec:04_2step_opt} implemented with five calls of reinitialization (2S-5R) with $k_{\text{max}}=5$. The reinitialization magnitude parameter $\vect{\phi}$ is set up using the same parameters listed in \tabref{tab:04_param}, that leads to $\vect{\phi} = \left[ 0.8000, 0.6400, 0.4096, 0.1677, 0.0281 \right]$.
+The test cases are optimized using the two-step resolution strategy implemented with five calls of reinitialization (2S-5R) with $n_{\text{max}}=5$. The reinitialization magnitude parameter $\vect{\phi}$ is set up using the same parameters listed in \tabref{tab:05_param}, that leads to $\vect{\phi} = \left[ 0.8000, 0.6400, 0.4096, 0.1677, 0.0281 \right]$.
+\begin{margintable}
+        \small
+    \centering
+    \begin{tabular}{cc}
+    \toprule
+    \textbf{Parameter} & \textbf{Value} \\ \midrule
+    $\phi_0$              & 0.8 \\
+    $\beta$             & 2 \\
+    \bottomrule
+    \end{tabular}
+    \caption{Reminder of the parameters used to setup the reinitialization parameters for the modular optimization. The full list of values and tolerances used for the setup of the optimization algorithm can be found in \tabref{tab:04_param}.}
+    \label{tab:05_param}
+\end{margintable}
 
 The optimizations are performed using the Python package CVXPY 1.2.2 \sidecite{diamond_cvxpy_2016} with the ECOS 2.0.7 \sidecite{domahidi_ecos_2013} solver to solve the relaxed \gls{lp} Problem \eqrefnotext{eq:05_optim_no_constr_modular}. The \gls{nlp} Problem \eqrefnotext{eq:05_optim_complete_modular} is solved using cyipopt \sidecite{Moore_Mechmotum}, a Python wrapper for IPOPT 3.14.11 \sidecite{wachter_implementation_2006}, a large-scale nonlinear optimization package using PARDISO 6.0 \sidecite{alappat_recursive_2020} as linear solver. 
 
@@ -181,10 +176,12 @@ The optimizations are performed using the Python package CVXPY 1.2.2 \sidecite{d
     $P$              & 1   \\
     \bottomrule
     \end{tabular}
-    \caption{Material data used for the simply supported 3D beam optimization.}
-    \label{tab:05}
+    \caption{Material data used for the modular bridge section 2D structure.}
+    \label{tab:05_modular_data}
 \end{margintable}
-The firs test case we optimize is a section of bridge structure made by two submodules $n_sub=2$ and with symmetric Bcs as shown in fig xx a.two vertical loads are applied in the lower side of the design space as shown in fig xx. the material and geometrical data are presented in Tab xx. Tevery subdomain of the structure is discretized using a 15x15 fully connected ground structure. buckling constraints are turned off in this examle. alongside the presented test case, we optimize another similar structure, this time made by only a single submodule loaded with two different load cases p1 and p2, positioned at exactly the same distance from the support (see fig xx b)
+The first test case we deal with is a two-dimensional bridge structure segment composed of two subdomains ($n_{\text{sub}} = 2$) with symmetric boundary conditions, as illustrated in \figref{fig:05_cell_multi_eq_bcs}a. In this test case, two vertical loads of magnitude P=1 are applied to the lower side of the design space. The material and geometrical details are given in \tabref{tab:05_modular_data} and are normalized and adimensional for simplicity. Each subdomain of the structure is discretized using a 15x15 fully connected ground structure, with a number of candidates $\bar{n}=$ per subdomain. It is important to note that, for this example, buckling constraints have been deactivated.
+
+Additionally, a similar structure is optimized, comprising only a single submodule, subjected to two distinct load cases, denoted as $p_1$ and $p_2." These loads are positioned at precisely the same distance from the support, as illustrated in Figure xx b.
 \todo{table results}
 \begin{figure}[]
     \hspace*{\fill}
@@ -195,7 +192,7 @@ The firs test case we optimize is a section of bridge structure made by two subm
     \caption{}
     \label{fig:05_cell_multi_eq_bcs}
 \end{figure}
-\todo{add lenght for the loads, so the reader understands}
+
 
 \begin{table}
     \centering
@@ -280,7 +277,7 @@ We first study the influence of the number (and consequently the scale, we use h
 \begin{marginfigure}
     \centering
     \includegraphics{figures/05_cellular_opt/00_module_scale_tab/scale_tab_v.pdf}
-    \caption{\todo{add monolitic result with a line horizontal}}
+    \caption{\todo{add monolithic result with a line horizontal}}
     \label{fig:05_scale_v}
 \end{marginfigure}
 
@@ -346,7 +343,7 @@ A graphical representation of the 3D structures can be observed in \figref{fig:0
     \end{figure*}
 
     
-    willing to undertand why the volume is so influenced by the number of submodules, we plot the allure of the parameters $\varphi$ et $\psi$ in \figref{fig:05_scale_param}. As we can see every bar of the monolitic structure activates either the buckling or the stress constraint $\varphi=\qty{100}{\percent}$ and $\psi=1$, while this is  not true for any of the modular structures. 12x4x6-3x3x3 case with many bars that stays grays.
+    willing to undertand why the volume is so influenced by the number of submodules, we plot the allure of the parameters $\varphi$ et $\psi$ in \figref{fig:05_scale_param}. As we can see every bar of the monolithic structure activates either the buckling or the stress constraint $\varphi=\qty{100}{\percent}$ and $\psi=1$, while this is  not true for any of the modular structures. 12x4x6-3x3x3 case with many bars that stays grays.
     \begin{marginfigure}
         \centering
         \includegraphics[width=\linewidth]{figures/05_cellular_opt/00_module_scale_tab/scale_tab_param.pdf}
@@ -354,7 +351,7 @@ A graphical representation of the 3D structures can be observed in \figref{fig:0
         \label{fig:05_scale_param}
     \end{marginfigure}
     
-    This can be observed more clearly in \figref{fig:05_scale_failure}, where the stress and buckling constraints applied to the optimized structures of the monolitic and the 12x4x6-3x3x3 case. In this image we can see that in the 12x4x6-3x3x3 case many bars stays grays. This effect cqn be explained having a look figure xx where the stress and buckling constraints activate onlky on one submodules but force the whole structure to show it quqnd meme. the modular structure is for that reason very redundant and fail safe, but pays this in terms of total volume.
+    This can be observed more clearly in \figref{fig:05_scale_failure}, where the stress and buckling constraints applied to the optimized structures of the monolithic and the 12x4x6-3x3x3 case. In this image we can see that in the 12x4x6-3x3x3 case many bars stays grays. This effect cqn be explained having a look figure xx where the stress and buckling constraints activate onlky on one submodules but force the whole structure to show it quqnd meme. the modular structure is for that reason very redundant and fail safe, but pays this in terms of total volume.
     
     \begin{figure}
         \centering
@@ -418,7 +415,7 @@ The results of the parametric study are presented in a tabular way in \tabref{ta
 \begin{marginfigure}
     \centering
     \includegraphics{figures/05_cellular_opt/00_module_complexity_tab/comp_tab_v.pdf}
-    \caption{\todo{add monolitic result with a line horizontal}}
+    \caption{\todo{add monolithic result with a line horizontal}}
     \label{fig:05_comp_v}
 \end{marginfigure}
 

@@ -40,27 +40,27 @@
 \contentsline {figure}{\numberline {2.20}{\ignorespaces Iteration history of the ten-bar truss with multiple load cases example solved with the 2S-5R algorithm; (a) objective function history for the \gls {slp} and \gls {nlp} step (b) constraint violation for the \gls {nlp} step.}}{50}{figure.caption.88}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Notations used for the definition of the variable linking approach used to apply the modularity constraints.}}{52}{figure.caption.89}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Notations used for the definition of the variable linking approach used to apply the modularity constraints.}}{55}{figure.caption.90}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces \relax }}{56}{figure.caption.92}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces \textcolor {green}{spiega colori as usual}}}{57}{figure.caption.94}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces In gray the symmetry planes.}}{57}{figure.caption.95}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces with a vol of}}{57}{figure.caption.97}%
-\contentsline {figure}{\numberline {3.7}{\ignorespaces \textcolor {green}{add monolitic result with a line horizontal}}}{58}{figure.caption.100}%
-\contentsline {figure}{\numberline {3.8}{\ignorespaces \textcolor {green}{timel}}}{58}{figure.caption.101}%
-\contentsline {figure}{\numberline {3.9}{\ignorespaces (a-d) (e-h)}}{60}{figure.caption.103}%
-\contentsline {figure}{\numberline {3.10}{\ignorespaces \textcolor {green}{timel}}}{60}{figure.caption.104}%
-\contentsline {figure}{\numberline {3.11}{\ignorespaces \textcolor {green}{metti undeformed e compara con no cell}}}{61}{figure.caption.105}%
-\contentsline {figure}{\numberline {3.12}{\ignorespaces (a-d) (e-h)}}{62}{figure.caption.109}%
-\contentsline {figure}{\numberline {3.13}{\ignorespaces \textcolor {green}{add monolitic result with a line horizontal}}}{63}{figure.caption.110}%
-\contentsline {figure}{\numberline {3.14}{\ignorespaces \textcolor {green}{timel}}}{63}{figure.caption.111}%
-\contentsline {figure}{\numberline {3.15}{\ignorespaces \textcolor {green}{timel}}}{63}{figure.caption.112}%
-\contentsline {figure}{\numberline {3.16}{\ignorespaces limited to 500 and 2e5}}{64}{figure.caption.117}%
-\contentsline {figure}{\numberline {3.17}{\ignorespaces (a-d)Main effects plot of }}{65}{figure.caption.118}%
-\contentsline {figure}{\numberline {3.18}{\ignorespaces \relax }}{65}{figure.caption.121}%
-\contentsline {figure}{\numberline {3.19}{\ignorespaces \textcolor {green}{todo}}}{66}{figure.caption.122}%
-\contentsline {figure}{\numberline {3.20}{\ignorespaces \relax }}{68}{figure.caption.124}%
-\contentsline {figure}{\numberline {3.21}{\ignorespaces \relax }}{69}{figure.caption.125}%
-\contentsline {figure}{\numberline {3.22}{\ignorespaces \relax }}{69}{figure.caption.126}%
-\contentsline {figure}{\numberline {3.23}{\ignorespaces \textcolor {green}{todo}}}{70}{figure.caption.127}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Notations used for the definition of the variable linking approach used to apply the modularity constraints.}}{56}{figure.caption.90}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces \relax }}{57}{figure.caption.93}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces \textcolor {green}{spiega colori as usual}}}{57}{figure.caption.95}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces In gray the symmetry planes.}}{58}{figure.caption.96}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces with a vol of}}{58}{figure.caption.98}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces \textcolor {green}{add monolithic result with a line horizontal}}}{59}{figure.caption.101}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces \textcolor {green}{timel}}}{59}{figure.caption.102}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces (a-d) (e-h)}}{60}{figure.caption.104}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces \textcolor {green}{timel}}}{61}{figure.caption.105}%
+\contentsline {figure}{\numberline {3.11}{\ignorespaces \textcolor {green}{metti undeformed e compara con no cell}}}{62}{figure.caption.106}%
+\contentsline {figure}{\numberline {3.12}{\ignorespaces (a-d) (e-h)}}{63}{figure.caption.110}%
+\contentsline {figure}{\numberline {3.13}{\ignorespaces \textcolor {green}{add monolithic result with a line horizontal}}}{64}{figure.caption.111}%
+\contentsline {figure}{\numberline {3.14}{\ignorespaces \textcolor {green}{timel}}}{64}{figure.caption.112}%
+\contentsline {figure}{\numberline {3.15}{\ignorespaces \textcolor {green}{timel}}}{64}{figure.caption.113}%
+\contentsline {figure}{\numberline {3.16}{\ignorespaces limited to 500 and 2e5}}{65}{figure.caption.118}%
+\contentsline {figure}{\numberline {3.17}{\ignorespaces (a-d)Main effects plot of }}{66}{figure.caption.119}%
+\contentsline {figure}{\numberline {3.18}{\ignorespaces \relax }}{66}{figure.caption.122}%
+\contentsline {figure}{\numberline {3.19}{\ignorespaces \textcolor {green}{todo}}}{67}{figure.caption.123}%
+\contentsline {figure}{\numberline {3.20}{\ignorespaces \relax }}{69}{figure.caption.125}%
+\contentsline {figure}{\numberline {3.21}{\ignorespaces \relax }}{70}{figure.caption.126}%
+\contentsline {figure}{\numberline {3.22}{\ignorespaces \relax }}{70}{figure.caption.127}%
+\contentsline {figure}{\numberline {3.23}{\ignorespaces \textcolor {green}{todo}}}{71}{figure.caption.128}%
 \addvspace {10\p@ }
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file

@@ -1,21 +1,21 @@
 [0] Config.pm:307> INFO - This is Biber 2.19
 [0] Config.pm:310> INFO - Logfile is 'manuscript_Stragiotti.blg'
-[139] biber-MSWIN64:340> INFO - === 
-[196] Biber.pm:419> INFO - Reading 'manuscript_Stragiotti.bcf'
-[817] Biber.pm:979> INFO - Found 93 citekeys in bib section 0
-[834] Biber.pm:4419> INFO - Processing section 0
-[848] Biber.pm:4610> INFO - Looking for bibtex file 'biblio.bib' for section 0
-[943] bibtex.pm:1713> INFO - LaTeX decoding ...
-[1402] bibtex.pm:1519> INFO - Found BibTeX data source 'biblio.bib'
-[2124] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[2124] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[2124] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
-[2124] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
-[2195] bbl.pm:660> INFO - Writing 'manuscript_Stragiotti.bbl' with encoding 'UTF-8'
-[2257] bbl.pm:763> INFO - Output to manuscript_Stragiotti.bbl
-[2258] Biber.pm:131> WARN - Duplicate entry key: 'kalamkarov_asymptotic_2009' in file 'biblio.bib', skipping ...
-[2258] Biber.pm:131> WARN - Duplicate entry key: 'kirsch_optimal_1980' in file 'biblio.bib', skipping ...
-[2258] Biber.pm:131> WARN - Duplicate entry key: 'silva_smith_topology_1997' in file 'biblio.bib', skipping ...
-[2258] Biber.pm:131> WARN - ISBN '978-3-642-07698-5 978-3-662-05086-6' in entry 'bendsoe_topology_2004' is invalid - run biber with '--validate_datamodel' for details.
-[2258] Biber.pm:131> WARN - ISBN '978-3-662-03117-9 978-3-662-03115-5' in entry 'bendsoe_optimization_1995' is invalid - run biber with '--validate_datamodel' for details.
-[2258] Biber.pm:133> INFO - WARNINGS: 5
+[208] biber-MSWIN64:340> INFO - === 
+[281] Biber.pm:419> INFO - Reading 'manuscript_Stragiotti.bcf'
+[1046] Biber.pm:979> INFO - Found 93 citekeys in bib section 0
+[1071] Biber.pm:4419> INFO - Processing section 0
+[1090] Biber.pm:4610> INFO - Looking for bibtex file 'biblio.bib' for section 0
+[1199] bibtex.pm:1713> INFO - LaTeX decoding ...
+[1748] bibtex.pm:1519> INFO - Found BibTeX data source 'biblio.bib'
+[2715] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[2715] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[2715] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[2715] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[2801] bbl.pm:660> INFO - Writing 'manuscript_Stragiotti.bbl' with encoding 'UTF-8'
+[2874] bbl.pm:763> INFO - Output to manuscript_Stragiotti.bbl
+[2874] Biber.pm:131> WARN - Duplicate entry key: 'kalamkarov_asymptotic_2009' in file 'biblio.bib', skipping ...
+[2874] Biber.pm:131> WARN - Duplicate entry key: 'kirsch_optimal_1980' in file 'biblio.bib', skipping ...
+[2874] Biber.pm:131> WARN - Duplicate entry key: 'silva_smith_topology_1997' in file 'biblio.bib', skipping ...
+[2874] Biber.pm:131> WARN - ISBN '978-3-642-07698-5 978-3-662-05086-6' in entry 'bendsoe_topology_2004' is invalid - run biber with '--validate_datamodel' for details.
+[2874] Biber.pm:131> WARN - ISBN '978-3-662-03117-9 978-3-662-03115-5' in entry 'bendsoe_optimization_1995' is invalid - run biber with '--validate_datamodel' for details.
+[2875] Biber.pm:133> INFO - WARNINGS: 5

@@ -13,10 +13,10 @@
 \pgfmathsetmacro{\textlen}{1.9cm};
 % Define nodes
 \node [text centered] at (0,0) (inp1) {$\bm{x}^{0}=[\bm{a}^0, \bm{q}^0]$}; 
-\node [block, text width=\textlen, below=of inp1] (linearization) {Linearize $\bm{g}_{\textrm{buck}}$ at point $\bm{P}_i$};
+\node [block, text width=\textlen, below=of inp1] (linearization) {Linearize $\bm{g}_{\textrm{buck}}$ at point $\bm{P}_k$};
 \node [block, text width=\textlen, right=of linearization, xshift=0.5cm] (solve) {Solve linearized problem $\tilde{\mathbb{P}}_2$};
 \node [decision, inner sep=1pt, below=of solve, yshift=-0.5cm,label={290:Yes}, label={170:No},] (dec1) {\scriptsize $\norm{\Delta \vect{x}}_\infty\leq \text{tol}_{slp}$};
-\node [decision, inner sep=2pt, below=of dec1, yshift=0.5cm,label={290:No}, label={170:Yes},] (dec2) {\scriptsize $k\leq k_{\text{max}}$};
+\node [decision, inner sep=2pt, below=of dec1, yshift=0.5cm,label={290:No}, label={170:Yes},] (dec2) {\scriptsize $n\leq n_{\text{max}}$};
 \node [block, left=of dec2, xshift=-0.5cm] (reinit) {Reinitialization};
 \node [text centered, below=of dec2] (out1) {$\tilde{\bm{x}}^*=[\tilde{\bm{a}}^*, \tilde{\bm{q}}^*]$}; 
 
@@ -25,12 +25,12 @@
 \begin{scope} [every path/.style=line]
     \path (inp1)        --    (linearization);
     \path (linearization)        -- node[pos=0.45,anchor=center,fill=black!5,inner sep=0.5em] {$\bm{\tilde{g}}_{\text{buck}}$}    (solve);
-    \path (solve)        --    node[pos=0.4,text centered, text width=0.8cm,anchor=center,fill=black!5,inner sep=0.5em] {$\bm{x}^{i+1}$}(dec1);
+    \path (solve)        --    node[pos=0.4,text centered, text width=0.8cm,anchor=center,fill=black!5,inner sep=0.5em] {$\bm{x}^{k+1}$}(dec1);
     \path (dec1)         --    (dec2) ;
     \path (dec2)         --    (out1) ;
     \path (dec1)  -|    (linearization.300);
     \path (dec2)  --          (reinit);
-    \path (reinit.132)        -- node[pos=0.25,text centered, text width=0.7cm, anchor=center,fill=black!5,inner sep=0.5em] {$\overline{\bm{a}}^{i}$\\$k$\tiny{++}}    (linearization.240);
+    \path (reinit.132)        -- node[pos=0.25,text centered, text width=0.7cm, anchor=center,fill=black!5,inner sep=0.5em] {$\overline{\bm{a}}^{k}$\\$n$\tiny{++}}    (linearization.240);
 \end{scope}
   
    % Post Processing Box

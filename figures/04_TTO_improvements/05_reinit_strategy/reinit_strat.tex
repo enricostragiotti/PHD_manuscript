@@ -17,7 +17,7 @@
             width	= 8.4cm,
 		    height	= 7cm,
             axis lines = middle,
-            legend entries=\footnotesize{Feasible domain at iteration $i$},
+            legend entries=\footnotesize{Feasible domain at iteration $k$},
             legend pos= south west,
             % axis equal,
             enlargelimits, % no need to add padding
@@ -60,9 +60,9 @@
         
 
         % Plot important points
-        \node [fill=white,rounded corners=2pt,inner sep=1pt] at (0.35,0.35) {\footnotesize{$P_{i}$}};
-        \node [fill=white,rounded corners=2pt,inner sep=1pt] at (1.5+0.3,0.35) {\footnotesize{$\overline a^{i} = \phi_k \norm{\vect{a}^i}_\infty$}};
-        \node [fill=white,rounded corners=2pt,inner sep=1pt] at (1.5+0.3,-0.45-0.3) {\footnotesize{$\overline P_{i}$}};
+        \node [fill=white,rounded corners=2pt,inner sep=1pt] at (0.35,0.35) {\footnotesize{$P_{k}$}};
+        \node [fill=white,rounded corners=2pt,inner sep=1pt] at (1.5+0.3,0.35) {\footnotesize{$\overline a^{k} = \phi_k \norm{\vect{a}^k}_\infty$}};
+        \node [fill=white,rounded corners=2pt,inner sep=1pt] at (1.5+0.3,-0.45-0.3) {\footnotesize{$\overline P_{k}$}};
         \node at (a_') [{circle, fill, inner sep=1pt, node contents={}}];
         \draw [line width=0.4mm, forces] (a_0) -- (a_'); % Plot arrows
         \node at (a_0) [{circle, fill, inner sep=1pt, node contents={}}];

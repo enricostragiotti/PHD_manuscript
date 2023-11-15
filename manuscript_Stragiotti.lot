@@ -18,14 +18,15 @@
 \contentsline {table}{\numberline {2.12}{\ignorespaces Comparison of the results of the \gls {slp} step and \gls {nlp} step for the multiple load cases ten-bar truss.}}{49}{table.caption.86}%
 \contentsline {table}{\numberline {2.13}{\ignorespaces Optimal values of the member forces, areas, and volumes of the members of the ten-bar truss with multiple load cases.}}{49}{table.caption.87}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {3.1}{\ignorespaces Material data used for the simply supported 3D beam optimization.}}{56}{table.caption.91}%
-\contentsline {table}{\numberline {3.2}{\ignorespaces \relax }}{57}{table.caption.93}%
-\contentsline {table}{\numberline {3.3}{\ignorespaces Material data used for the simply supported 3D beam optimization.}}{57}{table.caption.96}%
-\contentsline {table}{\numberline {3.4}{\ignorespaces \relax }}{59}{table.caption.102}%
-\contentsline {table}{\numberline {3.5}{\ignorespaces \relax }}{62}{table.caption.108}%
-\contentsline {table}{\numberline {3.6}{\ignorespaces Volume}}{63}{table.caption.115}%
-\contentsline {table}{\numberline {3.7}{\ignorespaces Time}}{64}{table.caption.116}%
-\contentsline {table}{\numberline {3.8}{\ignorespaces \relax }}{67}{table.caption.123}%
-\contentsline {table}{\numberline {3.9}{\ignorespaces \relax }}{71}{table.caption.128}%
+\contentsline {table}{\numberline {3.1}{\ignorespaces Reminder of the parameters used to setup the reinitialization parameters for the modular optimization. The full list of values and tolerances used for the setup of the optimization algorithm can be found in Table~\ref {tab:04_param}.}}{56}{table.caption.91}%
+\contentsline {table}{\numberline {3.3}{\ignorespaces \relax }}{57}{table.caption.94}%
+\contentsline {table}{\numberline {3.2}{\ignorespaces Material data used for the simply supported 3D beam optimization.}}{57}{table.caption.92}%
+\contentsline {table}{\numberline {3.4}{\ignorespaces Material data used for the simply supported 3D beam optimization.}}{58}{table.caption.97}%
+\contentsline {table}{\numberline {3.5}{\ignorespaces \relax }}{60}{table.caption.103}%
+\contentsline {table}{\numberline {3.6}{\ignorespaces \relax }}{62}{table.caption.109}%
+\contentsline {table}{\numberline {3.7}{\ignorespaces Volume}}{64}{table.caption.116}%
+\contentsline {table}{\numberline {3.8}{\ignorespaces Time}}{65}{table.caption.117}%
+\contentsline {table}{\numberline {3.9}{\ignorespaces \relax }}{68}{table.caption.124}%
+\contentsline {table}{\numberline {3.10}{\ignorespaces \relax }}{72}{table.caption.129}%
 \addvspace {10\p@ }
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file

@@ -1,23 +1,23 @@
 # Fdb version 4
-["biber manuscript_Stragiotti"] 1700045455 "manuscript_Stragiotti.bcf" "manuscript_Stragiotti.bbl" "manuscript_Stragiotti" 1700045542 0
+["biber manuscript_Stragiotti"] 1700058993 "manuscript_Stragiotti.bcf" "manuscript_Stragiotti.bbl" "manuscript_Stragiotti" 1700059103 0
   "./biblio.bib" 1699350017 207759 60fc50f1b9567f964bdf50c792b75963 ""
-  "manuscript_Stragiotti.bcf" 1700045540 175236 0fdc773025545156e9163998bbd0847a "pdflatex"
+  "manuscript_Stragiotti.bcf" 1700059100 175236 0fdc773025545156e9163998bbd0847a "pdflatex"
   (generated)
   "manuscript_Stragiotti.bbl"
   "manuscript_Stragiotti.blg"
   (rewritten before read)
-["cusdep glo gls manuscript_Stragiotti"] 1700045454 "manuscript_Stragiotti.glo" "manuscript_Stragiotti.gls" "manuscript_Stragiotti" 1700045542 0
-  "manuscript_Stragiotti.glo" 1700045540 12485 4ef9567ca566d2f48b59748ca97d51b6 "pdflatex"
+["cusdep glo gls manuscript_Stragiotti"] 1700058934 "manuscript_Stragiotti.glo" "manuscript_Stragiotti.gls" "manuscript_Stragiotti" 1700059103 0
+  "manuscript_Stragiotti.glo" 1700059100 12567 8b271f1dc971c22d314cd7211a732a4e "pdflatex"
   (generated)
   "manuscript_Stragiotti.gls"
   (rewritten before read)
-["makeindex manuscript_Stragiotti.idx"] 1699657746 "manuscript_Stragiotti.idx" "manuscript_Stragiotti.ind" "manuscript_Stragiotti" 1700045542 0
-  "manuscript_Stragiotti.idx" 1700045538 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+["makeindex manuscript_Stragiotti.idx"] 1700058869 "manuscript_Stragiotti.idx" "manuscript_Stragiotti.ind" "manuscript_Stragiotti" 1700059103 0
+  "manuscript_Stragiotti.idx" 1700059097 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   (generated)
   "manuscript_Stragiotti.ilg"
   "manuscript_Stragiotti.ind"
   (rewritten before read)
-["pdflatex"] 1700045501 "d:/estragio/PhD/99_Github/PHD_manuscript/manuscript_Stragiotti.tex" "manuscript_Stragiotti.pdf" "manuscript_Stragiotti" 1700045542 0
+["pdflatex"] 1700059052 "d:/estragio/PhD/99_Github/PHD_manuscript/manuscript_Stragiotti.tex" "manuscript_Stragiotti.pdf" "manuscript_Stragiotti" 1700059103 0
   "C:/Program Files/MiKTeX/fonts/enc/dvips/base/8r.enc" 1458473887 4993 80dc9bab7f31fb78a000ccfed0e27cab ""
   "C:/Program Files/MiKTeX/fonts/tfm/jknappen/ec/ecrm1095.tfm" 993058524 3172 eb6efaa83c6c52473a1c403f376eab0f ""
   "C:/Program Files/MiKTeX/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1233951854 916 f87d7c45f9c908e672703b83b72241a3 ""
@@ -553,12 +553,12 @@
   "D:/estragio/AppData/Roaming/MiKTeX/tex/latex/xpatch/xpatch.sty" 1585221260 8510 7803f78066c4f9d008405191a4b43073 ""
   "D:/estragio/AppData/Roaming/MiKTeX/tex/latex/xstring/xstring.sty" 1673962217 123 a302f2c651a95033260db60e51527ae8 ""
   "abbreviations.tex" 1699554013 3046 eaa64847c5554f4cdfe96250de92b2de ""
-  "chapters/3_comparison_TO_TTO.aux" 1700045516 28889 dcce30cb9f886781d2775987da2da02c "pdflatex"
-  "chapters/3_comparison_TO_TTO.tex" 1698940376 73504 076821467fb56c5874bf3d0508f7cd46 ""
-  "chapters/4_TTO_upgrades.aux" 1700045521 33729 e6a9c7743d46bb5b25df61dca17567bc "pdflatex"
-  "chapters/4_TTO_upgrades.tex" 1699536565 82630 153795e79c1798d767e5b712df17a58b ""
-  "chapters/5_cellular_structures.aux" 1700045537 20239 1db83da158bc63b192218c2ef5751721 "pdflatex"
-  "chapters/5_cellular_structures.tex" 1700045285 54464 e535549532b6e22b67566bed2ec8cd77 ""
+  "chapters/3_comparison_TO_TTO.aux" 1700059071 28889 6a79ed1840a81bb38c19502360bcc2f6 "pdflatex"
+  "chapters/3_comparison_TO_TTO.tex" 1700046178 73380 42797b2c11553a07233e82251c2c203c ""
+  "chapters/4_TTO_upgrades.aux" 1700059077 33729 5d230ee0fe32ea010f15a5af3becce2f "pdflatex"
+  "chapters/4_TTO_upgrades.tex" 1700048952 82635 1f197f2be999ae035beec97e3e14fb6b ""
+  "chapters/5_cellular_structures.aux" 1700059096 20951 54cc4d1f2b75823604516f6afd1f13c5 "pdflatex"
+  "chapters/5_cellular_structures.tex" 1700058828 55524 6d39065da8ec8852c8ffb7eb55468ba6 ""
   "d:/estragio/PhD/99_Github/PHD_manuscript/manuscript_Stragiotti.tex" 1700045367 9269 c420f8199993aa76d3bd159026131cb8 ""
   "figures/01_intro/Logo-ISAE-SUPAERO.png" 1628085192 194003 676a6cb7d3296cbb2431a28bac670acf ""
   "figures/01_intro/ONERA_logo.svg.png" 1628085367 29625 6f38f88e405613b2fb60825e112e3260 ""
@@ -592,10 +592,10 @@
   "figures/03_comparison_TO_TTO/truss-ex.png" 1632413364 755421 32b5f6909c048a6e4cde53cec685fdc5 ""
   "figures/04_TTO_improvements/01_3_bars_chain/3_bars_chain.pdf" 1697632193 12490 1e08fdc88fca75aba8a2852a1e90601c ""
   "figures/04_TTO_improvements/02_solution_algo/sol_algo.pdf" 1697984191 69927 c6892284d2281c93b6699c6e163b5ba9 ""
-  "figures/04_TTO_improvements/03_SLP/slp.pdf" 1697633464 53577 9e31bcb3199c932d73f5bbf20859227d ""
-  "figures/04_TTO_improvements/04_SLP_tiny_area_design_space/slp_tiny_design_space.pdf" 1697633375 61512 cfa71f220986e74e7650f817c2fb64de ""
-  "figures/04_TTO_improvements/05_reinit_strategy/reinit_strat.pdf" 1697633550 79283 177c8ac302ba6ceb02e74247becfcb19 ""
-  "figures/04_TTO_improvements/06_SLP_algo/SLP_algo.pdf" 1697632826 146634 9b8683dde3dd6ee5d1f71623d915c513 ""
+  "figures/04_TTO_improvements/03_SLP/slp.pdf" 1700047861 53599 8d3d8a624da5be4746e427db7ab027d7 ""
+  "figures/04_TTO_improvements/04_SLP_tiny_area_design_space/slp_tiny_design_space.pdf" 1700048372 61533 311ae152e50424841b87a6f03f462787 ""
+  "figures/04_TTO_improvements/05_reinit_strategy/reinit_strat.pdf" 1700048437 78999 63b367c1597fb50e38cea382538e4e0b ""
+  "figures/04_TTO_improvements/06_SLP_algo/SLP_algo.pdf" 1700048504 146543 144f6b8d82d8a776ad924ef79d9dcafe ""
   "figures/04_TTO_improvements/07_slend_sol/02_opt.pdf" 1697633665 52938 c0841cee5a7a0b6b123e589150c64c83 ""
   "figures/04_TTO_improvements/07_slend_sol/03_opt.pdf" 1697633673 44097 104b048bf20277d9d7c8500b706f292e ""
   "figures/04_TTO_improvements/07_slend_sol/08_opt.pdf" 1697633678 36492 90814ea3e25eaf43c54a914522be3972 ""
@@ -688,16 +688,16 @@
   "kaobook.cls" 1693306131 11196 257e43e963392f1cba8de846b9c392bd ""
   "kaorefs.sty" 1688394461 11391 1417147ee13fc4482c03393a95e76931 ""
   "kaotheorems.sty" 1688394461 12185 9540b1857c6b9e97b449194962ccc5fa ""
-  "manuscript_Stragiotti.aux" 1700045539 159147 d0620037ab7f73a2d9c2ca44dddb0142 "pdflatex"
-  "manuscript_Stragiotti.bbl" 1700045459 234877 2842fdd8b0baa1fe67810c2ce6a9f521 "biber manuscript_Stragiotti"
-  "manuscript_Stragiotti.gls" 1700045454 4547 ec68b6ad4929327cd8fc0b7f00beb060 "cusdep glo gls manuscript_Stragiotti"
-  "manuscript_Stragiotti.ind" 1700045538 0 d41d8cd98f00b204e9800998ecf8427e "makeindex manuscript_Stragiotti.idx"
-  "manuscript_Stragiotti.lof" 1700045540 11954 be19580f49b4e8063d8fd17b51db637e "pdflatex"
-  "manuscript_Stragiotti.lot" 1700045540 4372 761301100ca0e4e3f67625907e2af404 "pdflatex"
-  "manuscript_Stragiotti.mw" 1700045540 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "manuscript_Stragiotti.run.xml" 1700045540 2425 ad1365c2cb12176cf957fc8f0a23d8e5 "pdflatex"
+  "manuscript_Stragiotti.aux" 1700059099 159147 3c91d6ec2f8b562323049aa4d8cf1a1e "pdflatex"
+  "manuscript_Stragiotti.bbl" 1700058999 234877 2842fdd8b0baa1fe67810c2ce6a9f521 "biber manuscript_Stragiotti"
+  "manuscript_Stragiotti.gls" 1700058935 4602 fe6a2bd72e07ce60479295f799525fa9 "cusdep glo gls manuscript_Stragiotti"
+  "manuscript_Stragiotti.ind" 1700059098 0 d41d8cd98f00b204e9800998ecf8427e "makeindex manuscript_Stragiotti.idx"
+  "manuscript_Stragiotti.lof" 1700059100 11956 4854546c08ae91c29a935c7a0960f767 "pdflatex"
+  "manuscript_Stragiotti.lot" 1700059100 4686 8fe35932a67460f3100268b3e4df8480 "pdflatex"
+  "manuscript_Stragiotti.mw" 1700059100 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "manuscript_Stragiotti.run.xml" 1700059100 2425 ad1365c2cb12176cf957fc8f0a23d8e5 "pdflatex"
   "manuscript_Stragiotti.tex" 1700045367 9269 c420f8199993aa76d3bd159026131cb8 ""
-  "manuscript_Stragiotti.toc" 1700045540 7369 9f2b5e8045f46646d46eb9bd37db296f "pdflatex"
+  "manuscript_Stragiotti.toc" 1700059100 7370 ee8e0e21c77b2fc8ea12f98c83ee1633 "pdflatex"
   (generated)
   "chapters/3_comparison_TO_TTO.aux"
   "chapters/4_TTO_upgrades.aux"
