@@ -54,6 +54,7 @@
       \strng{authorbibnamehash}{c6a32d38ed1b00a934977cd0a4f8c680}
       \strng{authornamehash}{299f30aa7c3f4b47ec8bbbc9ba700864}
       \strng{authorfullhash}{c6a32d38ed1b00a934977cd0a4f8c680}
+      \field{extraname}{1}
       \field{sortinit}{3}
       \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
@@ -4129,6 +4130,63 @@
       \verb https://doi.org/10.1007/s00158-014-1089-8
       \endverb
       \keyw{Multi-load case,Optimal solution,Symmetry}
+    \endentry
+    \entry{stragiotti_enhanced_2022}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=6c4965d3ad73fb11f44136afa897bb91}{%
+           family={Stragiotti},
+           familyi={S\bibinitperiod},
+           given={Enrico},
+           giveni={E\bibinitperiod}}}%
+        {{hash=6ffe413a21f4954b0aac85ca037c7876}{%
+           family={Irisarri},
+           familyi={I\bibinitperiod},
+           given={François-Xavier},
+           giveni={F\bibinithyphendelim X\bibinitperiod}}}%
+        {{hash=d9c42bf5ce7591763a45d8334a00d4e1}{%
+           family={Julien},
+           familyi={J\bibinitperiod},
+           given={Cédric},
+           giveni={C\bibinitperiod}}}%
+        {{hash=632aec531cee24c2c49fc7f0958698d4}{%
+           family={Morlier},
+           familyi={M\bibinitperiod},
+           given={Joseph},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Leeds, United Kingdom}%
+      }
+      \strng{namehash}{299f30aa7c3f4b47ec8bbbc9ba700864}
+      \strng{fullhash}{c6a32d38ed1b00a934977cd0a4f8c680}
+      \strng{bibnamehash}{c6a32d38ed1b00a934977cd0a4f8c680}
+      \strng{authorbibnamehash}{c6a32d38ed1b00a934977cd0a4f8c680}
+      \strng{authornamehash}{299f30aa7c3f4b47ec8bbbc9ba700864}
+      \strng{authorfullhash}{c6a32d38ed1b00a934977cd0a4f8c680}
+      \field{extraname}{2}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Cellular architectured structures' most appealing characteristic is that they are able to create large structures assembling small repetitive components. Thanks to their modular nature, they bring interesting features among which reduced tooling, fast assembly, and short repair time. In the first part of the article, we formulate an optimizing method that minimizes the mass of a cellular architectured structure taking into account internal stresses, local buckling, and pattern repetition constraints. The proposed solving algorithm mitigates the appearance of local minima, a critical problem for discrete trusses. In the second part, the optimization method is applied to a real-size aeronautic application: the minimization of the mass of a cellular 3D wing box subject to lift and torsion loads. Compared to classic cell topologies, the proposed method found a cell 10-times lighter, at the cost of increased manufacturing difficulty.}
+      \field{booktitle}{{ASMO}-{UK} 12 / {ASMO}-{Europe} 1 / {ISSMO} {Conference} on {Engineering} {Design} {Optimization} (2022)}
+      \field{month}{7}
+      \field{title}{Enhanced truss topology optimization ({TTO}) applied to a cellular wing box}
+      \field{urlday}{14}
+      \field{urlmonth}{11}
+      \field{urlyear}{2023}
+      \field{year}{2022}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb HAL PDF Full Text:D\:\\estragio\\Zotero\\storage\\ZY7S5YZA\\Stragiotti et al. - 2022 - Enhanced truss topology optimization (TTO) applied.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://hal.science/hal-04283287
+      \endverb
+      \verb{url}
+      \verb https://hal.science/hal-04283287
+      \endverb
+      \keyw{Optimisation,Optimisation Topologique,Structure Lattice}
     \endentry
     \entry{cramer_elastic_2019}{article}{}
       \name{author}{11}{}{%

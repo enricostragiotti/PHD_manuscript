@@ -69,12 +69,12 @@
 \contentsline {mtocsection}{\numberline {3.2}Numerical application}{56}{section.3.2}%
 \contentsline {subsection}{\numberline {3.2.1}On the equivalence of multi load cases and modular structures}{56}{subsection.3.2.1}%
 \contentsline {subsection}{\numberline {3.2.2}Parametric study on the number of subdomains and the complexity of the module}{58}{subsection.3.2.2}%
-\contentsline {paragraph}{\nonumberline Influence of the number of the subdomains}{58}{paragraph*.100}%
+\contentsline {paragraph}{\nonumberline Influence of the number of the subdomains}{59}{paragraph*.100}%
 \contentsline {paragraph}{\nonumberline Influence of the complexity of the module}{61}{paragraph*.108}%
 \contentsline {paragraph}{\nonumberline Design of experiments}{64}{paragraph*.115}%
 \contentsline {paragraph}{\nonumberline Discussion on the DOE}{65}{paragraph*.121}%
-\contentsline {subsection}{\numberline {3.2.3}Comparison with the optimized octet truss}{66}{subsection.3.2.3}%
-\contentsline {subsection}{\numberline {3.2.4}Using multiple module's topologies}{69}{subsection.3.2.4}%
-\contentsline {section}{\numberline {3.3}Conclusion}{72}{section.3.3}%
-\contentsline {mtocsection}{\numberline {3.3}Conclusion}{72}{section.3.3}%
-\contentsline {chapter}{\nonumberline Bibliography}{73}{chapter*.130}%
+\contentsline {subsection}{\numberline {3.2.3}Comparison with the optimized octet-truss}{66}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.4}Using multiple module topologies}{69}{subsection.3.2.4}%
+\contentsline {section}{\numberline {3.3}Conclusion}{73}{section.3.3}%
+\contentsline {mtocsection}{\numberline {3.3}Conclusion}{73}{section.3.3}%
+\contentsline {chapter}{\nonumberline Bibliography}{75}{chapter*.130}%

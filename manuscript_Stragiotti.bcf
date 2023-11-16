@@ -3070,90 +3070,91 @@
     <bcf:citekey order="630" intorder="1">guo_confirmation_2014</bcf:citekey>
     <bcf:citekey order="631" intorder="1">guo_confirmation_2014</bcf:citekey>
     <bcf:citekey order="632" intorder="1">guo_confirmation_2014</bcf:citekey>
-    <bcf:citekey order="633" intorder="1">cramer_elastic_2019</bcf:citekey>
+    <bcf:citekey order="633" intorder="1">stragiotti_enhanced_2022</bcf:citekey>
     <bcf:citekey order="634" intorder="1">cramer_elastic_2019</bcf:citekey>
     <bcf:citekey order="635" intorder="1">cramer_elastic_2019</bcf:citekey>
     <bcf:citekey order="636" intorder="1">cramer_elastic_2019</bcf:citekey>
     <bcf:citekey order="637" intorder="1">cramer_elastic_2019</bcf:citekey>
     <bcf:citekey order="638" intorder="1">cramer_elastic_2019</bcf:citekey>
-    <bcf:citekey order="639" intorder="1">zhou_design_2008</bcf:citekey>
+    <bcf:citekey order="639" intorder="1">cramer_elastic_2019</bcf:citekey>
     <bcf:citekey order="640" intorder="1">zhou_design_2008</bcf:citekey>
     <bcf:citekey order="641" intorder="1">zhou_design_2008</bcf:citekey>
     <bcf:citekey order="642" intorder="1">zhou_design_2008</bcf:citekey>
     <bcf:citekey order="643" intorder="1">zhou_design_2008</bcf:citekey>
     <bcf:citekey order="644" intorder="1">zhou_design_2008</bcf:citekey>
-    <bcf:citekey order="645" intorder="1">kalamkarov_asymptotic_2009</bcf:citekey>
-    <bcf:citekey order="645" intorder="2">li_anisotropic_2020</bcf:citekey>
+    <bcf:citekey order="645" intorder="1">zhou_design_2008</bcf:citekey>
     <bcf:citekey order="646" intorder="1">kalamkarov_asymptotic_2009</bcf:citekey>
     <bcf:citekey order="646" intorder="2">li_anisotropic_2020</bcf:citekey>
     <bcf:citekey order="647" intorder="1">kalamkarov_asymptotic_2009</bcf:citekey>
+    <bcf:citekey order="647" intorder="2">li_anisotropic_2020</bcf:citekey>
     <bcf:citekey order="648" intorder="1">kalamkarov_asymptotic_2009</bcf:citekey>
     <bcf:citekey order="649" intorder="1">kalamkarov_asymptotic_2009</bcf:citekey>
     <bcf:citekey order="650" intorder="1">kalamkarov_asymptotic_2009</bcf:citekey>
-    <bcf:citekey order="651" intorder="1">li_anisotropic_2020</bcf:citekey>
+    <bcf:citekey order="651" intorder="1">kalamkarov_asymptotic_2009</bcf:citekey>
     <bcf:citekey order="652" intorder="1">li_anisotropic_2020</bcf:citekey>
     <bcf:citekey order="653" intorder="1">li_anisotropic_2020</bcf:citekey>
     <bcf:citekey order="654" intorder="1">li_anisotropic_2020</bcf:citekey>
-    <bcf:citekey order="655" intorder="1">wu_topology_2021</bcf:citekey>
+    <bcf:citekey order="655" intorder="1">li_anisotropic_2020</bcf:citekey>
     <bcf:citekey order="656" intorder="1">wu_topology_2021</bcf:citekey>
     <bcf:citekey order="657" intorder="1">wu_topology_2021</bcf:citekey>
     <bcf:citekey order="658" intorder="1">wu_topology_2021</bcf:citekey>
     <bcf:citekey order="659" intorder="1">wu_topology_2021</bcf:citekey>
     <bcf:citekey order="660" intorder="1">wu_topology_2021</bcf:citekey>
-    <bcf:citekey order="661" intorder="1">zhang_scale-related_2006</bcf:citekey>
+    <bcf:citekey order="661" intorder="1">wu_topology_2021</bcf:citekey>
     <bcf:citekey order="662" intorder="1">zhang_scale-related_2006</bcf:citekey>
     <bcf:citekey order="663" intorder="1">zhang_scale-related_2006</bcf:citekey>
     <bcf:citekey order="664" intorder="1">zhang_scale-related_2006</bcf:citekey>
     <bcf:citekey order="665" intorder="1">zhang_scale-related_2006</bcf:citekey>
     <bcf:citekey order="666" intorder="1">zhang_scale-related_2006</bcf:citekey>
-    <bcf:citekey order="667" intorder="1">diamond_cvxpy_2016</bcf:citekey>
+    <bcf:citekey order="667" intorder="1">zhang_scale-related_2006</bcf:citekey>
     <bcf:citekey order="668" intorder="1">diamond_cvxpy_2016</bcf:citekey>
     <bcf:citekey order="669" intorder="1">diamond_cvxpy_2016</bcf:citekey>
     <bcf:citekey order="670" intorder="1">diamond_cvxpy_2016</bcf:citekey>
     <bcf:citekey order="671" intorder="1">diamond_cvxpy_2016</bcf:citekey>
     <bcf:citekey order="672" intorder="1">diamond_cvxpy_2016</bcf:citekey>
-    <bcf:citekey order="673" intorder="1">domahidi_ecos_2013</bcf:citekey>
+    <bcf:citekey order="673" intorder="1">diamond_cvxpy_2016</bcf:citekey>
     <bcf:citekey order="674" intorder="1">domahidi_ecos_2013</bcf:citekey>
     <bcf:citekey order="675" intorder="1">domahidi_ecos_2013</bcf:citekey>
     <bcf:citekey order="676" intorder="1">domahidi_ecos_2013</bcf:citekey>
     <bcf:citekey order="677" intorder="1">domahidi_ecos_2013</bcf:citekey>
     <bcf:citekey order="678" intorder="1">domahidi_ecos_2013</bcf:citekey>
-    <bcf:citekey order="679" intorder="1">Moore_Mechmotum</bcf:citekey>
+    <bcf:citekey order="679" intorder="1">domahidi_ecos_2013</bcf:citekey>
     <bcf:citekey order="680" intorder="1">Moore_Mechmotum</bcf:citekey>
     <bcf:citekey order="681" intorder="1">Moore_Mechmotum</bcf:citekey>
     <bcf:citekey order="682" intorder="1">Moore_Mechmotum</bcf:citekey>
     <bcf:citekey order="683" intorder="1">Moore_Mechmotum</bcf:citekey>
     <bcf:citekey order="684" intorder="1">Moore_Mechmotum</bcf:citekey>
-    <bcf:citekey order="685" intorder="1">wachter_implementation_2006</bcf:citekey>
+    <bcf:citekey order="685" intorder="1">Moore_Mechmotum</bcf:citekey>
     <bcf:citekey order="686" intorder="1">wachter_implementation_2006</bcf:citekey>
     <bcf:citekey order="687" intorder="1">wachter_implementation_2006</bcf:citekey>
     <bcf:citekey order="688" intorder="1">wachter_implementation_2006</bcf:citekey>
     <bcf:citekey order="689" intorder="1">wachter_implementation_2006</bcf:citekey>
     <bcf:citekey order="690" intorder="1">wachter_implementation_2006</bcf:citekey>
-    <bcf:citekey order="691" intorder="1">alappat_recursive_2020</bcf:citekey>
+    <bcf:citekey order="691" intorder="1">wachter_implementation_2006</bcf:citekey>
     <bcf:citekey order="692" intorder="1">alappat_recursive_2020</bcf:citekey>
     <bcf:citekey order="693" intorder="1">alappat_recursive_2020</bcf:citekey>
     <bcf:citekey order="694" intorder="1">alappat_recursive_2020</bcf:citekey>
     <bcf:citekey order="695" intorder="1">alappat_recursive_2020</bcf:citekey>
     <bcf:citekey order="696" intorder="1">alappat_recursive_2020</bcf:citekey>
-    <bcf:citekey order="697" intorder="1">michell_limits_1904</bcf:citekey>
+    <bcf:citekey order="697" intorder="1">alappat_recursive_2020</bcf:citekey>
     <bcf:citekey order="698" intorder="1">michell_limits_1904</bcf:citekey>
     <bcf:citekey order="699" intorder="1">michell_limits_1904</bcf:citekey>
     <bcf:citekey order="700" intorder="1">michell_limits_1904</bcf:citekey>
     <bcf:citekey order="701" intorder="1">michell_limits_1904</bcf:citekey>
     <bcf:citekey order="702" intorder="1">michell_limits_1904</bcf:citekey>
-    <bcf:citekey order="703" intorder="1">sigmund_non-optimality_2016</bcf:citekey>
+    <bcf:citekey order="703" intorder="1">michell_limits_1904</bcf:citekey>
     <bcf:citekey order="704" intorder="1">sigmund_non-optimality_2016</bcf:citekey>
     <bcf:citekey order="705" intorder="1">sigmund_non-optimality_2016</bcf:citekey>
     <bcf:citekey order="706" intorder="1">sigmund_non-optimality_2016</bcf:citekey>
     <bcf:citekey order="707" intorder="1">sigmund_non-optimality_2016</bcf:citekey>
     <bcf:citekey order="708" intorder="1">sigmund_non-optimality_2016</bcf:citekey>
-    <bcf:citekey order="709" intorder="1">deshpande_effective_2001</bcf:citekey>
+    <bcf:citekey order="709" intorder="1">sigmund_non-optimality_2016</bcf:citekey>
     <bcf:citekey order="710" intorder="1">deshpande_effective_2001</bcf:citekey>
     <bcf:citekey order="711" intorder="1">deshpande_effective_2001</bcf:citekey>
     <bcf:citekey order="712" intorder="1">deshpande_effective_2001</bcf:citekey>
     <bcf:citekey order="713" intorder="1">deshpande_effective_2001</bcf:citekey>
     <bcf:citekey order="714" intorder="1">deshpande_effective_2001</bcf:citekey>
+    <bcf:citekey order="715" intorder="1">deshpande_effective_2001</bcf:citekey>
     <bcf:citekeycount count="1">stragiotti_towards_2021</bcf:citekeycount>
     <bcf:citekeycount count="13">dorn_automatic_1964</bcf:citekeycount>
     <bcf:citekeycount count="6">chan_optimum_1964</bcf:citekeycount>
@@ -3241,6 +3242,7 @@
     <bcf:citekeycount count="6">enrico_stragiotti_truss_2023</bcf:citekeycount>
     <bcf:citekeycount count="3">rozvany_symmetry_2011</bcf:citekeycount>
     <bcf:citekeycount count="3">guo_confirmation_2014</bcf:citekeycount>
+    <bcf:citekeycount count="1">stragiotti_enhanced_2022</bcf:citekeycount>
     <bcf:citekeycount count="3">cramer_elastic_2019</bcf:citekeycount>
     <bcf:citekeycount count="3">zhou_design_2008</bcf:citekeycount>
     <bcf:citekeycount count="3">kalamkarov_asymptotic_2009</bcf:citekeycount>
