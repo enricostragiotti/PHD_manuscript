@@ -40,27 +40,27 @@
 \contentsline {figure}{\numberline {2.20}{\ignorespaces Iteration history of the ten-bar truss with multiple load cases example solved with the 2S-5R algorithm; (a) objective function history for the \gls {slp} and \gls {nlp} step (b) constraint violation for the \gls {nlp} step.}}{50}{figure.caption.88}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Notations used for the definition of the variable linking approach used to apply the modularity constraints.}}{52}{figure.caption.89}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Notations used for the evaluation of the sensitivities for the modular structure optmization based on the variable linking scheme.}}{56}{figure.caption.90}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces \relax }}{57}{figure.caption.93}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces \textcolor {green}{spiega colori as usual}}}{58}{figure.caption.95}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces In gray the symmetry planes.}}{58}{figure.caption.96}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces with a vol of}}{58}{figure.caption.98}%
-\contentsline {figure}{\numberline {3.7}{\ignorespaces \textcolor {green}{add monolithic result with a line horizontal}}}{59}{figure.caption.101}%
-\contentsline {figure}{\numberline {3.8}{\ignorespaces \textcolor {green}{timel}}}{59}{figure.caption.102}%
-\contentsline {figure}{\numberline {3.9}{\ignorespaces (a-d) (e-h)}}{61}{figure.caption.104}%
-\contentsline {figure}{\numberline {3.10}{\ignorespaces \textcolor {green}{timel}}}{61}{figure.caption.105}%
-\contentsline {figure}{\numberline {3.11}{\ignorespaces \textcolor {green}{metti undeformed e compara con no cell}}}{62}{figure.caption.106}%
-\contentsline {figure}{\numberline {3.12}{\ignorespaces (a-d) (e-h)}}{63}{figure.caption.110}%
-\contentsline {figure}{\numberline {3.13}{\ignorespaces \textcolor {green}{add monolithic result with a line horizontal}}}{64}{figure.caption.111}%
-\contentsline {figure}{\numberline {3.14}{\ignorespaces \textcolor {green}{timel}}}{64}{figure.caption.112}%
-\contentsline {figure}{\numberline {3.15}{\ignorespaces \textcolor {green}{timel}}}{64}{figure.caption.113}%
-\contentsline {figure}{\numberline {3.16}{\ignorespaces limited to 500 and 2e5}}{66}{figure.caption.118}%
-\contentsline {figure}{\numberline {3.17}{\ignorespaces (a-d)Main effects plot of }}{67}{figure.caption.119}%
-\contentsline {figure}{\numberline {3.18}{\ignorespaces \relax }}{67}{figure.caption.122}%
-\contentsline {figure}{\numberline {3.19}{\ignorespaces \textcolor {green}{todo}}}{68}{figure.caption.123}%
-\contentsline {figure}{\numberline {3.20}{\ignorespaces \relax }}{70}{figure.caption.125}%
-\contentsline {figure}{\numberline {3.21}{\ignorespaces \relax }}{71}{figure.caption.126}%
-\contentsline {figure}{\numberline {3.22}{\ignorespaces \relax }}{71}{figure.caption.127}%
-\contentsline {figure}{\numberline {3.23}{\ignorespaces \textcolor {green}{todo}}}{72}{figure.caption.128}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Notations used for the evaluation of the sensitivities for the modular structure optimization based on the variable linking scheme.}}{56}{figure.caption.90}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Boundary conditions of the multi-subdomains (a) and the multi-load cases (b) test cases.}}{57}{figure.caption.93}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Optimized structures of the multi-subdomains (a) and the multi-load cases (b) test cases. The resulting module topology is equal for the two cases. In red the bars are in a tensile state, and in blue the bars are in a compressive state.}}{58}{figure.caption.95}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Symmetric boundary conditions of the simply supported 3D beam. In gray are the symmetry planes of the test case.}}{58}{figure.caption.96}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Perspective view of the monolithic simply supported 3D beam optimized structure with $V=\qty {9.907}{\centi \meter ^3}$}}{58}{figure.caption.98}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Influence of the number of subdomains on the volume of the optimized modular structure.}}{59}{figure.caption.101}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Influence of the number of subdomains on the computational time of the optimization.}}{59}{figure.caption.102}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Rendering of the optimized structures with 6x2x3 (a-e), 12x4x6 (b-f), 18x6x9 (c-g), and 30x10x15 (d-h) subomains. The module presents a 2x2x2 complexity.}}{61}{figure.caption.104}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Influence of the number of subdomains on the loading metrics $\varphi $ and $\psi $ of the optimized structures.}}{61}{figure.caption.105}%
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Stress (a-c) and local buckling (b-d) failure criteria plotted on the monolithic and the 12x4x6-3x3x3 cases.}}{62}{figure.caption.106}%
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Rendering of the optimized structures with 2x2x2 (a-e), 3x3x3 (b-f), 4x4x4 (c-g), and 5x5x5 (d-h) module complexity. The number of subdomains is 6x2x3.}}{63}{figure.caption.110}%
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Influence of the module complexity on the volume of the optimized modular structure.}}{64}{figure.caption.111}%
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Influence of the module complexity on the computational time of the optimization.}}{64}{figure.caption.112}%
+\contentsline {figure}{\numberline {3.15}{\ignorespaces Influence of the module complexity on the loading metrics $\varphi $ and $\psi $ of the optimized structures.}}{64}{figure.caption.113}%
+\contentsline {figure}{\numberline {3.16}{\ignorespaces \acrfull {doe} response curves and isocurves plot for the volume (a-b) and computational time (c-d).}}{67}{figure.caption.118}%
+\contentsline {figure}{\numberline {3.17}{\ignorespaces Main effects plot of volume (a) and computational time (b).}}{68}{figure.caption.119}%
+\contentsline {figure}{\numberline {3.18}{\ignorespaces Rendering of a single octet-truss module.}}{69}{figure.caption.122}%
+\contentsline {figure}{\numberline {3.19}{\ignorespaces Comparison of the octet-truss structures (a-c-e-g) and the TTO structures (b-d-f-h) for two differnet numbers of submodules, 6x2x3 and 12x4x6.}}{70}{figure.caption.123}%
+\contentsline {figure}{\numberline {3.20}{\ignorespaces Graphical representation of the given module layout for the simply supported 3D beam.}}{71}{figure.caption.125}%
+\contentsline {figure}{\numberline {3.21}{\ignorespaces Orthographic views of the topology of the optimized modular simply supported 3D beam. (a) XZ plane (b) YZ plane (c) XY plane (d) auxiliary perspective view.}}{72}{figure.caption.126}%
+\contentsline {figure}{\numberline {3.22}{\ignorespaces Comparison of the volume and computational time of the structure with multiple modules with the monolithic and the fully modular structures.}}{72}{figure.caption.127}%
+\contentsline {figure}{\numberline {3.23}{\ignorespaces Stress (a-c) and local buckling (b-d) failure criteria plotted on the multiple and single module modular structures.}}{73}{figure.caption.128}%
 \addvspace {10\p@ }
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file
