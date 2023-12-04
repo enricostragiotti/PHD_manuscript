@@ -1,21 +1,9 @@
 [0] Config.pm:307> INFO - This is Biber 2.19
-[0] Config.pm:310> INFO - Logfile is 'manuscript_Stragiotti.blg'
-[139] biber-MSWIN64:340> INFO - === 
-[192] Biber.pm:419> INFO - Reading 'manuscript_Stragiotti.bcf'
-[787] Biber.pm:979> INFO - Found 94 citekeys in bib section 0
-[804] Biber.pm:4419> INFO - Processing section 0
-[818] Biber.pm:4610> INFO - Looking for bibtex file 'biblio.bib' for section 0
-[904] bibtex.pm:1713> INFO - LaTeX decoding ...
-[1336] bibtex.pm:1519> INFO - Found BibTeX data source 'biblio.bib'
-[1989] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[1990] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[1990] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
-[1990] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
-[2096] bbl.pm:660> INFO - Writing 'manuscript_Stragiotti.bbl' with encoding 'UTF-8'
-[2163] bbl.pm:763> INFO - Output to manuscript_Stragiotti.bbl
-[2164] Biber.pm:131> WARN - Duplicate entry key: 'kalamkarov_asymptotic_2009' in file 'biblio.bib', skipping ...
-[2164] Biber.pm:131> WARN - Duplicate entry key: 'kirsch_optimal_1980' in file 'biblio.bib', skipping ...
-[2164] Biber.pm:131> WARN - Duplicate entry key: 'silva_smith_topology_1997' in file 'biblio.bib', skipping ...
-[2164] Biber.pm:131> WARN - ISBN '978-3-642-07698-5 978-3-662-05086-6' in entry 'bendsoe_topology_2004' is invalid - run biber with '--validate_datamodel' for details.
-[2164] Biber.pm:131> WARN - ISBN '978-3-662-03117-9 978-3-662-03115-5' in entry 'bendsoe_optimization_1995' is invalid - run biber with '--validate_datamodel' for details.
-[2164] Biber.pm:133> INFO - WARNINGS: 5
+[1] Config.pm:310> INFO - Logfile is 'manuscript_Stragiotti.blg'
+[443] biber-MSWIN64:340> INFO - === 
+[589] Biber.pm:419> INFO - Reading 'manuscript_Stragiotti.bcf'
+[1111] Biber.pm:979> INFO - Found 0 citekeys in bib section 0
+[1184] bbl.pm:660> INFO - Writing 'manuscript_Stragiotti.bbl' with encoding 'UTF-8'
+[1186] bbl.pm:763> INFO - Output to manuscript_Stragiotti.bbl
+[1188] Biber.pm:131> WARN - The file 'manuscript_Stragiotti.bcf' does not contain any citations!
+[1188] Biber.pm:133> INFO - WARNINGS: 1

@@ -1,0 +1,57 @@
+\documentclass[12pt, varwidth=5cm]{standalone}
+
+\input{../../img_header}
+
+\begin{document}
+
+\begin{tikzpicture}
+
+	\foreach \xa in {0,2}
+            \foreach \ya in {0,2}  
+                    \foreach \xx in {0,2}
+                        \foreach \yy  in {0,2}  
+                                \draw[axis_gray, thin] (\xa, \ya+3) -- (\xx, \yy+3);
+
+    \point{a1}{0}{0+3};
+    \point{b1}{0}{2+3};
+    \point{c1}{2}{2+3};
+    \point{d1}{2}{0+3};
+    \point{e1}{1}{0+3};
+
+    \beam{2}{a1}{b1}[1][1];
+    \beam{2}{b1}{c1}[1][1];
+    \beam{2}{c1}{d1}[1][1];
+    \beam{2}{d1}{a1}[1][1];
+
+    %%%%%%%%%%%%%%%%%%%%%%%% BCs
+
+    \draw[axis_gray, -stealth] (e1.south) to[out=270,in=110] (0.17+0.17/2,2-0.17/2-0.17);
+    
+
+	\draw[ help lines , step =.16666] ( 0 , 0) grid (4,2) ;
+
+	\point{a}{0}{0};
+	\point{b}{0}{2};
+	\point{c}{4}{2};
+	\point{d}{4}{2};
+	\point{e}{4}{1};
+	\point{f}{4}{0};
+	
+	\beam{2}{a}{b}[1][1];
+	\beam{2}{b}{c}[1][1];
+	\beam{2}{c}{d}[1][1];
+	\beam{2}{d}{e}[1][1];
+	\beam{2}{e}{f}[1][1];
+	\beam{2}{f}{a}[1][1];
+	
+    \draw[forces] (4.2,1) -- (4.2,0.3) node[right] {\footnotesize$P$};
+
+	\notation{5}{f}{a}[\footnotesize$2L$][.5][below=2mm];
+	\notation{5}{d}{e}[\footnotesize$L$][.5][right=2mm][1];
+	
+	\fill[pattern=north east lines] (-0.2,-0.2) -- (-0.2,2.2) -- (0,2.2) -- (0,-0.2);
+	
+    
+\end{tikzpicture}
+
+\end{document}

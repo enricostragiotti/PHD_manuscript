@@ -1,0 +1,168 @@
+\chapter{Sensitivity analysis of the modular structure optimization algorithm}
+\subsubsection{Sensitivity analysis}
+\paragraph*{Common derivatives}
+
+\begin{equation}
+    \derfrac{\vect{a}^j}{\bar{\vect{a}}_t} = w_t^j
+\end{equation}
+
+
+\begin{equation}
+    \derfrac{\vect{a}^j}{\alpha_t^j} =  \derfrac{\vect{a}^j}{w_t^j} \derfrac{w_t^j}{\alpha_t^j}
+\end{equation}
+
+\begin{equation}
+    \derfrac{\vect{a}^j}{w_t^j} = \bar{\vect{a}}_t
+\end{equation}
+
+\begin{equation}
+    \derfrac{w_t^j}{\alpha_t^j} = \frac{1+(\cdot)}{\left(1+(\cdot)(1-\alpha_t^j)\right)^2}
+\end{equation}
+where $(\cdot)$ is either equal to $p$ or $q$.
+
+\begin{equation}
+    \derfrac{^2w_t^j}{(\alpha_t^j)^2} = \frac{2(\cdot)\left(1+(\cdot)\right)}{\left(1+(\cdot)(1-\alpha_t^j)\right)^3}
+\end{equation}
+
+\paragraph*{Volume Jacobian}
+\begin{equation}
+    \derfrac{V}{{\bar{\vect{a}}_t}} = \vect{\bar{\ell}}^T\sum_{j=1}^{N_{\text{sub}}} \tilde{w}_t^j  \text{, with } t \in [1,\dots,N_T]
+\end{equation}
+
+\begin{equation}
+    \derfrac{V}{\alpha_t^j}= \derfrac{V}{w_t^j} \derfrac{w_t^j}{\alpha_t^j}
+\end{equation}
+
+\begin{equation}
+    \derfrac{V}{w_t^j} = \bar{\ell}^T \bar{\vect{a}}_t
+\end{equation}
+
+\begin{equation}
+    \derfrac{V}{\vect{q}}=0
+\end{equation}
+\begin{equation}
+    \derfrac{V}{\vect{U}}=0
+\end{equation}
+
+
+\paragraph*{Volume Hessian} 
+
+\begin{equation}
+    \hessfrac{V}{{\bar{\vect{a}}_t}}{\alpha_t^j} = \bar{\ell}^T \derfrac{\tilde{w}_t^j}{\alpha_t^j}
+\end{equation}
+
+\begin{equation}
+    \derfrac{^2V}{(\alpha_t^j)^2} = \bar{\ell}^T \bar{\vect{a}}_t \derfrac{^2w_t^j}{(\alpha_t^j)^2}
+\end{equation}
+
+\begin{equation}
+    \derfrac{^2V}{{\bar{\vect{a}}_t}^2} = 0
+\end{equation}
+
+\paragraph*{Equilibrium Jacobian}
+\begin{equation}
+    \vect{g}_\text{eq}:=\matr{B}\vect{q} = \vect{f}
+\end{equation}
+
+Not impacted by the clustering of the variables.
+\begin{equation}
+    \derfrac{\vect{g}_\text{eq}}{\vect{\alpha}}=0
+\end{equation}
+
+\paragraph*{Stress constraints tension jacobian}
+
+\begin{equation}
+    \vect{g}_\text{t}:=\vect{q} -\sigma_t\vect{a} \leq 0
+\end{equation}
+
+\begin{equation}
+    \derfrac{\vect{g}_\text{t}^j}{\bar{\vect{a}}_t} = \derfrac{\vect{g}_\text{t}^j}{{\vect{a}^j}} \derfrac{\vect{a}^j}{\bar{\vect{a}}_t}
+\end{equation}
+
+\begin{equation}
+    \derfrac{\vect{g}_\text{t}^j}{{\vect{a}^j}} = -\sigma_t
+\end{equation}
+
+\begin{equation}
+    \derfrac{\vect{g}_\text{t}^j}{\bar{\vect{a}}_t} = -\sigma_t w_t^j
+\end{equation}
+
+\begin{equation}
+    \derfrac{\vect{g}_\text{t}^j}{\alpha^j}=\derfrac{\vect{g}_\text{t}^j}{\vect{a}^j} \derfrac{\vect{a}^j}{\alpha^j}
+\end{equation}
+
+\paragraph*{Stress constraints tension Hessian}
+
+\begin{equation}
+    \hessfrac{\vect{g}_\text{t}^j}{{\bar{\vect{a}}_t}}{\alpha_t^j} = -\sigma_t \derfrac{w_t^j}{\alpha_t^j}
+\end{equation}
+
+\begin{equation}
+    \derfrac{^2\vect{g}_\text{t}^j}{(\alpha_t^j)^2} = -\sigma_t  \bar{\vect{a}}_t \derfrac{^2w_t^j}{(\alpha_t^j)^2}
+\end{equation}
+
+\paragraph*{Buckling Jacobian}
+
+\begin{equation}
+    \vect{g}_\text{b} := \vect{q}  \frac{s\vect{a}^2}{\vect{\ell^2}} \geq 0
+\end{equation}
+
+\begin{equation}
+    \derfrac{\vect{g}_\text{b}^j}{\vect{a}^j} =  2\frac{s\vect{a}^j}{\vect{\ell^2}}
+\end{equation}
+
+\begin{equation}
+    \derfrac{\vect{g}_\text{b}^j}{\bar{\vect{a}}_t} = \derfrac{\vect{g}_\text{b}^j}{{\vect{a}^j}} \derfrac{\vect{a}^j}{\bar{\vect{a}}_t}
+\end{equation}
+
+\begin{equation}
+    \derfrac{\vect{g}_\text{b}^j}{\bar{\vect{a}}_t} =  2\frac{s\vect{a}^j}{\vect{\ell^2}} w_t^j
+\end{equation}
+
+\begin{equation}
+    \derfrac{\vect{g}_\text{b}^j}{\alpha^j}=\derfrac{\vect{g}_\text{b}^j}{\vect{a}^j} \derfrac{\vect{a}^j}{\alpha^j}
+\end{equation}
+
+\begin{equation}
+    \derfrac{\vect{g}_\text{b}^j}{\alpha^j_t}= 2\frac{s\vect{a}^j}{\vect{\ell^2}}\bar{\vect{a}}_t \derfrac{w_t^j}{\alpha_t^j}
+\end{equation}
+
+\begin{equation}
+    \derfrac{\vect{g}_\text{b}^j}{\alpha^j_t}= 2\frac{s\vect{a}^j}{\vect{\ell^2}}\bar{\vect{a}}_t \frac{1+(\cdot)}{\left(1+(\cdot)(1-\alpha_t^j)\right)^2}
+\end{equation}
+
+\paragraph*{Buckling Hessian}
+
+\begin{equation}
+    \hessfrac{\vect{g}_\text{b}^j}{{\bar{\vect{a}}_l}}{\alpha_m^j} =  2\frac{s}{\vect{\ell^2}} w_l^j \derfrac{\vect{a}^j}{\alpha^j_m} + 2\frac{s\vect{a}^j}{\vect{\ell^2}} \derfrac{w_l^j}{\alpha_m^j}
+\end{equation}
+
+\begin{equation}
+    \hessfrac{\vect{g}_\text{b}^j}{{\bar{\vect{a}}_l}}{\alpha_m^j} = 2\frac{s}{\vect{\ell^2}}w_l^j \derfrac{w_m^j}{\alpha_m^j}  \bar{\vect{a}}_m + 2\frac{s\vect{a}^j}{\vect{\ell^2}} \derfrac{w_l^j}{\alpha_m^j}
+\end{equation}
+
+\begin{equation}
+    \hessfrac{\vect{g}_\text{b}^j}{{\bar{\vect{a}}_l}}{\alpha_m^j}=
+    \begin{cases}
+         2\frac{s}{\vect{\ell^2}} \derfrac{w_t^j}{\alpha_t^j}\left( w_t^j \bar{\vect{a}}_t + \vect{a}^j \right) & \text{if }l=m=t \\
+         2\frac{s}{\vect{\ell^2}}w_l^j \derfrac{w_m^j}{\alpha_m^j}  \bar{\vect{a}}_m & \text{otherwise.}
+        
+    \end{cases}
+\end{equation}
+
+\begin{equation}
+    \hessfrac{\vect{g}_\text{b}^j}{\bar{\vect{a}}_l}{\bar{\vect{a}}_m} = 2\frac{s}{\vect{\ell^2}} w_l^j w_m^j
+\end{equation}
+
+\begin{equation}
+    \hessfrac{\vect{g}_\text{b}^j}{\alpha^j_l}{\alpha^j_m} =  2\frac{s}{\vect{\ell^2}}\bar{\vect{a}}_l \derfrac{\vect{a}^j}{\alpha^j_m} \derfrac{w_l^j}{\alpha^j_l} + 2\frac{s\vect{a}^j}{\vect{\ell^2}}\bar{\vect{a}}_l \hessfrac{w_l^j}{\alpha^j_l}{\alpha^j_m}
+\end{equation}
+
+\begin{equation}
+    \hessfrac{\vect{g}_\text{b}^j}{\alpha^j_l}{\alpha^j_m} = 
+    \begin{cases}
+        2\frac{s}{\vect{\ell^2}}\bar{\vect{a}}_t^2\left(\derfrac{w_t^j}{\alpha_t^j}\right)^2  + 2\frac{s\vect{a}^j}{\vect{\ell^2}}\bar{\vect{a}}_t \derfrac{^2w_t^j}{(\alpha^j_t)^2} & \text{if }l=m=t\\
+        2\frac{s}{\vect{\ell^2}}\bar{\vect{a}}_l\bar{\vect{a}}_m\left(\derfrac{w_m^j}{\alpha_m^j}\right) \left(\derfrac{w_l^j}{\alpha_l^j}\right)
+         & \text{otherwise.}
+    \end{cases}
+\end{equation}

@@ -1,0 +1,46 @@
+\documentclass[10pt, varwidth=15cm]{standalone}
+
+\input{../../img_header}
+
+\usepackage{amsmath}
+% Definition of \boxed in amsmath.sty:
+% \newcommand{\boxed}[1]{\fbox{\m@th$\displaystyle#1$}}
+
+\usepackage{xcolor}
+\usepackage{nicematrix}
+
+% Syntax: \colorboxed[<color model>]{<color specification>}{<math formula>}
+\newcommand*{\colorboxed}{}
+\def\colorboxed#1#{%
+  \colorboxedAux{#1}%
+}
+\newcommand*{\colorboxedAux}[3]{%
+  % #1: optional argument for color model
+  % #2: color specification
+  % #3: formula
+  \begingroup
+    \colorlet{cb@saved}{.}%
+    \color#1{#2}%
+    \boxed{%
+      \color{cb@saved}%
+      #3%
+    }%
+  \endgroup
+}
+
+\begin{document}
+
+\begin{tikzpicture}
+
+        \draw [line width = 2pt] (0,0) rectangle (1.5,1.5);
+        \draw [line width = 2pt] (0.75,1.5) -- (0.75,0);
+        \draw [line width = 2pt] (0,0.75) -- (1.5,0.75);
+        % \fill (0,1.5) circle (1pt/2);
+        % \fill (1.5,1.5) circle (1pt/2);
+        % \fill (0,3) circle (2.5pt/2);
+        % \fill (1.5,3) circle (2.5pt/2);
+\node at (0.75,-0.3) {\large $t=1$};
+
+\end{tikzpicture}
+
+\end{document}

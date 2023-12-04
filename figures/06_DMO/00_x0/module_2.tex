@@ -1,0 +1,58 @@
+\documentclass[10pt, varwidth=15cm]{standalone}
+
+\input{../../img_header}
+
+\usepackage{amsmath}
+% Definition of \boxed in amsmath.sty:
+% \newcommand{\boxed}[1]{\fbox{\m@th$\displaystyle#1$}}
+
+\usepackage{xcolor}
+\usepackage{nicematrix}
+
+% Syntax: \colorboxed[<color model>]{<color specification>}{<math formula>}
+\newcommand*{\colorboxed}{}
+\def\colorboxed#1#{%
+  \colorboxedAux{#1}%
+}
+\newcommand*{\colorboxedAux}[3]{%
+  % #1: optional argument for color model
+  % #2: color specification
+  % #3: formula
+  \begingroup
+    \colorlet{cb@saved}{.}%
+    \color#1{#2}%
+    \boxed{%
+      \color{cb@saved}%
+      #3%
+    }%
+  \endgroup
+}
+
+\begin{document}
+
+\begin{tikzpicture}
+
+  \def\x{5cm}
+  %%%%%%%%%%%%%%%%%%%%%%%% MODULE
+  
+  \foreach \xa in {0,\x*2/5*1/3,\x*2/5*2/3,\x*2/5}
+          \foreach \ya in {0,\x*1/10,\x*1/5}  
+                  \foreach \xx in {0,\x*2/5*1/3,\x*2/5*2/3,\x*2/5}
+                      \foreach \yy  in {0,\x*1/10,\x*1/5}  
+                              \draw[axis_gray, thin] (\xa, \ya) -- (\xx, \yy);
+
+  \point{a1}{0}{0};
+  \point{b1}{0}{\x*1/10*2};
+  \point{c1}{\x*1/5*2}{\x*1/10*2};
+  \point{d1}{\x*1/5*2}{0};
+  \point{e1}{\x*1/5}{0};
+
+  \beam{2}{a1}{b1}[1][1];
+  \beam{2}{b1}{c1}[1][1];
+  \beam{2}{c1}{d1}[1][1];
+  \beam{2}{d1}{a1}[1][1];
+\node[draw=accent_r_1, thick, inner sep = 1.5pt] at (1,-0.3) {\large $t=1$};
+
+\end{tikzpicture}
+
+\end{document}

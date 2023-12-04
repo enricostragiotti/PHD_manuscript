@@ -1,0 +1,241 @@
+\documentclass[10pt, varwidth=15cm]{standalone}
+
+\input{../../img_header}
+
+\usepackage{amsmath}
+% Definition of \boxed in amsmath.sty:
+% \newcommand{\boxed}[1]{\fbox{\m@th$\displaystyle#1$}}
+
+\usepackage{xcolor}
+\usepackage{nicematrix}
+
+% Syntax: \colorboxed[<color model>]{<color specification>}{<math formula>}
+\newcommand*{\colorboxed}{}
+\def\colorboxed#1#{%
+  \colorboxedAux{#1}%
+}
+\newcommand*{\colorboxedAux}[3]{%
+  % #1: optional argument for color model
+  % #2: color specification
+  % #3: formula
+  \begingroup
+    \colorlet{cb@saved}{.}%
+    \color#1{#2}%
+    \boxed{%
+      \color{cb@saved}%
+      #3%
+    }%
+  \endgroup
+}
+
+\begin{document}
+
+\begin{tikzpicture}[square/.style={rectangle,minimum width=1.5cm,minimum
+    height=1.5cm,draw=black,thick,fill=white}]
+
+\pgfmathsetmacro\xstep{1.5} % Adjust as needed
+\pgfmathsetmacro\ystep{1.5} % Adjust as needed
+
+% % Draw help lines with different step sizes
+% \foreach \x in {0,\xstep,...,6} {
+%     \foreach \y in {0,\ystep,...,3} {
+%         \draw [help lines] (6, \y) -- (0, \y); % Vertical lines
+%         \draw [help lines] (\x, 3) -- (\x, 0); % Horizontal lines
+%     }
+% }
+
+\fill[pattern=north east lines] (-0.3,-0.3) -- (-0.3,3.3) -- (0,3.3) -- (0,-0.3);
+    
+\point{a}{0}{0};
+\point{b}{0}{3};
+\point{c}{6}{3};
+\point{d}{6}{0};
+
+\beam{2}{a}{b}[1][1];
+\beam{2}{b}{c}[1][1];
+\beam{2}{c}{d}[1][1];
+\beam{2}{d}{a}[1][1];
+
+\begin{scope}%[accent_r_1]
+    \foreach \x [count=\ii from 0] in {0,\xstep,...,4.5} {
+        \draw [line width = 2.5pt] (0+\x,3) -- (1.5+\x,3);
+        \draw [line width = 2.5pt] (0+\x,1.5) -- (1.5+\x,1.5);
+        \draw [line width = 2.5pt] (0+\x,1.5) -- (0+\x,3);
+        \draw [line width = 2.5pt] (0+\x,0) -- (0+\x,1.5);
+        \draw [line width = 2.5pt]   (0+\x,1.5) -- (1.5+\x,3);
+        \draw [line width = 2.5pt]   (0+\x,3) -- (1.5+\x,1.5);
+        \draw [line width = 2.5pt]   (0+\x,0) -- (1.5+\x,1.5);
+        \draw [line width = 2.5pt]   (0+\x,1.5) -- (1.5+\x,0);
+        \draw [line width = 0.8pt]   (0.75+\x,3) -- (0.75+\x,0);
+        \draw [line width = 0.8pt]   (0+\x,0.75) -- (1.5+\x,0.75);
+        \draw [line width = 0.8pt]   (0+\x,0.75+1.5) -- (1.5+\x,0.75+1.5);
+        % \draw [line width = 1pt]   (1.5+\x,3) -- (1.5+\x,1.5);
+        % \fill (0+\x,1.5) circle (1pt/2);
+        % \fill (1.5+\x,1.5) circle (1pt/2);
+        % \fill (0+\x,3) circle (2.5pt/2);
+        % \fill (1.5+\x,3) circle (2.5pt/2);
+        % \draw [line width = 1pt] (0+\x,0) -- (1.5+\x,0);
+        % \draw [line width = 1pt]   (0+\x,1.5) -- (1.5+\x,0);
+        % \draw [line width = 1pt]   (0+\x,0) -- (1.5+\x,1.5);
+        % \draw [line width = 1pt]   (1.5+\x,0) -- (1.5+\x,1.5);
+        % \fill (0+\x,1.5) circle (1pt/2);
+        % \fill (1.5+\x,1.5) circle (1pt/2);
+        % \fill (0+\x,0) circle (2.5pt/2);
+        % \fill (1.5+\x,0) circle (2.5pt/2);
+    }
+\end{scope}
+
+
+% \node[fit=(square1)(square8),xshift=0.1 cm](fit1){};
+%   \draw[decorate,decoration={brace}] (fit1.north east) --
+%   (fit1.south east) node[midway,right,align=left,text width = 2.5cm, xshift=0.1 cm] (sub) {\small Submodules monolitic sensitivities};
+
+\draw[forces] (6.2,1.5) -- (6.2,1.5-0.7) node[right] {\footnotesize$f$};
+\draw[axis_gray,thick] (4.4,1.4) rectangle (6.1,3.1);
+\draw[axis_gray] (6.2,2.25)  to[out=0,in=180] (8,1.2);
+
+\begin{axis}[
+    curves,
+    width = 3cm,
+    height = 3cm,
+    at={(8.5cm,0.6cm)},
+    ybar,
+    xtick={1,2},
+    xmin = 0.7, xmax = 2.3,
+    % xticklabels={$t=0$, $t=1$},
+    xticklabels={\includegraphics[width=1cm]{module_1.pdf},\includegraphics[width=1cm]{module_2.pdf},}, % Include images as tick labels
+    ylabel={$w$},
+    ymin=0, ymax=1,
+    bar width=0.4cm,
+    % xmode=log,
+    ytick={0,0.5,1},
+    ]
+    \addplot[draw=accent_b_1,fill=accent_b_2] coordinates {
+      (1,0.9) (2,0.1)
+    };
+  \end{axis}
+
+
+% \draw [decorate,decoration={brace,amplitude=10pt},xshift=0pt,yshift=0cm]
+%     (0,3.15) -- (6,3.15) node [black,midway,yshift=.6cm] {\footnotesize $N_\text{sub,x}$};
+    
+% \draw [decorate,decoration={brace,amplitude=10pt},xshift=0cm,yshift=0cm]
+%     (6.5,3) -- (6.5,0) node [black,midway,xshift=.9cm] {\footnotesize $N_\text{sub,y}$};
+
+
+%   \node[square] at (1,-2) (square1){};
+%   \foreach \X [count=\Y] in {2,3,4,5,6,7,8}
+%   {\node[anchor=north west,below right=2mm and 2mm of square\Y.north west,square] (square\X){};}
+%   \node[fit=(square1)(square8),xshift=0.1 cm](fit1){};
+%   \draw[decorate,decoration={brace}] (fit1.north east) --
+%   (fit1.south east) node[midway,right,align=left,text width = 2.5cm, xshift=0.1 cm] (sub) {\small Submodules monolitic sensitivities};
+
+%   \node[black] at (square8) {$\frac{\partial(\cdot)}{\partial \bm{a}^j}$};
+
+% \node [black,text width=8cm, align=center] at (3.8,-5.7) {\small
+% \begin{equation*}
+%     \begin{split}
+%         \frac{\partial(\cdot)_i}{\partial\bar{\bm{a}}_{t=0}} ={} & \colorboxed{accent_b_1}{1}\times\colorboxed{accent_r_1}{\frac{\partial(\cdot)_i}{\partial \bm{a}^0}}+\colorboxed{accent_b_1}{1}\times\colorboxed{accent_r_1}{\frac{\partial(\cdot)_i}{\partial \bm{a}^1}}+\colorboxed{accent_b_1}{1}\times\colorboxed{accent_r_1}{\frac{\partial(\cdot)_i}{\partial \bm{a}^2}}+\colorboxed{accent_b_1}{1}\times\colorboxed{accent_r_1}{\frac{\partial(\cdot)_i}{\partial \bm{a}^3}}+\\
+%         &\colorboxed{accent_b_1}{0}\times\colorboxed{accent_r_1}{\frac{\partial(\cdot)_i}{\partial \bm{a}^4}}+\colorboxed{accent_b_1}{0}\times\colorboxed{accent_r_1}{\frac{\partial(\cdot)_i}{\partial \bm{a}^5}}+\colorboxed{accent_b_1}{0}\times\colorboxed{accent_r_1}{\frac{\partial(\cdot)_i}{\partial \bm{a}^6}}+\colorboxed{accent_b_1}{0}\times\colorboxed{accent_r_1}{\frac{\partial(\cdot)_i}{\partial \bm{a}^7}}
+%     \end{split}
+% \end{equation*}   
+% };
+
+% % \node [black,yshift=-.5cm] at (3,-1) {\footnotesize ${\vect{a}} :=  \{\vect{a}^j \;|\; \forall j \in [1,\dots,N_{\text{sub}}]\}$};
+
+% % \node [black,yshift=-.5cm] at (9.25,-1) {\footnotesize {${\bar{\vect{a}}} :=  \{ \bar{\vect{a}}_t \in \mathbb{R}_+^{\bar{n}} \;|\; \forall t \in [1,\dots,N_T]\}$}};
+
+	
+% % Subdomains
+
+% \foreach \xa in {8.5,9.25,10}
+%             \foreach \ya in {2,2.75,3.5}  
+%                     \foreach \xx in {8.5,9.25,10}
+%                         \foreach \yy  in {2,2.75,3.5}  
+%                                 \draw[axis_gray, thin] (\xa, \ya) -- (\xx, \yy);
+
+% \foreach \xa in {8.5,9.25,10}
+% \foreach \ya in {-0.5,0.25,1}  
+%         \foreach \xx in {8.5,9.25,10}
+%             \foreach \yy  in {-0.5,0.25,1}  
+%                     \draw[axis_gray, thin] (\xa, \ya) -- (\xx, \yy);
+
+% \point{a1}{0+7}{0+2};
+% \point{b1}{0+7}{1.5+2};
+% \point{c1}{1.5+7}{1.5+2};
+% \point{d1}{1.5+7}{0+2};
+
+% % \beam{2}{a1}{b1}[1][1];
+% % \beam{2}{b1}{c1}[1][1];
+% % \beam{2}{c1}{d1}[1][1];
+% % \beam{2}{d1}{a1}[1][1];
+% \begin{scope}[accent_r_1]
+%     \draw [line width = 2.5pt] (b1) -- (c1);
+%     \draw [line width = 1pt]   (d1) -- (c1);
+%     \draw [line width = 1pt]   (b1) -- (d1);
+%     \draw [line width = 1pt]   (a1) -- (c1);
+%     \fill (a1) circle (1pt/2);
+%     \fill (d1) circle (1pt/2);
+%     \fill (b1) circle (2.5pt/2);
+%     \fill (c1) circle (2.5pt/2);
+% \end{scope}
+
+% \point{b2}{0+7}{0-0.5};
+% \point{a2}{0+7}{1.5-0.5};
+% \point{d2}{1.5+7}{1.5-0.5};
+% \point{c2}{1.5+7}{0-0.5};
+
+% % % \beam{2}{a2}{b2}[1][1];
+% % % \beam{2}{b2}{c2}[1][1];
+% % % \beam{2}{c2}{d2}[1][1];
+% % % \beam{2}{d2}{a2}[1][1];
+
+% \begin{scope}[accent_b_1]
+%     \draw [line width = 2.5pt] (b2) -- (c2);
+%     \draw [line width = 1pt]   (d2) -- (c2);
+%     \draw [line width = 1pt]   (b2) -- (d2);
+%     \draw [line width = 1pt]   (a2) -- (c2);
+%     \fill (a2) circle (1pt/2);
+%     \fill (d2) circle (1pt/2);
+%     \fill (b2) circle (2.5pt/2);
+%     \fill (c2) circle (2.5pt/2);
+% \end{scope}
+
+
+%         \foreach \x [count=\ii from 0] in {0,\xstep,...,4.5} {
+%             % \filldraw[white,fill=white] (0.75+\x,0.75) circle (0.3); 
+%             \node[black] at (0.75+\x,0.75-1.1) {\footnotesize $j={\ii}$};
+%         }
+
+%         \foreach \x [count=\ii from 4] in {0,\xstep,...,4.5} {
+%             % \filldraw[white,fill=white] (0.75+\x,0.75+1.5) circle (0.3); 
+%             \node[black] at (0.75+\x,0.75+1.5+1.1) {\footnotesize $j={\ii}$};
+%         }
+
+%         \node[draw=accent_r_1, thin, fit=(square1)(square8)] {} ;
+
+
+%         % \filldraw[white,fill=white] (9.25,0.25) circle (0.3); 
+%         \node[black] at (9,0.25) {\footnotesize$t=0$};
+%         % \filldraw[white,fill=white] (9,2.75) circle (0.3); 
+%             \node[black] at (9,2.75) {\footnotesize$t=1$};
+
+%             \node [black,yshift=-.5cm] at (7.4,-2.3) {\small $\bm{H}=
+%             \begin{bNiceMatrix}[margin=0.5em]
+%                 1 & 0 \\
+%                 1 & 0 \\
+%                 1 & 0 \\
+%                 1 & 0 \\
+%                 0 & 1 \\
+%                 0 & 1 \\
+%                 0 & 1 \\
+%                 0 & 1 
+%                 \CodeAfter
+%                     \begin{tikzpicture}
+%                     \node (A) [draw=accent_b_1, thin, fit=(1-1) (8-1)] {} ;
+%                     \end{tikzpicture}
+%             \end{bNiceMatrix}$};
+    
+\end{tikzpicture}
+
+\end{document}

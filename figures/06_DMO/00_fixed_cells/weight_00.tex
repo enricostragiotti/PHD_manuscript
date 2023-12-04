@@ -1,0 +1,30 @@
+\documentclass[12pt, varwidth=15cm]{standalone}
+
+\input{../../img_header}
+
+% \tikzset{font=\scriptsize}
+% \usetikzlibrary{calc}
+
+\begin{document}
+\begin{tikzpicture}
+
+    \node[outer sep=0, inner sep=0] (figA) at (0,0){
+        \includegraphics[width=3.7cm]{fig4-Weight_convergence_00.pdf}
+    };
+
+    \node[above= 0.2cm of figA, outer sep=0] (colormap){\pgfplotscolorbardrawstandalone[ 
+        colormap name={reverse coolwarm_b},
+        colorbar horizontal,
+        point meta min=0,
+        point meta max=30,
+        colorbar style={
+            width=2.5cm,
+            height=0.25cm,
+            xtick={0,30},
+            xticklabel pos=upper,
+            xticklabels={\footnotesize 0.00, \footnotesize 1.0}}]
+        
+    };
+    
+\end{tikzpicture}
+\end{document}

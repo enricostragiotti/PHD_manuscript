@@ -142,6 +142,11 @@
         rgb255(25cm)=(223,219,217);
         }
         }
+        \pgfplotsset{
+        colormap={reverse coolwarm_b}{
+        indices of colormap={
+            \pgfplotscolormaplastindexof{coolwarm_b},...,0 of coolwarm_b}
+    },}
 %-----------------------------
 %- CUSTOM COLORS
 %-----------------------------

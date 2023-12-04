@@ -59,6 +59,7 @@
 \newcommand{\rhophys}{ \overline{\widetilde{\rho}} }
 \newcommand{\rhofil}{ \widetilde{\rho} }
 \newcommand{\derfrac}[2]{\frac{\partial#1}{\partial#2}}
+\newcommand{\hessfrac}[3]{\frac{\partial^2#1}{\partial#2\partial#3}}
 
 \renewcommand{\vect}[1]{\bm{#1}}
 \renewcommand{\matr}[1]{\bm{#1}}
@@ -203,13 +204,13 @@ This document was typeset with the help of \href{https://sourceforge.net/project
 
 % \include{chapters/2_literature_review}
 
-\include{chapters/3_comparison_TO_TTO}
+% \include{chapters/3_comparison_TO_TTO}
 
-\include{chapters/4_TTO_upgrades}
+% \include{chapters/4_TTO_upgrades}
 
-\include{chapters/5_cellular_structures}
+% \include{chapters/5_cellular_structures}
 
-% \include{chapters/6_DMO}
+\include{chapters/6_DMO}
 
 % \include{chapters/7_advanced_applications}
 
@@ -242,13 +243,13 @@ This document was typeset with the help of \href{https://sourceforge.net/project
 \printindex % Output the index
 
 
-% \appendix % From here onwards, chapters are numbered with letters, as is the appendix convention
+\appendix % From here onwards, chapters are numbered with letters, as is the appendix convention
 
-% \pagelayout{wide} % No margins
-% \addpart{Appendix}
-% \pagelayout{margin} % Restore margins
+\pagelayout{wide} % No margins
+\addpart{Appendix}
+\pagelayout{margin} % Restore margins
 
-% \include{chapters/app/A_geometry}
+\include{chapters/app/A_sens}
 
 
 \end{document}
