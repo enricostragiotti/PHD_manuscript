@@ -1,0 +1,38 @@
+\documentclass[12pt, varwidth=12cm]{standalone}
+
+\input{../../img_header}
+
+\begin{document}
+
+\begin{tikzpicture}
+
+    \node[outer sep=0, inner sep=0] (figA) at (0,0){
+        \includegraphics[width=4.5cm]{fig12-Module_withType_2.pdf}
+    };
+
+    \node[above= 0.2cm of figA, outer sep=0] {\footnotesize $N_\text{T}=2$ 
+        };
+    %%%%%%%%%%%%%%%%%%%%%%%% BCs
+
+
+    
+    \node[outer sep=0, inner sep=0] (figB) at (-1,-2.5){
+        \includegraphics[width=1.2cm]{fig8-Module_Topology_001_2.pdf}
+        };
+        \node[below= 0.1cm of figB, outer sep=0] {\footnotesize $t=0$ 
+        };
+        
+    \node[outer sep=0, inner sep=0] (figC) at (1,-2.5){
+        \includegraphics[width=1.2cm]{fig8-Module_Topology_002_2.pdf}
+        };
+        \node[below= 0.1cm of figC, outer sep=0] {\footnotesize $t=1$ 
+        };
+            
+            
+    \draw[axis_gray, -stealth] (figB.north) to[out=90,in=270] (-2.15,-1.15);
+    \draw[axis_gray, -stealth] (figC.north) to[out=90,in=270] (1.57,-0.95);
+    
+    
+\end{tikzpicture}
+
+\end{document}

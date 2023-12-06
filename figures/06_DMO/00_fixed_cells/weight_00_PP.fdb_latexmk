@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1701715676 "d:/estragio/PhD/99_Github/PHD_manuscript/figures/06_DMO/00_fixed_cells/weight_00_PP.tex" "weight_00_PP.pdf" "weight_00_PP" 1701715680 0
+["pdflatex"] 1701768934 "d:/estragio/PhD/99_Github/PHD_manuscript/figures/06_DMO/00_fixed_cells/weight_00_PP.tex" "weight_00_PP.pdf" "weight_00_PP" 1701768937 0
   "../../img_header.tex" 1701714123 10873 22aeeb3fdab60d5b2d649f63ba5830f4 ""
   "C:/Program Files/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm" 1233951848 1124 14ccf5552bc7f77ca02a8a402bea8bfb ""
   "C:/Program Files/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmbsy8.tfm" 1233951848 1120 200be8b775682cdf80acad4be5ef57e4 ""
@@ -214,10 +214,10 @@
   "D:/estragio/AppData/Roaming/MiKTeX/tex/latex/varwidth/varwidth.sty" 1238465940 10894 d359a13923460b2a73d4312d613554c8 ""
   "D:/estragio/AppData/Roaming/MiKTeX/tex/latex/xargs/xargs.sty" 1206231060 12403 a11204384274e5980f17ec9564088fa4 ""
   "D:/estragio/AppData/Roaming/MiKTeX/tex/latex/xstring/xstring.sty" 1673962217 123 a302f2c651a95033260db60e51527ae8 ""
-  "d:/estragio/PhD/99_Github/PHD_manuscript/figures/06_DMO/00_fixed_cells/weight_00_PP.tex" 1701715676 802 428598630c921d1259c979384c039406 ""
+  "d:/estragio/PhD/99_Github/PHD_manuscript/figures/06_DMO/00_fixed_cells/weight_00_PP.tex" 1701768933 891 a768bca730cdfc4cc8eba8e8917bc8b9 ""
   "fig4-Weight_convergence_00_PP.pdf" 1701713339 5912 b15769e396ebfde29ab9c1e107328b1f ""
-  "weight_00_PP.aux" 1701715679 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
-  "weight_00_PP.tex" 1701715676 802 428598630c921d1259c979384c039406 ""
+  "weight_00_PP.aux" 1701768937 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "weight_00_PP.tex" 1701768933 891 a768bca730cdfc4cc8eba8e8917bc8b9 ""
   (generated)
   "weight_00_PP.aux"
   "weight_00_PP.log"

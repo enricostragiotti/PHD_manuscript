@@ -1,0 +1,56 @@
+\documentclass[10pt, varwidth=12cm]{standalone}
+
+\input{../../img_header}
+\usepackage{pgfmath}
+
+\begin{document}
+
+\begin{tikzpicture}
+
+    \def\vol{{{3.545,1.465},{2.22,1.36},{1.785,1.325},{1.735,1.33},{1.515,1.340},}}
+    \def\id{{{"a", "f"}, {"b", "g"}, {"c", "h"}, {"d", "i"}, {"e", "j"},}}
+    \def\figid{{6,7,8,9,10}}
+    
+\foreach \i [count=\c from 1] in {0,...,4}{
+    \pgfmathsetmacro{\idt}{\id[\i][0]}
+    \pgfmathsetmacro{\idm}{\id[\i][1]}
+    \pgfmathsetmacro{\v}{\vol[\i][0]*2}
+    \pgfmathsetmacro{\vv}{\vol[\i][1]*2}
+    \pgfmathsetmacro{\cc}{\figid[\i]}
+    
+
+    \node[outer sep=0, inner sep=0] (fig\c) at (0,-\i*2.2cm){
+        \includegraphics[width=5cm]{\c.pdf}
+    };
+    \node[below=0.0cm of fig\c, outer sep=0, text width= 3cm, text centered] {\footnotesize (\idt) $N_\text{T}=\c\quad$ $\text{Volume}=\v\,\unit{m^3}$
+    };
+    % \node[left=0.2cm of fig\c, outer sep=0,] {\footnotesize $N_\text{T}=\c$
+    % };
+    
+    \node[outer sep=0, inner sep=0, right = 0.7cm of fig\c] (fig\cc) {
+        \includegraphics[width=5cm]{\cc.pdf}
+    };
+    \node[below=0.0cm of fig\cc, outer sep=0, text width= 3cm, text centered] {\footnotesize (\idm) $N_\text{T}=\cc$ $\text{Volume}=\vv\,\unit{m^3}$
+        };
+}
+
+% \node[above=0.2cm of fig1, outer sep=0] {\footnotesize Literature reference 
+%         };
+% \node[above=0.2cm of fig6, outer sep=0] {\footnotesize Proposed method 
+% };
+
+    % \foreach \c [count=\x from 0] in {{a,f},{b,o},{c,o},{d,b},{e,a},{f,r}} 
+    %     \node at (0,\x) {\c};
+
+    % \node[outer sep=0, inner sep=0] (fig) at (0,0){
+    %     \includegraphics[width=4.5cm]{fig12-Module_withType_5.pdf}
+    % };
+
+    % \node[above= 0.2cm of figA, outer sep=0] {\footnotesize $N_\text{T}=5$ 
+    %     };
+    
+    
+    
+\end{tikzpicture}
+
+\end{document}

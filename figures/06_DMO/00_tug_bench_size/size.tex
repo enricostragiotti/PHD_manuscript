@@ -1,0 +1,62 @@
+\documentclass[10pt, varwidth=18cm]{standalone}
+
+\input{../../img_header}
+\usepackage{pgfmath}
+
+\begin{document}
+
+\begin{tikzpicture}
+
+    \def\vol{{{1909,930.72,0},{1109.6,538.69,0},{919.8,455.235,0},{827.99,412.265,0},{775.16,376.39,0},{720.57,364.265,0},{691.1,344.06,0},{672.68,333.33,0},{655.55,324.17,0},{639.53,319.765},}}
+    \def\id{{{"a", "e", "i"}, {"b", "f", "j"}, {"c", "g", "k"}, {"d", "h", "l"},}}
+    
+\foreach \i [count=\c from 1] in {0,...,3}{
+    \pgfmathsetmacro{\idA}{\id[\i][0]}
+    \pgfmathsetmacro{\idB}{\id[\i][1]}
+    \pgfmathsetmacro{\idC}{\id[\i][2]}
+    \pgfmathsetmacro{\v}{\vol[\i][0]*2}
+    \pgfmathsetmacro{\vv}{\vol[\i][1]*2}
+    \pgfmathsetmacro{\vvv}{\vol[\i][2]*2}
+    
+    
+    \node[outer sep=0, inner sep=0] (figA\c) at (0,-\i*2cm){
+        \includegraphics[width=5cm]{1\_\c.pdf}
+    };
+    \node[below=0.1cm of figA\c, outer sep=0,] {\footnotesize (\idA) $\text{Volume}=\v$
+    };
+    \node[left=0.2cm of figA\c, outer sep=0,] {\footnotesize $N_\text{T}=\c$
+    };
+    
+    \node[outer sep=0, inner sep=0, right = 0.25cm of figA\c] (figB\c) {
+        \includegraphics[width=5cm]{2\_\c.pdf}
+    };
+    \node[below=0.1cm of figB\c, outer sep=0] {\footnotesize (\idB) $\text{Volume}=\vv$
+        };
+
+    \node[outer sep=0, inner sep=0, right = 0.25cm of figB\c] (figC\c) {
+        \includegraphics[width=5cm]{3\_\c.pdf}
+    };
+    \node[below=0.1cm of figC\c, outer sep=0] {\footnotesize (\idC) $\text{Volume}=\vvv$
+        };
+}
+
+% \node[above=0.2cm of fig1, outer sep=0] {\footnotesize Literature reference 
+%         };
+% \node[above=0.2cm of my1, outer sep=0] {\footnotesize Proposed method 
+% };
+
+    % \foreach \c [count=\x from 0] in {{a,f},{b,o},{c,o},{d,b},{e,a},{f,r}} 
+    %     \node at (0,\x) {\c};
+
+    % \node[outer sep=0, inner sep=0] (fig) at (0,0){
+    %     \includegraphics[width=4.5cm]{fig12-Module_withType_5.pdf}
+    % };
+
+    % \node[above= 0.2cm of figA, outer sep=0] {\footnotesize $N_\text{T}=5$ 
+    %     };
+    
+    
+    
+\end{tikzpicture}
+
+\end{document}

@@ -1,0 +1,55 @@
+\documentclass[10pt, varwidth=12cm]{standalone}
+
+\input{../../img_header}
+\usepackage{pgfmath}
+
+\begin{document}
+
+\begin{tikzpicture}
+
+    \def\vol{{{1909,930.72},{1109.6,538.69},{919.8,455.235},{827.99,412.265},{775.16,376.39},{720.57,364.265},{691.1,344.06},{672.68,333.33},{655.55,324.17},{639.53,319.765},}}
+    \def\id{{{"a", "k"}, {"b", "l"}, {"c", "m"}, {"d", "n"}, {"e", "o"}, {"f", "p"}, {"g", "q"}, {"h", "r"}, {"i", "s"}, {"j", "t"}}}
+    
+\foreach \i [count=\c from 1] in {0,...,9}{
+    \pgfmathsetmacro{\idt}{\id[\i][0]}
+    \pgfmathsetmacro{\idm}{\id[\i][1]}
+    \pgfmathsetmacro{\v}{\vol[\i][0]}
+    \pgfmathsetmacro{\vv}{\vol[\i][1]*2}
+    \pgfmathsetmacro{\rapp}{\vol[\i][1]/\vol[\i][0]*2}
+    
+    
+    \node[outer sep=0, inner sep=0] (fig\c) at (0,-\i*2cm){
+        \includegraphics[width=5cm]{\c.png}
+    };
+    \node[below=-0.1cm of fig\c, outer sep=0,] {\footnotesize (\idt) $\text{Volume}=\v$ [1.0]
+    };
+    \node[left=0.2cm of fig\c, outer sep=0,] {\footnotesize $N_\text{T}=\c$
+    };
+    
+    \node[outer sep=0, inner sep=0, right = 0.1cm of fig\c, yshift=0.6mm] (my\c) {
+        \includegraphics[width=5cm]{\c.pdf}
+    };
+    \node[below=0.1cm of my\c, outer sep=0] {\footnotesize (\idm) $\text{Volume}=\vv$ [\rapp]
+        };
+}
+
+\node[above=0.2cm of fig1, outer sep=0] {\footnotesize Literature reference 
+        };
+\node[above=0.2cm of my1, outer sep=0] {\footnotesize Proposed method 
+};
+
+    % \foreach \c [count=\x from 0] in {{a,f},{b,o},{c,o},{d,b},{e,a},{f,r}} 
+    %     \node at (0,\x) {\c};
+
+    % \node[outer sep=0, inner sep=0] (fig) at (0,0){
+    %     \includegraphics[width=4.5cm]{fig12-Module_withType_5.pdf}
+    % };
+
+    % \node[above= 0.2cm of figA, outer sep=0] {\footnotesize $N_\text{T}=5$ 
+    %     };
+    
+    
+    
+\end{tikzpicture}
+
+\end{document}

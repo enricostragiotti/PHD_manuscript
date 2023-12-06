@@ -16,11 +16,11 @@
 \contentsline {mtocsection}{\numberline {1.2}Numerical application}{4}{section.1.2}%
 \contentsline {subsection}{\numberline {1.2.1}Layout optimization of fixed modules}{4}{subsection.1.2.1}%
 \contentsline {subsection}{\numberline {1.2.2}Modules and layout optimization}{4}{subsection.1.2.2}%
-\contentsline {subsection}{\numberline {1.2.3}A benchmark case study: a simply supported modular bridge}{5}{subsection.1.2.3}%
-\contentsline {subsection}{\numberline {1.2.4}On the importance of the local buckling}{5}{subsection.1.2.4}%
-\contentsline {subsection}{\numberline {1.2.5}Simply supported 3D beam}{5}{subsection.1.2.5}%
-\contentsline {section}{\numberline {1.3}Conclusion}{6}{section.1.3}%
-\contentsline {mtocsection}{\numberline {1.3}Conclusion}{6}{section.1.3}%
-\contentsline {part}{\nonumberline Appendix}{7}{part*.14}%
-\contentsline {chapter}{\numberline {A}Sensitivity analysis of the modular structure optimization algorithm}{9}{appendix.A}%
-\contentsline {subsubsection}{\nonumberline Sensitivity analysis}{9}{subsubsection*.16}%
+\contentsline {subsection}{\numberline {1.2.3}A benchmark case study: a simply supported modular bridge}{6}{subsection.1.2.3}%
+\contentsline {subsection}{\numberline {1.2.4}On the importance of the local buckling}{6}{subsection.1.2.4}%
+\contentsline {subsection}{\numberline {1.2.5}Simply supported 3D beam}{6}{subsection.1.2.5}%
+\contentsline {section}{\numberline {1.3}Conclusion}{10}{section.1.3}%
+\contentsline {mtocsection}{\numberline {1.3}Conclusion}{10}{section.1.3}%
+\contentsline {part}{\nonumberline Appendix}{11}{part*.20}%
+\contentsline {chapter}{\numberline {A}Sensitivity analysis of the modular structure optimization algorithm}{13}{appendix.A}%
+\contentsline {subsubsection}{\nonumberline Sensitivity analysis}{13}{subsubsection*.22}%

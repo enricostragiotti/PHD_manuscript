@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.8.29)  4 DEC 2023 19:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.8.29)  6 DEC 2023 18:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2148,6 +2148,42 @@ LaTeX Warning: Label `fig:06' multiply defined.
 
 LaTeX Warning: Label `fig:06@cref' multiply defined.
 
+
+LaTeX Warning: Label `fig:06' multiply defined.
+
+
+LaTeX Warning: Label `fig:06@cref' multiply defined.
+
+
+LaTeX Warning: Label `fig:06' multiply defined.
+
+
+LaTeX Warning: Label `fig:06@cref' multiply defined.
+
+
+LaTeX Warning: Label `fig:06' multiply defined.
+
+
+LaTeX Warning: Label `fig:06@cref' multiply defined.
+
+
+LaTeX Warning: Label `fig:06' multiply defined.
+
+
+LaTeX Warning: Label `fig:06@cref' multiply defined.
+
+
+LaTeX Warning: Label `fig:06' multiply defined.
+
+
+LaTeX Warning: Label `fig:06@cref' multiply defined.
+
+
+LaTeX Warning: Label `fig:06' multiply defined.
+
+
+LaTeX Warning: Label `fig:06@cref' multiply defined.
+
 ) (chapters/app/A_sens.aux))
 \openout1 = `manuscript_Stragiotti.aux'.
 
@@ -2807,7 +2843,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--3
 
 LaTeX Font Info:    Font shape `T1/qhv/b/n' will be
 (Font)              scaled to size 12.99pt on input line 8.
-<figures/06_DMO/00_weight_dmo/weight_dmo.pdf, id=176, 338.09813pt x 138.81761pt>
+<figures/06_DMO/00_weight_dmo/weight_dmo.pdf, id=194, 338.09813pt x 138.81761pt>
 File: figures/06_DMO/00_weight_dmo/weight_dmo.pdf Graphic file (type pdf)
 <use figures/06_DMO/00_weight_dmo/weight_dmo.pdf>
 Package pdftex.def Info: figures/06_DMO/00_weight_dmo/weight_dmo.pdf  used on input line 12.
@@ -2819,7 +2855,7 @@ LaTeX Font Info:    Font shape `T1/zplLF/b/sc' will be
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/zplLF/b/sc/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
-<figures/06_DMO/00_ramp/ramp.pdf, id=177, 207.91779pt x 219.50105pt>
+<figures/06_DMO/00_ramp/ramp.pdf, id=195, 207.91779pt x 219.50105pt>
 File: figures/06_DMO/00_ramp/ramp.pdf Graphic file (type pdf)
 <use figures/06_DMO/00_ramp/ramp.pdf>
 Package pdftex.def Info: figures/06_DMO/00_ramp/ramp.pdf  used on input line 24.
@@ -2854,12 +2890,12 @@ Overfull \hbox (18.0758pt too wide) detected at line 102
 [][][]\OML/npxmi/m/it/10.95 [] \U/npxmia/m/it/10.95 = []
  []
 
-<figures/06_DMO/00_stress_clustering/stress_clustering.pdf, id=288, 447.76085pt x 243.93735pt>
+<figures/06_DMO/00_stress_clustering/stress_clustering.pdf, id=306, 447.76085pt x 243.93735pt>
 File: figures/06_DMO/00_stress_clustering/stress_clustering.pdf Graphic file (type pdf)
 <use figures/06_DMO/00_stress_clustering/stress_clustering.pdf>
 Package pdftex.def Info: figures/06_DMO/00_stress_clustering/stress_clustering.pdf  used on input line 106.
 (pdftex.def)             Requested size: 447.75975pt x 243.93674pt.
-<figures/06_DMO/00_x0/x0.pdf, id=289, 366.56952pt x 129.39842pt>
+<figures/06_DMO/00_x0/x0.pdf, id=307, 366.56952pt x 129.39842pt>
 File: figures/06_DMO/00_x0/x0.pdf Graphic file (type pdf)
 <use figures/06_DMO/00_x0/x0.pdf>
 Package pdftex.def Info: figures/06_DMO/00_x0/x0.pdf  used on input line 113.
@@ -2869,7 +2905,7 @@ Package pdftex.def Info: figures/06_DMO/00_x0/x0.pdf  used on input line 113.
 [3] (manuscript_Stragiotti.mw)
 \openout4 = `manuscript_Stragiotti.mw'.
 
-<figures/06_DMO/00_cantilever_bcs/cant_mesh.pdf, id=297, 141.4334pt x 163.5701pt>
+<figures/06_DMO/00_cantilever_bcs/cant_mesh.pdf, id=315, 141.4334pt x 163.5701pt>
 File: figures/06_DMO/00_cantilever_bcs/cant_mesh.pdf Graphic file (type pdf)
 <use figures/06_DMO/00_cantilever_bcs/cant_mesh.pdf>
 Package pdftex.def Info: figures/06_DMO/00_cantilever_bcs/cant_mesh.pdf  used on input line 130.
@@ -2894,75 +2930,178 @@ LaTeX Font Info:    Font shape `T1/zplLF/m/n' will be
 (Font)              scaled to size 7.08101pt on input line 141.
 LaTeX Font Info:    Font shape `T1/zplLF/m/n' will be
 (Font)              scaled to size 5.335pt on input line 141.
-<figures/06_DMO/00_fixed_cells/fig1-Topology_00.pdf, id=298, 405.4395pt x 205.88277pt>
-File: figures/06_DMO/00_fixed_cells/fig1-Topology_00.pdf Graphic file (type pdf)
-<use figures/06_DMO/00_fixed_cells/fig1-Topology_00.pdf>
-Package pdftex.def Info: figures/06_DMO/00_fixed_cells/fig1-Topology_00.pdf  used on input line 150.
-(pdftex.def)             Requested size: 105.2751pt x 53.456pt.
-<figures/06_DMO/00_fixed_cells/weight_00.pdf, id=299, 105.27531pt x 88.73552pt>
+<figures/06_DMO/00_fixed_cells/top_00.pdf, id=316, 105.27531pt x 75.86745pt>
+File: figures/06_DMO/00_fixed_cells/top_00.pdf Graphic file (type pdf)
+<use figures/06_DMO/00_fixed_cells/top_00.pdf>
+Package pdftex.def Info: figures/06_DMO/00_fixed_cells/top_00.pdf  used on input line 150.
+(pdftex.def)             Requested size: 105.27504pt x 75.86725pt.
+<figures/06_DMO/00_fixed_cells/weight_00.pdf, id=317, 105.27531pt x 105.45598pt>
 File: figures/06_DMO/00_fixed_cells/weight_00.pdf Graphic file (type pdf)
 <use figures/06_DMO/00_fixed_cells/weight_00.pdf>
 Package pdftex.def Info: figures/06_DMO/00_fixed_cells/weight_00.pdf  used on input line 152.
-(pdftex.def)             Requested size: 105.27504pt x 88.73529pt.
-<figures/06_DMO/00_fixed_cells/ramp_00.pdf, id=300, 113.8112pt x 134.19937pt>
+(pdftex.def)             Requested size: 105.27504pt x 105.4557pt.
+<figures/06_DMO/00_fixed_cells/ramp_00.pdf, id=318, 113.8112pt x 121.00005pt>
 File: figures/06_DMO/00_fixed_cells/ramp_00.pdf Graphic file (type pdf)
 <use figures/06_DMO/00_fixed_cells/ramp_00.pdf>
 Package pdftex.def Info: figures/06_DMO/00_fixed_cells/ramp_00.pdf  used on input line 154.
-(pdftex.def)             Requested size: 84.45688pt x 99.58464pt.
-<figures/06_DMO/00_fixed_cells/weight_00_PP.pdf, id=301, 105.27531pt x 88.64418pt>
+(pdftex.def)             Requested size: 93.6731pt x 99.58464pt.
+<figures/06_DMO/00_fixed_cells/weight_00_PP.pdf, id=319, 105.27531pt x 105.36565pt>
 File: figures/06_DMO/00_fixed_cells/weight_00_PP.pdf Graphic file (type pdf)
 <use figures/06_DMO/00_fixed_cells/weight_00_PP.pdf>
 Package pdftex.def Info: figures/06_DMO/00_fixed_cells/weight_00_PP.pdf  used on input line 156.
-(pdftex.def)             Requested size: 105.27504pt x 88.64395pt.
-<figures/06_DMO/00_fixed_cells/fig1-Topology.pdf, id=302, 405.62901pt x 205.88277pt>
-File: figures/06_DMO/00_fixed_cells/fig1-Topology.pdf Graphic file (type pdf)
-<use figures/06_DMO/00_fixed_cells/fig1-Topology.pdf>
-Package pdftex.def Info: figures/06_DMO/00_fixed_cells/fig1-Topology.pdf  used on input line 158.
-(pdftex.def)             Requested size: 105.2751pt x 53.434pt.
-<figures/06_DMO/00_fixed_cells/weight.pdf, id=303, 105.27531pt x 88.71344pt>
+(pdftex.def)             Requested size: 105.27504pt x 105.36537pt.
+<figures/06_DMO/00_fixed_cells/top.pdf, id=320, 105.27531pt x 53.43362pt>
+File: figures/06_DMO/00_fixed_cells/top.pdf Graphic file (type pdf)
+<use figures/06_DMO/00_fixed_cells/top.pdf>
+Package pdftex.def Info: figures/06_DMO/00_fixed_cells/top.pdf  used on input line 158.
+(pdftex.def)             Requested size: 105.27504pt x 53.43347pt.
+<figures/06_DMO/00_fixed_cells/weight.pdf, id=321, 105.27531pt x 88.71344pt>
 File: figures/06_DMO/00_fixed_cells/weight.pdf Graphic file (type pdf)
 <use figures/06_DMO/00_fixed_cells/weight.pdf>
 Package pdftex.def Info: figures/06_DMO/00_fixed_cells/weight.pdf  used on input line 160.
 (pdftex.def)             Requested size: 105.27504pt x 88.71321pt.
-<figures/06_DMO/00_fixed_cells/ramp.pdf, id=304, 113.8112pt x 141.91519pt>
+<figures/06_DMO/00_fixed_cells/ramp.pdf, id=322, 113.8112pt x 128.71588pt>
 File: figures/06_DMO/00_fixed_cells/ramp.pdf Graphic file (type pdf)
 <use figures/06_DMO/00_fixed_cells/ramp.pdf>
 Package pdftex.def Info: figures/06_DMO/00_fixed_cells/ramp.pdf  used on input line 162.
-(pdftex.def)             Requested size: 79.86353pt x 99.58464pt.
-<figures/06_DMO/00_fixed_cells/weight_PP.pdf, id=305, 105.27531pt x 88.64418pt>
+(pdftex.def)             Requested size: 88.05515pt x 99.58464pt.
+<figures/06_DMO/00_fixed_cells/weight_PP.pdf, id=323, 105.27531pt x 88.64418pt>
 File: figures/06_DMO/00_fixed_cells/weight_PP.pdf Graphic file (type pdf)
 <use figures/06_DMO/00_fixed_cells/weight_PP.pdf>
 Package pdftex.def Info: figures/06_DMO/00_fixed_cells/weight_PP.pdf  used on input line 164.
 (pdftex.def)             Requested size: 105.27504pt x 88.64395pt.
+<figures/06_DMO/00_fixed_cells_multiple/fig1-Topology_area.pdf, id=324, 406.26775pt x 205.88277pt>
+File: figures/06_DMO/00_fixed_cells_multiple/fig1-Topology_area.pdf Graphic file (type pdf)
+<use figures/06_DMO/00_fixed_cells_multiple/fig1-Topology_area.pdf>
+Package pdftex.def Info: figures/06_DMO/00_fixed_cells_multiple/fig1-Topology_area.pdf  used on input line 170.
+(pdftex.def)             Requested size: 143.40016pt x 72.6695pt.
+<figures/06_DMO/00_fixed_cells_multiple/fig1-Topology_topol.pdf, id=325, 406.26775pt x 205.88277pt>
+File: figures/06_DMO/00_fixed_cells_multiple/fig1-Topology_topol.pdf Graphic file (type pdf)
+<use figures/06_DMO/00_fixed_cells_multiple/fig1-Topology_topol.pdf>
+Package pdftex.def Info: figures/06_DMO/00_fixed_cells_multiple/fig1-Topology_topol.pdf  used on input line 172.
+(pdftex.def)             Requested size: 143.40016pt x 72.6695pt.
+<figures/06_DMO/00_fixed_cells_multiple/fig12-Module_withType_area.pdf, id=326, 343.33347pt x 174.58237pt>
+File: figures/06_DMO/00_fixed_cells_multiple/fig12-Module_withType_area.pdf Graphic file (type pdf)
+<use figures/06_DMO/00_fixed_cells_multiple/fig12-Module_withType_area.pdf>
+Package pdftex.def Info: figures/06_DMO/00_fixed_cells_multiple/fig12-Module_withType_area.pdf  used on input line 175.
+(pdftex.def)             Requested size: 143.40016pt x 72.9165pt.
+<figures/06_DMO/00_fixed_cells_multiple/fig12-Module_withType_topol.pdf, id=327, 343.33347pt x 174.58237pt>
+File: figures/06_DMO/00_fixed_cells_multiple/fig12-Module_withType_topol.pdf Graphic file (type pdf)
+<use figures/06_DMO/00_fixed_cells_multiple/fig12-Module_withType_topol.pdf>
+Package pdftex.def Info: figures/06_DMO/00_fixed_cells_multiple/fig12-Module_withType_topol.pdf  used on input line 177.
+(pdftex.def)             Requested size: 143.40016pt x 72.9165pt.
+<figures/06_DMO/00_optimized_module/fig1-Topology.pdf, id=328, 403.84996pt x 203.46495pt>
+File: figures/06_DMO/00_optimized_module/fig1-Topology.pdf Graphic file (type pdf)
+<use figures/06_DMO/00_optimized_module/fig1-Topology.pdf>
+Package pdftex.def Info: figures/06_DMO/00_optimized_module/fig1-Topology.pdf  used on input line 184.
+(pdftex.def)             Requested size: 143.40016pt x 72.24763pt.
+<figures/06_DMO/00_optimized_module/fig8-Module_Topology_001.pdf, id=329, 462.52802pt x 346.89601pt>
+File: figures/06_DMO/00_optimized_module/fig8-Module_Topology_001.pdf Graphic file (type pdf)
+<use figures/06_DMO/00_optimized_module/fig8-Module_Topology_001.pdf>
+Package pdftex.def Info: figures/06_DMO/00_optimized_module/fig8-Module_Topology_001.pdf  used on input line 186.
+(pdftex.def)             Requested size: 95.60172pt x 71.70168pt.
+<figures/06_DMO/00_optimized_modules/kmeans.pdf, id=330, 298.75415pt x 213.72046pt>
+File: figures/06_DMO/00_optimized_modules/kmeans.pdf Graphic file (type pdf)
+<use figures/06_DMO/00_optimized_modules/kmeans.pdf>
+Package pdftex.def Info: figures/06_DMO/00_optimized_modules/kmeans.pdf  used on input line 195.
+(pdftex.def)             Requested size: 298.75342pt x 213.71992pt.
+<figures/06_DMO/00_optimized_modules/nt2.pdf, id=331, 128.03734pt x 159.53502pt>
+File: figures/06_DMO/00_optimized_modules/nt2.pdf Graphic file (type pdf)
+<use figures/06_DMO/00_optimized_modules/nt2.pdf>
+Package pdftex.def Info: figures/06_DMO/00_optimized_modules/nt2.pdf  used on input line 201.
+(pdftex.def)             Requested size: 141.86612pt x 176.77191pt.
+<figures/06_DMO/00_optimized_modules/nt5.pdf, id=332, 261.76494pt x 159.65247pt>
+File: figures/06_DMO/00_optimized_modules/nt5.pdf Graphic file (type pdf)
+<use figures/06_DMO/00_optimized_modules/nt5.pdf>
+Package pdftex.def Info: figures/06_DMO/00_optimized_modules/nt5.pdf  used on input line 203.
+(pdftex.def)             Requested size: 283.73225pt x 173.0579pt.
+<figures/06_DMO/00_tug_bench/bench.pdf, id=333, 332.03145pt x 578.75824pt>
+File: figures/06_DMO/00_tug_bench/bench.pdf Graphic file (type pdf)
+<use figures/06_DMO/00_tug_bench/bench.pdf>
+Package pdftex.def Info: figures/06_DMO/00_tug_bench/bench.pdf  used on input line 212.
+(pdftex.def)             Requested size: 332.03062pt x 578.75682pt.
+
+Overfull \hbox (13.36143pt too wide) in paragraph at lines 212--213
+ [][] 
+ []
+
 \openout4 = `manuscript_Stragiotti.mw'.
 
- [4 <./figures/06_DMO/00_stress_clustering/stress_clustering.pdf> <./figures/06_DMO/00_x0/x0.pdf> <./figures/06_DMO/00_cantilever_bcs/cant_mesh.pdf>] (manuscript_Stragiotti.mw)
+[4 <./figures/06_DMO/00_stress_clustering/stress_clustering.pdf> <./figures/06_DMO/00_x0/x0.pdf> <./figures/06_DMO/00_cantilever_bcs/cant_mesh.pdf>] (manuscript_Stragiotti.mw)
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
- [5 <./figures/06_DMO/00_fixed_cells/fig1-Topology_00.pdf> <./figures/06_DMO/00_fixed_cells/weight_00.pdf
+ [5 <./figures/06_DMO/00_fixed_cells/top_00.pdf> <./figures/06_DMO/00_fixed_cells/weight_00.pdf
 
 pdfTeX warning: pdflatex (file ./figures/06_DMO/00_fixed_cells/weight_00.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 > <./figures/06_DMO/00_fixed_cells/ramp_00.pdf> <./figures/06_DMO/00_fixed_cells/weight_00_PP.pdf
 
 pdfTeX warning: pdflatex (file ./figures/06_DMO/00_fixed_cells/weight_00_PP.pdf): PDF inclusion: multiple pdfs with page group included in a single page
-> <./figures/06_DMO/00_fixed_cells/fig1-Topology.pdf
+> <./figures/06_DMO/00_fixed_cells/top.pdf
 
-pdfTeX warning: pdflatex (file ./figures/06_DMO/00_fixed_cells/fig1-Topology.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex (file ./figures/06_DMO/00_fixed_cells/top.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 > <./figures/06_DMO/00_fixed_cells/weight.pdf
 
 pdfTeX warning: pdflatex (file ./figures/06_DMO/00_fixed_cells/weight.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 > <./figures/06_DMO/00_fixed_cells/ramp.pdf> <./figures/06_DMO/00_fixed_cells/weight_PP.pdf
 
 pdfTeX warning: pdflatex (file ./figures/06_DMO/00_fixed_cells/weight_PP.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./figures/06_DMO/00_fixed_cells_multiple/fig1-Topology_area.pdf
+
+pdfTeX warning: pdflatex (file ./figures/06_DMO/00_fixed_cells_multiple/fig1-Topology_area.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./figures/06_DMO/00_fixed_cells_multiple/fig1-Topology_topol.pdf
+
+pdfTeX warning: pdflatex (file ./figures/06_DMO/00_fixed_cells_multiple/fig1-Topology_topol.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./figures/06_DMO/00_fixed_cells_multiple/fig12-Module_withType_area.pdf
+
+pdfTeX warning: pdflatex (file ./figures/06_DMO/00_fixed_cells_multiple/fig12-Module_withType_area.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./figures/06_DMO/00_fixed_cells_multiple/fig12-Module_withType_topol.pdf
+
+pdfTeX warning: pdflatex (file ./figures/06_DMO/00_fixed_cells_multiple/fig12-Module_withType_topol.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./figures/06_DMO/00_optimized_module/fig1-Topology.pdf
+
+pdfTeX warning: pdflatex (file ./figures/06_DMO/00_optimized_module/fig1-Topology.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./figures/06_DMO/00_optimized_module/fig8-Module_Topology_001.pdf
+
+pdfTeX warning: pdflatex (file ./figures/06_DMO/00_optimized_module/fig8-Module_Topology_001.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >] (manuscript_Stragiotti.mw)
+\openout4 = `manuscript_Stragiotti.mw'.
+
+<figures/06_DMO/00_tug_bench_buck/buck.pdf, id=13459, 304.44441pt x 304.64417pt>
+File: figures/06_DMO/00_tug_bench_buck/buck.pdf Graphic file (type pdf)
+<use figures/06_DMO/00_tug_bench_buck/buck.pdf>
+Package pdftex.def Info: figures/06_DMO/00_tug_bench_buck/buck.pdf  used on input line 219.
+(pdftex.def)             Requested size: 304.44366pt x 304.64342pt.
+\openout4 = `manuscript_Stragiotti.mw'.
+
+ [6 <./figures/06_DMO/00_optimized_modules/kmeans.pdf>] (manuscript_Stragiotti.mw)
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+ [7 <./figures/06_DMO/00_optimized_modules/nt2.pdf> <./figures/06_DMO/00_optimized_modules/nt5.pdf
+
+pdfTeX warning: pdflatex (file ./figures/06_DMO/00_optimized_modules/nt5.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>] (manuscript_Stragiotti.mw)
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+ [8 <./figures/06_DMO/00_tug_bench/bench.pdf>] (manuscript_Stragiotti.mw)
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+ [9 <./figures/06_DMO/00_tug_bench_buck/buck.pdf>] (manuscript_Stragiotti.mw)
 \openout4 = `manuscript_Stragiotti.mw'.
 
 )
 \openout4 = `manuscript_Stragiotti.mw'.
 
- [6] (manuscript_Stragiotti.mw)
+ [10
+
+] (manuscript_Stragiotti.mw)
 \openout4 = `manuscript_Stragiotti.mw'.
 
 *geometry* verbose mode - [ newgeometry ] result:
@@ -3081,7 +3220,7 @@ Package microtype Info: Character `029' is missing
 (microtype)             Ignoring protrusion settings for this character.
 \openout4 = `manuscript_Stragiotti.mw'.
 
-[7
+[11
 
 
 
@@ -3096,7 +3235,7 @@ Package microtype Info: Character `029' is missing
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
- [8] (manuscript_Stragiotti.mw)
+ [12] (manuscript_Stragiotti.mw)
 \openout4 = `manuscript_Stragiotti.mw'.
 
 *geometry* verbose mode - [ newgeometry ] result:
@@ -3137,7 +3276,7 @@ Package microtype Info: Character `029' is missing
 chapter A.
 \openout4 = `manuscript_Stragiotti.mw'.
 
-[9
+[13
 
 
 
@@ -3147,18 +3286,18 @@ chapter A.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
- [10] (manuscript_Stragiotti.mw)
+ [14] (manuscript_Stragiotti.mw)
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
- [11] (manuscript_Stragiotti.mw)
+ [15] (manuscript_Stragiotti.mw)
 \openout4 = `manuscript_Stragiotti.mw'.
 
 )
 \openout4 = `manuscript_Stragiotti.mw'.
 
- [12] (manuscript_Stragiotti.mw)
+ [16] (manuscript_Stragiotti.mw)
 \openout4 = `manuscript_Stragiotti.mw'.
 
  (manuscript_Stragiotti.aux
@@ -3191,6 +3330,30 @@ chapter A.
 \openout4 = `manuscript_Stragiotti.mw'.
 
  (chapters/6_DMO.aux
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
@@ -3357,17 +3520,17 @@ Package logreq Info: Writing requests to 'manuscript_Stragiotti.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 86787 strings out of 476331
- 2008743 string characters out of 5797589
- 3339079 words of memory out of 5000000
- 105480 multiletter control sequences out of 15000+600000
- 731397 words of font info for 380 fonts, out of 8000000 for 9000
+ 86890 strings out of 476331
+ 2013597 string characters out of 5797589
+ 3339125 words of memory out of 5000000
+ 105552 multiletter control sequences out of 15000+600000
+ 731274 words of font info for 379 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  133i,20n,159p,10658b,2400s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newpx/NewPXBMI.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newpx/NewPXBMI_gnu.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newpx/NewPXMI.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newpx/NewPXMI_gnu.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newpx/pxbsys.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newpx/pxmiaX.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newpx/pxsys.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/tex-gyre/qhvr.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newtx/txexs.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newpx/zplb.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newpx/zplr.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newpx/zplri.pfb>
-Output written on manuscript_Stragiotti.pdf (18 pages, 1720365 bytes).
+<D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newpx/NewPXBMI.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newpx/NewPXBMI_gnu.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newpx/NewPXMI.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newpx/NewPXMI_gnu.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newpx/pxbsys.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newpx/pxmiaX.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newpx/pxsys.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/tex-gyre/qhvr.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newtx/txexs.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newpx/zplb.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newpx/zplr.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newpx/zplri.pfb>
+Output written on manuscript_Stragiotti.pdf (22 pages, 3027006 bytes).
 PDF statistics:
- 7346 PDF objects out of 7423 (max. 8388607)
- 105 named destinations out of 1000 (max. 500000)
- 87349 words of extra memory for PDF output out of 89155 (max. 10000000)
+ 14077 PDF objects out of 15390 (max. 8388607)
+ 115 named destinations out of 1000 (max. 500000)
+ 87404 words of extra memory for PDF output out of 89155 (max. 10000000)
 

@@ -1,0 +1,59 @@
+\documentclass[12pt, varwidth=12cm]{standalone}
+
+\input{../../img_header}
+
+\begin{document}
+
+\begin{tikzpicture}
+
+    \node[outer sep=0, inner sep=0] (figA) at (0,0){
+        \includegraphics[width=4.5cm]{fig12-Module_withType_5.pdf}
+    };
+
+    \node[above= 0.2cm of figA, outer sep=0] {\footnotesize $N_\text{T}=5$ 
+        };
+    %%%%%%%%%%%%%%%%%%%%%%%% BCs
+
+
+    
+    \node[outer sep=0, inner sep=0] (figB) at (-4,-2.5){
+        \includegraphics[width=1.2cm]{fig8-Module_Topology_003.pdf}
+        };
+        \node[below= 0.1cm of figB, outer sep=0] {\footnotesize $t=0$ 
+        };
+        
+    \node[outer sep=0, inner sep=0] (figC) at (-2,-2.5){
+        \includegraphics[width=1.2cm]{fig8-Module_Topology_004.pdf}
+        };
+        \node[below= 0.1cm of figC, outer sep=0] {\footnotesize $t=1$ 
+        };
+
+        \node[outer sep=0, inner sep=0] (figD) at (0,-2.5){
+        \includegraphics[width=1.2cm]{fig8-Module_Topology_001.pdf}
+        };
+        \node[below= 0.1cm of figD, outer sep=0] {\footnotesize $t=2$ 
+        };
+
+        \node[outer sep=0, inner sep=0] (figE) at (2,-2.5){
+        \includegraphics[width=1.2cm]{fig8-Module_Topology_005.pdf}
+        };
+        \node[below= 0.1cm of figE, outer sep=0] {\footnotesize $t=3$ 
+        };
+
+        \node[outer sep=0, inner sep=0] (figF) at (4,-2.5){
+        \includegraphics[width=1.2cm]{fig8-Module_Topology_002.pdf}
+        };
+        \node[below= 0.1cm of figF, outer sep=0] {\footnotesize $t=4$ 
+        };
+            
+            
+    \draw[axis_gray, -stealth] (figB.north) to[out=90,in=180] (-2.25,1.02);
+    \draw[axis_gray, -stealth] (figC.north) to[out=90,in=270] (-2.15,-1.15);
+    \draw[axis_gray, -stealth] (figD.north) to[out=90,in=270] (1.57,-0.95);
+    \draw[axis_gray, -stealth] (figE.north) to[out=90,in=0] (2.25,-0.1);
+    \draw[axis_gray, -stealth] (figF.north) to[out=90,in=0] (2.25,0.1);
+    
+    
+\end{tikzpicture}
+
+\end{document}

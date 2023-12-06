@@ -1,0 +1,40 @@
+\documentclass[12pt, varwidth=12cm]{standalone}
+
+\input{../../img_header}
+
+\begin{document}
+
+\begin{tikzpicture}
+
+    \node[outer sep=0, inner sep=0] (figA) at (0,0){
+        \includegraphics[width=4.5cm]{fig2-Stress.pdf}
+    };
+
+    \node[above= 0cm of figA, outer sep=0] {\footnotesize Stress analysis 
+        };
+    %%%%%%%%%%%%%%%%%%%%%%%% BCs
+
+
+    
+    \node[outer sep=0, inner sep=0] (figB) at (6,2){
+        \includegraphics[width=4.5cm]{kmeans_clustering_2.pdf}
+        };
+        \node[above= 0cm of figB, outer sep=0] {\footnotesize K-means clustering 
+        };
+        \node[below= 0.1cm of figB, outer sep=0] {\footnotesize $N_\text{T}=2$ 
+        };
+        
+    \node[outer sep=0, inner sep=0] (figC) at (6,-2){
+        \includegraphics[width=4.5cm]{kmeans_clustering_5.pdf}
+        };
+        \node[below= 0.1cm of figC, outer sep=0] {\footnotesize $N_\text{T}=5$ 
+        };
+            
+            
+    \draw[axis_gray, -stealth] (figA.east) to[out=0,in=180] (figB.west);
+    \draw[axis_gray, -stealth] (figA.east) to[out=0,in=180] (figC.west);
+    
+    
+\end{tikzpicture}
+
+\end{document}
