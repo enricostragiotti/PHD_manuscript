@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.8.29)  6 DEC 2023 19:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.8.29)  7 DEC 2023 10:05
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -594,70 +594,70 @@ Package pgfplots notification 'compat/show suggested version=true': document has
 <1_1.pdf, id=4, 342.16193pt x 71.11374pt>
 File: 1_1.pdf Graphic file (type pdf)
 <use 1_1.pdf>
-Package pdftex.def Info: 1_1.pdf  used on input line 41.
+Package pdftex.def Info: 1_1.pdf  used on input line 39.
 (pdftex.def)             Requested size: 142.26378pt x 29.56699pt.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 41.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 39.
 (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 41.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 39.
  (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 <2_1.pdf, id=5, 342.08212pt x 71.26656pt>
 File: 2_1.pdf Graphic file (type pdf)
 <use 2_1.pdf>
-Package pdftex.def Info: 2_1.pdf  used on input line 41.
+Package pdftex.def Info: 2_1.pdf  used on input line 39.
 (pdftex.def)             Requested size: 142.26378pt x 29.63812pt.
 <3_1.pdf, id=6, 342.05722pt x 71.22693pt>
 File: 3_1.pdf Graphic file (type pdf)
 <use 3_1.pdf>
-Package pdftex.def Info: 3_1.pdf  used on input line 41.
+Package pdftex.def Info: 3_1.pdf  used on input line 39.
 (pdftex.def)             Requested size: 142.26378pt x 29.62383pt.
 <1_2.pdf, id=7, 342.31186pt x 70.62605pt>
 File: 1_2.pdf Graphic file (type pdf)
 <use 1_2.pdf>
-Package pdftex.def Info: 1_2.pdf  used on input line 41.
+Package pdftex.def Info: 1_2.pdf  used on input line 39.
 (pdftex.def)             Requested size: 142.26378pt x 29.35236pt.
 <2_2.pdf, id=8, 342.28458pt x 70.96912pt>
 File: 2_2.pdf Graphic file (type pdf)
 <use 2_2.pdf>
-Package pdftex.def Info: 2_2.pdf  used on input line 41.
+Package pdftex.def Info: 2_2.pdf  used on input line 39.
 (pdftex.def)             Requested size: 142.26378pt x 29.4971pt.
 <3_2.pdf, id=9, 342.2401pt x 70.97455pt>
 File: 3_2.pdf Graphic file (type pdf)
 <use 3_2.pdf>
-Package pdftex.def Info: 3_2.pdf  used on input line 41.
+Package pdftex.def Info: 3_2.pdf  used on input line 39.
 (pdftex.def)             Requested size: 142.26378pt x 29.50261pt.
 <1_3.pdf, id=10, 342.6027pt x 70.79222pt>
 File: 1_3.pdf Graphic file (type pdf)
 <use 1_3.pdf>
-Package pdftex.def Info: 1_3.pdf  used on input line 41.
+Package pdftex.def Info: 1_3.pdf  used on input line 39.
 (pdftex.def)             Requested size: 142.26378pt x 29.39658pt.
 <2_3.pdf, id=11, 342.63249pt x 71.13783pt>
 File: 2_3.pdf Graphic file (type pdf)
 <use 2_3.pdf>
-Package pdftex.def Info: 2_3.pdf  used on input line 41.
+Package pdftex.def Info: 2_3.pdf  used on input line 39.
 (pdftex.def)             Requested size: 142.26378pt x 29.53683pt.
 <3_3.pdf, id=12, 342.42024pt x 71.15515pt>
 File: 3_3.pdf Graphic file (type pdf)
 <use 3_3.pdf>
-Package pdftex.def Info: 3_3.pdf  used on input line 41.
+Package pdftex.def Info: 3_3.pdf  used on input line 39.
 (pdftex.def)             Requested size: 142.26378pt x 29.56357pt.
 <1_4.pdf, id=13, 342.89534pt x 70.99693pt>
 File: 1_4.pdf Graphic file (type pdf)
 <use 1_4.pdf>
-Package pdftex.def Info: 1_4.pdf  used on input line 41.
+Package pdftex.def Info: 1_4.pdf  used on input line 39.
 (pdftex.def)             Requested size: 142.26378pt x 29.45558pt.
 <2_4.pdf, id=14, 342.59987pt x 71.1123pt>
 File: 2_4.pdf Graphic file (type pdf)
 <use 2_4.pdf>
-Package pdftex.def Info: 2_4.pdf  used on input line 41.
+Package pdftex.def Info: 2_4.pdf  used on input line 39.
 (pdftex.def)             Requested size: 142.26378pt x 29.5295pt.
 <3_4.pdf, id=15, 342.8172pt x 71.23526pt>
 File: 3_4.pdf Graphic file (type pdf)
 <use 3_4.pdf>
-Package pdftex.def Info: 3_4.pdf  used on input line 41.
+Package pdftex.def Info: 3_4.pdf  used on input line 39.
 (pdftex.def)             Requested size: 142.26378pt x 29.56099pt.
  [1
 
@@ -696,15 +696,15 @@ pdfTeX warning: pdflatex (file ./2_4.pdf): PDF inclusion: multiple pdfs with pag
 pdfTeX warning: pdflatex (file ./3_4.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >] (size.aux) ) 
 Here is how much of TeX's memory you used:
- 32481 strings out of 476331
- 856043 string characters out of 5797589
- 1868660 words of memory out of 5000000
- 52365 multiletter control sequences out of 15000+600000
+ 32468 strings out of 476331
+ 855794 string characters out of 5797589
+ 1870660 words of memory out of 5000000
+ 52352 multiletter control sequences out of 15000+600000
  521692 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 122i,9n,121p,816b,854s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 122i,9n,121p,816b,1214s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb>
-Output written on size.pdf (1 page, 89727 bytes).
+Output written on size.pdf (1 page, 90688 bytes).
 PDF statistics:
  85 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

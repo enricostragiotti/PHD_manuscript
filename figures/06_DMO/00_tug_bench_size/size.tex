@@ -7,7 +7,7 @@
 
 \begin{tikzpicture}
 
-    \def\vol{{{1909,930.72,0},{1109.6,538.69,0},{919.8,455.235,0},{827.99,412.265,0},{775.16,376.39,0},{720.57,364.265,0},{691.1,344.06,0},{672.68,333.33,0},{655.55,324.17,0},{639.53,319.765},}}
+    \def\vol{{{3.81,2.215,1.985},{5.08,3.215,2.84},{5.09,4.075,3.11},{4.94,4.265,3.25}}}
     \def\id{{{"a", "e", "i"}, {"b", "f", "j"}, {"c", "g", "k"}, {"d", "h", "l"},}}
     
 \foreach \i [count=\c from 1] in {0,...,3}{
@@ -22,28 +22,40 @@
     \node[outer sep=0, inner sep=0] (figA\c) at (0,-\i*2cm){
         \includegraphics[width=5cm]{1\_\c.pdf}
     };
-    \node[below=0.1cm of figA\c, outer sep=0,] {\footnotesize (\idA) $\text{Volume}=\v$
+    \node[below=0.1cm of figA\c, outer sep=0,] {\footnotesize (\idA) $\text{Volume}=\v\,\unit{m^3}$
     };
-    \node[left=0.2cm of figA\c, outer sep=0,] {\footnotesize $N_\text{T}=\c$
-    };
-    
+        
     \node[outer sep=0, inner sep=0, right = 0.25cm of figA\c] (figB\c) {
         \includegraphics[width=5cm]{2\_\c.pdf}
     };
-    \node[below=0.1cm of figB\c, outer sep=0] {\footnotesize (\idB) $\text{Volume}=\vv$
+    \node[below=0.1cm of figB\c, outer sep=0] {\footnotesize (\idB) $\text{Volume}=\vv\,\unit{m^3}$
         };
 
     \node[outer sep=0, inner sep=0, right = 0.25cm of figB\c] (figC\c) {
         \includegraphics[width=5cm]{3\_\c.pdf}
     };
-    \node[below=0.1cm of figC\c, outer sep=0] {\footnotesize (\idC) $\text{Volume}=\vvv$
+    \node[below=0.1cm of figC\c, outer sep=0] {\footnotesize (\idC) $\text{Volume}=\vvv\,\unit{m^3}$
         };
 }
 
-% \node[above=0.2cm of fig1, outer sep=0] {\footnotesize Literature reference 
-%         };
-% \node[above=0.2cm of my1, outer sep=0] {\footnotesize Proposed method 
-% };
+\node[above=0.15cm of figA1, outer sep=0] {\footnotesize $N_\text{T}=1$ 
+        };
+\node[above=0.15cm of figB1, outer sep=0] {\footnotesize $N_\text{T}=2$ 
+};
+\node[above=0.15cm of figC1, outer sep=0] {\footnotesize $N_\text{T}=3$ 
+};
+
+\node[left=0.15cm of figA1, outer sep=0, text centered] {\rotatebox{90}{\footnotesize 5x2}
+    };
+
+\node[left=0.15cm of figA2, outer sep=0, text centered] {\rotatebox{90}{\footnotesize 10x4}
+};
+
+\node[left=0.15cm of figA3, outer sep=0, text centered] {\rotatebox{90}{\footnotesize 15x6}
+};
+
+\node[left=0.15cm of figA4, outer sep=0, text centered] {\rotatebox{90}{\footnotesize 20x8}
+};
 
     % \foreach \c [count=\x from 0] in {{a,f},{b,o},{c,o},{d,b},{e,a},{f,r}} 
     %     \node at (0,\x) {\c};

@@ -16,5 +16,161 @@
   {}
 \endgroup
 
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{sigmund_usefulness_2011}{article}{}
+      \name{author}{1}{}{%
+        {{hash=d76f1c09e8d8d06e1b7c3c254efeae1a}{%
+           family={Sigmund},
+           familyi={S\bibinitperiod},
+           given={Ole},
+           giveni={O\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{d76f1c09e8d8d06e1b7c3c254efeae1a}
+      \strng{fullhash}{d76f1c09e8d8d06e1b7c3c254efeae1a}
+      \strng{bibnamehash}{d76f1c09e8d8d06e1b7c3c254efeae1a}
+      \strng{authorbibnamehash}{d76f1c09e8d8d06e1b7c3c254efeae1a}
+      \strng{authornamehash}{d76f1c09e8d8d06e1b7c3c254efeae1a}
+      \strng{authorfullhash}{d76f1c09e8d8d06e1b7c3c254efeae1a}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1615-147X, 1615-1488}
+      \field{journaltitle}{Structural and Multidisciplinary Optimization}
+      \field{month}{5}
+      \field{number}{5}
+      \field{title}{On the usefulness of non-gradient approaches in topology optimization}
+      \field{urlday}{21}
+      \field{urlmonth}{10}
+      \field{urlyear}{2020}
+      \field{volume}{43}
+      \field{year}{2011}
+      \field{urldateera}{ce}
+      \field{pages}{589\bibrangedash 596}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1007/s00158-011-0638-7
+      \endverb
+      \verb{urlraw}
+      \verb http://link.springer.com/10.1007/s00158-011-0638-7
+      \endverb
+      \verb{url}
+      \verb http://link.springer.com/10.1007/s00158-011-0638-7
+      \endverb
+    \endentry
+    \entry{stegmann_discrete_2005}{article}{}
+      \name{author}{2}{}{%
+        {{hash=8d9585a790dc476e971271d1dfe7a347}{%
+           family={Stegmann},
+           familyi={S\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=6c260b5ad86697f4fd9b0d5ea1dd1882}{%
+           family={Lund},
+           familyi={L\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{4b7f41c1998f8ee163f45f26abc7dd21}
+      \strng{fullhash}{4b7f41c1998f8ee163f45f26abc7dd21}
+      \strng{bibnamehash}{4b7f41c1998f8ee163f45f26abc7dd21}
+      \strng{authorbibnamehash}{4b7f41c1998f8ee163f45f26abc7dd21}
+      \strng{authornamehash}{4b7f41c1998f8ee163f45f26abc7dd21}
+      \strng{authorfullhash}{4b7f41c1998f8ee163f45f26abc7dd21}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A novel method for doing material optimization of general composite laminate shell structures is presented and its capabilities are illustrated with three examples. The method is labelled Discrete Material Optimization (DMO) but uses gradient information combined with mathematical programming to solve a discrete optimization problem. The method can be used to solve the orientation problem of orthotropic materials and the material selection problem as well as problems involving both. The method relies on ideas from multiphase topology optimization to achieve a parametrization which is very general and reduces the risk of obtaining a local optimum solution for the tested conﬁgurations. The applicability of the DMO method is demonstrated for ﬁbre angle optimization of a cantilever beam and combined ﬁbre angle and material selection optimization of a four-point beam bending problem and a doubly curved laminated shell. Copyright ᭧ 2005 John Wiley \& Sons, Ltd.}
+      \field{issn}{0029-5981, 1097-0207}
+      \field{journaltitle}{International Journal for Numerical Methods in Engineering}
+      \field{month}{4}
+      \field{number}{14}
+      \field{title}{Discrete material optimization of general composite shell structures}
+      \field{urlday}{19}
+      \field{urlmonth}{9}
+      \field{urlyear}{2019}
+      \field{volume}{62}
+      \field{year}{2005}
+      \field{urldateera}{ce}
+      \field{pages}{2009\bibrangedash 2027}
+      \range{pages}{19}
+      \verb{doi}
+      \verb 10.1002/nme.1259
+      \endverb
+      \verb{file}
+      \verb Stegmann and Lund - 2005 - Discrete material optimization of general composit.pdf:D\:\\estragio\\Zotero\\storage\\HRN74INW\\A_018.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://doi.wiley.com/10.1002/nme.1259
+      \endverb
+      \verb{url}
+      \verb http://doi.wiley.com/10.1002/nme.1259
+      \endverb
+    \endentry
+    \entry{hvejsel_material_2011}{article}{}
+      \name{author}{2}{}{%
+        {{hash=0d90c8ed5a026090b1c257eb157fedd3}{%
+           family={Hvejsel},
+           familyi={H\bibinitperiod},
+           given={Christian\bibnamedelima Frier},
+           giveni={C\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=6916b89289aed683046be157b2981bbf}{%
+           family={Lund},
+           familyi={L\bibinitperiod},
+           given={Erik},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{8e8bcbb7626a5186af97aef29c966aac}
+      \strng{fullhash}{8e8bcbb7626a5186af97aef29c966aac}
+      \strng{bibnamehash}{8e8bcbb7626a5186af97aef29c966aac}
+      \strng{authorbibnamehash}{8e8bcbb7626a5186af97aef29c966aac}
+      \strng{authornamehash}{8e8bcbb7626a5186af97aef29c966aac}
+      \strng{authorfullhash}{8e8bcbb7626a5186af97aef29c966aac}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper presents two multi-material interpolation schemes as direct generalizations of the well-known SIMP and RAMP material interpolation schemes originally developed for isotropic mixtures of two isotropic material phases. The new interpolation schemes provide generally applicable interpolation schemes between an arbitrary number of pre-defined materials with given (anisotropic) properties. The method relies on a large number of sparse linear constraints to enforce the selection of at most one material in each design subdomain. Topology and multi-material optimization is formulated within a unified parametrization.}
+      \field{issn}{1615-1488}
+      \field{journaltitle}{Structural and Multidisciplinary Optimization}
+      \field{month}{6}
+      \field{number}{6}
+      \field{title}{Material interpolation schemes for unified topology and multi-material optimization}
+      \field{urlday}{27}
+      \field{urlmonth}{4}
+      \field{urlyear}{2023}
+      \field{volume}{43}
+      \field{year}{2011}
+      \field{urldateera}{ce}
+      \field{pages}{811\bibrangedash 825}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1007/s00158-011-0625-z
+      \endverb
+      \verb{file}
+      \verb Full Text PDF:D\:\\estragio\\Zotero\\storage\\3R73UJ2H\\Hvejsel and Lund - 2011 - Material interpolation schemes for unified topolog.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s00158-011-0625-z
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s00158-011-0625-z
+      \endverb
+      \keyw{Topology optimization,Composite materials,Material interpolation,Multi-material parametrization}
+    \endentry
+  \enddatalist
+\endrefsection
 \endinput
 

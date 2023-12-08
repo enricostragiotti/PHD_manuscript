@@ -5,43 +5,30 @@
 Introduction
 
 \section{Optimize the modules' layout using a modified DMO algorithm}
+The goal is to treat the problem of contemporanely optimizing the modules' layout and topology of a modular structure. the major scientific challange is that the layout optimization of the modules in the structure subdomains is a discrete problem, where we can't have interediate results at the end of the optimization. As we want to use a gradient descent algorithm \sidecite{sigmund_usefulness_2011} for this reason we need to find a method to transform a discrete problem into a continuous one. 
 
-\todo{difference with tugilimana, we take into account the buckling whensolving the first subproblem of module layout, we can have an empty subdomain andwe use a gradeint descent algo}
+\subsection{Definition of the subdomains cross-sectional areas}
+inspired by the work of stegmann and lund \sidecite{stegmann_discrete_2005} , we decided here to define the subdomains variables (so the variables of the structure) as a weighted sum of the modules variables. In the case of a ground structure discretized using Nsub subdomains and Nt different modules, we define then the cross sectional areas of the subdomain j as:
+\begin{equation}
+    \vect{a}^j = \sum_{t=1}^{N_T} w_t^j \bar{\vect{a}}_t 
+\end{equation}
+where $\bar{\vect{a}}_t $ represent the vector of cross sectional areas of the t module and $\vect{w}^j$ is the vector of weight relatives to the j subdomain, defined as $ \vect{w}^j \in \mathbb{R}^t\,|\,w_j^t \in [0,1]$. 
+
+An exemple of a cantilever beam with Nsub = 8 and Nt = 2 is given in \figref{fig:06_weighted_sum}, where we see how the modfication of the weight values $\vect{w}$ influences the structure topology.
+
+
 \begin{figure*}
     \centering
     \includegraphics{figures/06_DMO/00_weight_dmo/weight_dmo.pdf}
     \caption{}
-    \label{fig:06}
+    \label{fig:06_weighted_sum}
 \end{figure*}
 
 \subsection{Variables penalization schemes}
-describe RAMP with paper of Lund. we use it because the derivative it is not infinite on alpa=0
+The limit of the presented approach lies in the fact that at convergence, the weight of every subdomains mus be all zero but one to one . This is because intermediate weights would represent a mis of different topologies that would not have mechanical sense and that would prove to be impossible to manufacture. For that reason we implement here an interpolation scheme that penalize intermediate densities.
 
-multi-phase versions of the well-known RAMP scheme (Hvejsel and Lund, 2011)
+describe alpha and define size
 
-\begin{figure}
-    \centering
-    \includegraphics{figures/06_DMO/00_ramp/ramp.pdf}
-    \caption{}
-    \label{fig:06}
-\end{figure}
-
-multiple penalizations
-
-continuation scheme only on p (we use an interior point algo, we want to stay in the fesable region)
-
-
-\subsection{Modified DMO algorithm}
-we use a dmo like approach
-PRO:
-Optimize a discrete problem using continuous variables
-Gradient-based optimization
-
-CONS:
-Convergence of the weight to 0000100 solution FOR EVERY ELEMENT
-Many optimization variables
-
-difference with the original DMO; we are not only changing the weights but also the modules topology. Tihis is more difficoult
 \paragraph*{Penalized volume}
 \begin{equation}
     V = \sum_{j=1}^{N_{\text{sub}}}\vect{\bar{\ell}}^T\tilde{\vect{a}}^j
@@ -69,6 +56,32 @@ and where
 \begin{equation}
     V = \sum_{j=1}^{N_{\text{sub}}}\vect{\bar{\ell}}^T\sum_{t=1}^{N_T} \frac{\alpha_t^j}{1+q(1-\alpha_t^j)} \bar{\vect{a}}_t
 \end{equation}
+
+We use here \gls{ramp} \todo{add citation} and not the more used SImp interpolation scheme as RAMP because the derivative it is not infinite on alpa=0. Additionally, inspired byb the works of \sidecite{hvejsel_material_2011}, we put up a multi-phase versions of the RAMP interpolation where we simultaneously penalize mechanical properties . \figref{fig:06_ramp}
+
+
+\begin{figure}
+    \centering
+    \includegraphics{figures/06_DMO/00_ramp/ramp.pdf}
+    \caption{}
+    \label{fig:06_ramp}
+\end{figure}
+
+multiple penalizations
+
+
+\subsection{Modified DMO algorithm}
+we use a dmo like approach
+PRO:
+Optimize a discrete problem using continuous variables
+Gradient-based optimization
+
+CONS:
+Convergence of the weight to 0000100 solution FOR EVERY ELEMENT
+Many optimization variables
+
+difference with the original DMO; we are not only changing the weights but also the modules topology. Tihis is more difficoult
+
 
 \subsection{Optimization formulation and resolution algorithm}
 \begin{equation}
@@ -124,6 +137,8 @@ This add permits to promote the clustering of not only submodules loaded in simi
 
 \section{Numerical application}
 IPOPT for the two steps
+
+continuation scheme only on p (we use an interior point algo, we want to stay in the fesable region)
 \subsection{Layout optimization of fixed modules}
 \begin{marginfigure}
     \centering
@@ -207,6 +222,8 @@ IPOPT for the two steps
 
 \subsection{A benchmark case study: a simply supported modular bridge}
 
+\todo{difference with tugilimana, we take into account the buckling whensolving the first subproblem of module layout, we can have an empty subdomain andwe use a gradeint descent algo}
+
 \begin{figure}
     \centering
     \includegraphics{figures/06_DMO/00_tug_bench/bench.pdf}
@@ -221,7 +238,13 @@ IPOPT for the two steps
     \label{fig:06}
 \end{figure}
 
-\subsection{On the importance of the local buckling}
+\begin{figure*}
+    \centering
+    \includegraphics{figures/06_DMO/00_tug_bench_size/size.pdf}
+    \caption{}
+    \label{fig:06}
+\end{figure*}
+principalmente due motivi, cambia il metodo di rottura, non piu buckling e poi ho i vuoti
 
 \subsection{Simply supported 3D beam}
 \begin{margintable}
@@ -241,5 +264,45 @@ IPOPT for the two steps
     \label{tab:06_3D_supp_mat}
 \end{margintable}
 
+\begin{figure*}
+    \hspace*{\fill}
+    \subcaptionbox{}{\includegraphics[width=0.30\linewidth]{figures/06_DMO/00_print_topology/1_04_Topology_NLP_iso.png}}
+    \hfill
+    \subcaptionbox{}{\includegraphics[width=0.30\linewidth]{figures/06_DMO/00_print_topology/2_04_Topology_NLP_iso.png}}
+    \hfill
+    \subcaptionbox{}{\includegraphics[width=0.30\linewidth]{figures/06_DMO/00_print_topology/3_04_Topology_NLP_iso.png}}
+    \hspace*{\fill}
+    \bigskip
+    \hspace*{\fill}
+    \subcaptionbox{}{\includegraphics[width=0.30\linewidth]{figures/06_DMO/00_print_topology/1_04_Topology_NLP_XZ.png}}
+    \hfill
+    \subcaptionbox{}{\includegraphics[width=0.30\linewidth]{figures/06_DMO/00_print_topology/2_04_Topology_NLP_XZ.png}}
+    \hfill
+    \subcaptionbox{}{\includegraphics[width=0.30\linewidth]{figures/06_DMO/00_print_topology/3_04_Topology_NLP_XZ.png}}
+    \hspace*{\fill}
+    \caption{}
+    \label{fig:06}
+\end{figure*}
+
+\begin{table}
+    \centering
+    \small
+    \begin{tabular}{lx{1.8cm}x{1.8cm}x{1.8cm}x{1.8cm}}
+        \toprule
+    $N_\text{T}$ & --     & 1     &  2    &  3  \\ \midrule
+    $N_\text{sub}$           &    1  &   36   &   36   &   36     \\
+    $N_\text{opt}\;(N_\text{el})$  &  20 (1984) &  360 (12636)   &  204 (12636)   &  104 (12636)        \\
+    $V$ [\unit{cm^3}] & 9.907 &  27.958 &   15.548  & 10.178    \\
+    $V$ [\unit{\percent}] & 1.761 & 4.970&2.764 & 1.809    \\
+    $\bar{\rho}$ [\unit{kg/m^3}] & 80.31 &226.65 &126.05 &82.51 \\
+    C [\unit{J}]      &  3.71  &  5.20   &  6.21  & 4.141  \\
+    $a_\text{max}$ [\unit{mm^2}]      & 37.61& 9.40  & 12.81  &   15.81     \\
+    $\varphi$   &\qty{100.00}{\percent}&\qty{21.11}{\percent}&\qty{39.21}{\percent}&\qty{80.77}{\percent}  \\
+    $\psi$& 1.00   &  0.47 &  0.66   & 0.87        \\
+    t        & \hms{0;0;4}  &  \hms{0;1;18} & \hms{0;0;42} & \hms{0;10;22}   \\ \bottomrule
+    \end{tabular}
+    \caption{}
+    \label{tab:06}
+    \end{table}
 
 \section{Conclusion}
