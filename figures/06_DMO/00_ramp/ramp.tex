@@ -34,17 +34,29 @@
     % smooth,
     no markers,
   ]
+
+  \coordinate (aa) at (axis cs: 0.5,0); 
+  \coordinate (bb) at (axis cs: 0.5,0.835); 
+  \coordinate (cc) at (axis cs: 0.5,0.1); 
+  
+  \node [fill=white,rounded corners=2pt,inner sep=1pt, xshift=-2mm, yshift=2mm] at (bb) {{$\tilde{w}$}};
+  \node [fill=white,rounded corners=2pt,inner sep=1pt, xshift=2mm, yshift=-2mm] at (cc) {{$w$}};
+  \draw [thin, axis_gray] (aa) -- (bb);
   
   \addplot[accent_b_1, very thick] {(x)/(1+8*(1-x))};
-  \addlegendentry{$q=8.0$}
+  \addlegendentry{$p=8.0$}
   \addplot[axis_gray, very thick] {(x)/(1+0*(1-x))};
-  \addlegendentry{$q=0.0$}
+  \addlegendentry{$p=0.0$}
   \addplot[accent_r_1, very thick] {(x)/(1-0.8*(1-x))};
   \addlegendentry{$q=-0.8$}
   \node[accent_r_1,inner sep=0pt, text width=2cm] (n1) at (axis cs: 0.2,0.9) {Volume\\interpolation};
   \draw[accent_r_1] (n1.south)  to[out=270,in=130] (axis cs: 0.3,0.7);
   \node[accent_b_1,inner sep=0pt, text width=2cm] (n2) at (axis cs: 0.85,0.07) {Physical\\interpolation};
   \draw[accent_b_1] (n2.north)  to[out=90,in=290] (axis cs: 0.8,0.28);
+  
+  \node at (bb) [{circle, fill, inner sep=1pt, node contents={}}];
+  \node at (cc) [{circle, fill, inner sep=1pt, node contents={}}];
+
  
 \end{axis}
 

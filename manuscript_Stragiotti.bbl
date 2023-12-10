@@ -116,6 +116,59 @@
       \verb http://doi.wiley.com/10.1002/nme.1259
       \endverb
     \endentry
+    \entry{stolpe_alternative_2001}{article}{}
+      \name{author}{2}{}{%
+        {{hash=9bad1d1c66b6ba268b1b0102bf0ab5ad}{%
+           family={Stolpe},
+           familyi={S\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=350e8570c519473f8a9f62854e7ef0a1}{%
+           family={Svanberg},
+           familyi={S\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{efe1cb231b5b208e463f0508f00cd1fc}
+      \strng{fullhash}{efe1cb231b5b208e463f0508f00cd1fc}
+      \strng{bibnamehash}{efe1cb231b5b208e463f0508f00cd1fc}
+      \strng{authorbibnamehash}{efe1cb231b5b208e463f0508f00cd1fc}
+      \strng{authornamehash}{efe1cb231b5b208e463f0508f00cd1fc}
+      \strng{authorfullhash}{efe1cb231b5b208e463f0508f00cd1fc}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We consider the discretized zero-one continuum topology optimization problem of finding the optimal distribution of two linearly elastic materials such that compliance is minimized. The geometric complexity of the design is limited using a constraint on the perimeter of the design. A common approach to solve these problems is to relax the zero-one constraints and model the material properties by a power law which gives noninteger solutions very little stiffness in comparison to the amount of material used.}
+      \field{issn}{1615-1488}
+      \field{journaltitle}{Structural and Multidisciplinary Optimization}
+      \field{month}{9}
+      \field{number}{2}
+      \field{title}{An alternative interpolation scheme for minimum compliance topology optimization}
+      \field{urlday}{26}
+      \field{urlmonth}{9}
+      \field{urlyear}{2021}
+      \field{volume}{22}
+      \field{year}{2001}
+      \field{urldateera}{ce}
+      \field{pages}{116\bibrangedash 124}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1007/s001580100129
+      \endverb
+      \verb{file}
+      \verb Springer Full Text PDF:D\:\\estragio\\Zotero\\storage\\XWY9ZUUE\\Stolpe and Svanberg - 2001 - An alternative interpolation scheme for minimum co.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s001580100129
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s001580100129
+      \endverb
+    \endentry
     \entry{hvejsel_material_2011}{article}{}
       \name{author}{2}{}{%
         {{hash=0d90c8ed5a026090b1c257eb157fedd3}{%

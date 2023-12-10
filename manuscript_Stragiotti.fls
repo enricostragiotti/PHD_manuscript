@@ -3432,8 +3432,24 @@ INPUT .\figures\06_DMO\00_weight_dmo\weight_dmo.pdf
 INPUT .\figures\06_DMO\00_weight_dmo\weight_dmo.pdf
 INPUT .\figures\06_DMO\00_weight_dmo\weight_dmo.pdf
 INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zpl-Bold-lf-t1.tfm
-INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zpl-Regular-lf-sc-t1.tfm
-INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zpl-Regular-lf-t1.tfm
+OUTPUT manuscript_Stragiotti.mw
+INPUT manuscript_Stragiotti.mw
+OUTPUT manuscript_Stragiotti.mw
+OUTPUT manuscript_Stragiotti.mw
+INPUT manuscript_Stragiotti.mw
+OUTPUT manuscript_Stragiotti.mw
+OUTPUT manuscript_Stragiotti.mw
+INPUT manuscript_Stragiotti.mw
+OUTPUT manuscript_Stragiotti.mw
+OUTPUT manuscript_Stragiotti.mw
+INPUT manuscript_Stragiotti.mw
+OUTPUT manuscript_Stragiotti.mw
+OUTPUT manuscript_Stragiotti.mw
+INPUT manuscript_Stragiotti.mw
+OUTPUT manuscript_Stragiotti.mw
+OUTPUT manuscript_Stragiotti.mw
+INPUT manuscript_Stragiotti.mw
+OUTPUT manuscript_Stragiotti.mw
 OUTPUT manuscript_Stragiotti.mw
 INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\vf\public\newpx\zplbmi.vf
 INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\NewPXBMI_gnu.tfm
@@ -3473,6 +3489,13 @@ OUTPUT manuscript_Stragiotti.mw
 OUTPUT manuscript_Stragiotti.mw
 INPUT manuscript_Stragiotti.mw
 OUTPUT manuscript_Stragiotti.mw
+OUTPUT manuscript_Stragiotti.mw
+INPUT manuscript_Stragiotti.mw
+OUTPUT manuscript_Stragiotti.mw
+OUTPUT manuscript_Stragiotti.mw
+INPUT manuscript_Stragiotti.mw
+OUTPUT manuscript_Stragiotti.mw
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zpl-Regular-lf-t1.tfm
 INPUT .\figures\06_DMO\00_ramp\ramp.pdf
 INPUT .\figures\06_DMO\00_ramp\ramp.pdf
 INPUT figures\06_DMO\00_ramp\ramp.pdf
@@ -3481,79 +3504,144 @@ INPUT .\figures\06_DMO\00_ramp\ramp.pdf
 INPUT .\figures\06_DMO\00_ramp\ramp.pdf
 OUTPUT manuscript_Stragiotti.mw
 INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\enc\dvips\newtx\ntx-ecth-tlf.enc
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\vf\public\newpx\zplsy.vf
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\pxsys.tfm
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newtx\txex-bar.tfm
 INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\vf\public\newpx\zplbsy.vf
 INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\pxbsys.tfm
 INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newtx\txbex-bar.tfm
 INPUT manuscript_Stragiotti.mw
 OUTPUT manuscript_Stragiotti.mw
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\boondox\BOONDOX-r-calo.tfm
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\boondox\BOONDOX-r-calo.tfm
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\boondox\BOONDOX-r-calo.tfm
 OUTPUT manuscript_Stragiotti.mw
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\vf\public\newpx\zplbmi.vf
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\NewPXBMI_gnu.tfm
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\NewPXBMI.tfm
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\vf\public\boondox\BOONDOX-r-calo.vf
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\boondox\zxxrow7z.tfm
 INPUT manuscript_Stragiotti.mw
 OUTPUT manuscript_Stragiotti.mw
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zpl-Regular-tlf-ot1.tfm
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zpl-Regular-tlf-ot1.tfm
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zpl-Regular-tlf-ot1.tfm
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplmi.tfm
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplmi.tfm
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplmi.tfm
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplsy.tfm
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplsy.tfm
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplsy.tfm
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplexx.tfm
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplexx.tfm
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplexx.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam7.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam5.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm5.tfm
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplmia.tfm
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplmia.tfm
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplmia.tfm
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplsym.tfm
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplsym.tfm
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplsym.tfm
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplsyc.tfm
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplsyc.tfm
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplsyc.tfm
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplexa.tfm
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplexa.tfm
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplexa.tfm
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zpl-Bold-tlf-ot1.tfm
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zpl-Bold-tlf-ot1.tfm
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zpl-Bold-tlf-ot1.tfm
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplbmi.tfm
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplbmi.tfm
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplbmi.tfm
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplbsy.tfm
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplbsy.tfm
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplbsy.tfm
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplbexx.tfm
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplbexx.tfm
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplbexx.tfm
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zpl-Regular-lf-t1.tfm
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zpl-Regular-lf-t1.tfm
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zpl-Regular-tlf-ot1.tfm
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplmi.tfm
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplsy.tfm
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplexx.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam7.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplmia.tfm
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplsym.tfm
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplsyc.tfm
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplexa.tfm
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zpl-Bold-tlf-ot1.tfm
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplbmi.tfm
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplbsy.tfm
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplbexx.tfm
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zpl-Regular-tlf-ot1.tfm
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zpl-Regular-tlf-ot1.tfm
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplmi.tfm
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplmi.tfm
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplsy.tfm
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplsy.tfm
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplexx.tfm
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplexx.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam5.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam5.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm5.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm5.tfm
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplmia.tfm
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplmia.tfm
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplsym.tfm
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplsym.tfm
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplsyc.tfm
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplsyc.tfm
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplexa.tfm
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplexa.tfm
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zpl-Bold-tlf-ot1.tfm
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zpl-Bold-tlf-ot1.tfm
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplbmi.tfm
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplbmi.tfm
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplbsy.tfm
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplbsy.tfm
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplbexx.tfm
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplbexx.tfm
 OUTPUT manuscript_Stragiotti.mw
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\vf\public\newpx\zplmia.vf
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\pxmiaX.tfm
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newtx\txmiaSTbb.tfm
 INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\vf\public\newpx\zplsy.vf
 INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\pxsys.tfm
 INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newtx\txex-bar.tfm
 INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\vf\public\newpx\zplbmi.vf
 INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\NewPXBMI_gnu.tfm
 INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\NewPXBMI.tfm
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newtx\stxscr.tfm
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\vf\public\newpx\zplsy.vf
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\pxsys.tfm
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newtx\txex-bar.tfm
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\vf\public\newpx\zplbmi.vf
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\NewPXBMI_gnu.tfm
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\NewPXBMI.tfm
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newtx\stxscr.tfm
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\vf\public\newpx\zplmi.vf
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\NewPXMI_gnu.tfm
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\NewPXMI.tfm
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\vf\public\newpx\zplmi.vf
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\NewPXMI_gnu.tfm
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\NewPXMI.tfm
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\vf\public\newpx\zplexx.vf
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newtx\ntxexx.tfm
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\vf\public\newtx\ntxexx.vf
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newtx\txexs.tfm
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\vf\public\newpx\zplmia.vf
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\pxmiaX.tfm
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newtx\txmiaSTbb.tfm
 INPUT manuscript_Stragiotti.mw
 OUTPUT manuscript_Stragiotti.mw
-INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zpl-Regular-tlf-ot1.tfm
-INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zpl-Regular-tlf-ot1.tfm
-INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplmi.tfm
-INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplmi.tfm
-INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplsy.tfm
-INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplsy.tfm
-INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplexx.tfm
-INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplexx.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam7.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam5.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm5.tfm
-INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplmia.tfm
-INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplmia.tfm
-INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplsym.tfm
-INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplsym.tfm
-INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplsyc.tfm
-INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplsyc.tfm
-INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplexa.tfm
-INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplexa.tfm
-INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zpl-Bold-tlf-ot1.tfm
-INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zpl-Bold-tlf-ot1.tfm
-INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplbmi.tfm
-INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplbmi.tfm
-INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplbsy.tfm
-INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplbsy.tfm
-INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplbexx.tfm
-INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplbexx.tfm
-INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zpl-Regular-tlf-ot1.tfm
-INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zpl-Regular-tlf-ot1.tfm
-INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplmi.tfm
-INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplmi.tfm
-INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplsy.tfm
-INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplsy.tfm
-INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplexx.tfm
-INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplexx.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam5.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam5.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm5.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm5.tfm
-INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplmia.tfm
-INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplmia.tfm
-INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplsym.tfm
-INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplsym.tfm
-INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplsyc.tfm
-INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplsyc.tfm
-INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplexa.tfm
-INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplexa.tfm
-INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zpl-Bold-tlf-ot1.tfm
-INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zpl-Bold-tlf-ot1.tfm
-INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplbmi.tfm
-INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplbmi.tfm
-INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplbsy.tfm
-INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplbsy.tfm
-INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplbexx.tfm
-INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplbexx.tfm
 INPUT .\figures\06_DMO\00_stress_clustering\stress_clustering.pdf
 INPUT .\figures\06_DMO\00_stress_clustering\stress_clustering.pdf
 INPUT figures\06_DMO\00_stress_clustering\stress_clustering.pdf
@@ -3575,34 +3663,6 @@ INPUT figures\06_DMO\00_cantilever_bcs\cant_mesh.pdf
 INPUT .\figures\06_DMO\00_cantilever_bcs\cant_mesh.pdf
 INPUT .\figures\06_DMO\00_cantilever_bcs\cant_mesh.pdf
 INPUT .\figures\06_DMO\00_cantilever_bcs\cant_mesh.pdf
-INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zpl-Regular-tlf-ot1.tfm
-INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zpl-Regular-tlf-ot1.tfm
-INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplmi.tfm
-INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplmi.tfm
-INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplsy.tfm
-INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplsy.tfm
-INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplexx.tfm
-INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplexx.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam7.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
-INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplmia.tfm
-INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplmia.tfm
-INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplsym.tfm
-INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplsym.tfm
-INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplsyc.tfm
-INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplsyc.tfm
-INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplexa.tfm
-INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplexa.tfm
-INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zpl-Bold-tlf-ot1.tfm
-INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zpl-Bold-tlf-ot1.tfm
-INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplbmi.tfm
-INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplbmi.tfm
-INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplbsy.tfm
-INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplbsy.tfm
-INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplbexx.tfm
-INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplbexx.tfm
 INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zpl-Regular-lf-t1.tfm
 INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zpl-Regular-tlf-ot1.tfm
 INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplmi.tfm
@@ -3619,8 +3679,6 @@ INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplbmi.tfm
 INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplbsy.tfm
 INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplbexx.tfm
 INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zpl-Bold-lf-t1.tfm
-INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zpl-Regular-lf-t1.tfm
-INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zpl-Regular-lf-t1.tfm
 INPUT .\figures\06_DMO\00_fixed_cells\top_00.pdf
 INPUT .\figures\06_DMO\00_fixed_cells\top_00.pdf
 INPUT figures\06_DMO\00_fixed_cells\top_00.pdf
@@ -3742,16 +3800,6 @@ INPUT .\figures\06_DMO\00_tug_bench_size\size.pdf
 INPUT .\figures\06_DMO\00_tug_bench_size\size.pdf
 INPUT .\figures\06_DMO\00_tug_bench_size\size.pdf
 OUTPUT manuscript_Stragiotti.mw
-INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\vf\public\newpx\zplsy.vf
-INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\pxsys.tfm
-INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newtx\txex-bar.tfm
-INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\vf\public\newpx\zplmi.vf
-INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\NewPXMI_gnu.tfm
-INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\NewPXMI.tfm
-INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newtx\stxscr.tfm
-INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\vf\public\newpx\zplmia.vf
-INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\pxmiaX.tfm
-INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newtx\txmiaSTbb.tfm
 INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\vf\public\newpx\zplmi.vf
 INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\NewPXMI_gnu.tfm
 INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\NewPXMI.tfm
@@ -3819,15 +3867,10 @@ OUTPUT manuscript_Stragiotti.mw
 INPUT manuscript_Stragiotti.mw
 OUTPUT manuscript_Stragiotti.mw
 OUTPUT manuscript_Stragiotti.mw
-INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\vf\public\newpx\zplsy.vf
-INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\pxsys.tfm
-INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newtx\txex-bar.tfm
-INPUT manuscript_Stragiotti.mw
-OUTPUT manuscript_Stragiotti.mw
-OUTPUT manuscript_Stragiotti.mw
 INPUT manuscript_Stragiotti.mw
 OUTPUT manuscript_Stragiotti.mw
 INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zpl-Italic-lf-t1.tfm
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zpl-Regular-lf-sc-t1.tfm
 INPUT D:\estragio\AppData\Roaming\MiKTeX\tex\latex\bera\t1fvm.fd
 INPUT D:\estragio\AppData\Roaming\MiKTeX\tex\latex\bera\t1fvm.fd
 INPUT D:\estragio\AppData\Roaming\MiKTeX\tex\latex\bera\t1fvm.fd
@@ -3886,6 +3929,9 @@ OUTPUT manuscript_Stragiotti.mw
 OUTPUT manuscript_Stragiotti.mw
 INPUT manuscript_Stragiotti.mw
 OUTPUT manuscript_Stragiotti.mw
+OUTPUT manuscript_Stragiotti.mw
+INPUT manuscript_Stragiotti.mw
+OUTPUT manuscript_Stragiotti.mw
 INPUT manuscript_Stragiotti.aux
 OUTPUT manuscript_Stragiotti.mw
 INPUT manuscript_Stragiotti.mw
@@ -3914,9 +3960,6 @@ OUTPUT manuscript_Stragiotti.mw
 INPUT .\chapters\6_DMO.aux
 INPUT chapters\6_DMO.aux
 INPUT chapters\6_DMO.aux
-OUTPUT manuscript_Stragiotti.mw
-INPUT manuscript_Stragiotti.mw
-OUTPUT manuscript_Stragiotti.mw
 OUTPUT manuscript_Stragiotti.mw
 INPUT manuscript_Stragiotti.mw
 OUTPUT manuscript_Stragiotti.mw
@@ -4116,3 +4159,5 @@ INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\type1\public\newpx\zplr.pfb
 INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\type1\public\newpx\zplr.pfb
 INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\type1\public\newpx\zplri.pfb
 INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\type1\public\newpx\zplri.pfb
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\type1\public\boondox\zxxrw8a.pfb
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\type1\public\boondox\zxxrw8a.pfb

@@ -8,14 +8,13 @@ Introduction
 The goal is to treat the problem of contemporanely optimizing the modules' layout and topology of a modular structure. the major scientific challange is that the layout optimization of the modules in the structure subdomains is a discrete problem, where we can't have interediate results at the end of the optimization. As we want to use a gradient descent algorithm \sidecite{sigmund_usefulness_2011} for this reason we need to find a method to transform a discrete problem into a continuous one. 
 
 \subsection{Definition of the subdomains cross-sectional areas}
-inspired by the work of stegmann and lund \sidecite{stegmann_discrete_2005} , we decided here to define the subdomains variables (so the variables of the structure) as a weighted sum of the modules variables. In the case of a ground structure discretized using Nsub subdomains and Nt different modules, we define then the cross sectional areas of the subdomain j as:
+inspired by the work of stegmann and lund on the \gls{dmo} algorithm \sidecite{stegmann_discrete_2005}, we decided here to define the subdomains variables (so the variables of the structure) as a weighted sum of the modules variables. In the case of a ground structure discretized using Nsub subdomains and Nt different modules, we define then the cross sectional areas of the subdomain j as:
 \begin{equation}
     \vect{a}^j = \sum_{t=1}^{N_T} w_t^j \bar{\vect{a}}_t 
 \end{equation}
-where $\bar{\vect{a}}_t $ represent the vector of cross sectional areas of the t module and $\vect{w}^j$ is the vector of weight relatives to the j subdomain, defined as $ \vect{w}^j \in \mathbb{R}^t\,|\,w_j^t \in [0,1]$. 
+where $\bar{\vect{a}}_t $ represent the vector of cross sectional areas of the t module and $\vect{w}^j$ is the vector of weight relatives to the j subdomain, defined as $ \vect{w}^j \in \mathbb{R}^t\,|\,w_j^t \in [0,1]$.
 
 An exemple of a cantilever beam with Nsub = 8 and Nt = 2 is given in \figref{fig:06_weighted_sum}, where we see how the modfication of the weight values $\vect{w}$ influences the structure topology.
-
 
 \begin{figure*}
     \centering
@@ -25,40 +24,25 @@ An exemple of a cantilever beam with Nsub = 8 and Nt = 2 is given in \figref{fig
 \end{figure*}
 
 \subsection{Variables penalization schemes}
-The limit of the presented approach lies in the fact that at convergence, the weight of every subdomains mus be all zero but one to one . This is because intermediate weights would represent a mis of different topologies that would not have mechanical sense and that would prove to be impossible to manufacture. For that reason we implement here an interpolation scheme that penalize intermediate densities.
+The limit of the presented approach lies in the fact that at convergence, the weight of every subdomains mus be all zero but one to one . This is because intermediate weights would represent a mix of different topologies that would not have mechanical sense and that would prove to be impossible to manufacture. For that reason we implement here an interpolation scheme that penalize intermediate densities. We use here \gls{ramp} \sidecite{stolpe_alternative_2001} and not the more used SImp interpolation scheme as RAMP because the derivative it is never infinite nor 0 at zero density.
 
-describe alpha and define size
-
-\paragraph*{Penalized volume}
-\begin{equation}
-    V = \sum_{j=1}^{N_{\text{sub}}}\vect{\bar{\ell}}^T\tilde{\vect{a}}^j
-\end{equation}
-\begin{equation}
-    \tilde{\vect{a}}^j = \sum_{t=1}^{N_T} \tilde{w}_t^j \bar{\vect{a}}_t 
-\end{equation}
-and where
-\begin{equation}
-    \tilde{w}_t^j = \frac{\alpha_t^j}{1+q(1-\alpha_t^j)}    
-\end{equation}
-
-\begin{equation}
-    \vect{a}^j = \sum_{t=1}^{N_T} w_t^j \bar{\vect{a}}_t 
-\end{equation}
-and where
+We define the design variable $\alpha$ responsable of the module choiche inside of the subdomain j. its relationship with the weight $w$ is the following: 
 \begin{equation}
     w_t^j = \frac{\alpha_t^j}{1+p(1-\alpha_t^j)}    
 \end{equation}
-
+where $p\in \mathbb{R}^+$ is a parameter used to control the steepness of the RAMP interpolation. Additionally, inspired by the works of \sidecite{hvejsel_material_2011}, we put up a multi-phase versions of the RAMP interpolation where we simultaneously penalize mechanical properties and we artificailly icrease the volume of modules with intermediate densities. To do that we define an additional RAMP parameter, this thime always negative $q\in \mathbb{R}^-$ that is used to evaluated the increased weights associated with the evaluation of the volume $V$.
 \begin{equation}
-    \sum_{t=1}^{N_T} w_t^j = 1
+    V = \sum_{j=1}^{N_{\text{sub}}}\vect{\bar{\ell}}^T\tilde{\vect{a}}^j,
 \end{equation}
-
+where $\tilde{a}$ is defined as following:
 \begin{equation}
-    V = \sum_{j=1}^{N_{\text{sub}}}\vect{\bar{\ell}}^T\sum_{t=1}^{N_T} \frac{\alpha_t^j}{1+q(1-\alpha_t^j)} \bar{\vect{a}}_t
+    \tilde{\vect{a}}^j = \sum_{t=1}^{N_T} \tilde{w}_t^j \bar{\vect{a}}_t, 
 \end{equation}
-
-We use here \gls{ramp} \todo{add citation} and not the more used SImp interpolation scheme as RAMP because the derivative it is not infinite on alpa=0. Additionally, inspired byb the works of \sidecite{hvejsel_material_2011}, we put up a multi-phase versions of the RAMP interpolation where we simultaneously penalize mechanical properties . \figref{fig:06_ramp}
-
+and $\tilde{w}$
+\begin{equation}
+    \tilde{w}_t^j = \frac{\alpha_t^j}{1+q(1-\alpha_t^j)}.    
+\end{equation}
+So for every design variable alpha, we associate two different weights (w and tilde w) that are used to evaluate the mechanical properties and the structure volume, respectively (see \figref{fig:06_ramp}).
 
 \begin{figure}
     \centering
@@ -67,23 +51,9 @@ We use here \gls{ramp} \todo{add citation} and not the more used SImp interpolat
     \label{fig:06_ramp}
 \end{figure}
 
-multiple penalizations
-
-
-\subsection{Modified DMO algorithm}
-we use a dmo like approach
-PRO:
-Optimize a discrete problem using continuous variables
-Gradient-based optimization
-
-CONS:
-Convergence of the weight to 0000100 solution FOR EVERY ELEMENT
-Many optimization variables
-
-difference with the original DMO; we are not only changing the weights but also the modules topology. Tihis is more difficoult
-
-
-\subsection{Optimization formulation and resolution algorithm}
+\subsection{The optimization formulation and resolution algorithm}
+The objective function of the optimization process is the volume minimization of the modular structure. 
+The members of the structure are subject to multiple mechanical constraints, namely stress, topological buckling, minimum slenderness, and compatibility constraints. Formulation $\mathbb{M}_1$ is stated in terms of modules' cross-sectional area $\bar{\vect{a}}$, module selection variables $\vect{\alpha}$, member forces $\vect{q}$ and nodal displacements $\vect{U}$ as follows:
 \begin{equation}
     \begin{aligned}
     \min_{\bar{\vect{a}}, \vect{\alpha}, \bm{q}, \bm{U}}   && V &= \sum_{j=1}^{N_{\text{sub}}}\vect{\bar{\ell}}^T\tilde{\vect{a}}^j && \textrm{(Volume minimization)}\\
@@ -91,21 +61,55 @@ difference with the original DMO; we are not only changing the weights but also 
                     && \bm{q} &= \frac{\bm{a}\bm{E}}{\bm{\ell}}\bm{b}^T\bm{U} && \textrm{(Compatibility constraints)} \\
                     && \bm{q} &\geq -\frac{\bm{s}\bm{a}^2}{\bm{\ell^2}} && \textrm{(Euler buckling constraints)} \\
                     && -\sigma_C\bm{a} &\leq \bm{q} \leq \sigma_T\bm{a} && \textrm{(Stress constraints)} \\
+                    && \bar{\vect{a}}_{t,r}&\geq \bar{a}_{t,r=1} && r \in \mathcal{C}_{l,r}(\bar{\vect{a}}_t),\, \forall t \\
                     && 0 &\leq \bar{\vect{a}} \leq \frac{4 \pi \bar{\vect{\ell}}^2}{\lambda_{\text{max}}} && \textrm{(Slenderness limit)} \\
                     && \sum_{t=1}^{N_T} \alpha_t^j &\leq 1, \; \forall j && \textrm{(One selected module max.)} \\
     \end{aligned}
+    \tag{$\mathbb{M}_1$}
+    \label{eq:06_optim_complete}
 \end{equation}
 
-Solved using the two step algorithm, so before relaxed problem where we solve without compatibility constraints. this time, as the problem is nonlinear due to the alpha design variables, we solve it without linearizing the buckling constraints.  here is the formulation of the first subproblem:
+This formulation builds on the classic DMO approach, adding multiple mechanical constraints, operating on a ground structure, but most importantly we are not only selecting the best module for every subdomain changing the value of $\alpha$, but we are also optimizing the also the modules topology, and all of this at the same time. Tihis is more difficoult. The qvqntqges of this formulation are essentially the fact that wa are dealing with discrete problem and solving it using continuous design variables and a gradient based optimizer. However, we increase considerably the size of the problem, as we are adding numerous additional design variables $\alpha$ that scales with the number of subdomains and the number of modules.
 
-Then the compatibility constraints are added again
+The design variable alpha are constrained by a set of constraint that constraint the maximum sum of weights of a j submodule to one. it is important to note that we are treating this constraint as a disequality constraint and not an equality, and for this reason we give the optimizer the ability to put al the weights to zero and remove the subdomain from the steucture.
+\begin{equation}
+    \sum_{t=1}^{N_T} \alpha_t^j \leq 1, \; \forall j 
+\end{equation}
+
+Problem \eqrefnotext{eq:06_optim_complete} is solved using a modified version of the proposed two step solving algorithm, in wich we solve a relaxed problem without compatibility constraints kinematic compatibility constraints are omitted. We call this relaxed Problem $\mathbb{M}_2$. this time, as the problem is nonlinear due to the alpha design variables, we solve it without linearizing the buckling constraints.  here is the formulation of the first subproblem:
+
+\begin{equation}
+    \begin{aligned}
+    \min_{\bar{\vect{a}}, \vect{\alpha}, \bm{q}}   && V &= \sum_{j=1}^{N_{\text{sub}}}\vect{\bar{\ell}}^T\tilde{\vect{a}}^j && \textrm{(Volume minimization)}\\
+    \textrm{s.t.}   && \bm{B}\bm{q} &= \bm{f} && \textrm{(Force equilibrium)}\\
+                    && \bm{q} &\geq -\frac{\bm{s}\bm{a}^2}{\bm{\ell^2}} && \textrm{(Euler buckling constraints)} \\
+                    && -\sigma_C\bm{a} &\leq \bm{q} \leq \sigma_T\bm{a} && \textrm{(Stress constraints)} \\
+                    && 0 &\leq \bar{\vect{a}} \leq \frac{4 \pi \bar{\vect{\ell}}^2}{\lambda_{\text{max}}} && \textrm{(Slenderness limit)} \\
+                    && \sum_{t=1}^{N_T} \alpha_t^j &\leq 1, \; \forall j && \textrm{(One selected module max.)} \\
+    \end{aligned}
+    \tag{$\mathbb{M}_2$}
+    \label{eq:06_optim_relax}
+\end{equation}
+
+We fix the module layout on the structure and we evaluate the corresponding mapping matrix H. Then the compatibility constraints are added again
 we solve it fixing the submodules topology and using the VL formulation already used in \dots
-
-hree is the schema of the solving algo:
-
-
+we have no alpha anymore
+\marginnote{Formulation ${\mathbb{M}}_\text{1}$ permits to optimize modular structures with fixed module layout. It is stated in terms of modular cross-sectional areas $\bar{\vect{a}}$, member forces $\vect{q}$ and nodal displacements $\vect{U}$ as follows:
+\begin{equation*}
+    \begin{aligned}
+    \min_{\bar{\vect{a}}, \vect{q}, \vect{U}}   && V &= \vect{\ell}^{T}\vect{a}\\
+    \textrm{s.t.}  && \vect{a} &= \sum_{t=1}^{N_\text{T}} \vect{h}_t\otimes\bar{\vect{a}}_t \\ 
+    && \matr{B}\vect{q} &= \vect{f} && \\
+    && \vect{q} &= \frac{\vect{a}E}{\vect{\ell}}\vect{b}^T\vect{U} &&  \\
+    && \vect{q} &\geq -\frac{s\vect{a}^2}{\vect{\ell}^{*2}} &&  \\
+    && -\sigma_c\vect{a} &\leq \vect{q} \leq \sigma_t\vect{a} &&  \\
+    && \bar{\vect{a}}_{t,r}&\geq \bar{a}_{t,r=1}\\
+    && 0 &\leq \bar{\vect{a}} \leq \frac{4 \pi \bar{\vect{\ell}}^2}{\lambda_{\text{max}}}, \\
+    \end{aligned}
+\end{equation*}
+}
 \subsection{Optimization initialization: a clustering algorithm to identify similarly behaving subdomains}
-we are not only changing the weights but also the modules topology. Tihis is more difficoult. the layout is dependent on the module topology and vice versa. so we give a slighltly influenced departure point x0. In this work we decided to infuence the weight distribuition as follows:
+we are not only changing the weights but also the modules topology.  the layout is dependent on the module topology and vice versa. so we give a slighltly influenced departure point x0. In this work we decided to infuence the weight distribuition as follows:
 \begin{equation}
     \alpha_{t,\text{it}=0}^j=
     \begin{cases}
