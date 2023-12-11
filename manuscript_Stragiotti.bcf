@@ -2404,10 +2404,24 @@
     <bcf:citekey order="22" intorder="1">hvejsel_material_2011</bcf:citekey>
     <bcf:citekey order="23" intorder="1">hvejsel_material_2011</bcf:citekey>
     <bcf:citekey order="24" intorder="1">hvejsel_material_2011</bcf:citekey>
+    <bcf:citekey order="25" intorder="1">bendsoe_material_1999</bcf:citekey>
+    <bcf:citekey order="25" intorder="2">sigmund_non-optimality_2016</bcf:citekey>
+    <bcf:citekey order="26" intorder="1">bendsoe_material_1999</bcf:citekey>
+    <bcf:citekey order="26" intorder="2">sigmund_non-optimality_2016</bcf:citekey>
+    <bcf:citekey order="27" intorder="1">bendsoe_material_1999</bcf:citekey>
+    <bcf:citekey order="28" intorder="1">bendsoe_material_1999</bcf:citekey>
+    <bcf:citekey order="29" intorder="1">bendsoe_material_1999</bcf:citekey>
+    <bcf:citekey order="30" intorder="1">bendsoe_material_1999</bcf:citekey>
+    <bcf:citekey order="31" intorder="1">sigmund_non-optimality_2016</bcf:citekey>
+    <bcf:citekey order="32" intorder="1">sigmund_non-optimality_2016</bcf:citekey>
+    <bcf:citekey order="33" intorder="1">sigmund_non-optimality_2016</bcf:citekey>
+    <bcf:citekey order="34" intorder="1">sigmund_non-optimality_2016</bcf:citekey>
     <bcf:citekeycount count="3">sigmund_usefulness_2011</bcf:citekeycount>
     <bcf:citekeycount count="3">stegmann_discrete_2005</bcf:citekeycount>
     <bcf:citekeycount count="3">stolpe_alternative_2001</bcf:citekeycount>
     <bcf:citekeycount count="3">hvejsel_material_2011</bcf:citekeycount>
+    <bcf:citekeycount count="3">bendsoe_material_1999</bcf:citekeycount>
+    <bcf:citekeycount count="3">sigmund_non-optimality_2016</bcf:citekeycount>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

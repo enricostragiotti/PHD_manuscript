@@ -76,7 +76,7 @@ The design variable alpha are constrained by a set of constraint that constraint
     \sum_{t=1}^{N_T} \alpha_t^j \leq 1, \; \forall j 
 \end{equation}
 
-Problem \eqrefnotext{eq:06_optim_complete} is solved using a modified version of the proposed two step solving algorithm, in wich we solve a relaxed problem without compatibility constraints kinematic compatibility constraints are omitted. We call this relaxed Problem $\mathbb{M}_2$. this time, as the problem is nonlinear due to the alpha design variables, we solve it without linearizing the buckling constraints.  here is the formulation of the first subproblem:
+Problem \eqrefnotext{eq:06_optim_complete} is solved using a modified version of the proposed two step solving algorithm, in wich we solve a relaxed problem without compatibility constraints kinematic compatibility constraints are omitted. We call this relaxed Problem $\mathbb{M}_2$. this time, as the problem is nonlinear due to the alpha design variables, we solve it without linearizing the buckling constraints.  here is the formulation of the first subproblem, formulated in terms of modules' cross-sectional area $\bar{\vect{a}}$, module selection variables $\vect{\alpha}$, member forces $\vect{q}$:
 
 \begin{equation}
     \begin{aligned}
@@ -91,7 +91,17 @@ Problem \eqrefnotext{eq:06_optim_complete} is solved using a modified version of
     \label{eq:06_optim_relax}
 \end{equation}
 
-We fix the module layout on the structure and we evaluate the corresponding mapping matrix H. Then the compatibility constraints are added again
+Problem m2 is solved using a gradient based optimizer that exploits iteratively the firs and second order derivative to attain convergence. The evaluation of the jacobian and the hessian matrix for this problem is detailed in \appref{app:01}
+
+Once the problem m2 is solved, We fix the module layout on the structure $\alpha$ and we evaluate the corresponding indexes of the mapping matrix H as follows:
+\begin{equation}
+    h_{j,t} =
+    \begin{cases}
+      1 & \text{if $\alpha_{j,t} = \max(\vect{\alpha}_{j})$} \\
+      0 & \text{otherwise.} 
+    \end{cases}
+\end{equation}
+Then the compatibility constraints are added again, a FEA is solved to evaluate initial displacements
 we solve it fixing the submodules topology and using the VL formulation already used in \dots
 we have no alpha anymore
 \marginnote{Formulation ${\mathbb{M}}_\text{1}$ permits to optimize modular structures with fixed module layout. It is stated in terms of modular cross-sectional areas $\bar{\vect{a}}$, member forces $\vect{q}$ and nodal displacements $\vect{U}$ as follows:
@@ -109,7 +119,7 @@ we have no alpha anymore
 \end{equation*}
 }
 \subsection{Optimization initialization: a clustering algorithm to identify similarly behaving subdomains}
-we are not only changing the weights but also the modules topology.  the layout is dependent on the module topology and vice versa. so we give a slighltly influenced departure point x0. In this work we decided to infuence the weight distribuition as follows:
+we are not only changing the weights but also the modules topology.  the layout is dependent on the module topology and vice versa. It is then really difficoult for a gradient based optimizer chose where to go so we give a slighltly influenced departure point x0. In this work we decided to infuence the weight distribuition as follows:
 \begin{equation}
     \alpha_{t,\text{it}=0}^j=
     \begin{cases}
@@ -122,27 +132,39 @@ we are not only changing the weights but also the modules topology.  the layout 
     \centering
     \includegraphics{figures/06_DMO/00_stress_clustering/stress_clustering.pdf}
     \caption{}
-    \label{fig:06}
+    \label{fig:06_kmeans}
 \end{figure*}
 
 \begin{figure*}
     \centering
     \includegraphics{figures/06_DMO/00_x0/x0.pdf}
     \caption{}
-    \label{fig:06}
+    \label{fig:06_x0}
 \end{figure*}
 
-the initial layout of modules is assessed using a k meeans clustering technique with nt clusters. Given a set of observations (x1, x2, ..., xn), where each observation is a d-dimensional real vector, k-means clustering aims to partition the n observations into n sets. we define the observation as the vector containing the stress of the bars of unoptimized initial ground structure plus the stress state S For the j-th submodule we define the 
-
+the initial layout of modules is assessed using a k meeans clustering technique with nt clusters. Given a set of observations (x1, x2, ..., xn), where each observation is a d-dimensional real vector, k-means clustering aims to partition the n observations into n sets. we define the observation as the vector containing the FEA calculated stress distribuition on the uniform initial ground structure. Additionally we add the stress state S For the j-th submodule we define the 
 \begin{equation}
     S^j=\sum_{i=0}^{\bar{n}}|\sigma^j_i|
 \end{equation}
-This add permits to promote the clustering of not only submodules loaded in similar ways, but also on similar magnitude (and have so more voluminous and less voluminous modules).
+This add permits to promote the clustering of not only submodules loaded in similar ways, but also on similar magnitude (and have so more voluminous and less voluminous modules). the full process is depicted in \figref{fig:06_kmeans}, where we see how differently the clustering is conducted starting from the same starting point (the FEA calculated stress distribuition on the uniform initial ground structure) but with different number of clusters (2,3,and 5). \figref{fig:06_x0} finally shows the initial starting point of the optimization, with uniform initialization of $\bar{a}$ and the biased weight distribution based on the k means clustering.
 
-\section{Numerical application}
-IPOPT for the two steps
+\section{Numerical application}\label{sec:06_num_app}
+All of the examples presented in this section are solved using the proposed two step formulation, where in the first step we solve a relaxed formulation (no compatibility constraints) to find the optimized modules layout and topology. later, the layout of the modules is fixed, and we solve the optimization problem again to force the structure to comply with the compatibility constraints. The formulations are solved using the non liner interior point solver IPOPT for the two optimization steps 
 
-continuation scheme only on p (we use an interior point algo, we want to stay in the fesable region)
+A continuation scheme is set up on the penalization parameter $q$ of the RAMp interpolation scheme used to evaluate the subdomain volume, where the parameter is set up at zero, and then it increase to -0.4 and -0.8 every time the (and the optimizer is not in a restoration phase). The continaution scgheme is implemented only on $q$ as IPOPT is an interior point algorithm, and increasing the $p$ parameter would put the optimizer well outside of the fesable region everi time the parameter every time it is increased, creating a less than ideal situation
+
+The stopping criterion used for the \gls{nlp} optimizations is $\norm{\Delta_{\text{NLP}}}_\infty \leq \text{tol}_{nlp}$, with and $\text{tol}_{nlp}=10^{-8}$. $\Delta_{\text{NLP}}$ represents the scaled \gls{nlp} error, a more comprehensive value used by IPOPT to take into account the optimality of the solution and the constraints violation. The objective function is always scaled so that the initial volume is 1000, the areas are in the interval $[0,100]$, the initial forces in $[0,100]$, and the displacement in $[0,100]$ for the \gls{nlp}. Several additional parameters are used in the \gls{nlp} step for cyipopt and IPOPT:
+\begin{itemize}
+    \item \texttt{mu\_strategy} is set to \texttt{adaptive} 
+    \item \texttt{jac\_c\_constant} is set to \texttt{yes} 
+    \item \texttt{num\_linear\_variables} is set to \texttt{N}, with $N$ equal to the number of bars as the force is linear in this problem
+    \item \texttt{grad\_f\_constant} is set to \texttt{yes} 
+    \item \texttt{linear\_solver} is set to \texttt{pardiso}
+    \item \texttt{bound\_push} is set to \texttt{1e-12}
+    \item \texttt{constr\_viol\_tol} is set to \texttt{1e-6}
+    \item \texttt{nlp\_scaling\_method} is set to \texttt{user-scaling}.
+\end{itemize}
+
 \subsection{Layout optimization of fixed modules}
 \begin{marginfigure}
     \centering
@@ -150,6 +172,10 @@ continuation scheme only on p (we use an interior point algo, we want to stay in
     \caption{Boundary conditions of the 2D cantilever beam divided in 24x12 subdomains. In the upper part of the image the ground structure of the module composed of $\bar{n}=6$ elements.}
     \label{fig:06_cant_BC_GS}
 \end{marginfigure}
+The proposed formulation is very versatile and permits to solve very different optimization problem. We start now by optimizing the most simple we can for modular structures.we want to optimize the distribution of a fixed topology cell inside a given domain, and the optimizer should only chose between having the subdomain poupulated or not. We take a single module topology that is held fixed during the optimization, so nt=1 and $\bar{a}_i=0.6,\,\forall i$. The only degree of fredoom given to the optimizer is the value of the weight w controlled by the design variable $\alpha$.
+
+The structure that is optimized is a two dimensional cantilever beam of dimension $200x100$ with a center load of magnitude $P=1$. The optimization domain is partitioned into $24x12$ submodules on the x and y axis, respectively. Every subdomain is poupulated with a simple fully connected $2x2$ nodes ground structure as shown in \figref{fig:06_cant_BC_GS} The units of the test case are normalized and a list of the geometry and material parameters is given in \tabref{tab:06_modular_cant_data}. Additionally, in these examples buckling and compatibility constraints are relaxed for simplicity and to preserve the solution simmetry.
+
 \begin{margintable}
     \small
     \centering
@@ -165,26 +191,53 @@ continuation scheme only on p (we use an interior point algo, we want to stay in
     \caption{Material data used for the 2D cantilever beam 2D.}
     \label{tab:06_modular_cant_data}
 \end{margintable}
+
+Before showing and commenting the optimization results, we presents two extreme cases that allow us to better understund and put into perspective the optimization results. first, we set up a monolithic optimization with no modular constraints and setting a maximum cross sectional area $a_\text{max}=0.6$. The optimization is performed on the same ground structure shown in \figref{fig:06_cant_BC_GS}. This results shold represent the lower bound of the optimization, representing the minimum value at wich modular optimization should tend, the closest to this value, the better. The resulting topology shows a volume $V=832.848$ and a thopology that ressembles the one that are obtained in classic topology optimization. Secondly, a we present a fully modular structure, in which all the subdomains presrnt the topology of the fixed topology module with all bars set to 0.6. In that case the structure shows a volume $V=9832.935$ and it represent the upper bound for the optimization. The topology of the fully modular structure is shown in \figref{fig:06_cant_BC_cell}.
+
+\begin{marginfigure}
+    \centering
+    \includegraphics[width=\linewidth]{figures/06_DMO/00_cantilever_extremes/mono.pdf}
+    \caption{$V=832.848$}
+    \label{fig:06_cant_mono}
+\end{marginfigure}
+
+
+\begin{marginfigure}
+    \centering
+    \includegraphics[width=\linewidth]{figures/06_DMO/00_cantilever_extremes/cell.pdf}
+    \caption{$V=9832.935$}
+    \label{fig:06_cant_BC_cell}
+\end{marginfigure}
+
+Now that we have set up the reference for better understand the optimization results, we perform the optimizations of the layout of the fixed topology module. Just for the first example we decided not to penalize intermediate weights, so $p=q=0$ and then $w=\alpha$. The optimized structure topology is shown in \figref{fig:06_fixed_module}a and \figref{fig:06_fixed_module}b, in wich we show also the weight distribution of the solution. Ath this stade, the optimized structure shows a volume $V = 1567.216$, a value that is not that far from the monolitic reference. however, this solution is non physical as many subdomains present intermediate dweights and we need to threshold the result. The thresolding value is set to 0.01, so any subdomains that have a weight w less than this value is considered empty. The result of the thresolding is presented in \figref{fig:06_fixed_module}d, in which we see that all weights are now set to 1. The resulting structure has a volume $V = 8808.671$, a very noticable increase due to the high number of intermediate weights shown by the solution of \figref{fig:06_fixed_module}b.
+
+\todo{add frase on ramp curve}
+
 \begin{figure*}
     \subcaptionbox{}{\includegraphics{figures/06_DMO/00_fixed_cells/top_00.pdf}}
     \hfill
-    \subcaptionbox{}{\includegraphics{figures/06_DMO/00_fixed_cells/weight_00.pdf}}
+    \subcaptionbox{$V = 1567.216$}{\includegraphics{figures/06_DMO/00_fixed_cells/weight_00.pdf}}
     \hfill
     \subcaptionbox{}{\includegraphics[height=3.5cm] {figures/06_DMO/00_fixed_cells/ramp_00.pdf}}
     \hfill
-    \subcaptionbox{}{\includegraphics{figures/06_DMO/00_fixed_cells/weight_00_PP.pdf}}
+    \subcaptionbox{$V = 8808.671$}{\includegraphics{figures/06_DMO/00_fixed_cells/weight_00_PP.pdf}}
     \bigskip
     \subcaptionbox{}{\includegraphics{figures/06_DMO/00_fixed_cells/top.pdf}}
     \hfill
-    \subcaptionbox{}{\includegraphics{figures/06_DMO/00_fixed_cells/weight.pdf}}
+    \subcaptionbox{$V = 1961.175$}{\includegraphics{figures/06_DMO/00_fixed_cells/weight.pdf}}
     \hfill
     \subcaptionbox{}{\includegraphics[height=3.5cm]{figures/06_DMO/00_fixed_cells/ramp.pdf}}
     \hfill
-    \subcaptionbox{}{\includegraphics{figures/06_DMO/00_fixed_cells/weight_PP.pdf}}
+    \subcaptionbox{$V = 3414.214$}{\includegraphics{figures/06_DMO/00_fixed_cells/weight_PP.pdf}}
     \caption{}
-    \label{fig:06}
+    \label{fig:06_fixed_module}
 \end{figure*}
 
+To solve this problem, we set up a multi-phase RAMP interpolation where we simultaneously penalize mechanical properties (using the parameter $p$) and we artificailly icrease the volume (using the parameter $q$) of modules with intermediate weights. In this optimization we set $p=8$ and $q_\text{min}=-0.8$, and a continuation scheme is used on the $q$ parameter to gradually decresase it to the minimum value as already explained in \secref{sec:06_num_app}. The optimized structure topology with penaliized intermediate weights is shown in \figref{fig:06_fixed_module}e and \figref{fig:06_fixed_module}f and it has a volume $V = 1961.175$, a \qty{25}{\percent} volume increase with respect to the unpenalized structure. however we can clearly see how this solution present way less subdomains with intermediate weight and this is very reflected after the thresolding phase, in wich the volume is now $V=$, more thatn \qty{60}{\percent} less than the unpenalized structure. the difference between the structure of fig and fig could also be less , as in this case we see that the subdomains creates beams tat are made by only an elements and it is enough to transfer the loads. a finer subdivision of the initial structure could then beneficial.
+
+Similarities with classic topology optimization. \sidecite{bendsoe_material_1999,sigmund_non-optimality_2016}
+
+An additional test we performed was to . Int hese two test cases no perturbation is done on the initial starting point and alpha at iteration 0 is set to $\alpha = 0.5,\,\forall j,t $
 \begin{figure}
     \subcaptionbox{}{\includegraphics[width=0.45\linewidth]{figures/06_DMO/00_fixed_cells_multiple/fig1-Topology_area.pdf}}
     \hfill
@@ -223,6 +276,13 @@ continuation scheme only on p (we use an interior point algo, we want to stay in
     \caption{}
     \label{fig:06}
 \end{figure*}
+
+\begin{marginfigure}
+    \centering
+    \includegraphics[width=\linewidth]{figures/06_DMO/00_optimized_modules/VL/nt=5VL.pdf}
+    \caption{}
+    \label{fig:06}
+\end{marginfigure}
 
 \subsection{A benchmark case study: a simply supported modular bridge}
 

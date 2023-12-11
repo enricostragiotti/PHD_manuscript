@@ -223,6 +223,95 @@
       \endverb
       \keyw{Topology optimization,Composite materials,Material interpolation,Multi-material parametrization}
     \endentry
+    \entry{bendsoe_material_1999}{article}{}
+      \name{author}{2}{}{%
+        {{hash=193e92bb57a8aeb7a8a809f2e4f7221f}{%
+           family={Bendsøe},
+           familyi={B\bibinitperiod},
+           given={M.\bibnamedelimi P.},
+           giveni={M\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=8e39f252b54fbee1f97675ee90b87f23}{%
+           family={Sigmund},
+           familyi={S\bibinitperiod},
+           given={O.},
+           giveni={O\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{63e48d356179b176429df024638ee206}
+      \strng{fullhash}{63e48d356179b176429df024638ee206}
+      \strng{bibnamehash}{63e48d356179b176429df024638ee206}
+      \strng{authorbibnamehash}{63e48d356179b176429df024638ee206}
+      \strng{authornamehash}{63e48d356179b176429df024638ee206}
+      \strng{authorfullhash}{63e48d356179b176429df024638ee206}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Archive of Applied Mechanics}
+      \field{month}{11}
+      \field{number}{9}
+      \field{title}{Material interpolation schemes in topology optimization}
+      \field{urlday}{22}
+      \field{urlmonth}{6}
+      \field{urlyear}{2021}
+      \field{volume}{69}
+      \field{year}{1999}
+      \field{urldateera}{ce}
+      \field{pages}{635\bibrangedash 654}
+      \range{pages}{20}
+      \verb{doi}
+      \verb 10.1007/s004190050248
+      \endverb
+    \endentry
+    \entry{sigmund_non-optimality_2016}{article}{}
+      \name{author}{3}{}{%
+        {{hash=d76f1c09e8d8d06e1b7c3c254efeae1a}{%
+           family={Sigmund},
+           familyi={S\bibinitperiod},
+           given={Ole},
+           giveni={O\bibinitperiod}}}%
+        {{hash=fa5a136030c946f96655797e3220c1bb}{%
+           family={Aage},
+           familyi={A\bibinitperiod},
+           given={Niels},
+           giveni={N\bibinitperiod}}}%
+        {{hash=bde89e664977164160a3e7e4a1a9ad34}{%
+           family={Andreassen},
+           familyi={A\bibinitperiod},
+           given={Erik},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{d9640e2615b8860628d64015691fc806}
+      \strng{fullhash}{d9640e2615b8860628d64015691fc806}
+      \strng{bibnamehash}{d9640e2615b8860628d64015691fc806}
+      \strng{authorbibnamehash}{d9640e2615b8860628d64015691fc806}
+      \strng{authornamehash}{d9640e2615b8860628d64015691fc806}
+      \strng{authorfullhash}{d9640e2615b8860628d64015691fc806}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Structural and Multidisciplinary Optimization}
+      \field{month}{8}
+      \field{number}{2}
+      \field{title}{On the (non-)optimality of {Michell} structures}
+      \field{urlday}{16}
+      \field{urlmonth}{6}
+      \field{urlyear}{2021}
+      \field{volume}{54}
+      \field{year}{2016}
+      \field{urldateera}{ce}
+      \field{pages}{361\bibrangedash 373}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1007/s00158-016-1420-7
+      \endverb
+    \endentry
   \enddatalist
 \endrefsection
 \endinput

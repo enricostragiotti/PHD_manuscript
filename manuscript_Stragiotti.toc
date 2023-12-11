@@ -12,16 +12,16 @@
 \contentsline {subsection}{\numberline {1.1.1}Definition of the subdomains cross-sectional areas}{1}{subsection.1.1.1}%
 \contentsline {subsection}{\numberline {1.1.2}Variables penalization schemes}{1}{subsection.1.1.2}%
 \contentsline {subsection}{\numberline {1.1.3}The optimization formulation and resolution algorithm}{2}{subsection.1.1.3}%
-\contentsline {subsection}{\numberline {1.1.4}Optimization initialization: a clustering algorithm to identify similarly behaving subdomains}{4}{subsection.1.1.4}%
+\contentsline {subsection}{\numberline {1.1.4}Optimization initialization: a clustering algorithm to identify similarly behaving subdomains}{5}{subsection.1.1.4}%
 \contentsline {section}{\numberline {1.2}Numerical application}{6}{section.1.2}%
 \contentsline {mtocsection}{\numberline {1.2}Numerical application}{6}{section.1.2}%
-\contentsline {subsection}{\numberline {1.2.1}Layout optimization of fixed modules}{6}{subsection.1.2.1}%
-\contentsline {subsection}{\numberline {1.2.2}Modules and layout optimization}{6}{subsection.1.2.2}%
-\contentsline {subsection}{\numberline {1.2.3}A benchmark case study: a simply supported modular bridge}{6}{subsection.1.2.3}%
-\contentsline {subsection}{\numberline {1.2.4}Simply supported 3D beam}{6}{subsection.1.2.4}%
-\contentsline {section}{\numberline {1.3}Conclusion}{12}{section.1.3}%
-\contentsline {mtocsection}{\numberline {1.3}Conclusion}{12}{section.1.3}%
-\contentsline {chapter}{\nonumberline Bibliography}{13}{chapter*.23}%
-\contentsline {part}{\nonumberline Appendix}{15}{part*.25}%
-\contentsline {chapter}{\numberline {A}Sensitivity analysis of the modular structure optimization algorithm}{17}{appendix.A}%
-\contentsline {subsubsection}{\nonumberline Sensitivity analysis}{17}{subsubsection*.27}%
+\contentsline {subsection}{\numberline {1.2.1}Layout optimization of fixed modules}{7}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Modules and layout optimization}{9}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.2.3}A benchmark case study: a simply supported modular bridge}{11}{subsection.1.2.3}%
+\contentsline {subsection}{\numberline {1.2.4}Simply supported 3D beam}{11}{subsection.1.2.4}%
+\contentsline {section}{\numberline {1.3}Conclusion}{15}{section.1.3}%
+\contentsline {mtocsection}{\numberline {1.3}Conclusion}{15}{section.1.3}%
+\contentsline {chapter}{\nonumberline Bibliography}{17}{chapter*.26}%
+\contentsline {part}{\nonumberline Appendix}{19}{part*.28}%
+\contentsline {chapter}{\numberline {A}Sensitivity analysis of the modular structure optimization algorithm}{21}{appendix.A}%
+\contentsline {subsubsection}{\nonumberline Sensitivity analysis}{21}{subsubsection*.30}%
