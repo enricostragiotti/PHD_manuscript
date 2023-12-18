@@ -1,20 +1,21 @@
 [0] Config.pm:307> INFO - This is Biber 2.19
 [0] Config.pm:310> INFO - Logfile is 'manuscript_Stragiotti.blg'
-[152] biber-MSWIN64:340> INFO - === 
-[208] Biber.pm:419> INFO - Reading 'manuscript_Stragiotti.bcf'
-[499] Biber.pm:979> INFO - Found 6 citekeys in bib section 0
-[537] Biber.pm:4419> INFO - Processing section 0
-[567] Biber.pm:4610> INFO - Looking for bibtex file 'biblio.bib' for section 0
-[715] bibtex.pm:1713> INFO - LaTeX decoding ...
-[1440] bibtex.pm:1519> INFO - Found BibTeX data source 'biblio.bib'
-[1543] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[1543] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[1543] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
-[1543] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
-[1554] bbl.pm:660> INFO - Writing 'manuscript_Stragiotti.bbl' with encoding 'UTF-8'
-[1558] bbl.pm:763> INFO - Output to manuscript_Stragiotti.bbl
-[1558] Biber.pm:131> WARN - Duplicate entry key: 'kalamkarov_asymptotic_2009' in file 'biblio.bib', skipping ...
-[1558] Biber.pm:131> WARN - Duplicate entry key: 'kirsch_optimal_1980' in file 'biblio.bib', skipping ...
-[1558] Biber.pm:131> WARN - Duplicate entry key: 'silva_smith_topology_1997' in file 'biblio.bib', skipping ...
-[1558] Biber.pm:131> WARN - Duplicate entry key: 'stolpe_alternative_2001' in file 'biblio.bib', skipping ...
-[1558] Biber.pm:133> INFO - WARNINGS: 4
+[192] biber-MSWIN64:340> INFO - === 
+[262] Biber.pm:419> INFO - Reading 'manuscript_Stragiotti.bcf'
+[580] Biber.pm:979> INFO - Found 11 citekeys in bib section 0
+[684] Biber.pm:4419> INFO - Processing section 0
+[766] Biber.pm:4610> INFO - Looking for bibtex file 'biblio.bib' for section 0
+[1098] bibtex.pm:1713> INFO - LaTeX decoding ...
+[2528] bibtex.pm:1519> INFO - Found BibTeX data source 'biblio.bib'
+[2661] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[2661] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[2661] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[2661] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[2675] bbl.pm:660> INFO - Writing 'manuscript_Stragiotti.bbl' with encoding 'UTF-8'
+[2684] bbl.pm:763> INFO - Output to manuscript_Stragiotti.bbl
+[2684] Biber.pm:131> WARN - Duplicate entry key: 'bakker_simultaneous_2021' in file 'biblio.bib', skipping ...
+[2684] Biber.pm:131> WARN - Duplicate entry key: 'kalamkarov_asymptotic_2009' in file 'biblio.bib', skipping ...
+[2684] Biber.pm:131> WARN - Duplicate entry key: 'kirsch_optimal_1980' in file 'biblio.bib', skipping ...
+[2684] Biber.pm:131> WARN - Duplicate entry key: 'silva_smith_topology_1997' in file 'biblio.bib', skipping ...
+[2684] Biber.pm:131> WARN - Duplicate entry key: 'stolpe_alternative_2001' in file 'biblio.bib', skipping ...
+[2684] Biber.pm:133> INFO - WARNINGS: 5

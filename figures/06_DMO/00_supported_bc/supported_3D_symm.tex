@@ -1,0 +1,169 @@
+\documentclass[10pt, varwidth=25cm]{standalone}
+
+\input{../../img_header}
+
+
+
+\begin{document}
+
+\begin{figure}
+    \centering
+    \begin{tikzpicture}[coords]
+        % DIMENSIONS
+        \def\x{7.5}
+        \def\y{2.5}
+        \def\z{7.5}
+        \def\zz{2.5}
+        \def\zzz{5}
+
+        % CELLS
+        \def\xcell{3}
+        \def\ycell{1}
+        \def\zcell{3}
+        
+        % POINTS
+        \dpoint{a}{0}{0}{0};
+        \dpoint{b}{0}{0}{\z};
+        \dpoint{c}{0}{\y}{\z};
+        \dpoint{d}{0}{\y}{0};
+        \dpoint{e}{\x}{0}{0};
+        \dpoint{f}{\x}{0}{\z};
+        \dpoint{g}{\x}{\y}{\z};
+        \dpoint{h}{\x}{\y}{0};
+        
+        \dpoint{i}{0}{0}{\zz};
+        \dpoint{j}{\x}{0}{\zz};
+        \dpoint{k}{\x}{\y}{\zz};
+        \dpoint{l}{0}{0}{\zzz};
+        \dpoint{m}{\x}{0}{\zzz};
+        \dpoint{n}{\x}{\y}{\zzz};
+
+        % % Draw the front face
+        \draw[thin, fill=axis_gray,  opacity=0.3] (h) -- (d) -- (c) -- (g) -- cycle;
+        
+        % % Draw the back face
+        \draw[thin, fill=axis_gray,  opacity=0.3] (e) -- (h) -- (g) -- (f) -- cycle;
+
+        % % Draw the front face
+        % \draw[thin, fill=accent_r_3,  opacity=0.3] (i) -- (j) -- (m) -- (l) -- cycle;
+        
+        % % Draw the back face
+        % \draw[thin, fill=accent_r_3,  opacity=0.3] (j) -- (k) -- (n) -- (m) -- cycle;
+
+        % % Draw the front face
+        % \draw[thin, fill=accent_r_4,  opacity=0.3] (l) -- (m) -- (f) -- (b) -- cycle;
+        % \draw[thin, fill=accent_r_4,  opacity=0.3] (m) -- (n) -- (g) -- (f) -- cycle;
+        % \draw[thin, fill=accent_r_4,  opacity=0.3] (b) -- (f) -- (g) -- (c) -- cycle;
+
+
+
+        % load points
+        % \dpoint{l1}{\x/4}{\y-0.3}{\z};
+        % \dpoint{l2}{\x/4}{0-0.3}{\z};
+        % \dpoint{l2-2}{\x/4}{0}{\z-0.4};
+        % \dpoint{l3}{\x/4}{0}{-0.4};
+
+        % \dpoint{l4}{\x/2}{\y-0.3}{\z};
+        % \dpoint{l5}{\x/2}{0-0.3}{\z};
+        % \dpoint{l5-2}{\x/2}{0}{\z-0.4};
+        % \dpoint{l6}{\x/2}{0}{-0.4};
+
+        % \dpoint{l7}{3*\x/4}{\y-0.3}{\z};
+        % \dpoint{l8}{3*\x/4}{0-0.3}{\z};
+        % \dpoint{l8-2}{3*\x/4}{0}{\z-0.4};
+        % \dpoint{l9}{3*\x/4}{0}{-0.4};
+
+        % xz plane
+        % \foreach \zz in{1,...,\zcell}
+        % {
+        %     \draw[thin, black] (0,0,\zz/\zcell*\z) -- (\x,0,\zz/\zcell*\z);
+        %     \draw[dashed, thin, black] (0,\y,\zz/\zcell*\z) -- (\x,\y,\zz/\zcell*\z);
+        % }
+        % \foreach \xx in{1,...,\xcell}
+        % {
+        %     \draw[thin, black] (\xx/\xcell*\x,0,0) -- (\xx/\xcell*\x,0,\z);
+        %     \draw[dashed, thin, black] (\xx/\xcell*\x,\y,0) -- (\xx/\xcell*\x,\y,\z);
+        % }
+        % % xy plane
+        % \foreach \yy in{1,...,\ycell}
+        % {
+        %     \draw[thin, black] (0,\yy/\ycell*\y,\z) -- (\x,\yy/\ycell*\y,\z);
+        %     \draw[dashed, thin, black] (0,\yy/\ycell*\y,0) -- (\x,\yy/\ycell*\y,0);
+        % }
+        % \foreach \xx in{1,...,\xcell}
+        % {
+        %     \draw[thin, black] (\xx/\xcell*\x,\y,\z) -- (\xx/\xcell*\x,0,\z);
+        %     \draw[dashed, thin, black] (\xx/\xcell*\x,\y,0) -- (\xx/\xcell*\x,0,0);
+        % }
+        % % yz plane
+        % \foreach \yy in{1,...,\ycell}
+        % {
+        %     \draw[thin, black] (\x,\yy/\ycell*\y,\z) -- (\x,\yy/\ycell*\y,0);
+        %     \draw[dashed, thin, black] (0,\yy/\ycell*\y,\z) -- (0,\yy/\ycell*\y,0);
+        % }
+        % \foreach \zz in{1,...,\zcell}
+        % {
+        %     \draw[thin, black] (\x,0,\zz/\zcell*\z) -- (\x,\y,\zz/\zcell*\z);
+        %     \draw[dashed, thin, black] (0,0,\zz/\zcell*\z) -- (0,\y,\zz/\zcell*\z);
+        % }
+        % \foreach \xa [count=\xi] in {0,2.5,5,7.5}
+        %     \foreach \ya [count=\yi] in {0,2.5}  
+        %         \foreach \za [count=\zi] in {0,2.5,5,7.5}
+        %             \foreach \xx [count=\xxi] in {0,2.5,5,7.5}
+        %                 \foreach \yy [count=\yyi] in {0,2.5}  
+        %                     \foreach \zz [count=\zzi] in {0,2.5,5,7.5}  
+        %                         \draw[accent_b_3, thin] (\xa, \ya, \za) -- (\xx, \yy, \zz);
+
+
+        %     \draw[accent_b_3, thin] (0,0,0) -- (2,2,2);
+
+        % BEAMS
+        \dbeam{2}{a}{b}
+        \dbeam{2}{b}{c}
+        \dbeam{3}{c}{d}
+        \dbeam{3}{d}{a}
+        \dbeam{2}{a}{e}
+        \dbeam{2}{b}{f}
+        \dbeam{2}{c}{g}
+        \dbeam{3}{d}{h}
+        \dbeam{2}{e}{f}
+        \dbeam{2}{f}{g}
+        \dbeam{2}{g}{h}
+        \dbeam{2}{h}{e}
+
+        % MESH
+        %\draw[help lines, step =.3] ( 0 , 0) grid (\x, \y);
+        %\draw[help lines, xstep =1*\scalingValueCell, ystep = 0.2*\scalingValueCell, yslant=-0.21] (b) grid (e);
+
+        
+        % % QUOTES
+        \ddimensioning{xy}{a}{e}{-1.5}[\huge $75 mm$ ];
+        \ddimensioning{zx}{a}{b}{-.7}[\huge $75 mm$ ];
+        \ddimensioning{yx}{e}{h}{7.5 + 2.5}[\huge $25 mm$ ];
+
+        % BC
+        \support{1}{a};
+        % \support{1}{d};
+        % \support{1}{e};
+        % \support{1}{h};
+        \hinge{1}{a}
+        % \hinge{1}{d}
+        % \hinge{1}{e}
+        % \hinge{1}{h}
+
+
+        % LOADS  
+        \foreach \xx in{1,...,3}
+        {
+            \draw[forces, accent_r_1, ultra thick] (\xx*2.5,2.5,0) -- (\xx*2.5,2.5,0-1.2);
+        }
+
+        % \node at (8.5,0,1.25+2.5+0.5) {\large symm.};
+
+
+        \dscaling{3}{1.5};
+        \setaxis{3}[\huge$x$][\huge$y$][\huge$z$][$a$][$b$][$c$]
+        \daxis{1}{3.5,-5.5 ,0}[right][above][right];
+    \end{tikzpicture} 
+\end{figure}
+\end{document}

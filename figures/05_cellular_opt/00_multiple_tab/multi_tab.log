@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.8.29)  9 NOV 2023 18:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.8.29)  12 DEC 2023 17:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**d:/estragio/PhD/99_Github/PHD_manuscript/figures/05_cellular_opt/00_multiple_tab/multi_tab.tex
-(d:/estragio/PhD/99_Github/PHD_manuscript/figures/05_cellular_opt/00_multiple_tab/multi_tab.tex
+**d:/estragio/PhD/99_Github/PHD_manuscript/figures/06_DMO/00_multiple_modules_curves/multi_tab.tex
+(d:/estragio/PhD/99_Github/PHD_manuscript/figures/06_DMO/00_multiple_modules_curves/multi_tab.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-03-30> (C:\Program Files\MiKTeX\tex/latex/standalone\standalone.cls
 Document Class: standalone 2022/10/10 v1.3b Class to compile TeX sub-files standalone
@@ -602,13 +602,13 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 {D:/estragio/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] (multi_tab.aux) ) 
 Here is how much of TeX's memory you used:
- 32503 strings out of 476331
- 860823 string characters out of 5797589
+ 32572 strings out of 476331
+ 862830 string characters out of 5797589
  1865660 words of memory out of 5000000
- 52412 multiletter control sequences out of 15000+600000
+ 52481 multiletter control sequences out of 15000+600000
  516743 words of font info for 49 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 122i,12n,121p,828b,2462s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 122i,12n,121p,830b,2462s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb>
 Output written on multi_tab.pdf (1 page, 32544 bytes).
 PDF statistics:

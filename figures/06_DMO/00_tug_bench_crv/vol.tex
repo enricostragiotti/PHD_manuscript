@@ -1,0 +1,70 @@
+\documentclass[10pt, varwidth=20cm]{standalone}
+
+\input{../../img_header}
+
+\pgfdeclarelayer{background}
+\pgfsetlayers{background,main}
+
+\begin{document}
+
+\begin{tikzpicture}    
+  \begin{axis}[
+    curves,
+    width = 3cm,
+    height = 3cm,
+    % y axis line style={accent_b_1},
+    % every y tick label/.append style ={accent_b_1},
+    % every y tick/.append style={color=accent_b_1},
+    legend columns=-1,
+    legend style={
+                  at={(0.5,1.05)},
+                  anchor=south,
+                  column sep=0.15cm,
+              },
+    xlabel={$\bar{n}$},
+    xmin=0, xmax=10,
+    % xtick={0,4000,8000},
+    % xticklabels={0\%,10\%,20\%,30\%,40\%,50\%},
+    ylabel={$V/V_\text{max}$},
+    ymin=0, ymax=1.001,
+    % xmode=log,
+    % ytick={0,25,50,75},
+    ]
+
+  \addplot [scatter_plot_smooth, accent_b_1]
+    table[x=x,y expr=\thisrow{a}/\thisrow{b}] {%
+    x a b
+    1 1861 1861
+    2 1077 1861
+    3 910 1861
+    4 824 1861
+    5 752 1861
+    6 728 1861
+    7 688 1861
+    8 666 1861
+    9 648 1861
+    10 639 1861
+    };
+    \addlegendentry{no buck.}
+    \addplot [scatter_plot_smooth, accent_r_1]
+    table[x=x,y expr=\thisrow{a}/\thisrow{b}] {%
+    x a b
+    1 709 709
+    2 444 709
+    3 357 709
+    4 347 709
+    5 303 709
+    6 293 709
+    7 272 709
+    8 265 709
+    9 266 709
+    10 268 709
+    };
+    \addlegendentry{buck.}
+
+  
+\end{axis}
+
+\end{tikzpicture}
+
+\end{document}

@@ -1,23 +1,23 @@
 # Fdb version 4
-["biber manuscript_Stragiotti"] 1702315293 "manuscript_Stragiotti.bcf" "manuscript_Stragiotti.bbl" "manuscript_Stragiotti" 1702317818 0
-  "./biblio.bib" 1702223017 215446 df42cb579433d3ce084e6bed555908d0 ""
-  "manuscript_Stragiotti.bcf" 1702317816 111497 3dbc9cef6682fe45d10d9cddd0cf4597 "pdflatex"
+["biber manuscript_Stragiotti"] 1702651404 "manuscript_Stragiotti.bcf" "manuscript_Stragiotti.bbl" "manuscript_Stragiotti" 1702908621 0
+  "./biblio.bib" 1702647896 224640 10e109bf9fc33185074eff70515b554e ""
+  "manuscript_Stragiotti.bcf" 1702908620 114449 2259200c4f99e974babe4c0ede123cb0 "pdflatex"
   (generated)
   "manuscript_Stragiotti.bbl"
   "manuscript_Stragiotti.blg"
   (rewritten before read)
-["cusdep glo gls manuscript_Stragiotti"] 1702312140 "manuscript_Stragiotti.glo" "manuscript_Stragiotti.gls" "manuscript_Stragiotti" 1702317818 0
-  "manuscript_Stragiotti.glo" 1702317816 488 95ae691b6ae89d261c087b645924e911 "pdflatex"
+["cusdep glo gls manuscript_Stragiotti"] 1702651403 "manuscript_Stragiotti.glo" "manuscript_Stragiotti.gls" "manuscript_Stragiotti" 1702908621 0
+  "manuscript_Stragiotti.glo" 1702908620 1392 99a0118d5352d40ec544b4a19adbb191 "pdflatex"
   (generated)
   "manuscript_Stragiotti.gls"
   (rewritten before read)
-["makeindex manuscript_Stragiotti.idx"] 1702312140 "manuscript_Stragiotti.idx" "manuscript_Stragiotti.ind" "manuscript_Stragiotti" 1702317818 0
-  "manuscript_Stragiotti.idx" 1702317815 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+["makeindex manuscript_Stragiotti.idx"] 1702647858 "manuscript_Stragiotti.idx" "manuscript_Stragiotti.ind" "manuscript_Stragiotti" 1702908621 0
+  "manuscript_Stragiotti.idx" 1702908619 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   (generated)
   "manuscript_Stragiotti.ilg"
   "manuscript_Stragiotti.ind"
   (rewritten before read)
-["pdflatex"] 1702317800 "d:/estragio/PhD/99_Github/PHD_manuscript/manuscript_Stragiotti.tex" "manuscript_Stragiotti.pdf" "manuscript_Stragiotti" 1702317818 0
+["pdflatex"] 1702908605 "d:/estragio/PhD/99_Github/PHD_manuscript/manuscript_Stragiotti.tex" "manuscript_Stragiotti.pdf" "manuscript_Stragiotti" 1702908621 0
   "C:/Program Files/MiKTeX/fonts/enc/dvips/base/8r.enc" 1458473887 4993 80dc9bab7f31fb78a000ccfed0e27cab ""
   "C:/Program Files/MiKTeX/fonts/tfm/jknappen/ec/ecrm1095.tfm" 993058524 3172 eb6efaa83c6c52473a1c403f376eab0f ""
   "C:/Program Files/MiKTeX/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1233951854 916 f87d7c45f9c908e672703b83b72241a3 ""
@@ -32,6 +32,8 @@
   "C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb" 1247593067 36281 c355509802a035cadc5f15869451dcee ""
   "C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb" 1247593066 35469 dcf3a5f2fc1862f5952e3ee5eb1d98c4 ""
   "C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1247593067 35752 024fb6c41858982481f6968b5fc26508 ""
+  "C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb" 1247593066 32362 bc3f3eec7ab7d65fe700963d4017d32c ""
+  "C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb" 1247593067 31809 8670ca339bf94e56da1fc21c80635e2a ""
   "C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb" 1247593067 32734 69e00a6b65cedb993666e42eedb3d48f ""
   "C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1247593067 32762 7fee39e011c23b3589931effd97b9702 ""
   "C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1247593067 32726 39f0f9e62e84beb801509898a605dbd5 ""
@@ -515,14 +517,16 @@
   "D:/estragio/AppData/Roaming/MiKTeX/tex/latex/xpatch/xpatch.sty" 1585221260 8510 7803f78066c4f9d008405191a4b43073 ""
   "D:/estragio/AppData/Roaming/MiKTeX/tex/latex/xstring/xstring.sty" 1673962217 123 a302f2c651a95033260db60e51527ae8 ""
   "abbreviations.tex" 1699554013 3046 eaa64847c5554f4cdfe96250de92b2de ""
-  "chapters/6_DMO.aux" 1702317815 14962 019741c96def153ac5b0f69ae6c2ebeb "pdflatex"
-  "chapters/6_DMO.tex" 1702317781 27136 badc09d13de1386a2ade10c42a4d1c11 ""
-  "chapters/app/A_sens.aux" 1702317816 6315 6645a10f9e1ec32b9c70333122ce61b0 "pdflatex"
+  "chapters/6_DMO.aux" 1702908619 19021 0dada5eb212743c554f6e5db2e96b2ec "pdflatex"
+  "chapters/6_DMO.tex" 1702908585 48573 6a908a8a576c9de8d3d5d42f361e65de ""
+  "chapters/app/A_sens.aux" 1702908620 6315 43fde6c651bbed866e707ed8aa1c8030 "pdflatex"
   "chapters/app/A_sens.tex" 1702305528 5964 acd7a3ad6313e1dd9fd481c69b2000dc ""
   "d:/estragio/PhD/99_Github/PHD_manuscript/manuscript_Stragiotti.tex" 1702307339 9373 fcdeec1cdbcbd007ab739d04333135f8 ""
   "figures/01_intro/Logo-ISAE-SUPAERO.png" 1628085192 194003 676a6cb7d3296cbb2431a28bac670acf ""
   "figures/01_intro/ONERA_logo.svg.png" 1628085367 29625 6f38f88e405613b2fb60825e112e3260 ""
   "figures/01_intro/megep.png" 1628085305 45346 836b00e6045ba8e3c3c82d6c4ad0a159 ""
+  "figures/04_TTO_improvements/16_supported_3D_sol/04_Topology_NLP_iso-min.png" 1697965174 602194 833a85d3c59c9712ffd947f21d49ed8f ""
+  "figures/06_DMO/00_bailey_bridge/applsci-12-03788-g002.png" 1702464799 2339408 375bc78ed61e50387ff206d1c9f6051b ""
   "figures/06_DMO/00_cantilever_bcs/cant_mesh.pdf" 1701714127 20516 f4a6c6322b5c43f29d693742fcf8f3da ""
   "figures/06_DMO/00_cantilever_extremes/cell.pdf" 1702303125 793608 e80d27a92fbb71ef150cd01372145df9 ""
   "figures/06_DMO/00_cantilever_extremes/mono.pdf" 1702302921 406090 99e35f1feeff3e0dad32140da72bbdfa ""
@@ -536,8 +540,9 @@
   "figures/06_DMO/00_fixed_cells/weight_PP.pdf" 1701715689 18860 0acb7c7068f8528fe4570c9d73737daf ""
   "figures/06_DMO/00_fixed_cells_multiple/fig1-Topology_area.pdf" 1701769661 319633 6084b22d20532ae9a6f8eec12f0b70b2 ""
   "figures/06_DMO/00_fixed_cells_multiple/fig1-Topology_topol.pdf" 1701769702 192836 a275a772137c277a49b277feca22a8dc ""
-  "figures/06_DMO/00_fixed_cells_multiple/fig12-Module_withType_area.pdf" 1701769795 4097 36d1bb4fe8615ca64d4865a8e16606ca ""
-  "figures/06_DMO/00_fixed_cells_multiple/fig12-Module_withType_topol.pdf" 1701769851 3090 68a0e76c1473d9e86d930cabe384bdf2 ""
+  "figures/06_DMO/00_fixed_cells_multiple/mod_area.pdf" 1702400900 14440 5f64c8a576e19fa95c3f316800a5e995 ""
+  "figures/06_DMO/00_fixed_cells_multiple/mod_topol.pdf" 1702401116 11260 d879ac34ceaab2a4af25c4ce8d73cce5 ""
+  "figures/06_DMO/00_multiple_modules_curves/multi_tab.pdf" 1702475663 30746 8e1110b3fef1f798787260000693eecf ""
   "figures/06_DMO/00_optimized_module/fig1-Topology.pdf" 1701770162 436348 ec286d729e803e2c30ee08dd41f64111 ""
   "figures/06_DMO/00_optimized_module/fig8-Module_Topology_001.pdf" 1701770641 4942 f51697dcf197e8f4ef1ce46c8f957903 ""
   "figures/06_DMO/00_optimized_modules/VL/nt=5VL.pdf" 1702289593 8761 e98db54385e156664c06ece56dae230f ""
@@ -552,8 +557,12 @@
   "figures/06_DMO/00_print_topology/3_04_Topology_NLP_iso.png" 1701967556 97497 4a41683b6efd91c90fb6ae9153c5850a ""
   "figures/06_DMO/00_ramp/ramp.pdf" 1702292611 74458 c1b46541518cf4ed8d98d50f6b11eec4 ""
   "figures/06_DMO/00_stress_clustering/stress_clustering.pdf" 1701164648 65072 4e2aa5f673fa69bb0aeb28261eda9795 ""
+  "figures/06_DMO/00_supported_bc/supported_3D_symm.pdf" 1699457520 22413 12c199444313f1553415a326e69ec062 ""
   "figures/06_DMO/00_tug_bench/bench.pdf" 1701883684 301483 491c21bddc89de24914e9a312bbdf8fc ""
+  "figures/06_DMO/00_tug_bench_bcs/bcs.pdf" 1702465245 21015 37728f0cb8eeafdf5360a2f274f5f6c3 ""
   "figures/06_DMO/00_tug_bench_buck/buck.pdf" 1701862808 53652 326d07b2237188a7d0b990b113ca9681 ""
+  "figures/06_DMO/00_tug_bench_crv/vol.pdf" 1702485278 49953 09a2e566dd32f9e96237429730b2d506 ""
+  "figures/06_DMO/00_tug_bench_crv2/vol.pdf" 1702489798 66384 a6968446fec6fe767b4df0a51db23323 ""
   "figures/06_DMO/00_tug_bench_size/size.pdf" 1701939935 90688 13b208df6a21c9f3732497ed63a9323f ""
   "figures/06_DMO/00_weight_dmo/weight_dmo.pdf" 1701098760 50449 fcdf98503ab0d340f838dfdcb3aea0aa ""
   "figures/06_DMO/00_x0/x0.pdf" 1701170280 76096 b27c6e687ce8557d2619a716cf72d5a7 ""
@@ -564,16 +573,16 @@
   "kaobook.cls" 1693306131 11196 257e43e963392f1cba8de846b9c392bd ""
   "kaorefs.sty" 1688394461 11391 1417147ee13fc4482c03393a95e76931 ""
   "kaotheorems.sty" 1688394461 12185 9540b1857c6b9e97b449194962ccc5fa ""
-  "manuscript_Stragiotti.aux" 1702317816 13670 bc415ece79d129aa4ef83c0961c83f67 "pdflatex"
-  "manuscript_Stragiotti.bbl" 1702315297 13939 4050552fac1138a0036380999702af3b "biber manuscript_Stragiotti"
-  "manuscript_Stragiotti.gls" 1702312141 594 2ee90b63974fd8f83b4a7989a0387893 "cusdep glo gls manuscript_Stragiotti"
-  "manuscript_Stragiotti.ind" 1702317815 0 d41d8cd98f00b204e9800998ecf8427e "makeindex manuscript_Stragiotti.idx"
-  "manuscript_Stragiotti.lof" 1702317816 1837 bf14fa778903815db8342504253862d5 "pdflatex"
-  "manuscript_Stragiotti.lot" 1702317816 513 f6e7828a22ccb676595a284a20508437 "pdflatex"
-  "manuscript_Stragiotti.mw" 1702317816 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "manuscript_Stragiotti.run.xml" 1702317816 2425 6612915bdb96a96012c242bc16a5dcbe "pdflatex"
+  "manuscript_Stragiotti.aux" 1702908620 20313 e2bd22e0cf9735901a0f4544b17e250d "pdflatex"
+  "manuscript_Stragiotti.bbl" 1702651409 30397 cc1980587efc07d76dd91e867b36480c "biber manuscript_Stragiotti"
+  "manuscript_Stragiotti.gls" 1702651404 1077 547221552eb1dab1fb54637c87ddf55b "cusdep glo gls manuscript_Stragiotti"
+  "manuscript_Stragiotti.ind" 1702908619 0 d41d8cd98f00b204e9800998ecf8427e "makeindex manuscript_Stragiotti.idx"
+  "manuscript_Stragiotti.lof" 1702908620 2820 9d5142ab83c6f0dddf1292efc0cc0bae "pdflatex"
+  "manuscript_Stragiotti.lot" 1702908620 814 ad4cd2df08963c51350669706a5acb7d "pdflatex"
+  "manuscript_Stragiotti.mw" 1702908620 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "manuscript_Stragiotti.run.xml" 1702908620 2425 ad1365c2cb12176cf957fc8f0a23d8e5 "pdflatex"
   "manuscript_Stragiotti.tex" 1702307339 9373 fcdeec1cdbcbd007ab739d04333135f8 ""
-  "manuscript_Stragiotti.toc" 1702317816 2444 87c5de21c8459a2ffff896ca7cc34ca0 "pdflatex"
+  "manuscript_Stragiotti.toc" 1702908620 2445 7a6a512ebb1d8b56c05e3f4f1b3548e4 "pdflatex"
   (generated)
   "chapters/6_DMO.aux"
   "chapters/app/A_sens.aux"

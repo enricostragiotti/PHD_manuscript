@@ -1,6 +1,6 @@
 \setchapterpreamble[u]{\margintoc}
 \glsresetall % reset glossary
-\chapter{Optimizing modular structures}
+\chapter{Optimizing modular structures} \label{chap:05}
 Introduction TODO
 \todo{EVALUATE DENSITIES}
 
@@ -68,7 +68,7 @@ as the lower submodules (numbered from 0 to 3) exhibit the topology of module $t
     \end{cases}
 \end{equation}
 Lastly, we introduce some notation to denote specific bars within the modules and subdomains. We represent the cross-sectional area of the $i$-th bar of the $t$-th module as $\bar{\vect{a}}_{t,i}$, while the cross-sectional area of the $i$-th bar of the $j$-th subdomain as $\vect{a}^j_i$.
-\subsection{Topological buckling of modular structures}
+\subsection{Topological buckling of modular structures} \label{sec:05_topological}
 Addressing topological buckling in modular structures is a more complex task compared to monolithic structures. This complexity arises from the fact that we must not only consider bars within a single module's design space but also those connecting different modules. Since the nature of this problem heavily relies on how the modules are arranged within the structure, we have opted for a simplification. \marginnote{
 \eqref{eq:04_chain_len}:
 \begin{equation*}
@@ -88,7 +88,7 @@ Addressing topological buckling in modular structures is a more complex task com
 \end{equation}
 We have made this choice knowing that the high connectivity of modular structures tends to reduce the occurrence of nodal instability within the structure. Any potential nodal instability in compressive chains at the structure level is addressed in a subsequent post-processing phase.
 
-\subsection{Optimization formulation}
+\subsection{Optimization formulation} \label{sec:05_opt_formulation}
 The monolithic formulation \ref{eq:04_optim_complete} is updated using \eqsref{eq:05_VL} and \eqrefnotext{eq:05_side_cons_chain_modular} to obtain the modular optimization formulation \ref{eq:05_optim_complete_modular} that use the variable linking approach. Formulation~\ref{eq:05_optim_complete_modular} is stated in terms of modular cross-sectional areas $\bar{\vect{a}}$, member forces $\vect{q}$ and nodal displacements $\vect{U}$ as follows:
 \begin{equation}
     \begin{aligned}
@@ -101,14 +101,14 @@ The monolithic formulation \ref{eq:04_optim_complete} is updated using \eqsref{e
     && \bar{\vect{a}}_{t,r}&\geq \bar{a}_{t,r=1} && r \in \mathcal{C}_{l,r}(\bar{\vect{a}}_t),\, \forall t \\
     && 0 &\leq \bar{\vect{a}} \leq \frac{4 \pi \bar{\vect{\ell}}^2}{\lambda_{\text{max}}}, \\
     \end{aligned}
-    \tag{${\mathbb{M}}_\text{1}$}
+    \tag{${\mathbb{M}}_\text{1,VL}$}
     \label{eq:05_optim_complete_modular}
 \end{equation}
 where $\bar{\vect{\ell}}$ represents the vector of the lengths of the bars within the modules.
 
 The total number of design variables in the formulation is expressed as $N_\text{T}\bar{n} + N_{\text{sub}}\bar{n} + 2M$ or $N_\text{T}\bar{n} + N_{\text{sub}}\bar{n} + 3M$, depending on whether the test case is two or three-dimensional. The number of constraints is, however, equal to the monolithic optimization. This fact arises due to the localized nature of stress, buckling, and compatibility constraints, which are all referenced not only to individual modules but to the entire structure.
 
-The formulation is solved by reusing the proposed two-step optimization algorithm, incorporating the reinitialization heuristic to mitigate dependence on the optimization starting point, as detailed in \secref{sec:04_2step_opt}. We state here the formulation $\mathbb{M}_\text{2}$ with relaxed compatibility constraints that are solved as the first step of the optimization. 
+The formulation is solved by reusing the proposed two-step optimization algorithm, incorporating the reinitialization heuristic to mitigate dependence on the optimization starting point, as detailed in \secref{sec:04_2step_opt}. We state here the formulation $\mathbb{M}_\text{2,VL}$ with relaxed compatibility constraints that are solved as the first step of the optimization. 
 
 \begin{equation}
     \begin{aligned}
@@ -120,11 +120,11 @@ The formulation is solved by reusing the proposed two-step optimization algorith
     && \bar{\vect{a}}_{t,r}&\geq \bar{a}_{t,r=1} && r \in \mathcal{C}_{l,r}(\bar{\vect{a}}_t),\, \forall t \\
     && 0 &\leq \bar{\vect{a}} \leq \frac{4 \pi \bar{\vect{\ell}}^2}{\lambda_{\text{max}}}. \\
     \end{aligned}
-    \tag{${\mathbb{M}}_\text{2}$}
+    \tag{${\mathbb{M}}_\text{2,VL}$}
     \label{eq:05_optim_no_constr_modular}
 \end{equation}
 
-We can solve Formulation $\mathbb{M}_2$ by breaking it down into simpler linearized problems using a \gls{slp} algorithm. This is possible because the Kronecker product is a linear operator, and the buckling constraints can be linearized, as previously demonstrated in \secref{sec:04_2step_opt}.
+We can solve Formulation $\mathbb{M}_\text{2,VL}$ by breaking it down into simpler linearized problems using a \gls{slp} algorithm. This is possible because the Kronecker product is a linear operator, and the buckling constraints can be linearized, as previously demonstrated in \secref{sec:04_2step_opt}.
 
 \subsection{Sensitivity analysis}
 During each iteration of the optimization process, the current state of the structure is determined by the values assigned to the design variables. In structure optimization, the evolution of the structure's design is guided by assessing the sensitivities of both the objective function and constraints with respect to the design variables. In the specific context of modular structure optimization, the module (and not the structure divided into the subdomains) is identified as the design domain, and for that reason necessitating the derivation of corresponding modular sensitivities.

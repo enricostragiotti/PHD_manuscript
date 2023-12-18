@@ -36,8 +36,8 @@
       \strng{authorbibnamehash}{d76f1c09e8d8d06e1b7c3c254efeae1a}
       \strng{authornamehash}{d76f1c09e8d8d06e1b7c3c254efeae1a}
       \strng{authorfullhash}{d76f1c09e8d8d06e1b7c3c254efeae1a}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1615-147X, 1615-1488}
@@ -85,8 +85,8 @@
       \strng{authorbibnamehash}{4b7f41c1998f8ee163f45f26abc7dd21}
       \strng{authornamehash}{4b7f41c1998f8ee163f45f26abc7dd21}
       \strng{authorfullhash}{4b7f41c1998f8ee163f45f26abc7dd21}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{A novel method for doing material optimization of general composite laminate shell structures is presented and its capabilities are illustrated with three examples. The method is labelled Discrete Material Optimization (DMO) but uses gradient information combined with mathematical programming to solve a discrete optimization problem. The method can be used to solve the orientation problem of orthotropic materials and the material selection problem as well as problems involving both. The method relies on ideas from multiphase topology optimization to achieve a parametrization which is very general and reduces the risk of obtaining a local optimum solution for the tested conﬁgurations. The applicability of the DMO method is demonstrated for ﬁbre angle optimization of a cantilever beam and combined ﬁbre angle and material selection optimization of a four-point beam bending problem and a doubly curved laminated shell. Copyright ᭧ 2005 John Wiley \& Sons, Ltd.}
@@ -191,8 +191,8 @@
       \strng{authorbibnamehash}{8e8bcbb7626a5186af97aef29c966aac}
       \strng{authornamehash}{8e8bcbb7626a5186af97aef29c966aac}
       \strng{authorfullhash}{8e8bcbb7626a5186af97aef29c966aac}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{This paper presents two multi-material interpolation schemes as direct generalizations of the well-known SIMP and RAMP material interpolation schemes originally developed for isotropic mixtures of two isotropic material phases. The new interpolation schemes provide generally applicable interpolation schemes between an arbitrary number of pre-defined materials with given (anisotropic) properties. The method relies on a large number of sparse linear constraints to enforce the selection of at most one material in each design subdomain. Topology and multi-material optimization is formulated within a unified parametrization.}
@@ -223,6 +223,69 @@
       \endverb
       \keyw{Topology optimization,Composite materials,Material interpolation,Multi-material parametrization}
     \endentry
+    \entry{bakker_simultaneous_2021}{article}{}
+      \name{author}{4}{}{%
+        {{hash=9ed40ce9609fbecc530d3a1ae9a2122a}{%
+           family={Bakker},
+           familyi={B\bibinitperiod},
+           given={Coen},
+           giveni={C\bibinitperiod}}}%
+        {{hash=bb8be7b4ded9506bc5fbf1b332a8c693}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Lidan},
+           giveni={L\bibinitperiod}}}%
+        {{hash=a0a790c8a2103e63158b60b025824f37}{%
+           family={Higginson},
+           familyi={H\bibinitperiod},
+           given={Kristie},
+           giveni={K\bibinitperiod}}}%
+        {{hash=fced7f35e3ed00611970d9aa7179fda2}{%
+           family={Keulen},
+           familyi={K\bibinitperiod},
+           given={Fred\bibnamedelima van},
+           giveni={F\bibinitperiod\bibinitdelim v\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{c34848e186e0f4277d28885c63c6c0fd}
+      \strng{fullhash}{f35f484e012b0f812b1320eb42fbe04a}
+      \strng{bibnamehash}{f35f484e012b0f812b1320eb42fbe04a}
+      \strng{authorbibnamehash}{f35f484e012b0f812b1320eb42fbe04a}
+      \strng{authornamehash}{c34848e186e0f4277d28885c63c6c0fd}
+      \strng{authorfullhash}{f35f484e012b0f812b1320eb42fbe04a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Stiffened shells and plates are widely used in engineering. Their performance is highly influenced by the arrangement, or layout, of stiffeners on the base shell or plate and the geometric features, or topology, of these stiffeners. Moreover, modular design is beneficial, since it allows for increased quality control and mass production. In this work, a method is developed that simultaneously optimizes the topology of stiffeners and their layout on a base shell or plate. This is accomplished by introducing a fixed number of modular stiffeners, which are subject to density-based topology optimization and a mapping of these modules to a ground structure. To illustrate potential applications, several stiffened plates and shell examples are presented. All examples demonstrated that the proposed method is able to generate clear topologies for any number of modules and a distinct layout of the stiffeners on the base shell or plate.}
+      \field{issn}{1615-147X, 1615-1488}
+      \field{journaltitle}{Structural and Multidisciplinary Optimization}
+      \field{month}{11}
+      \field{number}{5}
+      \field{title}{Simultaneous optimization of topology and layout of modular stiffeners on shells and plates}
+      \field{urlday}{15}
+      \field{urlmonth}{3}
+      \field{urlyear}{2023}
+      \field{volume}{64}
+      \field{year}{2021}
+      \field{urldateera}{ce}
+      \field{pages}{3147\bibrangedash 3161}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1007/s00158-021-03081-0
+      \endverb
+      \verb{file}
+      \verb Bakker et al. - 2021 - Simultaneous optimization of topology and layout o.pdf:D\:\\estragio\\Zotero\\storage\\AHC7UEG9\\Bakker et al. - 2021 - Simultaneous optimization of topology and layout o.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://link.springer.com/10.1007/s00158-021-03081-0
+      \endverb
+      \verb{url}
+      \verb https://link.springer.com/10.1007/s00158-021-03081-0
+      \endverb
+    \endentry
     \entry{bendsoe_material_1999}{article}{}
       \name{author}{2}{}{%
         {{hash=193e92bb57a8aeb7a8a809f2e4f7221f}{%
@@ -245,8 +308,8 @@
       \strng{authorbibnamehash}{63e48d356179b176429df024638ee206}
       \strng{authornamehash}{63e48d356179b176429df024638ee206}
       \strng{authorfullhash}{63e48d356179b176429df024638ee206}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Archive of Applied Mechanics}
@@ -292,8 +355,8 @@
       \strng{authorbibnamehash}{d9640e2615b8860628d64015691fc806}
       \strng{authornamehash}{d9640e2615b8860628d64015691fc806}
       \strng{authorfullhash}{d9640e2615b8860628d64015691fc806}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Structural and Multidisciplinary Optimization}
@@ -310,6 +373,227 @@
       \range{pages}{13}
       \verb{doi}
       \verb 10.1007/s00158-016-1420-7
+      \endverb
+    \endentry
+    \entry{tugilimana_spatial_2017}{article}{}
+      \name{author}{4}{}{%
+        {{hash=1aa69159af81958758aafc93b4a2a4d0}{%
+           family={Tugilimana},
+           familyi={T\bibinitperiod},
+           given={Alexis},
+           giveni={A\bibinitperiod}}}%
+        {{hash=48da781e19224718578086f3f02cafad}{%
+           family={Thrall},
+           familyi={T\bibinitperiod},
+           given={Ashley\bibnamedelima P.},
+           giveni={A\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=a867726c6de8cbbc5b38459f1179c726}{%
+           family={Descamps},
+           familyi={D\bibinitperiod},
+           given={Benoît},
+           giveni={B\bibinitperiod}}}%
+        {{hash=c959890c39060ae8bbd6c5dce99754f7}{%
+           family={Coelho},
+           familyi={C\bibinitperiod},
+           given={Rajan\bibnamedelima Filomeno},
+           giveni={R\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{53e3c8df6a70262859a48df26c70d8e6}
+      \strng{fullhash}{2aac681fc39c1e827dcfa0eee03b3b7a}
+      \strng{bibnamehash}{2aac681fc39c1e827dcfa0eee03b3b7a}
+      \strng{authorbibnamehash}{2aac681fc39c1e827dcfa0eee03b3b7a}
+      \strng{authornamehash}{53e3c8df6a70262859a48df26c70d8e6}
+      \strng{authorfullhash}{2aac681fc39c1e827dcfa0eee03b3b7a}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Modularity in structural engineering offers significant cost advantages since identical components can be mass-produced in high quality-controlled facilities. While prior research has investigated the optimization of modular structures, this work is limited to the module topology periodicity, leading to solutions where some structure parts remain inefficiently used. This paper proposes a continuum-based formulation for optimizing simultaneously the module topology and spatial orientation in modular trusses. The numerical difficulties associated with the module rotations in the optimization formulation are identified, and properly handled by a novel topology-based rotation representation using group theory. A relaxation strategy based on complementary constraints enables the continuous integration of the module rotations in a lower-bound plastic design formulation (or fully stressed design). Case studies involving high density ground structures demonstrate that it is able in the worst case to retrieve the results obtained by imposing the module orientation a priori, and to improve the optimized design when freedom on the rotations is considered.}
+      \field{issn}{1615-1488}
+      \field{journaltitle}{Structural and Multidisciplinary Optimization}
+      \field{month}{2}
+      \field{number}{2}
+      \field{title}{Spatial orientation and topology optimization of modular trusses}
+      \field{urlday}{24}
+      \field{urlmonth}{3}
+      \field{urlyear}{2023}
+      \field{volume}{55}
+      \field{year}{2017}
+      \field{urldateera}{ce}
+      \field{pages}{459\bibrangedash 476}
+      \range{pages}{18}
+      \verb{doi}
+      \verb 10.1007/s00158-016-1501-7
+      \endverb
+      \verb{file}
+      \verb Full Text PDF:D\:\\estragio\\Zotero\\storage\\MV66JJ27\\Tugilimana et al. - 2017 - Spatial orientation and topology optimization of m.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s00158-016-1501-7
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s00158-016-1501-7
+      \endverb
+      \keyw{Plastic design,Group theory,Modular structures,Rotation optimization,Truss topology optimization}
+    \endentry
+    \entry{tugilimana_integrated_2019}{article}{}
+      \name{author}{3}{}{%
+        {{hash=1aa69159af81958758aafc93b4a2a4d0}{%
+           family={Tugilimana},
+           familyi={T\bibinitperiod},
+           given={Alexis},
+           giveni={A\bibinitperiod}}}%
+        {{hash=c959890c39060ae8bbd6c5dce99754f7}{%
+           family={Coelho},
+           familyi={C\bibinitperiod},
+           given={Rajan\bibnamedelima Filomeno},
+           giveni={R\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=48da781e19224718578086f3f02cafad}{%
+           family={Thrall},
+           familyi={T\bibinitperiod},
+           given={Ashley\bibnamedelima P.},
+           giveni={A\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{fe0b2709c1d7b46a4a4902cd39171770}
+      \strng{fullhash}{fe0b2709c1d7b46a4a4902cd39171770}
+      \strng{bibnamehash}{fe0b2709c1d7b46a4a4902cd39171770}
+      \strng{authorbibnamehash}{fe0b2709c1d7b46a4a4902cd39171770}
+      \strng{authornamehash}{fe0b2709c1d7b46a4a4902cd39171770}
+      \strng{authorfullhash}{fe0b2709c1d7b46a4a4902cd39171770}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Modularity, a design philosophy in which a structure is comprised of identical components called modules, offers economical advantages as the modules can be mass produced in high quality controlled facilities. Prior research investigated structural optimization as a means of improving modular design, focusing on optimizing separately (i) the module topology and the module spatial orientation or (ii) the dynamic grouping into families of different topologies. This research did not include stability despite its considerable importance during preliminary design. In this paper, a novel integrated strategy is proposed for the preliminary design of modular trusses, unifying module topology, spatial orientation, and grouping optimization, as well as stability considerations to define meaningful solutions for real-life case studies. This is addressed by formulating an appropriate mixed-variable minimum volume problem in elastic design, including multiple load cases with self-weight and stress limitations in tension and compression. Global stability is considered through a linear prebuckling constraint, and a local buckling constraint is formulated by considering Euler buckling with standard profiles obtained from commercial catalogues. The practical applicability of this contribution is demonstrated on a benchmark modular bridge and a three-dimensional modular vault structure. The importance of stability considerations is also investigated, where the redundancy introduced by modularity is shown to contribute to the global resistance of the entire structure.}
+      \field{issn}{1615-1488}
+      \field{journaltitle}{Structural and Multidisciplinary Optimization}
+      \field{month}{8}
+      \field{number}{2}
+      \field{title}{An integrated design methodology for modular trusses including dynamic grouping, module spatial orientation, and topology optimization}
+      \field{urlday}{24}
+      \field{urlmonth}{3}
+      \field{urlyear}{2023}
+      \field{volume}{60}
+      \field{year}{2019}
+      \field{urldateera}{ce}
+      \field{pages}{613\bibrangedash 638}
+      \range{pages}{26}
+      \verb{doi}
+      \verb 10.1007/s00158-019-02230-w
+      \endverb
+      \verb{file}
+      \verb Full Text PDF:D\:\\estragio\\Zotero\\storage\\SYLSHWPE\\Tugilimana et al. - 2019 - An integrated design methodology for modular truss.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s00158-019-02230-w
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s00158-019-02230-w
+      \endverb
+      \keyw{Truss topology optimization,Mixed-variable optimization problem,Modular trusses,Simulated annealing}
+    \endentry
+    \entry{prokop_load-carrying_2022}{article}{}
+      \name{author}{4}{}{%
+        {{hash=393a98fa550a26ea2b4c979a7880edaa}{%
+           family={Prokop},
+           familyi={P\bibinitperiod},
+           given={Jozef},
+           giveni={J\bibinitperiod}}}%
+        {{hash=28956ff38f8c4ec06499d91bd52589d7}{%
+           family={Odrobiňák},
+           familyi={O\bibinitperiod},
+           given={Jaroslav},
+           giveni={J\bibinitperiod}}}%
+        {{hash=c8bd205055d7be34ba6abaef72c53aa5}{%
+           family={Farbák},
+           familyi={F\bibinitperiod},
+           given={Matúš},
+           giveni={M\bibinitperiod}}}%
+        {{hash=8dc913d60c0c401bdd30c63d3440cd16}{%
+           family={Novotný},
+           familyi={N\bibinitperiod},
+           given={Vladimír},
+           giveni={V\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{e258ddd2003af260318df25c0e325479}
+      \strng{fullhash}{e02dcd88c76c31d87b3ca27fdc05a822}
+      \strng{bibnamehash}{e02dcd88c76c31d87b3ca27fdc05a822}
+      \strng{authorbibnamehash}{e02dcd88c76c31d87b3ca27fdc05a822}
+      \strng{authornamehash}{e258ddd2003af260318df25c0e325479}
+      \strng{authorfullhash}{e02dcd88c76c31d87b3ca27fdc05a822}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The paper presents an extensive study aimed to determine the applicability of the demountable Bailey bridge (BB) system on construction sites or in other temporary conditions while meeting the regulations for the design and assessment of steel bridges. The analysis is focused on whether and to what extent the BB system with spans between 12 and 36 m is usable for on-site freight transport with conventional lorries with a total weight of up to 22–28 tons. At the same time, the BB system within these spans should be utilized for construction vehicles with a total weight of up to 32–40 tons. To calculate the load-carrying capacity, spatial numerical models were analysed using FEM and procedures of actual design codes were utilized. In the case of the main girders, analysis is focused on the out-of-plane stability of their compressed chords. Recommendations for the use of this bridge system in different arrangements of the main girder and bridge deck are then summarized and discussed.}
+      \field{issn}{2076-3417}
+      \field{journaltitle}{Applied Sciences}
+      \field{month}{1}
+      \field{note}{Number: 8 Publisher: Multidisciplinary Digital Publishing Institute}
+      \field{number}{8}
+      \field{title}{Load-{Carrying} {Capacity} of {Bailey} {Bridge} in {Civil} {Applications}}
+      \field{urlday}{13}
+      \field{urlmonth}{12}
+      \field{urlyear}{2023}
+      \field{volume}{12}
+      \field{year}{2022}
+      \field{urldateera}{ce}
+      \field{pages}{3788}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/app12083788
+      \endverb
+      \verb{file}
+      \verb Full Text PDF:D\:\\estragio\\Zotero\\storage\\WRQZ2FNA\\Prokop et al. - 2022 - Load-Carrying Capacity of Bailey Bridge in Civil A.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.mdpi.com/2076-3417/12/8/3788
+      \endverb
+      \verb{url}
+      \verb https://www.mdpi.com/2076-3417/12/8/3788
+      \endverb
+      \keyw{Bailey bridge,load-carrying capacity,stability,steel bridge,temporary bridge}
+    \endentry
+    \entry{department_of_the_army_bailey_1986}{unpublished}{}
+      \name{author}{1}{}{%
+        {{hash=dbb3fba4ad28e4e23629e4149f8e6ca2}{%
+           family={{Department of the Army}},
+           familyi={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{dbb3fba4ad28e4e23629e4149f8e6ca2}
+      \strng{fullhash}{dbb3fba4ad28e4e23629e4149f8e6ca2}
+      \strng{bibnamehash}{dbb3fba4ad28e4e23629e4149f8e6ca2}
+      \strng{authorbibnamehash}{dbb3fba4ad28e4e23629e4149f8e6ca2}
+      \strng{authornamehash}{dbb3fba4ad28e4e23629e4149f8e6ca2}
+      \strng{authorfullhash}{dbb3fba4ad28e4e23629e4149f8e6ca2}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Department of the Army (1986) Bailey bridge. headquarters, Department of the Army, Washington DC. Field Manual No. 5–277}
+      \field{title}{{Field} {Manual} {No}. 5–277, Panel Bridge, Bailey Type, {Washington} {DC}.}
+      \field{urlday}{13}
+      \field{urlmonth}{12}
+      \field{urlyear}{2023}
+      \field{year}{1986}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb fm5-277(86).pdf:D\:\\estragio\\Zotero\\storage\\T5KHBXQC\\fm5-277(86).pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://www.bits.de/NRANEU/others/amd-us-archive/fm5-277%2886%29.pdf
+      \endverb
+      \verb{url}
+      \verb http://www.bits.de/NRANEU/others/amd-us-archive/fm5-277%2886%29.pdf
       \endverb
     \endentry
   \enddatalist
