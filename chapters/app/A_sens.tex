@@ -1,168 +1,213 @@
 \chapter{Sensitivity analysis of the modular structure optimization algorithm} \label{app:01}
-\subsubsection{Sensitivity analysis}
-\paragraph*{Common derivatives}
+\todo{punti e virgole equazioni}
+In this appendix, we demonstrate how the gradient, Jacobian, and Hessian matrices of the objective function and the optimization constraints are evaluated for the layout and topology optimization formulation $\mathbb{M}_2$ presented in Chapter~\ref{chap:06}. This step, called sensitivity analysis, is crucial for gradient descent optimization algorithms, as it allows for faster and more accurate convergence compared to using finite differences. \marginnote{More information on sensitivity analysis can be found in the book by Martins and Ning \cite{martins_engineering_2021}.} We remind the reader that the index $i$ is relative to the number of bars in a module $\bar{n}$, the index $j$ is relative to the number of subdomains $N_\text{sub}$ in which the structure is divided, and the index $t$ is relative to the number of different modules' topologies $N_\text{T}$. The indexes are summarized in \tabref{tab:appA_indexes} for added clarity.
 
+\begin{margintable}
+    \small
+    \centering
+    \begin{tabular}{ccx{1.4cm}}
+    \toprule
+    \textbf{Index}        & \textbf{Interval} & \textbf{Expl.} \\ \midrule
+    $i$ &$[0,\bar{n}[$& \# of bars in a module\\
+    $j$ &$[0,N_\text{sub}[$& \# of subdomains\\
+    $t$ &$[0,N_\text{T}[$& \# of modules' topologies\\
+    \bottomrule
+    \end{tabular}
+    \caption{Reminder of the indexes used for the sensitivity analysis of the layout and topology optimization of modular structures.}
+    \label{tab:appA_indexes}
+\end{margintable}
+
+\section{Optimization formulation, objective function and constraints}
+The relaxed formulation $\mathbb{M}_2$ for which we want to perform the sensitivity analysis is expressed in terms of modules' cross-sectional area $\bar{\vect{a}}$, module selection variables $\vect{\alpha}$, and member forces $\vect{q}$ as:
 \begin{equation}
-    \derfrac{\vect{a}^j}{\bar{\vect{a}}_t} = w_t^j
+    \begin{aligned}
+    \min_{\bar{\vect{a}}, \vect{\alpha}, \bm{q}}   && V &= \sum_{j=1}^{N_{\text{sub}}}\vect{\bar{\ell}}^T\tilde{\vect{a}}^j && \text{(Volume minimization)}\\
+    \text{s.t.}   && \bm{B}\bm{q} &= \bm{f} && (\vect{g}_\text{eq})\\
+                    && \bm{q} &\geq -\frac{\bm{s}\bm{a}^2}{\bm{\ell^2}} && (\vect{g}_\text{buck}) \\
+                    && -\sigma_C\bm{a} &\leq \bm{q} \leq \sigma_T\bm{a} && (\vect{g}_\text{st,t},\,\vect{g}_\text{st,c}) \\
+                    && 0 &\leq \bar{\vect{a}} \leq \frac{4 \pi \bar{\vect{\ell}}^2}{\lambda_{\text{max}}} && (\vect{g}_\text{slend}) \\
+                    && \sum_{t=1}^{N_\text{T}} \alpha_t^j &\leq 1, \; \forall j && (\vect{g}_\text{sum}), \\
+    \end{aligned}
+    \tag{$\mathbb{M}_2$}
 \end{equation}
-
-
+in which 
 \begin{equation}
-    \derfrac{\vect{a}^j}{\alpha_t^j} =  \derfrac{\vect{a}^j}{w_t^j} \derfrac{w_t^j}{\alpha_t^j}
+    V = \sum_{j=1}^{N_{\text{sub}}}\vect{\bar{\ell}}^T\tilde{\vect{a}}^j,
 \end{equation}
-
+represents the structural volume of the modular structure and acts as the objective function to minimize for the optimization. The vector $\tilde{\vect{a}}^j$, representing the increased cross-sectional areas of the $j$-th subdomain, is defined as follows:
 \begin{equation}
-    \derfrac{\vect{a}^j}{w_t^j} = \bar{\vect{a}}_t
+    \tilde{\vect{a}}^j = \sum_{t=1}^{N_\text{T}} \tilde{w}_t^j \bar{\vect{a}}_t, 
 \end{equation}
+and where $\tilde{w}$ is evaluated using the \gls{ramp} interpolation scheme with the $q$ parameter as follows:
+\begin{equation}
+    \tilde{w}_t^j = \frac{\alpha_t^j}{1+q(1-\alpha_t^j)}.    
+\end{equation}
+The cross-sectional areas vector $\vect{a}^j$ of subdomain $j$ used for the constraints evaluation is expressed as:  
+\begin{equation}
+    \vect{a}^j = \sum_{t=1}^{N_\text{T}} w_t^j \bar{\vect{a}}_t, 
+\end{equation}
+where $\bar{\vect{a}}_t $ represent the vector of cross-sectional areas of the $t$ module and $\vect{w}^j$ is the vector of weight relatives to the $j$ subdomain, defined as $ \vect{w}^j \in \mathbb{R}^t\,|\,w_j^t \in [0,1]$. Its relationship with the weight $w$ is as follows:
+\begin{equation}
+    w_t^j = \frac{\alpha_t^j}{1+p(1-\alpha_t^j)},    
+\end{equation}
+where $p \in \mathbb{R}^+$ denotes a parameter governing the steepness of the \gls{ramp} interpolation.
+
+\section{Common derivatives}
+We introduce here some important derivatives that we use all along the Chapter.
 
 \begin{equation}
-    \derfrac{w_t^j}{\alpha_t^j} = \frac{1+(\cdot)}{\left(1+(\cdot)(1-\alpha_t^j)\right)^2}
+    \derfrac{\vect{a}^j}{\bar{\vect{a}}_t} = w_t^j.
+    \label{eq:appA_02}
+\end{equation}
+\begin{equation}
+    \derfrac{\vect{a}^j}{\alpha_t^j} =  \derfrac{\vect{a}^j}{w_t^j} \derfrac{w_t^j}{\alpha_t^j},
+    \label{eq:appA_03}
+\end{equation}
+where
+\begin{equation}
+    \derfrac{\vect{a}^j}{w_t^j} = \bar{\vect{a}}_t,
+\end{equation}
+and
+\begin{equation}
+    \derfrac{w_t^j}{\alpha_t^j} = \frac{1+(\cdot)}{\left(1+(\cdot)(1-\alpha_t^j),\right)^2},
+    \label{eq:appA_01}
 \end{equation}
 where $(\cdot)$ is either equal to $p$ or $q$.
-
 \begin{equation}
-    \derfrac{^2w_t^j}{(\alpha_t^j)^2} = \frac{2(\cdot)\left(1+(\cdot)\right)}{\left(1+(\cdot)(1-\alpha_t^j)\right)^3}
+    \derfrac{^2w_t^j}{(\alpha_t^j)^2} = \frac{2(\cdot)\left(1+(\cdot)\right)}{\left(1+(\cdot)(1-\alpha_t^j)\right)^3}.
+    \label{eq:appA_04}
 \end{equation}
 
-\paragraph*{Volume Jacobian}
+\section{Gradient}
+The gradient of the objective function $V$ is non-zero only for the design variables $\bar{\vect{a}}$ and $\vect{\alpha}$. It is evalued for $\bar{\vect{a}}$ as following:
 \begin{equation}
-    \derfrac{V}{{\bar{\vect{a}}_t}} = \vect{\bar{\ell}}^T\sum_{j=1}^{N_{\text{sub}}} \tilde{w}_t^j  \text{, with } t \in [1,\dots,N_T]
+    \derfrac{V}{{\bar{\vect{a}}_t}} = \vect{\bar{\ell}}^T\sum_{j=1}^{N_{\text{sub}}} \tilde{w}_t^j  \text{, with } t \in [1,\dots,N_T].
+\end{equation}
+The gradient with respect to $\vect{\alpha}$ can be written as: 
+\begin{equation}
+    \derfrac{V}{\alpha_t^j}= \derfrac{V}{w_t^j} \derfrac{w_t^j}{\alpha_t^j},
+\end{equation}
+where
+\begin{equation}
+    \derfrac{V}{w_t^j} = \bar{\ell}^T \bar{\vect{a}}_t,
+\end{equation}
+and evalued using \eqref{eq:appA_01} and the parameter $q$.
+As already mentioned, the gradient is zero with respect to the member forces $\vect{q$}:
+\begin{equation}
+    \derfrac{V}{\vect{q}}=0.
 \end{equation}
 
+\section{Jacobian matrix}
+We focus now on the evaluation of the Jacobian matrix of the optimization constraints with respect to the design variables.
+\paragraph*{Equilibrium constraints}
+The equilibrium constraint $\vect{g}_\text{eq}$ is linear on $\vect{q}$ and not dependent on $\bar{\vect{a}}$ and $\vect{\alpha}$. For that reason we can write:
 \begin{equation}
-    \derfrac{V}{\alpha_t^j}= \derfrac{V}{w_t^j} \derfrac{w_t^j}{\alpha_t^j}
-\end{equation}
-
-\begin{equation}
-    \derfrac{V}{w_t^j} = \bar{\ell}^T \bar{\vect{a}}_t
-\end{equation}
-
-\begin{equation}
-    \derfrac{V}{\vect{q}}=0
+    \derfrac{\vect{g}_\text{eq}}{\bar{\vect{a}}}=0,
 \end{equation}
 \begin{equation}
-    \derfrac{V}{\vect{U}}=0
+    \derfrac{\vect{g}_\text{eq}}{\vect{\alpha}}=0,
+\end{equation}
+\begin{equation}
+    \derfrac{\vect{g}_\text{eq}}{\vect{q}}=\matr{B}.
+\end{equation}
+\paragraph*{Stress constraints}
+Knowing that:
+\begin{equation}
+    \derfrac{\vect{g}_\text{st,t}^j}{{\vect{a}^j}} = -\sigma_t,
+\end{equation}
+and
+\begin{equation}
+    \derfrac{\vect{g}_\text{st,c}^j}{{\vect{a}^j}} = \sigma_c,
+\end{equation}
+the Jacobian for the stress constraints $\vect{g}_\text{st,t}$ and $\vect{g}_\text{st,c}$ can be evalued using \eqref{eq:appA_02} and \eqref{eq:appA_03} as follows:
+\begin{equation}
+    \derfrac{\vect{g}_\text{st,*}^j}{\bar{\vect{a}}_t} = \derfrac{\vect{g}_\text{st,*}^j}{{\vect{a}^j}} \derfrac{\vect{a}^j}{\bar{\vect{a}}_t},
+\end{equation}
+and
+\begin{equation}
+    \derfrac{\vect{g}_\text{st,*}^j}{\alpha^j}=\derfrac{\vect{g}_\text{st,*}^j}{\vect{a}^j} \derfrac{\vect{a}^j}{\alpha^j},
+\end{equation} 
+where the asterisk $*$ refers to either the compression and the tension constraints. The stress constraints are linear with respect to $q$:
+\begin{equation}
+    \derfrac{\vect{g}_\text{st,*}}{\vect{q}}=\vect{1},
+\end{equation}
+in which $\vect{1}$ represent a vector of all ones.
+\paragraph*{Buckling constraints} Knowing that:
+\begin{equation}
+    \derfrac{\vect{g}_\text{buck}^j}{\vect{a}^j} =  2\frac{s\vect{a}^j}{\vect{\ell^2}},
+\end{equation}
+the Jacobian for the buckling constraints $\vect{g}_\text{buck}$ with respect to $\bar{\vect{a}}$ can be evalued using \eqref{eq:appA_02} as:
+\begin{equation}
+    \derfrac{\vect{g}_\text{buck}^j}{\bar{\vect{a}}_t} = \derfrac{\vect{g}_\text{buck}^j}{{\vect{a}^j}} \derfrac{\vect{a}^j}{\bar{\vect{a}}_t}.
+\end{equation}
+Using \eqref{eq:appA_03} we evaluate the derivative with respect to $\vect{\alpha}$ as:
+\begin{equation}
+    \derfrac{\vect{g}_\text{buck}^j}{\alpha^j}=\derfrac{\vect{g}_\text{buck}^j}{\vect{a}^j} \derfrac{\vect{a}^j}{\alpha^j}.
+\end{equation}
+\paragraph*{Maximum sum alpha constraints}
+The constraint $\vect{g}_\text{sum}$ on the maximal value of $\alpha$ in every subdomain is linear with respect to $\alpha$ and it does not depend on the other design variables. For that reason we can write:
+\begin{equation}
+    \derfrac{\vect{g}_\text{sum}}{\bar{\vect{a}}}=0,
+\end{equation}
+\begin{equation}
+    \derfrac{\vect{g}_\text{sum}}{\vect{\alpha}}=\vect{1},
+\end{equation}
+\begin{equation}
+    \derfrac{\vect{g}_\text{sum}}{\vect{q}}=\matr{0}.
 \end{equation}
 
-
-\paragraph*{Volume Hessian} 
-
+\section{Hessian matrix}
+For the evaluation of the hessian matrix, we list here only the nonzero contributions, assuming that all the remaining are zero.
+\paragraph*{Volume}
+The only nonzero contributions to the Hessian matrix are: 
 \begin{equation}
-    \hessfrac{V}{{\bar{\vect{a}}_t}}{\alpha_t^j} = \bar{\ell}^T \derfrac{\tilde{w}_t^j}{\alpha_t^j}
+    \hessfrac{V}{{\bar{\vect{a}}_t}}{\alpha_t^j} = \bar{\ell}^T \derfrac{\tilde{w}_t^j}{\alpha_t^j},
 \end{equation}
-
+and
 \begin{equation}
-    \derfrac{^2V}{(\alpha_t^j)^2} = \bar{\ell}^T \bar{\vect{a}}_t \derfrac{^2w_t^j}{(\alpha_t^j)^2}
+    \derfrac{^2V}{(\alpha_t^j)^2} = \bar{\ell}^T \bar{\vect{a}}_t \derfrac{^2w_t^j}{(\alpha_t^j)^2},
 \end{equation}
-
+that can be evaluated using \eqref{eq:appA_01} and \eqref{eq:appA_04}
+\paragraph*{Equilibrium constraints}
+All terms are zero for the equilibrium constraints.
+\paragraph*{Stress constraints}
 \begin{equation}
-    \derfrac{^2V}{{\bar{\vect{a}}_t}^2} = 0
+    \hessfrac{\vect{g}_\text{t}^j}{{\bar{\vect{a}}_t}}{\alpha_t^j} = -\sigma_t \derfrac{w_t^j}{\alpha_t^j},
 \end{equation}
-
-\paragraph*{Equilibrium Jacobian}
 \begin{equation}
-    \vect{g}_\text{eq}:=\matr{B}\vect{q} = \vect{f}
+    \derfrac{^2\vect{g}_\text{t}^j}{(\alpha_t^j)^2} = -\sigma_t  \bar{\vect{a}}_t \derfrac{^2w_t^j}{(\alpha_t^j)^2}.
 \end{equation}
-
-Not impacted by the clustering of the variables.
+\paragraph*{Buckling constraints}
+To evaluate the Hessian of buckling constraints we need to define two additional indexes, $l$ and $m$ that are spanning from 0 to $N_\text{T}-1$ as the index $t$. We can then write:
 \begin{equation}
-    \derfrac{\vect{g}_\text{eq}}{\vect{\alpha}}=0
+    \hessfrac{\vect{g}_\text{buck}^j}{\bar{\vect{a}}_l}{\bar{\vect{a}}_m} = 2\frac{s}{\vect{\ell^2}} w_l^j w_m^j.
 \end{equation}
-
-\paragraph*{Stress constraints tension jacobian}
-
+The mixed term is evaluated as follow:
 \begin{equation}
-    \vect{g}_\text{t}:=\vect{q} -\sigma_t\vect{a} \leq 0
+    \hessfrac{\vect{g}_\text{buck}^j}{{\bar{\vect{a}}_l}}{\alpha_m^j} =  2\frac{s}{\vect{\ell^2}} w_l^j \derfrac{\vect{a}^j}{\alpha^j_m} + 2\frac{s\vect{a}^j}{\vect{\ell^2}} \derfrac{w_l^j}{\alpha_m^j},
 \end{equation}
-
 \begin{equation}
-    \derfrac{\vect{g}_\text{t}^j}{\bar{\vect{a}}_t} = \derfrac{\vect{g}_\text{t}^j}{{\vect{a}^j}} \derfrac{\vect{a}^j}{\bar{\vect{a}}_t}
+    \hessfrac{\vect{g}_\text{buck}^j}{{\bar{\vect{a}}_l}}{\alpha_m^j} = 2\frac{s}{\vect{\ell^2}}w_l^j \derfrac{w_m^j}{\alpha_m^j}  \bar{\vect{a}}_m + 2\frac{s\vect{a}^j}{\vect{\ell^2}} \derfrac{w_l^j}{\alpha_m^j},
 \end{equation}
-
 \begin{equation}
-    \derfrac{\vect{g}_\text{t}^j}{{\vect{a}^j}} = -\sigma_t
-\end{equation}
-
-\begin{equation}
-    \derfrac{\vect{g}_\text{t}^j}{\bar{\vect{a}}_t} = -\sigma_t w_t^j
-\end{equation}
-
-\begin{equation}
-    \derfrac{\vect{g}_\text{t}^j}{\alpha^j}=\derfrac{\vect{g}_\text{t}^j}{\vect{a}^j} \derfrac{\vect{a}^j}{\alpha^j}
-\end{equation}
-
-\paragraph*{Stress constraints tension Hessian}
-
-\begin{equation}
-    \hessfrac{\vect{g}_\text{t}^j}{{\bar{\vect{a}}_t}}{\alpha_t^j} = -\sigma_t \derfrac{w_t^j}{\alpha_t^j}
-\end{equation}
-
-\begin{equation}
-    \derfrac{^2\vect{g}_\text{t}^j}{(\alpha_t^j)^2} = -\sigma_t  \bar{\vect{a}}_t \derfrac{^2w_t^j}{(\alpha_t^j)^2}
-\end{equation}
-
-\paragraph*{Buckling Jacobian}
-
-\begin{equation}
-    \vect{g}_\text{b} := \vect{q}  \frac{s\vect{a}^2}{\vect{\ell^2}} \geq 0
-\end{equation}
-
-\begin{equation}
-    \derfrac{\vect{g}_\text{b}^j}{\vect{a}^j} =  2\frac{s\vect{a}^j}{\vect{\ell^2}}
-\end{equation}
-
-\begin{equation}
-    \derfrac{\vect{g}_\text{b}^j}{\bar{\vect{a}}_t} = \derfrac{\vect{g}_\text{b}^j}{{\vect{a}^j}} \derfrac{\vect{a}^j}{\bar{\vect{a}}_t}
-\end{equation}
-
-\begin{equation}
-    \derfrac{\vect{g}_\text{b}^j}{\bar{\vect{a}}_t} =  2\frac{s\vect{a}^j}{\vect{\ell^2}} w_t^j
-\end{equation}
-
-\begin{equation}
-    \derfrac{\vect{g}_\text{b}^j}{\alpha^j}=\derfrac{\vect{g}_\text{b}^j}{\vect{a}^j} \derfrac{\vect{a}^j}{\alpha^j}
-\end{equation}
-
-\begin{equation}
-    \derfrac{\vect{g}_\text{b}^j}{\alpha^j_t}= 2\frac{s\vect{a}^j}{\vect{\ell^2}}\bar{\vect{a}}_t \derfrac{w_t^j}{\alpha_t^j}
-\end{equation}
-
-\begin{equation}
-    \derfrac{\vect{g}_\text{b}^j}{\alpha^j_t}= 2\frac{s\vect{a}^j}{\vect{\ell^2}}\bar{\vect{a}}_t \frac{1+(\cdot)}{\left(1+(\cdot)(1-\alpha_t^j)\right)^2}
-\end{equation}
-
-\paragraph*{Buckling Hessian}
-
-\begin{equation}
-    \hessfrac{\vect{g}_\text{b}^j}{{\bar{\vect{a}}_l}}{\alpha_m^j} =  2\frac{s}{\vect{\ell^2}} w_l^j \derfrac{\vect{a}^j}{\alpha^j_m} + 2\frac{s\vect{a}^j}{\vect{\ell^2}} \derfrac{w_l^j}{\alpha_m^j}
-\end{equation}
-
-\begin{equation}
-    \hessfrac{\vect{g}_\text{b}^j}{{\bar{\vect{a}}_l}}{\alpha_m^j} = 2\frac{s}{\vect{\ell^2}}w_l^j \derfrac{w_m^j}{\alpha_m^j}  \bar{\vect{a}}_m + 2\frac{s\vect{a}^j}{\vect{\ell^2}} \derfrac{w_l^j}{\alpha_m^j}
-\end{equation}
-
-\begin{equation}
-    \hessfrac{\vect{g}_\text{b}^j}{{\bar{\vect{a}}_l}}{\alpha_m^j}=
+    \hessfrac{\vect{g}_\text{buck}^j}{{\bar{\vect{a}}_l}}{\alpha_m^j}=
     \begin{cases}
          2\frac{s}{\vect{\ell^2}} \derfrac{w_t^j}{\alpha_t^j}\left( w_t^j \bar{\vect{a}}_t + \vect{a}^j \right) & \text{if }l=m=t \\
          2\frac{s}{\vect{\ell^2}}w_l^j \derfrac{w_m^j}{\alpha_m^j}  \bar{\vect{a}}_m & \text{otherwise.}
         
     \end{cases}
 \end{equation}
-
+And finally the quadratic term in $\alpha$:
 \begin{equation}
-    \hessfrac{\vect{g}_\text{b}^j}{\bar{\vect{a}}_l}{\bar{\vect{a}}_m} = 2\frac{s}{\vect{\ell^2}} w_l^j w_m^j
+    \hessfrac{\vect{g}_\text{buck}^j}{\alpha^j_l}{\alpha^j_m} =  2\frac{s}{\vect{\ell^2}}\bar{\vect{a}}_l \derfrac{\vect{a}^j}{\alpha^j_m} \derfrac{w_l^j}{\alpha^j_l} + 2\frac{s\vect{a}^j}{\vect{\ell^2}}\bar{\vect{a}}_l \hessfrac{w_l^j}{\alpha^j_l}{\alpha^j_m},
 \end{equation}
-
 \begin{equation}
-    \hessfrac{\vect{g}_\text{b}^j}{\alpha^j_l}{\alpha^j_m} =  2\frac{s}{\vect{\ell^2}}\bar{\vect{a}}_l \derfrac{\vect{a}^j}{\alpha^j_m} \derfrac{w_l^j}{\alpha^j_l} + 2\frac{s\vect{a}^j}{\vect{\ell^2}}\bar{\vect{a}}_l \hessfrac{w_l^j}{\alpha^j_l}{\alpha^j_m}
-\end{equation}
-
-\begin{equation}
-    \hessfrac{\vect{g}_\text{b}^j}{\alpha^j_l}{\alpha^j_m} = 
+    \hessfrac{\vect{g}_\text{buck}^j}{\alpha^j_l}{\alpha^j_m} = 
     \begin{cases}
         2\frac{s}{\vect{\ell^2}}\bar{\vect{a}}_t^2\left(\derfrac{w_t^j}{\alpha_t^j}\right)^2  + 2\frac{s\vect{a}^j}{\vect{\ell^2}}\bar{\vect{a}}_t \derfrac{^2w_t^j}{(\alpha^j_t)^2} & \text{if }l=m=t\\
         2\frac{s}{\vect{\ell^2}}\bar{\vect{a}}_l\bar{\vect{a}}_m\left(\derfrac{w_m^j}{\alpha_m^j}\right) \left(\derfrac{w_l^j}{\alpha_l^j}\right)
          & \text{otherwise.}
     \end{cases}
 \end{equation}
+\paragraph*{Maximum sum alpha constraints}
+All terms are zero for the $\vect{g}_\text{sum}$ constraint.

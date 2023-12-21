@@ -1,40 +1,41 @@
 \setchapterpreamble[u]{\margintoc}
 \glsresetall % reset glossary
-\chapter{Optimizing the layout of the modules in space}
-Chapter~\ref{05} introduced the basic concept of modular structures and  . Additionally it conducted a design of experiments that helped us undertanddig the general mechanical behaviour of modular stuctures. However we saw that expecially the volume of such structure is very penalyzed if the structure is 
+\chapter{Optimizing the layout of the modules in space} \label{chap:06}
+Chapter~\ref{chap:05} introduced the foundational concepts of modular structures and formulated an optimization algorithm designed to optimize structures exhibiting the repetition of a single module topology. Additionally, it conducted a design of experiments to gain insights into the general mechanical behavior of modular structures. We observed that, especially in terms of volume, such structures are significantly penalized when compared to monolithic structures. Towards the end of the chapter, we identified two concepts that could potentially bridge this gap and enhance the performance of modular structures: the incorporation of multiple module topologies and the presence of empty subdomains in the structure where not structurally necessary. In this chapter we formulate an optimization algorithm that incorporates these two improvements.
 
+The chapter is outlined as follows: In \secref{sec:06_opt}, we present an innovative optimization algorithm for modular structures, which concurrently optimizes both the layout and topology of the modules. The initial layout for the optimization is determined by identifying similarly behaving subdomains through a k-means clustering technique. \secref{sec:06_num_app} tests the proposed formulation on multiple two- and three-dimensional cases, considering both normalized and real engineering dimensions and material data.
 
-\section{Optimize the modules' layout using a modified DMO algorithm}
-The objective of this study is to address the concurrent optimization of both the layout and topology of multiple modules within a modular structure. The key scientific challenge lies in the discrete nature of the layout optimization problem \ie find the optimal distribuition of the different modules within the subdomains of the structure, an inherently discrete problem. Given our intent to employ a gradient descent algorithm \sidecite{sigmund_usefulness_2011}, it is imperative to design a methodology for converting the discrete nature of the problem into a continuous one, permitting the application of gradient-based optimization techniques.
+\section{Optimize the modules' layout using a modified DMO algorithm} \label{sec:06_opt}
+The objective of this chapter is to address the concurrent optimization of both the layout and topology of multiple modules within a modular structure. The key scientific challenge lies in the discrete nature of the layout optimization problem \ie find the optimal distribuition of the different modules within the subdomains of the structure, an inherently discrete problem. Given our intent to employ a gradient descent algorithm \sidecite{sigmund_usefulness_2011}, it is imperative to design a methodology for converting the discrete nature of the problem into a continuous one, permitting the application of gradient-based optimization techniques.
 
 \subsection{Definition of the subdomains cross-sectional areas}
-In this study, our strategy for addressing the discrete layout problem of modules as a continuous one involves defining the variables of the subdomains (i.e., the structure's variables) as a weighted sum of the module variables. This approach draws inspiration from the seminal work of Stegmann and Lund in the \gls{dmo} algorithm \sidecite{stegmann_discrete_2005}, where an optimizer selects the optimal homogenized stiffness tensor for each subdomain from a set of fixed tensors to minimize the compliance of a given structure. In the scenario of discretizing a ground structure into $N_\text{sub}$ subdomains and utilizing $N_\text{T}$ distinct modules, the cross-sectional areas of subdomain $j$ are then expressed as:  
+In this study, our strategy for addressing the discrete layout problem of modules as a continuous one involves defining the variables of the subdomains (i.e., the structure's variables) as a weighted sum of the module variables. This approach draws inspiration from the seminal work of Stegmann and Lund in the \gls{dmo} algorithm \sidecite{stegmann_discrete_2005}, where an optimizer selects from a set of fixed tensors the optimal homogenized stiffness tensor for each subdomain to minimize the compliance of a given structure. In the scenario of discretizing a ground structure into $N_\text{sub}$ subdomains and utilizing $N_\text{T}$ distinct modules, the cross-sectional areas of subdomain $j$ are expressed as:  
 \begin{equation}
     \vect{a}^j = \sum_{t=1}^{N_\text{T}} w_t^j \bar{\vect{a}}_t 
 \end{equation}
-where $\bar{\vect{a}}_t $ represent the vector of cross-sectional areas of the t module and $\vect{w}^j$ is the vector of weight relatives to the $j$ subdomain, defined as $ \vect{w}^j \in \mathbb{R}^t\,|\,w_j^t \in [0,1]$.
+where $\bar{\vect{a}}_t $ represent the vector of cross-sectional areas of the $t$ module and $\vect{w}^j$ is the vector of weight relatives to the $j$ subdomain, defined as $ \vect{w}^j \in \mathbb{R}^t\,|\,w_j^t \in [0,1]$.
 
-An example of a cantilever beam with $N_\text{sub}=8$ and $N_\text{T}=$ is illustrated in \figref{fig:06_weighted_sum}, in which we visually demonstrate the impact of modifying the weight values $w$ on the structure topology.
+An example of a cantilever beam with $N_\text{sub}=8$ and $N_\text{T}=2$ is illustrated in \figref{fig:06_weighted_sum}, in which we visually show the impact of modifying the weight values $w$ on the structure topology.
 
 \begin{figure*}
     \centering
     \includegraphics{figures/06_DMO/00_weight_dmo/weight_dmo.pdf}
-    \caption{}
+    \caption{A modular cantilever beam with $N_\text{sub}=8$. The subdomains' topology is defined as the weighted sum of two modules' topologies.}
     \label{fig:06_weighted_sum}
 \end{figure*}
 
 \subsection{Variables penalization schemes}
-The inherent limitation of the proposed approach is that, when the optimizer converges to a solution, the weights of all subdomains must converge to either zero or one, with the additional constraint that only one weight per subdomain can be equal to one. This is necessary to avoid intermediate weights, which would imply a combination of multiple modules' topologies lacking mechanical significance and proving impractical for manufacturing. To address this issue, we implement an interpolation scheme that penalizes intermediate weights. Specifically, we opt for the \gls{ramp} method \sidecite{stolpe_alternative_2001} instead of the more commonly used \gls{simp} interpolation scheme. This choice is motivated by \gls{ramp}'s advantageous property of ensuring that the derivative is never infinite nor zero when approaching a value of zero.
+The inherent limitation of the proposed approach is that, when the optimizer converges to a solution, the weights of all subdomains must converge to either zero or one, with the additional constraint that only one weight per subdomain can be equal to one. This condition is necessary to avoid intermediate weights, which would imply a combination of multiple modules' topologies lacking mechanical significance and proving impractical for manufacturing. To address this issue, we implement an interpolation scheme that penalizes intermediate weights. Specifically, we opt for the \gls{ramp} method \sidecite{stolpe_alternative_2001} instead of the more commonly used \gls{simp} interpolation scheme. This choice is motivated by \gls{ramp}'s advantageous property of ensuring that the derivative is never infinite nor zero when the weights approaches a value of zero.
 
-We define the design variable $\matr{\alpha}\in\mathbb{R}^{j,t}$ as the modules' layout variable, responsible for the module choice within the subdomain $j$. Its relationship with the weight $w$ is as follows:
+We define the design variable $\matr{\alpha}\in\mathbb{R}^{j,t}$ as the modules' layout variable, responsible for the module selection within the subdomain $j$. Its relationship with the weight $w$ is the following:
 \begin{equation}
     w_t^j = \frac{\alpha_t^j}{1+p(1-\alpha_t^j)}    
 \end{equation}
-where $p \in \mathbb{R}^+$ denotes a parameter governing the steepness of the \gls{ramp} interpolation. Drawing inspiration from the works of \sidecite{hvejsel_material_2011}, we introduce a multi-phase variant of the \gls{ramp} interpolation, in which we concurrently penalize mechanical properties while artificially increasing the volume of modules with intermediate densities. To achieve this, we introduce an additional \gls{ramp} parameter, $q$, always negative ($q \in \mathbb{R}^-$), utilized to assess the augmented weights associated with the volume evaluation $V$. We can then write:
+where $p \in \mathbb{R}^+$ denotes a parameter governing the steepness of the \gls{ramp} interpolation. Drawing inspiration from the works of Hvejsel \etal \sidecite{hvejsel_material_2011}, we introduce a multi-phase variant of the \gls{ramp} interpolation, in which we concurrently penalize mechanical properties while artificially increasing the volume of modules with intermediate densities. To achieve this, we introduce an additional \gls{ramp} parameter, $q$, always negative ($q \in \mathbb{R}^-$), utilized to assess the augmented weights associated with the volume evaluation $V$. We can then write:
 \begin{equation}
     V = \sum_{j=1}^{N_{\text{sub}}}\vect{\bar{\ell}}^T\tilde{\vect{a}}^j,
 \end{equation}
-where the vector $\tilde{\vect{a}}^j$, representing the increases scross-sectional areas of the $j$-th subdomain is defined as following:
+where the vector $\tilde{\vect{a}}^j$, representing the increases cross-sectional areas of the $j$-th subdomain is defined as:
 \begin{equation}
     \tilde{\vect{a}}^j = \sum_{t=1}^{N_\text{T}} \tilde{w}_t^j \bar{\vect{a}}_t, 
 \end{equation}
@@ -42,13 +43,13 @@ and where $\tilde{w}$ is:
 \begin{equation}
     \tilde{w}_t^j = \frac{\alpha_t^j}{1+q(1-\alpha_t^j)}.    
 \end{equation}
-So for every design variable $\alpha$, we associate two different weights ($w$ and $\tilde{w}$) that are used to evaluate the mechanical properties and the structure volume, respectively (see \figref{fig:06_ramp}).
+So for every design variable $\alpha$, we associate two different weights $w$ and $\tilde{w}$ that are used to evaluate the mechanical properties and the structure volume, respectively (see \figref{fig:06_ramp}).
 
 
 \begin{figure}
     \centering
     \includegraphics{figures/06_DMO/00_ramp/ramp.pdf}
-    \caption{}
+    \caption{A dual-phase RAMP interpolation scheme is used to penalize the intermediate weights and promote 0-1 designs.}
     \label{fig:06_ramp}
 \end{figure}
 
@@ -71,9 +72,9 @@ The objective function of the optimization process is the volume minimization of
 
 This formulation builds on the classic \gls{dmo} approach, adding multiple mechanical constraints and while operating on a ground structure. Additionally, we are not only selecting the best module for every subdomain by changing the value of $\alpha$ as classic \gls{dmo} does, but we are also optimizing the modules' topology simultaneously. This simultaneous optimization presents a more challenging task. The advantages of this formulation lie in dealing with a discrete problem using continuous design variables and a gradient-based optimizer. However, it comes with the drawback of increasing the problem size, as we are adding numerous additional design variables $\alpha$ that scale with the number of subdomains and the number of modules \ie a vector of size $\vect{\alpha}^j \in \mathbb{R}^t$ is defined for every one of the $j$ subdomains.
 
-The design variables $\alpha$ are constrained by a set of constraints that limit the maximum sum of $\alpha$ of a submodule $j$ to be less than or equal to one. It is crucial to note that we treat this constraint as a disequality constraint rather than an equality. This allows the optimizer to set all $\alpha$ to zero, permitting the removal of the subdomain from the structure. The constraint is expressed as follows:
+The design variables $\alpha$ are constrained by a set of constraints that limit the maximum sum of $\alpha$ of a submodule $j$ to be less than or equal to one. It is crucial to note that we treat this constraint as a disequality constraint rather than an equality. This allows the optimizer to set all $\alpha$ to zero, permitting the removal of the subdomain from the structure. The constraint $\vect{g}_\text{sum}$ is expressed as follows:
 \begin{equation}
-    \sum_{t=1}^{N_\text{T}} \alpha_t^j \leq 1, \; \forall j 
+    \vect{g}_\text{sum}:=\sum_{t=1}^{N_\text{T}} \alpha_t^j \leq 1, \; \forall j 
 \end{equation}
 
 Problem \eqrefnotext{eq:06_optim_complete} is tackled using a modified version of the proposed two-step solving algorithm. In this approach, we initially solve a relaxed problem denoted as $\mathbb{M}_2$, where kinematic compatibility constraints are omitted. This relaxed problem is inherently nonlinear due to the introduction of the $\alpha$ design variables. For this iteration, we have chosen to solve it in this form without linearizing the buckling constraints.
@@ -93,7 +94,7 @@ The relaxed formulation $\mathbb{M}_2$, expressed in terms of modules' cross-sec
 \end{equation}
 Problem $\mathbb{M}_2$ is solved using a non-linear gradient-based optimizer that iteratively exploits first and second-order derivatives to achieve convergence. The computation of the Jacobian and Hessian matrices for this problem is not trivial, and the details are elaborated in \appref{app:01}.
 
-Once problem $\mathbb{M}_2$ is solved, we perepare for the second step in wich the kinematic compatibility constraints are added again. We exploit the optimized module layout $\vect{\alpha}^*$ to set up the fixed module layout on the structure, and evaluate the mapping matrix $H$ used in the variable linking approach of problem ${\mathbb{M}}_\text{1,VL}$. The indexes of the mapping matrix $H$ are evaluated as follows:
+Once problem $\mathbb{M}_2$ is solved, we prepare for the second step, in which the structure's layout is fixed (we remove $\vect{\alpha}$ from the second optimization), and the kinematic compatibility constraints are reintroduced. We use the optimized module layout $\vect{\alpha}^*$ to establish the fixed module layout on the structure and evaluate the mapping matrix $H$ used in the variable linking approach of problem $\mathbb{M}_{1,\text{VL}}$. The indices of the mapping matrix $H$ are determined as follows:
 \begin{equation}
     h_{j,t} =
     \begin{cases}
@@ -124,7 +125,7 @@ Now, with all the components in place, we can set up the variable linking formul
 \end{equation*}
 }
 \subsection{Optimization initialization: a clustering algorithm to identify similarly behaving subdomains}
-In the proposed optimization formulation, we not only adjust the design variables responsible for the modules' layout ($\vect{\alpha}$) but also optimize the modules' topology $(\bar{\vect{a}}$). However, a significant challenge arises in this problem due to the strong interdependence between the layout and the module topology \ie the topology of the module is optimized in function of the layout and \textit{vice versatile}. It becomes particularly challenging for a gradient-based optimizer to determine the appropriate direction to follow, especially when starting from a completely uniform initial point (as observed in the work of \sidecite{bakker_simultaneous_2021}). To mitigate this challenge, we provide a slightly influenced starting point for the optimization process. In this work, we influence the module topology design variable at iteration zero $\vect{\alpha}_\text{it}=0$ as follows:
+Solving the first step of the proposed optimization formulation, we not only adjust the design variables responsible for the modules' layout ($\vect{\alpha}$) but also optimize the modules' topology $(\bar{\vect{a}}$). However, a significant challenge arises in this problem due to the strong interdependence between them \ie the topology of the module is optimized in function of the layout and \textit{vice versa}. It becomes particularly challenging for a gradient-based optimizer to determine the appropriate direction to follow \eg to reduce the value of the cross-sectional area of a member, the optimizer could play with $\vect{\alpha}, \bar{\vect{a}}$ or potentially both at the same time. This is especially true when starting from a completely uniform initial point (as observed in the work of \sidecite{bakker_simultaneous_2021}). To mitigate this challenge, we provide a slightly influenced starting point for the optimization process. We influence the module topology design variable at iteration zero $\vect{\alpha}_\text{init}$ as follows:
 \begin{equation}
     \alpha_{t,\text{init}}^j =
     \begin{cases}
@@ -136,18 +137,18 @@ In the proposed optimization formulation, we not only adjust the design variable
 \begin{figure*}
     \centering
     \includegraphics{figures/06_DMO/00_stress_clustering/stress_clustering.pdf}
-    \caption{}
+    \caption{The stress values of the initial ground structure evaluated using a \gls{fem} analysis are used to identify similar behaving subdomains. The sets are calculated using the k-means clustering technique with $N_\text{T}$ number of clusters.}
     \label{fig:06_kmeans}
 \end{figure*}
 
 \begin{figure*}
     \centering
     \includegraphics{figures/06_DMO/00_x0/x0.pdf}
-    \caption{}
+    \caption{The proposed starting point for the first-step of the optimization: a fully-connected ground structure with uniform cross-sectional areas and a biased $\vect{\alpha}_\text{init}$ distribution, as suggested by the k-means clustering.}
     \label{fig:06_x0}
 \end{figure*}
 
-The idea behind how to select the best module for a subdomain is to identify subdomains that show similar mechanical behavior, grouping them based on their stress state. This grouping is assessed using a k-means clustering technique with the number of clusters equal to the number of module topologies, $N_\text{T}$. Given a set of observations $(x_1, x_2, ..., x_{N_\text{sub}})$, where each observation is a $\bar{n}$-dimensional real vector, k-means clustering aims to partition the $N_\text{sub}$ observations into $N_\text{T}$ sets. In our context, each observation is the vector containing the \acrfull{fea} calculated stress distribution on the initial ground structure with a uniform cross-sectional area.
+The idea behind how to select the best module for a subdomain is to identify subdomains that show similar mechanical behavior, grouping them based on their stress state. This grouping is assessed using a k-means clustering technique with the number of clusters equal to the number of module topologies $N_\text{T}$. Given a set of observations $(x_1, x_2, ..., x_{N_\text{sub}})$, where each observation is a $\bar{n}$-dimensional real vector, k-means clustering aims to partition the $N_\text{sub}$ observations into $N_\text{T}$ sets. In our context, each observation is the vector containing the \acrfull{fea} calculated stress distribution on the initial ground structure with a uniform cross-sectional area.
 
 Additionally, besides the $\bar{n}$ stress values, we introduce the stress state $S$ for the $j$-th submodule as:
 \begin{equation}
@@ -158,33 +159,31 @@ This addition promotes the clustering not only of submodules loaded in similar w
 The full clustering process is depicted in \figref{fig:06_kmeans}, showcasing how the grouping is conducted from the same starting point (FEA-calculated stress distribution on the uniform initial ground structure) but with different numbers of clusters ($N_\text{T}=2$, 3, and 5). Finally, \figref{fig:06_x0} illustrates the initial starting point of the optimization, with a uniform initialization of $\bar{a}$ and the biased weight distribution based on the k-means clustering.
 
 \section{Numerical application}\label{sec:06_num_app}
-\todo{start from here}
-All of the examples presented in this section are solved using the proposed two step formulation, where in the first step we solve a relaxed formulation (no compatibility constraints) to find the optimized modules layout and topology. later, the layout of the modules is fixed, and we solve the optimization problem again to force the structure to comply with the compatibility constraints. The formulations are solved using the non liner interior point solver IPOPT for the two optimization steps 
+The proposed algorithm to optimize layout and topology of modular structures is tested in this section against multiple two- and three-dimensional test cases. All examples presented are solved using a modified version of the proposed two-step formulation. In the first step, a relaxed formulation (without compatibility constraints) is solved to determine the optimized modules' layout and topology. Subsequently, the layout of the modules is fixed, and the optimization problem is solved again to ensure compliance with the compatibility constraints. Both formulations are solved using the nonlinear interior point solver IPOPT.
 
-A continuation scheme is set up on the penalization parameter $q$ of the RAMp interpolation scheme used to evaluate the subdomain volume, where the parameter is set up at zero, and then it increase to -0.4 and -0.8 every time the (and the optimizer is not in a restoration phase). The continaution scgheme is implemented only on $q$ as IPOPT is an interior point algorithm, and increasing the $p$ parameter would put the optimizer well outside of the fesable region everi time the parameter every time it is increased, creating a less than ideal situation. the parameter $\chi$ called the cross-sectional area threshold value is set to 1e-4
+A continuation scheme is established on the penalization parameter $q$ of the \gls{ramp} interpolation scheme, utilized for evaluating the subdomains' volume. The parameter at the beginning of the optimization is set to zero and is then reduced to -0.4 and -0.8 each time the optimizer both satisfy the following criteria: the relative volume difference of two successive iterations $(V_i-V_{i-1})/V_i$ is less than $1 \times 10^{-4}$ and the optimizer is not in a restoration phase. This continuation scheme is implemented only on the $q$ parameter responsable for the volume evaluation. This because, as IPOPT is an interior point algorithm, and \marginnote{The cross-sectional area threshold value $\chi$ is used to threshold the bars of the original ground structure to reduce the number of candidates of the second step of the optimization. The candidates bars are the ones that satisfy the following inequality: $$\bar{a}_i<a_{\text{thr}} \; \forall i, \text{ with }a_{\text{thr}} = \chi \; \max(\bar{\vect{a}}^*)$$} increasing the $p$ parameter would place the optimizer well outside the feasible region each time it is increased, resulting in a suboptimal situation. The parameter $\chi$, referred to as the cross-sectional area threshold value, is set to $1 \times 10^{-4}$. 
 
-The stopping criterion used for the \gls{nlp} optimizations is $\norm{\Delta_{\text{NLP}}}_\infty \leq \text{tol}_{nlp}$, with and $\text{tol}_{nlp}=10^{-8}$. $\Delta_{\text{NLP}}$ represents the scaled \gls{nlp} error, a more comprehensive value used by IPOPT to take into account the optimality of the solution and the constraints violation. The objective function is always scaled so that the initial volume is 1000, the areas are in the interval $[0,100]$, the initial forces in $[0,100]$, and the displacement in $[0,100]$ for the \gls{nlp}. Several additional parameters are used in the \gls{nlp} step for cyipopt and IPOPT:
+The stopping criterion employed for the first step optimizations is $\|\Delta_{\text{NLP}}\|_\infty \leq \text{tol}_{nlp}$, where $\text{tol}_{nlp}=10^{-8}$. Here, $\Delta_{\text{NLP}}$ represents the scaled \gls{nlp} error, a comprehensive value used by IPOPT to consider both the optimality of the solution and constraint violations. The objective function is scaled such that the initial volume is 1000, the areas fall within the interval $[0,100]$, the initial forces range within $[0,100]$, and the $\alpha$ design variables lie within $[0,1]$. Several additional parameters are utilized in the first optimization step for CyIpopt and IPOPT:
 \begin{itemize}
-    \item \texttt{mu\_strategy} is set to \texttt{adaptive} 
-    \item \texttt{jac\_c\_constant} is set to \texttt{yes} 
-    \item \texttt{num\_linear\_variables} is set to \texttt{N}, with $N$ equal to the number of bars as the force is linear in this problem
-    \item \texttt{grad\_f\_constant} is set to \texttt{yes} 
-    \item \texttt{linear\_solver} is set to \texttt{pardiso}
+    \item \texttt{mu\_strategy} is set to \texttt{adaptive}
+    \item \texttt{num\_linear\_variables} is set to \texttt{N}, where $N$ is the number of bars as the force is linear in this problem
+    \item \texttt{grad\_f\_constant} is set to \texttt{yes}
     \item \texttt{bound\_push} is set to \texttt{1e-12}
     \item \texttt{constr\_viol\_tol} is set to \texttt{1e-6}
     \item \texttt{nlp\_scaling\_method} is set to \texttt{user-scaling}.
 \end{itemize}
+For the settings of the second step optimizer the reader can refer to Chapter~\ref{chap:05}.
 
-\subsection{Layout optimization of fixed modules}
+\subsection{Layout optimization of fixed topology modules}
 \begin{marginfigure}
     \centering
     \includegraphics[width=\linewidth]{figures/06_DMO/00_cantilever_bcs/cant_mesh.pdf}
     \caption{Boundary conditions of the 2D cantilever beam divided in 24x12 subdomains. In the upper part of the image the ground structure of the module composed of $\bar{n}=6$ elements.}
     \label{fig:06_cant_BC_GS}
 \end{marginfigure}
-The proposed formulation is very versatile and permits to solve very different optimization problem. We start now by optimizing the most simple we can for modular structures.we want to optimize the distribution of a fixed topology cell inside a given domain, and the optimizer should only chose between having the subdomain poupulated or not. We take a single module topology that is held fixed during the optimization, so nt=1 and $\bar{a}_i=0.6,\,\forall i$. The only degree of fredoom given to the optimizer is the value of the weight w controlled by the design variable $\alpha$.
+The proposed optimization formulation is highly versatile, allowing the solution of various optimization problems. We begin by optimizing the most straightforward modular structure problem. The objective is to optimize the distribution \ie the layout, of a single ($N_\text{T}=1$) fixed-topology module within a specified domain. The optimization process involves deciding whether each subdomain should be populated or not. For this scenario, we consider a single fixed module topology, setting $\bar{a}_i=0.6$ for all $i$. The only degree of freedom granted to the optimizer is, thus, the value of the weight $w$, controlled by the design variable $\alpha$.
 
-The structure that is optimized is a two dimensional cantilever beam of dimension $200x100$ with a center load of magnitude $P=1$. The optimization domain is partitioned into $24x12$ submodules on the x and y axis, respectively. Every subdomain is poupulated with a simple fully connected $2x2$ nodes ground structure with 6 candidate bars as shown in \figref{fig:06_cant_BC_GS} The units of the test case are normalized and a list of the geometry and material parameters is given in \tabref{tab:06_modular_cant_data}. Additionally, in these examples buckling and compatibility constraints are relaxed for simplicity and to preserve the solution simmetry.
+The structure subject to optimization is a two-dimensional cantilever beam with dimensions $200\times100$, subjected to a center load of magnitude $P=1$ and directed downward. The optimization domain is divided into $24\times12$ subdomains along the X and Y axes, respectively. Each subdomain is populated with a simple fully connected $2\times2$ nodes ground structure comprising 6 candidate bars, as illustrated in \figref{fig:06_cant_BC_GS}. The units of the test case are normalized, and a list of the geometry and material parameters is provided in \tabref{tab:06_modular_cant_data}. In these examples, buckling and compatibility constraints are not taken into account for simplicity and to preserve the solution symmetry.
 
 \begin{margintable}
     \small
@@ -198,16 +197,16 @@ The structure that is optimized is a two dimensional cantilever beam of dimensio
     $a_\text{max}$              & 0.6   \\
     \bottomrule
     \end{tabular}
-    \caption{Material data used for the 2D cantilever beam 2D.}
+    \caption{Material data used for the 2D cantilever beam.}
     \label{tab:06_modular_cant_data}
 \end{margintable}
 
-Before showing and commenting the optimization results, we presents two boundary cases that allow us to better understund and put into perspective the optimization results. first, we set up a monolithic optimization with no modular constraints and setting a maximum cross sectional area $a_\text{max}=0.6$. The optimization is performed on the same ground structure shown in \figref{fig:06_cant_BC_GS}. This results shold represent the lower bound of the optimization, representing the minimum value at wich modular optimization should tend, the closest to this value, the better. The resulting topology shows a volume $V=832.848$ and a thopology that ressembles the one that are obtained in classic topology optimization. Secondly, a we present a fully modular structure, in which all the subdomains presrnt the topology of the fixed topology module with all bars set to 0.6. In that case the structure shows a volume $V=9832.935$ and it represent the upper bound for the optimization. The topology of the fully modular structure is shown in \figref{fig:06_cant_BC_cell}.
+Before showcasing and discussing the optimization results, we present two extreme cases that help us better understand and contextualize the optimization outcomes. First, we establish a monolithic optimization with no modular constraints, setting a maximum cross-sectional area $a_\text{max}=0.6$. The optimization is conducted on the same ground structure illustrated in \figref{fig:06_cant_BC_GS}. This result should represent a lower bound of the optimization, indicating the minimum value towards which modular optimization should tend; the closer to this value, the better. The resulting topology exhibits a volume $V=832.848$ and a structure resembling those obtained in classic topology optimization. Secondly, we present a fully modular structure, where all subdomains adopt the topology of the fixed topology module with all cross-sectional areas set to 0.6. In this case, the structure demonstrates a volume $V=9832.935$ and serves as the upper bound for the optimization. The topology of this fully modular structure is depicted in \figref{fig:06_cant_BC_cell}.
 
 \begin{marginfigure}
     \centering
     \includegraphics[width=\linewidth]{figures/06_DMO/00_cantilever_extremes/mono.pdf}
-    \caption{$V=832.848$}
+    \caption{Monolithic optimized structure for the cantilever beam 2D test case with a maximum cross-sectional area $a_\text{max}=0.6$. This solution represents the lower bound solution for this test case with a volume $V=832.848$.}
     \label{fig:06_cant_mono}
 \end{marginfigure}
 
@@ -215,11 +214,11 @@ Before showing and commenting the optimization results, we presents two boundary
 \begin{marginfigure}
     \centering
     \includegraphics[width=\linewidth]{figures/06_DMO/00_cantilever_extremes/cell.pdf}
-    \caption{$V=9832.935$}
+    \caption{Fully-modular structure in which every subdomain is populated with the given module. The structural volume is $V=9832.935$.}
     \label{fig:06_cant_BC_cell}
 \end{marginfigure}
 
-Now that we have set up the reference for better understand the optimization results, we perform the optimizations of the layout of the fixed topology module. Just for the first example we decided not to penalize intermediate weights, so $p=q=0$ and then $w=\alpha$. The optimized structure topology is shown in \figref{fig:06_fixed_module}a and \figref{fig:06_fixed_module}b, in wich we show also the weight distribution of the solution. Ath this stade, the optimized structure shows a volume $V = 1567.216$, a value that is not that far from the monolitic reference. however, this solution is non physical as many subdomains present intermediate dweights (see teh weight distribution in \figref{fig:06_fixed_module}c) and we need to threshold the result. The thresolding value is set to 0.01, so any subdomains that have a weight w less than this value is considered empty. The result of the thresolding is presented in \figref{fig:06_fixed_module}d, in which we see that all weights that are present are now set to 1. The resulting structure has a volume $V = 8808.671$, a very noticable increase due to the high number of intermediate weights shown by the solution of \figref{fig:06_fixed_module}b.
+Now that we have established a reference for better understanding the optimization results, we proceed with the optimization of the layout of the fixed-topology module. For the first example, we decided not to penalize intermediate weights, setting $p=q=0$, and consequently $w=\alpha$. The optimized structure topology is illustrated in \figref{fig:06_fixed_module}a and \figref{fig:06_fixed_module}b, where we also depict the weight distribution of the solution. At this stage, the optimized structure exhibits a volume $V = 1567.216$, a value not significantly distant from the monolithic reference ($V=832.848$). However, this solution is non-physical as many subdomains display intermediate weights (see the weight distribution in \figref{fig:06_fixed_module}c), requiring a thresholding operation on the value of $\vect{w}$. The thresholding value is set to 0.01, such that any $j$ subdomain with a weight $w$ less than this value is considered empty. The result of the thresholding is presented in \figref{fig:06_fixed_module}d, where we observe that all weights are now set either to 1 or 0. The resulting structure has a volume $V = 8808.671$, indicating a noticeable volume increase due to the high number of intermediate weights in the solution shown in \figref{fig:06_fixed_module}b and very similar to the upper bound structure for the considered problem shown in \figref{fig:06_cant_BC_cell}.
 
 \begin{figure*}
     \subcaptionbox{}{\includegraphics{figures/06_DMO/00_fixed_cells/top_00.pdf}}
@@ -237,15 +236,16 @@ Now that we have set up the reference for better understand the optimization res
     \subcaptionbox{}{\includegraphics[height=3.5cm]{figures/06_DMO/00_fixed_cells/ramp.pdf}}
     \hfill
     \subcaptionbox{$V = 3414.214$}{\includegraphics{figures/06_DMO/00_fixed_cells/weight_PP.pdf}}
-    \caption{}
+    \caption{Optimization of the fixed module topology 2D cantilever beam. (a-d) shows the solution without penalizing intermediate weights with a final volume $V = 8808.671$; (e-h) shows the solution in which the RAMP interpolation helps reducing intermediate weights. The final structural volume is $V = 3414.214$.}
     \label{fig:06_fixed_module}
 \end{figure*}
 
-To solve this problem, we set up a multi-phase \gls{ramp} interpolation where we simultaneously penalize mechanical properties (using the parameter $p$) and we artificailly icrease the volume (using the parameter $q$) of modules with intermediate weights. In this optimization we set $p=8$ and $q_\text{min}=-0.8$, and a continuation scheme is used on the $q$ parameter to gradually decresase it to the minimum value as already explained in \secref{sec:06_num_app}. The optimized structure topology with penaliized intermediate weights is shown in \figref{fig:06_fixed_module}e and \figref{fig:06_fixed_module}f and it has a volume $V = 1961.175$, a \qty{25}{\percent} volume increase with respect to the unpenalized structure. however we can clearly see how this solution present way less subdomains with intermediate weight and this is very reflected after the thresolding phase shown in \figref{fig:06_fixed_module}h, in wich the volume is now $V=$, more thatn \qty{60}{\percent} less than the unpenalized structure. the difference between the structure of fig and fig could also be less , as in this case we see that the subdomains creates beams tat are made by only an elements and it is enough to transfer the loads. a finer subdivision of the initial structure could then beneficial.
+To address this issue, we implement a multi-phase \gls{ramp} interpolation where we simultaneously penalize mechanical properties (using the parameter $p$) and artificially increase the volume (using the parameter $q$) of modules with intermediate weights. In this optimization, we set $p=8$ and $q_{\text{min}}=-0.8$, and a continuation scheme is employed on the $q$ parameter to gradually decrease it to the minimum value, as explained in \secref{sec:06_num_app}. The optimized structure topology with penalized intermediate weights is depicted in \figref{fig:06_fixed_module}e and \figref{fig:06_fixed_module}f, with a resulting volume $V = 1961.175$, representing a \qty{25}{\%} increase compared to the unpenalized structure. However, it is evident that this solution presents fewer subdomains with intermediate weights, as reflected in the thresholding phase shown in \figref{fig:06_fixed_module}h, where the volume is now $V=3414.214$, more than \qty{60}{\%} less than the unpenalized structure. These behaviours are similar to what we already experienced with classic topology optimization \sidecite{bendsoe_material_1999,sigmund_non-optimality_2016}.
 
-Similarities with classic topology optimization. \sidecite{bendsoe_material_1999,sigmund_non-optimality_2016}
+Now that we have assessed the need for a penalization scheme, we test the proposed optimization formulation with some test cases using multiple fixed modules. As the topology of the module ($\bar{a}$) is not modified, no perturbation is made to the initial starting point, and $\vect{\alpha}_\text{init}$ at iteration 0 is set to $\alpha_{t,\text{init}}^j = 0.5, \forall j, t$. 
 
-Now that we assessed the need for a penalization scheme, we test the proposed optimization formulation with some test cases using multiple fixed modules. As the topology of the module ($\bar{a}$) is not modified, no perturbation is done on the initial starting point and alpha at iteration 0 is set to $\alpha = 0.5,\,\forall j,t $. First test we performed was to optimize the layout of two different modules ($N_\text{T}$=2) that present the same cell topology connectivity but different cross-sectional areas. we used two 2-nodes fully connected modules with uniform coss sectional areas set to 0.6 and 0.2, to simulate high and low densities modules for hig and low stress part of the structure. The results are presentedi in \figref{fig:06_multiple_fixed}a and b and the structure optimized present a volume $V = 2987.437$. This represent a \qty{12}{\percent} improvement over the single fixed topology.
+The first test we conducted was to optimize the layout of two different modules ($N_\text{T}=2$) that present the same module topology connectivity but different cross-sectional areas. We used two 2-nodes fully connected modules with uniform cross-sectional areas set to 0.6 and 0.2 to simulate high and low density modules for high and low-stress parts of the structure. The results are presented in \figref{fig:06_multiple_fixed}a and b, and the optimized structure has a volume $V = 2987.437$. This represents a \qty{12}{\%} improvement over the single fixed topology.
+
 \begin{figure*}
     \hspace*{\fill}
     \subcaptionbox{}{\includegraphics[height=2.5cm]{figures/06_DMO/00_fixed_cells_multiple/fig1-Topology_area.pdf}}
@@ -260,32 +260,33 @@ Now that we assessed the need for a penalization scheme, we test the proposed op
     \hfill
     \subcaptionbox{$V = 2317.462$}{\includegraphics[height=2.5cm]{figures/06_DMO/00_fixed_cells_multiple/mod_topol.pdf}}
     \hspace*{\fill}
-    \caption{}
+    \caption{Two different examples of the optimization of a modular 2D cantilever beam using $N_\text{T}=2$ fixed topology modules. (a-b) show the topology and the module layout of the structure obtained using two modules with identical topology, but different cross-sectional areas, while the solution showed in (c-d) is obtained using two modules with identical cross-sectional areas, but different topology. In (a) and (c) red bars are loaded in tension, while blue bars are loaded in compression.}
     \label{fig:06_multiple_fixed}
 \end{figure*}
 
-Similar results are presented in \figref{fig:06_multiple_fixed}c and d, in wich we optimize the module layout of two modules that present a different mirrored topology (see \figref{fig:06_multiple_fixed}d). The structure optimized in this way shows a very different module layout and a final volume $V = 2317.462$, even better than before. These two examples confirming that giving more design freedom to the optimizer can improve the mechanical performance of the modular structure. .
+Similar results are presented in \figref{fig:06_multiple_fixed}c and d, in which we optimize the module layout of two modules that present different mirrored topologies (see \figref{fig:06_multiple_fixed}d). The structure optimized in this way exhibits a very different module layout and a final volume $V = 2317.462$, even better than before. These two examples confirm that giving more design freedom to the optimizer can enhance the mechanical performance of the modular structure.
 
 \subsection{Modules and layout optimization}
-We now optimize a modular structure using multiple modules that can now varry their topology (the values of abar are no fixed nomore). in the case of nt=1, the starting point for the value of alpha is still trivial (alpa=1 forall) and the structure we obtain toghether with the optimized module topology is showed in \figref{fig:06_module_topol_opt}a and b. The modular structure present a volume $V = 2107.983$, the better fuound until this point and confirming the interest in optimizing both the modules topology and layout.
+We now optimize a modular structure using multiple modules that can vary their topology (the values of $\bar{a}$ are no longer fixed). In the case of $N_\text{T}=1$, the starting point for the value of $\vect{\alpha}_\text{init}$ is still trivial to evluate ($\alpha^j_\text{init}=1, \, \forall j$), and the resulting structure, along with the optimized module topology, is shown in \figref{fig:06_module_topol_opt}a and b. The modular structure exhibits a volume $V = 2107.983$, the best found until this point, confirming the interest in optimizing both the modules' topology and layout.
+
 \begin{figure}
     \hspace*{\fill}
     \subcaptionbox{$V = 2107.983$}{\includegraphics[height=2.5cm]{figures/06_DMO/00_optimized_module/fig1-Topology.pdf}}
     \hfill
     \subcaptionbox{}{\includegraphics[width=0.3\linewidth]{figures/06_DMO/00_optimized_module/fig8-Module_Topology_001.pdf}}
     \hspace*{\fill}
-    \caption{}
+    \caption{Optimized topology of the modular structure (a) and the module (b) for the 2D cantilever beam optimized using a single module ($N_\text{T}=1$). Red bars are loaded in tension, while blue bars are loaded in compression.}
     \label{fig:06_module_topol_opt}
 \end{figure}
 
 \begin{figure}
     \centering
     \includegraphics{figures/06_DMO/00_optimized_modules/kmeans.pdf}
-    \caption{}
+    \caption{Similarly stressed submodules are identified using the k-means clustering algorithm to suggest a starting point for the first step of the proposed optimization algorithm. In the figure we show the resulting distribution for $N_\text{T}=2$ and $N_\text{T}=5$ obtained from the \gls{fea} stress.}
     \label{fig:06_cant_kmeans}
 \end{figure}
 
-moving now to the layout and topology optimization of modular structure with a number of module topologies $N_\text{T}$>1,there is the need to use the kmeans clustering to evaluate the strating point for the layout module variable $\alpha$. A \gls{fea} is set up on the original ground structure with uniform cross sectional areasand the kmeans clustering is performed over the stress distribution usinfg $N_\text{T}$ different clusters. The process is shown for example for nt=2 and nt=5 on \figref{fig:06_cant_kmeans}, in wich we see that in general we have the clusters following more and less stressed zones especially in the nt=2 example. But it is only when the number of clusters arrive at 5 that we ctart to see a difference between tension and compression, with a symmetrical solutionn with respect to the asse neutro della trave.
+Moving on to the layout and topology optimization of modular structures with a number of module topologies $N_\text{T} > 1$, it becomes necessary to employ k-means clustering to determine the initial values for the layout module variable  $\vect{\alpha}_\text{init}$. A \gls{fem} analysis is conducted on the starting ground structure with uniform cross-sectional areas, and the k-means clustering is used on the stress distribution using $N_\text{T}$ different clusters. This process is showed for $N_\text{T}=2$ and $N_\text{T}=5$ in \figref{fig:06_cant_kmeans}, where it is observed that, in general, the clusters tend to align with more and less stressed zones more than different type of stress solicitation \ie direction of principal stress, more compressive or tensile loads. This fact is particularly evident in the $N_\text{T}=2$ example. It is only when the number of clusters reaches $N_\text{T}=5$ that a distinction between tension and compression becomes apparent, resulting in a solution that is no more symmetrical with respect to the neutral axis of the beam.
 
 \begin{table}
     \centering
@@ -295,44 +296,44 @@ moving now to the layout and topology optimization of modular structure with a n
     $N_\text{T}$ & 1&2&3&4&5 \\ \midrule 
     $N_\text{sub}$& 288&288&288&288&288 \\
     $N_\text{sub, e}$ & 107&   45  &   72   &   43   &   50     \\
-    $V$  & 2107.983 &  1722.61 &   1730.05  & 1589.90  & 1416.05  \\
+    $V$  & 2107.983 &  1722.606 &   1730.047  & 1589.899  & 1416.048  \\
     $a_\text{max}$      & 0.37& 0.35  & 0.48  &  0.54  & 0.53   \\
     $\varphi$   &\qty{17.16}{\percent}&\qty{17.86}{\percent}&\qty{14.20}{\percent}&\qty{17.95}{\percent}&\qty{16.65}{\percent}   \\
     $\psi$& 0.52   &  0.59 &  0.57   & 0.61  &0.67      \\
     t        & \hms{0;0;35}  &  \hms{0;0;18} & \hms{0;0;14} & \hms{0;0;17} & \hms{0;0;26}  \\ \bottomrule
     \end{tabular}
-    \caption{}
+    \caption{Numeric results of the parametric study on the influence of the number of modules on the optimized 2D cantilever beam.}
     \label{tab:06_different_topol_cant}
 \end{table}
 \begin{marginfigure}
         \centering
         \includegraphics[width=\linewidth]{figures/06_DMO/00_multiple_modules_curves/multi_tab.pdf}
-        \caption{}
+        \caption{Influence of the number of modules $N_\text{T}$ on the volume $V$ and the loading metric $\psi$ of the optimized 2D cantilever beam.}
         \label{fig:06_different_topol_cant_crv}
-    \end{marginfigure}
-Starting form the adviced starting point from the kmeans cludtering, the optimization are performed for nt from 2 to 5, and their results are resumed in the \tabref{tab:06_different_topol_cant}. Here are the main takeawqys :  Having a look at the evolution of the volume of the optimized structures with the different number of modules nt, we notice how they behave like expected as a monotonic descending function. This behaviour could be explained by in general a major specificity of the modules that chan shape their topology to more specific load cases and be less general purpose. We can see effettivamente that the value of the average bar load is increasing with the number of module topologies. This ehaviour is resumed in \figref{fig:06_different_topol_cant_crv}.Additionally it is interesting how, increasing the number of module topologies the number of empty subdomains drop from 107 and stabilize at around 50, suggesting that for this specific test case more modules topologies are employed, the number of empty subdomains decrease, showing that it is better to have many light modules and not few stron and heavy ones. Finally, concerinng the calculation time, we see no real correlation between the number of modules. We speculate that THis is because, even if the number of design variables increase, the problem is often easier  to solve and less iteerations are necessary to attain covergence. The topology of the modular structure with nt=2 e nt=5 is showed togheter whit theri optimized modules in \figref{fig:06_diferent_modules_cant_topology}. It is interesting to notice how the optimized structures shows similar modules layout with respect to the number of module topology.
+\end{marginfigure}
 
-    \begin{figure*}
-        \subcaptionbox{}{\includegraphics[width=0.3\linewidth]{figures/06_DMO/00_optimized_modules/nt2.pdf}}
-        \hfill
-        \subcaptionbox{}{\includegraphics[width=0.6\linewidth]{figures/06_DMO/00_optimized_modules/nt5.pdf}}
-        \caption{}
-        \label{fig:06_diferent_modules_cant_topology}
-    \end{figure*}
+Starting from the advised starting point from the k-means clustering, the optimizations are performed for $N_\text{T}$ from 2 to 5, and their results are summarized in \tabref{tab:06_different_topol_cant}. Here are the main takeaways: looking at the evolution of the volume of the optimized structures with the different numbers of modules $N_\text{T}$, we notice how they behave as expected, as a monotonically decreasing function. This behavior could be explained by the general specialization of the modules that can shape their topology for more specific load cases and be less general-purpose, increasing the structure efficiency and reducing the redundancies. Indeed, we can observe that the value of the average bar load $\varphi$ is increasing with the number of module topologies. these two effects are illustrated in \figref{fig:06_different_topol_cant_crv}. Additionally, it is interesting how, with an increase in the number of module topologies, the number of empty subdomains $N_\text{sub, e}$ drops from 107 and stabilizes at around 50. This suggests that for this specific test case, employing more module topologies results in fewer empty subdomains, indicating that it is better to have many light modules rather than few strong and heavy ones. Concerning the calculation time, we observe no real correlation with the number of modules. We speculate that even if the number of design variables increases with the number of modules $N_\text{T}$, the problem is often easier to solve, and fewer iterations are necessary to attain convergence. The topology of the modular structure with $N_\text{T}=2$ and $N_\text{T}=5$ is shown together with their optimized modules in \figref{fig:06_diferent_modules_cant_topology}. Finally, it is interesting to notice how the optimized structures exhibit similar module layouts concerning the number of module topologies.
 
 
+\begin{figure*}
+    \subcaptionbox{$V=1722.606$}{\includegraphics[width=0.3\linewidth]{figures/06_DMO/00_optimized_modules/nt2.pdf}}
+    \hfill
+    \subcaptionbox{$V=1416.048$}{\includegraphics[width=0.6\linewidth]{figures/06_DMO/00_optimized_modules/nt5.pdf}}
+    \caption{Visual representation of the optimized modular 2D cantilever beam together with the corresponding module topologies for (a) $N_\text{T}=2$  and (b) $N_\text{T}=5$.}
+    \label{fig:06_diferent_modules_cant_topology}
+\end{figure*}
 
 \begin{marginfigure}
     \centering
     \includegraphics[width=\linewidth]{figures/06_DMO/00_optimized_modules/VL/nt=5VL.pdf}
-    \caption{$V = 1727.314$}
+    \caption{Optimized 2D cantilever beam obtained using the variable linking formulation with fixed modules' layout and $N_\text{T}=5$. The modules' layout is obtained using the k-means clustering technique. The final volume is $V = 1727.314$.}
     \label{fig:06_cant_variable_link}
 \end{marginfigure}
 
-last thing we want to comment on is a comparison betweenn the optimized structure with nt=5 of \figref{fig:06_diferent_modules_cant_topology}b and the structure we would obtain if we used the clustering algo suggested structure layout to set the mapping matrix H and the variable linking algorithm described in \secref{sec:05_opt_formulation}. Using this formulation, the layout of the structure is fixed and no changes or empty modules are possible. The optimized structure using this algorithm is shown in \figref{fig:06_cant_variable_link} and it has a volume $V = 1727.314$, more than \qty{20}{\percent} more with respect to the proposed method slution. the differnece can be explained by two factors: forst the proposed formulation permits to have empty subdomains, and this definetly helps for lightening the structure. secondly, the  proposed formulation uses the clustering results only as a starting point for the layout of the optimization, but the layout can then evolve.
+The last aspect we want to comment on is a comparison between the optimized structure with $N_\text{T}=5$ presented in \figref{fig:06_diferent_modules_cant_topology}b and the structure we would obtain if we used the clustering algorithm-suggested module layout to set the mapping matrix $H$ and the variable linking algorithm described in \secref{sec:05_opt_formulation}. Using this formulation, the structure's layout is fixed, and no changes or empty modules are possible. The optimized structure using this algorithm is shown in \figref{fig:06_cant_variable_link}, and it has a volume $V = 1727.314$, more than \qty{20}{\percent} greater compared to the proposed method solution. The difference can be explained by two factors: firstly, the proposed formulation allows for empty subdomains, which significantly aids in lightening the structure. Secondly, the proposed formulation uses the clustering results only as a starting point for the layout of the optimization, but the layout can then evolve to a more optimized design. This example verifies the need to consider the module layout as a variable of the optimization that should be optimized simultaneously with the modules' topology.
 
 \subsection{A benchmark case study: a simply supported modular bridge}
-The proposed formulation and solution algorithm is now benchmarked against what we find in the literatre. To the knowledge of the authors, there is no other works that optimize layout and topology of modular structures using a gradient descent algorithm and continuous design variables. However, we can find som similar results obtained using MILP algorithm or simulated annealing to optimize modular structure. This is the case for example of the works of Tugilimana \sidecite{tugilimana_spatial_2017,tugilimana_integrated_2019} and we will now compare the restults. 
+The proposed formulation and solution algorithm are now benchmarked against findings in the literature. To the knowledge of the authors, to this date there are no other works that optimize the layout and topology of modular structures using a gradient descent algorithm with continuous design variables. However, similar results have been achieved using \gls{mip}, \gls{milp} algorithms, or \gls{sa} to optimize modular structures. Examples include the works of Tugilimana \sidecite{tugilimana_spatial_2017, tugilimana_integrated_2019}, and we will now compare the results of the proposed formulation with them.
 
 \begin{marginfigure}
     \centering
@@ -341,12 +342,15 @@ The proposed formulation and solution algorithm is now benchmarked against what 
     \label{fig:06_bailey}
 \end{marginfigure}
 
-The considered structure is a modular structure based on the Bailey bridge \sidecite{department_of_the_army_bailey_1986}, a concept that has been studied for military puropses and used also for civil applications \eg temporary bridge structures, thanks adaptability, low weight, but especially extremely fast erection and almost immediate usability for traffic are utilized (see \figref{fig:06_bailey}). The structure is 20 modules long and 2 modules high, each module is \qty{3.050}{m} long (\qty{10}{ft}) and \qty{1.525}{m} high (\qty{5}{ft}), resulting in a total bridge span of \qty{30.50}{m} (\qty{100}{ft}). The load case is represented in \figref{fig:06_tug_bcs}, toghether with the geometrical and material data (normalized) used for the optimization in \tabref{tab:06_modular_tug}. We optimize here only the symmetric part. In this load case we consider all the constraints of the formulation \eqrefnotext{} but the buckling, as Tugilimnana did.
+The considered structure is a large modular structure based on the design of the Bailey bridge \sidecite{department_of_the_army_bailey_1986}. This concept has initially been studied for military purposes and later applied in civil engineering, particularly in temporary bridge structures. Its adaptability, low weight, and rapid erection, allowing almost immediate usability for traffic, make it highly versatile (see \figref{fig:06_bailey}). The structure consists of 20 modules in length and 2 modules in height. Each module measures \qty{3.050}{m} in length (\qty{10}{ft}) and \qty{1.525}{m} in height (\qty{5}{ft}). This configuration results in a total bridge span of \qty{30.50}{m} (\qty{100}{ft}).
+
+The test case is based on the specifications given by Tugilimana \etal \sidecite{tugilimana_spatial_2017, tugilimana_integrated_2019} and is illustrated in \figref{fig:06_tug_bcs}, along with the geometrical and material data (normalized) utilized for the optimization (\tabref{tab:06_modular_tug}). The optimization is conducted only on the symmetric part of the structure. All constraints from the formulation \eqrefnotext{eq:06_optim_complete} are considered in this load case, excluding the buckling constraint, following the approach adopted by Tugilimana.
+
 
 \begin{figure}
     \centering
     \includegraphics{figures/06_DMO/00_tug_bench_bcs/bcs.pdf}
-    \caption{}
+    \caption{Graphical representation of the 2D Bailey bridge test case. The structure is divided into $N_\text{sub}=10$. The bridge is symmetric, and we are here optimizing only the right part of it.}
     \label{fig:06_tug_bcs}
 \end{figure}
 
@@ -361,21 +365,20 @@ The considered structure is a modular structure based on the Bailey bridge \side
     $P$              & 1   \\
     \bottomrule
     \end{tabular}
-    \caption{Material data used for the }
+    \caption{Material data used for the 2D Bailey bridge without local buckling constraints test case to compare with the work of Tugilimana \etal \cite{tugilimana_integrated_2019}.}
     \label{tab:06_modular_tug}
 \end{margintable}
 
-The resulting optimized stuctures are presented in the right part of \figref{fig:00_tug_bench}, toghether with the topology of the structures optimized by Tugilimana \etal \sidecite{tugilimana_integrated_2019}. Below every subfigure it is present the structure voulume and, in square bqrckets, the relative value wwith respect to the Tugilimana solution. Even if the reference images doesnet higlight the submodules that shows the same module topology, we see that the module layout is not always the same \eg in the case of $N_\text{T}=4$ or $N_\text{T}=5$.  We notice tat the proposed optimization algorithm is not only capable of optimizing an intrinsically discrete optimization problem using continuous design variables and a gradient based optimizer, but also to improve the results found in the literature up to \qty{3}{\percent}. The structure obtained with nt=10 is exactly the same we would otain by optimizing the structure if we didnt consider the modular constraints.
-
+The resulting optimized structures are presented in the right part of \figref{fig:00_tug_bench}, alongside the topology of the structures optimized by Tugilimana \etal \cite{tugilimana_integrated_2019}. Below each subfigure, the structure volume is provided, along with the value relative to the Tugilimana solution in square brackets. While the reference images (left part of the image) do not highlight the submodules with the same module topology, it can be observed that the module layout is not always the same, as seen in the cases of $N_\text{T}=4$ or $N_\text{T}=5$. It is noteworthy that the proposed optimization algorithm not only excels in optimizing an intrinsically discrete optimization problem using continuous design variables and a gradient-based optimizer but also improves upon the results found in the literature by up to \qty{3}{\percent}. The structure obtained with $N_\text{T}=10$ is exactly the same as what would be achieved by optimizing the structure without considering the modular constraints.
 
 \begin{figure*}
     \centering
     \includegraphics{figures/06_DMO/00_tug_bench/bench.pdf}
-    \caption{}
+    \caption{Visual comparison of the 2D Bailey bridge test case without local buckling constraints proposed by Tugilimana \etal \cite{tugilimana_integrated_2019} obtained for different number of modules $N_\text{T}$. The images (a-j) represent the Tugilimana optimized structures, while the images (k-t) show the structures obtained with the proposed optimization method.}
     \label{fig:00_tug_bench}
 \end{figure*}
 
-Up untill now we used always normalized materila data and dimensions and we never considered local buckling of truss. We test for that reason what happens in this very load case if we do that, and we are very interested in seeing if these changes affects a lot the modules topology and layout in the structure. The material data used for the optim is presented in \tabref{tab:06_modular_tug_buck} and represent an aluminium. The cross sections are supposed circular for the local buckling evaluation. THe topological buckling is taken into account inside the modules as already explained in \secref{sec:05_topological}.
+Up until now, we always used normalized material data and dimensions, and we never considered local buckling of the truss. For this reason, we are interested in testing what happens in this specific test case when we do consider local buckling and use a real load case with realistic dimensions and material data. We are particularly interested in seeing if these changes significantly affect the module's topology and layout in the structure. The material data used for the optimization is presented in \tabref{tab:06_modular_tug_buck} and represents a generic aluminum. The cross-sections are assumed to be circular for the local buckling evaluation. Topological buckling is taken into account inside the modules, as explained in \secref{sec:05_topological}.
 
 \begin{margintable}
     \small
@@ -389,50 +392,49 @@ Up untill now we used always normalized materila data and dimensions and we neve
     $P$              & \qty{1}{MN}   \\
     \bottomrule
     \end{tabular}
-    \caption{Material data used for the }
+    \caption{Material data used for the 2D Bailey bridge with local buckling constraints test case.}
     \label{tab:06_modular_tug_buck}
 \end{margintable}
 
-The optimized structure for the Bailey bridge with buckling constraints are shown for a different number of module topologies in \figref{fig:06_tug_bench_buck}. quickly comparing them with the results without the buckling we notice that for this test case the layout of the modules is the same. The topology however is very different with in general a litte bit less active bars. The volume cand be directly compared, so we normalize them and plot them on \figref{fig:06_cant_volume_norm}, showing that adding multiple module topologies is beneficial in the same exact way with or without buckling constaints. We can also comment that the biggest reduction on the volume from the inclusion of additional modules come expecially at the beginning, \eg going from nt=1 to nt=2 or from nt=2 to nt=3, while the difference at higher numbers is marginal as the succession show a plateau.
+The optimized structures for the Bailey bridge with buckling constraints are shown for different numbers of module topologies ($N_\text{T}=1$ to 10) in \figref{fig:06_tug_bench_buck}. Quickly comparing them with the results without buckling, we notice that for this test case, the layout of the modules remains unchanged. The topology, however, is very different, with generally slightly fewer active bars. The volume can not be directly compared, so we normalize them with respect to the maximum volume ($N_\text{T}=1$) and plot them in \figref{fig:06_cant_volume_norm}. We notice that adding multiple module topologies is beneficial in the same exact way with or without buckling constraints. We can also comment that the biggest reduction in volume from the inclusion of additional modules comes especially at the beginning, e.g., going from $N_\text{T}=1$ to $N_\text{T}=2$ or from $N_\text{T}=2$ to $N_\text{T}=3$, while the difference at higher numbers is marginal as the succession approaches a plateau.
 
 \begin{marginfigure}
     \centering
     \includegraphics{figures/06_DMO/00_tug_bench_crv/vol.pdf}
-    \caption{}
+    \caption{Normalized volume values plotted against the number of modules $N_\text{T}$. The buckling constraints do not change the trend of the beneficial effect of using multiple modules $N_\text{T}$ on the structure.}
     \label{fig:06_cant_volume_norm}
 \end{marginfigure}
 
 \begin{figure}
     \centering
     \includegraphics{figures/06_DMO/00_tug_bench_buck/buck.pdf}
-    \caption{}
+    \caption{Visual representation of the optimized structures obtained for different values of $N_\text{T}$ for the 2D Bailey bridge test case with local buckling constraints.}
     \label{fig:06_tug_bench_buck}
 \end{figure}
 
-willing to explore how the different parameters can influence the results, the topology and the layout, we test the same load case with a different number of subdomains and modules. We use the very same test case, with the only difference that we are now using a 3x2 nodes ground structure for having faster calculation times. 
+Willing to explore how different parameters can influence the resulting volume, topology, and layout, we optimize the same test case with a different number of subdomains and modules. We use the same test case, with the only difference being that we are now using a 3x2 nodes fully connected ground structure for faster calculation times.
 
 \begin{figure*}
     \centering
     \includegraphics{figures/06_DMO/00_tug_bench_size/size.pdf}
-    \caption{}
-    \label{fig:06}
+    \caption{Study of the influence of the parameters $N_\text{sub}$ and $N_\text{T}$ on the volume and the topology of the 2D Bailey bridge test case.}
+    \label{fig:06_size_res}
 \end{figure*}
-Commenta volume, di come Influence of the number \figref{fig:06_cant_volume_norm_2}
-of subdomains on the volume of the steep increase and then plateau, different from before
-optimized modular structure cambia e non sale piu in maniera ma si stoppa a un plateau
-principalmente due motivi, cambia il metodo di rottura, non piu buckling e passo a stress e poi ho i vuoti. we observe that when we have not many subdomains the structure is always all filled, with  no empty subdomains. but with the increasing number of subdomains we notice more and more empty subdomains, helping to keep the structure light.
+
+The results of the optimizations with different numbers of subdomains and modules are shown, together with the value of the structural volume in \figref{fig:06_size_res}. Looking at the the image from left to right, we observe that the trend of volume reduction with the increase in the number of module topologies we have already acknowledged previously is still valid. It is, however, more interesting to see what happens going from top to bottom, \ie what happens when we change the number of subdomains $N_\text{sub}$ without changing the number of module topologies $N_\text{T}$. As expected and already observed using the variable linking algorithm (see, for example, \figref{fig:05_scale_v} in Chapter~\ref{chap:05}), the volumes increase with the number of subdomains. However, in \figref{fig:06_cant_volume_norm_2}, in this case, we observe a steep increase in the structural volume and then a plateau, different from before. We speculate that this beneficial behavior comes mainly for two reasons: first, the optimization algorithm allows subdomains to show a completely empty topology. We observe that when we have not many subdomains, the structure is always fully filled, with no empty subdomains. But with the increasing number of subdomains, we notice more and more empty subdomains, helping to keep the structure light. Second, by increasing the number of subdomains, the average length of the subdomains' bars decreases. This phenomenon allows the change in the failure mode, moving from buckling to stress. For example, we observe that in \figref{fig:06_size_res}d, where the failure mode is completely changed to stress, and the module presents a symmetric topology, with equal stress distribution in compression and tension. This is a very effective use of the material, and consequently, the volume decreases.
+
 
 \begin{marginfigure}
     \centering
     \includegraphics{figures/06_DMO/00_tug_bench_crv2/vol.pdf}
-    \caption{}
+    \caption{Normalized volume values plotted against the number of subdomains $N_\text{sub}$ for different values of $N_\text{T}$.}
     \label{fig:06_cant_volume_norm_2}
 \end{marginfigure}
 
-last thing commenta per esempio imm d in cui cambia il modo di rottura e la cell é simmetrica in compressione e in tensione. molto efficace uso del materiale in questa maniera e quindi il volume scende.
+Lastly, we observe that the modules' layout is almost invariant with the increasing number of subdomains. This fact is somewhat similar to what we observe in classic topology optimization when we increase the mesh fineness with a distance-based filter. In these cases the topology remains unchanged with mesh refinement.
 
 \subsection{Simply supported 3D beam}
-The last test we conduct is on the simply supported 3d beam, a load case introduced in Chapter~\ref{chap:04} and used tout au long de cette these. we rappel the test case and the material and geometric data used for the optimization process in \figref{fig:06_symm_support_bc} and \tabref{tab:06_3D_supp_mat}.as already done we optimize here onky one forth of the entire structure thanks to its symmetry planes. we conduct the optimization using 6x2x3 subdomains on the X, Y and Z axis respectively and every module is discretized using a 3x3x3 fully connected ground structure ($\bar{n} = 351$). The ooptimization is conducted using three different number of modules, $N_\text{T}$=1,2,3.
+The last test we conduct is on the simply supported 3D beam, a load case introduced in Chapter~\ref{chap:04} and already used throughout this thesis. We recall the test case and the material and geometric data used for the optimization process in \figref{fig:06_symm_support_bc} and \tabref{tab:06_3D_supp_mat}. As already done, we optimize here only one-fourth of the entire structure thanks to its symmetry planes. We conduct the optimization using 6x2x3 subdomains on the X, Y, and Z axes, respectively, and every module is discretized using a 3x3x3 fully connected ground structure with a total number of candidates $\bar{n} = 351$ per module. The optimization is conducted using three different numbers of modules, $N_\text{T}=1$, 2, 3.
 
 \begin{marginfigure}
     \centering
@@ -457,11 +459,11 @@ The last test we conduct is on the simply supported 3d beam, a load case introdu
     \label{tab:06_3D_supp_mat}
 \end{margintable}
 
-The resulting optimized structures are presented in \figref{fig:06_supp_top} and the associated numerical results are presented in \tabref{tab:06_supp_tab}. The first thing we notice is that in this specific test case the optimizer converges to solutions where the sum of alpha for every subdomains is always equal to one. whyle before we have seen that the formulation arrived at create empty subdomains where the sum of alpha is zero, here the optimizer failed. the empty subdomains of the nt=2 and nt=3 corresponds to cases where the topology of one module is set to zero and the optimizer put thee value of the corresponding alpha to one. In this way the solution is still optimized correctly, but using a module topology en plus \eg looging at \figref{fig:06_supp_top}b and e, so the solution for nt=2, we see that the optimized structure shows only one module topology, the other being the empty one.
+The resulting optimized structures are presented in \figref{fig:06_supp_top}, and the associated numerical results are presented in \tabref{tab:06_supp_tab}. The first observation is that in this specific test case, the optimizer converges to solutions in which the sum of alpha for every subdomain is equal to one. While previously, we have seen that the formulation arrived at creating empty subdomains where the sum of alpha is zero (see \figref{fig:06_diferent_modules_cant_topology} or \figref{fig:06_size_res}), here the optimizer failed in doing so. The empty subdomains for $N_\text{T}=2$ and $N_\text{T}=3$ correspond to cases where the cross-sectional areas of one module are set to zero, and the optimizer puts the value of the corresponding alpha to one. In this way, the solution is still optimized correctly, but using one module topology en plus. For example, looking at \figref{fig:06_supp_top}b and e, the solution for $N_\text{T}=2$ shows that the optimized structure exhibits only one module topology, the other being empty.
 
-we speculate that this problem come from the optimizer's settings used to normalize the design variables and the constraint for the opmimization. we found that for example even if we scaled the alpha variable and the corresponding constraints in multiple values, we still got the same results. THis problem suggest us that even if the starting point perturbation definetly helps achieving a good optiized structure, more work has to be done on developing a new resolution strategy, maybe trying to separate thethe topology and layout varaiables and solving iteratively the two problem separated one iteration at a time.
+We speculate that this problem arises from the optimizer's settings used to normalize the design variables and constraints for the optimization. For instance, even after scaling the layout design variable $\vect{\alpha}$ and its corresponding constraints with multiple values, we consistently obtained the same results. This issue suggests that while the starting point perturbation certainly aids in achieving a well-optimized structure, additional work is needed to develop a new resolution strategy. One possible approach could be to separate the topology and layout variables and iteratively solve the two problems independently, one iteration at a time.
 
-Even having this problem we can however notice having a look at the volume $V$ and the mean densities $\bar{\rho}$ of \tabref{tab:06_supp_tab} how the modular structures with nt=2 and nt=3 reaches very similar values to the monolitich reference ($n_sub=1$) shown in \figref{fig:06_supp_ref}, while beeing modular.
+Despite encountering this issue, a careful examination of the volume $V$ and mean densities $\bar{\rho}$ in \tabref{tab:06_supp_tab} reveals that the modular structures with $N_\text{T}=2$ and $N_\text{T}=3$ achieve remarkably similar values to the monolithic reference ($N_\text{sub}=1$) depicted in \figref{fig:06_supp_ref}. This outcome is particularly significant as it attains the objective of achieving a lightweight structure, almost comparable to the monolithic one, while preserving modularity, highlighting the potential for a lighter structure with manufacturing advantages due to its modular nature.
 
 \begin{figure*}
     \hspace*{\fill}
@@ -479,7 +481,7 @@ Even having this problem we can however notice having a look at the volume $V$ a
     \hfill
     \subcaptionbox{}{\includegraphics[width=0.30\linewidth]{figures/06_DMO/00_print_topology/3_04_Topology_NLP_XZ.png}}
     \hspace*{\fill}
-    \caption{}
+    \caption{Rendering of the optimized structures with $N_\text{T}=1$ (a,d), $N_\text{T}=2$ (b,e), and $N_\text{T}=3$ (c,f).}
     \label{fig:06_supp_top}
 \end{figure*}
 
@@ -500,16 +502,18 @@ Even having this problem we can however notice having a look at the volume $V$ a
     $\psi$& 1.00   &  0.47 &  0.66   & 0.87        \\
     t        & \hms{0;0;4}  &  \hms{0;1;18} & \hms{0;0;42} & \hms{0;10;22}   \\ \bottomrule
     \end{tabular}
-    \caption{}
+    \caption{Numeric results of the parametric study on the influence of the number of modules $N_\text{T}$ on the simply supported 3D beam.}
     \label{tab:06_supp_tab}
     \end{table}
 
     \begin{marginfigure}
         \centering
         \includegraphics[width=\linewidth]{figures/04_TTO_improvements/16_supported_3D_sol/04_Topology_NLP_iso-min.png}
-        \caption{Perspective view of the monolithic simply supported 3D beam optimized structure with $V=\qty{9.907}{\centi\meter^3}$}
+        \caption{Perspective view of the monolithic simply supported 3D beam optimized structure with $V=\qty{9.907}{\centi\meter^3}$.}
         \label{fig:06_supp_ref}
     \end{marginfigure}
 
 \section{Conclusion}
-in this chapter we presented an innovative optimization formulation that optimize the structural volume of modular structures. The solving algorithm takes advantages of the physical informations of the model, exploiting the analitical derivatives, and uses a gradient descent optimization algorithm. The discrete cathegorical variables used to choose the module layout are modelized using a weighted sum of cotinuous weights, that fits the optimization scheme, and a double penalization scheme is proposed to reduce the appearance of non physical interemediate weights. The proposed formulation is testet over a multitude of test cases, two and three dimensional, from the literature or innovative.these test assessed that the use of this optimization formulation helps the modular structures to achieve volumes that are really near the ones from monolithic optimization, all being modular, offering a good tradeoff between optimality and manufacturing complexity. However, up untill now we concentrated only on dummy test cases that are not of an engineering relevance. for that reason, in the next chapter we address this problem by focussing on the application of the presented optimization formulations in the aerospace context. 
+In this chapter, we introduced an innovative optimization formulation designed to optimize the structural volume of modular structures. The solving algorithm leverages the physical information of the model, exploiting analytical derivatives and employing a gradient descent optimization approach. Categorical variables, used to determine module layout, are modeled using a weighted sum of continuous weights that align with the continuous design variables of the optimization scheme. A double penalization scheme is proposed to mitigate the occurrence of non-physical intermediate weights.
+
+The proposed formulation is tested across a variety of two- and three-dimensional test cases sourced from the literature. These tests confirm that the utilization of this optimization formulation enables modular structures to achieve volumes very close to those obtained from monolithic optimization, maintaining modularity and offering a favorable tradeoff between optimality and manufacturing complexity. However, the focus has been on simple test cases lacking engineering relevance so far. In the next chapter, we address this limitation by applying the presented optimization formulations in the aerospace context.

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.8.29)  28 NOV 2023 12:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.8.29)  21 DEC 2023 17:11
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -692,30 +692,30 @@ Missing character: There is no ; in font nullfont!
 File: module_1.pdf Graphic file (type pdf)
 <use module_1.pdf>
 Package pdftex.def Info: module_1.pdf  used on input line 119.
-(pdftex.def)             Requested size: 28.45274pt x 21.8922pt.
+(pdftex.def)             Requested size: 34.14322pt x 26.27106pt.
 <module_2.pdf, id=5, 58.4052pt x 43.50554pt>
 File: module_2.pdf Graphic file (type pdf)
 <use module_2.pdf>
 Package pdftex.def Info: module_2.pdf  used on input line 119.
-(pdftex.def)             Requested size: 28.45274pt x 21.19441pt.
+(pdftex.def)             Requested size: 34.14322pt x 25.4337pt.
 <module_3.pdf, id=6, 58.4052pt x 44.93788pt>
 File: module_3.pdf Graphic file (type pdf)
 <use module_3.pdf>
 Package pdftex.def Info: module_3.pdf  used on input line 119.
-(pdftex.def)             Requested size: 28.45274pt x 21.8922pt.
+(pdftex.def)             Requested size: 34.14322pt x 26.27106pt.
 [1
 
 {D:/estragio/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./module_1.pdf> <./module_2.pdf> <./module_3.pdf>] (x0.aux) ) 
 Here is how much of TeX's memory you used:
- 34937 strings out of 476331
- 941591 string characters out of 5797589
+ 34994 strings out of 476331
+ 943328 string characters out of 5797589
  1883660 words of memory out of 5000000
- 54822 multiletter control sequences out of 15000+600000
+ 54879 multiletter control sequences out of 15000+600000
  521692 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  122i,13n,121p,802b,2249s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb>
-Output written on x0.pdf (1 page, 76096 bytes).
+Output written on x0.pdf (1 page, 76032 bytes).
 PDF statistics:
  70 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

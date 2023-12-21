@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1701170276 "d:/estragio/PhD/99_Github/PHD_manuscript/figures/06_DMO/00_x0/x0.tex" "x0.pdf" "x0" 1701170281 0
-  "../../img_header.tex" 1699464406 10695 989973cca69a9e9778b43ca688ada1f0 ""
+["pdflatex"] 1703175101 "d:/estragio/PhD/99_Github/PHD_manuscript/figures/06_DMO/00_x0/x0.tex" "x0.pdf" "x0" 1703175104 0
+  "../../img_header.tex" 1701714123 10873 22aeeb3fdab60d5b2d649f63ba5830f4 ""
   "C:/Program Files/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1233951848 1120 1e8878807317373affa7f7bba4cf2f6a ""
   "C:/Program Files/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm" 1233951848 1124 14ccf5552bc7f77ca02a8a402bea8bfb ""
   "C:/Program Files/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmbsy7.tfm" 1233951848 1120 7f9f170e8aa57527ad6c49feafd45d54 ""
@@ -226,12 +226,12 @@
   "D:/estragio/AppData/Roaming/MiKTeX/tex/latex/varwidth/varwidth.sty" 1238465940 10894 d359a13923460b2a73d4312d613554c8 ""
   "D:/estragio/AppData/Roaming/MiKTeX/tex/latex/xargs/xargs.sty" 1206231060 12403 a11204384274e5980f17ec9564088fa4 ""
   "D:/estragio/AppData/Roaming/MiKTeX/tex/latex/xstring/xstring.sty" 1673962217 123 a302f2c651a95033260db60e51527ae8 ""
-  "d:/estragio/PhD/99_Github/PHD_manuscript/figures/06_DMO/00_x0/x0.tex" 1701170275 9345 63be7dd7138e12c18720bf1879fa0249 ""
+  "d:/estragio/PhD/99_Github/PHD_manuscript/figures/06_DMO/00_x0/x0.tex" 1703175100 9351 060ab8c37d883bd3cbcd6b451060e5bf ""
   "module_1.pdf" 1701170218 19178 8cd89bee0a2dd05bc94e313e478ff233 ""
   "module_2.pdf" 1701170267 19196 35654a7cdd80d6fa65c4d6a62e9a0d06 ""
   "module_3.pdf" 1701169876 19143 076926096c878a5e9918fcf0f3f8e066 ""
-  "x0.aux" 1701170280 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
-  "x0.tex" 1701170275 9345 63be7dd7138e12c18720bf1879fa0249 ""
+  "x0.aux" 1703175103 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "x0.tex" 1703175100 9351 060ab8c37d883bd3cbcd6b451060e5bf ""
   (generated)
   "x0.aux"
   "x0.log"
