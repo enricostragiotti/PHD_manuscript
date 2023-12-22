@@ -13,9 +13,7 @@ In the aerospace industry, an ongoing demand exists for lighter aerostructures, 
 
 One promising approach to meet these requirements is the utilization of lattice structures. These structures not only offer ultralight properties but also modularity. Modular designs bring numerous advantages, including the ability to assemble large structures from smaller and easier-to-manufacture repeating modules, on-field reparability, and rapid assembly for temporary structures.
 
-The primary objective of this thesis is to develop a design and optimization algorithm for ultralight and modular aerostructures. In the initial phase, we reviewed existing literature to identify the most suitable basis for optimizing monolithic (non-modular) structures. After a thorough comparison, we selected the Truss Topology Optimization (TTO) approach, an optimization method based on the use of bars as the discretizing element of the structure. However, the classic TTO formulation has limitations, such as the inability to address buckling constraints, consider multiple load cases, and ensure mechanical compatibility. To overcome these challenges, we proposed an innovative two-step optimization algorithm. In this approach, a relaxed problem is utilized to generate an initial solution, serving as the starting point for the optimization using a complete formulation.
 
-The second part of the thesis focuses on adapting the proposed monolithic formulation to incorporate modular constraints. Initially, the emphasis is on optimizing the topology of a fully-modular structure, where a single module is repeated throughout the entire design. We evaluate how hyperparameters, such as the number of subdomains and module complexity, affect the mechanical performance of the structure. Subsequently, we delve into a more complex scenario, optimizing multiple module topologies and their layout within the structure. This is achieved through a Discrete Material Optimization (DMO) approach, employing a gradient-based optimizer.
 
 By addressing the challenges of lightweight design and modularity in aerostructures, this research aims to contribute to the ongoing evolution of aerospace technologies and advance the efficiency and performance of future aircraft.
 
@@ -30,5 +28,9 @@ In summary, realizing the potential of lattice structures in real-world applicat
 
 
 \section*{Objective}
+The primary objective of this thesis is to develop a design and optimization algorithm for ultralight and modular aerostructures. 
 
 \section*{Outline of the thesis}
+In the initial phase, we reviewed existing literature to identify the most suitable basis for optimizing monolithic (non-modular) structures. After a thorough comparison, we selected the Truss Topology Optimization (TTO) approach, an optimization method based on the use of bars as the discretizing element of the structure. However, the classic TTO formulation has limitations, such as the inability to address buckling constraints, consider multiple load cases, and ensure mechanical compatibility. To overcome these challenges, we proposed an innovative two-step optimization algorithm. In this approach, a relaxed problem is utilized to generate an initial solution, serving as the starting point for the optimization using a complete formulation.
+
+The second part of the thesis focuses on adapting the proposed monolithic formulation to incorporate modular constraints. Initially, the emphasis is on optimizing the topology of a fully-modular structure, where a single module is repeated throughout the entire design. We evaluate how hyperparameters, such as the number of subdomains and module complexity, affect the mechanical performance of the structure. Subsequently, we delve into a more complex scenario, optimizing multiple module topologies and their layout within the structure. This is achieved through a Discrete Material Optimization (DMO) approach, employing a gradient-based optimizer.
