@@ -1,26 +1,24 @@
 [0] Config.pm:307> INFO - This is Biber 2.19
 [0] Config.pm:310> INFO - Logfile is 'manuscript_Stragiotti.blg'
-[145] biber-MSWIN64:340> INFO - === 
-[202] Biber.pm:419> INFO - Reading 'manuscript_Stragiotti.bcf'
-[703] Biber.pm:979> INFO - Found 107 citekeys in bib section 0
-[724] Biber.pm:4419> INFO - Processing section 0
-[741] Biber.pm:4610> INFO - Looking for bibtex file 'biblio.bib' for section 0
-[856] bibtex.pm:1713> INFO - LaTeX decoding ...
-[1524] bibtex.pm:1519> INFO - Found BibTeX data source 'biblio.bib'
-[2258] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[2258] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[2258] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
-[2258] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
-[2341] bbl.pm:660> INFO - Writing 'manuscript_Stragiotti.bbl' with encoding 'UTF-8'
-[2417] bbl.pm:763> INFO - Output to manuscript_Stragiotti.bbl
-[2417] Biber.pm:131> WARN - Duplicate entry key: 'bakker_simultaneous_2021' in file 'biblio.bib', skipping ...
-[2417] Biber.pm:131> WARN - Duplicate entry key: 'kalamkarov_asymptotic_2009' in file 'biblio.bib', skipping ...
-[2417] Biber.pm:131> WARN - Duplicate entry key: 'kirsch_optimal_1980' in file 'biblio.bib', skipping ...
-[2417] Biber.pm:131> WARN - Duplicate entry key: 'martins_engineering_2021' in file 'biblio.bib', skipping ...
-[2417] Biber.pm:131> WARN - Duplicate entry key: 'silva_smith_topology_1997' in file 'biblio.bib', skipping ...
-[2417] Biber.pm:131> WARN - Duplicate entry key: 'stolpe_alternative_2001' in file 'biblio.bib', skipping ...
-[2417] Biber.pm:131> WARN - ISBN '978-1-108-98064-7 978-1-108-83341-7' in entry 'martins_engineering_2021' is invalid - run biber with '--validate_datamodel' for details.
-[2418] Biber.pm:131> WARN - ISBN '978-3-642-07698-5 978-3-662-05086-6' in entry 'bendsoe_topology_2004' is invalid - run biber with '--validate_datamodel' for details.
-[2418] Biber.pm:131> WARN - I didn't find a database entry for 'rojas' (section 0)
-[2418] Biber.pm:131> WARN - I didn't find a database entry for 'cheng_-relaxed_1997' (section 0)
-[2418] Biber.pm:133> INFO - WARNINGS: 10
+[183] biber-MSWIN64:340> INFO - === 
+[250] Biber.pm:419> INFO - Reading 'manuscript_Stragiotti.bcf'
+[476] Biber.pm:979> INFO - Found 29 citekeys in bib section 0
+[503] Biber.pm:4419> INFO - Processing section 0
+[521] Biber.pm:4610> INFO - Looking for bibtex file 'biblio.bib' for section 0
+[629] bibtex.pm:1713> INFO - LaTeX decoding ...
+[1237] bibtex.pm:1519> INFO - Found BibTeX data source 'biblio.bib'
+[1892] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1892] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1893] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[1893] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[1966] bbl.pm:660> INFO - Writing 'manuscript_Stragiotti.bbl' with encoding 'UTF-8'
+[2006] bbl.pm:763> INFO - Output to manuscript_Stragiotti.bbl
+[2007] Biber.pm:131> WARN - Duplicate entry key: 'bakker_simultaneous_2021' in file 'biblio.bib', skipping ...
+[2007] Biber.pm:131> WARN - Duplicate entry key: 'kalamkarov_asymptotic_2009' in file 'biblio.bib', skipping ...
+[2007] Biber.pm:131> WARN - Duplicate entry key: 'kirsch_optimal_1980' in file 'biblio.bib', skipping ...
+[2007] Biber.pm:131> WARN - Duplicate entry key: 'martins_engineering_2021' in file 'biblio.bib', skipping ...
+[2007] Biber.pm:131> WARN - Duplicate entry key: 'silva_smith_topology_1997' in file 'biblio.bib', skipping ...
+[2007] Biber.pm:131> WARN - Duplicate entry key: 'stolpe_alternative_2001' in file 'biblio.bib', skipping ...
+[2007] Biber.pm:131> WARN - ISBN '978-3-642-07698-5 978-3-662-05086-6' in entry 'bendsoe_topology_2004' is invalid - run biber with '--validate_datamodel' for details.
+[2008] Biber.pm:131> WARN - ISBN '978-1-108-98064-7 978-1-108-83341-7' in entry 'martins_engineering_2021' is invalid - run biber with '--validate_datamodel' for details.
+[2008] Biber.pm:133> INFO - WARNINGS: 8
