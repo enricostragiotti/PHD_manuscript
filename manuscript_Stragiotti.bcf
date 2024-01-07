@@ -2560,30 +2560,48 @@
     <bcf:citekey order="166" intorder="1">sigmund_morphology-based_2007</bcf:citekey>
     <bcf:citekey order="167" intorder="1">sigmund_morphology-based_2007</bcf:citekey>
     <bcf:citekey order="168" intorder="1">michell_limits_1904</bcf:citekey>
-    <bcf:citekey order="169" intorder="1">lewinski_extended_1994</bcf:citekey>
-    <bcf:citekey order="170" intorder="1">lewinski_extended_1994</bcf:citekey>
-    <bcf:citekey order="171" intorder="1">lewinski_extended_1994</bcf:citekey>
-    <bcf:citekey order="172" intorder="1">lewinski_extended_1994</bcf:citekey>
-    <bcf:citekey order="173" intorder="1">lewinski_extended_1994</bcf:citekey>
-    <bcf:citekey order="174" intorder="1">lewinski_extended_1994</bcf:citekey>
-    <bcf:citekey order="175" intorder="1">munro_local_2017</bcf:citekey>
-    <bcf:citekey order="176" intorder="1">munro_local_2017</bcf:citekey>
-    <bcf:citekey order="177" intorder="1">munro_local_2017</bcf:citekey>
-    <bcf:citekey order="178" intorder="1">munro_local_2017</bcf:citekey>
-    <bcf:citekey order="179" intorder="1">munro_local_2017</bcf:citekey>
-    <bcf:citekey order="180" intorder="1">munro_local_2017</bcf:citekey>
-    <bcf:citekey order="181" intorder="1">sigmund_non-optimality_2016</bcf:citekey>
-    <bcf:citekey order="182" intorder="1">sigmund_non-optimality_2016</bcf:citekey>
-    <bcf:citekey order="183" intorder="1">sigmund_non-optimality_2016</bcf:citekey>
-    <bcf:citekey order="184" intorder="1">sigmund_non-optimality_2016</bcf:citekey>
-    <bcf:citekey order="185" intorder="1">sigmund_non-optimality_2016</bcf:citekey>
-    <bcf:citekey order="186" intorder="1">sigmund_non-optimality_2016</bcf:citekey>
-    <bcf:citekey order="187" intorder="1">bendsoe_optimal_1989</bcf:citekey>
-    <bcf:citekey order="188" intorder="1">bendsoe_optimal_1989</bcf:citekey>
-    <bcf:citekey order="189" intorder="1">bendsoe_optimal_1989</bcf:citekey>
-    <bcf:citekey order="190" intorder="1">bendsoe_optimal_1989</bcf:citekey>
-    <bcf:citekey order="191" intorder="1">bendsoe_optimal_1989</bcf:citekey>
-    <bcf:citekey order="192" intorder="1">bendsoe_optimal_1989</bcf:citekey>
+    <bcf:citekey order="169" intorder="1">dorn_automatic_1964</bcf:citekey>
+    <bcf:citekey order="169" intorder="2">hemp_optimum_1973</bcf:citekey>
+    <bcf:citekey order="169" intorder="3">bendsoe_topology_2004</bcf:citekey>
+    <bcf:citekey order="170" intorder="1">dorn_automatic_1964</bcf:citekey>
+    <bcf:citekey order="170" intorder="2">hemp_optimum_1973</bcf:citekey>
+    <bcf:citekey order="170" intorder="3">bendsoe_topology_2004</bcf:citekey>
+    <bcf:citekey order="171" intorder="1">bendsoe_topology_2004</bcf:citekey>
+    <bcf:citekey order="172" intorder="1">bendsoe_topology_2004</bcf:citekey>
+    <bcf:citekey order="173" intorder="1">bendsoe_topology_2004</bcf:citekey>
+    <bcf:citekey order="174" intorder="1">bendsoe_topology_2004</bcf:citekey>
+    <bcf:citekey order="175" intorder="1">dorn_automatic_1964</bcf:citekey>
+    <bcf:citekey order="176" intorder="1">dorn_automatic_1964</bcf:citekey>
+    <bcf:citekey order="177" intorder="1">dorn_automatic_1964</bcf:citekey>
+    <bcf:citekey order="178" intorder="1">dorn_automatic_1964</bcf:citekey>
+    <bcf:citekey order="179" intorder="1">hemp_optimum_1973</bcf:citekey>
+    <bcf:citekey order="180" intorder="1">hemp_optimum_1973</bcf:citekey>
+    <bcf:citekey order="181" intorder="1">hemp_optimum_1973</bcf:citekey>
+    <bcf:citekey order="182" intorder="1">hemp_optimum_1973</bcf:citekey>
+    <bcf:citekey order="183" intorder="1">lewinski_extended_1994</bcf:citekey>
+    <bcf:citekey order="184" intorder="1">lewinski_extended_1994</bcf:citekey>
+    <bcf:citekey order="185" intorder="1">lewinski_extended_1994</bcf:citekey>
+    <bcf:citekey order="186" intorder="1">lewinski_extended_1994</bcf:citekey>
+    <bcf:citekey order="187" intorder="1">lewinski_extended_1994</bcf:citekey>
+    <bcf:citekey order="188" intorder="1">lewinski_extended_1994</bcf:citekey>
+    <bcf:citekey order="189" intorder="1">munro_local_2017</bcf:citekey>
+    <bcf:citekey order="190" intorder="1">munro_local_2017</bcf:citekey>
+    <bcf:citekey order="191" intorder="1">munro_local_2017</bcf:citekey>
+    <bcf:citekey order="192" intorder="1">munro_local_2017</bcf:citekey>
+    <bcf:citekey order="193" intorder="1">munro_local_2017</bcf:citekey>
+    <bcf:citekey order="194" intorder="1">munro_local_2017</bcf:citekey>
+    <bcf:citekey order="195" intorder="1">sigmund_non-optimality_2016</bcf:citekey>
+    <bcf:citekey order="196" intorder="1">sigmund_non-optimality_2016</bcf:citekey>
+    <bcf:citekey order="197" intorder="1">sigmund_non-optimality_2016</bcf:citekey>
+    <bcf:citekey order="198" intorder="1">sigmund_non-optimality_2016</bcf:citekey>
+    <bcf:citekey order="199" intorder="1">sigmund_non-optimality_2016</bcf:citekey>
+    <bcf:citekey order="200" intorder="1">sigmund_non-optimality_2016</bcf:citekey>
+    <bcf:citekey order="201" intorder="1">bendsoe_optimal_1989</bcf:citekey>
+    <bcf:citekey order="202" intorder="1">bendsoe_optimal_1989</bcf:citekey>
+    <bcf:citekey order="203" intorder="1">bendsoe_optimal_1989</bcf:citekey>
+    <bcf:citekey order="204" intorder="1">bendsoe_optimal_1989</bcf:citekey>
+    <bcf:citekey order="205" intorder="1">bendsoe_optimal_1989</bcf:citekey>
+    <bcf:citekey order="206" intorder="1">bendsoe_optimal_1989</bcf:citekey>
     <bcf:citekeycount count="1">stragiotti_towards_2021</bcf:citekeycount>
     <bcf:citekeycount count="3">achtziger_mathematical_2008</bcf:citekeycount>
     <bcf:citekeycount count="3">cheng_study_1992</bcf:citekeycount>
@@ -2598,7 +2616,7 @@
     <bcf:citekeycount count="3">cheng_relaxed_1997</bcf:citekeycount>
     <bcf:citekeycount count="3">da_silva_local_2021</bcf:citekeycount>
     <bcf:citekeycount count="3">kreisselmeier_systematic_1979</bcf:citekeycount>
-    <bcf:citekeycount count="3">bendsoe_topology_2004</bcf:citekeycount>
+    <bcf:citekeycount count="6">bendsoe_topology_2004</bcf:citekeycount>
     <bcf:citekeycount count="1">martins_engineering_2021</bcf:citekeycount>
     <bcf:citekeycount count="6">bendsoe_optimal_1989</bcf:citekeycount>
     <bcf:citekeycount count="3">watts_simple_2019</bcf:citekeycount>
@@ -2611,6 +2629,8 @@
     <bcf:citekeycount count="6">sigmund_non-optimality_2016</bcf:citekeycount>
     <bcf:citekeycount count="3">sigmund_morphology-based_2007</bcf:citekeycount>
     <bcf:citekeycount count="1">michell_limits_1904</bcf:citekeycount>
+    <bcf:citekeycount count="3">dorn_automatic_1964</bcf:citekeycount>
+    <bcf:citekeycount count="3">hemp_optimum_1973</bcf:citekeycount>
     <bcf:citekeycount count="3">lewinski_extended_1994</bcf:citekeycount>
     <bcf:citekeycount count="3">munro_local_2017</bcf:citekeycount>
   </bcf:section>

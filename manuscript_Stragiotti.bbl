@@ -1322,6 +1322,74 @@
       \verb https://doi.org/10.1080/14786440409463229
       \endverb
     \endentry
+    \entry{dorn_automatic_1964}{article}{}
+      \name{author}{3}{}{%
+        {{hash=b376238ba054044a486754c2044d0e16}{%
+           family={Dorn},
+           familyi={D\bibinitperiod},
+           given={W.\bibnamedelimi S.},
+           giveni={W\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=59a40b26652a8190fc919a256f13719b}{%
+           family={Gomory},
+           familyi={G\bibinitperiod},
+           given={Ralph\bibnamedelima E.},
+           giveni={R\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=a8af5dcff31a4841021a638f0d608a1e}{%
+           family={Greenberg},
+           familyi={G\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{cfb42fb5cc62cb831bec503f75cd4c6a}
+      \strng{fullhash}{cfb42fb5cc62cb831bec503f75cd4c6a}
+      \strng{bibnamehash}{cfb42fb5cc62cb831bec503f75cd4c6a}
+      \strng{authorbibnamehash}{cfb42fb5cc62cb831bec503f75cd4c6a}
+      \strng{authornamehash}{cfb42fb5cc62cb831bec503f75cd4c6a}
+      \strng{authorfullhash}{cfb42fb5cc62cb831bec503f75cd4c6a}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{J. Mécanique}
+      \field{title}{Automatic design of optimal structures}
+      \field{urlday}{14}
+      \field{urlmonth}{1}
+      \field{urlyear}{2021}
+      \field{year}{1964}
+      \field{urldateera}{ce}
+    \endentry
+    \entry{hemp_optimum_1973}{book}{}
+      \name{author}{1}{}{%
+        {{hash=2582d45fcb57e3014533a29b290a9394}{%
+           family={Hemp},
+           familyi={H\bibinitperiod},
+           given={W.\bibnamedelimi S.},
+           giveni={W\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{publisher}{1}{%
+        {Clarendon Press}%
+      }
+      \strng{namehash}{2582d45fcb57e3014533a29b290a9394}
+      \strng{fullhash}{2582d45fcb57e3014533a29b290a9394}
+      \strng{bibnamehash}{2582d45fcb57e3014533a29b290a9394}
+      \strng{authorbibnamehash}{2582d45fcb57e3014533a29b290a9394}
+      \strng{authornamehash}{2582d45fcb57e3014533a29b290a9394}
+      \strng{authorfullhash}{2582d45fcb57e3014533a29b290a9394}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-0-19-856110-1}
+      \field{note}{Google-Books-ID: cJhpAAAAMAAJ}
+      \field{title}{Optimum {Structures}}
+      \field{year}{1973}
+    \endentry
     \entry{lewinski_extended_1994}{article}{}
       \name{author}{3}{}{%
         {{hash=417b620beb41937e6ad39fabaaed560f}{%

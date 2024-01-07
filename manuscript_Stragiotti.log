@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.8.29)  24 DEC 2023 13:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.8.29)  7 JAN 2024 12:42
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2678,16 +2678,17 @@ Package tocbasic Info: character protrusion at lof deactivated on input line 182
  (manuscript_Stragiotti.lof
 LaTeX Font Info:    Font shape `T1/zplLF/m/n' will be
 (Font)              scaled to size 5.917pt on input line 5.
+
+Overfull \hbox (47.54578pt too wide) in paragraph at lines 5--5
+ \OML/npxmi/m/it/10.95 ^^[[] \U/npxmia/m/it/10.95 = \OT1/zplTLF/m/n/10.95 10\OML/npxmi/m/it/10.95 :\OT1/zplTLF/m/n/10.95 00$\T1/zplLF/m/n/10.95 (-20) , 2.00, 0.40, and 0.25, show-ing a vol-ume frac-tion of $\OML/npxmi/m/it/10.95 V[] \U/npxmia/m/it/10.95 = \OT1/zplTLF/m/n/10.95 1\OML/npxmi/m/it/10.95 :\OT1/zplTLF/m/n/10.95 60%\OML/npxmi/m/it/10.95 ; \OT1/zplTLF/m/n/10.95 4\OML/npxmi/m/it/10.95 :\OT1/zplTLF/m/n/10.95 04%\OML/npxmi/m/it/10.95 ; \OT1/zplTLF/m/n/10.95 18\OML/npxmi/m/it/10.95 :\OT1/zplTLF/m/n/10.95 03%[]34\OML/npxmi/m/it/10.95 :\OT1/zplTLF/m/n/10.95 71%$\T1/zplLF/m/n/10.95 (-20) , 
+ []
+
 )
 \tf@lof=\write24
 \openout4 = `manuscript_Stragiotti.lof'.
 
 Package tocbasic Info: character protrusion at lot deactivated on input line 188.
- (manuscript_Stragiotti.lot)
-\tf@lot=\write25
-\openout4 = `manuscript_Stragiotti.lot'.
-
- (manuscript_Stragiotti.gls
+ (manuscript_Stragiotti.lot
 \openout4 = `manuscript_Stragiotti.mw'.
 
  [5] (manuscript_Stragiotti.mw)
@@ -2697,10 +2698,38 @@ Package tocbasic Info: character protrusion at lot deactivated on input line 188
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
 )
+\tf@lot=\write25
+\openout4 = `manuscript_Stragiotti.lot'.
+
+ (manuscript_Stragiotti.gls)
 \openout4 = `manuscript_Stragiotti.mw'.
 
  [6] (manuscript_Stragiotti.mw)
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
 \openout4 = `manuscript_Stragiotti.mw'.
 
 *geometry* verbose mode - [ newgeometry ] result:
@@ -2913,7 +2942,7 @@ Underfull \vbox (badness 2111) has occurred while \output is active []
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
-<figures/03_comparison_TO_TTO/03_gauss_point/gp.pdf, id=260, 128.03734pt x 128.63458pt>
+<figures/03_comparison_TO_TTO/03_gauss_point/gp.pdf, id=273, 128.03734pt x 128.63458pt>
 File: figures/03_comparison_TO_TTO/03_gauss_point/gp.pdf Graphic file (type pdf)
 <use figures/03_comparison_TO_TTO/03_gauss_point/gp.pdf>
 Package pdftex.def Info: figures/03_comparison_TO_TTO/03_gauss_point/gp.pdf  used on input line 58.
@@ -3492,7 +3521,7 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input li
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 274.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 274.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 274.
-<figures/03_comparison_TO_TTO/06_L_bc/L_bc.pdf, id=426, 363.90051pt x 314.47989pt>
+<figures/03_comparison_TO_TTO/06_L_bc/L_bc.pdf, id=439, 363.90051pt x 314.47989pt>
 File: figures/03_comparison_TO_TTO/06_L_bc/L_bc.pdf Graphic file (type pdf)
 <use figures/03_comparison_TO_TTO/06_L_bc/L_bc.pdf>
 Package pdftex.def Info: figures/03_comparison_TO_TTO/06_L_bc/L_bc.pdf  used on input line 279.
@@ -3673,12 +3702,13 @@ Underfull \hbox (badness 1122) in paragraph at lines 306--306
 [][][][][][]\T1/zplLF/m/n/9 (+20) 21.[] [][]John-son ([]2007), []'The NLopt
  []
 
+\openout4 = `manuscript_Stragiotti.mw'.
 
-Underfull \vbox (badness 1635) has occurred while \output is active []
+[9 <./figures/03_comparison_TO_TTO/06_L_bc/L_bc.pdf>] (manuscript_Stragiotti.mw)
+\openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
- [9 <./figures/03_comparison_TO_TTO/06_L_bc/L_bc.pdf>] (manuscript_Stragiotti.mw)
 \openout4 = `manuscript_Stragiotti.mw'.
 
 
@@ -3751,42 +3781,42 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input li
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 310.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 310.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 310.
-<figures/03_comparison_TO_TTO/07_to_sol/fig0_10.pdf, id=473, 270.27748pt x 270.27748pt>
+<figures/03_comparison_TO_TTO/07_to_sol/fig0_10.pdf, id=487, 270.27748pt x 270.27748pt>
 File: figures/03_comparison_TO_TTO/07_to_sol/fig0_10.pdf Graphic file (type pdf)
 <use figures/03_comparison_TO_TTO/07_to_sol/fig0_10.pdf>
 Package pdftex.def Info: figures/03_comparison_TO_TTO/07_to_sol/fig0_10.pdf  used on input line 314.
 (pdftex.def)             Requested size: 108.7609pt x 108.76068pt.
-<figures/03_comparison_TO_TTO/07_to_sol/fig0_2.pdf, id=474, 270.27748pt x 270.27748pt>
+<figures/03_comparison_TO_TTO/07_to_sol/fig0_2.pdf, id=488, 270.27748pt x 270.27748pt>
 File: figures/03_comparison_TO_TTO/07_to_sol/fig0_2.pdf Graphic file (type pdf)
 <use figures/03_comparison_TO_TTO/07_to_sol/fig0_2.pdf>
 Package pdftex.def Info: figures/03_comparison_TO_TTO/07_to_sol/fig0_2.pdf  used on input line 316.
 (pdftex.def)             Requested size: 108.7609pt x 108.76068pt.
-<figures/03_comparison_TO_TTO/07_to_sol/fig0_0.4.pdf, id=475, 270.27748pt x 270.27748pt>
+<figures/03_comparison_TO_TTO/07_to_sol/fig0_0.4.pdf, id=489, 270.27748pt x 270.27748pt>
 File: figures/03_comparison_TO_TTO/07_to_sol/fig0_0.4.pdf Graphic file (type pdf)
 <use figures/03_comparison_TO_TTO/07_to_sol/fig0_0.4.pdf>
 Package pdftex.def Info: figures/03_comparison_TO_TTO/07_to_sol/fig0_0.4.pdf  used on input line 318.
 (pdftex.def)             Requested size: 108.7609pt x 108.76068pt.
-<figures/03_comparison_TO_TTO/07_to_sol/fig0_0.25.pdf, id=476, 270.27748pt x 270.27748pt>
+<figures/03_comparison_TO_TTO/07_to_sol/fig0_0.25.pdf, id=490, 270.27748pt x 270.27748pt>
 File: figures/03_comparison_TO_TTO/07_to_sol/fig0_0.25.pdf Graphic file (type pdf)
 <use figures/03_comparison_TO_TTO/07_to_sol/fig0_0.25.pdf>
 Package pdftex.def Info: figures/03_comparison_TO_TTO/07_to_sol/fig0_0.25.pdf  used on input line 320.
 (pdftex.def)             Requested size: 108.7609pt x 108.76068pt.
-<figures/03_comparison_TO_TTO/07_to_sol/stress_10.pdf, id=477, 142.26349pt x 179.4163pt>
+<figures/03_comparison_TO_TTO/07_to_sol/stress_10.pdf, id=491, 142.26349pt x 179.4163pt>
 File: figures/03_comparison_TO_TTO/07_to_sol/stress_10.pdf Graphic file (type pdf)
 <use figures/03_comparison_TO_TTO/07_to_sol/stress_10.pdf>
 Package pdftex.def Info: figures/03_comparison_TO_TTO/07_to_sol/stress_10.pdf  used on input line 322.
 (pdftex.def)             Requested size: 108.7609pt x 137.16815pt.
-<figures/03_comparison_TO_TTO/07_to_sol/stress_2.pdf, id=478, 142.26349pt x 179.4163pt>
+<figures/03_comparison_TO_TTO/07_to_sol/stress_2.pdf, id=492, 142.26349pt x 179.4163pt>
 File: figures/03_comparison_TO_TTO/07_to_sol/stress_2.pdf Graphic file (type pdf)
 <use figures/03_comparison_TO_TTO/07_to_sol/stress_2.pdf>
 Package pdftex.def Info: figures/03_comparison_TO_TTO/07_to_sol/stress_2.pdf  used on input line 324.
 (pdftex.def)             Requested size: 108.7609pt x 137.16815pt.
-<figures/03_comparison_TO_TTO/07_to_sol/stress_04.pdf, id=479, 142.26349pt x 179.4163pt>
+<figures/03_comparison_TO_TTO/07_to_sol/stress_04.pdf, id=493, 142.26349pt x 179.4163pt>
 File: figures/03_comparison_TO_TTO/07_to_sol/stress_04.pdf Graphic file (type pdf)
 <use figures/03_comparison_TO_TTO/07_to_sol/stress_04.pdf>
 Package pdftex.def Info: figures/03_comparison_TO_TTO/07_to_sol/stress_04.pdf  used on input line 326.
 (pdftex.def)             Requested size: 108.7609pt x 137.16815pt.
-<figures/03_comparison_TO_TTO/07_to_sol/stress_025.pdf, id=480, 142.26349pt x 179.4163pt>
+<figures/03_comparison_TO_TTO/07_to_sol/stress_025.pdf, id=494, 142.26349pt x 179.4163pt>
 File: figures/03_comparison_TO_TTO/07_to_sol/stress_025.pdf Graphic file (type pdf)
 <use figures/03_comparison_TO_TTO/07_to_sol/stress_025.pdf>
 Package pdftex.def Info: figures/03_comparison_TO_TTO/07_to_sol/stress_025.pdf  used on input line 328.
@@ -3885,7 +3915,7 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input li
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
-Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 339.
+Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 338.
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
@@ -3910,15 +3940,15 @@ Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 339.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 339.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 339.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 339.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 339.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 340.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 340.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 340.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 340.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 341.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 341.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 342.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 342.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 343.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 343.
 \openout4 = `manuscript_Stragiotti.mw'.
 
  [11 <./figures/03_comparison_TO_TTO/07_to_sol/fig0_10.pdf> <./figures/03_comparison_TO_TTO/07_to_sol/fig0_2.pdf
@@ -3945,20 +3975,33 @@ pdfTeX warning: pdflatex (file ./figures/03_comparison_TO_TTO/07_to_sol/stress_0
 >] (manuscript_Stragiotti.mw)
 \openout4 = `manuscript_Stragiotti.mw'.
 
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 345.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 345.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 345.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 344.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 344.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 344.
 
 
-LaTeX Warning: Reference `sec:03_michell' on page 12 undefined on input line 345.
-
-\openout4 = `manuscript_Stragiotti.mw'.
+LaTeX Warning: Reference `sec:03_michell' on page 12 undefined on input line 344.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 345.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 345.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 345.
+\openout4 = `manuscript_Stragiotti.mw'.
+
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 344.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 344.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 344.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 359.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 359.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 359.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 359.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 359.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 359.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 359.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 359.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 359.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 359.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 359.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 359.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 359.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 360.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 360.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 360.
@@ -3972,6 +4015,12 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input li
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 360.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 360.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 360.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 360.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 360.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 360.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 360.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 360.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 360.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 361.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 361.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 361.
@@ -4314,111 +4363,187 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input li
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 378.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 378.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 378.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 379.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 379.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 379.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 379.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 379.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 379.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 379.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 379.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 379.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 379.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 379.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 379.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 379.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 379.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 379.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 379.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 379.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 379.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 379.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 380.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 381.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 381.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 381.
-<figures/03_comparison_TO_TTO/08_to_no/fig0.pdf, id=597, 270.27748pt x 270.27748pt>
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 380.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 380.
+<figures/03_comparison_TO_TTO/08_to_no/fig0.pdf, id=611, 270.27748pt x 270.27748pt>
 File: figures/03_comparison_TO_TTO/08_to_no/fig0.pdf Graphic file (type pdf)
 <use figures/03_comparison_TO_TTO/08_to_no/fig0.pdf>
-Package pdftex.def Info: figures/03_comparison_TO_TTO/08_to_no/fig0.pdf  used on input line 387.
+Package pdftex.def Info: figures/03_comparison_TO_TTO/08_to_no/fig0.pdf  used on input line 386.
 (pdftex.def)             Requested size: 109.25842pt x 109.25969pt.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 388.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 388.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 388.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 388.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 390.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 392.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 392.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 392.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 392.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 392.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 392.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 392.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 392.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 392.
-<figures/03_comparison_TO_TTO/09_to_zoom/to_zoom.pdf, id=599, 142.26349pt x 185.34544pt>
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 387.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 387.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 387.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 387.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 389.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 391.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 391.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 391.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 391.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 391.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 391.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 391.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 391.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 391.
+<figures/03_comparison_TO_TTO/09_to_zoom/to_zoom.pdf, id=613, 142.26349pt x 185.34544pt>
 File: figures/03_comparison_TO_TTO/09_to_zoom/to_zoom.pdf Graphic file (type pdf)
 <use figures/03_comparison_TO_TTO/09_to_zoom/to_zoom.pdf>
-Package pdftex.def Info: figures/03_comparison_TO_TTO/09_to_zoom/to_zoom.pdf  used on input line 395.
+Package pdftex.def Info: figures/03_comparison_TO_TTO/09_to_zoom/to_zoom.pdf  used on input line 394.
 (pdftex.def)             Requested size: 109.25842pt x 142.34877pt.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 396.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 396.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 396.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 396.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 398.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 395.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 395.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 395.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 395.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 397.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 399.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 399.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 400.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 400.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 401.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 401.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 401.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 401.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 400.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 400.
 \openout4 = `manuscript_Stragiotti.mw'.
 
 [12 <./figures/03_comparison_TO_TTO/08_to_no/fig0.pdf>] (manuscript_Stragiotti.mw)
 \openout4 = `manuscript_Stragiotti.mw'.
 
-<figures/03_comparison_TO_TTO/10a_to_graph_lin/to_c_lin.pdf, id=615, 227.85527pt x 132.67868pt>
+<figures/03_comparison_TO_TTO/10a_to_graph_lin/to_c_lin.pdf, id=629, 227.85527pt x 132.67868pt>
 File: figures/03_comparison_TO_TTO/10a_to_graph_lin/to_c_lin.pdf Graphic file (type pdf)
 <use figures/03_comparison_TO_TTO/10a_to_graph_lin/to_c_lin.pdf>
-Package pdftex.def Info: figures/03_comparison_TO_TTO/10a_to_graph_lin/to_c_lin.pdf  used on input line 406.
+Package pdftex.def Info: figures/03_comparison_TO_TTO/10a_to_graph_lin/to_c_lin.pdf  used on input line 405.
 (pdftex.def)             Requested size: 227.8547pt x 132.67834pt.
-<figures/03_comparison_TO_TTO/10b_to_graph_log/to_c.pdf, id=616, 227.85628pt x 132.6797pt>
+<figures/03_comparison_TO_TTO/10b_to_graph_log/to_c.pdf, id=630, 227.85628pt x 132.6797pt>
 File: figures/03_comparison_TO_TTO/10b_to_graph_log/to_c.pdf Graphic file (type pdf)
 <use figures/03_comparison_TO_TTO/10b_to_graph_log/to_c.pdf>
-Package pdftex.def Info: figures/03_comparison_TO_TTO/10b_to_graph_log/to_c.pdf  used on input line 408.
+Package pdftex.def Info: figures/03_comparison_TO_TTO/10b_to_graph_log/to_c.pdf  used on input line 407.
 (pdftex.def)             Requested size: 227.85571pt x 132.67937pt.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 410.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 410.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 410.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 410.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 410.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 413.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 413.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 413.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 413.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 413.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 409.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 409.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 409.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 409.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 409.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 412.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 412.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 412.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 412.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 412.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 415.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 415.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 415.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 415.
 
 
-LaTeX Warning: Reference `eq:03_optim_original' on page 13 undefined on input line 416.
+LaTeX Warning: Reference `eq:03_optim_original' on page 13 undefined on input line 415.
 
-<figures/03_comparison_TO_TTO/11_tto_sol/L_tto_opt.pdf, id=619, 135.74414pt x 157.55562pt>
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 415.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 415.
+Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 415.
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+<figures/03_comparison_TO_TTO/11_tto_sol/L_tto_opt.pdf, id=636, 135.74414pt x 157.55562pt>
 File: figures/03_comparison_TO_TTO/11_tto_sol/L_tto_opt.pdf Graphic file (type pdf)
 <use figures/03_comparison_TO_TTO/11_tto_sol/L_tto_opt.pdf>
-Package pdftex.def Info: figures/03_comparison_TO_TTO/11_tto_sol/L_tto_opt.pdf  used on input line 420.
+Package pdftex.def Info: figures/03_comparison_TO_TTO/11_tto_sol/L_tto_opt.pdf  used on input line 419.
 (pdftex.def)             Requested size: 135.74379pt x 157.55522pt.
-<figures/03_comparison_TO_TTO/11_tto_sol/L_tto_opt_st.pdf, id=620, 135.74414pt x 160.07906pt>
+<figures/03_comparison_TO_TTO/11_tto_sol/L_tto_opt_st.pdf, id=637, 135.74414pt x 160.07906pt>
 File: figures/03_comparison_TO_TTO/11_tto_sol/L_tto_opt_st.pdf Graphic file (type pdf)
 <use figures/03_comparison_TO_TTO/11_tto_sol/L_tto_opt_st.pdf>
-Package pdftex.def Info: figures/03_comparison_TO_TTO/11_tto_sol/L_tto_opt_st.pdf  used on input line 422.
+Package pdftex.def Info: figures/03_comparison_TO_TTO/11_tto_sol/L_tto_opt_st.pdf  used on input line 421.
 (pdftex.def)             Requested size: 135.74379pt x 160.07864pt.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 423.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 423.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 423.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 423.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 423.
+\openout4 = `manuscript_Stragiotti.mw'.
+
+[13 <./figures/03_comparison_TO_TTO/10a_to_graph_lin/to_c_lin.pdf> <./figures/03_comparison_TO_TTO/10b_to_graph_log/to_c.pdf> <./figures/03_comparison_TO_TTO/09_to_zoom/to_zoom.pdf>] (manuscript_Stragiotti.mw)
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 427.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 427.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 428.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 428.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 428.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 428.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 429.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 429.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 430.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 430.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 431.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 431.
 Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 431.
 \openout4 = `manuscript_Stragiotti.mw'.
@@ -4445,6 +4570,8 @@ Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 431.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 431.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 431.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 431.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 431.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 431.
@@ -4689,22 +4816,18 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input li
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 462.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 462.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 462.
-\openout4 = `manuscript_Stragiotti.mw'.
-
-[13 <./figures/03_comparison_TO_TTO/10a_to_graph_lin/to_c_lin.pdf> <./figures/03_comparison_TO_TTO/10b_to_graph_log/to_c.pdf> <./figures/03_comparison_TO_TTO/09_to_zoom/to_zoom.pdf>] (manuscript_Stragiotti.mw)
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-<figures/03_comparison_TO_TTO/12_tto_sol_13/L_tto_opt.pdf, id=673, 196.17189pt x 212.29713pt>
+<figures/03_comparison_TO_TTO/12_tto_sol_13/L_tto_opt.pdf, id=689, 196.17189pt x 212.29713pt>
 File: figures/03_comparison_TO_TTO/12_tto_sol_13/L_tto_opt.pdf Graphic file (type pdf)
 <use figures/03_comparison_TO_TTO/12_tto_sol_13/L_tto_opt.pdf>
 Package pdftex.def Info: figures/03_comparison_TO_TTO/12_tto_sol_13/L_tto_opt.pdf  used on input line 468.
 (pdftex.def)             Requested size: 109.25842pt x 118.24094pt.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 469.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 469.
+
+Underfull \hbox (badness 1424) in paragraph at lines 469--469
+[][][]\T1/zplLF/b/n/9 (+20) Figure 1.8[][]: []\T1/zplLF/m/n/9 (+20) Op-ti-mized struc-ture
+ []
+
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 471.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 472.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 472.
@@ -4720,24 +4843,13 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input li
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 472.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 472.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 472.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 474.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 474.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 474.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 474.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 474.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 474.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 474.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 474.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 474.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 474.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 472.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 472.
 \openout4 = `manuscript_Stragiotti.mw'.
 
- [14 <./figures/03_comparison_TO_TTO/11_tto_sol/L_tto_opt.pdf> <./figures/03_comparison_TO_TTO/11_tto_sol/L_tto_opt_st.pdf
+[14 <./figures/03_comparison_TO_TTO/11_tto_sol/L_tto_opt.pdf> <./figures/03_comparison_TO_TTO/11_tto_sol/L_tto_opt_st.pdf
 
 pdfTeX warning: pdflatex (file ./figures/03_comparison_TO_TTO/11_tto_sol/L_tto_opt_st.pdf): PDF inclusion: multiple pdfs with page group included in a single page
-> <./figures/03_comparison_TO_TTO/12_tto_sol_13/L_tto_opt.pdf
-
-pdfTeX warning: pdflatex (file ./figures/03_comparison_TO_TTO/12_tto_sol_13/L_tto_opt.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >] (manuscript_Stragiotti.mw)
 \openout4 = `manuscript_Stragiotti.mw'.
 
@@ -4745,83 +4857,130 @@ pdfTeX warning: pdflatex (file ./figures/03_comparison_TO_TTO/12_tto_sol_13/L_tt
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
-<figures/03_comparison_TO_TTO/13a_tto_graph_lin/tto_c_lin.pdf, id=996, 221.71735pt x 139.73807pt>
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 476.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 476.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 476.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 478.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 478.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 478.
+<figures/03_comparison_TO_TTO/13a_tto_graph_lin/tto_c_lin.pdf, id=950, 221.71735pt x 139.73807pt>
 File: figures/03_comparison_TO_TTO/13a_tto_graph_lin/tto_c_lin.pdf Graphic file (type pdf)
 <use figures/03_comparison_TO_TTO/13a_tto_graph_lin/tto_c_lin.pdf>
-Package pdftex.def Info: figures/03_comparison_TO_TTO/13a_tto_graph_lin/tto_c_lin.pdf  used on input line 480.
+Package pdftex.def Info: figures/03_comparison_TO_TTO/13a_tto_graph_lin/tto_c_lin.pdf  used on input line 482.
 (pdftex.def)             Requested size: 221.7168pt x 139.73772pt.
-<figures/03_comparison_TO_TTO/13b_tto_graph_log/tto_c.pdf, id=997, 221.7083pt x 139.73807pt>
+<figures/03_comparison_TO_TTO/13b_tto_graph_log/tto_c.pdf, id=951, 221.7083pt x 139.73807pt>
 File: figures/03_comparison_TO_TTO/13b_tto_graph_log/tto_c.pdf Graphic file (type pdf)
 <use figures/03_comparison_TO_TTO/13b_tto_graph_log/tto_c.pdf>
-Package pdftex.def Info: figures/03_comparison_TO_TTO/13b_tto_graph_log/tto_c.pdf  used on input line 482.
+Package pdftex.def Info: figures/03_comparison_TO_TTO/13b_tto_graph_log/tto_c.pdf  used on input line 484.
 (pdftex.def)             Requested size: 221.70775pt x 139.73772pt.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 484.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 484.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 484.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 484.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 484.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 489.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 489.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 489.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 489.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 489.
-<figures/03_comparison_TO_TTO/14_stress_comp/stress_comp.pdf, id=998, 276.3384pt x 175.87807pt>
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 486.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 486.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 486.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 486.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 486.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 491.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 491.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 491.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 491.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 491.
+<figures/03_comparison_TO_TTO/14_stress_comp/stress_comp.pdf, id=954, 276.3384pt x 175.87807pt>
 File: figures/03_comparison_TO_TTO/14_stress_comp/stress_comp.pdf Graphic file (type pdf)
 <use figures/03_comparison_TO_TTO/14_stress_comp/stress_comp.pdf>
-Package pdftex.def Info: figures/03_comparison_TO_TTO/14_stress_comp/stress_comp.pdf  used on input line 492.
+Package pdftex.def Info: figures/03_comparison_TO_TTO/14_stress_comp/stress_comp.pdf  used on input line 494.
 (pdftex.def)             Requested size: 276.33772pt x 175.87762pt.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 495.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 495.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 495.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 499.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 499.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 499.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 499.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 499.
 \openout4 = `manuscript_Stragiotti.mw'.
 
- [15 <./figures/03_comparison_TO_TTO/13a_tto_graph_lin/tto_c_lin.pdf> <./figures/03_comparison_TO_TTO/13b_tto_graph_log/tto_c.pdf> <./figures/03_comparison_TO_TTO/14_stress_comp/stress_comp.pdf>] (manuscript_Stragiotti.mw)
+ [15 <./figures/03_comparison_TO_TTO/12_tto_sol_13/L_tto_opt.pdf>] (manuscript_Stragiotti.mw)
 \openout4 = `manuscript_Stragiotti.mw'.
 
-<figures/03_comparison_TO_TTO/15_stress_vol/stress_vol.pdf, id=1066, 276.49397pt x 180.51942pt>
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+<figures/03_comparison_TO_TTO/15_stress_vol/stress_vol.pdf, id=1031, 276.49397pt x 180.51942pt>
 File: figures/03_comparison_TO_TTO/15_stress_vol/stress_vol.pdf Graphic file (type pdf)
 <use figures/03_comparison_TO_TTO/15_stress_vol/stress_vol.pdf>
-Package pdftex.def Info: figures/03_comparison_TO_TTO/15_stress_vol/stress_vol.pdf  used on input line 502.
+Package pdftex.def Info: figures/03_comparison_TO_TTO/15_stress_vol/stress_vol.pdf  used on input line 504.
 (pdftex.def)             Requested size: 276.49329pt x 180.51897pt.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 506.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 506.
-<figures/03_comparison_TO_TTO/16_comp_vol/comp_vol.pdf, id=1069, 280.50496pt x 180.52243pt>
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 505.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 505.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 505.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 505.
+\openout4 = `manuscript_Stragiotti.mw'.
+
+ [16 <./figures/03_comparison_TO_TTO/13a_tto_graph_lin/tto_c_lin.pdf> <./figures/03_comparison_TO_TTO/13b_tto_graph_log/tto_c.pdf> <./figures/03_comparison_TO_TTO/14_stress_comp/stress_comp.pdf>] (manuscript_Stragiotti.mw)
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+<figures/03_comparison_TO_TTO/16_comp_vol/comp_vol.pdf, id=1101, 280.50496pt x 180.52243pt>
 File: figures/03_comparison_TO_TTO/16_comp_vol/comp_vol.pdf Graphic file (type pdf)
 <use figures/03_comparison_TO_TTO/16_comp_vol/comp_vol.pdf>
-Package pdftex.def Info: figures/03_comparison_TO_TTO/16_comp_vol/comp_vol.pdf  used on input line 511.
+Package pdftex.def Info: figures/03_comparison_TO_TTO/16_comp_vol/comp_vol.pdf  used on input line 513.
 (pdftex.def)             Requested size: 280.50427pt x 180.52199pt.
-<figures/03_comparison_TO_TTO/17_time_vol/time_vol.pdf, id=1071, 286.01355pt x 171.98755pt>
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 514.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 514.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 514.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 518.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 518.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 518.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 518.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 518.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 518.
+\openout4 = `manuscript_Stragiotti.mw'.
+
+ [17 <./figures/03_comparison_TO_TTO/15_stress_vol/stress_vol.pdf> <./figures/03_comparison_TO_TTO/16_comp_vol/comp_vol.pdf>] (manuscript_Stragiotti.mw)
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+<figures/03_comparison_TO_TTO/17_time_vol/time_vol.pdf, id=1147, 286.01355pt x 171.98755pt>
 File: figures/03_comparison_TO_TTO/17_time_vol/time_vol.pdf Graphic file (type pdf)
 <use figures/03_comparison_TO_TTO/17_time_vol/time_vol.pdf>
-Package pdftex.def Info: figures/03_comparison_TO_TTO/17_time_vol/time_vol.pdf  used on input line 520.
+Package pdftex.def Info: figures/03_comparison_TO_TTO/17_time_vol/time_vol.pdf  used on input line 522.
 (pdftex.def)             Requested size: 286.01283pt x 171.98712pt.
-Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 525.
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
- [16 <./figures/03_comparison_TO_TTO/15_stress_vol/stress_vol.pdf>] (manuscript_Stragiotti.mw)
-\openout4 = `manuscript_Stragiotti.mw'.
-
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 523.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 523.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 523.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 527.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 527.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 527.
 Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 527.
 \openout4 = `manuscript_Stragiotti.mw'.
 
@@ -4847,11 +5006,7 @@ Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 527.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
-\openout4 = `manuscript_Stragiotti.mw'.
-
- [17 <./figures/03_comparison_TO_TTO/16_comp_vol/comp_vol.pdf> <./figures/03_comparison_TO_TTO/17_time_vol/time_vol.pdf>] (manuscript_Stragiotti.mw)
-\openout4 = `manuscript_Stragiotti.mw'.
-
+Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 529.
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
@@ -4860,6 +5015,60 @@ Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 527.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+ [18 <./figures/03_comparison_TO_TTO/17_time_vol/time_vol.pdf>] (manuscript_Stragiotti.mw)
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 531.
 Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 534.
 \openout4 = `manuscript_Stragiotti.mw'.
 
@@ -4888,12 +5097,44 @@ Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 534.
 )
 \openout4 = `manuscript_Stragiotti.mw'.
 
- [18] (manuscript_Stragiotti.mw)
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
  [19] (manuscript_Stragiotti.mw)
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+ [20] (manuscript_Stragiotti.mw)
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
 \openout4 = `manuscript_Stragiotti.mw'.
 
 *geometry* verbose mode - [ newgeometry ] result:
@@ -4927,17 +5168,6 @@ Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 534.
 * \@mparswitchtrue
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
- [20
-
-
-
-
-
-] (manuscript_Stragiotti.mw)
-\openout4 = `manuscript_Stragiotti.mw'.
 
 
 chapter without number
@@ -4978,7 +5208,13 @@ Package marginnote Info: Margin note 27.9 is on absolute page 28 on input line 2
 Package marginnote Info: xpos seems to be 230.20062pt on input line 234.
 \openout4 = `manuscript_Stragiotti.mw'.
 
- [21{C:/Program Files/MiKTeX/fonts/enc/dvips/base/8r.enc}] (manuscript_Stragiotti.mw)
+ [21
+
+
+
+
+
+{C:/Program Files/MiKTeX/fonts/enc/dvips/base/8r.enc}] (manuscript_Stragiotti.mw)
 \openout4 = `manuscript_Stragiotti.mw'.
 
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
@@ -5045,13 +5281,22 @@ Package marginnote Info: xpos seems to be 107.28531pt on input line 234.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
 Package marginnote Info: Margin note 29.9 is on absolute page 29 on input line 234.
 Package marginnote Info: xpos seems to be 107.28531pt on input line 234.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
 Package marginnote Info: Margin note 29.10 is on absolute page 29 on input line 234.
+Package marginnote Info: xpos seems to be 107.28531pt on input line 234.
+Package marginnote Info: Margin note 29.11 is on absolute page 29 on input line 234.
 Package marginnote Info: xpos seems to be 107.28531pt on input line 234.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
 \openout4 = `manuscript_Stragiotti.mw'.
 
  [23] (manuscript_Stragiotti.mw)
+\openout4 = `manuscript_Stragiotti.mw'.
+
+Package marginnote Info: Margin note 30.1 is on absolute page 30 on input line 234.
+Package marginnote Info: xpos seems to be 230.20062pt on input line 234.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
+\openout4 = `manuscript_Stragiotti.mw'.
+
+ [24] (manuscript_Stragiotti.mw)
 \openout4 = `manuscript_Stragiotti.mw'.
 
 *geometry* verbose mode - [ newgeometry ] result:
@@ -5086,20 +5331,19 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input li
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\openout4 = `manuscript_Stragiotti.mw'.
-
- [24
-
-
-
-] (manuscript_Stragiotti.mw)
-\openout4 = `manuscript_Stragiotti.mw'.
-
 \openout4 = `manuscript_Stragiotti.idx'.
 
 runsystem(makeindex manuscript_Stragiotti.idx)...executed safely (allowed).
 
  (manuscript_Stragiotti.ind)
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
@@ -5458,17 +5702,17 @@ Package logreq Info: Writing requests to 'manuscript_Stragiotti.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 87928 strings out of 476331
- 2037199 string characters out of 5797589
- 3393654 words of memory out of 5000000
- 106342 multiletter control sequences out of 15000+600000
- 736693 words of font info for 457 fonts, out of 8000000 for 9000
+ 87981 strings out of 476331
+ 2038565 string characters out of 5797589
+ 3395414 words of memory out of 5000000
+ 106397 multiletter control sequences out of 15000+600000
+ 736400 words of font info for 454 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 133i,20n,159p,10658b,2671s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 133i,20n,159p,10658b,2948s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newpx/NewPXBMI.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newpx/NewPXBMI_gnu.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newpx/NewPXMI.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newpx/NewPXMI_gnu.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/bera/fvmr8a.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newpx/pxmiaX.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newpx/pxsys.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/tex-gyre/qhvr.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newtx/txbexs.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newtx/txexs.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newtx/txmiaSTbb.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newpx/zplb.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newpx/zplr.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newpx/zplri.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/boondox/zxxrw8a.pfb>
-Output written on manuscript_Stragiotti.pdf (30 pages, 1144921 bytes).
+Output written on manuscript_Stragiotti.pdf (30 pages, 1161641 bytes).
 PDF statistics:
- 1394 PDF objects out of 1440 (max. 8388607)
- 165 named destinations out of 1000 (max. 500000)
+ 1445 PDF objects out of 1728 (max. 8388607)
+ 169 named destinations out of 1000 (max. 500000)
  88935 words of extra memory for PDF output out of 89155 (max. 10000000)
 
