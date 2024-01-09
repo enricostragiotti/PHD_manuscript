@@ -1,0 +1,30 @@
+[0] Config.pm:307> INFO - This is Biber 2.19
+[0] Config.pm:310> INFO - Logfile is 'manuscript_Stragiotti.blg'
+[161] biber-MSWIN64:340> INFO - === 
+[226] Biber.pm:419> INFO - Reading 'manuscript_Stragiotti.bcf'
+[930] Biber.pm:979> INFO - Found 108 citekeys in bib section 0
+[948] Biber.pm:4419> INFO - Processing section 0
+[962] Biber.pm:4610> INFO - Looking for bibtex file 'biblio.bib' for section 0
+[1057] bibtex.pm:1713> INFO - LaTeX decoding ...
+[1779] bibtex.pm:1519> INFO - Found BibTeX data source 'biblio.bib'
+[2617] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[2617] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[2617] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[2617] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[2712] bbl.pm:660> INFO - Writing 'manuscript_Stragiotti.bbl' with encoding 'UTF-8'
+[2795] bbl.pm:763> INFO - Output to manuscript_Stragiotti.bbl
+[2795] Biber.pm:131> WARN - Duplicate entry key: 'bakker_simultaneous_2021' in file 'biblio.bib', skipping ...
+[2796] Biber.pm:131> WARN - Duplicate entry key: 'kalamkarov_asymptotic_2009' in file 'biblio.bib', skipping ...
+[2796] Biber.pm:131> WARN - Duplicate entry key: 'kirsch_optimal_1980' in file 'biblio.bib', skipping ...
+[2796] Biber.pm:131> WARN - Duplicate entry key: 'martins_engineering_2021' in file 'biblio.bib', skipping ...
+[2796] Biber.pm:131> WARN - Duplicate entry key: 'sigmund_design_1997' in file 'biblio.bib', skipping ...
+[2796] Biber.pm:131> WARN - Duplicate entry key: 'silva_smith_topology_1997' in file 'biblio.bib', skipping ...
+[2796] Biber.pm:131> WARN - Duplicate entry key: 'stolpe_alternative_2001' in file 'biblio.bib', skipping ...
+[2796] Biber.pm:131> WARN - Duplicate entry key: 'svanberg_method_1987' in file 'biblio.bib', skipping ...
+[2796] Biber.pm:131> WARN - ISBN '978-3-642-07698-5 978-3-662-05086-6' in entry 'bendsoe_topology_2004' is invalid - run biber with '--validate_datamodel' for details.
+[2796] Biber.pm:131> WARN - ISBN '978-1-108-98064-7 978-1-108-83341-7' in entry 'martins_engineering_2021' is invalid - run biber with '--validate_datamodel' for details.
+[2796] Biber.pm:131> WARN - ISBN '978-3-662-03117-9 978-3-662-03115-5' in entry 'bendsoe_optimization_1995' is invalid - run biber with '--validate_datamodel' for details.
+[2796] Biber.pm:131> WARN - ISBN '978-0-89871-668-9 978-0-89871-876-8' in entry 'conn_introduction_2009' is invalid - run biber with '--validate_datamodel' for details.
+[2796] Biber.pm:131> WARN - ISBN '978-3-319-68912-8 978-3-319-68913-5' in entry 'audet_derivative-free_2017' is invalid - run biber with '--validate_datamodel' for details.
+[2796] Biber.pm:131> WARN - ISBN '978-1-118-65950-2 978-0-470-93741-9' in entry 'simon_evolutionary_2013' is invalid - run biber with '--validate_datamodel' for details.
+[2796] Biber.pm:133> INFO - WARNINGS: 14

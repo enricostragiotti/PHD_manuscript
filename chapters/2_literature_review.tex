@@ -2,113 +2,80 @@
 \glsresetall % reset glossary
 
 \chapter{Literature review}
-Introduction
-
-This thesis is concerned with the application of optimization to the field of structural engineering. As such, knowledge of both existing optimization methods and current engineering practice is required. This chapter contains a review of current work
+This thesis focuses on the numerical optimization in the structural engineering domain. As such, one needs familiarity with existing optimization methods and contemporary engineering practices. The purpose of this chapter is to provide the reader with a non-exhaustive historical overview of structural optimization, particularly in the context of ultralight and modular structures. Additionally, we introduce crucial concepts and terminology that will be employed consistently throughout the document.
 
 \section{An introduction to structural optimization}
+Structural optimization is a multidisciplinary field within engineering that aims to systematically improve the performance--considering factors like mass, stiffness, and dynamic response--by optimizing their shape, material distribution, and overall design. Historically, structural optimization algorithms are categorized into three families: sizing, shape, and topology optimization. Sizing optimization concentrates on determining the optimal distribution of variables, where both the design and state variable domains are known \textit{a priori} and remain constant during optimization. In contrast, shape optimization aims to discover the optimal shape of a predefined domain, treating the domain itself as a design variable allowing for flexibility in shaping the structure. Topology optimization goes further, involving the determination of features like the number, location, and shape of holes, as well as the connectivity of the structural domain. This approach offers a more comprehensive exploration of possibilities in structural design. A visual representation of the three families is provided in \figref{fig:02_opt_fam}.
 
-intro on structural optimization
+\begin{figure}
+    \centering
+    \includegraphics[width=\linewidth]{figures/02_literature/opt_family.png}
+    \caption{Visual representation of (a) size, (b) shape and (c) topology optimization \cite{bendsoe_topology_2004}.}
+    \label{fig:02_opt_fam}
+\end{figure}
 
-different families, sizing, shape and topology optimization
-
-Numerical optimization consists of the use of algorithms to minimize or maximize a given function by varying several variables. The problem might or not be subject to constraints.
-
-The formulation of an optimization problem is an important step that permits avoiding common conceptual errors, as confusing constraints with objective functions. If the problem formulation is wrong, the solution could fail or simply return a mathematical optimum that is not feasible engineering-wise.
+Structural optimization involves using mathematical algorithms, computational models, and iterative analyses to explore and refine design solutions. For that reason, we introduce now the basic concepts and terminology behind numerical optimization. In numerical optimization, algorithms are employed to minimize or maximize a specific function by adjusting various design variables. The problem may or may not be subject to constraints. Formulating an optimization problem is a crucial step to prevent common conceptual errors, such as confusing constraints with objective functions. An incorrect problem formulation can lead to a failed solution or yield a mathematical optimum that lacks feasibility from an engineering perspective.
 
 The most general formulation of an optimization problem is written as:
 \begin{equation}
     \begin{aligned}
-    \min_{\bm{x}}         && & f(\bm{x})\\
-    \textrm{by varying}   && \bm{x} &\in [l^-,l^+] \\
-    \textrm{s.t.}   && c_e(\bm{x}) &= 0 \\
-    && c_i(\bm{x}) &> 0, \\
+    \min_{\vect{x}}         && & f(\vect{x})\\
+    \textrm{by varying}   && \vect{x} &\in [l^-,l^+] \\
+    \textrm{s.t.}   && \vect{g}_\text{e}(\vect{x}) &= 0 \\
+    && \vect{g}_\text{i}(\vect{x}) &> 0, \\
     \end{aligned}
 \end{equation}
-where 
-\begin{itemize}
-    \item $ f(x) $ is the objective function to minimize
-    \item $ \bm{x} $ is the vector of design variables bounded between $ l^- $ and $ l^+ $
-    \item $c_e$ are the equality constraints and $c_i$ the inequality constraints.
-\end{itemize}
+where $ f(x) $ is the objective function to minimize, $ \bm{x} $ is the vector of design variables bounded between $ l^- $ and $ l^+ $, and $\vect{g}_\text{e}$ and $\vect{g}_\text{i}$ represent the equality and inequality constraints, respectively.
 
-\subsubsection{Objective Function}
-In the convention of numerical optimization, the objective function $f$ is the scalar that we want to minimize. If one would instead maximize a function, then one only needs to use the inverse or the opposite of that function, in order to follow the convenction. Common objective functions in the structural design are the minimization of the weight or the structural compliance of a structure. The objective function can be modelled as an explicit function or even be the result of a highly complex computational procedure. The choice of the objective function is critical to propose a design that is feasable from the engineering point of view, regardless of the precision of the optimization scheme used.
- 
-Optimization problems are classified in the literature with respect to the objective function by determining how the function is linked to design variables (linear, quadratic, or generally non-linear).
- 
-If one would optimize a part using multiple objective functions, it is possible, but this results in a family of optimum designs with different emphasis on the various objectives. Usually, it is easier to convert these different objectives into constraints \sidecite{martins_engineering_2021}.
+\paragraph{Objective Function}
+In numerical optimization, the objective function $f(\vect{x})$ represents the scalar that we aim to minimize. Should the goal be to maximize a function, one can achieve this by minimizing the opposite of that function, maintaining adherence to the convention. Common objective functions in structural design include the minimization of volume or structural compliance. The objective function can take the form of an explicit function or result from a highly complex computational procedure. The selection of the objective function is crucial to propose a design that is feasible from an engineering perspective, regardless of the precision of the optimization scheme employed.
 
-\subsubsection{Design Variables}
-The design variables $\bm{x}$ are the parameters that the optimizer algorithm can change to minimize the objective function. Design variables could be continuous or discrete if only some distinct values are allowed (for example, only a certain size for a hole in a structural analysis). The optimization problem formulation allows for the lower and upper boundary for each design variable known in the literature as variable bounds.
+Optimization problems are categorized in the literature based on how the objective function is with respect to design variables, whether linear, quadratic, or generally non-linear. It is possible to concurrently optimize multiple objective functions, but this usually results in a family of optimum designs with differing emphases on the various objectives called Pareto front. When possible, it is more straightforward to convert these diverse objectives into constraints~\sidecite{martins_engineering_2021}.
 
-\subsubsection{Constraints}
-The constraints are functions used to restrict in some way the design variables. They are used to prevent the algorithm from finding a numerical minimum that is not feasible because of physical and engineering constraints. As in the case of the objective function, the constraint functions can be linear, quadratic, or generally non-linear and different algorithms must be used accordingly.
- 
-The constraint functions can be further classified: if the design variables are restricted to be equal to a fixed quantity, the functions are called \textit{equality constraints} ($C_e$). When instead the design variables are enforced to be greater or equal to a certain quantity the functions are called \textit{inequality constraints} ($C_i$).
+\paragraph{Design Variables}
+The design variables $\vect{x}$ are the parameters that the optimizer algorithm can change to minimize the objective function. Design variables could be continuous or discrete if only some distinct values are allowed (for example, only a certain size for a hole in a structural analysis). The optimization problem formulation allows for the lower and upper boundary for each design variable known in the literature as variable bounds.
+
+\paragraph{Constraints}
+The constraints are functions used to restrict the design variables in some way. They serve the purpose of preventing the algorithm from converging to a numerical minimum that is not feasible due to physical and engineering constraints. Similar to the objective function, constraint functions can take on linear, quadratic, or generally non-linear forms, and different algorithms must be applied accordingly.
+
+Constraint functions can be further classified into two types: equality constraints ($\vect{g}\text{e}$), which arise when the design variables are restricted to be equal to a fixed quantity, and inequality constraints ($\vect{g}\text{i}$), which come into play when the design variables are required to be greater than or equal to a certain quantity.
 
 \subsection{Optimizers}
-Compliance minimization problems have been solved with a variety of algorithm types. There exists three
-main algorithm families to perform the optimizations: optimality criteria, metaheuristic algorithms and
-gradient-based strategie
-The different type of approximations of the problem include among others Sequential Linear Programming
-(SLP), Sequential Least Square Quadratic Programming, Augmented Lagrangian, CONvex LINearization
-(CONLIN) [46] or Methods of Moving Asymptotes (MMA) [47]. Dedicated algorithms to solve the approx-
-10
-2.3. Strength-Based Topology Optimization
-imated problems include among others the primal-dual method or interior point method. SLP consists in
-solving successive linearized problem at the current iteration, whereas SLSQP uses a quadratic approximation.
-The Augmented Lagrangian is an improved quadratic penalty method. CONLIN linearizes or uses an inverse
-approximation, depending on the sign of the gradient. MMA consists in a monotonous approximation, which
-can be controlled by the values of the asymptotes. Svanberg [48] also proposed a modification on MMA, the
-Global Convergent MMA (GCMMA). The GCMMA approximation is convex and non-monotonous, which
-is better suited to approach a minima without oscillations due to its non-monotonous property. Zuo et
-al. [49] combined the monotonous Method of Moving Asymptotes (MMA) to initially converge faster towards
-a minima for compliance minimization, and then switched to the Global Convergent MMA (GCMMA).
-Strength-based topology optimization problems for isotropic materials are solved by means of gradient-based
-optimizers. A variety of algorithms has been used, including among others the Augmented Lagrangian [52,
-59, 61], MMA [4, 50, 51, 53, 69], CONLIN [63] or SLP [75]. In general, gradient-based algorithms are the
-most extensively used in topology optimization because of their versatility, even for other constraints such
-as buckling [4, 81], vibration [82] or manufacturing constraints [83, 84]. Gradient-based optimizers are also
-widely used in the case of anisotropy as discussed next.
+The field of numerical optimizers is extensive. For that reason, our focus here will be specifically on algorithms employed in structural optimization. Various algorithm types have been applied to address structural optimization problems, predominantly categorized into three main families: optimality criteria, metaheuristic algorithms, and gradient-based strategies.
 
-\sidecite{rojas}
+\gls{oc} refer to mathematical conditions or rules used to assess and guide the modification of a design or structure to achieve the desired performance~\sidecite{prager_problems_1968,prager_optimality_1968}. In the context of topology optimization, \gls{oc} are primarily applied in compliance minimization problems, as each element contributes independently to the overall compliance. Bendsøe used \gls{oc} to seek the stiffest plate \ie compliance minimization--that can be made of a given amount of material and, toghether with Kikuchi~\sidecite{bendsoe_generating_1988}, they used \gls{oc} to obtain optimal shape design of structural elements based on boundary variations without the use of remeshing. Later, Bendsøe and Sigmund~\sidecite{bendsoe_optimization_1995,sigmund_99_2001} introduced a heuristic update scheme for isotropic materials, while Allaire \etal~\sidecite{allaire_homogenization_1996} demonstrated the convergence proof for both isotropic and anisotropic materials using the \gls{ad} approach. In both methods mechanical analysis provides essential information for solving closed-form conditions, allowing iterative updates of variables until convergence is achieved.
 
+Metaheuristic (or gradient-free) algorithms offer a broader range of options compared to their gradient-based counterparts. While gradient-based algorithms typically conduct local searches, possess mathematical justification, and operate deterministically, metaheuristic algorithms are simpler and usually take much less developer time to use, and are perfect candidates for smaller problems. They find very diverse application cases and are useful when the design space is discrete, with multiple objective functions, or highly non-linear with many local minima (multimodal). The works authored by Conn \etal~\sidecite{conn_introduction_2009} and Audet and Hare~\sidecite{audet_derivative-free_2017} offer a more comprehensive exploration of gradient-free optimization algorithms. Evolutionary algorithms, a prominent category, simulate natural selection by retaining the fittest solutions in each generation while introducing mutations or cross-overs for improvement. A review on these optimization methods is given in the following reference~\sidecite{simon_evolutionary_2013}. These algorithms, also called \gls{ga}, are employed for example by Balamurugan \etal~\sidecite{balamurugan_two_2011} for compliance minimization, showcase versatility but face challenges with combinatorial considerations as the number of design variables increases~\sidecite{sigmund_usefulness_2011}. Particle swarm and ant colony algorithms, inspired by nature, provide alternative strategies with randomness and new search directions. However, these non-gradient methods require regularization schemes for topology optimization, as outlined by Luh, Lin, and others~\sidecite{luh_structural_2009, luh_binary_2011}.
+Targeting the resolution of \gls{mip} problems, branch-and-bound algorithms divide the feasible set of the original problem into subsets through a process known as branching. These subsets are then further segmented to refine the partition of the feasible set. For each subset, lower bounds and optionally upper bounds on the objective function value are determined, a process referred to as bounding. Typically, the lower bounding problems are convex problems that can be efficiently solved to global optimality. Stolpe~\sidecite{stolpe_global_2004} addresses a volume minimization problem on a truss using a continuous branch-and-bound method, ensuring convergence to a globally optimal solution. The \gls{eso} framework, initially a metaheuristic, removes less solicited elements iteratively~\sidecite{mattheck_new_1990, xie_simple_1993}. These methods offer freedom in optimization and improved convergence to local minima, especially in handling various optimization problems like buckling~\sidecite{manickarajah_evolutionary_1998}. The \gls{eso} algorithm has been enhanced by the \gls{beso} framework~\sidecite{young_3d_1999}, which allows both removal and addition of elements. 
 
+Gradient-based algorithms in optimization leverage local information at a trial point to comprehend the shape of the local objective function in the neighborhood. This insight is crucial for determining the optimal direction to minimize the objective function. Typically, only the Jacobian (first derivative) is utilized, though more advanced algorithms incorporate the Hessian (second derivative). The computational demand for gradient calculation often constitutes the most resource-intensive aspect of the optimization loop. When constraints are present, solving the problem directly on the analytic response surface of the objective function becomes impractical. Consequently, the approach involves creating local approximations of the problem at the current design point using gradient information. These approximations are designed so that specialized algorithms can efficiently solve them. The categorization of gradient-based algorithms is often based on how this local approximation is constructed.
 
+The most used approximations in structural optimization includes among others \gls{slp}, \gls{sqp} and \gls{slsqp}~\sidecite{kraft_software_1988}, \gls{mma}~\sidecite{svanberg_method_1987} and its amelioration \gls{gcmma}~\sidecite{svanberg_class_2002} and \gls{gbmma}~\sidecite{bruyneel_family_2002}, and \gls{conlin}~\sidecite{fleury_structural_1986}. Specialized algorithms for solving the approximated problems are, among others, the primal-dual method and interior point method.
 
-\section{Ultra-lightweight structures optimization}
-Two of the most frequently employed formulations for structural optimization are the minimization of volume while adhering to stress constraints and the minimization of compliance under volume constraints. Historically, the volume minimization formulation has been used in the first works of structural optimization of truss structures~\sidecite{dorn_automatic_1964,chan_optimum_1964,hemp_optimum_1973}. The problem was initially formulated in terms of member forces, ignoring the kinematic compatibility to obtain a \gls{lp} problem. The formulation was modeled using the \acrfull{sand} approach, where the equations of nodal equilibrium are treated as equality constraints, and where both nodal displacements and the cross-sectional areas of truss members serve as design variables~\sidecite{sankaranarayanan_truss_1994}. 
+An interior-point method is a numerical optimization algorithm used to solve constrained optimization problems. The key idea behind interior-point methods is to transform the constrained optimization problem into a sequence of unconstrained problems, allowing for efficient iterative solutions. The method introduces a barrier function that penalizes points outside the feasible region, effectively creating a "barrier" against leaving that region. This barrier function is incorporated into the objective function, and as the optimization progresses, it guides the search towards the interior of the feasible region. The term "interior point" originated from early methods that relied on interior penalty techniques, assuming the initial point was feasible. Nevertheless, contemporary interior-point methods as the open source IPOPT~\sidecite{wachter_implementation_2006} are more versatile and can start from infeasible points. Rojas Labanda and Stolpe conducted a benchmark of various optimization algorithms and structural optimization formulations using a compliance minimization problem. Their findings highlight the efficacy of employing interior point algorithms such as IPOPT in topology optimization problems~\sidecite{rojas_labanda_benchmarking_2015}.
 
-However, to attain greater design freedom, the structure optimization field later transitioned from truss structures to continuous discretization. While truss structures offered simplicity and ease of analysis, they imposed limitations on design due to their discrete member configurations caused by their inability to transmit moments, handle torsional effects, and represent complex structural elements such as plates or volumes. The continuum mesh offered instead more versatility~\sidecite{bendsoe_generating_1988,bendsoe_optimal_1989}, and has since been used for multiple different applications, \eg the design of metamaterials~\sidecite{sigmund_materials_1994, zhang_scale-related_2006} or the simulation of advanced manufacturing constaints~\sidecite{sigmund_manufacturing_2009,brackett_topology_2011}. The \gls{sand} approach is incompatible with continuum meshes due to its excessive number of variables\sidenote{This proposition holds when referring to the end of the 1980s when computational power was scarce compared to what we have today.}. Given this limitation, a new approach was required to better handle the complexity of continuum meshes.
+\section{Ultra-lightweight structures optimization approaches}
 
-In the \acrfull{nand} approach, the nodal displacement (state) variables are eliminated from the optimization problem through a process where the structural equilibrium equation is solved every iteration instead of being used as a constraint of the optimization. This results in an independent nested phase where the state equation of structural equilibrium is solved separately from the optimization algorithm. This creates a dense coupling between displacement and material density variables, necessitating a computationally expensive sensitivity analysis within the nested algorithm, typically employing the adjoint method (more information about the adjoint method on the following resurces~\sidecite{tortorelli_design_1994,martins_engineering_2021}). Nevertheless, if the problem is reformulated as a compliance minimization with volume constraints, the problem is self-adjoint and the adjoint algorithm is no longer necessary to evaluate the gradient sensitivities~\sidecite{bendsoe_topology_2004}, and this reduces considerably the computational times.
+Two of the most frequently employed formulations for structural optimization are the minimization of volume while adhering to stress constraints and the minimization of compliance under volume constraints. Historically, the volume minimization formulation has been used in the first works of structural optimization of truss structures~\sidecite{dorn_automatic_1964,chan_optimum_1964,hemp_optimum_1973}. The problem was initially formulated in terms of member forces, ignoring the kinematic compatibility to obtain a \gls{lp} problem. The formulation was modeled using the \gls{sand} approach, in which the equations of nodal equilibrium are treated as equality constraints, and where both nodal displacements and the cross-sectional areas of truss members serve as design variables~\sidecite{sankaranarayanan_truss_1994}. 
 
-The introduction of new propulsion technologies (electric, LH2) aimed at reducing greenhouse gas emissions in the aeronautical sector provides an opportunity to rethink the structure design from the initial phases. The subsequent reevaluation of associated design methods has led to the exploration of structural optimization techniques. Topology optimization, in particular, offers a valuable approach to identifying optimal shapes and material distributions and allows achieving any shape within the design space instead of dealing with predefined configurations. Classical topology optimization considers the design domain as a continuum, in which each location may or may not have a material assigned to it~\cite{bendsoe_optimal_1989}. While topology optimization offers tremendous benefits in terms of weight reduction and structural efficiency, it is important to acknowledge the challenges associated with manufacturing such designs. The intricate and complex geometries generated through the optimization can pose difficulties in the fabrication process, often requiring advanced manufacturing techniques, specialized equipment, and specific constraints in the optimization \cite{zhou_progress_2002,brackett_topology_2011,liu_current_2018}. Additionally, the computational time required for generating such optimized designs, particularly for low volume fractions typical of the aerospace domain, can be significant \cite{aage_giga-voxel_2017}, impacting the overall efficiency of the design process. This remains true even with the use of adaptive meshes~\cite{salazar_de_troya_adaptive_2018, zhang_adaptive_2020}.
+However, to attain greater design freedom, the structure optimization field later transitioned from truss structures to continuous discretization (also called density methods). While truss structures offered simplicity and ease of analysis, they imposed limitations on design due to their discrete member configurations caused by their inability to transmit moments, handle torsional effects, and represent complex structural elements such as plates or volumes. The continuum mesh offered instead more versatility~\sidecite{bendsoe_generating_1988,bendsoe_optimal_1989}, and has since been used for multiple different applications, \eg the design of optimized repetitive metamaterials~\sidecite{sigmund_materials_1994, zhang_scale-related_2006,collet_topology_2018}, fluids optimization~\sidecite{borrvall_topology_2003}, modelization of self-weight of the structure~\sidecite{bruyneel_note_2005}, the simulation of advanced manufacturing constaints~\sidecite{sigmund_manufacturing_2009,brackett_topology_2011}, the design of compliant mechanism~\sidecite{sigmund_design_1997, bruns_topology_2001}, or the optimization for additive manufacturing~\sidecite{wang_space-time_2020}. The \gls{sand} approach is incompatible with continuum meshes due to its excessive number of variables\sidenote{This proposition holds when referring to the end of the 1980s when computational power was scarce compared to what we have today.}. Given this limitation, a new approach was required to better handle the complexity of continuum meshes.
 
-Even if the freedom of the design space offered by continuum meshes is high, it is known that at very low volume fractions (\eg ultralight structures), and, especially if buckling constraints and manufacturing considerations (\eg minimum length scale), are taken into account, the optimal topology is a truss-like structure~\cite{sigmund_non-optimality_2016}. Two commonly used methods for optimizing truss structures are topology optimization with explicitly defined components and \gls{tto}. 
+In density-based \acrfull{nand} approach, the nodal displacement (state) variables are eliminated from the optimization problem through a process where the structural equilibrium equation is solved every iteration instead of being used as a constraint of the optimization. This results in an independent nested phase where the state equation of structural equilibrium is solved separately from the optimization algorithm. This creates a dense coupling between displacement and material density variables, necessitating a computationally expensive sensitivity analysis within the nested algorithm, typically employing the adjoint method (more information about the adjoint method on the following resurces~\sidecite{tortorelli_design_1994,martins_engineering_2021}). Nevertheless, if the problem is reformulated as a compliance minimization with volume constraints, the problem is self-adjoint and the adjoint algorithm is no longer necessary to evaluate the gradient sensitivities~\sidecite{bendsoe_topology_2004}, and this reduces considerably the computational times.
 
-Topology optimization methods using explicitly defined components have been developed to permit an easier interpretation of the solution, finding the optimal shape, size, and connectivity of components projected over a finite element continuum mesh. Two main feature-mapping methods applied to topology optimization have been developed\cite{wein_review_2020}, the \gls{mmc} approach \cite{guo_doing_2014,zhang_new_2017}
-and the \gls{gp} approach \cite{norato_geometry_2015, zhang_geometry_2016}, later combined in a unique methodology called \gls{ggp} \cite{coniglio_generalized_2020}. Recently, the \gls{gp} approach has been used to optimize light lattice structures, proving the effectiveness of the method to provide easy-to-interpret solutions \cite{kazemi_multi-material_2020}. Nevertheless, the optimization is still based on a density field projected on a continuum mesh, that needs to be refined to correctly discretize low volume fraction structures. Additionally, truss structure design naturally depends on constraints on maximum allowable stress and buckling which are all known for being difficult to implement on topology optimization using the \gls{nand} formulation. This is principally due to the singular optima (or topologies) phenomenon~\cite{cheng_-relaxed_1997,rozvany_design-dependent_2001} and the pseudo-modes of buckling of low-density elements \cite{gao_topology_2015}.
+Both the \gls{tto} methods based on the ground structure and the density-based topology optimization approaches are good candidate for the optimization of ultra-light structures. We will review here the main characteristics and numerical properties.
 
-On the other hand, \gls{tto} focuses on optimizing the topology of the truss structure itself. It involves selecting the cross-sectional areas and the connectivity of a discrete and dense mesh called ground structure, aiming to minimize weight while satisfying structural constraints~\cite{dorn_automatic_1964, fleron1964minimum}. In these classical works, the optimized structure is obtained as a subset of the initial ground structure, but multiple alternative approaches have been proposed since then, \eg starting from a very coarse ground structure that is enriched during the analysis \cite{gilbert_layout_2003}, or giving the nodes of a coarse ground structure the possibility to move, during \cite{pedersen_optimal_1973, achtziger_simultaneous_2007, descamps_lower-bound_2013}, or after the optimization, simultaneously reducing the number of active members of the solution \cite{he_rationalization_2015, lu_reducing_2023}. Recently, a hybrid method based on the projection of explicitly defined components on a discrete ground structure has been proposed, easing the interpretation of the stiffening pattern of the optimized truss \cite{savine_component-based_2021}.
+% The introduction of new propulsion technologies (electric, LH2) aimed at reducing greenhouse gas emissions in the aeronautical sector provides an opportunity to rethink the structure design from the initial phases. The subsequent reevaluation of associated design methods has led to the exploration of structural optimization techniques. Topology optimization, in particular, offers a valuable approach to identifying optimal shapes and material distributions and allows achieving any shape within the design space instead of dealing with predefined configurations. Classical topology optimization considers the design domain as a continuum, in which each location may or may not have a material assigned to it~\cite{bendsoe_optimal_1989}. While topology optimization offers tremendous benefits in terms of weight reduction and structural efficiency, it is important to acknowledge the challenges associated with manufacturing such designs. The intricate and complex geometries generated through the optimization can pose difficulties in the fabrication process, often requiring advanced manufacturing techniques, specialized equipment, and specific constraints in the optimization \cite{zhou_progress_2002,brackett_topology_2011,liu_current_2018}. Additionally, the computational time required for generating such optimized designs, particularly for low volume fractions typical of the aerospace domain, can be significant \cite{aage_giga-voxel_2017}, impacting the overall efficiency of the design process. This remains true even with the use of adaptive meshes~\cite{salazar_de_troya_adaptive_2018, zhang_adaptive_2020}.
 
-In the early works, the \gls{tto} problem was formulated in terms of member forces \cite{dorn_automatic_1964, hemp_optimum_1973} with plastic material modelization, ignoring the kinematic compatibility to obtain a \gls{lp} problem. Formulated using the \gls{sand} approach, the equations of structural mechanics of the problem are imposed as constraints of the optimization and, contrary to \gls{nand} approaches, are not explicitly solved. Formulated that way, it is trivial to add maximum stress constraints compared to an equivalent \gls{nand} formulation. However, the \gls{sand} formulation with plastic material modelization only correctly predicts the mechanical behavior of statically determinate structures or mechanisms \cite{kirsch_optimal_1989, rozvany_layout_1995}. Moreover, adding local buckling constraints to the optimization formulation is fundamental, as ultralight truss structures are often dominated by this mode of failure \cite{sigmund_non-optimality_2016}. Multiple works in the field of truss structure optimization have focused on addressing these two crucial challenges \cite{kirsch_optimal_1980,cheng_aspects_1995,achtziger_local_1999}.
-
-Ultralight trusses are a good design candidate for the design of innovative aerostructures thanks to their superior aeroelastic properties and stiffness-to-weight ratio \cite{cramer_elastic_2019}. These structures represent a natural application case for the discussed optimization formulations. \cite{opgenoord_aeroelastic_2018, opgenoord_design_2019} proposed a two-step sequential optimization algorithm to reduce the weight of a truss wing. Firstly, a ground structure with different nodal densities based on the stress field of the structure is generated and secondly, the cross-sectional areas are found using a sizing optimization algorithm that takes into account stress, local buckling, and aeroelastic constraints. \cite{shahabsafa_novel_2018} decided, instead, to tackle all the difficulties of the problem using a set of discrete cross-sectional areas and a sizing \gls{milo} algorithm. The algorithm is validated on a 315-bars wingbox ground structure, based on the \gls{crm}. In these studies, the adoption of a sizing optimization algorithm simplifies the numerical complexities associated with the problem. However, by solely focusing on modifying the component sizes, the opportunity to optimize the overall truss topology is missed, limiting the potential for further weight savings.
-
-\subsection{Density based topology optimization}
-
-To address this challenge, multiple approaches have been proposed within the aggregation framework to accurately account for the true constraint value, like using a set of active stress constraints~\sidecite{bruggi_topology_2012}, several aggregation clusters~\sidecite{paris_block_2010} or rectifier functions~\sidecite{norato_maximum-rectifier-function_2022}.
+\subsection{Density-based topology optimization}
 
 \paragraph{Minimum compliance formulation}
 \begin{marginfigure}
     \centering
-    \includegraphics{figures/03_comparison_TO_TTO/01_contin_mesh/c_mesh.pdf}
+    \includegraphics{figures/02_literature/01_contin_mesh/c_mesh.pdf}
     \caption{The domain $\Omega$ is discretized using $N_\text{e}=N_\text{x} N_\text{y}$ continuous 4-nodes elements.}
-    \label{fig:03_mesh_c}
+    \label{fig:02_mesh_c}
 \end{marginfigure}
-Let $\Omega \in \mathbb{R}^2$ be a rectangular domain in of dimensions $X$ and $Y$, containing respectively $N_\text{x}$ and $N_\text{y}$ linear 4-nodes elements, for a total of $N_\text{e}=N_\text{x} N_\text{y}$ elements and $M$ nodes (see \figref{fig:03_mesh_c}). The objective of the optimization is the minimization of the compliance $C$ of the structure, equivalent to finding the structure with the least possible nodal displacement with respect to a defined set of boundary conditions. The Problem $\mathbb{T}_0$ is stated in terms of the design variables $\vect{\rho}$ as follows:
+Let $\Omega \in \mathbb{R}^2$ be a rectangular domain in of dimensions $X$ and $Y$, containing respectively $N_\text{x}$ and $N_\text{y}$ linear 4-nodes elements, for a total of $N_\text{e}=N_\text{x} N_\text{y}$ elements and $M$ nodes (see \figref{fig:02_mesh_c}). The objective of the optimization is the minimization of the compliance $C$ of the structure, equivalent to finding the structure with the least possible nodal displacement with respect to a defined set of boundary conditions. The Problem $\mathbb{T}_0$ is stated in terms of the design variables $\vect{\rho}$ as follows:
 \begin{equation}
     \begin{aligned}
     \min_{\vect{\rho}}         && C &= \sum_{i} \vect{u}_{e,i}^T \matr{K}_{e,i} \vect{u}_{e,i}=\vect{f}^T\vect{u}&& \forall i \in [0,\dots,N_\text{e}]                         \\
@@ -117,59 +84,48 @@ Let $\Omega \in \mathbb{R}^2$ be a rectangular domain in of dimensions $X$ and $
     && 0 &\leq \rho_i \leq 1. && \forall i \in [0,\dots,N_\text{e}] \\
     \end{aligned}
     \tag{$\mathbb{T}_0$}
-    \label{eq:03_prob-comp}
+    \label{eq:02_prob-comp}
 \end{equation}
 The design variables $\vect{\rho}$ are defined for every element of the structure as $\vect{\rho} = [\rho_1, \rho_2, \ldots,\rho_{Ne}]^T$, with $\rho_i \in [0,1], \; \forall i \in [0,\dots,N_\text{e}]$. The physical densities $\vect{\rhophys}$ are related to design variables through density filtering and threshold projection~\sidecite{wang_projection_2011}, as explained later in the document. $V_\text{p}$ is the prescribed volume fraction that acts as the constraint of the minimization problem, while $v_i$ represents the area of the $i$-th element and $V_0$ is the total area of the domain $\Omega$. $\matr{K}\vect{u} = \vect{f}$ is the state equation of the problem and defines the elastic response of the structure to an external nodal load $\vect{f}=[f_1, f_2, \ldots,f_{2M}]^T$. The global stiffness matrix $\matr{K}$ is assembled from the element stiffness matrix $\matr{K} = \sum_{i \in \Omega} \matr{K}_{e,i}$ and $\matr{K}_{e,i} = E_i \matr{K}_{e,0}$ where $\matr{K}_{e,0}$ represents the element stiffness matrix relative to the chosen type of element (linear or quadratic) and $E_i(\rhophys_i)$ the Young's modulus of the $i$-th element. 
 
 The material scheme used to interpolate between void and full material is the well-known \gls{simp}~\sideciteonce{bendsoe_optimal_1989,bendsoe_material_1999} approach. It is governed by the equation:
 \begin{equation}
     E_i(\rhophys_i) = E_{\textrm{min}} + \rhophys_i^p(E_0-E_{\textrm{min}}),
-    \label{eq:03_simp}
+    \label{eq:02_simp}
 \end{equation}
-where the parameter $p$ penalizes the intermediate densities and pushes the result to a black-and-white result. $E_0$ is the Young's modulus of the dense material and $E_{\textrm{min}}$ is a small value used to avoid the global stiffness matrix $\matr{K}$ from being singular when $\rhophys_i=0$. 
+where the parameter $p$ penalizes the intermediate densities and pushes the result to a black-and-white result. $E_0$ is the Young's modulus of the dense material and $E_{\textrm{min}}$ is a small value used to avoid the global stiffness matrix $\matr{K}$ from being singular when $\rhophys_i=0$.
 
-In this study we set these parameters to $E_0 = 1$, and $E_{\textrm{min}} = 10^{-9}$. The value of the penalization parameter $p$ is selected as $p=3$ because in that way the intermediate densities respect the \gls{hs} bounds~\sideciteonce{hashin_variational_1963,bendsoe_material_1999}. These relationships describe the boundaries of attainable isotropic material characteristics when dealing with composites (materials with microscopic structures) using two specified, linearly elastic, isotropic materials (in our case the solid and the empty phases).
-\paragraph{Spatial filtering and projection}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.75\linewidth]{figures/02_literature/simp.png}
+    \caption{Comparison between SIMP model with the Hashin-Strikman upper bound, considering an isotropic material with a Poisson ratio of $1/3$ mixed with void. The Hashin-Strikman upper bound is illustrated with microstructures approaching the specified bounds. \cite{bendsoe_material_1999}.}
+    \label{fig:02_simp}
+\end{figure}
+
+\paragraph{Spatial filtering and projection} 
 Multiple approaches have been developed to solve the problems linked to mesh discretization, such as mesh dependence or the checkerboard problem~\sidecite{diaz_checkerboard_1995}. Filtering the sensitivity information of the optimization problem proved to be an effective approach to guarantee independence from mesh resolution~\sidecite{sigmund_design_1994,
-sigmund_design_1997}. In the present research, we decided instead to directly filter the density field $\vect{\rho}$ using the 2D convolution operator~\sidecite{sigmund_morphology-based_2007}. The weight function $w$ (or kernel) of the convolution is defined as:
+sigmund_design_1997}. Another possibility is instead to directly filter the density field $\vect{\rho}$ using the 2D convolution operator~\sidecite{sigmund_morphology-based_2007}. The weight function $w$ (or kernel) of the convolution is defined as:
 \begin{equation}
     w(d_j) = R - d_j, \quad j \in \mathbb{N}_{i,R}
 \end{equation} 
-where $\mathbb{N}_{i,R}$ represent the set of elements lying within a circle of radius $R$ centered on the $i$-th element and $d_j$ is the distance of the $j$-th element to the center of the filter (see \figref{fig:03_ker}).
+where $\mathbb{N}_{i,R}$ represent the set of elements lying within a circle of radius $R$ centered on the $i$-th element and $d_j$ is the distance of the $j$-th element to the center of the filter (see \figref{fig:02_ker}).
 \begin{marginfigure}
     \centering
-    \includegraphics{figures/03_comparison_TO_TTO/02_circ_filter/filt_cir.pdf}
+    \includegraphics{figures/02_literature/02_circ_filter/filt_cir.pdf}
     \caption{Kernel of the 2D convolution operator.}
-    \label{fig:03_ker}
+    \label{fig:02_ker}
 \end{marginfigure} 
 The filtered values of the design variable are calculated as:
 \begin{equation}
     \rhofil_i = \frac{\sum_{j \in \mathbb{N}_{i,R}} w(d_j)v_j\rho_j}{\sum_{j \in \mathbb{N}_{i,R}} w(d_j)v_j}.
-    \label{eq:03_rhofil}
+    \label{eq:02_rhofil}
 \end{equation}
 As the filtering phase produces a large number of gray elements, a smooth projection technique based on the \textit{tanh} function is implemented~\sidecite{wang_projection_2011}:
 \begin{equation}
     \rhophys_j = \frac{\tanh(\beta\eta)+\tanh(\beta(\rhofil_j - \eta))}{\tanh(\beta\eta)+\tanh(\beta(1 - \eta))},
-    \label{eq:03_proj}
+    \label{eq:02_proj}
 \end{equation}
-where $\beta$ is a parameter that defines the slope of this approximation function: the larger the value of $\beta$, the less intermediate elements are present in the structure topology. $\eta$ is the threshold value of the projection. Using \eqref{eq:03_proj} is not volume conservative for all values of $\eta$, and to stay conservative we use a volume-increasing filter~\sidecite{ferrari_new_2020}. The value of $\eta = 0.4$ is then chosen.
-
-The derivative of the filtered density $\vect{\rhofil}$ with respect to the design variable $\vect{\rho}$ is written deriving \eqref{eq:03_rhofil}:
-\begin{equation}
-    \derfrac{\rhofil_i}{\rho_j} = \frac{w(d_j)v_j}{\sum_{j \in \mathbb{N}_{i,R}} w(d_j)v_j}.
-    \label{eq:03_sens_filt}
-\end{equation}
-The sensitivity of the physical densities $\bm{\rhophys}$ with respect to the filtered $\bm{\rhofil}$ can be written as:
-\begin{equation}
-    \derfrac{\rhophys_j}{\rhofil_j} = \beta \frac{1-\tanh^2(\beta(\rhofil_j-\eta))}{\tanh(\beta\eta)+\tanh(\beta(1 - \eta))}.
-    \label{eq:03_sens_proj}
-\end{equation}
-Using the chain rule it is possible to write:
-\begin{equation}
-    \label{eq:03_chain}
-    \derfrac{h}{\rho_i} = \sum_{j \in \mathbb{N}_{i,R}} \derfrac{f}{\rhophys_j} \derfrac{\rhophys_j}{\rhofil_j} \derfrac{\rhofil_j}{\rho_i},
-\end{equation}
-where $h$ represents a generic function.
+where $\beta$ is a parameter that defines the slope of this approximation function: the larger the value of $\beta$, the less intermediate elements are present in the structure topology. $\eta$ is the threshold value of the projection.
 
 density methods
 compliance formulation
@@ -178,34 +134,48 @@ filter
 
 accenna level set, ma tanto no serve per questa tesi
 
+While topology optimization offers tremendous benefits in terms of weight reduction and structural efficiency, it is important to acknowledge the challenges associated with manufacturing such designs. The intricate and complex geometries generated through the optimization can pose difficulties in the fabrication process, often requiring advanced manufacturing techniques, specialized equipment, and specific constraints in the optimization~\sidecite{zhou_progress_2002,brackett_topology_2011,liu_current_2018}. Additionally, the computational time required for generating such optimized designs, particularly for low volume fractions typical of the aerospace domain, can be significant~\sidecite{aage_giga-voxel_2017}, impacting the overall efficiency of the design process. This remains true even with the use of adaptive meshes~\sidecite{salazar_de_troya_adaptive_2018, zhang_adaptive_2020}. Even if the freedom of the design space offered by continuum meshes is high, it is known that at very low volume fractions (\eg ultralight structures), and, especially if buckling constraints and manufacturing considerations (\eg minimum length scale), are taken into account, the optimal topology resemble to a truss-like structure~\sidecite{sigmund_non-optimality_2016}. As a result, a distinct branch of continuous topology optimization has emerged specifically tailored for optimizing truss-like structures, known as feature-Mapping topology optimization (also called topology optimization with explicitly defined components).
+
 \subsection{Feature-Mapping topology optimization}
-coniglio guarda che fa
+Topology optimization methods using explicitly defined components have been developed to permit an easier interpretation of the solution, finding the optimal shape, size, and connectivity of components projected over a finite element continuum mesh. Two main feature-mapping methods applied to topology optimization have been developed~\sidecite{wein_review_2020}, the \gls{mmc} approach~\sidecite{guo_doing_2014,zhang_new_2017}
+and the \gls{gp} approach~\sidecite{norato_geometry_2015, zhang_geometry_2016}, later combined in a unique methodology called \gls{ggp}~\sidecite{coniglio_generalized_2020}. Recently, the \gls{gp} approach has been used to optimize light lattice structures, proving the effectiveness of the method to provide easy-to-interpret solutions~\sidecite{kazemi_multi-material_2020}. Nevertheless, the optimization is still based on a density field projected on a continuum mesh, that needs to be refined to correctly discretize low volume fraction structures. Additionally, truss structure design naturally depends on constraints on maximum allowable stress and buckling which are all known for being difficult to implement on topology optimization using the \gls{nand} formulation. This is principally due to the singular optima (or topologies) phenomenon~\sidecite{cheng_relaxed_1997,rozvany_design-dependent_2001} and the pseudo-modes of buckling of low-density elements~\sidecite{gao_topology_2015}. \begin{figure}
+    \hspace*{\fill}
+    \subcaptionbox{}{\includegraphics[width=0.4\linewidth]{figures/02_literature/coniglio1.png}}
+    \hfill
+    \subcaptionbox{}{\includegraphics[width=0.4\linewidth]{figures/02_literature/coniglio2.png}}
+    \hspace*{\fill}
+    \caption{Component (a) and density (b) plot of a short cantilever beam optimized using the component-based topology optimization method \gls{ggp} \cite{coniglio_generalized_2020}.}
+    \label{fig:03_to_plot}
+\end{figure}
 
 \subsection{Truss topology optimization}
+\acrfull{tto} focuses on optimizing the topology of the truss structure itself, instead of operating on a continuous mesh. It involves selecting the cross-sectional areas and the connectivity of a discrete and dense mesh called ground structure, aiming to minimize weight while satisfying structural constraints. Usually, the optimized structure is obtained as a subset of the initial ground structure, but multiple alternative approaches have been proposed since then, \eg starting from a very coarse ground structure that is enriched during the analysis \sidecite{gilbert_layout_2003}, or giving the nodes of a coarse ground structure the possibility to move, during \sidecite{pedersen_optimal_1973, achtziger_simultaneous_2007, descamps_lower-bound_2013}, or after the optimization, simultaneously reducing the number of active members of the solution \sidecite{he_rationalization_2015, lu_reducing_2023}. Recently, a hybrid method based on the projection of explicitly defined components on a discrete ground structure has been proposed, easing the interpretation of the stiffening pattern of the optimized truss \sidecite{savine_component-based_2021}.
 
-\paragraph{Classical Michell structures} \label{sec:03_michell}
-The characteristics of these structures are described by some simple criteria that date to the end of the 19th and the beginning of the 20th century. When a structure is statically determinate — \ie the structure is not a mechanism, and it is not over-constrained by the supports — the Maxwell theorem~\sidecite{maxwell_ireciprocal_1870} states that:
-\begin{equation} \label{eq:03_maxwell-th}
+In the early works, the \gls{tto} problem was formulated in terms of member forces~\sidecite{dorn_automatic_1964, hemp_optimum_1973} with plastic material modelization, ignoring the kinematic compatibility to obtain a \gls{lp} problem. Formulated using the \gls{sand} approach, the equations of structural mechanics of the problem are imposed as constraints of the optimization and, contrary to \gls{nand} approaches, are not explicitly solved. Formulated that way, it is trivial to add maximum stress constraints compared to an equivalent \gls{nand} formulation. However, the \gls{sand} formulation with plastic material modelization only correctly predicts the mechanical behavior of statically determinate structures or mechanisms~\sidecite{kirsch_optimal_1989, rozvany_layout_1995}. Moreover, adding local buckling constraints to the optimization formulation is fundamental, as ultralight truss structures are often dominated by this mode of failure~\sidecite{sigmund_non-optimality_2016}. Multiple works in the field of truss structure optimization have focused on addressing these two crucial challenges~\sidecite{kirsch_optimal_1980,cheng_aspects_1995,achtziger_local_1999}.
+
+\paragraph{Classical Michell structures} \label{sec:02_michell}
+The characteristics of these class of truss structures are described by some simple criteria that date to the end of the 19th and the beginning of the 20th century. When a structure is statically determinate — \ie the structure is not a mechanism, and it is not over-constrained by the supports — the Maxwell theorem~\sidecite{maxwell_ireciprocal_1870} states that:
+\begin{equation} \label{eq:02_maxwell-th}
     \sum_{\forall i | q_i>0}\ell_iq_i + \sum_{\forall i | q_i<0}\ell_iq_i = \textrm{const.}
 \end{equation}
-where $\ell_i$ and $q_i$ represent the length and the axial force of the $i$-th member, respectively. The constant value at the right of~\eqref{eq:03_maxwell-th} depends on the nature of the boundary conditions and the material used. The Maxwell theorem dictates that any increment in compression forces must be counterbalanced by an equivalent increase in tension forces when the structure remains topologically unchanged. So for statically determinate structures the structure layout is not influenced by the ratio between $\sigma_\text{c}$ and $\sigma_\text{t}$, Young's modulus $E$ of the material, nor the force magnitude.
+where $\ell_i$ and $q_i$ represent the length and the axial force of the $i$-th member, respectively. The constant value at the right of~\eqref{eq:02_maxwell-th} depends on the nature of the boundary conditions and the material used. The Maxwell theorem dictates that any increment in compression forces must be counterbalanced by an equivalent increase in tension forces when the structure remains topologically unchanged. So for statically determinate structures the structure layout is not influenced by the ratio between $\sigma_\text{c}$ and $\sigma_\text{t}$, Young's modulus $E$ of the material, nor the force magnitude.
 
 Starting from Maxwell's findings, Michell theorized two further criteria for optimal truss structures~\sidecite{michell_limits_1904} valid when the maximum allowable stress is equal in tension and compression ($\sigma_\text{t} = \sigma_\text{c}$) and when the supports of the structure are statically determinate. The first one states that all the members of an optimal structure should present internal stress equal in magnitude to the maximum allowable value of the material -- \ie the structure is \textit{fully stressed}. The second criterion asserts that the strain of all the members of the structure should be equal and there should be no other point having a strain higher than this value. As formulated, these two criteria are known as the Michell criteria. The second criterion was later generalized by Hemp~\sidecite{hemp_optimum_1973} as:
-\begin{equation} \label{eq:03_hemp}
+\begin{equation} \label{eq:02_hemp}
     -\frac{1}{\sigma_\text{c}}\leq \varepsilon \leq \frac{1}{\sigma_\text{t}}.
 \end{equation}
-Compared to the second Michell criterion, \eqref{eq:03_hemp} permits to correct identification of the minimum volume structure even when different strength values for compression and tension and different support types are taken. These criteria are known as the Michell-Hemp criteria.
+Compared to the second Michell criterion, \eqref{eq:02_hemp} permits to correct identification of the minimum volume structure even when different strength values for compression and tension and different support types are taken. These criteria are known as the Michell-Hemp criteria.
 
 \paragraph{Plastic material formulation}
-The rigid-plastic formulation characterizes the material as entirely rigid up to the point of reaching the yield stress, denoted as $\sigma_y$, and subsequently assumes a constant stress level of $\sigma_y$ once that threshold is exceeded. This formulation is a clear consequence of the application of the Michell-Hemp criteria and has thus been used in the very first work of layout optimization (also known as \gls{tto})~\sidecite{dorn_automatic_1964,chan_optimum_1964,hemp_optimum_1973}. 
+The rigid-plastic formulation characterizes the material as entirely rigid up to the point of reaching the yield stress, denoted as $\sigma_y$, and subsequently assumes a constant stress level of $\sigma_y$ once that threshold is exceeded. This formulation is a clear consequence of the application of the Michell-Hemp criteria and has thus been used in the very first work of \gls{tto}~\sidecite{dorn_automatic_1964,chan_optimum_1964,hemp_optimum_1973}. 
 
 \paragraph{The ground structure approach}
-The ground structure is a framework composed of various structural members that connect specified points or nodes in two- or three-dimensional space (see \figref{fig:03_mesh_d}). These members can take the form of beams, columns, wires, or bars elements, depending on the specific structural requirements. In this thesis, we will deal with trusses, and so the chosen element is the bar. Since the nodes within the ground structure are considered pin-joints, all straight members exclusively face either tension or compression loads. 
+The ground structure is a framework composed of various structural members that connect specified points or nodes in two- or three-dimensional space (see \figref{fig:02_mesh_d}). These members can take the form of beams, columns, wires, or bars elements, depending on the specific structural requirements. In this thesis, we will deal with trusses, and so the chosen element is the bar. Since the nodes within the ground structure are considered pin-joints, all straight members exclusively face either tension or compression loads. 
 \begin{marginfigure}
     \centering
-    \includegraphics{figures/03_comparison_TO_TTO/04_disc_mesh/d_mesh.pdf}
+    \includegraphics{figures/02_literature/04_disc_mesh/d_mesh.pdf}
     \caption{The domain $\Omega$ is discretized using a set of straight members connecting a set of nodes. This framework is known as the ground structure.}
-    \label{fig:03_mesh_d}
+    \label{fig:02_mesh_d}
 \end{marginfigure}
 
 Depending on how the connectivity of the grid of nodes is, we can experience very different ground structures. In a fully connected ground structure, every node within the system is linked to every other node, resulting in a dense and redundant structural configuration. The number of bars $N_{\text{el}}$ of a fully connected ground structure can be determined using the following formula:
@@ -221,22 +191,22 @@ The volume minimization formulation with maximum stress constraints is stated in
 \begin{equation}
     \begin{aligned}
     \min_{\vect{a}, \vect{q}}   && V &= \vect{\ell}^{T}\vect{a} && \textrm{(Volume minimization)}\\
-    \textrm{s.t.}   && \matr{B}_s\vect{q} &= \vect{f} && (g_\text{eq})\\
+    \textrm{s.t.}   && \matr{B}\vect{q} &= \vect{f} && (g_\text{eq})\\
     && -\sigma_\text{c}\vect{a} &\leq \vect{q} \leq \sigma_\text{t}\vect{a} && (g_\text{st,c}, \; g_\text{st,t}) \\
     && \vect{a} &\geq 0, \\
     \end{aligned}
     \tag{$\mathbb{P}_0$}
-    \label{eq:03_optim_original}
+    \label{eq:02_optim_original}
 \end{equation}
-where $\matr{B}_s$ is a $N_{\text{dof}} \times N_{\text{el}}$ matrix containing the direction cosines of the $i$-th member with respect to the $i$-th degree of freedom to calculate the nodal force equilibrium constraints $\vect{g}_\text{eq}$, and where $N_{\text{dof}}$ is the number of \gls{dofs}, equal to $2M$ or $3M$ for a two- or a three-dimensional load case, respectively. $\vect{q} = [q_1, q_2, \ldots,q_{N_{\text{el}}}]^T$ is the vector containing the internal member forces, with a positive sign when in tension, caused by the external load $\vect{f} = [f_1, f_2, \ldots,f_{N_{\text{dof}}}]^T$. The state variable $\vect{a} = [a_1, a_2, \ldots,a_{N_{\text{el}}}]^T$ represents the cross-sectional area of the $N_{\text{el}}$ members of the structure. $\sigma_\text{c}$ and $\sigma_\text{t}$ are the compressive and tensile maximum allowable stresses of the material, respectively, used in the stress constraints $\vect{g}_\text{st,c}$ and $\vect{g}_\text{st,t}$. This formulation takes into account only the linear behavior of the structure and is equivalent to the original and well-studied member force formulation~\sidecite{dorn_automatic_1964, bendsoe_topology_2004}.
+where $\matr{B}$ is a $N_{\text{dof}} \times N_{\text{el}}$ matrix containing the direction cosines of the $i$-th member with respect to the $i$-th degree of freedom to calculate the nodal force equilibrium constraints $\vect{g}_\text{eq}$, and where $N_{\text{dof}}$ is the number of \gls{dofs}, equal to $2M$ or $3M$ for a two- or a three-dimensional load case, respectively. $\vect{q} = [q_1, q_2, \ldots,q_{N_{\text{el}}}]^T$ is the vector containing the internal member forces, with a positive sign when in tension, caused by the external load $\vect{f} = [f_1, f_2, \ldots,f_{N_{\text{dof}}}]^T$. The state variable $\vect{a} = [a_1, a_2, \ldots,a_{N_{\text{el}}}]^T$ represents the cross-sectional area of the $N_{\text{el}}$ members of the structure. $\sigma_\text{c}$ and $\sigma_\text{t}$ are the compressive and tensile maximum allowable stresses of the material, respectively, used in the stress constraints $\vect{g}_\text{st,c}$ and $\vect{g}_\text{st,t}$. This formulation takes into account only the linear behavior of the structure and is equivalent to the original and well-studied member force formulation~\sidecite{dorn_automatic_1964, bendsoe_topology_2004}.
 
-The resolution of Problem \ref{eq:03_optim_original} frequently produces complex structures made up of a multitude of small members that tend to the shapes of Michell structures (see Fig~\ref{fig:03_truss-ex})~\sidecite{michell_limits_1904,gilbert_layout_2003}. While it is known that these structures are nearly optimal, one would want to limit the complexity of the resulting structure. Substituting $\vect{\ell}$ with $\vect{\tilde{\ell}} = [\ell_1 + s, \ell_2 + s, \ldots,\ell_{N\text{el}} + s]^T$ in the objective function of \ref{eq:03_optim_original}, one would penalize the appearance of small members~\sidecite{parkes_joints_1975}. $\vect{\tilde{\ell}}$ is called augmented member length and $s$ the joint cost. This approach mimics the mesh-independency regularization filter of topology optimization, avoiding the inevitable apparition of structures with tiny features when a fine mesh is adopted.
+The resolution of Problem \ref{eq:02_optim_original} frequently produces complex structures made up of a multitude of small members that tend to the shapes of Michell structures (see Fig~\ref{fig:02_truss-ex})~\sidecite{michell_limits_1904}. While it is known that these structures are nearly optimal, one would want to limit the complexity of the resulting structure. Substituting $\vect{\ell}$ with $\vect{\tilde{\ell}} = [\ell_1 + s, \ell_2 + s, \ldots,\ell_{N\text{el}} + s]^T$ in the objective function of \ref{eq:02_optim_original}, one would penalize the appearance of small members~\sidecite{parkes_joints_1975}. $\vect{\tilde{\ell}}$ is called augmented member length and $s$ the joint cost. This approach mimics the mesh-independency regularization filter of topology optimization, avoiding the inevitable apparition of structures with tiny features when a fine mesh is adopted.
 
 \begin{marginfigure}
     \centering
-    \includegraphics[width=\linewidth]{figures/03_comparison_TO_TTO/truss-ex.png}
+    \includegraphics[width=\linewidth]{figures/02_literature/truss-ex.png}
     \caption{The optimal structures found by layout optimization tend at Michell-like structures, made up of a very large number of infinitesimal struts \cite{gilbert_layout_2003}.}
-    \label{fig:03_truss-ex}
+    \label{fig:02_truss-ex}
 \end{marginfigure}
 
 \section{Cellular structures optimization}
@@ -267,13 +237,13 @@ the problem on the number of subsections needed to correctly foresee the mechani
 
 In the past, the properties of materials have been altered by varying the chemical composition, microstructure and production process. Another possible way to further modify the material properties is to tailor the spatial configuration of solids and voids of the material. The so-called architectured materials are now becoming a hot topic in the research field, also thanks to the recent advances in additive manufacturing.
 
-Extensively present in nature (e.g., bone-microstructure or birds beak), their research interest came thanks to the observation that the stiffness of optimal structures spans multiple scales \sidecite{kohn_optimal_1986,allaire_optimal_1999}. In addition to that, Fleck observed that \sidecite{fleck_micro-architectured_2010}~``\textit{one reason for such structural hierarchy in engineering structures is to increase buckling strength: recall that the buckling strength scales with any representative strut length $l$ according to $l^{-2}$, and so the finer the length scale, the higher the buckling strength}.''
+Extensively present in nature (e.g., bone-microstructure or birds beak), their research interest came thanks to the observation that the stiffness of optimal structures spans multiple scales~\sidecite{kohn_optimal_1986,allaire_optimal_1999}. In addition to that, Fleck observed that~\sidecite{fleck_micro-architectured_2010}~``\textit{one reason for such structural hierarchy in engineering structures is to increase buckling strength: recall that the buckling strength scales with any representative strut length $l$ according to $l^{-2}$, and so the finer the length scale, the higher the buckling strength}.''
 
-If we observe the Ashby material chart \sidecite{ashby_materials_1999} of the yield strength plotted versus their density (Fig.~\ref{fig:ash1}), we can see plenty of empty spaces. Besides some unattainable spaces described by the Hashin-Shtrikman (HS) bounds \sidenote[$\dagger$]{The Hashin-Shtrikman bounds are the tightest bounds possible from the range of composite moduli for a two-phase material. In lattices, usually, the second material is substituted with void.}\sidecite{hashin_variational_1963}, these empty spaces can be filled by lattices (see Fig.~\ref{fig:ash2}), extending the property space of actual materials.
+If we observe the Ashby material chart~\sidecite{ashby_materials_1999} of the yield strength plotted versus their density (Fig.~\ref{fig:ash1}), we can see plenty of empty spaces. Besides some unattainable spaces described by the Hashin-Shtrikman (HS) bounds \sidenote[$\dagger$]{The Hashin-Shtrikman bounds are the tightest bounds possible from the range of composite moduli for a two-phase material. In lattices, usually, the second material is substituted with void.}\sidecite{hashin_variational_1963}, these empty spaces can be filled by lattices (see Fig.~\ref{fig:ash2}), extending the property space of actual materials.
 
-Lattices can be classified as open- or closed-wall. Even if a closed-wall lattice would result in a more stiff structure, the interest of an open-cell is well described by Sigmund et al. \sidecite{sigmund_non-optimality_2016}: ``\textit{we emphasize that the outcome of minimum compliance-type continuum topology optimization studies should always be of sheet type unless other constraints [...] that favour Michell-like structures have been explicitly stated}'', where the possible constraints are:
+Lattices can be classified as open- or closed-wall. Even if a closed-wall lattice would result in a more stiff structure, the interest of an open-cell is well described by Sigmund et al.~\sidecite{sigmund_non-optimality_2016}: ``\textit{we emphasize that the outcome of minimum compliance-type continuum topology optimization studies should always be of sheet type unless other constraints [...] that favour Michell-like structures have been explicitly stated}'', where the possible constraints are:
 \begin{itemize}
-    \item \textbf{Structural and Microstructural stability}: The load for initiating buckling of a slender strut is much higher than that of a comparable plate with the same mass \sidecite{deshpande_foam_2001}. An open-cell structure, thus, is less prone to buckle compared to a closed-cell.
+    \item \textbf{Structural and Microstructural stability}: The load for initiating buckling of a slender strut is much higher than that of a comparable plate with the same mass~\sidecite{deshpande_foam_2001}. An open-cell structure, thus, is less prone to buckle compared to a closed-cell.
     \item \textbf{Porosity}: A porous open-wall cell permits a flow to pass through. This property enables the use of lattice as heat exchangers or to mimic the bone microstructure.
     \item \textbf{Manufacturing}: very thin walls are extremely difficult to manufacture. An open-cell design, while being far from easy to manufacture, is then preferable from a manufacturing standpoint. 
     \item \textbf{Transparency}: The possibility to view through the structure can be beneficial for example for reparation and health monitoring.
@@ -286,7 +256,7 @@ The relative density of the lattice is defined as:
 \begin{equation}
     \bar{\rho} = \frac{\rho_l}{\rho}
 \end{equation}
-where $\rho_l$ and $\rho$ represent the density of the lattice and of the dense material, respectively \sidecite{ashby_properties_2006}.
+where $\rho_l$ and $\rho$ represent the density of the lattice and of the dense material, respectively~\sidecite{ashby_properties_2006}.
 
 We can define a stretching-dominated structure as a lattice whose constitutive struts faces only tension and compression loads. The nodal stiffness does not take part in the structural stiffness and the truss collapses by stretching of the struts. According to Desphande et al.~\sidecite{deshpande_foam_2001} on a stretching-dominated truss ``\textit{freezing the joints of the triangulated structure has virtually no effect on the macroscopic stiffness or strength; although the struts bend, the frame is still stretching-dominated and the collapse load is dictated mainly by the axial strength of the struts.}'. An open-cell structure can thus be treated as a connected set of pin-jointed struts if it is stretching-dominated.
 
@@ -300,10 +270,10 @@ A stretching-dominated structure is typically 10 times more stiff and 3 times mo
 
 Lattices structures and materials have various promising application as:
 \begin{itemize}
-    \item Lattice structures and materials shows notable energy absorbing properties, even more if designed as bending-dominated \sidecite{evans_concepts_2010,schaedler_designing_2014,ozdemir_energy_2016}.
-    \item As a direct consequence, lattice structures are set to be the possible new design scheme for aerodynamic structures. They show remarkable aeroelastic properties \sidecite{opgenoord_aeroelastic_2018,cramer_elastic_2019}.
-    \item Lattices proved to be really interesting candidates to build scaffolds \sidecite{hutmacher_scaffolds_2000,mota_additive_2015,nikolova_recent_2019}.
-    \item Lattice materials present very good heat exchanger properties. This is due to their high surface-to-volume ratio and the turbulent mixing flow they create when a fluid pass through \sidecite{lu_heat_1998,wadley_thermal_2007}.
+    \item Lattice structures and materials shows notable energy absorbing properties, even more if designed as bending-dominated~\sidecite{evans_concepts_2010,schaedler_designing_2014,ozdemir_energy_2016}.
+    \item As a direct consequence, lattice structures are set to be the possible new design scheme for aerodynamic structures. They show remarkable aeroelastic properties~\sidecite{opgenoord_aeroelastic_2018,cramer_elastic_2019}.
+    \item Lattices proved to be really interesting candidates to build scaffolds~\sidecite{hutmacher_scaffolds_2000,mota_additive_2015,nikolova_recent_2019}.
+    \item Lattice materials present very good heat exchanger properties. This is due to their high surface-to-volume ratio and the turbulent mixing flow they create when a fluid pass through~\sidecite{lu_heat_1998,wadley_thermal_2007}.
 \end{itemize}
 
 % \begin{marginfigure}
@@ -313,17 +283,17 @@ Lattices structures and materials have various promising application as:
 % \end{marginfigure}
 Other interesting properties of lattice structures and materials are:
 \begin{itemize}
-    \item Cellular structures can be designed to be reversibly assembled. This concept paves the way to rapid assembly and easy-to-repair structures. Various approach have been proposed, as using fasteners \sidecite{cheung_reversibly_2013,jenett_digital_2017,cramer_elastic_2019} or snap-fit joints \sidecite{dong_mechanical_2015}
+    \item Cellular structures can be designed to be reversibly assembled. This concept paves the way to rapid assembly and easy-to-repair structures. Various approach have been proposed, as using fasteners~\sidecite{cheung_reversibly_2013,jenett_digital_2017,cramer_elastic_2019} or snap-fit joints~\sidecite{dong_mechanical_2015}
     \item     
     
-    Lattice structures are naturally damage-tolerant structures \sidecite{stolpe_fail-safe_2019,wu_topology_2021}. In a skin-lattice design, the skin is not load-bearing, and skin damage will not cause a progressive failure of the structure. Moreover, in case of rib damage, the damaged rib will be excluded from the load without any harm to the whole structure (see Fig.~\ref{fig:vick}).
-    \item They open the way for an extensive use of robotization for the manufacture \sidecite{hunt_wraptor_2019} and the assembly phases \sidecite{gershenfeld_macrofabrication_2015,jenett_bill-e_2017,costa_algorithmic_2020,niehs_recognition_2020}.
+    Lattice structures are naturally damage-tolerant structures~\sidecite{stolpe_fail-safe_2019,wu_topology_2021}. In a skin-lattice design, the skin is not load-bearing, and skin damage will not cause a progressive failure of the structure. Moreover, in case of rib damage, the damaged rib will be excluded from the load without any harm to the whole structure (see Fig.~\ref{fig:vick}).
+    \item They open the way for an extensive use of robotization for the manufacture~\sidecite{hunt_wraptor_2019} and the assembly phases~\sidecite{gershenfeld_macrofabrication_2015,jenett_bill-e_2017,costa_algorithmic_2020,niehs_recognition_2020}.
 \end{itemize}
 
-This field is now getting more and more interesting, especially in the aerospace field, as we can see by the recent applications by NASA project MADCAT \sidecite{cramer_elastic_2019} and Opgenoord PhD thesis \sidecite{opgenoord_transonic_2018}.
+This field is now getting more and more interesting, especially in the aerospace field, as we can see by the recent applications by NASA project MADCAT~\sidecite{cramer_elastic_2019} and Opgenoord PhD thesis~\sidecite{opgenoord_transonic_2018}.
 
 \subsection{Multi-scale structures optimization}
 
 \subsection{Full-scale structures optimization}
 
-Although the aforementioned methods are able to design a structure consisting of a simple module repeated several times in the global domain, they suffer from a common limitation. Namely, the designs converge towards solutions with compromised structural performance (Huang and Xie 2008; Zhang and Sun 2006). The cause lies within the topological periodicity. The topology of the module is influenced most by the region with the highest compliance. The resulting module design is used at different locations in the structure, therefore not leading to the most optimal solution for these regions (Tugilimana et al. 2019). This shortcoming can be addressed by two approaches: (i) by defining additional module properties as design variables or (ii) by allowing more modules within the structure. Both approaches extend the solution space. The first approach, extending the solution space, was considered by allowing for rotation of a module. Allowing for rotations resulted in improved structural performance because rotation of the modules modifies the material distribution in the structure locally (Tugilimana et al. 2017). Also, in a 2D continuum setting, the one-to-one mapping of a module unit to the global domain is extended by by allowing the module unit to resize (Stromberg et al. 2011).  \sidecite{bakker_simultaneous_2021}
+Although the aforementioned methods are able to design a structure consisting of a simple module repeated several times in the global domain, they suffer from a common limitation. Namely, the designs converge towards solutions with compromised structural performance (Huang and Xie 2008; Zhang and Sun 2006). The cause lies within the topological periodicity. The topology of the module is influenced most by the region with the highest compliance. The resulting module design is used at different locations in the structure, therefore not leading to the most optimal solution for these regions (Tugilimana et al. 2019). This shortcoming can be addressed by two approaches: (i) by defining additional module properties as design variables or (ii) by allowing more modules within the structure. Both approaches extend the solution space. The first approach, extending the solution space, was considered by allowing for rotation of a module. Allowing for rotations resulted in improved structural performance because rotation of the modules modifies the material distribution in the structure locally (Tugilimana et al. 2017). Also, in a 2D continuum setting, the one-to-one mapping of a module unit to the global domain is extended by by allowing the module unit to resize (Stromberg et al. 2011). ~\sidecite{bakker_simultaneous_2021}
