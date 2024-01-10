@@ -48,8 +48,8 @@
       \strng{authornamehash}{3d5875a2890550ef236660822a299231}
       \strng{authorfullhash}{3d5875a2890550ef236660822a299231}
       \field{extraname}{1}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{isbn}{978-3-642-07698-5 978-3-662-05086-6}
@@ -88,8 +88,8 @@
       \strng{authorbibnamehash}{55dc6cf10b12287e88ed45c38cbd30af}
       \strng{authornamehash}{55dc6cf10b12287e88ed45c38cbd30af}
       \strng{authorfullhash}{55dc6cf10b12287e88ed45c38cbd30af}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Based on course-tested material, this rigorous yet accessible graduate textbook covers both fundamental and advanced optimization theory and algorithms. It covers a wide range of numerical methods and topics, including both gradient-based and gradient-free algorithms, multidisciplinary design optimization, and uncertainty, with instruction on how to determine which algorithm should be used for a given application. It also provides an overview of models and how to prepare them for use with numerical optimization, including derivative computation. Over 400 high-quality visualizations and numerous examples facilitate understanding of the theory, and practical tips address common issues encountered in practical engineering design optimization and how to address them. Numerous end-of-chapter homework problems, progressing in difficulty, help put knowledge into practice. Accompanied online by a solutions manual for instructors and source code for problems, this is ideal for a one- or two-semester graduate course on optimization in aerospace, civil, mechanical, electrical, and chemical engineering departments.}
@@ -134,8 +134,8 @@
       \strng{authorbibnamehash}{813d0d27edc6f8a0b0b9d9dd3f7468ba}
       \strng{authornamehash}{813d0d27edc6f8a0b0b9d9dd3f7468ba}
       \strng{authorfullhash}{813d0d27edc6f8a0b0b9d9dd3f7468ba}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{The paper presents a uniform method of treating a variety of problems of optimal design of sandwich structures. The design procedure consists of two steps: The integration of an optimality condition, which is a differential equation for the optimal displacement field that does not involve any design parameters, and the subsequent determination of the optimal distribution of elastic stiffness or plastic resistance from the usual differential equations of the structure. Optimal elastic design for maximum stiffness, maximum fundamental frequency, or maximum buckling load, and optimal plastic design for maximum safety are treated as examples.}
@@ -179,8 +179,8 @@
       \strng{authorbibnamehash}{c0483a0bba8a1e0da1e84571466d6340}
       \strng{authornamehash}{c0483a0bba8a1e0da1e84571466d6340}
       \strng{authorfullhash}{c0483a0bba8a1e0da1e84571466d6340}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0027-8424}
@@ -225,8 +225,8 @@
       \strng{authorbibnamehash}{97a2ed0b27e78a3a4c50980973627aae}
       \strng{authornamehash}{97a2ed0b27e78a3a4c50980973627aae}
       \strng{authorfullhash}{97a2ed0b27e78a3a4c50980973627aae}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0045-7825}
@@ -276,8 +276,8 @@
       \strng{authornamehash}{066757951bb74a0ccbc836e088427aea}
       \strng{authorfullhash}{066757951bb74a0ccbc836e088427aea}
       \field{extraname}{1}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{isbn}{978-3-662-03117-9 978-3-662-03115-5}
@@ -305,8 +305,8 @@
       \strng{authornamehash}{8e39f252b54fbee1f97675ee90b87f23}
       \strng{authorfullhash}{8e39f252b54fbee1f97675ee90b87f23}
       \field{extraname}{1}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1615-147X, 1615-1488}
@@ -362,8 +362,8 @@
       \strng{authorbibnamehash}{0f594d449ee7d56313be907c3c0e2b0a}
       \strng{authornamehash}{0f594d449ee7d56313be907c3c0e2b0a}
       \strng{authorfullhash}{0f594d449ee7d56313be907c3c0e2b0a}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{This paper is devoted to an elementary introduction to the homogenization method applied to topology and shape optimization of elastic structures under single and multiple external loads. The single load case, in the context of minimum compliance and weight design of elastic structures, has been fully described in its theoretical as well as its numerical aspects in [4]. It is here brieﬂy recalled. In the more realistic context of “multiple loads”, i.e. when the structure is optimized with respect to more than one set of external forces, most of the obtained theoretical results remain true. However, the parameters that deﬁne optimal composite materials cannot be computed explicitly. In this paper, a method to treat numerically the multiple loads case is proposed.}
@@ -424,8 +424,8 @@
       \strng{authorbibnamehash}{b22601daa4b8425395199ff4496a433a}
       \strng{authornamehash}{b22601daa4b8425395199ff4496a433a}
       \strng{authorfullhash}{b22601daa4b8425395199ff4496a433a}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{isbn}{978-0-89871-668-9 978-0-89871-876-8}
@@ -519,8 +519,8 @@
       \strng{authorbibnamehash}{d2075620d3db6f848d4904775355e936}
       \strng{authornamehash}{d2075620d3db6f848d4904775355e936}
       \strng{authorfullhash}{d2075620d3db6f848d4904775355e936}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{edition}{1. ed}
@@ -559,8 +559,8 @@
       \strng{authorbibnamehash}{8c4d4919ff7527a5def5d6aa95158c4e}
       \strng{authornamehash}{8c4d4919ff7527a5def5d6aa95158c4e}
       \strng{authorfullhash}{8c4d4919ff7527a5def5d6aa95158c4e}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1615-147X, 1615-1488}
@@ -604,8 +604,8 @@
       \strng{authornamehash}{d76f1c09e8d8d06e1b7c3c254efeae1a}
       \strng{authorfullhash}{d76f1c09e8d8d06e1b7c3c254efeae1a}
       \field{extraname}{2}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1615-147X, 1615-1488}
@@ -650,8 +650,8 @@
       \strng{authorbibnamehash}{8483bd04bdd70a2ff4c5dcdcfbfe8d6c}
       \strng{authornamehash}{8483bd04bdd70a2ff4c5dcdcfbfe8d6c}
       \strng{authorfullhash}{8483bd04bdd70a2ff4c5dcdcfbfe8d6c}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{The ant colony optimization (ACO) algorithm, a relatively recent bio-inspired approach to solve combinatorial optimization problems mimicking the behavior of real ant colonies, is applied to problems of continuum structural topology design. An overview of the ACO algorithm is first described. A discretized topology design representation and the method for mapping ant's trail into this representation are then detailed. Subsequently, a modified ACO algorithm with elitist ants, niche strategy and memory of multiple colonies is illustrated. Several well-studied examples from structural topology optimization problems of minimum weight and minimum compliance are used to demonstrate its efficiency and versatility. The results indicate the effectiveness of the proposed algorithm and its ability to find families of multi-modal optimal design.}
@@ -703,8 +703,8 @@
       \strng{authorbibnamehash}{1a1a6551dc456b807b36965112d2cb0b}
       \strng{authornamehash}{1a1a6551dc456b807b36965112d2cb0b}
       \strng{authorfullhash}{1a1a6551dc456b807b36965112d2cb0b}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{The particle swarm optimization (PSO) algorithm, a relatively recent bio-inspired approach to solve combinatorial optimization problems mimicking the social behavior of birds flocking, is applied to problems of continuum structural topology design for the purpose of investigating optimal topologies and automatically creating innovative solutions. An overview of the PSO and binary PSO algorithms are first described. A discretized topology design representation and the method for mapping binary particle into this representation are then detailed. Subsequently, a modified binary PSO algorithm that adopts the concept of genotype–phenotype representation is illustrated. Several well-studied examples from structural topology optimization problems of minimum weight and minimum compliance are used to demonstrate its efficiency and versatility. The results indicate the effectiveness of the proposed algorithm and its ability to find families of structural topologies.}
@@ -751,8 +751,8 @@
       \strng{authornamehash}{9bad1d1c66b6ba268b1b0102bf0ab5ad}
       \strng{authorfullhash}{9bad1d1c66b6ba268b1b0102bf0ab5ad}
       \field{extraname}{1}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1097-0207}
@@ -1692,8 +1692,8 @@
       \strng{authorbibnamehash}{609829a2bf2ed2d778a0a37df5898f67}
       \strng{authornamehash}{609829a2bf2ed2d778a0a37df5898f67}
       \strng{authorfullhash}{609829a2bf2ed2d778a0a37df5898f67}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{We consider topology optimization of fluids in Stokes flow. The design objective is to minimize a power function, which for the absence of body fluid forces is the dissipated power in the fluid, subject to a fluid volume constraint. A generalized Stokes problem is derived that is used as a base for introducing the design parameterization. Mathematical proofs of existence of optimal solutions and convergence of discretized solutions are given and it is concluded that no regularization of the optimization problem is needed. The discretized state problem is a mixed finite element problem that is solved by a preconditioned conjugate gradient method and the design optimization problem is solved using sequential separable and convex programming. Several numerical examples are presented that illustrate this new methodology and the results are compared to results obtained in the context of shape optimization of fluids. Copyright © 2003 John Wiley \& Sons, Ltd.}
@@ -2172,6 +2172,55 @@
       \verb 10.1007/s004190050248
       \endverb
     \endentry
+    \entry{hashin_variational_1963}{article}{}
+      \name{author}{2}{}{%
+        {{hash=49128c65725c63446a3855ec32504223}{%
+           family={Hashin},
+           familyi={H\bibinitperiod},
+           given={Z.},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=7937bab147e26e39eb341a832acbc619}{%
+           family={Shtrikman},
+           familyi={S\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{00acd1f11ef1807e13aab32a65ed034d}
+      \strng{fullhash}{00acd1f11ef1807e13aab32a65ed034d}
+      \strng{bibnamehash}{00acd1f11ef1807e13aab32a65ed034d}
+      \strng{authorbibnamehash}{00acd1f11ef1807e13aab32a65ed034d}
+      \strng{authornamehash}{00acd1f11ef1807e13aab32a65ed034d}
+      \strng{authorfullhash}{00acd1f11ef1807e13aab32a65ed034d}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{00225096}
+      \field{journaltitle}{Journal of the Mechanics and Physics of Solids}
+      \field{month}{3}
+      \field{number}{2}
+      \field{title}{A variational approach to the theory of the elastic behaviour of multiphase materials}
+      \field{urlday}{6}
+      \field{urlmonth}{10}
+      \field{urlyear}{2020}
+      \field{volume}{11}
+      \field{year}{1963}
+      \field{urldateera}{ce}
+      \field{pages}{127\bibrangedash 140}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1016/0022-5096(63)90060-7
+      \endverb
+      \verb{urlraw}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/0022509663900607
+      \endverb
+      \verb{url}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/0022509663900607
+      \endverb
+    \endentry
     \entry{diaz_checkerboard_1995}{article}{}
       \name{author}{2}{}{%
         {{hash=367c682bf7b28d48b2efc8fc8e8dde97}{%
@@ -2276,8 +2325,8 @@
       \strng{authornamehash}{d76f1c09e8d8d06e1b7c3c254efeae1a}
       \strng{authorfullhash}{d76f1c09e8d8d06e1b7c3c254efeae1a}
       \field{extraname}{7}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Structural and Multidisciplinary Optimization}
@@ -2294,6 +2343,308 @@
       \range{pages}{24}
       \verb{doi}
       \verb 10.1007/s00158-006-0087-x
+      \endverb
+    \endentry
+    \entry{allaire_numerical_1993}{incollection}{}
+      \name{author}{2}{}{%
+        {{hash=01ec1538b00db5bf5f81d6d2221f5693}{%
+           family={Allaire},
+           familyi={A\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+        {{hash=2962f5df2868345eac7f3a5c9f41ef5a}{%
+           family={Francfort},
+           familyi={F\bibinitperiod},
+           given={G.\bibnamedelimi A.},
+           giveni={G\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=98d3b25fbc7c0c4f72bc274f68c9a705}{%
+           family={Bendsøe},
+           familyi={B\bibinitperiod},
+           given={Martin\bibnamedelima Philip},
+           giveni={M\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=ab521e277a18c537b5c248e3f17df8dc}{%
+           family={Soares},
+           familyi={S\bibinitperiod},
+           given={Carlos\bibnamedelimb A.\bibnamedelimi Mota},
+           giveni={C\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{location}{1}{%
+        {Dordrecht}%
+      }
+      \list{publisher}{1}{%
+        {Springer Netherlands}%
+      }
+      \strng{namehash}{c5bfe34eebcd36382ba11b42c670e0c2}
+      \strng{fullhash}{c5bfe34eebcd36382ba11b42c670e0c2}
+      \strng{bibnamehash}{c5bfe34eebcd36382ba11b42c670e0c2}
+      \strng{authorbibnamehash}{c5bfe34eebcd36382ba11b42c670e0c2}
+      \strng{authornamehash}{c5bfe34eebcd36382ba11b42c670e0c2}
+      \strng{authorfullhash}{c5bfe34eebcd36382ba11b42c670e0c2}
+      \strng{editorbibnamehash}{fe8c93327cd494fe2b95b40cbf253c42}
+      \strng{editornamehash}{fe8c93327cd494fe2b95b40cbf253c42}
+      \strng{editorfullhash}{fe8c93327cd494fe2b95b40cbf253c42}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In the context of topology and shape optimization, we minimize the sum of the elastic compliance and of the weight of a two-dimensional structure under specified loading. A relaxed formulation of the original problem which uses composites obtained by microperforation is introduced. A new numerical algorithm is proposed ; it provides a natural link between the previously known method of Bendsoe, Kikuchi, and Suzuki, and that of Allaire and Kohn.}
+      \field{booktitle}{Topology {Design} of {Structures}}
+      \field{isbn}{978-94-011-1804-0}
+      \field{series}{{NATO} {ASI} {Series}}
+      \field{title}{A {Numerical} {Algorithm} for {Topology} and {Shape} {Optimization}}
+      \field{urlday}{10}
+      \field{urlmonth}{1}
+      \field{urlyear}{2024}
+      \field{year}{1993}
+      \field{urldateera}{ce}
+      \field{pages}{239\bibrangedash 248}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1007/978-94-011-1804-0_16
+      \endverb
+      \verb{file}
+      \verb Full Text PDF:D\:\\estragio\\Zotero\\storage\\7NTK35P5\\Allaire and Francfort - 1993 - A Numerical Algorithm for Topology and Shape Optim.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/978-94-011-1804-0_16
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/978-94-011-1804-0_16
+      \endverb
+      \keyw{Alternate Direction Method,Convergence History,Design Variable,Optimal Shape Design,Topology Optimization}
+    \endentry
+    \entry{allaire_topology_1993}{incollection}{}
+      \name{author}{2}{}{%
+        {{hash=01ec1538b00db5bf5f81d6d2221f5693}{%
+           family={Allaire},
+           familyi={A\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+        {{hash=6becdcfd3af58342603c891e21ae8f27}{%
+           family={Kohn},
+           familyi={K\bibinitperiod},
+           given={R.\bibnamedelimi V.},
+           giveni={R\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=98d3b25fbc7c0c4f72bc274f68c9a705}{%
+           family={Bendsøe},
+           familyi={B\bibinitperiod},
+           given={Martin\bibnamedelima Philip},
+           giveni={M\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=ab521e277a18c537b5c248e3f17df8dc}{%
+           family={Soares},
+           familyi={S\bibinitperiod},
+           given={Carlos\bibnamedelimb A.\bibnamedelimi Mota},
+           giveni={C\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{location}{1}{%
+        {Dordrecht}%
+      }
+      \list{publisher}{1}{%
+        {Springer Netherlands}%
+      }
+      \strng{namehash}{0caab3f40694d1d7e878823468172073}
+      \strng{fullhash}{0caab3f40694d1d7e878823468172073}
+      \strng{bibnamehash}{0caab3f40694d1d7e878823468172073}
+      \strng{authorbibnamehash}{0caab3f40694d1d7e878823468172073}
+      \strng{authornamehash}{0caab3f40694d1d7e878823468172073}
+      \strng{authorfullhash}{0caab3f40694d1d7e878823468172073}
+      \strng{editorbibnamehash}{fe8c93327cd494fe2b95b40cbf253c42}
+      \strng{editornamehash}{fe8c93327cd494fe2b95b40cbf253c42}
+      \strng{editorfullhash}{fe8c93327cd494fe2b95b40cbf253c42}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We study the shape optimization of a two-dimensional elastic body loaded in plane stress. The design criteria are compliance and weight. A relaxed formulation obtained by homogenization is used, whereby perforated composite materials are admitted as structural components. This approach has the advantage of placing no implicit restriction on the topology of the design. We compare our results with those of Bendsoe, Kikuchi, and Suzuki who used an approach similar to ours.}
+      \field{booktitle}{Topology {Design} of {Structures}}
+      \field{isbn}{978-94-011-1804-0}
+      \field{series}{{NATO} {ASI} {Series}}
+      \field{title}{Topology {Optimization} and {Optimal} {Shape} {Design} {Using} {Homogenization}}
+      \field{urlday}{10}
+      \field{urlmonth}{1}
+      \field{urlyear}{2024}
+      \field{year}{1993}
+      \field{urldateera}{ce}
+      \field{pages}{207\bibrangedash 218}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1007/978-94-011-1804-0_14
+      \endverb
+      \verb{file}
+      \verb Full Text PDF:D\:\\estragio\\Zotero\\storage\\3ILT4UEK\\Allaire and Kohn - 1993 - Topology Optimization and Optimal Shape Design Usi.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/978-94-011-1804-0_14
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/978-94-011-1804-0_14
+      \endverb
+      \keyw{Complementary Energy,Conjugate Gradient Method,Optimal Design,Plane Stress,Topology Optimization}
+    \endentry
+    \entry{rozvany_critical_2009}{article}{}
+      \name{author}{1}{}{%
+        {{hash=2dd717bb9ecafd6aa2723e522b7aa056}{%
+           family={Rozvany},
+           familyi={R\bibinitperiod},
+           given={G.\bibnamedelimi I.\bibnamedelimi N.},
+           giveni={G\bibinitperiod\bibinitdelim I\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{2dd717bb9ecafd6aa2723e522b7aa056}
+      \strng{fullhash}{2dd717bb9ecafd6aa2723e522b7aa056}
+      \strng{bibnamehash}{2dd717bb9ecafd6aa2723e522b7aa056}
+      \strng{authorbibnamehash}{2dd717bb9ecafd6aa2723e522b7aa056}
+      \strng{authornamehash}{2dd717bb9ecafd6aa2723e522b7aa056}
+      \strng{authorfullhash}{2dd717bb9ecafd6aa2723e522b7aa056}
+      \field{extraname}{1}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The aim of this article is to evaluate and compare established numerical methods of structural topology optimization that have reached the stage of application in industrial software. It is hoped that our text will spark off a fruitful and constructive debate on this important topic.}
+      \field{issn}{1615-147X, 1615-1488}
+      \field{journaltitle}{Structural and Multidisciplinary Optimization}
+      \field{month}{1}
+      \field{number}{3}
+      \field{title}{A critical review of established methods of structural topology optimization}
+      \field{urlday}{10}
+      \field{urlmonth}{1}
+      \field{urlyear}{2024}
+      \field{volume}{37}
+      \field{year}{2009}
+      \field{urldateera}{ce}
+      \field{pages}{217\bibrangedash 237}
+      \range{pages}{21}
+      \verb{doi}
+      \verb 10.1007/s00158-007-0217-0
+      \endverb
+      \verb{file}
+      \verb Rozvany - 2009 - A critical review of established methods of struct.pdf:D\:\\estragio\\Zotero\\storage\\EUNTMXQ4\\Rozvany - 2009 - A critical review of established methods of struct.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://link.springer.com/10.1007/s00158-007-0217-0
+      \endverb
+      \verb{url}
+      \verb http://link.springer.com/10.1007/s00158-007-0217-0
+      \endverb
+    \endentry
+    \entry{petersson_slope_1998}{article}{}
+      \name{author}{2}{}{%
+        {{hash=6f32b7d50b188dbda2f985ea10292506}{%
+           family={Petersson},
+           familyi={P\bibinitperiod},
+           given={Joakim},
+           giveni={J\bibinitperiod}}}%
+        {{hash=d76f1c09e8d8d06e1b7c3c254efeae1a}{%
+           family={Sigmund},
+           familyi={S\bibinitperiod},
+           given={Ole},
+           giveni={O\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{f7015aab90b430cf3723914a6a85c952}
+      \strng{fullhash}{f7015aab90b430cf3723914a6a85c952}
+      \strng{bibnamehash}{f7015aab90b430cf3723914a6a85c952}
+      \strng{authorbibnamehash}{f7015aab90b430cf3723914a6a85c952}
+      \strng{authornamehash}{f7015aab90b430cf3723914a6a85c952}
+      \strng{authorfullhash}{f7015aab90b430cf3723914a6a85c952}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The problem of minimum compliance topology optimization of an elastic continuum is considered. A general continuous density–energy relation is assumed, including variable thickness sheet models and artificial power laws. To ensure existence of solutions, the design set is restricted by enforcing pointwise bounds on the density slopes. A finite element discretization procedure is described, and a proof of convergence of finite element solutions to exact solutions is given, as well as numerical examples obtained by a continuation/SLP (sequential linear programming) method. The convergence proof implies that checkerboard patterns and other numerical anomalies will not be present, or at least, that they can be made arbitrarily weak. © 1998 John Wiley \& Sons, Ltd.}
+      \field{issn}{1097-0207}
+      \field{journaltitle}{International Journal for Numerical Methods in Engineering}
+      \field{note}{\_eprint: https://onlinelibrary.wiley.com/doi/pdf/10.1002/\%28SICI\%291097-0207\%2819980430\%2941\%3A8\%3C1417\%3A\%3AAID-NME344\%3E3.0.CO\%3B2-N}
+      \field{number}{8}
+      \field{title}{Slope constrained topology optimization}
+      \field{urlday}{10}
+      \field{urlmonth}{1}
+      \field{urlyear}{2024}
+      \field{volume}{41}
+      \field{year}{1998}
+      \field{urldateera}{ce}
+      \field{pages}{1417\bibrangedash 1434}
+      \range{pages}{18}
+      \verb{doi}
+      \verb 10.1002/(SICI)1097-0207(19980430)41:8<1417::AID-NME344>3.0.CO;2-N
+      \endverb
+      \verb{file}
+      \verb Full Text PDF:D\:\\estragio\\Zotero\\storage\\J6QJ9SRJ\\Petersson and Sigmund - 1998 - Slope constrained topology optimization.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1002/%28SICI%291097-0207%2819980430%2941%3A8%3C1417%3A%3AAID-NME344%3E3.0.CO%3B2-N
+      \endverb
+      \verb{url}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1002/%28SICI%291097-0207%2819980430%2941%3A8%3C1417%3A%3AAID-NME344%3E3.0.CO%3B2-N
+      \endverb
+      \keyw{finite elements,slope constraints,topology optimization}
+    \endentry
+    \entry{rojas-labanda_automatic_2015}{article}{}
+      \name{author}{2}{}{%
+        {{hash=07c39082efb5bffc8f372768778e21cc}{%
+           family={Rojas-Labanda},
+           familyi={R\bibinithyphendelim L\bibinitperiod},
+           given={Susana},
+           giveni={S\bibinitperiod}}}%
+        {{hash=2ac977bc03dde1f3d4061cda61ab9795}{%
+           family={Stolpe},
+           familyi={S\bibinitperiod},
+           given={Mathias},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{9ad9cf6c5fb7d2deb24abe2466f891d7}
+      \strng{fullhash}{9ad9cf6c5fb7d2deb24abe2466f891d7}
+      \strng{bibnamehash}{9ad9cf6c5fb7d2deb24abe2466f891d7}
+      \strng{authorbibnamehash}{9ad9cf6c5fb7d2deb24abe2466f891d7}
+      \strng{authornamehash}{9ad9cf6c5fb7d2deb24abe2466f891d7}
+      \strng{authorfullhash}{9ad9cf6c5fb7d2deb24abe2466f891d7}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Structural topology optimization problems are often modelled using material interpolation schemes to produce almost solid-and-void designs. The problems become non convex due to the use of these techniques. Several articles introduce continuation approaches in the material penalization parameter to reduce the risks of ending in local minima. However, the numerical performance of continuation methods has not been studied in detail. The first purpose of this article is to benchmark existing continuation methods and the classical formulation with fixed penalty parameter in structural topology optimization. This is done using performance profiles on 225 minimum compliance and 150 compliant mechanism design problems. The results show that continuation methods generally find better designs. On the other hand, they typically require a larger number of iterations. In the second part of the article this issue is addressed. We propose an automatic continuation method, where the material penalization parameter is included as a new variable in the problem and a constraint guarantees that the requested penalty is eventually reached. The numerical results suggest that this approach is an appealing alternative to continuation methods. Automatic continuation also generally obtains better designs than the classical formulation using a reduced number of iterations.}
+      \field{issn}{1615-1488}
+      \field{journaltitle}{Structural and Multidisciplinary Optimization}
+      \field{month}{12}
+      \field{number}{6}
+      \field{title}{Automatic penalty continuation in structural topology optimization}
+      \field{urlday}{2}
+      \field{urlmonth}{2}
+      \field{urlyear}{2022}
+      \field{volume}{52}
+      \field{year}{2015}
+      \field{urldateera}{ce}
+      \field{pages}{1205\bibrangedash 1221}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.1007/s00158-015-1277-1
+      \endverb
+      \verb{file}
+      \verb Springer Full Text PDF:D\:\\estragio\\Zotero\\storage\\UKFULYCF\\Rojas-Labanda and Stolpe - 2015 - Automatic penalty continuation in structural topol.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s00158-015-1277-1
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s00158-015-1277-1
       \endverb
     \endentry
     \entry{zhou_progress_2002}{inproceedings}{}
@@ -2340,8 +2691,8 @@
       \strng{authorbibnamehash}{a4a4af003a4d58638cf319536091f230}
       \strng{authornamehash}{cf8b2059d128511ced2a6a2b2510e595}
       \strng{authorfullhash}{a4a4af003a4d58638cf319536091f230}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Topology optimization has been shown to be an extremely powerful tool in generating efficient design concepts in the early stage of a design process. Unfortunately, very often designs suggested by topology optimization turn out to be infeasible for certain manufacturing process. At such occasions, it is often very difficult, if not impossible, to transform a design proposal to a manufacturable design. In this paper, design requirements for casting and extrusion production are addressed for topology optimization.}
@@ -2435,8 +2786,8 @@
       \strng{authorbibnamehash}{7eb544e132ee6e664e14644d7d4aca92}
       \strng{authornamehash}{04ae6a321f5cda5acababd7288fe873c}
       \strng{authorfullhash}{7eb544e132ee6e664e14644d7d4aca92}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Manufacturing-oriented topology optimization has been extensively studied the past two decades, in particular for the conventional manufacturing methods, for example, machining and injection molding or casting. Both design and manufacturing engineers have benefited from these efforts because of the close-to-optimal and friendly-to-manufacture design solutions. Recently, additive manufacturing (AM) has received significant attention from both academia and industry. AM is characterized by producing geometrically complex components layer-by-layer, and greatly reduces the geometric complexity restrictions imposed on topology optimization by conventional manufacturing. In other words, AM can make near-full use of the freeform structural evolution of topology optimization. Even so, new rules and restrictions emerge due to the diverse and intricate AM processes, which should be carefully addressed when developing the AM-specific topology optimization algorithms. Therefore, the motivation of this perspective paper is to summarize the state-of-art topology optimization methods for a variety of AM topics. At the same time, this paper also expresses the authors’ perspectives on the challenges and opportunities in these topics. The hope is to inspire both researchers and engineers to meet these challenges with innovative solutions.}
@@ -2844,8 +3195,8 @@
       \strng{authorbibnamehash}{be6533ad7c5d8a568fe08db6c6c1b70a}
       \strng{authornamehash}{be6533ad7c5d8a568fe08db6c6c1b70a}
       \strng{authorfullhash}{be6533ad7c5d8a568fe08db6c6c1b70a}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{This article describes a method for the continuum-based topology optimization of structures made of discrete elements. In particular, we examine the optimization of linearly elastic planar structures made of bars of fixed width and semicircular ends. The design space for the optimization consists of the endpoint locations of the bar's medial axes and their out-of-plane thicknesses. To circumvent re-meshing upon design changes, we project the design onto a fixed analysis grid using a differentiable geometry projection that results in a density field indicating the fraction of solid material anywhere in the design space, as in density-based topology optimization methods. The out-of-plane thickness is penalized so that the optimizer is capable of removing bars during the optimization. The differentiability of the projection allows for the computation via the chain rule of design sensitivities of responses of interest, and therefore it allows for the use of robust and efficient gradient-based optimization methods. Notably, this approach makes it easier to fabricate optimal designs by using off-the-shelf stock material. Furthermore, the method considers the case where bars overlap at their joints (i.e. their thicknesses are added at the joint) and when they do not. Finally, our proposed method naturally accommodates the imposition of several fixed length scales. We demonstrate the proposed approach on classical problems of compliance-based topology optimization and identify its benefits as well as research directions to be addressed in the future.}
@@ -2899,8 +3250,8 @@
       \strng{authornamehash}{57cc589a7c101142881b6dfb18d1a48c}
       \strng{authorfullhash}{3df4d926d3176235278c6af8661b79fe}
       \field{extraname}{2}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{We introduce a topology optimization method for the stiffness-based design of structures made of plates. Our method renders topologies made distinctly of plates, thereby producing designs that better conform to manufacturing processes tailored to plate structures, such as those that employ stock plates that are cut and joined by various means. To force the structural members to be plates, we employ the geometry projection method to project an analytical description of a set of fixed-thickness plates onto a continuous density field defined over a 3-dimensional, uniform finite element grid for analysis. A size variable is assigned to each plate and penalized so that the optimizer can entirely remove a plate from the design. The proposed method accommodates the case where the plates in the topology are rectangular and solid, and the case where the boundaries of the plates can change and holes can be introduced. The latter case is attained by composition with a free density field. We present examples that demonstrate the effectiveness of our method and discuss future work.}
@@ -2957,8 +3308,8 @@
       \strng{authorbibnamehash}{fd96b779a6b7d1aae2b4145ba6318a43}
       \strng{authornamehash}{2d7c6898d5ee167ef60da47176eb5e91}
       \strng{authorfullhash}{fd96b779a6b7d1aae2b4145ba6318a43}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{issn}{1134-3060, 1886-1784}
@@ -3009,8 +3360,8 @@
       \strng{authorbibnamehash}{8480e585be302bfc0f12a11de8368871}
       \strng{authornamehash}{8480e585be302bfc0f12a11de8368871}
       \strng{authorfullhash}{8480e585be302bfc0f12a11de8368871}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{This work presents a computational method for the design of architected truss lattice materials where each strut can be made of one of a set of available materials. We design the lattices to extremize effective properties. As customary in topology optimization, we design a periodic unit cell of the lattice and obtain the effective properties via numerical homogenization. Each bar is represented as a cylindrical offset surface of a medial axis parameterized by the positions of the endpoints of the medial axis. These parameters are smoothly mapped onto a continuous density field for the primal and sensitivity analysis via the geometry projection method. A size variable per material is ascribed to each bar and penalized as in density-based topology optimization to facilitate the entire removal of bars from the design. During the optimization, we allow bars to be made of a mixture of the available materials. However, to ensure each bar is either exclusively made of one material or removed altogether from the optimal design, we impose optimization constraints that ensure each size variable is 0 or 1, and that at most one material size variable is 1. The proposed material interpolation scheme readily accommodates any number of materials. To obtain lattices with desired material symmetries, we design only a reference region of the unit cell and reflect its geometry projection with respect to the appropriate planes of symmetry. Also, to ensure bars remain whole upon reflection inside the unit cell or with respect to the periodic boundaries, we impose a no-cut constraint on the bars. We demonstrate the efficacy of our method via numerical examples of bulk and shear moduli maximization and Poisson’s ratio minimization for two- and three-material lattices with cubic symmetry.}
@@ -3056,8 +3407,8 @@
       \strng{authorbibnamehash}{3686ca50d81342dcd2f88f73b5dbfff8}
       \strng{authornamehash}{3686ca50d81342dcd2f88f73b5dbfff8}
       \strng{authorfullhash}{3686ca50d81342dcd2f88f73b5dbfff8}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{This paper presents a so-called $\varepsilon$-relaxed approach for structural topology optimization problems of discrete structures. The distinctive feature of this new approach is that unlike the typical treatment of topology optimization problems based on the ground structure approach, we eliminate the singular optima from the problem formulation and thus unify the sizing and topology optimization within the same framework. As a result, numerical methods developed for sizing optimization problems can be applied directly to the solution of topology optimization problems without any further treatment. The application of the proposed approach and its effectiveness are illustrated with several numerical examples.}
@@ -3105,8 +3456,9 @@
       \strng{authorbibnamehash}{2dd717bb9ecafd6aa2723e522b7aa056}
       \strng{authornamehash}{2dd717bb9ecafd6aa2723e522b7aa056}
       \strng{authorfullhash}{2dd717bb9ecafd6aa2723e522b7aa056}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{extraname}{2}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{A historical perspective of design-dependent constraints and singular topologies is presented and their theoretical background as well as fundamental features discussed, together with methods for treating computational difficulties. This note contains some rather surprising new facts about singular topologies and it is hoped that it will provide both a comprehensive review and additional insights.}
@@ -3149,8 +3501,8 @@
       \strng{authorbibnamehash}{f9420a019eafaf72f288b09d346d3254}
       \strng{authornamehash}{f9420a019eafaf72f288b09d346d3254}
       \strng{authorfullhash}{f9420a019eafaf72f288b09d346d3254}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{This paper presents a study on topology optimization of continuum structures under buckling constraints. New algorithms are developed for minimization of structural compliance considering constraints on volume and buckling load factors. The SIMP (Solid Isotropic Material with Penalization) material model is employed and nodal relative densities are used as topology design variables. A new approach based on the eigenvalue shift and pseudo mode identiﬁcation is proposed for eliminating the effect of pseudo buckling modes. Two-phase optimization algorithms are also proposed for achieving better optimized designs. Numerical examples are presented to illustrate the effectiveness of the new methods.}
@@ -3195,8 +3547,8 @@
       \strng{authorbibnamehash}{c442cfa8092c128645fd5a3cd09325ed}
       \strng{authornamehash}{c442cfa8092c128645fd5a3cd09325ed}
       \strng{authorfullhash}{c442cfa8092c128645fd5a3cd09325ed}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Engineering Computations}
@@ -3232,8 +3584,8 @@
       \strng{authorbibnamehash}{4e4b2e4c84bf20045bcf9599673e53c6}
       \strng{authornamehash}{4e4b2e4c84bf20045bcf9599673e53c6}
       \strng{authorfullhash}{4e4b2e4c84bf20045bcf9599673e53c6}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{An iterative procedure for determining the joint positions corresponding to a minimum mass space truss is presented. Displacement constraints and nonconstant stress constraints (stability) are taken into account. The truss is presumed to carry consecutively a large number of different systems of forces. The iteration includes a sequence of linear programming problems (SLP, with move-limits), and for each of these problems only the nearby constraints are considered. Analytical expressions are given for the gradients describing the linear problems. A dome is optimized using different constraints.}
@@ -3278,8 +3630,8 @@
       \strng{authornamehash}{be14cd2ace252d6ec45e16ea92c74e0f}
       \strng{authorfullhash}{be14cd2ace252d6ec45e16ea92c74e0f}
       \field{extraname}{1}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{The paper addresses the classical problem of optimal truss design where cross-sectional areas and the positions of joints are simultaneously optimized. Se-veral approaches are discussed from a general point of view. In particular, we focus on the difference between simultaneous and alternating optimization of geometry and topology. We recall a rigorously mathematical approach based on the implicit programming technique which considers the classical single load minimum compliance problem subject to a volume constraint. This approach is refined leading to three new problem formulations which can be treated by methods of Mathematical Programming. In particular, these formulations cover the effect of melting end nodes, i.e., vanishing potential bars due to changes in the geometry. In one of these new problem formulations, the objective function is a polynomial of degree three and the constraints are bilinear or just sign constraints. Because heuristics is avoided, certain optimality properties can be proven for resulting structures. The paper closes with two numerical test examples.}
@@ -3331,8 +3683,8 @@
       \strng{authorbibnamehash}{b9c8eaf45dc9f4fd7d05c4f4af3eeb22}
       \strng{authornamehash}{b9c8eaf45dc9f4fd7d05c4f4af3eeb22}
       \strng{authorfullhash}{b9c8eaf45dc9f4fd7d05c4f4af3eeb22}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{In this contribution, we propose an effective formulation to address the stress-based minimum volume problem of truss structures. Starting from the lower-bound formulation in topology optimization, the problem is further expanded to geometry optimization and multiple loading scenarios, and systematically reformulated to alleviate numerical difficulties related to the melting node effect and stress singularities. The subsequent simultaneous analysis and design (SAND) formulation is well suited for a direct treatment by introducing a barrier function. Using exact second derivatives, this difficult class of problem is solved by sequential quadratic programming with trust regions. These building blocks result into an integrated design process. Two examples–including a large-scale application–illustrate the robustness of the proposed formulation.}
@@ -3532,6 +3884,53 @@
       \endverb
       \keyw{Component-based method,Explicit topology optimization,Ground structure,Stiffened shell structure,Stiffener layout optimization}
     \endentry
+    \entry{he_python_2019}{article}{}
+      \name{author}{3}{}{%
+        {{hash=b5cf365122e2b66e22018811665e9437}{%
+           family={He},
+           familyi={H\bibinitperiod},
+           given={Linwei},
+           giveni={L\bibinitperiod}}}%
+        {{hash=c187b1075ee4dfc79e5c9154527f9040}{%
+           family={Gilbert},
+           familyi={G\bibinitperiod},
+           given={Matthew},
+           giveni={M\bibinitperiod}}}%
+        {{hash=f28364b04fc73aeaa763895071b0b476}{%
+           family={Song},
+           familyi={S\bibinitperiod},
+           given={Xingyi},
+           giveni={X\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{261c151f79c5dbe520fd2c0607589c0c}
+      \strng{fullhash}{261c151f79c5dbe520fd2c0607589c0c}
+      \strng{bibnamehash}{261c151f79c5dbe520fd2c0607589c0c}
+      \strng{authorbibnamehash}{261c151f79c5dbe520fd2c0607589c0c}
+      \strng{authornamehash}{261c151f79c5dbe520fd2c0607589c0c}
+      \strng{authorfullhash}{261c151f79c5dbe520fd2c0607589c0c}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Structural and Multidisciplinary Optimization}
+      \field{month}{8}
+      \field{number}{2}
+      \field{title}{A {Python} script for adaptive layout optimization of trusses}
+      \field{urlday}{15}
+      \field{urlmonth}{12}
+      \field{urlyear}{2020}
+      \field{volume}{60}
+      \field{year}{2019}
+      \field{urldateera}{ce}
+      \field{pages}{835\bibrangedash 847}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1007/s00158-019-02226-6
+      \endverb
+    \endentry
     \entry{kirsch_optimal_1989}{article}{}
       \name{author}{1}{}{%
         {{hash=effe3f1738f379672a1034006b971c63}{%
@@ -3639,8 +4038,8 @@
       \strng{authornamehash}{effe3f1738f379672a1034006b971c63}
       \strng{authorfullhash}{effe3f1738f379672a1034006b971c63}
       \field{extraname}{2}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Optimal design of elastic trusses is formulated as an approximate linear programming problem. Using the force method of analysis, the redundant forces are expressed in linearized terms of the design variables. The solution of the resulting linear programming problem can be viewed as an exact optimum for a truss with different displacements corresponding to the unknown redundants. The latter displacements, computed directly from the linear programming solution, indicate the degree of not satisfying the compatibility conditions. This information can be used to introduce imaginary displacements in subsequent iteration cycles. An iterative procedure of solution is proposed in which both the design and the imaginary displacements are modified until the compatible optimal solution is reached. Each iteration cycle requires the solution of a linear programming problem. The proposed procedure provides more flexibility in the solution process than the usual algorithms based on a sequence of linear programs and may improve the convergence. Numerical examples illustrate the application of this procedure in optimal design of simple trusses.}
@@ -3681,8 +4080,8 @@
       \strng{authorbibnamehash}{112f6df29c44bf60dd57629dca6325c7}
       \strng{authornamehash}{112f6df29c44bf60dd57629dca6325c7}
       \strng{authorfullhash}{112f6df29c44bf60dd57629dca6325c7}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0934-4373, 1615-1488}
@@ -3720,8 +4119,8 @@
       \strng{authornamehash}{453fe478aaef8cda186519d42b21f6c3}
       \strng{authorfullhash}{453fe478aaef8cda186519d42b21f6c3}
       \field{extraname}{2}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{issn}{0934-4373, 1615-1488}
@@ -3759,8 +4158,8 @@
       \strng{authorbibnamehash}{d35afaae60ddd0f2a8d5a9fa24f26c50}
       \strng{authornamehash}{d35afaae60ddd0f2a8d5a9fa24f26c50}
       \strng{authorfullhash}{d35afaae60ddd0f2a8d5a9fa24f26c50}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{2053-5945, 0080-4568}
@@ -3800,8 +4199,8 @@
       \strng{authorbibnamehash}{e4a2620c42989a0b49132225b112c80f}
       \strng{authornamehash}{e4a2620c42989a0b49132225b112c80f}
       \strng{authorfullhash}{e4a2620c42989a0b49132225b112c80f}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1941-5982}
@@ -3867,6 +4266,59 @@
       \verb 10.1016/0020-7683(75)90044-X
       \endverb
     \endentry
+    \entry{schaedler_architected_2016}{article}{}
+      \name{author}{2}{}{%
+        {{hash=58ab4e11da4cf01e6471a077750e5d14}{%
+           family={Schaedler},
+           familyi={S\bibinitperiod},
+           given={Tobias\bibnamedelima A.},
+           giveni={T\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=219e594ea052ca6cc78c4fa86ef26855}{%
+           family={Carter},
+           familyi={C\bibinitperiod},
+           given={William\bibnamedelima B.},
+           giveni={W\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{1820eb608b0ea0707960c2e71164f069}
+      \strng{fullhash}{1820eb608b0ea0707960c2e71164f069}
+      \strng{bibnamehash}{1820eb608b0ea0707960c2e71164f069}
+      \strng{authorbibnamehash}{1820eb608b0ea0707960c2e71164f069}
+      \strng{authornamehash}{1820eb608b0ea0707960c2e71164f069}
+      \strng{authorfullhash}{1820eb608b0ea0707960c2e71164f069}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Additive manufacturing enables fabrication of materials with intricate cellular architecture, whereby progress in 3D printing techniques is increasing the possible conﬁgurations of voids and solids ad inﬁnitum. Examples are microlattices with graded porosity and truss structures optimized for speciﬁc loading conditions. The cellular architecture determines the mechanical properties and density of these materials and can inﬂuence a wide range of other properties, e.g., acoustic, thermal, and biological properties. By combining optimized cellular architectures with high-performance metals and ceramics, several lightweight materials that exhibit strength and stiffness previously unachievable at low densities were recently demonstrated. This review introduces the ﬁeld of architected materials; summarizes the most common fabrication methods, with an emphasis on additive manufacturing; and discusses recent progress in the development of architected materials. The review also discusses important applications, including lightweight structures, energy absorption, metamaterials, thermal management, and bioscaffolds.}
+      \field{issn}{1531-7331, 1545-4118}
+      \field{journaltitle}{Annual Review of Materials Research}
+      \field{month}{7}
+      \field{number}{1}
+      \field{title}{Architected {Cellular} {Materials}}
+      \field{urlday}{2}
+      \field{urlmonth}{10}
+      \field{urlyear}{2020}
+      \field{volume}{46}
+      \field{year}{2016}
+      \field{urldateera}{ce}
+      \field{pages}{187\bibrangedash 210}
+      \range{pages}{24}
+      \verb{doi}
+      \verb 10.1146/annurev-matsci-070115-031624
+      \endverb
+      \verb{file}
+      \verb Schaedler et Carter - 2016 - Architected Cellular Materials.pdf:D\:\\estragio\\Zotero\\storage\\KCZ86Z5A\\Schaedler et Carter - 2016 - Architected Cellular Materials.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://www.annualreviews.org/doi/10.1146/annurev-matsci-070115-031624
+      \endverb
+      \verb{url}
+      \verb http://www.annualreviews.org/doi/10.1146/annurev-matsci-070115-031624
+      \endverb
+    \endentry
     \entry{kohn_optimal_1986}{article}{}
       \name{author}{2}{}{%
         {{hash=efed0d9f0d90b38fea25e014b8a1740b}{%
@@ -3889,8 +4341,8 @@
       \strng{authorbibnamehash}{3e120e21c3727cd5a44aa58a32779ab2}
       \strng{authornamehash}{3e120e21c3727cd5a44aa58a32779ab2}
       \strng{authorfullhash}{3e120e21c3727cd5a44aa58a32779ab2}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1097-0312}
@@ -3931,8 +4383,8 @@
       \strng{authorbibnamehash}{f91c3d47d6616007ec45d79dd4606b4a}
       \strng{authornamehash}{f91c3d47d6616007ec45d79dd4606b4a}
       \strng{authorfullhash}{f91c3d47d6616007ec45d79dd4606b4a}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1615-1488}
@@ -3982,8 +4434,8 @@
       \strng{authorbibnamehash}{b47cc7c4ab4698e0ecb086516c2b3b9f}
       \strng{authornamehash}{b47cc7c4ab4698e0ecb086516c2b3b9f}
       \strng{authorfullhash}{b47cc7c4ab4698e0ecb086516c2b3b9f}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{journaltitle}{Proceedings of the Royal Society A: Mathematical, Physical and Engineering Sciences}
@@ -4010,6 +4462,129 @@
       \verb https://royalsocietypublishing.org/doi/full/10.1098/rspa.2010.0215
       \endverb
     \endentry
+    \entry{nz_hypholoma_2023}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=4ae1f6897f320210050cd219b56eb724}{%
+           family={NZ},
+           familyi={N\bibinitperiod},
+           given={Bernard\bibnamedelima Spragg},
+           giveni={B\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \strng{namehash}{4ae1f6897f320210050cd219b56eb724}
+      \strng{fullhash}{4ae1f6897f320210050cd219b56eb724}
+      \strng{bibnamehash}{4ae1f6897f320210050cd219b56eb724}
+      \strng{authorbibnamehash}{4ae1f6897f320210050cd219b56eb724}
+      \strng{authornamehash}{4ae1f6897f320210050cd219b56eb724}
+      \strng{authorfullhash}{4ae1f6897f320210050cd219b56eb724}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Hypholoma fasciculare, commonly known as the sulphur tuft or clustered woodlover, is a common woodland mushroom, often in evidence when hardly any other mushrooms are to be found. This saprotrophic small gill fungus grows prolifically in large clumps on stumps, dead roots or rotting trunks of broadleaved trees.}
+      \field{month}{4}
+      \field{title}{Hypholoma fasciculare,}
+      \field{urlday}{10}
+      \field{urlmonth}{1}
+      \field{urlyear}{2024}
+      \field{year}{2023}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb Hypholoma fasciculare,:D\:\\estragio\\Zotero\\storage\\4WVJVVJ4\\NZ - 2023 - Hypholoma fasciculare,.jpg:image/jpg
+      \endverb
+      \verb{urlraw}
+      \verb https://www.flickr.com/photos/volvob12b/52833345708/
+      \endverb
+      \verb{url}
+      \verb https://www.flickr.com/photos/volvob12b/52833345708/
+      \endverb
+      \keyw{forestfloor,funghi,fungi,fungus,hypholomafasciculare,lumixfz10002,macro,mushrooms,nature,sulphurtuft,wetknee}
+    \endentry
+    \entry{library_leaf_nodate}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=2611011cfe42ecc659ccf50f25aeb5d2}{%
+           family={LIBRARY},
+           familyi={L\bibinitperiod},
+           given={STEVE\bibnamedelimb GSCHMEISSNER/SCIENCE\bibnamedelima PHOTO},
+           giveni={S\bibinitperiod\bibinitdelim G\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{2611011cfe42ecc659ccf50f25aeb5d2}
+      \strng{fullhash}{2611011cfe42ecc659ccf50f25aeb5d2}
+      \strng{bibnamehash}{2611011cfe42ecc659ccf50f25aeb5d2}
+      \strng{authorbibnamehash}{2611011cfe42ecc659ccf50f25aeb5d2}
+      \strng{authornamehash}{2611011cfe42ecc659ccf50f25aeb5d2}
+      \strng{authorfullhash}{2611011cfe42ecc659ccf50f25aeb5d2}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Leaf structure. Coloured scanning electron micrograph (SEM) of a freeze-fracture through a seedling leaf. STEVE GSCHMEISSNER/SCIENCE PHOTO LIBRARY}
+      \field{journaltitle}{Science Photo Library}
+      \field{title}{Leaf structure, {SEM}}
+      \field{urlday}{10}
+      \field{urlmonth}{1}
+      \field{urlyear}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.sciencephoto.com/media/30288/view/leaf-structure-sem
+      \endverb
+      \verb{url}
+      \verb https://www.sciencephoto.com/media/30288/view/leaf-structure-sem
+      \endverb
+    \endentry
+    \entry{gripspix_mostly_off_health_issues_wing_2007}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=5298076ed48a5272442529cc6befeeb1}{%
+           family={{gripspix (mostly off, health issues)}},
+           familyi={g\bibinitperiod}}}%
+      }
+      \strng{namehash}{5298076ed48a5272442529cc6befeeb1}
+      \strng{fullhash}{5298076ed48a5272442529cc6befeeb1}
+      \strng{bibnamehash}{5298076ed48a5272442529cc6befeeb1}
+      \strng{authorbibnamehash}{5298076ed48a5272442529cc6befeeb1}
+      \strng{authornamehash}{5298076ed48a5272442529cc6befeeb1}
+      \strng{authorfullhash}{5298076ed48a5272442529cc6befeeb1}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The wing shows a interesting structure: there are cells with a certain angle (120° and 90°). The structure is the same you can see, when you put foam between two glass plates. (Lit.: Hildebrandt, S: Mathematics and optimal form; Deutsche Ausgabe S. 5)}
+      \field{month}{8}
+      \field{title}{Wing of a dragonfly, detail}
+      \field{urlday}{10}
+      \field{urlmonth}{1}
+      \field{urlyear}{2024}
+      \field{year}{2007}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb Wing of a dragonfly, detail:D\:\\estragio\\Zotero\\storage\\LPWVGJQ6\\gripspix (mostly off, health issues) - 2007 - Wing of a dragonfly, detail.jpg:image/jpg
+      \endverb
+      \verb{urlraw}
+      \verb https://www.flickr.com/photos/gripspix/1233292309/
+      \endverb
+      \verb{url}
+      \verb https://www.flickr.com/photos/gripspix/1233292309/
+      \endverb
+      \keyw{abigfave,detail,dragonfly,insect,macro,mathematics,minas,nature,naturesfinest,optimalform,structure,wing}
+    \endentry
+    \entry{noauthor_bone_03_nodate}{misc}{}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labeltitlesource}{title}
+      \field{title}{bone\_03}
+      \field{urlday}{10}
+      \field{urlmonth}{1}
+      \field{urlyear}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://archimorph.files.wordpress.com/2010/01/bone_03.jpg
+      \endverb
+      \verb{url}
+      \verb https://archimorph.files.wordpress.com/2010/01/bone_03.jpg
+      \endverb
+    \endentry
     \entry{ashby_materials_1999}{book}{}
       \name{author}{1}{}{%
         {{hash=4efbe37e741cfa6637ad06d22dcb5217}{%
@@ -4031,8 +4606,8 @@
       \strng{authornamehash}{4efbe37e741cfa6637ad06d22dcb5217}
       \strng{authorfullhash}{4efbe37e741cfa6637ad06d22dcb5217}
       \field{extraname}{1}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{edition}{2nd ed}
@@ -4040,55 +4615,6 @@
       \field{title}{Materials selection in mechanical design}
       \field{year}{1999}
       \keyw{Engineering design,Materials}
-    \endentry
-    \entry{hashin_variational_1963}{article}{}
-      \name{author}{2}{}{%
-        {{hash=49128c65725c63446a3855ec32504223}{%
-           family={Hashin},
-           familyi={H\bibinitperiod},
-           given={Z.},
-           giveni={Z\bibinitperiod}}}%
-        {{hash=7937bab147e26e39eb341a832acbc619}{%
-           family={Shtrikman},
-           familyi={S\bibinitperiod},
-           given={S.},
-           giveni={S\bibinitperiod}}}%
-      }
-      \list{language}{1}{%
-        {en}%
-      }
-      \strng{namehash}{00acd1f11ef1807e13aab32a65ed034d}
-      \strng{fullhash}{00acd1f11ef1807e13aab32a65ed034d}
-      \strng{bibnamehash}{00acd1f11ef1807e13aab32a65ed034d}
-      \strng{authorbibnamehash}{00acd1f11ef1807e13aab32a65ed034d}
-      \strng{authornamehash}{00acd1f11ef1807e13aab32a65ed034d}
-      \strng{authorfullhash}{00acd1f11ef1807e13aab32a65ed034d}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{00225096}
-      \field{journaltitle}{Journal of the Mechanics and Physics of Solids}
-      \field{month}{3}
-      \field{number}{2}
-      \field{title}{A variational approach to the theory of the elastic behaviour of multiphase materials}
-      \field{urlday}{6}
-      \field{urlmonth}{10}
-      \field{urlyear}{2020}
-      \field{volume}{11}
-      \field{year}{1963}
-      \field{urldateera}{ce}
-      \field{pages}{127\bibrangedash 140}
-      \range{pages}{14}
-      \verb{doi}
-      \verb 10.1016/0022-5096(63)90060-7
-      \endverb
-      \verb{urlraw}
-      \verb https://linkinghub.elsevier.com/retrieve/pii/0022509663900607
-      \endverb
-      \verb{url}
-      \verb https://linkinghub.elsevier.com/retrieve/pii/0022509663900607
-      \endverb
     \endentry
     \entry{deshpande_foam_2001}{article}{}
       \name{author}{3}{}{%
@@ -4117,8 +4643,8 @@
       \strng{authorbibnamehash}{447245b73881f285da84992d5f7c9412}
       \strng{authornamehash}{447245b73881f285da84992d5f7c9412}
       \strng{authorfullhash}{447245b73881f285da84992d5f7c9412}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{journaltitle}{Acta Materialia}
@@ -4154,8 +4680,8 @@
       \strng{authornamehash}{c8684009f95ca92c8d9ee969a5675dc8}
       \strng{authorfullhash}{c8684009f95ca92c8d9ee969a5675dc8}
       \field{extraname}{2}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Philosophical Transactions of the Royal Society A: Mathematical, Physical and Engineering Sciences}
@@ -4701,8 +5227,8 @@
       \strng{authorbibnamehash}{b88809f69e059e2ea057dc52bc0efa24}
       \strng{authornamehash}{b88809f69e059e2ea057dc52bc0efa24}
       \strng{authorfullhash}{b88809f69e059e2ea057dc52bc0efa24}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1359-6454}
@@ -4751,8 +5277,8 @@
       \strng{authorbibnamehash}{f2d2ba80f013eab8adbe76dfb4add8c3}
       \strng{authornamehash}{f2d2ba80f013eab8adbe76dfb4add8c3}
       \strng{authorfullhash}{f2d2ba80f013eab8adbe76dfb4add8c3}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Numerous methods have recently emerged for fabricating cellular lattice structures with unit cells that can be repeated to create 3D space filling systems with very high interconnected pore fractions. These lattice structures possess exceptional mechanical strength resulting in highly efficient load supporting systems when configured as the cores of sandwich panels. These same structures also provide interesting possibilities for cross flow heat exchange. In this scenario, heat is transported from a locally heated facesheet through the lattice structure by conduction and is dissipated by a cross flow that propagates through the low flow resistant pore passages. The combination of efficient thermal conduction along the lattice trusses and low flow resistance through the pore channels results in highly efficient cross flow heat exchange. Recent research is investigating the use of hollow truss structures that enable their simultaneous use as heat pipes which significantly increases the efficiency of heat transport through the lattice and their mechanical strength. The relationships between heat transfer, frictional flow losses and topology of the lattice structure are discussed and opportunities for future developments identified.}
@@ -4800,8 +5326,8 @@
       \strng{authorbibnamehash}{368d87479e9468e85b5d4454a15bc93b}
       \strng{authornamehash}{368d87479e9468e85b5d4454a15bc93b}
       \strng{authorfullhash}{368d87479e9468e85b5d4454a15bc93b}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0036-8075, 1095-9203}
@@ -4875,8 +5401,8 @@
       \strng{authorbibnamehash}{9fb8be9243290c4add836d6612e61c1b}
       \strng{authornamehash}{a40f2ef59f5e8041746be52219788385}
       \strng{authorfullhash}{9fb8be9243290c4add836d6612e61c1b}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Soft Robotics}
@@ -4922,8 +5448,8 @@
       \strng{authorbibnamehash}{e56a2b981c7aa8663c6022ec0af2b25a}
       \strng{authornamehash}{e56a2b981c7aa8663c6022ec0af2b25a}
       \strng{authorfullhash}{e56a2b981c7aa8663c6022ec0af2b25a}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{A simple snap-fit and vacuum brazing method has been developed to fabricate three dimensional space filling octet-truss lattice structures from Ti–6Al–4V alloy sheets. Using strut lengths of 7–25mm resulted in a relative density of the lattices ranging from 2\% to 16\%. The lattice elastic stiffness constants and strengths have been characterized under through-thickness compression and in-plane shear as a function of their relative density, and are shown to be well predicted by previously proposed micromechanical models adapted to account for the increased nodal mass and strut separations of the snap-fit lattice design. The Ti–6Al–4V octet-truss lattices exhibit excellent mechanical properties compared to other cellular material – cell topology combinations, and appear to be promising candidates for high temperature applications where a robust mechanical performance is required.}
@@ -4971,8 +5497,8 @@
       \strng{authornamehash}{2ac977bc03dde1f3d4061cda61ab9795}
       \strng{authorfullhash}{2ac977bc03dde1f3d4061cda61ab9795}
       \field{extraname}{2}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1615-1488}
@@ -5025,8 +5551,8 @@
       \strng{authorbibnamehash}{880231f33403bb8f375a4a1b8fe4ced8}
       \strng{authornamehash}{880231f33403bb8f375a4a1b8fe4ced8}
       \strng{authorfullhash}{880231f33403bb8f375a4a1b8fe4ced8}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{journaltitle}{Structural and Multidisciplinary Optimization}
@@ -5069,8 +5595,8 @@
       \strng{authorbibnamehash}{172f289a4a80828f704709df0cf66343}
       \strng{authornamehash}{172f289a4a80828f704709df0cf66343}
       \strng{authorfullhash}{172f289a4a80828f704709df0cf66343}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{issn}{0263-8223}
@@ -5134,8 +5660,8 @@
       \strng{authorbibnamehash}{65ae3d84d39b5b33510c220a7ff889a6}
       \strng{authornamehash}{d51fbacd396183c6d2adb5f273e9391a}
       \strng{authorfullhash}{65ae3d84d39b5b33510c220a7ff889a6}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{issn}{1554-2769}
@@ -5191,8 +5717,8 @@
       \strng{authorbibnamehash}{ca5fab633fea255bf5fbf65375b75d56}
       \strng{authornamehash}{ca5fab633fea255bf5fbf65375b75d56}
       \strng{authorfullhash}{ca5fab633fea255bf5fbf65375b75d56}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{25th {AIAA}/{AHS} {Adaptive} {Structures} {Conference}}
@@ -5255,8 +5781,8 @@
       \strng{authorbibnamehash}{84fd8402522191ff529ba5ccf138c3a6}
       \strng{authornamehash}{83278dca0141c45ad2764788e8415651}
       \strng{authorfullhash}{84fd8402522191ff529ba5ccf138c3a6}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{arXiv:2008.11925 [cs]}
@@ -5338,8 +5864,8 @@
       \strng{authorbibnamehash}{12fe391ff459682e51b205bfd9832cb5}
       \strng{authornamehash}{2c541e2691b847358f0d6568453b211d}
       \strng{authorfullhash}{12fe391ff459682e51b205bfd9832cb5}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{2020 {IEEE} {International} {Conference} on {Robotics} and {Automation} ({ICRA})}
@@ -5376,6 +5902,60 @@
       \field{title}{Transonic {Flutter} {Prediction} and {Aeroelastic} {Tailoring} for {Next}-{Generation} {Transport} {Aircraft}}
       \field{type}{phdthesis}
       \field{year}{2018}
+    \endentry
+    \entry{liu_two-scale_2020}{article}{}
+      \name{author}{3}{}{%
+        {{hash=74b91b605941042f9b3a923d221fb1f0}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Pai},
+           giveni={P\bibinitperiod}}}%
+        {{hash=4de1896cd656cece01578a2f62d7e3fa}{%
+           family={Kang},
+           familyi={K\bibinitperiod},
+           given={Zhan},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=b90270e0a0dd0ea57efa2688146c2051}{%
+           family={Luo},
+           familyi={L\bibinitperiod},
+           given={Yangjun},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{80eb4bee7e3aeccb88e248659bea83dd}
+      \strng{fullhash}{80eb4bee7e3aeccb88e248659bea83dd}
+      \strng{bibnamehash}{80eb4bee7e3aeccb88e248659bea83dd}
+      \strng{authorbibnamehash}{80eb4bee7e3aeccb88e248659bea83dd}
+      \strng{authornamehash}{80eb4bee7e3aeccb88e248659bea83dd}
+      \strng{authorfullhash}{80eb4bee7e3aeccb88e248659bea83dd}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2214-8604}
+      \field{journaltitle}{Additive Manufacturing}
+      \field{month}{12}
+      \field{title}{Two-scale concurrent topology optimization of lattice structures with connectable microstructures}
+      \field{urlday}{9}
+      \field{urlmonth}{10}
+      \field{urlyear}{2020}
+      \field{volume}{36}
+      \field{year}{2020}
+      \field{urldateera}{ce}
+      \field{pages}{101427}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.addma.2020.101427
+      \endverb
+      \verb{urlraw}
+      \verb http://www.sciencedirect.com/science/article/pii/S2214860420307995
+      \endverb
+      \verb{url}
+      \verb http://www.sciencedirect.com/science/article/pii/S2214860420307995
+      \endverb
+      \keyw{Connectable microstructures,Designable connective region,Homogenization,Multiple lattice materials,Two-scale concurrent topology optimization}
     \endentry
     \entry{bakker_simultaneous_2021}{article}{}
       \name{author}{4}{}{%

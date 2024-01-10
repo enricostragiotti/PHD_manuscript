@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.8.29)  9 JAN 2024 19:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.8.29)  10 JAN 2024 18:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2123,7 +2123,14 @@ Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'english'.
- (manuscript_Stragiotti.aux (chapters/2_literature_review.aux))
+ (manuscript_Stragiotti.aux (chapters/2_literature_review.aux
+
+LaTeX Warning: Label `fig:02_' multiply defined.
+
+
+LaTeX Warning: Label `fig:02_@cref' multiply defined.
+
+))
 \openout1 = `manuscript_Stragiotti.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/npxmi/m/it on input line 87.
@@ -2677,7 +2684,13 @@ LaTeX Font Info:    Font shape `T1/zplLF/b/n' will be
 Package tocbasic Info: character protrusion at lof deactivated on input line 182.
  (manuscript_Stragiotti.lof
 LaTeX Font Info:    Font shape `T1/zplLF/m/n' will be
-(Font)              scaled to size 5.917pt on input line 5.
+(Font)              scaled to size 5.917pt on input line 4.
+
+
+LaTeX Warning: Citation '' on page 5 undefined on input line 15.
+
+LaTeX Font Info:    Font shape `T1/zplLF/m/it' will be
+(Font)              scaled to size 10.6215pt on input line 16.
 )
 \tf@lof=\write24
 \openout4 = `manuscript_Stragiotti.lof'.
@@ -2691,6 +2704,10 @@ Package tocbasic Info: character protrusion at lot deactivated on input line 188
 \openout4 = `manuscript_Stragiotti.mw'.
 
  [5] (manuscript_Stragiotti.mw)
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
@@ -2790,14 +2807,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--4
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 4--4
- [][][][]\T1/zplLF/m/sc/10 (+20) Cellular struc-tures 
+ [][][][]\T1/zplLF/m/sc/10 (+20) Modular struc-tures and 
  []
 
 LaTeX Font Info:    Font shape `T1/qhv/b/n' will be
 (Font)              scaled to size 12.99pt on input line 8.
-LaTeX Font Info:    Font shape `T1/zplLF/m/it' will be
-(Font)              scaled to size 10.6215pt on input line 8.
-<figures/02_literature/opt_family.png, id=202, 707.0415pt x 301.72725pt>
+<figures/02_literature/opt_family.png, id=262, 707.0415pt x 301.72725pt>
 File: figures/02_literature/opt_family.png Graphic file (type png)
 <use figures/02_literature/opt_family.png>
 Package pdftex.def Info: figures/02_literature/opt_family.png  used on input line 12.
@@ -3635,301 +3650,6 @@ Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 59.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
-Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 61.
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 61.
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 61.
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 61.
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 61.
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 61.
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 61.
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
 \openout4 = `manuscript_Stragiotti.mw'.
 
 [5] (manuscript_Stragiotti.mw)
@@ -3971,6 +3691,301 @@ Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 61.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
+Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 61.
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 61.
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 61.
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 61.
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 61.
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 61.
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 61.
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
 Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 63.
 \openout4 = `manuscript_Stragiotti.mw'.
 
@@ -4045,27 +4060,27 @@ Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 63.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
-<figures/02_literature/01_contin_mesh/c_mesh.pdf, id=341, 125.51794pt x 114.60516pt>
+<figures/02_literature/01_contin_mesh/c_mesh.pdf, id=401, 125.51794pt x 114.60516pt>
 File: figures/02_literature/01_contin_mesh/c_mesh.pdf Graphic file (type pdf)
 <use figures/02_literature/01_contin_mesh/c_mesh.pdf>
-Package pdftex.def Info: figures/02_literature/01_contin_mesh/c_mesh.pdf  used on input line 74.
+Package pdftex.def Info: figures/02_literature/01_contin_mesh/c_mesh.pdf  used on input line 73.
 (pdftex.def)             Requested size: 125.51762pt x 114.60487pt.
 LaTeX Font Info:    Font shape `OT1/zplTLF/m/n' will be
-(Font)              scaled to size 8.73001pt on input line 75.
+(Font)              scaled to size 8.73001pt on input line 74.
 LaTeX Font Info:    Font shape `OT1/zplTLF/m/n' will be
-(Font)              scaled to size 7.08101pt on input line 75.
+(Font)              scaled to size 7.08101pt on input line 74.
 LaTeX Font Info:    Font shape `OT1/zplTLF/m/n' will be
-(Font)              scaled to size 5.335pt on input line 75.
+(Font)              scaled to size 5.335pt on input line 74.
 LaTeX Font Info:    Font shape `OT1/zplTLF/b/n' will be
-(Font)              scaled to size 8.73001pt on input line 75.
+(Font)              scaled to size 8.73001pt on input line 74.
 LaTeX Font Info:    Font shape `OT1/zplTLF/b/n' will be
-(Font)              scaled to size 7.08101pt on input line 75.
+(Font)              scaled to size 7.08101pt on input line 74.
 LaTeX Font Info:    Font shape `OT1/zplTLF/b/n' will be
-(Font)              scaled to size 5.335pt on input line 75.
+(Font)              scaled to size 5.335pt on input line 74.
 LaTeX Font Info:    Font shape `T1/zplLF/m/n' will be
-(Font)              scaled to size 7.08101pt on input line 75.
+(Font)              scaled to size 7.08101pt on input line 74.
 LaTeX Font Info:    Font shape `T1/zplLF/m/n' will be
-(Font)              scaled to size 5.335pt on input line 75.
+(Font)              scaled to size 5.335pt on input line 74.
 \openout4 = `manuscript_Stragiotti.mw'.
 
  [6] (manuscript_Stragiotti.mw)
@@ -4083,7 +4098,11 @@ LaTeX Font Info:    Font shape `T1/zplLF/m/n' will be
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
-Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 89.
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 90.
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
@@ -4156,21 +4175,98 @@ Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 89.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
-<figures/02_literature/simp.png, id=366, 554.07pt x 428.19975pt>
+Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 99.
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 99.
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+ [7
+pdfTeX warning (ext4): destination with the same identifier (name{equation.1.2.2}) has been already used, duplicate ignored
+
+\__morewrites_shipout_ii: ...rewrites_shipout_box 
+                                                  \__morewrites_after_shipout: 
+l.100 
+       <./figures/02_literature/01_contin_mesh/c_mesh.pdf>] (manuscript_Stragiotti.mw)
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+<figures/02_literature/simp.png, id=467, 554.07pt x 428.19975pt>
 File: figures/02_literature/simp.png Graphic file (type png)
 <use figures/02_literature/simp.png>
-Package pdftex.def Info: figures/02_literature/simp.png  used on input line 100.
+Package pdftex.def Info: figures/02_literature/simp.png  used on input line 103.
 (pdftex.def)             Requested size: 239.00189pt x 184.70381pt.
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
 
-Underfull \hbox (badness 2529) in paragraph at lines 101--101
+Underfull \hbox (badness 2529) in paragraph at lines 104--104
 \T1/zplLF/m/n/9 (+20) SIMP model with the Hashin-
  []
 
-Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 106.
+Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 109.
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
@@ -4195,56 +4291,7 @@ Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 106.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
-Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 107.
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 107.
+Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 110.
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
@@ -4271,25 +4318,59 @@ Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 107.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
-[7
-pdfTeX warning (ext4): destination with the same identifier (name{equation.1.2.2}) has been already used, duplicate ignored
-
-\__morewrites_shipout_ii: ...rewrites_shipout_box 
-                                                  \__morewrites_after_shipout: 
-l.108 \begin{equation}
-                       <./figures/02_literature/simp.png> <./figures/02_literature/01_contin_mesh/c_mesh.pdf>] (manuscript_Stragiotti.mw)
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
-<figures/02_literature/02_circ_filter/filt_cir.pdf, id=405, 106.69562pt x 105.06754pt>
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 110.
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+<figures/02_literature/02_circ_filter/filt_cir.pdf, id=474, 106.69562pt x 105.06754pt>
 File: figures/02_literature/02_circ_filter/filt_cir.pdf Graphic file (type pdf)
 <use figures/02_literature/02_circ_filter/filt_cir.pdf>
-Package pdftex.def Info: figures/02_literature/02_circ_filter/filt_cir.pdf  used on input line 114.
+Package pdftex.def Info: figures/02_literature/02_circ_filter/filt_cir.pdf  used on input line 117.
 (pdftex.def)             Requested size: 106.69534pt x 105.06726pt.
-Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 123.
+Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 126.
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
@@ -4314,15 +4395,16 @@ Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 123.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
-Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 137.
 \openout4 = `manuscript_Stragiotti.mw'.
 
+[8 <./figures/02_literature/simp.png> <./figures/02_literature/02_circ_filter/filt_cir.pdf>] (manuscript_Stragiotti.mw)
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
+Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 133.
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
@@ -4371,6 +4453,7 @@ Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 137.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
+Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 133.
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
@@ -4387,7 +4470,6 @@ Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 137.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
-Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 137.
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
@@ -4396,6 +4478,7 @@ Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 137.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
+Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 133.
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
@@ -4412,7 +4495,6 @@ Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 137.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
-Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 137.
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
@@ -4421,6 +4503,7 @@ Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 137.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
+Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 133.
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
@@ -4445,6 +4528,7 @@ Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 137.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
+Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 133.
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
@@ -4461,7 +4545,6 @@ Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 137.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
-Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 137.
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
@@ -4470,6 +4553,7 @@ Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 137.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
+Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 135.
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
@@ -4488,10 +4572,8 @@ Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 137.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
- [8 <./figures/02_literature/02_circ_filter/filt_cir.pdf>] (manuscript_Stragiotti.mw)
 \openout4 = `manuscript_Stragiotti.mw'.
 
-Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 140.
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
@@ -4516,7 +4598,6 @@ Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 140.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
-Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 140.
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
@@ -4545,6 +4626,7 @@ Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 140.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
+Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 135.
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
@@ -4565,12 +4647,164 @@ Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 140.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 135.
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 135.
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 138.
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 138.
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
 
-Underfull \hbox (badness 1325) in paragraph at lines 140--140
-\T1/zplLF/m/n/9 (+20) method based on mov-ing mor-
+Underfull \hbox (badness 1147) in paragraph at lines 138--138
+\T1/zplLF/m/n/9 (+20) three-dimensional topol-ogy op-ti-
  []
 
-Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 141.
+Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 139.
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
@@ -4619,7 +4853,7 @@ Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 141.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
-Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 141.
+Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 139.
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
@@ -4644,7 +4878,7 @@ Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 141.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
-Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 141.
+Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 139.
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
@@ -4669,7 +4903,7 @@ Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 141.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
-Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 141.
+Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 139.
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
@@ -4718,7 +4952,7 @@ Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 141.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
-Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 141.
+Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 139.
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
@@ -4743,35 +4977,35 @@ Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 141.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
-<figures/02_literature/coniglio1.png, id=451, 375.20175pt x 179.4705pt>
+<figures/02_literature/coniglio1.png, id=524, 375.20175pt x 179.4705pt>
 File: figures/02_literature/coniglio1.png Graphic file (type png)
 <use figures/02_literature/coniglio1.png>
-Package pdftex.def Info: figures/02_literature/coniglio1.png  used on input line 143.
-(pdftex.def)             Requested size: 127.46573pt x 60.96986pt.
+Package pdftex.def Info: figures/02_literature/coniglio1.png  used on input line 141.
+(pdftex.def)             Requested size: 143.40016pt x 68.59383pt.
 LaTeX Font Info:    Font shape `T1/zplLF/m/n' will be
-(Font)              scaled to size 9.70001pt on input line 143.
-<figures/02_literature/coniglio2.png, id=452, 373.99725pt x 180.07275pt>
+(Font)              scaled to size 9.70001pt on input line 141.
+<figures/02_literature/coniglio2.png, id=525, 373.99725pt x 180.07275pt>
 File: figures/02_literature/coniglio2.png Graphic file (type png)
 <use figures/02_literature/coniglio2.png>
-Package pdftex.def Info: figures/02_literature/coniglio2.png  used on input line 145.
-(pdftex.def)             Requested size: 127.46573pt x 61.3723pt.
+Package pdftex.def Info: figures/02_literature/coniglio2.png  used on input line 143.
+(pdftex.def)             Requested size: 143.40016pt x 69.04659pt.
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
 
-Underfull \hbox (badness 1270) in paragraph at lines 147--147
+Underfull \hbox (badness 1270) in paragraph at lines 145--145
 [][][]\T1/zplLF/b/n/9 (+20) Figure 1.5[][]: []\T1/zplLF/m/n/9 (+20) Com-po-nent (a) and
  []
 
 
-Underfull \hbox (badness 2229) in paragraph at lines 147--147
+Underfull \hbox (badness 2229) in paragraph at lines 145--145
 \T1/zplLF/m/n/9 (+20) component-based topol-ogy op-ti-
  []
 
-Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 152.
 \openout4 = `manuscript_Stragiotti.mw'.
 
+[9] (manuscript_Stragiotti.mw)
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
@@ -4782,6 +5016,7 @@ Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 152.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
+Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 150.
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
@@ -4794,7 +5029,6 @@ Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 152.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
-Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 152.
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
@@ -4807,6 +5041,7 @@ Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 152.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
+Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 150.
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
@@ -4867,7 +5102,6 @@ Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 152.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
-Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 152.
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
@@ -4880,6 +5114,7 @@ Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 152.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
+Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 150.
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
@@ -4916,7 +5151,6 @@ Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 152.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
-Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 152.
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
@@ -4929,6 +5163,7 @@ Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 152.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
+Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 150.
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
@@ -4943,7 +5178,6 @@ Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 152.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
-[9 <./figures/02_literature/coniglio1.png> <./figures/02_literature/coniglio2.png>] (manuscript_Stragiotti.mw)
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
@@ -4954,10 +5188,16 @@ Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 152.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
+<figures/02_literature/layopt.png, id=551, 542.025pt x 589.4522pt>
+File: figures/02_literature/layopt.png Graphic file (type png)
+<use figures/02_literature/layopt.png>
+Package pdftex.def Info: figures/02_literature/layopt.png  used on input line 154.
+(pdftex.def)             Requested size: 223.06746pt x 242.58539pt.
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
+Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 163.
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
@@ -4974,7 +5214,6 @@ Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 152.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
-Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 154.
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
@@ -5007,6 +5246,7 @@ Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 154.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
+Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 163.
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
@@ -5023,7 +5263,6 @@ Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 154.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
-Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 154.
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
@@ -5032,145 +5271,6 @@ Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 154.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 154.
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 154.
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 157.
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
@@ -5247,34 +5347,6 @@ Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 163.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
- [10] (manuscript_Stragiotti.mw)
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 170.
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
@@ -5323,6 +5395,7 @@ Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 170.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
+ [10 <./figures/02_literature/coniglio1.png> <./figures/02_literature/coniglio2.png>] (manuscript_Stragiotti.mw)
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
@@ -5347,20 +5420,204 @@ Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 170.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
-<figures/02_literature/04_disc_mesh/d_mesh.pdf, id=519, 126.35104pt x 114.60516pt>
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 166.
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+ [11 <./figures/02_literature/layopt.png>] (manuscript_Stragiotti.mw)
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 172.
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 172.
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 179.
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+<figures/02_literature/04_disc_mesh/d_mesh.pdf, id=609, 126.35104pt x 114.60516pt>
 File: figures/02_literature/04_disc_mesh/d_mesh.pdf Graphic file (type pdf)
 <use figures/02_literature/04_disc_mesh/d_mesh.pdf>
-Package pdftex.def Info: figures/02_literature/04_disc_mesh/d_mesh.pdf  used on input line 176.
+Package pdftex.def Info: figures/02_literature/04_disc_mesh/d_mesh.pdf  used on input line 185.
 (pdftex.def)             Requested size: 126.35071pt x 114.60487pt.
-Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 187.
 \openout4 = `manuscript_Stragiotti.mw'.
 
+ [12 <./figures/02_literature/04_disc_mesh/d_mesh.pdf>] (manuscript_Stragiotti.mw)
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
+Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 196.
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
@@ -5377,7 +5634,6 @@ Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 187.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
-Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 187.
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
@@ -5386,6 +5642,7 @@ Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 187.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
+Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 196.
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
@@ -5450,7 +5707,6 @@ Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 187.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
-Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 187.
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
@@ -5459,6 +5715,7 @@ Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 187.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
+Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 196.
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
@@ -5501,14 +5758,13 @@ Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 187.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
- [11 <./figures/02_literature/04_disc_mesh/d_mesh.pdf>] (manuscript_Stragiotti.mw)
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
-Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 201.
+Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 210.
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
@@ -5557,7 +5813,7 @@ Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 201.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
-Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 203.
+Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 212.
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
@@ -5582,7 +5838,7 @@ Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 203.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
-Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 203.
+Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 212.
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
@@ -5607,25 +5863,16 @@ Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 203.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
-<figures/02_literature/truss-ex.png, id=557, 840.13875pt x 575.14874pt>
+<figures/02_literature/truss-ex.png, id=648, 840.13875pt x 575.14874pt>
 File: figures/02_literature/truss-ex.png Graphic file (type png)
 <use figures/02_literature/truss-ex.png>
-Package pdftex.def Info: figures/02_literature/truss-ex.png  used on input line 207.
+Package pdftex.def Info: figures/02_literature/truss-ex.png  used on input line 216.
 (pdftex.def)             Requested size: 136.57251pt x 93.49127pt.
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
-\openout4 = `manuscript_Stragiotti.mw'.
-
- [12 <./figures/02_literature/truss-ex.png>] (manuscript_Stragiotti.mw)
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 240.
+Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 222.
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
@@ -5646,6 +5893,11 @@ Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 240.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 222.
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
@@ -5674,7 +5926,27 @@ Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 240.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
-Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 240.
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 222.
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
@@ -5700,19 +5972,39 @@ Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 240.
 \openout4 = `manuscript_Stragiotti.mw'.
 
 
-Underfull \hbox (badness 2057) in paragraph at lines 240--240
-[][][][][][]\T1/zplLF/m/n/9 (+20) 82.[] [][]Fleck et al. ([]2010), []'Micro-
+Underfull \hbox (badness 2088) in paragraph at lines 222--222
+[][][][][][]\T1/zplLF/m/n/9 (+20) 90.[] [][]Fleck et al. ([]2010), []'Micro-
  []
 
-Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 242.
 \openout4 = `manuscript_Stragiotti.mw'.
 
+[13 <./figures/02_literature/truss-ex.png>] (manuscript_Stragiotti.mw)
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
+<figures/02_literature/1.jpg, id=666, 2055.68pt x 1541.76pt>
+File: figures/02_literature/1.jpg Graphic file (type jpg)
+<use figures/02_literature/1.jpg>
+Package pdftex.def Info: figures/02_literature/1.jpg  used on input line 225.
+(pdftex.def)             Requested size: 143.40016pt x 107.53429pt.
+<figures/02_literature/3.jpg, id=667, 803.0pt x 534.99875pt>
+File: figures/02_literature/3.jpg Graphic file (type jpg)
+<use figures/02_literature/3.jpg>
+Package pdftex.def Info: figures/02_literature/3.jpg  used on input line 227.
+(pdftex.def)             Requested size: 143.40016pt x 95.5364pt.
+<figures/02_literature/2.jpg, id=668, 294.60382pt x 220.95287pt>
+File: figures/02_literature/2.jpg Graphic file (type jpg)
+<use figures/02_literature/2.jpg>
+Package pdftex.def Info: figures/02_literature/2.jpg  used on input line 229.
+(pdftex.def)             Requested size: 143.40016pt x 107.55309pt.
+<figures/02_literature/4.jpg, id=669, 296.01791pt x 279.82944pt>
+File: figures/02_literature/4.jpg Graphic file (type jpg)
+<use figures/02_literature/4.jpg>
+Package pdftex.def Info: figures/02_literature/4.jpg  used on input line 231.
+(pdftex.def)             Requested size: 143.40016pt x 135.55484pt.
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
@@ -5729,199 +6021,7 @@ Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 242.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
-
-LaTeX Warning: Reference `fig:ash1' on page 13 undefined on input line 242.
-
-LaTeX Font Info:    Font shape `OT1/zplTLF/m/n' will be
-(Font)              scaled to size 6.01399pt on input line 242.
-LaTeX Font Info:    Font shape `OT1/zplTLF/b/n' will be
-(Font)              scaled to size 6.01399pt on input line 242.
-Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 242.
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-
-LaTeX Warning: Reference `fig:ash2' on page 13 undefined on input line 242.
-
-Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 244.
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-LaTeX Font Info:    Font shape `OT1/zplTLF/m/n' will be
-(Font)              scaled to size 9.70001pt on input line 246.
-LaTeX Font Info:    Font shape `OT1/zplTLF/b/n' will be
-(Font)              scaled to size 9.70001pt on input line 246.
-Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 246.
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-[13] (manuscript_Stragiotti.mw)
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 259.
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 261.
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-
-
-LaTeX Warning: Reference `fig:str-bend' on page 14 undefined on input line 263.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 273.
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
+Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 236.
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
@@ -5946,12 +6046,18 @@ Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 273.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
+<figures/02_literature/ashby_chart.png, id=678, 757.6305pt x 471.56175pt>
+File: figures/02_literature/ashby_chart.png Graphic file (type png)
+<use figures/02_literature/ashby_chart.png>
+Package pdftex.def Info: figures/02_literature/ashby_chart.png  used on input line 240.
+(pdftex.def)             Requested size: 318.66919pt x 198.34239pt.
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
+ [14 <./figures/02_literature/1.jpg> <./figures/02_literature/3.jpg> <./figures/02_literature/2.jpg> <./figures/02_literature/4.jpg>] (manuscript_Stragiotti.mw)
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
@@ -5960,7 +6066,6 @@ Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 273.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
-[14] (manuscript_Stragiotti.mw)
 \openout4 = `manuscript_Stragiotti.mw'.
 
 Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 274.
@@ -5988,103 +6093,10 @@ Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 274.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 275.
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
+LaTeX Font Info:    Font shape `OT1/zplTLF/m/n' will be
+(Font)              scaled to size 9.70001pt on input line 276.
+LaTeX Font Info:    Font shape `OT1/zplTLF/b/n' will be
+(Font)              scaled to size 9.70001pt on input line 276.
 Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 276.
 \openout4 = `manuscript_Stragiotti.mw'.
 
@@ -6112,120 +6124,7 @@ Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 276.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 286.
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 286.
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
+ [15 <./figures/02_literature/ashby_chart.png>] (manuscript_Stragiotti.mw)
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
@@ -6257,132 +6156,7 @@ Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 289.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-
-
-LaTeX Warning: Reference `fig:vick' on page 15 undefined on input line 289.
-
-Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 290.
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 290.
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
+Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 291.
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
@@ -6432,7 +6206,16 @@ Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 293.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
-Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 293.
+<figures/02_literature/stretc-bend.png, id=703, 366.61969pt x 646.66594pt>
+File: figures/02_literature/stretc-bend.png Graphic file (type png)
+<use figures/02_literature/stretc-bend.png>
+Package pdftex.def Info: figures/02_literature/stretc-bend.png  used on input line 296.
+(pdftex.def)             Requested size: 136.57251pt x 240.90062pt.
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 303.
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
@@ -6457,7 +6240,6 @@ Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 293.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
-Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 299.
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
@@ -6478,6 +6260,599 @@ Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 299.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+ [16 <./figures/02_literature/stretc-bend.png>] (manuscript_Stragiotti.mw)
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 304.
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 305.
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 306.
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 316.
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 316.
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 319.
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+
+
+LaTeX Warning: Reference `fig:vick' on page 17 undefined on input line 319.
+
+Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 320.
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 320.
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 323.
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 323.
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+<figures/02_literature/nasa-madcat-morphing-wing-breakdown-1000-x-600(1).jpg, id=734, 749.04843pt x 352.31625pt>
+File: figures/02_literature/nasa-madcat-morphing-wing-breakdown-1000-x-600(1).jpg Graphic file (type jpg)
+<use figures/02_literature/nasa-madcat-morphing-wing-breakdown-1000-x-600(1).jpg>
+Package pdftex.def Info: figures/02_literature/nasa-madcat-morphing-wing-breakdown-1000-x-600(1).jpg  used on input line 329.
+(pdftex.def)             Requested size: 318.66919pt x 149.88564pt.
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+<figures/02_literature/top_multiscale.png, id=736, 465.4188pt x 396.0396pt>
+File: figures/02_literature/top_multiscale.png Graphic file (type png)
+<use figures/02_literature/top_multiscale.png>
+Package pdftex.def Info: figures/02_literature/top_multiscale.png  used on input line 339.
+(pdftex.def)             Requested size: 223.06746pt x 189.81886pt.
+
+LaTeX Warning: Citation '' on page 17 undefined on input line 340.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+[17 <./figures/02_literature/nasa-madcat-morphing-wing-breakdown-1000-x-600(1).jpg>] (manuscript_Stragiotti.mw)
+\openout4 = `manuscript_Stragiotti.mw'.
+
+File: figures/02_literature/top_multiscale.png Graphic file (type png)
+<use figures/02_literature/top_multiscale.png>
+Package pdftex.def Info: figures/02_literature/top_multiscale.png  used on input line 346.
+(pdftex.def)             Requested size: 136.57251pt x 116.21426pt.
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 353.
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+<figures/02_literature/full-to.png, id=757, 964.35281pt x 199.49532pt>
+File: figures/02_literature/full-to.png Graphic file (type png)
+<use figures/02_literature/full-to.png>
+Package pdftex.def Info: figures/02_literature/full-to.png  used on input line 357.
+(pdftex.def)             Requested size: 318.66919pt x 65.92192pt.
+LaTeX Font Info:    Font shape `T1/zplLF/m/it' will be
+(Font)              scaled to size 8.73001pt on input line 358.
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
@@ -6485,12 +6860,12 @@ Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 299.
 )
 \openout4 = `manuscript_Stragiotti.mw'.
 
- [15] (manuscript_Stragiotti.mw)
+ [18 <./figures/02_literature/top_multiscale.png>] (manuscript_Stragiotti.mw)
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
- [16] (manuscript_Stragiotti.mw)
+ [19 <./figures/02_literature/full-to.png>] (manuscript_Stragiotti.mw)
 \openout4 = `manuscript_Stragiotti.mw'.
 
 *geometry* verbose mode - [ newgeometry ] result:
@@ -6525,18 +6900,32 @@ Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 299.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
+\openout4 = `manuscript_Stragiotti.mw'.
+
+ [20
+\@writefile{lof}{\contentsline {figure}{\numberline {1.14}{\ignorespaces A multi-scale L-shape beam optimized by a multi-scale topology optimization algorithm \blx@tocontentsinit {0}\cite {liu_two-scale_2020}. Three different types of cells are used.}}{20}{figure.caption.37}\protected@file@percent }
+\newlabel{fig:02_multiscale}{{1.14}{20}{A multi-scale L-shape beam optimized by a multi-scale topology optimization algorithm \cite {liu_two-scale_2020}. Three different types of cells are used}{figure.caption.37}{}}
+\newlabel{fig:02_multiscale@cref}{{[figure][14][1]1.14}{[1][18][]20}}
+
+
+
+
+
+] (manuscript_Stragiotti.mw)
+\openout4 = `manuscript_Stragiotti.mw'.
+
 
 chapter without number
-Package marginnote Info: Margin note 23.1 is on absolute page 23 on input line 234.
+Package marginnote Info: Margin note 27.1 is on absolute page 27 on input line 234.
 Package marginnote Info: xpos seems to be 111.34271pt on input line 234.
 LaTeX Font Info:    Font shape `T1/zplLF/m/sc' will be
 (Font)              scaled to size 7.76001pt on input line 234.
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/zplLF/m/sc/8'.
 (microtype)             Ignoring protrusion settings for this character.
-Package marginnote Info: Margin note 23.2 is on absolute page 23 on input line 234.
+Package marginnote Info: Margin note 27.2 is on absolute page 27 on input line 234.
 Package marginnote Info: xpos seems to be 111.34271pt on input line 234.
-Package marginnote Info: Margin note 23.3 is on absolute page 23 on input line 234.
+Package marginnote Info: Margin note 27.3 is on absolute page 27 on input line 234.
 Package marginnote Info: xpos seems to be 111.34271pt on input line 234.
 LaTeX Font Info:    Trying to load font information for T1+fvm on input line 234.
 (D:\estragio\AppData\Roaming\MiKTeX\tex/latex/bera\t1fvm.fd
@@ -6548,121 +6937,6 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `fvm' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-Package marginnote Info: Margin note 23.4 is on absolute page 23 on input line 234.
-Package marginnote Info: xpos seems to be 111.34271pt on input line 234.
-Package marginnote Info: Margin note 23.5 is on absolute page 23 on input line 234.
-Package marginnote Info: xpos seems to be 111.34271pt on input line 234.
-Package marginnote Info: Margin note 23.6 is on absolute page 23 on input line 234.
-Package marginnote Info: xpos seems to be 111.34271pt on input line 234.
-Package marginnote Info: Margin note 23.7 is on absolute page 23 on input line 234.
-Package marginnote Info: xpos seems to be 111.34271pt on input line 234.
-Package marginnote Info: Margin note 23.8 is on absolute page 23 on input line 234.
-Package marginnote Info: xpos seems to be 111.34271pt on input line 234.
-Package marginnote Info: Margin note 23.9 is on absolute page 23 on input line 234.
-Package marginnote Info: xpos seems to be 111.34271pt on input line 234.
-Package marginnote Info: Margin note 23.10 is on absolute page 23 on input line 234.
-Package marginnote Info: xpos seems to be 111.34271pt on input line 234.
-\openout4 = `manuscript_Stragiotti.mw'.
-
- [17
-
-
-
-
-
-{C:/Program Files/MiKTeX/fonts/enc/dvips/base/8r.enc}] (manuscript_Stragiotti.mw)
-\openout4 = `manuscript_Stragiotti.mw'.
-
-Package marginnote Info: Margin note 24.1 is on absolute page 24 on input line 234.
-Package marginnote Info: xpos seems to be 234.25803pt on input line 234.
-
-Overfull \hbox (6.21263pt too wide) in paragraph at lines 234--234
-[][]|[]\T1/zplLF/m/n/10.95 (-20) Simon, Dan, 'Evo-lu-tion-ary op-ti-miza-tion al-go-rithms: biologically-
- []
-
-Package marginnote Info: Margin note 24.2 is on absolute page 24 on input line 234.
-Package marginnote Info: xpos seems to be 234.25803pt on input line 234.
-Package marginnote Info: Margin note 24.3 is on absolute page 24 on input line 234.
-Package marginnote Info: xpos seems to be 234.25803pt on input line 234.
-Package marginnote Info: Margin note 24.4 is on absolute page 24 on input line 234.
-Package marginnote Info: xpos seems to be 234.25803pt on input line 234.
-Package marginnote Info: Margin note 24.5 is on absolute page 24 on input line 234.
-Package marginnote Info: xpos seems to be 234.25803pt on input line 234.
-Package marginnote Info: Margin note 24.6 is on absolute page 24 on input line 234.
-Package marginnote Info: xpos seems to be 234.25803pt on input line 234.
-Package marginnote Info: Margin note 24.7 is on absolute page 24 on input line 234.
-Package marginnote Info: xpos seems to be 234.25803pt on input line 234.
-Package marginnote Info: Margin note 24.8 is on absolute page 24 on input line 234.
-Package marginnote Info: xpos seems to be 234.25803pt on input line 234.
-Package marginnote Info: Margin note 24.9 is on absolute page 24 on input line 234.
-Package marginnote Info: xpos seems to be 234.25803pt on input line 234.
-Package marginnote Info: Margin note 24.10 is on absolute page 25 on input line 234.
-Package marginnote Info: xpos seems to be 111.34271pt on input line 234.
-\openout4 = `manuscript_Stragiotti.mw'.
-
-[18] (manuscript_Stragiotti.mw)
-\openout4 = `manuscript_Stragiotti.mw'.
-
-Package marginnote Info: Margin note 25.1 is on absolute page 25 on input line 234.
-Package marginnote Info: xpos seems to be 111.34271pt on input line 234.
-Package marginnote Info: Margin note 25.2 is on absolute page 25 on input line 234.
-Package marginnote Info: xpos seems to be 111.34271pt on input line 234.
-Package marginnote Info: Margin note 25.3 is on absolute page 25 on input line 234.
-Package marginnote Info: xpos seems to be 111.34271pt on input line 234.
-Package marginnote Info: Margin note 25.4 is on absolute page 25 on input line 234.
-Package marginnote Info: xpos seems to be 111.34271pt on input line 234.
-Package marginnote Info: Margin note 25.5 is on absolute page 25 on input line 234.
-Package marginnote Info: xpos seems to be 111.34271pt on input line 234.
-Package marginnote Info: Margin note 25.6 is on absolute page 25 on input line 234.
-Package marginnote Info: xpos seems to be 111.34271pt on input line 234.
-Package marginnote Info: Margin note 25.7 is on absolute page 25 on input line 234.
-Package marginnote Info: xpos seems to be 111.34271pt on input line 234.
-Package marginnote Info: Margin note 25.8 is on absolute page 25 on input line 234.
-Package marginnote Info: xpos seems to be 111.34271pt on input line 234.
-Package marginnote Info: Margin note 25.9 is on absolute page 25 on input line 234.
-Package marginnote Info: xpos seems to be 111.34271pt on input line 234.
-Package marginnote Info: Margin note 25.10 is on absolute page 25 on input line 234.
-Package marginnote Info: xpos seems to be 111.34271pt on input line 234.
-Package marginnote Info: Margin note 25.11 is on absolute page 26 on input line 234.
-Package marginnote Info: xpos seems to be 234.25803pt on input line 234.
-\openout4 = `manuscript_Stragiotti.mw'.
-
- [19] (manuscript_Stragiotti.mw)
-\openout4 = `manuscript_Stragiotti.mw'.
-
-Package marginnote Info: Margin note 26.1 is on absolute page 26 on input line 234.
-Package marginnote Info: xpos seems to be 234.25803pt on input line 234.
-Package marginnote Info: Margin note 26.2 is on absolute page 26 on input line 234.
-Package marginnote Info: xpos seems to be 234.25803pt on input line 234.
-Package marginnote Info: Margin note 26.3 is on absolute page 26 on input line 234.
-Package marginnote Info: xpos seems to be 234.25803pt on input line 234.
-Package marginnote Info: Margin note 26.4 is on absolute page 26 on input line 234.
-Package marginnote Info: xpos seems to be 234.25803pt on input line 234.
-Package marginnote Info: Margin note 26.5 is on absolute page 26 on input line 234.
-Package marginnote Info: xpos seems to be 234.25803pt on input line 234.
-Package marginnote Info: Margin note 26.6 is on absolute page 26 on input line 234.
-Package marginnote Info: xpos seems to be 234.25803pt on input line 234.
-Package marginnote Info: Margin note 26.7 is on absolute page 26 on input line 234.
-Package marginnote Info: xpos seems to be 234.25803pt on input line 234.
-Package marginnote Info: Margin note 26.8 is on absolute page 26 on input line 234.
-Package marginnote Info: xpos seems to be 234.25803pt on input line 234.
-Package marginnote Info: Margin note 26.9 is on absolute page 26 on input line 234.
-Package marginnote Info: xpos seems to be 234.25803pt on input line 234.
-Package marginnote Info: Margin note 26.10 is on absolute page 26 on input line 234.
-Package marginnote Info: xpos seems to be 234.25803pt on input line 234.
-Package marginnote Info: Margin note 26.11 is on absolute page 27 on input line 234.
-Package marginnote Info: xpos seems to be 111.34271pt on input line 234.
-\openout4 = `manuscript_Stragiotti.mw'.
-
- [20] (manuscript_Stragiotti.mw)
-\openout4 = `manuscript_Stragiotti.mw'.
-
-Package marginnote Info: Margin note 27.1 is on absolute page 27 on input line 234.
-Package marginnote Info: xpos seems to be 111.34271pt on input line 234.
-Package marginnote Info: Margin note 27.2 is on absolute page 27 on input line 234.
-Package marginnote Info: xpos seems to be 111.34271pt on input line 234.
-Package marginnote Info: Margin note 27.3 is on absolute page 27 on input line 234.
-Package marginnote Info: xpos seems to be 111.34271pt on input line 234.
 Package marginnote Info: Margin note 27.4 is on absolute page 27 on input line 234.
 Package marginnote Info: xpos seems to be 111.34271pt on input line 234.
 Package marginnote Info: Margin note 27.5 is on absolute page 27 on input line 234.
@@ -6671,22 +6945,24 @@ Package marginnote Info: Margin note 27.6 is on absolute page 27 on input line 2
 Package marginnote Info: xpos seems to be 111.34271pt on input line 234.
 Package marginnote Info: Margin note 27.7 is on absolute page 27 on input line 234.
 Package marginnote Info: xpos seems to be 111.34271pt on input line 234.
-
-Overfull \hbox (0.67331pt too wide) in paragraph at lines 234--234
-[][]|[]\T1/zplLF/m/n/10.95 (-20) Zhou, Ming, Fleury, Raphael, Shyy, Yaw-Kang, Thomas, Harold,
- []
-
 Package marginnote Info: Margin note 27.8 is on absolute page 27 on input line 234.
 Package marginnote Info: xpos seems to be 111.34271pt on input line 234.
-Package marginnote Info: Margin note 27.9 is on absolute page 28 on input line 234.
-Package marginnote Info: xpos seems to be 234.25803pt on input line 234.
+Package marginnote Info: Margin note 27.9 is on absolute page 27 on input line 234.
+Package marginnote Info: xpos seems to be 111.34271pt on input line 234.
+Package marginnote Info: Margin note 27.10 is on absolute page 27 on input line 234.
+Package marginnote Info: xpos seems to be 111.34271pt on input line 234.
 \openout4 = `manuscript_Stragiotti.mw'.
 
-[21] (manuscript_Stragiotti.mw)
+ [21{C:/Program Files/MiKTeX/fonts/enc/dvips/base/8r.enc}] (manuscript_Stragiotti.mw)
 \openout4 = `manuscript_Stragiotti.mw'.
 
 Package marginnote Info: Margin note 28.1 is on absolute page 28 on input line 234.
 Package marginnote Info: xpos seems to be 234.25803pt on input line 234.
+
+Overfull \hbox (6.21263pt too wide) in paragraph at lines 234--234
+[][]|[]\T1/zplLF/m/n/10.95 (-20) Simon, Dan, 'Evo-lu-tion-ary op-ti-miza-tion al-go-rithms: biologically-
+ []
+
 Package marginnote Info: Margin note 28.2 is on absolute page 28 on input line 234.
 Package marginnote Info: xpos seems to be 234.25803pt on input line 234.
 Package marginnote Info: Margin note 28.3 is on absolute page 28 on input line 234.
@@ -6701,18 +6977,10 @@ Package marginnote Info: Margin note 28.7 is on absolute page 28 on input line 2
 Package marginnote Info: xpos seems to be 234.25803pt on input line 234.
 Package marginnote Info: Margin note 28.8 is on absolute page 28 on input line 234.
 Package marginnote Info: xpos seems to be 234.25803pt on input line 234.
-Package marginnote Info: Margin note 28.9 is on absolute page 29 on input line 234.
+Package marginnote Info: Margin note 28.9 is on absolute page 28 on input line 234.
+Package marginnote Info: xpos seems to be 234.25803pt on input line 234.
+Package marginnote Info: Margin note 28.10 is on absolute page 29 on input line 234.
 Package marginnote Info: xpos seems to be 111.34271pt on input line 234.
-
-Overfull \hbox (10.96243pt too wide) in paragraph at lines 234--234
-[][]|[]\T1/zplLF/m/n/10.95 (-20) Coniglio, Si-mone, Mor-lier, Joseph, Gogu, Chris-tian, and Amargier,
- []
-
-
-Overfull \hbox (6.99956pt too wide) in paragraph at lines 234--234
-\T1/zplLF/m/it/10.95 (-20) of Com-pu-ta-tional Meth-ods in En-gi-neer-ing \T1/zplLF/m/n/10.95 (-20) 27.5 (Nov. 2020), pp. 1573^^U
- []
-
 \openout4 = `manuscript_Stragiotti.mw'.
 
 [22] (manuscript_Stragiotti.mw)
@@ -6736,7 +7004,9 @@ Package marginnote Info: Margin note 29.8 is on absolute page 29 on input line 2
 Package marginnote Info: xpos seems to be 111.34271pt on input line 234.
 Package marginnote Info: Margin note 29.9 is on absolute page 29 on input line 234.
 Package marginnote Info: xpos seems to be 111.34271pt on input line 234.
-Package marginnote Info: Margin note 29.10 is on absolute page 30 on input line 234.
+Package marginnote Info: Margin note 29.10 is on absolute page 29 on input line 234.
+Package marginnote Info: xpos seems to be 111.34271pt on input line 234.
+Package marginnote Info: Margin note 29.11 is on absolute page 30 on input line 234.
 Package marginnote Info: xpos seems to be 234.25803pt on input line 234.
 \openout4 = `manuscript_Stragiotti.mw'.
 
@@ -6786,8 +7056,8 @@ Package marginnote Info: Margin note 31.7 is on absolute page 31 on input line 2
 Package marginnote Info: xpos seems to be 111.34271pt on input line 234.
 Package marginnote Info: Margin note 31.8 is on absolute page 31 on input line 234.
 Package marginnote Info: xpos seems to be 111.34271pt on input line 234.
-Package marginnote Info: Margin note 31.9 is on absolute page 32 on input line 234.
-Package marginnote Info: xpos seems to be 234.25803pt on input line 234.
+Package marginnote Info: Margin note 31.9 is on absolute page 31 on input line 234.
+Package marginnote Info: xpos seems to be 111.34271pt on input line 234.
 \openout4 = `manuscript_Stragiotti.mw'.
 
  [25] (manuscript_Stragiotti.mw)
@@ -6797,32 +7067,47 @@ Package marginnote Info: Margin note 32.1 is on absolute page 32 on input line 2
 Package marginnote Info: xpos seems to be 234.25803pt on input line 234.
 Package marginnote Info: Margin note 32.2 is on absolute page 32 on input line 234.
 Package marginnote Info: xpos seems to be 234.25803pt on input line 234.
+
+Overfull \hbox (172.55235pt too wide) in paragraph at lines 234--234
+\T1/zplLF/m/it/10.95 (-20) En-gi-neer-ing \T1/zplLF/m/n/10.95 (-20) 41.8 (1998), _-eprint: https://onlinelibrary.wiley.com/doi/pdf/10.1002/%28SICI%291097-
+ []
+
+
+Overfull \hbox (83.03603pt too wide) in paragraph at lines 234--234
+\T1/zplLF/m/n/10.95 (-20) 0207%2819980430%2941%3A8%3C1417%3A%3AAID-NME344%3E3.0.CO%3B2-
+ []
+
 Package marginnote Info: Margin note 32.3 is on absolute page 32 on input line 234.
 Package marginnote Info: xpos seems to be 234.25803pt on input line 234.
+
+Overfull \hbox (0.46475pt too wide) in paragraph at lines 234--234
+[][]|[]\T1/zplLF/m/n/10.95 (-20) Rojas-Labanda, Su-sana and Stolpe, Math-ias, 'Au-to-matic penalty
+ []
+
 Package marginnote Info: Margin note 32.4 is on absolute page 32 on input line 234.
 Package marginnote Info: xpos seems to be 234.25803pt on input line 234.
+
+Overfull \hbox (0.67331pt too wide) in paragraph at lines 234--234
+[][]|[]\T1/zplLF/m/n/10.95 (-20) Zhou, Ming, Fleury, Raphael, Shyy, Yaw-Kang, Thomas, Harold,
+ []
+
 Package marginnote Info: Margin note 32.5 is on absolute page 32 on input line 234.
 Package marginnote Info: xpos seems to be 234.25803pt on input line 234.
 Package marginnote Info: Margin note 32.6 is on absolute page 32 on input line 234.
 Package marginnote Info: xpos seems to be 234.25803pt on input line 234.
 Package marginnote Info: Margin note 32.7 is on absolute page 32 on input line 234.
 Package marginnote Info: xpos seems to be 234.25803pt on input line 234.
-Package marginnote Info: Margin note 32.8 is on absolute page 32 on input line 234.
-Package marginnote Info: xpos seems to be 234.25803pt on input line 234.
+Package marginnote Info: Margin note 32.8 is on absolute page 33 on input line 234.
+Package marginnote Info: xpos seems to be 111.34271pt on input line 234.
 \openout4 = `manuscript_Stragiotti.mw'.
 
- [26] (manuscript_Stragiotti.mw)
+[26] (manuscript_Stragiotti.mw)
 \openout4 = `manuscript_Stragiotti.mw'.
 
 Package marginnote Info: Margin note 33.1 is on absolute page 33 on input line 234.
 Package marginnote Info: xpos seems to be 111.34271pt on input line 234.
 Package marginnote Info: Margin note 33.2 is on absolute page 33 on input line 234.
 Package marginnote Info: xpos seems to be 111.34271pt on input line 234.
-
-Overfull \hbox (2.13457pt too wide) in paragraph at lines 234--234
-\T1/zplLF/m/it/10.95 (-20) tural and Mul-ti-dis-ci-plinary Op-ti-miza-tion \T1/zplLF/m/n/10.95 (-20) 60.4 (Oct. 2019), pp. 1605^^U
- []
-
 Package marginnote Info: Margin note 33.3 is on absolute page 33 on input line 234.
 Package marginnote Info: xpos seems to be 111.34271pt on input line 234.
 Package marginnote Info: Margin note 33.4 is on absolute page 33 on input line 234.
@@ -6831,21 +7116,16 @@ Package marginnote Info: Margin note 33.5 is on absolute page 33 on input line 2
 Package marginnote Info: xpos seems to be 111.34271pt on input line 234.
 Package marginnote Info: Margin note 33.6 is on absolute page 33 on input line 234.
 Package marginnote Info: xpos seems to be 111.34271pt on input line 234.
-
-Overfull \hbox (2.08035pt too wide) in paragraph at lines 234--234
-\T1/zplLF/m/n/10.95 (-20) tures', \T1/zplLF/m/it/10.95 (-20) 25th AIAA/AHS Adap-tive Struc-tures Con-fer-ence\T1/zplLF/m/n/10.95 (-20) , Grapevine,
- []
-
 Package marginnote Info: Margin note 33.7 is on absolute page 33 on input line 234.
 Package marginnote Info: xpos seems to be 111.34271pt on input line 234.
 
-Overfull \hbox (2.6913pt too wide) in paragraph at lines 234--234
-[][]|[]\T1/zplLF/m/n/10.95 (-20) Costa, Al-lan, Jenett, Ben-jamin, Kos-tit-syna, Irina, Abdel-Rahman,
+Overfull \hbox (10.96243pt too wide) in paragraph at lines 234--234
+[][]|[]\T1/zplLF/m/n/10.95 (-20) Coniglio, Si-mone, Mor-lier, Joseph, Gogu, Chris-tian, and Amargier,
  []
 
 
-Overfull \hbox (19.1901pt too wide) in paragraph at lines 234--234
-\T1/zplLF/m/n/10.95 (-20) Ap-proaches to Re-con-fig-urable As-sem-bly Sys-tems', \T1/zplLF/m/it/10.95 (-20) arXiv:2008.11925
+Overfull \hbox (6.99956pt too wide) in paragraph at lines 234--234
+\T1/zplLF/m/it/10.95 (-20) of Com-pu-ta-tional Meth-ods in En-gi-neer-ing \T1/zplLF/m/n/10.95 (-20) 27.5 (Nov. 2020), pp. 1573^^U
  []
 
 Package marginnote Info: Margin note 33.8 is on absolute page 33 on input line 234.
@@ -6859,9 +7139,166 @@ Package marginnote Info: xpos seems to be 234.25803pt on input line 234.
 
 Package marginnote Info: Margin note 34.1 is on absolute page 34 on input line 234.
 Package marginnote Info: xpos seems to be 234.25803pt on input line 234.
+Package marginnote Info: Margin note 34.2 is on absolute page 34 on input line 234.
+Package marginnote Info: xpos seems to be 234.25803pt on input line 234.
+Package marginnote Info: Margin note 34.3 is on absolute page 34 on input line 234.
+Package marginnote Info: xpos seems to be 234.25803pt on input line 234.
+Package marginnote Info: Margin note 34.4 is on absolute page 34 on input line 234.
+Package marginnote Info: xpos seems to be 234.25803pt on input line 234.
+Package marginnote Info: Margin note 34.5 is on absolute page 34 on input line 234.
+Package marginnote Info: xpos seems to be 234.25803pt on input line 234.
+Package marginnote Info: Margin note 34.6 is on absolute page 34 on input line 234.
+Package marginnote Info: xpos seems to be 234.25803pt on input line 234.
+Package marginnote Info: Margin note 34.7 is on absolute page 34 on input line 234.
+Package marginnote Info: xpos seems to be 234.25803pt on input line 234.
+Package marginnote Info: Margin note 34.8 is on absolute page 34 on input line 234.
+Package marginnote Info: xpos seems to be 234.25803pt on input line 234.
+Package marginnote Info: Margin note 34.9 is on absolute page 34 on input line 234.
+Package marginnote Info: xpos seems to be 234.25803pt on input line 234.
+Package marginnote Info: Margin note 34.10 is on absolute page 35 on input line 234.
+Package marginnote Info: xpos seems to be 111.34271pt on input line 234.
 \openout4 = `manuscript_Stragiotti.mw'.
 
  [28] (manuscript_Stragiotti.mw)
+\openout4 = `manuscript_Stragiotti.mw'.
+
+Package marginnote Info: Margin note 35.1 is on absolute page 35 on input line 234.
+Package marginnote Info: xpos seems to be 111.34271pt on input line 234.
+Package marginnote Info: Margin note 35.2 is on absolute page 35 on input line 234.
+Package marginnote Info: xpos seems to be 111.34271pt on input line 234.
+Package marginnote Info: Margin note 35.3 is on absolute page 35 on input line 234.
+Package marginnote Info: xpos seems to be 111.34271pt on input line 234.
+Package marginnote Info: Margin note 35.4 is on absolute page 35 on input line 234.
+Package marginnote Info: xpos seems to be 111.34271pt on input line 234.
+Package marginnote Info: Margin note 35.5 is on absolute page 35 on input line 234.
+Package marginnote Info: xpos seems to be 111.34271pt on input line 234.
+Package marginnote Info: Margin note 35.6 is on absolute page 35 on input line 234.
+Package marginnote Info: xpos seems to be 111.34271pt on input line 234.
+Package marginnote Info: Margin note 35.7 is on absolute page 35 on input line 234.
+Package marginnote Info: xpos seems to be 111.34271pt on input line 234.
+Package marginnote Info: Margin note 35.8 is on absolute page 35 on input line 234.
+Package marginnote Info: xpos seems to be 111.34271pt on input line 234.
+Package marginnote Info: Margin note 35.9 is on absolute page 35 on input line 234.
+Package marginnote Info: xpos seems to be 111.34271pt on input line 234.
+Package marginnote Info: Margin note 35.10 is on absolute page 35 on input line 234.
+Package marginnote Info: xpos seems to be 111.34271pt on input line 234.
+Package marginnote Info: Margin note 35.11 is on absolute page 36 on input line 234.
+Package marginnote Info: xpos seems to be 234.25803pt on input line 234.
+\openout4 = `manuscript_Stragiotti.mw'.
+
+ [29] (manuscript_Stragiotti.mw)
+\openout4 = `manuscript_Stragiotti.mw'.
+
+Package marginnote Info: Margin note 36.1 is on absolute page 36 on input line 234.
+Package marginnote Info: xpos seems to be 234.25803pt on input line 234.
+Package marginnote Info: Margin note 36.2 is on absolute page 36 on input line 234.
+Package marginnote Info: xpos seems to be 234.25803pt on input line 234.
+
+Overfull \hbox (25.0244pt too wide) in paragraph at lines 234--234
+[]\T1/zplLF/m/sc/10.95 (-20) url\T1/zplLF/m/n/10.95 (-20) : [][]$\T1/fvm/m/n/10.95 https : / / www . flickr . com / photos / volvob12b / 52833345708/$[][] 
+ []
+
+Package marginnote Info: Margin note 36.3 is on absolute page 36 on input line 234.
+Package marginnote Info: xpos seems to be 234.25803pt on input line 234.
+Package marginnote Info: Margin note 36.4 is on absolute page 36 on input line 234.
+Package marginnote Info: xpos seems to be 234.25803pt on input line 234.
+
+Overfull \hbox (13.8181pt too wide) in paragraph at lines 234--234
+[]\T1/zplLF/m/sc/10.95 (-20) url\T1/zplLF/m/n/10.95 (-20) : [][]$\T1/fvm/m/n/10.95 https : / / www . flickr . com / photos / gripspix / 1233292309/$[][] 
+ []
+
+Package marginnote Info: Margin note 36.5 is on absolute page 36 on input line 234.
+Package marginnote Info: xpos seems to be 234.25803pt on input line 234.
+Package marginnote Info: Margin note 36.6 is on absolute page 36 on input line 234.
+Package marginnote Info: xpos seems to be 234.25803pt on input line 234.
+Package marginnote Info: Margin note 36.7 is on absolute page 36 on input line 234.
+Package marginnote Info: xpos seems to be 234.25803pt on input line 234.
+Package marginnote Info: Margin note 36.8 is on absolute page 36 on input line 234.
+Package marginnote Info: xpos seems to be 234.25803pt on input line 234.
+Package marginnote Info: Margin note 36.9 is on absolute page 36 on input line 234.
+Package marginnote Info: xpos seems to be 234.25803pt on input line 234.
+Package marginnote Info: Margin note 36.10 is on absolute page 36 on input line 234.
+Package marginnote Info: xpos seems to be 234.25803pt on input line 234.
+Package marginnote Info: Margin note 36.11 is on absolute page 37 on input line 234.
+Package marginnote Info: xpos seems to be 111.34271pt on input line 234.
+\openout4 = `manuscript_Stragiotti.mw'.
+
+[30] (manuscript_Stragiotti.mw)
+\openout4 = `manuscript_Stragiotti.mw'.
+
+Package marginnote Info: Margin note 37.1 is on absolute page 37 on input line 234.
+Package marginnote Info: xpos seems to be 111.34271pt on input line 234.
+Package marginnote Info: Margin note 37.2 is on absolute page 37 on input line 234.
+Package marginnote Info: xpos seems to be 111.34271pt on input line 234.
+Package marginnote Info: Margin note 37.3 is on absolute page 37 on input line 234.
+Package marginnote Info: xpos seems to be 111.34271pt on input line 234.
+Package marginnote Info: Margin note 37.4 is on absolute page 37 on input line 234.
+Package marginnote Info: xpos seems to be 111.34271pt on input line 234.
+Package marginnote Info: Margin note 37.5 is on absolute page 37 on input line 234.
+Package marginnote Info: xpos seems to be 111.34271pt on input line 234.
+Package marginnote Info: Margin note 37.6 is on absolute page 37 on input line 234.
+Package marginnote Info: xpos seems to be 111.34271pt on input line 234.
+Package marginnote Info: Margin note 37.7 is on absolute page 37 on input line 234.
+Package marginnote Info: xpos seems to be 111.34271pt on input line 234.
+Package marginnote Info: Margin note 37.8 is on absolute page 38 on input line 234.
+Package marginnote Info: xpos seems to be 234.25803pt on input line 234.
+\openout4 = `manuscript_Stragiotti.mw'.
+
+ [31] (manuscript_Stragiotti.mw)
+\openout4 = `manuscript_Stragiotti.mw'.
+
+Package marginnote Info: Margin note 38.1 is on absolute page 38 on input line 234.
+Package marginnote Info: xpos seems to be 234.25803pt on input line 234.
+Package marginnote Info: Margin note 38.2 is on absolute page 38 on input line 234.
+Package marginnote Info: xpos seems to be 234.25803pt on input line 234.
+Package marginnote Info: Margin note 38.3 is on absolute page 38 on input line 234.
+Package marginnote Info: xpos seems to be 234.25803pt on input line 234.
+
+Overfull \hbox (2.13457pt too wide) in paragraph at lines 234--234
+\T1/zplLF/m/it/10.95 (-20) tural and Mul-ti-dis-ci-plinary Op-ti-miza-tion \T1/zplLF/m/n/10.95 (-20) 60.4 (Oct. 2019), pp. 1605^^U
+ []
+
+Package marginnote Info: Margin note 38.4 is on absolute page 38 on input line 234.
+Package marginnote Info: xpos seems to be 234.25803pt on input line 234.
+Package marginnote Info: Margin note 38.5 is on absolute page 38 on input line 234.
+Package marginnote Info: xpos seems to be 234.25803pt on input line 234.
+Package marginnote Info: Margin note 38.6 is on absolute page 38 on input line 234.
+Package marginnote Info: xpos seems to be 234.25803pt on input line 234.
+Package marginnote Info: Margin note 38.7 is on absolute page 38 on input line 234.
+Package marginnote Info: xpos seems to be 234.25803pt on input line 234.
+
+Overfull \hbox (2.08035pt too wide) in paragraph at lines 234--234
+\T1/zplLF/m/n/10.95 (-20) tures', \T1/zplLF/m/it/10.95 (-20) 25th AIAA/AHS Adap-tive Struc-tures Con-fer-ence\T1/zplLF/m/n/10.95 (-20) , Grapevine,
+ []
+
+Package marginnote Info: Margin note 38.8 is on absolute page 38 on input line 234.
+Package marginnote Info: xpos seems to be 234.25803pt on input line 234.
+
+Overfull \hbox (2.6913pt too wide) in paragraph at lines 234--234
+[][]|[]\T1/zplLF/m/n/10.95 (-20) Costa, Al-lan, Jenett, Ben-jamin, Kos-tit-syna, Irina, Abdel-Rahman,
+ []
+
+
+Overfull \hbox (19.1901pt too wide) in paragraph at lines 234--234
+\T1/zplLF/m/n/10.95 (-20) Ap-proaches to Re-con-fig-urable As-sem-bly Sys-tems', \T1/zplLF/m/it/10.95 (-20) arXiv:2008.11925
+ []
+
+Package marginnote Info: Margin note 38.9 is on absolute page 39 on input line 234.
+Package marginnote Info: xpos seems to be 111.34271pt on input line 234.
+\openout4 = `manuscript_Stragiotti.mw'.
+
+[32] (manuscript_Stragiotti.mw)
+\openout4 = `manuscript_Stragiotti.mw'.
+
+Package marginnote Info: Margin note 39.1 is on absolute page 39 on input line 234.
+Package marginnote Info: xpos seems to be 111.34271pt on input line 234.
+Package marginnote Info: Margin note 39.2 is on absolute page 39 on input line 234.
+Package marginnote Info: xpos seems to be 111.34271pt on input line 234.
+Package marginnote Info: Margin note 39.3 is on absolute page 39 on input line 234.
+Package marginnote Info: xpos seems to be 111.34271pt on input line 234.
+\openout4 = `manuscript_Stragiotti.mw'.
+
+ [33] (manuscript_Stragiotti.mw)
 \openout4 = `manuscript_Stragiotti.mw'.
 
 *geometry* verbose mode - [ newgeometry ] result:
@@ -6896,11 +7333,68 @@ Package marginnote Info: xpos seems to be 234.25803pt on input line 234.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
+\openout4 = `manuscript_Stragiotti.mw'.
+
+ [34
+
+
+
+] (manuscript_Stragiotti.mw)
+\openout4 = `manuscript_Stragiotti.mw'.
+
 \openout4 = `manuscript_Stragiotti.idx'.
 
 runsystem(makeindex manuscript_Stragiotti.idx)...executed safely (allowed).
 
  (manuscript_Stragiotti.ind)
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
@@ -7499,6 +7993,38 @@ runsystem(makeindex manuscript_Stragiotti.idx)...executed safely (allowed).
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
 )
 \openout4 = `manuscript_Stragiotti.mw'.
 
@@ -7524,6 +8050,14 @@ runsystem(makeindex manuscript_Stragiotti.idx)...executed safely (allowed).
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                manuscript_Stragiotti
+(biblatex)                and rerun LaTeX afterwards.
+
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
@@ -7543,17 +8077,17 @@ Package logreq Info: Writing requests to 'manuscript_Stragiotti.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 88989 strings out of 476331
- 2062483 string characters out of 5797589
- 3480624 words of memory out of 5000000
- 107366 multiletter control sequences out of 15000+600000
- 730201 words of font info for 449 fonts, out of 8000000 for 9000
+ 89281 strings out of 476331
+ 2071303 string characters out of 5797589
+ 3528166 words of memory out of 5000000
+ 107599 multiletter control sequences out of 15000+600000
+ 726939 words of font info for 439 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 133i,20n,159p,10658b,3649s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 133i,20n,159p,10658b,3653s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newpx/NewPXBMI.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newpx/NewPXBMI_gnu.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newpx/NewPXMI.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newpx/NewPXMI_gnu.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/bera/fvmr8a.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newpx/pxbsys.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newpx/pxmiaX.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newpx/pxsys.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/tex-gyre/qhvr.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newtx/txbexs.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newtx/txexs.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newtx/txmiaSTbb.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newtx/txsym.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newpx/zplb.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newpx/zplr.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newpx/zplri.pfb>
-Output written on manuscript_Stragiotti.pdf (34 pages, 1916210 bytes).
+Output written on manuscript_Stragiotti.pdf (40 pages, 5715578 bytes).
 PDF statistics:
- 1102 PDF objects out of 1200 (max. 8388607)
- 220 named destinations out of 1000 (max. 500000)
- 83740 words of extra memory for PDF output out of 89155 (max. 10000000)
+ 1290 PDF objects out of 1440 (max. 8388607)
+ 250 named destinations out of 1000 (max. 500000)
+ 84814 words of extra memory for PDF output out of 89155 (max. 10000000)
 
