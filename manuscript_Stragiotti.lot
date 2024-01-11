@@ -1,4 +1,8 @@
 \babel@toc {english}{}\relax
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {table}{\numberline {2.1}{\ignorespaces Material data used for the optimizations. The value of the maximum material allowable $\sigma _\text {L}$ is used as the parameter to generate multiple optimized topologies.}}{31}{table.caption.60}%
+\contentsline {table}{\numberline {2.2}{\ignorespaces Numerical results of the topology optimization method of the L-shape beam load case with varying material allowable $\sigma _\text {L}$ on a $600 \times 600$ elements mesh. Numbers in red highlight the results that have not converged.}}{34}{table.caption.64}%
+\contentsline {table}{\numberline {2.3}{\ignorespaces Numerical results of the \gls {tto} method of the L-shape beam test case with varying values of the material allowable $\sigma _\text {L}$ on a $33 \times 33$ nodes ground structure. Numbers in red highlight the results that lie outside the domains of applicability of the optimization method.}}{37}{table.caption.71}%
+\addvspace {10\p@ }
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file
