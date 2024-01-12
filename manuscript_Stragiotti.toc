@@ -28,30 +28,30 @@
 \contentsline {mtocsection}{\numberline {1.3}Modular structures and lattice materials}{14}{section.1.3}%
 \contentsline {subsection}{\numberline {1.3.1}Modular structures and lattice materials optimization}{17}{subsection.1.3.1}%
 \contentsline {subsection}{\numberline {1.3.2}Multi-scale structures optimization}{18}{subsection.1.3.2}%
-\contentsline {subsection}{\numberline {1.3.3}Full-scale structures optimization}{19}{subsection.1.3.3}%
-\contentsline {chapter}{\numberline {2}Evaluating discretization approaches for ultralight structure optimization}{21}{chapter.2}%
+\contentsline {subsection}{\numberline {1.3.3}Full-scale structures optimization}{20}{subsection.1.3.3}%
+\contentsline {chapter}{\numberline {2}Evaluating discretization approaches for ultralight structure optimization}{23}{chapter.2}%
 \etoc@startlocaltoc {4}
 \etoc@startlocaltoc {5}
-\contentsline {section}{\numberline {2.1}The formulation of a shared problem: volume minimization with stress constraints}{21}{section.2.1}%
-\contentsline {mtocsection}{\numberline {2.1}The formulation of a shared problem: volume minimization with stress constraints}{21}{section.2.1}%
-\contentsline {subsection}{\numberline {2.1.1}Continuous topology optimization minimum volume formulation}{21}{subsection.2.1.1}%
-\contentsline {paragraph}{\nonumberline Objective and constraint functions}{22}{paragraph*.41}%
-\contentsline {paragraph}{\nonumberline Von Mises stress evaluation}{22}{paragraph*.43}%
-\contentsline {paragraph}{\nonumberline Microscopic and macroscopic stress}{23}{paragraph*.46}%
-\contentsline {paragraph}{\nonumberline Constraints aggregation and relaxation}{24}{paragraph*.48}%
-\contentsline {paragraph}{\nonumberline Minimum volume formulation}{25}{paragraph*.50}%
-\contentsline {paragraph}{\nonumberline Sensitivity analysis of the objective function}{25}{paragraph*.52}%
-\contentsline {paragraph}{\nonumberline Sensitivity analysis of the constraint function}{26}{paragraph*.54}%
-\contentsline {subsection}{\numberline {2.1.2}\acrfull {tto} minimum volume formulation}{28}{subsection.2.1.2}%
-\contentsline {paragraph}{\nonumberline Objective and constraint functions}{28}{paragraph*.56}%
-\contentsline {paragraph}{\nonumberline Minimum volume formulation}{29}{paragraph*.58}%
-\contentsline {section}{\numberline {2.2}Comparison between continuous topology optimization and TTO}{30}{section.2.2}%
-\contentsline {mtocsection}{\numberline {2.2}Comparison between continuous topology optimization and TTO}{30}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Definition of a test case for the comparison}{30}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}Numerical application}{31}{subsection.2.2.2}%
-\contentsline {paragraph}{\nonumberline Continuous topology optimization results}{32}{figure.caption.63}%
-\contentsline {paragraph}{\nonumberline TTO optimization results}{35}{paragraph*.69}%
-\contentsline {subsection}{\numberline {2.2.3}Discussion}{38}{subsection.2.2.3}%
-\contentsline {section}{\numberline {2.3}Conclusion}{42}{section.2.3}%
-\contentsline {mtocsection}{\numberline {2.3}Conclusion}{42}{section.2.3}%
-\contentsline {chapter}{\nonumberline Bibliography}{43}{chapter*.78}%
+\contentsline {section}{\numberline {2.1}The formulation of a shared problem: volume minimization with stress constraints}{23}{section.2.1}%
+\contentsline {mtocsection}{\numberline {2.1}The formulation of a shared problem: volume minimization with stress constraints}{23}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Continuous topology optimization minimum volume formulation}{23}{subsection.2.1.1}%
+\contentsline {paragraph}{\nonumberline Objective and constraint functions}{24}{paragraph*.41}%
+\contentsline {paragraph}{\nonumberline Von Mises stress evaluation}{24}{paragraph*.43}%
+\contentsline {paragraph}{\nonumberline Microscopic and macroscopic stress}{25}{paragraph*.46}%
+\contentsline {paragraph}{\nonumberline Constraints aggregation and relaxation}{26}{paragraph*.48}%
+\contentsline {paragraph}{\nonumberline Minimum volume formulation}{27}{paragraph*.50}%
+\contentsline {paragraph}{\nonumberline Sensitivity analysis of the objective function}{27}{paragraph*.52}%
+\contentsline {paragraph}{\nonumberline Sensitivity analysis of the constraint function}{28}{paragraph*.54}%
+\contentsline {subsection}{\numberline {2.1.2}\acrfull {tto} minimum volume formulation}{30}{subsection.2.1.2}%
+\contentsline {paragraph}{\nonumberline Objective and constraint functions}{30}{paragraph*.56}%
+\contentsline {paragraph}{\nonumberline Minimum volume formulation}{31}{paragraph*.58}%
+\contentsline {section}{\numberline {2.2}Comparison between continuous topology optimization and TTO}{32}{section.2.2}%
+\contentsline {mtocsection}{\numberline {2.2}Comparison between continuous topology optimization and TTO}{32}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Definition of a test case for the comparison}{32}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Numerical application}{33}{subsection.2.2.2}%
+\contentsline {paragraph}{\nonumberline Continuous topology optimization results}{34}{figure.caption.63}%
+\contentsline {paragraph}{\nonumberline TTO optimization results}{37}{paragraph*.69}%
+\contentsline {subsection}{\numberline {2.2.3}Discussion}{40}{subsection.2.2.3}%
+\contentsline {section}{\numberline {2.3}Conclusion}{43}{section.2.3}%
+\contentsline {mtocsection}{\numberline {2.3}Conclusion}{43}{section.2.3}%
+\contentsline {chapter}{\nonumberline Bibliography}{45}{chapter*.78}%

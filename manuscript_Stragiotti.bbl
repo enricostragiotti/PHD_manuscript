@@ -6552,8 +6552,8 @@
       \strng{authorbibnamehash}{3722e7f924b6b5d5b00a74ea085c5bf9}
       \strng{authornamehash}{3722e7f924b6b5d5b00a74ea085c5bf9}
       \strng{authorfullhash}{3722e7f924b6b5d5b00a74ea085c5bf9}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{abstract}{After outlining analytical methods for layout optimization and illustrating them with examples, the COC algorithm is applied to the simultaneous optimization of the topology and geometry of trusses with many thousand potential members. The numerical results obtained are shown to be in close agreement (up to twelve significant digits) with analytical results. Finally, the problem of generalized shape optimization (finding the best boundary topology and shape) is discussed.}
@@ -6584,6 +6584,167 @@
       \verb{url}
       \verb https://www.sciencedirect.com/science/article/pii/0045782591900469
       \endverb
+    \endentry
+    \entry{rodrigues_hierarchical_2002}{article}{}
+      \name{author}{3}{}{%
+        {{hash=23ae4ab9501bf00f3c96e374a3e4caec}{%
+           family={Rodrigues},
+           familyi={R\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod}}}%
+        {{hash=a46b64f3808c21131762bc2d0b5ba331}{%
+           family={Guedes},
+           familyi={G\bibinitperiod},
+           given={J.M.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=97d8fd057ddcb0a0d4253910c14e38e9}{%
+           family={Bendsoe},
+           familyi={B\bibinitperiod},
+           given={M.P.},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{fb4f9df781da23ac3080e6046b3a14f7}
+      \strng{fullhash}{fb4f9df781da23ac3080e6046b3a14f7}
+      \strng{bibnamehash}{fb4f9df781da23ac3080e6046b3a14f7}
+      \strng{authorbibnamehash}{fb4f9df781da23ac3080e6046b3a14f7}
+      \strng{authornamehash}{fb4f9df781da23ac3080e6046b3a14f7}
+      \strng{authorfullhash}{fb4f9df781da23ac3080e6046b3a14f7}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper describes a hierarchical computational procedure for optimizing material distribution as well as the local material properties of mechanical elements. The local properties are designed using a topology design approach, leading to single scale microstructures, which may be restricted in various ways, based on design and manufacturing criteria. Implementation issues are also discussed and computational results illustrate the nature of the procedure.}
+      \field{issn}{1615-1488}
+      \field{journaltitle}{Structural and Multidisciplinary Optimization}
+      \field{month}{8}
+      \field{number}{1}
+      \field{title}{Hierarchical optimization of material and structure}
+      \field{urlday}{12}
+      \field{urlmonth}{1}
+      \field{urlyear}{2024}
+      \field{volume}{24}
+      \field{year}{2002}
+      \field{urldateera}{ce}
+      \field{pages}{1\bibrangedash 10}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1007/s00158-002-0209-z
+      \endverb
+      \verb{file}
+      \verb Full Text PDF:D\:\\estragio\\Zotero\\storage\\8LRHMF5A\\Rodrigues et al. - 2002 - Hierarchical optimization of material and structur.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s00158-002-0209-z
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s00158-002-0209-z
+      \endverb
+      \keyw{Key words: optimization,topology,hierarchical,microstructure,material}
+    \endentry
+    \entry{pantz_post-treatment_2008}{article}{}
+      \name{author}{2}{}{%
+        {{hash=374ce21463f1753387a02b8b1b53c577}{%
+           family={Pantz},
+           familyi={P\bibinitperiod},
+           given={O.},
+           giveni={O\bibinitperiod}}}%
+        {{hash=2cede8e9d80dcb76ff1c070c4c4b2555}{%
+           family={Trabelsi},
+           familyi={T\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{bee37b259d50e43e2be8fa547043a152}
+      \strng{fullhash}{bee37b259d50e43e2be8fa547043a152}
+      \strng{bibnamehash}{bee37b259d50e43e2be8fa547043a152}
+      \strng{authorbibnamehash}{bee37b259d50e43e2be8fa547043a152}
+      \strng{authornamehash}{bee37b259d50e43e2be8fa547043a152}
+      \strng{authorfullhash}{bee37b259d50e43e2be8fa547043a152}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Following an idea of G. Nguetseng, the author defines a notion of “two-scale” convergence, which is aimed at a better description of sequences of oscillating functions. Bounded sequences in \$L{\textasciicircum}2 ({\textbackslash}Omega )\$ are proven to be relatively compact with respect to this new type of convergence. A corrector-type theorem (i.e., which permits, in some cases, replacing a sequence by its “two-scale” limit, up to a strongly convergent remainder in \$L{\textasciicircum}2 ({\textbackslash}Omega )\$) is also established. These results are especially useful for the homogenization of partial differential equations with periodically oscillating coefficients. In particular, a new method for proving the convergence of homogenization processes is proposed, which is an alternative to the so-called energy method of Tartar. The power and simplicity of the two-scale convergence method is demonstrated on several examples, including the homogenization of both linear and nonlinear second-order elliptic equations.}
+      \field{issn}{0363-0129}
+      \field{journaltitle}{SIAM Journal on Control and Optimization}
+      \field{month}{1}
+      \field{note}{Publisher: Society for Industrial and Applied Mathematics}
+      \field{number}{3}
+      \field{title}{A {Post}-{Treatment} of the {Homogenization} {Method} for {Shape} {Optimization}}
+      \field{urlday}{12}
+      \field{urlmonth}{1}
+      \field{urlyear}{2024}
+      \field{volume}{47}
+      \field{year}{2008}
+      \field{urldateera}{ce}
+      \field{pages}{1380\bibrangedash 1398}
+      \range{pages}{19}
+      \verb{doi}
+      \verb 10.1137/070688900
+      \endverb
+      \verb{urlraw}
+      \verb https://epubs.siam.org/doi/10.1137/070688900
+      \endverb
+      \verb{url}
+      \verb https://epubs.siam.org/doi/10.1137/070688900
+      \endverb
+    \endentry
+    \entry{groen_homogenization-based_2018}{article}{}
+      \name{author}{2}{}{%
+        {{hash=b3a28961a952de6972668feb8d306517}{%
+           family={Groen},
+           familyi={G\bibinitperiod},
+           given={Jeroen\bibnamedelima P.},
+           giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=d76f1c09e8d8d06e1b7c3c254efeae1a}{%
+           family={Sigmund},
+           familyi={S\bibinitperiod},
+           given={Ole},
+           giveni={O\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{994812b01771f6397b1e2119ee41a104}
+      \strng{fullhash}{994812b01771f6397b1e2119ee41a104}
+      \strng{bibnamehash}{994812b01771f6397b1e2119ee41a104}
+      \strng{authorbibnamehash}{994812b01771f6397b1e2119ee41a104}
+      \strng{authornamehash}{994812b01771f6397b1e2119ee41a104}
+      \strng{authorfullhash}{994812b01771f6397b1e2119ee41a104}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper presents a projection method to obtain high-resolution, manufacturable structures from efficient and coarse-scale homogenization-based topology optimization results. The presented approach bridges coarse and fine scale, such that the complex periodic microstructures can be represented by a smooth and continuous lattice on the fine mesh. A heuristic methodology allows control of the projected topology, such that a minimum length scale on both solid and void features is ensured in the final result. Numerical examples show excellent behavior of the method, where performances of the projected designs are almost equal to the homogenization-based solutions. A significant reduction in computational cost is observed compared to conventional topology optimization approaches.}
+      \field{issn}{1097-0207}
+      \field{journaltitle}{International Journal for Numerical Methods in Engineering}
+      \field{note}{\_eprint: https://onlinelibrary.wiley.com/doi/pdf/10.1002/nme.5575}
+      \field{number}{8}
+      \field{title}{Homogenization-based topology optimization for high-resolution manufacturable microstructures}
+      \field{urlday}{12}
+      \field{urlmonth}{10}
+      \field{urlyear}{2020}
+      \field{volume}{113}
+      \field{year}{2018}
+      \field{urldateera}{ce}
+      \field{pages}{1148\bibrangedash 1163}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.1002/nme.5575
+      \endverb
+      \verb{file}
+      \verb Groen et Sigmund - 2018 - Homogenization-based topology optimization for hig.pdf:D\:\\estragio\\Zotero\\storage\\DX2TUF6U\\Groen et Sigmund - 2018 - Homogenization-based topology optimization for hig.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1002/nme.5575
+      \endverb
+      \verb{url}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1002/nme.5575
+      \endverb
+      \keyw{high-resolution,homogenization,manufacturing constraints,topology optimization}
     \endentry
     \entry{wang_concurrent_2020}{article}{}
       \name{author}{6}{}{%
@@ -6655,6 +6816,742 @@
       \verb https://doi.org/10.1007/s00158-019-02408-2
       \endverb
     \endentry
+    \entry{guedes_preprocessing_1990}{article}{}
+      \name{author}{2}{}{%
+        {{hash=d3720e1ef069240782b4f9256b58ef90}{%
+           family={Guedes},
+           familyi={G\bibinitperiod},
+           given={JoséMiranda},
+           giveni={J\bibinitperiod}}}%
+        {{hash=a76119010369dea475552b407ae8c3c0}{%
+           family={Kikuchi},
+           familyi={K\bibinitperiod},
+           given={Noboru},
+           giveni={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{af51693957d372493f684ac2cc2c195d}
+      \strng{fullhash}{af51693957d372493f684ac2cc2c195d}
+      \strng{bibnamehash}{af51693957d372493f684ac2cc2c195d}
+      \strng{authorbibnamehash}{af51693957d372493f684ac2cc2c195d}
+      \strng{authornamehash}{af51693957d372493f684ac2cc2c195d}
+      \strng{authorfullhash}{af51693957d372493f684ac2cc2c195d}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper discusses the homogenization method to determine the effective average elastic constants of linear elasticity of general composite materials by considering their microstructure. After giving a brief theory of the homogenization method, a finite element approximation is introduced with convergence study and corresponding error estimate. Applying these, computer programs PREMAT and POSTMAT are developed for preprocessing and postprocessing of material characterization of composite materials. Using these programs, the homogenized elastic constants for macroscopic stress analysis are obtained for typical composite materials to show their capability. Finally, the adaptive finite element method is introduced to improve the accuracy of the finite element approximation.}
+      \field{issn}{0045-7825}
+      \field{journaltitle}{Computer Methods in Applied Mechanics and Engineering}
+      \field{month}{10}
+      \field{number}{2}
+      \field{title}{Preprocessing and postprocessing for materials based on the homogenization method with adaptive finite element methods}
+      \field{urlday}{12}
+      \field{urlmonth}{1}
+      \field{urlyear}{2024}
+      \field{volume}{83}
+      \field{year}{1990}
+      \field{urldateera}{ce}
+      \field{pages}{143\bibrangedash 198}
+      \range{pages}{56}
+      \verb{doi}
+      \verb 10.1016/0045-7825(90)90148-F
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/004578259090148F
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/004578259090148F
+      \endverb
+    \endentry
+    \entry{allaire_topology_2019}{article}{}
+      \name{author}{3}{}{%
+        {{hash=e689b43ac5d3242f4613a353518abfb7}{%
+           family={Allaire},
+           familyi={A\bibinitperiod},
+           given={Grégoire},
+           giveni={G\bibinitperiod}}}%
+        {{hash=21fa845a6088ad15722fab5d570f1259}{%
+           family={Geoffroy-Donders},
+           familyi={G\bibinithyphendelim D\bibinitperiod},
+           given={Perle},
+           giveni={P\bibinitperiod}}}%
+        {{hash=45959b2759662f3fce2fb7bafd950559}{%
+           family={Pantz},
+           familyi={P\bibinitperiod},
+           given={Olivier},
+           giveni={O\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{3169344de921918d6d730d0523d7febf}
+      \strng{fullhash}{3169344de921918d6d730d0523d7febf}
+      \strng{bibnamehash}{3169344de921918d6d730d0523d7febf}
+      \strng{authorbibnamehash}{3169344de921918d6d730d0523d7febf}
+      \strng{authornamehash}{3169344de921918d6d730d0523d7febf}
+      \strng{authorfullhash}{3169344de921918d6d730d0523d7febf}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper is concerned with the topology optimization of structures made of periodically perforated material, where the microscopic periodic cell can be macroscopically modulated and oriented. The main idea is to optimize the homogenized formulation of this problem, which is an easy task of parametric optimization, then to project the optimal microstructure at a desired lengthscale, which is a delicate issue, albeit computationally cheap. The main novelty of our work is, in a plane setting, the conformal treatment of the optimal orientation of the microstructure. In other words, although the periodicity cell has varying parameters and orientation throughout the computational domain, the angles between its members or bars are conserved. The main application of our work is the optimization of so-called lattice materials which are becoming increasingly popular in the context of additive manufacturing. Several numerical examples are presented for compliance minimization in 2-d.}
+      \field{issn}{0898-1221}
+      \field{journaltitle}{Computers \& Mathematics with Applications}
+      \field{month}{10}
+      \field{number}{7}
+      \field{series}{Simulation for {Additive} {Manufacturing}}
+      \field{title}{Topology optimization of modulated and oriented periodic microstructures by the homogenization method}
+      \field{urlday}{12}
+      \field{urlmonth}{10}
+      \field{urlyear}{2020}
+      \field{volume}{78}
+      \field{year}{2019}
+      \field{urldateera}{ce}
+      \field{pages}{2197\bibrangedash 2229}
+      \range{pages}{33}
+      \verb{doi}
+      \verb 10.1016/j.camwa.2018.08.007
+      \endverb
+      \verb{file}
+      \verb ScienceDirect Full Text PDF:D\:\\estragio\\Zotero\\storage\\ES44TYC2\\Allaire et al. - 2019 - Topology optimization of modulated and oriented pe.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://www.sciencedirect.com/science/article/pii/S0898122118304255
+      \endverb
+      \verb{url}
+      \verb http://www.sciencedirect.com/science/article/pii/S0898122118304255
+      \endverb
+      \keyw{Lattice materials,Homogenization,Topology optimization}
+    \endentry
+    \entry{geoffroy-donders_3-d_2020}{article}{}
+      \name{author}{3}{}{%
+        {{hash=21fa845a6088ad15722fab5d570f1259}{%
+           family={Geoffroy-Donders},
+           familyi={G\bibinithyphendelim D\bibinitperiod},
+           given={Perle},
+           giveni={P\bibinitperiod}}}%
+        {{hash=e689b43ac5d3242f4613a353518abfb7}{%
+           family={Allaire},
+           familyi={A\bibinitperiod},
+           given={Grégoire},
+           giveni={G\bibinitperiod}}}%
+        {{hash=45959b2759662f3fce2fb7bafd950559}{%
+           family={Pantz},
+           familyi={P\bibinitperiod},
+           given={Olivier},
+           giveni={O\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{6b8f4c60a598bc9a899ea916d1876f0b}
+      \strng{fullhash}{6b8f4c60a598bc9a899ea916d1876f0b}
+      \strng{bibnamehash}{6b8f4c60a598bc9a899ea916d1876f0b}
+      \strng{authorbibnamehash}{6b8f4c60a598bc9a899ea916d1876f0b}
+      \strng{authornamehash}{6b8f4c60a598bc9a899ea916d1876f0b}
+      \strng{authorfullhash}{6b8f4c60a598bc9a899ea916d1876f0b}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper is motivated by the optimization of so-called lattice materials which are becoming increasingly popular in the context of additive manufacturing. Generalizing our previous work in 2-d we propose a method for topology optimization of structures made of periodically perforated material, where the microscopic periodic cell can be macroscopically modulated and oriented. This method is made of three steps. The first step amounts to compute the homogenized properties of an adequately chosen parametrized microstructure (here, a cubic lattice with varying bar thicknesses). The second step optimizes the homogenized formulation of the problem, which is a classical problem of parametric optimization. The third, and most delicate, step projects the optimal oriented microstructure at a desired length scale. Compared to the 2-d case where rotations are parametrized by a single angle, to which a conformality constraint can be applied, the 3-d case is more involved and requires new ingredients. In particular, the full rotation matrix is regularized (instead of just one angle in 2-d) and the projection map which deforms the square periodic lattice is computed component by component. Several numerical examples are presented for compliance minimization in 3-d.}
+      \field{issn}{0021-9991}
+      \field{journaltitle}{Journal of Computational Physics}
+      \field{month}{1}
+      \field{title}{3-d topology optimization of modulated and oriented periodic microstructures by the homogenization method}
+      \field{urlday}{12}
+      \field{urlmonth}{10}
+      \field{urlyear}{2020}
+      \field{volume}{401}
+      \field{year}{2020}
+      \field{urldateera}{ce}
+      \field{pages}{108994}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.jcp.2019.108994
+      \endverb
+      \verb{file}
+      \verb ScienceDirect Full Text PDF:D\:\\estragio\\Zotero\\storage\\8UY77UYE\\Geoffroy-Donders et al. - 2020 - 3-d topology optimization of modulated and oriente.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://www.sciencedirect.com/science/article/pii/S0021999119306990
+      \endverb
+      \verb{url}
+      \verb http://www.sciencedirect.com/science/article/pii/S0021999119306990
+      \endverb
+      \keyw{Homogenization,Cellular structure,Lattice,Topology optimization}
+    \endentry
+    \entry{kumar_density-and-strain-based_2020}{article}{}
+      \name{author}{2}{}{%
+        {{hash=eeac0cf8b1966e521e7eadfaab69d771}{%
+           family={Kumar},
+           familyi={K\bibinitperiod},
+           given={Tej},
+           giveni={T\bibinitperiod}}}%
+        {{hash=84c2102ad54186d7477842421e416280}{%
+           family={Suresh},
+           familyi={S\bibinitperiod},
+           given={Krishnan},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{01e2e4205622d3fe717dc34952119abb}
+      \strng{fullhash}{01e2e4205622d3fe717dc34952119abb}
+      \strng{bibnamehash}{01e2e4205622d3fe717dc34952119abb}
+      \strng{authorbibnamehash}{01e2e4205622d3fe717dc34952119abb}
+      \strng{authornamehash}{01e2e4205622d3fe717dc34952119abb}
+      \strng{authorfullhash}{01e2e4205622d3fe717dc34952119abb}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Microstructural topology optimization (MTO) is the simultaneous optimization of macroscale topology and microscale structure. MTO holds the promise of enhancing product-performance beyond what is possible today. Furthermore, with the advent of additive manufacturing, the resulting multiscale structures can be fabricated with relative ease. There are however two significant challenges associated with MTO: (1) high computational cost, and (2) potential loss of microstructural connectivity. In this paper, a novel density-and-strain-based K-means clustering method is proposed to reduce the computational cost of MTO. Further, a rotational degree of freedom is introduced to fully utilize the anisotropic nature of microstructures. Finally, the connectivity issue is addressed through auxiliary finite element fields. The proposed concepts are illustrated through several numerical examples applied to two-dimensional single-load problems.}
+      \field{issn}{1615-147X, 1615-1488}
+      \field{journaltitle}{Structural and Multidisciplinary Optimization}
+      \field{month}{4}
+      \field{number}{4}
+      \field{title}{A density-and-strain-based {K}-clustering approach to microstructural topology optimization}
+      \field{urlday}{18}
+      \field{urlmonth}{11}
+      \field{urlyear}{2021}
+      \field{volume}{61}
+      \field{year}{2020}
+      \field{urldateera}{ce}
+      \field{pages}{1399\bibrangedash 1415}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.1007/s00158-019-02422-4
+      \endverb
+      \verb{file}
+      \verb s00158-019-02422-4.pdf:D\:\\estragio\\Zotero\\storage\\W29IGJZF\\s00158-019-02422-4.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://link.springer.com/10.1007/s00158-019-02422-4
+      \endverb
+      \verb{url}
+      \verb http://link.springer.com/10.1007/s00158-019-02422-4
+      \endverb
+    \endentry
+    \entry{xia_multiscale_2015}{article}{}
+      \name{author}{2}{}{%
+        {{hash=4abbbfdc11950e2124e4c9952b1fd20f}{%
+           family={Xia},
+           familyi={X\bibinitperiod},
+           given={Liang},
+           giveni={L\bibinitperiod}}}%
+        {{hash=225ea9e43fc50791fa61c71b97f0015c}{%
+           family={Breitkopf},
+           familyi={B\bibinitperiod},
+           given={Piotr},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{c3f35828ac72e3d6ee429477d9b1e8e0}
+      \strng{fullhash}{c3f35828ac72e3d6ee429477d9b1e8e0}
+      \strng{bibnamehash}{c3f35828ac72e3d6ee429477d9b1e8e0}
+      \strng{authorbibnamehash}{c3f35828ac72e3d6ee429477d9b1e8e0}
+      \strng{authornamehash}{c3f35828ac72e3d6ee429477d9b1e8e0}
+      \strng{authorfullhash}{c3f35828ac72e3d6ee429477d9b1e8e0}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{00457825}
+      \field{journaltitle}{Computer Methods in Applied Mechanics and Engineering}
+      \field{month}{4}
+      \field{title}{Multiscale structural topology optimization with an approximate constitutive model for local material microstructure}
+      \field{urlday}{12}
+      \field{urlmonth}{1}
+      \field{urlyear}{2024}
+      \field{volume}{286}
+      \field{year}{2015}
+      \field{urldateera}{ce}
+      \field{pages}{147\bibrangedash 167}
+      \range{pages}{21}
+      \verb{doi}
+      \verb 10.1016/j.cma.2014.12.018
+      \endverb
+      \verb{urlraw}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0045782514004976
+      \endverb
+      \verb{url}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0045782514004976
+      \endverb
+    \endentry
+    \entry{wang_concurrent_2018}{article}{}
+      \name{author}{5}{}{%
+        {{hash=5f314f633295db632e90990a3f8297a1}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Chuang},
+           giveni={C\bibinitperiod}}}%
+        {{hash=c56130f772955f8030eb2f8d8a9fbf57}{%
+           family={Zhu},
+           familyi={Z\bibinitperiod},
+           given={Ji\bibnamedelima Hong},
+           giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=3ccecfd57d16b8a4e66bf1c013b1f964}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Wei\bibnamedelima Hong},
+           giveni={W\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=16d7e2c21e89f14cfe7565b7b66e997b}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Shao\bibnamedelima Ying},
+           giveni={S\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
+        {{hash=59f8995b9b5201e3d55983556b74a198}{%
+           family={Kong},
+           familyi={K\bibinitperiod},
+           given={Jie},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{22eb3d18b5679a61696cb93168f6d540}
+      \strng{fullhash}{34768aa858b3ee562a4832ceaa513a5f}
+      \strng{bibnamehash}{34768aa858b3ee562a4832ceaa513a5f}
+      \strng{authorbibnamehash}{34768aa858b3ee562a4832ceaa513a5f}
+      \strng{authornamehash}{22eb3d18b5679a61696cb93168f6d540}
+      \strng{authorfullhash}{34768aa858b3ee562a4832ceaa513a5f}
+      \field{extraname}{3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper presents a novel concurrent topology optimization approach for finding the optimum topologies of macrostructures and their corresponding parameterized lattice microstructures in an integrated manner. Considering the manufacturability of the structure designs and computational efficiency, additional parameters are introduced to define the microstructure unit cell patterns and their non-uniform distribution, which avoids expensive iterative numerical homogenization calculations during topology optimization and results in an easier modelling of structure designs as well. It is worth mentioning that the equivalent properties of material microstructures serve as a link between the macro and the micro scale with the help of homogenization theory and the Porous Anisotropic Material with Penalization (PAMP) model. Besides, sensitivities of global structure compliance with respect to the pseudo-density variables and the microstructure parameter variables are derived, respectively. Moreover, several numerical examples are presented and reasonable solutions have been obtained to demonstrate the efficiency of the proposed method. Finally, mechanical testing is conducted to investigate the better performance of the optimized structure which is fabricated by 3D printing.}
+      \field{issn}{1615-1488}
+      \field{journaltitle}{Structural and Multidisciplinary Optimization}
+      \field{month}{7}
+      \field{number}{1}
+      \field{title}{Concurrent topology optimization design of structures and non-uniform parameterized lattice microstructures}
+      \field{urlday}{12}
+      \field{urlmonth}{1}
+      \field{urlyear}{2024}
+      \field{volume}{58}
+      \field{year}{2018}
+      \field{urldateera}{ce}
+      \field{pages}{35\bibrangedash 50}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.1007/s00158-018-2009-0
+      \endverb
+      \verb{file}
+      \verb Full Text PDF:D\:\\estragio\\Zotero\\storage\\593R7BJ5\\Wang et al. - 2018 - Concurrent topology optimization design of structu.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s00158-018-2009-0
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s00158-018-2009-0
+      \endverb
+      \keyw{Concurrent design,Homogenization,Multi-scale,Parameterized microstructures,Topology optimization}
+    \endentry
+    \entry{imediegwu_multiscale_2019}{article}{}
+      \name{author}{4}{}{%
+        {{hash=4a380ab918d6e62d83d646d0e52a67ba}{%
+           family={Imediegwu},
+           familyi={I\bibinitperiod},
+           given={Chikwesiri},
+           giveni={C\bibinitperiod}}}%
+        {{hash=af42a6e4e2a78deec8b98c372a111c01}{%
+           family={Murphy},
+           familyi={M\bibinitperiod},
+           given={Ryan},
+           giveni={R\bibinitperiod}}}%
+        {{hash=fccca068e7a379891e2f94f33dddcf81}{%
+           family={Hewson},
+           familyi={H\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod}}}%
+        {{hash=b614a548e4d41ef3709dd88ebfa60c39}{%
+           family={Santer},
+           familyi={S\bibinitperiod},
+           given={Matthew},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{f6ce28ecc6fb692d68c9e4adaca79161}
+      \strng{fullhash}{8c810bdee9650ad40322cf32c09576d7}
+      \strng{bibnamehash}{8c810bdee9650ad40322cf32c09576d7}
+      \strng{authorbibnamehash}{8c810bdee9650ad40322cf32c09576d7}
+      \strng{authornamehash}{f6ce28ecc6fb692d68c9e4adaca79161}
+      \strng{authorfullhash}{8c810bdee9650ad40322cf32c09576d7}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper develops a robust framework for the multiscale design of three-dimensional lattices with macroscopically tailored structural characteristics. The work exploits the high process flexibility and precision of additive manufacturing to the physical realization of complex microstructure of metamaterials by developing and implementing a multiscale approach. Structures derived from such metamaterials exhibit properties which differ from that of the constituent base material. A periodic microscale model is developed whose geometric parameterization enables smoothly changing properties and for which the connectivity of neighboring microstructures in the large-scale domain is guaranteed by slowly changing large-scale descriptions of the lattice parameters. A lattice-based functional grading of material is derived using the finite element method with sensitivities derived by the adjoint method. The novelty of the work lies in the use of multiple geometry-based small-scale design parameters for optimization problems in three-dimensional real space. The approach is demonstrated by solving a classical compliance minimization problem. The results show improved optimality compared to commonly implemented structural optimization algorithms.}
+      \field{issn}{1615-1488}
+      \field{journaltitle}{Structural and Multidisciplinary Optimization}
+      \field{month}{8}
+      \field{number}{2}
+      \field{title}{Multiscale structural optimization towards three-dimensional printable structures}
+      \field{urlday}{12}
+      \field{urlmonth}{1}
+      \field{urlyear}{2024}
+      \field{volume}{60}
+      \field{year}{2019}
+      \field{urldateera}{ce}
+      \field{pages}{513\bibrangedash 525}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1007/s00158-019-02220-y
+      \endverb
+      \verb{file}
+      \verb Full Text PDF:D\:\\estragio\\Zotero\\storage\\DCWH4P75\\Imediegwu et al. - 2019 - Multiscale structural optimization towards three-d.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s00158-019-02220-y
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s00158-019-02220-y
+      \endverb
+      \keyw{Additive manufacturing,Heterogeneous multiscale methods,Homogenization,Lattice,Response surface model,Structural optimization}
+    \endentry
+    \entry{kim_machine_2021}{article}{}
+      \name{author}{3}{}{%
+        {{hash=8b67f2e15394dfa00be39910b0ced08a}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Cheolwoong},
+           giveni={C\bibinitperiod}}}%
+        {{hash=ab7ed8d7d93e7aa6a5e98e6bd6e3041e}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={Jaewook},
+           giveni={J\bibinitperiod}}}%
+        {{hash=893342b9231a7535939e5174a39ae9f6}{%
+           family={Yoo},
+           familyi={Y\bibinitperiod},
+           given={Jeonghoon},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{9636fee4f5f92952ecbde42b667c6b60}
+      \strng{fullhash}{9636fee4f5f92952ecbde42b667c6b60}
+      \strng{bibnamehash}{9636fee4f5f92952ecbde42b667c6b60}
+      \strng{authorbibnamehash}{9636fee4f5f92952ecbde42b667c6b60}
+      \strng{authornamehash}{9636fee4f5f92952ecbde42b667c6b60}
+      \strng{authorfullhash}{9636fee4f5f92952ecbde42b667c6b60}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This study presents new framework in which the representative volume element (RVE) method and machine learning (ML) model are used to construct continuous anisotropic effective material properties for simultaneous design of the overall topology configuration and local fiber material layout in functionally graded composite structures. It is an alternative to the asymptotic homogenization design method (AHDM) to obtain continuous effective material property functions. While the AHDM uses the asymptotic homogenization theory (AHT) and Legendre polynomials, the RVE method calculates anisotropic effective material properties having nonlinear behavior with respect to design variables of microstructures, and it is easier to implement than AHT given the governing equations and appropriate boundary conditions. More efficient and accurate than Legendre polynomials, ML is used to build a continuous model of the RVE results required for simultaneous design of the overall topology configuration and local fiber material layout. To show the convenience and expandability of the proposed method, a 3D RVE model is also proposed through the extension of the 2D model. The proposed method is verified through 2D and 3D numerical examples to minimize structural compliance and obtained results are compared with those from the application of AHDM.}
+      \field{issn}{0045-7825}
+      \field{journaltitle}{Computer Methods in Applied Mechanics and Engineering}
+      \field{month}{12}
+      \field{title}{Machine learning-combined topology optimization for functionary graded composite structure design}
+      \field{urlday}{12}
+      \field{urlmonth}{1}
+      \field{urlyear}{2024}
+      \field{volume}{387}
+      \field{year}{2021}
+      \field{urldateera}{ce}
+      \field{pages}{114158}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.cma.2021.114158
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0045782521004898
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0045782521004898
+      \endverb
+      \keyw{Anisotropic effective material property,Functionally graded composite structure,Machine learning,Representative volume element method,Topology optimization}
+    \endentry
+    \entry{white_multiscale_2019}{article}{}
+      \name{author}{4}{}{%
+        {{hash=4215597d2c71e616e31751f6b8ed0e31}{%
+           family={White},
+           familyi={W\bibinitperiod},
+           given={Daniel\bibnamedelima A.},
+           giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=778e078a8365e381faabfb9b7517227a}{%
+           family={Arrighi},
+           familyi={A\bibinitperiod},
+           given={William\bibnamedelima J.},
+           giveni={W\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=60d0e334c4a514fc59970c0ae5e62c3f}{%
+           family={Kudo},
+           familyi={K\bibinitperiod},
+           given={Jun},
+           giveni={J\bibinitperiod}}}%
+        {{hash=88a5d4e50898d8564f00213fb8528171}{%
+           family={Watts},
+           familyi={W\bibinitperiod},
+           given={Seth\bibnamedelima E.},
+           giveni={S\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \strng{namehash}{5e766dcc5049101497b4e8141a05157f}
+      \strng{fullhash}{e4237a57fcbe708281c36a5f8ab9b6c9}
+      \strng{bibnamehash}{e4237a57fcbe708281c36a5f8ab9b6c9}
+      \strng{authorbibnamehash}{e4237a57fcbe708281c36a5f8ab9b6c9}
+      \strng{authornamehash}{5e766dcc5049101497b4e8141a05157f}
+      \strng{authorfullhash}{e4237a57fcbe708281c36a5f8ab9b6c9}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We are concerned with optimization of macroscale elastic structures that are designed utilizing spatially varying microscale metamaterials. The macroscale optimization is accomplished using gradient-based nonlinear topological optimization. But instead of using density as the optimization decision variable, the decision variables are the multiple parameters that define the local microscale metamaterial. This is accomplished using single layer feedforward Gaussian basis function networks as a surrogate models of the elastic response of the microscale metamaterial. The surrogate models are trained using highly resolved continuum finite element simulations of the microscale metamaterials and hence are significantly more accurate than analytical models e.g. classical beam theory. Because the derivative of the surrogate model is important for sensitivity analysis of the macroscale topology optimization, a neural network training procedure based on the Sobolev norm is described. Since the SIMP method is not appropriate for spatially varying lattices, an alternative method is developed to enable creation of void regions. The efficacy of this approach is demonstrated via several examples in which the optimal graded metamaterial outperforms a traditional solid structure.}
+      \field{issn}{0045-7825}
+      \field{journaltitle}{Computer Methods in Applied Mechanics and Engineering}
+      \field{month}{4}
+      \field{title}{Multiscale topology optimization using neural network surrogate models}
+      \field{urlday}{12}
+      \field{urlmonth}{1}
+      \field{urlyear}{2024}
+      \field{volume}{346}
+      \field{year}{2019}
+      \field{urldateera}{ce}
+      \field{pages}{1118\bibrangedash 1135}
+      \range{pages}{18}
+      \verb{doi}
+      \verb 10.1016/j.cma.2018.09.007
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S004578251830450X
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S004578251830450X
+      \endverb
+      \keyw{Material models,Multiscale analysis,Neural networks,Topology optimization}
+    \endentry
+    \entry{chandrasekhar_multi-material_2021}{article}{}
+      \name{author}{2}{}{%
+        {{hash=e2ded8f3849a7ea87edc9347ae2ea3a8}{%
+           family={Chandrasekhar},
+           familyi={C\bibinitperiod},
+           given={Aaditya},
+           giveni={A\bibinitperiod}}}%
+        {{hash=84c2102ad54186d7477842421e416280}{%
+           family={Suresh},
+           familyi={S\bibinitperiod},
+           given={Krishnan},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{4ae8e84ba5fda890223894e624f29ac9}
+      \strng{fullhash}{4ae8e84ba5fda890223894e624f29ac9}
+      \strng{bibnamehash}{4ae8e84ba5fda890223894e624f29ac9}
+      \strng{authorbibnamehash}{4ae8e84ba5fda890223894e624f29ac9}
+      \strng{authornamehash}{4ae8e84ba5fda890223894e624f29ac9}
+      \strng{authorfullhash}{4ae8e84ba5fda890223894e624f29ac9}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The focus of this paper is on multi-material topology optimization (MMTO), where the objective is to not only compute the optimal topology, but also the distribution of two or more materials within the topology. In the popular density-based MMTO, the underlying pseudo-density fields are typically represented using an underlying mesh. While mesh-based MMTO ties in well with mesh-based finite element analysis, there are inherent challenges, namely the extraction of thin features, and the computation of the gradients of the density fields. The objective of this paper is to present a neural network (NN) based MMTO method where the density fields are represented in a mesh-independent manner, using the NN’s activation functions, with the weights and biases associated with the NN serving as the design variables. Then, by relying on the NN’s built-in optimization routines, and a conventional finite element solver, the MMTO problem is solved. The salient features of the proposed method include: (1) thin features can be extracted through a simple post-processing step, (2) gradients and sensitivities can be computed accurately through back-propagation, (3) the NN construction implicitly guarantees the partition of unity between constituent materials, (4) the NN designs often exhibit better performance than mesh-based designs, and (5) the number of design variables is relatively small. Finally, the proposed framework is simple to implement, and is illustrated through several examples.}
+      \field{issn}{0010-4485}
+      \field{journaltitle}{Computer-Aided Design}
+      \field{month}{7}
+      \field{title}{Multi-{Material} {Topology} {Optimization} {Using} {Neural} {Networks}}
+      \field{urlday}{12}
+      \field{urlmonth}{1}
+      \field{urlyear}{2024}
+      \field{volume}{136}
+      \field{year}{2021}
+      \field{urldateera}{ce}
+      \field{pages}{103017}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.cad.2021.103017
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0010448521000282
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0010448521000282
+      \endverb
+      \keyw{Multi-material,Neural networks,SIMP,Thin features,Topology optimization}
+    \endentry
+    \entry{wang_enhancing_2021}{misc}{}
+      \name{author}{6}{}{%
+        {{hash=6b9aebd3540ced6487a5f42863cb5207}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Liwei},
+           giveni={L\bibinitperiod}}}%
+        {{hash=d03d76110feb64538398f18452d1e0a1}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Zhao},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=48ad6b71275e42958c2d4e5025c51bba}{%
+           family={Da},
+           familyi={D\bibinitperiod},
+           given={Daicong},
+           giveni={D\bibinitperiod}}}%
+        {{hash=74442ec6e954021334cd7c0da58876af}{%
+           family={Chan},
+           familyi={C\bibinitperiod},
+           given={Yu-Chin},
+           giveni={Y\bibinithyphendelim C\bibinitperiod}}}%
+        {{hash=06debc36f6b61a405e8f0da1c7ccd6ca}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Wei},
+           giveni={W\bibinitperiod}}}%
+        {{hash=ed054d60019cc0b6045e4feea533a61f}{%
+           family={Zhu},
+           familyi={Z\bibinitperiod},
+           given={Ping},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{0a3712f9152f116e36bde985de241814}
+      \strng{fullhash}{a4cd7a600ca02386dbf8ebefdfbdd2bf}
+      \strng{bibnamehash}{a4cd7a600ca02386dbf8ebefdfbdd2bf}
+      \strng{authorbibnamehash}{a4cd7a600ca02386dbf8ebefdfbdd2bf}
+      \strng{authornamehash}{0a3712f9152f116e36bde985de241814}
+      \strng{authorfullhash}{a4cd7a600ca02386dbf8ebefdfbdd2bf}
+      \field{extraname}{4}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{De-homogenization is becoming an effective method to significantly expedite the design of high-resolution multiscale structures, but existing methods have thus far been confined to simple static compliance minimization. There are two critical challenges to be addressed in accommodating general cases: enabling the design of unit-cell orientation and using free-form microstructures. In this paper, we propose a data-driven de-homogenization method that allows effective design of the unit-cell orientation angles and conformal mapping of spatially varying, complex microstructures. We devise a parameterized microstructure composed of rods in different directions to provide more diversity in stiffness while retaining geometrical simplicity. The microstructural geometry-property relationship is then surrogated by a neural network to avoid costly homogenization. A Cartesian representation of the unit-cell orientation is incorporated into homogenization-based optimization to design the angles. Corresponding high-resolution multiscale structures are obtained from the homogenization-based designs through a conformal mapping constructed with sawtooth function fields. This allows us to assemble complex microstructures with an oriented and compatible tiling pattern, while preserving the local homogenized properties. To demonstrate our method with a specific application, we optimize the frequency response of structures under harmonic excitations within a given frequency range. It is the first time that a sawtooth function is applied in a de-homogenization framework for complex design scenarios beyond static compliance minimization. The examples illustrate that multiscale structures can be generated with high efficiency and much better dynamic performance compared with the macroscale-only optimization. Beyond frequency response design, our proposed framework can be applied to other general problems.}
+      \field{journaltitle}{arXiv.org}
+      \field{month}{12}
+      \field{title}{Enhancing {Data}-driven {Multiscale} {Topology} {Optimization} with {Generalized} {De}-homogenization}
+      \field{urlday}{12}
+      \field{urlmonth}{1}
+      \field{urlyear}{2024}
+      \field{year}{2021}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb Full Text PDF:D\:\\estragio\\Zotero\\storage\\X77PCC5Y\\Wang et al. - 2021 - Enhancing Data-driven Multiscale Topology Optimiza.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2112.02506v2
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2112.02506v2
+      \endverb
+    \endentry
+    \entry{duriez_well_2021}{article}{}
+      \name{author}{4}{}{%
+        {{hash=25797b3c896ef58bac4c5bf67740e61c}{%
+           family={Duriez},
+           familyi={D\bibinitperiod},
+           given={Edouard},
+           giveni={E\bibinitperiod}}}%
+        {{hash=632aec531cee24c2c49fc7f0958698d4}{%
+           family={Morlier},
+           familyi={M\bibinitperiod},
+           given={Joseph},
+           giveni={J\bibinitperiod}}}%
+        {{hash=6562ac1f8239c50df0e604c9792fe4ef}{%
+           family={Charlotte},
+           familyi={C\bibinitperiod},
+           given={Miguel},
+           giveni={M\bibinitperiod}}}%
+        {{hash=fed27bf5e0b1cedfe4dd9ff739ed0559}{%
+           family={Azzaro-Pantel},
+           familyi={A\bibinithyphendelim P\bibinitperiod},
+           given={Catherine},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{58d2970fb8b7ccaeadabd03d1af1b724}
+      \strng{fullhash}{6b9091e18b7380b556ee43381cb4905a}
+      \strng{bibnamehash}{6b9091e18b7380b556ee43381cb4905a}
+      \strng{authorbibnamehash}{6b9091e18b7380b556ee43381cb4905a}
+      \strng{authornamehash}{58d2970fb8b7ccaeadabd03d1af1b724}
+      \strng{authorfullhash}{6b9091e18b7380b556ee43381cb4905a}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Multi-scale topology optimization (a.k.a. micro-structural topology optimization, MTO) consists in optimizing macro-scale and micro-scale topology simultaneously. MTO could improve structural performance of products significantly. However, a few issues related to connectivity between micro-structures and high computational cost have to be addressed, without resulting in loss of performance. In this paper, a new efficient multi-scale topology optimization (EMTO) framework has been developed for this purpose. Connectivity is addressed through adaptive transmission zones which limit loss of performance. A pre-computed database of micro-structures is used to speed up the computing. Design variables have also been chosen carefully and include the orientation of the micro-structures to enhance performance. EMTO has been successfully tested on two-dimensional compliance optimization problems. The results show significant improvements compared to mono-scale methods (compliance value lower by up to 20\% on a simplistic case or 4\% on a more realistic case), and also demonstrate the versatility of EMTO.}
+      \field{issn}{1615-1488}
+      \field{journaltitle}{Structural and Multidisciplinary Optimization}
+      \field{month}{12}
+      \field{number}{6}
+      \field{title}{A well connected, locally-oriented and efficient multi-scale topology optimization ({EMTO}) strategy}
+      \field{urlday}{12}
+      \field{urlmonth}{1}
+      \field{urlyear}{2024}
+      \field{volume}{64}
+      \field{year}{2021}
+      \field{urldateera}{ce}
+      \field{pages}{3705\bibrangedash 3728}
+      \range{pages}{24}
+      \verb{doi}
+      \verb 10.1007/s00158-021-03048-1
+      \endverb
+      \verb{file}
+      \verb Full Text PDF:D\:\\estragio\\Zotero\\storage\\STI8XXRN\\Duriez et al. - 2021 - A well connected, locally-oriented and efficient m.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s00158-021-03048-1
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s00158-021-03048-1
+      \endverb
+      \keyw{Material orientation,Metamodel,Micro-structure connectivity,Multi-scale topology optimization,Structural database}
+    \endentry
+    \entry{sigmund_benchmarking_2022}{article}{}
+      \name{author}{1}{}{%
+        {{hash=d76f1c09e8d8d06e1b7c3c254efeae1a}{%
+           family={Sigmund},
+           familyi={S\bibinitperiod},
+           given={Ole},
+           giveni={O\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{d76f1c09e8d8d06e1b7c3c254efeae1a}
+      \strng{fullhash}{d76f1c09e8d8d06e1b7c3c254efeae1a}
+      \strng{bibnamehash}{d76f1c09e8d8d06e1b7c3c254efeae1a}
+      \strng{authorbibnamehash}{d76f1c09e8d8d06e1b7c3c254efeae1a}
+      \strng{authornamehash}{d76f1c09e8d8d06e1b7c3c254efeae1a}
+      \strng{authorfullhash}{d76f1c09e8d8d06e1b7c3c254efeae1a}
+      \field{extraname}{8}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Topology optimization has developed tremendously and new approaches, algorithms and applications are appearing on a daily basis. However, how to fairly evaluate and compare new concepts and ideas to existing ones is an open question due to the broadness of modelling approaches, geometry parameterizations and physical applications. Ideally, the community should define common benchmark examples but again, how to define benchmarks that are generally applicable? In the lack or impracticality of common benchmarks, the responsibility of fair evaluation of contributions is up to authors but the literature shows multiple examples where this seems to be challenging. This note lists a number of recommendations, tools and concepts that papers in the field of topology optimization (and possibly other fields) should consider to represent good scientific practise.}
+      \field{issn}{1615-1488}
+      \field{journaltitle}{Structural and Multidisciplinary Optimization}
+      \field{month}{10}
+      \field{number}{11}
+      \field{title}{On benchmarking and good scientific practise in topology optimization}
+      \field{urlday}{17}
+      \field{urlmonth}{11}
+      \field{urlyear}{2022}
+      \field{volume}{65}
+      \field{year}{2022}
+      \field{urldateera}{ce}
+      \field{pages}{315}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1007/s00158-022-03427-2
+      \endverb
+      \verb{file}
+      \verb Full Text PDF:D\:\\estragio\\Zotero\\storage\\BWKY8YPI\\Sigmund - 2022 - On benchmarking and good scientific practise in to.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s00158-022-03427-2
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s00158-022-03427-2
+      \endverb
+      \keyw{Topology optimization,Benchmarking,Scientific practise}
+    \endentry
     \entry{cheng_functionally_2019}{article}{}
       \name{author}{3}{}{%
         {{hash=b6821df5befbb13e494f84d9b04a49c2}{%
@@ -6682,8 +7579,8 @@
       \strng{authorbibnamehash}{962ad98721e655dc7d3b7f61e84c0dce}
       \strng{authornamehash}{962ad98721e655dc7d3b7f61e84c0dce}
       \strng{authorfullhash}{962ad98721e655dc7d3b7f61e84c0dce}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0045-7825}
@@ -6709,58 +7606,6 @@
       \endverb
       \keyw{Homogenization,Additive manufacturing,Lattice structure topology optimization,Stress constraint}
     \endentry
-    \entry{wu_infill_2018}{article}{}
-      \name{author}{4}{}{%
-        {{hash=aaf4818e3816b53809f264b2c1b2ecae}{%
-           family={Wu},
-           familyi={W\bibinitperiod},
-           given={Jun},
-           giveni={J\bibinitperiod}}}%
-        {{hash=fa5a136030c946f96655797e3220c1bb}{%
-           family={Aage},
-           familyi={A\bibinitperiod},
-           given={Niels},
-           giveni={N\bibinitperiod}}}%
-        {{hash=c00f68e0027a0118ca2aa59ae43124c6}{%
-           family={Westermann},
-           familyi={W\bibinitperiod},
-           given={Rüdiger},
-           giveni={R\bibinitperiod}}}%
-        {{hash=d76f1c09e8d8d06e1b7c3c254efeae1a}{%
-           family={Sigmund},
-           familyi={S\bibinitperiod},
-           given={Ole},
-           giveni={O\bibinitperiod}}}%
-      }
-      \strng{namehash}{24485726fb023b68e63d57d174e325bc}
-      \strng{fullhash}{ab0b7d57ec927a9d0478a38afad23b30}
-      \strng{bibnamehash}{ab0b7d57ec927a9d0478a38afad23b30}
-      \strng{authorbibnamehash}{ab0b7d57ec927a9d0478a38afad23b30}
-      \strng{authornamehash}{24485726fb023b68e63d57d174e325bc}
-      \strng{authorfullhash}{ab0b7d57ec927a9d0478a38afad23b30}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{Porous structures such as trabecular bone are widely seen in nature. These structures are lightweight and exhibit strong mechanical properties. In this paper, we present a method to generate bone-like porous structures as lightweight infill for additive manufacturing. Our method builds upon and extends voxel-wise topology optimization. In particular, for the purpose of generating sparse yet stable structures distributed in the interior of a given shape, we propose upper bounds on the localized material volume in the proximity of each voxel in the design domain. We then aggregate the local per-voxel constraints by their p-norm into an equivalent global constraint, in order to facilitate an efficient optimization process. Implemented on a high-resolution topology optimization framework, our results demonstrate mechanically optimized, detailed porous structures which mimic those found in nature. We further show variants of the optimized structures subject to different design specifications, and we analyze the optimality and robustness of the obtained structures.}
-      \field{issn}{1941-0506}
-      \field{journaltitle}{IEEE Transactions on Visualization and Computer Graphics}
-      \field{month}{2}
-      \field{note}{Conference Name: IEEE Transactions on Visualization and Computer Graphics}
-      \field{number}{2}
-      \field{title}{Infill {Optimization} for {Additive} {Manufacturing}—{Approaching} {Bone}-{Like} {Porous} {Structures}}
-      \field{volume}{24}
-      \field{year}{2018}
-      \field{pages}{1127\bibrangedash 1140}
-      \range{pages}{14}
-      \verb{doi}
-      \verb 10.1109/TVCG.2017.2655523
-      \endverb
-      \verb{file}
-      \verb IEEE Xplore Full Text PDF:D\:\\estragio\\Zotero\\storage\\IGT5AQCL\\Wu et al. - 2018 - Infill Optimization for Additive Manufacturing—App.pdf:application/pdf
-      \endverb
-      \keyw{additive manufacturing,Bones,Infill,Mechanical factors,Optimization,porous structures,Shape,Solids,Three-dimensional printing,Topology,topology optimization,trabecular bone}
-    \endentry
     \entry{huang_optimal_2008}{article}{}
       \name{author}{2}{}{%
         {{hash=bf1afb45a50313a87b61c9f7a08f8989}{%
@@ -6783,8 +7628,8 @@
       \strng{authorbibnamehash}{f1809a42bd21c36e991b1f4575c82577}
       \strng{authornamehash}{f1809a42bd21c36e991b1f4575c82577}
       \strng{authorfullhash}{f1809a42bd21c36e991b1f4575c82577}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{This paper presents a method for topology optimization of periodic structures using the bi-directional evolutionary structural optimization (BESO) technique. To satisfy the periodic constraint, the designable domain is divided into a certain number of identical unit cells. The optimal topology of the unit cell is determined by gradually removing and adding material based on a sensitivity analysis. Sensitivity numbers that consider the periodic constraint for the repetitive elements are developed. To demonstrate the capability and effectiveness of the proposed approach, topology design problems of 2D and 3D periodic structures are investigated. The results indicate that the optimal topology depends, to a great extent, on the defined unit cells and on the relative strength of other non-designable part, such as the skins of sandwich structures.}
@@ -6841,8 +7686,8 @@
       \strng{authorbibnamehash}{fe0b2709c1d7b46a4a4902cd39171770}
       \strng{authornamehash}{fe0b2709c1d7b46a4a4902cd39171770}
       \strng{authorfullhash}{fe0b2709c1d7b46a4a4902cd39171770}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Modularity, a design philosophy in which a structure is comprised of identical components called modules, offers economical advantages as the modules can be mass produced in high quality controlled facilities. Prior research investigated structural optimization as a means of improving modular design, focusing on optimizing separately (i) the module topology and the module spatial orientation or (ii) the dynamic grouping into families of different topologies. This research did not include stability despite its considerable importance during preliminary design. In this paper, a novel integrated strategy is proposed for the preliminary design of modular trusses, unifying module topology, spatial orientation, and grouping optimization, as well as stability considerations to define meaningful solutions for real-life case studies. This is addressed by formulating an appropriate mixed-variable minimum volume problem in elastic design, including multiple load cases with self-weight and stress limitations in tension and compression. Global stability is considered through a linear prebuckling constraint, and a local buckling constraint is formulated by considering Euler buckling with standard profiles obtained from commercial catalogues. The practical applicability of this contribution is demonstrated on a benchmark modular bridge and a three-dimensional modular vault structure. The importance of stability considerations is also investigated, where the redundancy introduced by modularity is shown to contribute to the global resistance of the entire structure.}
@@ -6905,8 +7750,8 @@
       \strng{authorbibnamehash}{f35f484e012b0f812b1320eb42fbe04a}
       \strng{authornamehash}{c34848e186e0f4277d28885c63c6c0fd}
       \strng{authorfullhash}{f35f484e012b0f812b1320eb42fbe04a}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Stiffened shells and plates are widely used in engineering. Their performance is highly influenced by the arrangement, or layout, of stiffeners on the base shell or plate and the geometric features, or topology, of these stiffeners. Moreover, modular design is beneficial, since it allows for increased quality control and mass production. In this work, a method is developed that simultaneously optimizes the topology of stiffeners and their layout on a base shell or plate. This is accomplished by introducing a fixed number of modular stiffeners, which are subject to density-based topology optimization and a mapping of these modules to a ground structure. To illustrate potential applications, several stiffened plates and shell examples are presented. All examples demonstrated that the proposed method is able to generate clear topologies for any number of modules and a distinct layout of the stiffeners on the base shell or plate.}
@@ -6968,8 +7813,8 @@
       \strng{authorbibnamehash}{2aac681fc39c1e827dcfa0eee03b3b7a}
       \strng{authornamehash}{53e3c8df6a70262859a48df26c70d8e6}
       \strng{authorfullhash}{2aac681fc39c1e827dcfa0eee03b3b7a}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Modularity in structural engineering offers significant cost advantages since identical components can be mass-produced in high quality-controlled facilities. While prior research has investigated the optimization of modular structures, this work is limited to the module topology periodicity, leading to solutions where some structure parts remain inefficiently used. This paper proposes a continuum-based formulation for optimizing simultaneously the module topology and spatial orientation in modular trusses. The numerical difficulties associated with the module rotations in the optimization formulation are identified, and properly handled by a novel topology-based rotation representation using group theory. A relaxation strategy based on complementary constraints enables the continuous integration of the module rotations in a lower-bound plastic design formulation (or fully stressed design). Case studies involving high density ground structures demonstrate that it is able in the worst case to retrieve the results obtained by imposing the module orientation a priori, and to improve the optimized design when freedom on the rotations is considered.}
@@ -7032,8 +7877,8 @@
       \strng{authorbibnamehash}{a70537cb08acbfbeb202f29a9ef3d8e9}
       \strng{authornamehash}{4632c80f8149e49b56d3ac1fa605c630}
       \strng{authorfullhash}{a70537cb08acbfbeb202f29a9ef3d8e9}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{This paper explores the use of manufacturingtype constraints, in particular pattern gradation and repetition, in the context of building layout optimization. By placing constraints on the design domain in terms of number and variable size of repeating patterns along any direction, the conceptual design for buildings is facilitated. To substantiate the potential future applications of this work, examples within the context of high-rise building design are presented. Successful development of such ideas can contribute to practical engineering solutions, especially during the building design process. Examples are given to illustrate the ideas developed both in two-dimensional and three-dimensional building configurations.}
@@ -7087,8 +7932,8 @@
       \strng{authorbibnamehash}{fd6b712d4db2d86e9e06c93f8ebe40e4}
       \strng{authornamehash}{fd6b712d4db2d86e9e06c93f8ebe40e4}
       \strng{authorfullhash}{fd6b712d4db2d86e9e06c93f8ebe40e4}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{A key requirement in 3D fabrication is to generate objects with individual exterior shapes and their interior being optimized to application-specific force constraints and low material consumption. Accomplishing this task is challenging on desktop computers, due to the extreme model resolutions that are required to accurately predict the physical shape properties, requiring memory and computational capacities going beyond what is currently available. Moreover, fabrication-specific constraints need to be considered to enable printability. To address these challenges, we present a scalable system for generating 3D objects using topology optimization, which allows to efficiently evolve the topology of high-resolution solids towards printable and light-weight-high-resistance structures. To achieve this, the system is equipped with a high-performance GPU solver which can efficiently handle models comprising several millions of elements. A minimum thickness constraint is built into the optimization process to automatically enforce printability of the resulting shapes. We further shed light on the question how to incorporate geometric shape constraints, such as symmetry and pattern repetition, in the optimization process. We analyze the performance of the system and demonstrate its potential by a variety of different shapes such as interior structures within closed surfaces, exposed support structures, and surface models.}
@@ -7151,8 +7996,8 @@
       \strng{authorbibnamehash}{c6a32d38ed1b00a934977cd0a4f8c680}
       \strng{authornamehash}{299f30aa7c3f4b47ec8bbbc9ba700864}
       \strng{authorfullhash}{c6a32d38ed1b00a934977cd0a4f8c680}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{booktitle}{{AeroBest} 2021 {International} {Conference} on {Multidisciplinary} {Design} {Optimization} of {Aerospace} {Systems}. {Book} of proceedings}
@@ -7199,8 +8044,8 @@
       \strng{authorbibnamehash}{9196a90280f9f19b16c3cbb96251e7a6}
       \strng{authornamehash}{9196a90280f9f19b16c3cbb96251e7a6}
       \strng{authorfullhash}{9196a90280f9f19b16c3cbb96251e7a6}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{journaltitle}{Mathematical Programming}
@@ -7242,8 +8087,8 @@
       \strng{authorbibnamehash}{b480503eac99a715174c302554837635}
       \strng{authornamehash}{b480503eac99a715174c302554837635}
       \strng{authorfullhash}{b480503eac99a715174c302554837635}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Engineering Optimization}
@@ -7289,8 +8134,8 @@
       \strng{authorbibnamehash}{8ae7d135b945e4a7f6a5e0dae651bc6a}
       \strng{authornamehash}{8ae7d135b945e4a7f6a5e0dae651bc6a}
       \strng{authorfullhash}{8ae7d135b945e4a7f6a5e0dae651bc6a}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{In this paper, we propose a unified aggregation and relaxation approach for topology optimization with stress constraints. Following this approach, we first reformulate the original optimization problem with a design-dependent set of constraints into an equivalent optimization problem with a fixed design-independent set of constraints. The next step is to perform constraint aggregation over the reformulated local constraints using a lower bound aggregation function. We demonstrate that this approach concurrently aggregates the constraints and relaxes the feasible domain, thereby making singular optima accessible. The main advantage is that no separate constraint relaxation techniques are necessary, which reduces the parameter dependence of the problem. Furthermore, there is a clear relationship between the original feasible domain and the perturbed feasible domain via this aggregation parameter.}
@@ -7342,8 +8187,8 @@
       \strng{authorbibnamehash}{e32944e7bdb38addf1165b1334c1f251}
       \strng{authornamehash}{e32944e7bdb38addf1165b1334c1f251}
       \strng{authorfullhash}{e32944e7bdb38addf1165b1334c1f251}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{We introduce an extension of current technologies for topology optimization of continuum structures which allows for treating local stress criteria. We first consider relevant stress criteria for porous composite materials, initially by studying the stress states of the so-called rank 2 layered materials. Then, on the basis of the theoretical study of the rank 2 microstructures, we propose an empirical model that extends the power penalized stiffness model (also called SIMP for Solid Isotropic Microstructure with Penalization for inter-mediate densities). In a second part, solution aspects of topology problems are considered. To deal with the so-called ‘singularity’ phenomenon of stress constraints in topology design, an ϵ-constraint relaxation of the stress constraints is used. We describe the mathematical programming approach that is used to solve the numerical optimization problems, and show results for a number of example applications. © 1998 John Wiley \& Sons, Ltd.}
@@ -7410,8 +8255,8 @@
       \strng{authorbibnamehash}{495bf2c7c0d02fa6bebee2cbaa73c8d9}
       \strng{authornamehash}{c62850260484cff936e5048b34713f08}
       \strng{authorfullhash}{495bf2c7c0d02fa6bebee2cbaa73c8d9}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{We propose an effective algorithm to resolve the stress-constrained topology optimization problem. Our procedure combines a density ﬁlter for length scale control, the solid isotropic material with penalization (SIMP) to generate black-and-white designs, a SIMP-motivated stress deﬁnition to resolve the stress singularity phenomenon, and a global/regional stress measure combined with an adaptive normalization scheme to control the local stress level.}
@@ -7465,8 +8310,8 @@
       \strng{authorbibnamehash}{dcfbf2ef22e396ed8c5fccd258db3346}
       \strng{authornamehash}{dcfbf2ef22e396ed8c5fccd258db3346}
       \strng{authorfullhash}{dcfbf2ef22e396ed8c5fccd258db3346}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{This paper develops and evaluates a method for handling stress constraints in topology optimization. The stress constraints are used together with an objective function that minimizes mass or maximizes stiffness, and in addition, the traditional stiffness based formulation is discussed for comparison. We use a clustering technique, where stresses for several stress evaluation points are clustered into groups using a modified P-norm to decrease the number of stress constraints and thus the computational cost. We give a detailed description of the formulations and the sensitivity analysis. This is done in a general manner, so that different element types and 2D as well as 3D structures can be treated. However, we restrict the numerical examples to 2D structures with bilinear quadrilateral elements. The three formulations and different approaches to stress constraints are compared using two well known test examples in topology optimization: the L-shaped beam and the MBB-beam. In contrast to some other papers on stress constrained topology optimization, we find that our formulation gives topologies that are significantly different from traditionally optimized designs, in that it actually manage to avoid stress concentrations. It can therefore be used to generate conceptual designs for industrial applications.}
@@ -7522,8 +8367,8 @@
       \strng{authorbibnamehash}{b137bea409a40c60669bce5023ea28f0}
       \strng{authornamehash}{b137bea409a40c60669bce5023ea28f0}
       \strng{authorfullhash}{b137bea409a40c60669bce5023ea28f0}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{This paper proposes a robust design approach, based on eroded, intermediate and dilated projections, to handle uniform manufacturing uncertainties in stress-constrained topology optimization. In addition, a simple scheme is proposed to increase accuracy of stress evaluation at jagged edges, based on limiting sharpness of the projections to intentionally allow a thin layer of intermediate material between solid and void phases. A reference problem is analyzed through voxel-based finite element models, demonstrating that, in association with a proper choice of stiffness and stress interpolation functions, the proposed scheme can ensure consistent stress magnitude and smooth stress behavior for uniform boundary variation. Optimization problems are solved and post-processing with body-fitted meshes is performed over optimized solutions, demonstrating that: (1) stresses evaluated with voxel-based meshes containing thin soft transition boundaries are consistent with stresses evaluated with body-fitted meshes; and (2) optimized structures are robust with respect to uniform boundary variations.}
@@ -7571,8 +8416,8 @@
       \strng{authornamehash}{2ac977bc03dde1f3d4061cda61ab9795}
       \strng{authorfullhash}{2ac977bc03dde1f3d4061cda61ab9795}
       \field{extraname}{3}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Publisher: Matematik}
@@ -7612,8 +8457,8 @@
       \strng{authorbibnamehash}{360d3249060f35926f15baad821aee05}
       \strng{authornamehash}{360d3249060f35926f15baad821aee05}
       \strng{authorfullhash}{360d3249060f35926f15baad821aee05}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{International Journal of Mechanical Sciences}
@@ -7666,8 +8511,8 @@
       \strng{authorbibnamehash}{35ad91d750fcdde377e4b6cf0045e1a4}
       \strng{authornamehash}{cd0010b0b7e6f555dd016af38edea5a7}
       \strng{authorfullhash}{35ad91d750fcdde377e4b6cf0045e1a4}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{abstract}{Stress-constrained topology optimization requires techniques for handling thousands to millions of stress constraints. This work presents a comprehensive numerical study comparing local and global stress constraint strategies in topology optimization. Four local and four global solution strategies are presented and investigated. The local strategies are based on either the augmented Lagrangian or the pure exterior penalty method, whereas the global strategies are based on the P-mean aggregation function. Extensive parametric studies are carried out on the L-shaped design problem to identify the most promising parameters for each solution strategy. It is found that (1) the local strategies are less sensitive to the continuation procedure employed in standard density-based topology optimization, allowing achievement of better quality results using less iterations when compared with the global strategies; (2) the global strategies become competitive when P values larger than 100 are employed, but for this to be possible a very slow continuation procedure should be used; (3) the local strategies based on the augmented Lagrangian method provide the best compromise between computational cost and performance, being able to achieve optimized topologies at the level of a pure P-continuation global strategy with P=300, but using less iterations.}
@@ -7720,8 +8565,8 @@
       \strng{authorbibnamehash}{f5a184712a4d2fc83113c18dd3f68667}
       \strng{authornamehash}{f5a184712a4d2fc83113c18dd3f68667}
       \strng{authorfullhash}{f5a184712a4d2fc83113c18dd3f68667}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{IFAC Proceedings Volumes}
@@ -8217,6 +9062,7 @@
       \keyw{Aggregation functions,Constraint scaling,Stress constraints}
     \endentry
   \enddatalist
+  \missing{structures wu_infill_2018}
 \endrefsection
 \endinput
 

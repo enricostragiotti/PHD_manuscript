@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.8.29)  11 JAN 2024 18:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.8.29)  12 JAN 2024 20:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2348,7 +2348,15 @@ Package biblatex Info: Automatic encoding selection.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'manuscript_Stragiotti.bbl' found.
- (manuscript_Stragiotti.bbl)
+ (manuscript_Stragiotti.bbl
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                structures wu_infill_2018
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+)
 Package biblatex Info: Reference section=0 on input line 87.
 Package biblatex Info: Reference segment=0 on input line 87.
 \c__nicematrix_shift_Ldots_last_row_dim=\dimen449
@@ -2683,7 +2691,7 @@ Package tocbasic Info: character protrusion at lof deactivated on input line 182
 LaTeX Font Info:    Font shape `T1/zplLF/m/n' will be
 (Font)              scaled to size 5.917pt on input line 4.
 LaTeX Font Info:    Font shape `T1/zplLF/m/it' will be
-(Font)              scaled to size 10.6215pt on input line 18.
+(Font)              scaled to size 10.6215pt on input line 17.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -2851,7 +2859,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--4
 
 LaTeX Font Info:    Font shape `T1/qhv/b/n' will be
 (Font)              scaled to size 12.99pt on input line 8.
-<figures/02_literature/opt_family.png, id=401, 707.0415pt x 301.72725pt>
+<figures/02_literature/opt_family.png, id=403, 707.0415pt x 301.72725pt>
 File: figures/02_literature/opt_family.png Graphic file (type png)
 <use figures/02_literature/opt_family.png>
 Package pdftex.def Info: figures/02_literature/opt_family.png  used on input line 12.
@@ -4248,7 +4256,7 @@ Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 62.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
-<figures/02_literature/01_contin_mesh/c_mesh.pdf, id=550, 125.51794pt x 114.60516pt>
+<figures/02_literature/01_contin_mesh/c_mesh.pdf, id=552, 125.51794pt x 114.60516pt>
 File: figures/02_literature/01_contin_mesh/c_mesh.pdf Graphic file (type pdf)
 <use figures/02_literature/01_contin_mesh/c_mesh.pdf>
 Package pdftex.def Info: figures/02_literature/01_contin_mesh/c_mesh.pdf  used on input line 72.
@@ -4436,7 +4444,7 @@ l.99
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
-<figures/02_literature/simp.png, id=618, 554.07pt x 428.19975pt>
+<figures/02_literature/simp.png, id=620, 554.07pt x 428.19975pt>
 File: figures/02_literature/simp.png Graphic file (type png)
 <use figures/02_literature/simp.png>
 Package pdftex.def Info: figures/02_literature/simp.png  used on input line 102.
@@ -4549,7 +4557,7 @@ Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 109.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
-<figures/02_literature/02_circ_filter/filt_cir.pdf, id=625, 106.69562pt x 105.06754pt>
+<figures/02_literature/02_circ_filter/filt_cir.pdf, id=627, 106.69562pt x 105.06754pt>
 File: figures/02_literature/02_circ_filter/filt_cir.pdf Graphic file (type pdf)
 <use figures/02_literature/02_circ_filter/filt_cir.pdf>
 Package pdftex.def Info: figures/02_literature/02_circ_filter/filt_cir.pdf  used on input line 116.
@@ -5178,14 +5186,14 @@ Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 138.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
-<figures/02_literature/coniglio1.png, id=696, 375.20175pt x 179.4705pt>
+<figures/02_literature/coniglio1.png, id=698, 375.20175pt x 179.4705pt>
 File: figures/02_literature/coniglio1.png Graphic file (type png)
 <use figures/02_literature/coniglio1.png>
 Package pdftex.def Info: figures/02_literature/coniglio1.png  used on input line 140.
 (pdftex.def)             Requested size: 143.40016pt x 68.59383pt.
 LaTeX Font Info:    Font shape `T1/zplLF/m/n' will be
 (Font)              scaled to size 9.70001pt on input line 140.
-<figures/02_literature/coniglio2.png, id=697, 373.99725pt x 180.07275pt>
+<figures/02_literature/coniglio2.png, id=699, 373.99725pt x 180.07275pt>
 File: figures/02_literature/coniglio2.png Graphic file (type png)
 <use figures/02_literature/coniglio2.png>
 Package pdftex.def Info: figures/02_literature/coniglio2.png  used on input line 142.
@@ -5204,7 +5212,7 @@ Underfull \hbox (badness 2229) in paragraph at lines 144--144
 \T1/zplLF/m/n/9 (+20) component-based topol-ogy op-ti-
  []
 
-<figures/02_literature/layopt.png, id=702, 542.025pt x 589.4522pt>
+<figures/02_literature/layopt.png, id=704, 542.025pt x 589.4522pt>
 File: figures/02_literature/layopt.png Graphic file (type png)
 <use figures/02_literature/layopt.png>
 Package pdftex.def Info: figures/02_literature/layopt.png  used on input line 153.
@@ -5619,7 +5627,7 @@ Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 178.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
-<figures/02_literature/04_disc_mesh/d_mesh.pdf, id=757, 126.35104pt x 114.60516pt>
+<figures/02_literature/04_disc_mesh/d_mesh.pdf, id=759, 126.35104pt x 114.60516pt>
 File: figures/02_literature/04_disc_mesh/d_mesh.pdf Graphic file (type pdf)
 <use figures/02_literature/04_disc_mesh/d_mesh.pdf>
 Package pdftex.def Info: figures/02_literature/04_disc_mesh/d_mesh.pdf  used on input line 184.
@@ -5904,7 +5912,7 @@ Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 211.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
-<figures/02_literature/truss-ex.png, id=796, 840.13875pt x 575.14874pt>
+<figures/02_literature/truss-ex.png, id=798, 840.13875pt x 575.14874pt>
 File: figures/02_literature/truss-ex.png Graphic file (type png)
 <use figures/02_literature/truss-ex.png>
 Package pdftex.def Info: figures/02_literature/truss-ex.png  used on input line 215.
@@ -6029,22 +6037,22 @@ Underfull \vbox (badness 2990) has occurred while \output is active []
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
-<figures/02_literature/1.jpg, id=818, 2055.68pt x 1541.76pt>
+<figures/02_literature/1.jpg, id=820, 2055.68pt x 1541.76pt>
 File: figures/02_literature/1.jpg Graphic file (type jpg)
 <use figures/02_literature/1.jpg>
 Package pdftex.def Info: figures/02_literature/1.jpg  used on input line 224.
 (pdftex.def)             Requested size: 143.40016pt x 107.53429pt.
-<figures/02_literature/3.jpg, id=819, 803.0pt x 534.99875pt>
+<figures/02_literature/3.jpg, id=821, 803.0pt x 534.99875pt>
 File: figures/02_literature/3.jpg Graphic file (type jpg)
 <use figures/02_literature/3.jpg>
 Package pdftex.def Info: figures/02_literature/3.jpg  used on input line 226.
 (pdftex.def)             Requested size: 143.40016pt x 95.5364pt.
-<figures/02_literature/2.jpg, id=820, 294.60382pt x 220.95287pt>
+<figures/02_literature/2.jpg, id=822, 294.60382pt x 220.95287pt>
 File: figures/02_literature/2.jpg Graphic file (type jpg)
 <use figures/02_literature/2.jpg>
 Package pdftex.def Info: figures/02_literature/2.jpg  used on input line 228.
 (pdftex.def)             Requested size: 143.40016pt x 107.55309pt.
-<figures/02_literature/4.jpg, id=821, 296.01791pt x 279.82944pt>
+<figures/02_literature/4.jpg, id=823, 296.01791pt x 279.82944pt>
 File: figures/02_literature/4.jpg Graphic file (type jpg)
 <use figures/02_literature/4.jpg>
 Package pdftex.def Info: figures/02_literature/4.jpg  used on input line 230.
@@ -6090,7 +6098,7 @@ Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 235.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
-<figures/02_literature/ashby_chart.png, id=830, 757.6305pt x 471.56175pt>
+<figures/02_literature/ashby_chart.png, id=832, 757.6305pt x 471.56175pt>
 File: figures/02_literature/ashby_chart.png Graphic file (type png)
 <use figures/02_literature/ashby_chart.png>
 Package pdftex.def Info: figures/02_literature/ashby_chart.png  used on input line 238.
@@ -6244,7 +6252,7 @@ Underfull \hbox (badness 4001) in paragraph at lines 243--243
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
-<figures/02_literature/nasa-madcat-morphing-wing-breakdown-1000-x-600(1).jpg, id=849, 749.04843pt x 352.31625pt>
+<figures/02_literature/nasa-madcat-morphing-wing-breakdown-1000-x-600(1).jpg, id=851, 749.04843pt x 352.31625pt>
 File: figures/02_literature/nasa-madcat-morphing-wing-breakdown-1000-x-600(1).jpg Graphic file (type jpg)
 <use figures/02_literature/nasa-madcat-morphing-wing-breakdown-1000-x-600(1).jpg>
 Package pdftex.def Info: figures/02_literature/nasa-madcat-morphing-wing-breakdown-1000-x-600(1).jpg  used on input line 247.
@@ -6518,7 +6526,7 @@ Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 252.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
-<figures/02_literature/wellington.jpg, id=868, 2858.68pt x 2144.01pt>
+<figures/02_literature/wellington.jpg, id=870, 2858.68pt x 2144.01pt>
 File: figures/02_literature/wellington.jpg Graphic file (type jpg)
 <use figures/02_literature/wellington.jpg>
 Package pdftex.def Info: figures/02_literature/wellington.jpg  used on input line 254.
@@ -6527,288 +6535,288 @@ Package pdftex.def Info: figures/02_literature/wellington.jpg  used on input lin
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
-Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 258.
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 258.
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 258.
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 258.
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 258.
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-<figures/02_literature/stretc-bend.png, id=880, 366.61969pt x 646.66594pt>
+<figures/02_literature/stretc-bend.png, id=872, 366.61969pt x 646.66594pt>
 File: figures/02_literature/stretc-bend.png Graphic file (type png)
 <use figures/02_literature/stretc-bend.png>
-Package pdftex.def Info: figures/02_literature/stretc-bend.png  used on input line 260.
+Package pdftex.def Info: figures/02_literature/stretc-bend.png  used on input line 259.
 (pdftex.def)             Requested size: 136.57251pt x 240.90062pt.
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
 
-Underfull \hbox (badness 1888) in paragraph at lines 261--261
+Underfull \hbox (badness 1888) in paragraph at lines 260--260
 \T1/zplLF/m/n/9 (+20) and a bending-dominated [][][]RVE[][].
  []
+
+Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 263.
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 263.
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 263.
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 263.
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 263.
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
 
 Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 265.
 \openout4 = `manuscript_Stragiotti.mw'.
@@ -6935,6 +6943,7 @@ Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 276.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
+Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 276.
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
@@ -6959,9 +6968,87 @@ Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 276.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
+\openout4 = `manuscript_Stragiotti.mw'.
 
+\openout4 = `manuscript_Stragiotti.mw'.
 
-LaTeX Warning: Reference `fig:multiscale' on page 17 undefined on input line 276.
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 278.
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+ [17 <./figures/02_literature/stretc-bend.png>] (manuscript_Stragiotti.mw)
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
 
 Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 280.
 \openout4 = `manuscript_Stragiotti.mw'.
@@ -6988,99 +7075,614 @@ Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 280.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
+Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 283.
 \openout4 = `manuscript_Stragiotti.mw'.
 
-[17] (manuscript_Stragiotti.mw)
 \openout4 = `manuscript_Stragiotti.mw'.
 
-<figures/02_literature/homo.png, id=922, 376.2858pt x 123.3408pt>
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 283.
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 283--283
+[][][][][]\T1/zplLF/m/n/9 (+20) 133.[] [][]Groen et al. ([]2018),
+ []
+
+
+Underfull \hbox (badness 3219) in paragraph at lines 283--283
+[]\T1/zplLF/m/n/9 (+20) 'Homogenization-based topol-ogy
+ []
+
+
+Underfull \hbox (badness 2189) in paragraph at lines 283--283
+\T1/zplLF/m/n/9 (+20) op-ti-miza-tion for high-resolution
+ []
+
+<figures/02_literature/homo.png, id=932, 376.2858pt x 123.3408pt>
 File: figures/02_literature/homo.png Graphic file (type png)
 <use figures/02_literature/homo.png>
-Package pdftex.def Info: figures/02_literature/homo.png  used on input line 300.
+Package pdftex.def Info: figures/02_literature/homo.png  used on input line 288.
 (pdftex.def)             Requested size: 318.66919pt x 104.45435pt.
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
-\openout4 = `manuscript_Stragiotti.mw'.
-
- [18 <./figures/02_literature/homo.png> <./figures/02_literature/stretc-bend.png>] (manuscript_Stragiotti.mw)
-\openout4 = `manuscript_Stragiotti.mw'.
-
+Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 292.
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
-<figures/02_literature/top_multiscale.png, id=932, 465.4188pt x 396.0396pt>
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+<figures/02_literature/top_multiscale.png, id=937, 465.4188pt x 396.0396pt>
 File: figures/02_literature/top_multiscale.png Graphic file (type png)
 <use figures/02_literature/top_multiscale.png>
-Package pdftex.def Info: figures/02_literature/top_multiscale.png  used on input line 311.
-(pdftex.def)             Requested size: 223.06746pt x 189.81886pt.
+Package pdftex.def Info: figures/02_literature/top_multiscale.png  used on input line 299.
+(pdftex.def)             Requested size: 286.80032pt x 244.04936pt.
+LaTeX Font Info:    Font shape `T1/zplLF/m/it' will be
+(Font)              scaled to size 8.73001pt on input line 300.
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
-<figures/02_literature/full-to.png, id=934, 964.35281pt x 199.49532pt>
+\openout4 = `manuscript_Stragiotti.mw'.
+
+[18 <./figures/02_literature/homo.png>] (manuscript_Stragiotti.mw)
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 304.
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 304--304
+[][][][][][]\T1/zplLF/m/n/9 (+20) 133.[] [][]Groen et al. ([]2018),
+ []
+
+
+Underfull \hbox (badness 3219) in paragraph at lines 304--304
+[]\T1/zplLF/m/n/9 (+20) 'Homogenization-based topol-ogy
+ []
+
+
+Underfull \hbox (badness 2189) in paragraph at lines 304--304
+\T1/zplLF/m/n/9 (+20) op-ti-miza-tion for high-resolution
+ []
+
+
+Underfull \hbox (badness 1708) in paragraph at lines 304--304
+\T1/zplLF/m/n/9 (+20) op-ti-miza-tion of mod-u-lated and
+ []
+
+
+Underfull \hbox (badness 7064) in paragraph at lines 304--304
+[]\T1/zplLF/m/n/9 (+20) '3-d topol-ogy op-ti-miza-tion of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 304--304
+\T1/zplLF/m/n/9 (+20) and-strain-based K-clustering
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 304--304
+\T1/zplLF/m/n/9 (+20) ap-proach to mi-crostruc-tural
+ []
+
+Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 304.
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+
+Underfull \hbox (badness 1365) in paragraph at lines 304--304
+\T1/zplLF/m/n/9 (+20) struc-tural topol-ogy op-ti-miza-tion
+ []
+
+Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 304.
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 304.
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 306.
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 306--306
+[][][][][]\T1/zplLF/m/n/9 (+20) 133.[] [][]Groen et al. ([]2018),
+ []
+
+
+Underfull \hbox (badness 3219) in paragraph at lines 306--306
+[]\T1/zplLF/m/n/9 (+20) 'Homogenization-based topol-ogy
+ []
+
+
+Underfull \hbox (badness 2189) in paragraph at lines 306--306
+\T1/zplLF/m/n/9 (+20) op-ti-miza-tion for high-resolution
+ []
+
+
+Underfull \hbox (badness 5548) in paragraph at lines 306--306
+\T1/zplLF/m/n/9 (+20) con-nected, locally-oriented and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 306--306
+\T1/zplLF/m/n/9 (+20) ef-fi-cient multi-scale topol-ogy
+ []
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+[19 <./figures/02_literature/top_multiscale.png>] (manuscript_Stragiotti.mw)
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+<figures/02_literature/full-to.png, id=980, 964.35281pt x 199.49532pt>
 File: figures/02_literature/full-to.png Graphic file (type png)
 <use figures/02_literature/full-to.png>
-Package pdftex.def Info: figures/02_literature/full-to.png  used on input line 321.
-(pdftex.def)             Requested size: 331.01616pt x 68.47588pt.
-LaTeX Font Info:    Font shape `T1/zplLF/m/it' will be
-(Font)              scaled to size 8.73001pt on input line 322.
+Package pdftex.def Info: figures/02_literature/full-to.png  used on input line 311.
+(pdftex.def)             Requested size: 378.30727pt x 78.25946pt.
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
-Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 326.
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 326.
+Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 316.
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
@@ -7129,17 +7731,66 @@ Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 326.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
+Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 316.
+\openout4 = `manuscript_Stragiotti.mw'.
 
-Underfull \hbox (badness 3386) in paragraph at lines 326--326
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+
+Underfull \hbox (badness 3386) in paragraph at lines 316--316
 [][][][][]\T1/zplLF/m/n/9 (+20) 104.[] [][]Kalamkarov et al. ([]2009),
  []
 
 
-Underfull \hbox (badness 4001) in paragraph at lines 326--326
+Underfull \hbox (badness 4001) in paragraph at lines 316--316
 []\T1/zplLF/m/n/9 (+20) 'Asymp-totic Ho-mog-e-niza-tion of
  []
 
-Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 326.
+Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 316.
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
@@ -7164,76 +7815,22 @@ Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 326.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
-Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 326.
+Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 316.
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-
-Underfull \hbox (badness 4713) in paragraph at lines 326--326
-\T1/zplLF/m/n/9 (+20) ti-miza-tion for Ad-di-tive Man-u-
- []
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-[19 <./figures/02_literature/top_multiscale.png> <./figures/02_literature/full-to.png>] (manuscript_Stragiotti.mw)
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 328.
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
 
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
+LaTeX Warning: Citation 'structures wu_infill_2018' on page 20 undefined on input line 316.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
 
-Underfull \hbox (badness 4713) in paragraph at lines 328--328
-\T1/zplLF/m/n/9 (+20) ti-miza-tion for Ad-di-tive Man-u-
- []
+LaTeX Warning: Citation 'structures wu_infill_2018' on page 20 undefined on input line 316.
 
-Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 330.
+Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 318.
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
@@ -7282,7 +7879,7 @@ Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 330.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
-Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 330.
+Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 318.
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
@@ -7307,7 +7904,7 @@ Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 330.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
-Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 330.
+Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 318.
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
@@ -7332,7 +7929,7 @@ Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 330.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
-Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 330.
+Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 318.
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
@@ -7357,7 +7954,7 @@ Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 330.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
-Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 330.
+Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 318.
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
@@ -7409,14 +8006,31 @@ Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 330.
 )
 \openout4 = `manuscript_Stragiotti.mw'.
 
- [20] (manuscript_Stragiotti.mw)
+ [20 <./figures/02_literature/full-to.png>] (manuscript_Stragiotti.mw)
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+ [21] (manuscript_Stragiotti.mw)
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout2 = `chapters/3_comparison_TO_TTO.aux'.
 
  (chapters/3_comparison_TO_TTO.tex
+\openout4 = `manuscript_Stragiotti.mw'.
+
+ [22
+
+
+
+
+
+] (manuscript_Stragiotti.mw)
+\openout4 = `manuscript_Stragiotti.mw'.
+
+
 chapter 2.
-Package marginnote Info: Margin note 29.1 is on absolute page 29 on input line 3.
+Package marginnote Info: Margin note 31.1 is on absolute page 31 on input line 3.
 Package marginnote Info: xpos seems to be 77.96011pt on input line 3.
 
 Underfull \hbox (badness 10000) in paragraph at lines 3--3
@@ -7459,13 +8073,7 @@ Underfull \hbox (badness 1484) in paragraph at lines 7--7
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
-[21
-
-
-
-
-
-] (manuscript_Stragiotti.mw)
+[23] (manuscript_Stragiotti.mw)
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
@@ -7532,14 +8140,14 @@ Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 34.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
- [22] (manuscript_Stragiotti.mw)
+ [24] (manuscript_Stragiotti.mw)
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
-<figures/03_comparison_TO_TTO/03_gauss_point/gp.pdf, id=1019, 128.03734pt x 128.63458pt>
+<figures/03_comparison_TO_TTO/03_gauss_point/gp.pdf, id=1065, 128.03734pt x 128.63458pt>
 File: figures/03_comparison_TO_TTO/03_gauss_point/gp.pdf Graphic file (type pdf)
 <use figures/03_comparison_TO_TTO/03_gauss_point/gp.pdf>
 Package pdftex.def Info: figures/03_comparison_TO_TTO/03_gauss_point/gp.pdf  used on input line 59.
@@ -7646,7 +8254,7 @@ Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 126.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
- [23 <./figures/03_comparison_TO_TTO/03_gauss_point/gp.pdf>] (manuscript_Stragiotti.mw)
+ [25 <./figures/03_comparison_TO_TTO/03_gauss_point/gp.pdf>] (manuscript_Stragiotti.mw)
 \openout4 = `manuscript_Stragiotti.mw'.
 
 Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 142.
@@ -7747,8 +8355,8 @@ Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 142.
 \openout4 = `manuscript_Stragiotti.mw'.
 
 
-Underfull \hbox (badness 1917) in paragraph at lines 142--142
-[][][][][]\T1/zplLF/m/n/9 (+20) 147.[] [][]Silva et al. ([]2019), []'Stress-
+Underfull \hbox (badness 1817) in paragraph at lines 142--142
+[][][][][]\T1/zplLF/m/n/9 (+20) 162.[] [][]Silva et al. ([]2019), []'Stress-
  []
 
 Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 152.
@@ -7881,7 +8489,7 @@ Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 154.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
-[24] (manuscript_Stragiotti.mw)
+[26] (manuscript_Stragiotti.mw)
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
@@ -7940,7 +8548,7 @@ Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 157.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
- [25
+ [27
 pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1.15}) has been already used, duplicate ignored
 
 \__morewrites_shipout_ii: ...rewrites_shipout_box 
@@ -7967,7 +8575,7 @@ l.189 \begin{equation}
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
- [26] (manuscript_Stragiotti.mw)
+ [28] (manuscript_Stragiotti.mw)
 \openout4 = `manuscript_Stragiotti.mw'.
 
 Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 259.
@@ -8000,7 +8608,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
- [27] (manuscript_Stragiotti.mw)
+ [29] (manuscript_Stragiotti.mw)
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
@@ -8051,7 +8659,7 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input li
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 292.
 \openout4 = `manuscript_Stragiotti.mw'.
 
- [28] (manuscript_Stragiotti.mw)
+ [30] (manuscript_Stragiotti.mw)
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
@@ -8125,26 +8733,6 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input li
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 309.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 309.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 309.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 310.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 310.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 310.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 310.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 310.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 310.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 310.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 310.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 310.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 310.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 310.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 310.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 310.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 310.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 310.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 310.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 310.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 310.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 310.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 310.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 310.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 310.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 310.
@@ -8276,39 +8864,6 @@ Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 312.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
-\openout4 = `manuscript_Stragiotti.mw'.
-
- [29] (manuscript_Stragiotti.mw)
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
 Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 315.
 \openout4 = `manuscript_Stragiotti.mw'.
 
@@ -8358,6 +8913,39 @@ Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 315.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
+\openout4 = `manuscript_Stragiotti.mw'.
+
+ [31] (manuscript_Stragiotti.mw)
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 317.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 317.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 317.
@@ -8365,7 +8953,7 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input li
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 317.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 317.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 317.
-<figures/03_comparison_TO_TTO/06_L_bc/L_bc.pdf, id=1218, 363.90051pt x 314.47989pt>
+<figures/03_comparison_TO_TTO/06_L_bc/L_bc.pdf, id=1263, 363.90051pt x 314.47989pt>
 File: figures/03_comparison_TO_TTO/06_L_bc/L_bc.pdf Graphic file (type pdf)
 <use figures/03_comparison_TO_TTO/06_L_bc/L_bc.pdf>
 Package pdftex.def Info: figures/03_comparison_TO_TTO/06_L_bc/L_bc.pdf  used on input line 322.
@@ -8422,28 +9010,24 @@ Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 326.
 \openout4 = `manuscript_Stragiotti.mw'.
 
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 326.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 328.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 328.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 328.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 328.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 328.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 328.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 328.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 328.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 328.
 \openout4 = `manuscript_Stragiotti.mw'.
 
- [30] (manuscript_Stragiotti.mw)
+ [32] (manuscript_Stragiotti.mw)
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 328.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 328.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 328.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 328.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 328.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 328.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 328.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 328.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 328.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 330.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 330.
 LaTeX Font Info:    Font shape `OT1/zplTLF/m/n' will be
@@ -8667,7 +9251,7 @@ Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 349.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
- [31 <./figures/03_comparison_TO_TTO/06_L_bc/L_bc.pdf>] (manuscript_Stragiotti.mw)
+ [33 <./figures/03_comparison_TO_TTO/06_L_bc/L_bc.pdf>] (manuscript_Stragiotti.mw)
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
@@ -8749,42 +9333,42 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input li
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 353.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 353.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 353.
-<figures/03_comparison_TO_TTO/07_to_sol/fig0_10.pdf, id=1277, 270.27748pt x 270.27748pt>
+<figures/03_comparison_TO_TTO/07_to_sol/fig0_10.pdf, id=1322, 270.27748pt x 270.27748pt>
 File: figures/03_comparison_TO_TTO/07_to_sol/fig0_10.pdf Graphic file (type pdf)
 <use figures/03_comparison_TO_TTO/07_to_sol/fig0_10.pdf>
 Package pdftex.def Info: figures/03_comparison_TO_TTO/07_to_sol/fig0_10.pdf  used on input line 357.
 (pdftex.def)             Requested size: 108.7609pt x 108.76068pt.
-<figures/03_comparison_TO_TTO/07_to_sol/fig0_2.pdf, id=1278, 270.27748pt x 270.27748pt>
+<figures/03_comparison_TO_TTO/07_to_sol/fig0_2.pdf, id=1323, 270.27748pt x 270.27748pt>
 File: figures/03_comparison_TO_TTO/07_to_sol/fig0_2.pdf Graphic file (type pdf)
 <use figures/03_comparison_TO_TTO/07_to_sol/fig0_2.pdf>
 Package pdftex.def Info: figures/03_comparison_TO_TTO/07_to_sol/fig0_2.pdf  used on input line 359.
 (pdftex.def)             Requested size: 108.7609pt x 108.76068pt.
-<figures/03_comparison_TO_TTO/07_to_sol/fig0_0.4.pdf, id=1279, 270.27748pt x 270.27748pt>
+<figures/03_comparison_TO_TTO/07_to_sol/fig0_0.4.pdf, id=1324, 270.27748pt x 270.27748pt>
 File: figures/03_comparison_TO_TTO/07_to_sol/fig0_0.4.pdf Graphic file (type pdf)
 <use figures/03_comparison_TO_TTO/07_to_sol/fig0_0.4.pdf>
 Package pdftex.def Info: figures/03_comparison_TO_TTO/07_to_sol/fig0_0.4.pdf  used on input line 361.
 (pdftex.def)             Requested size: 108.7609pt x 108.76068pt.
-<figures/03_comparison_TO_TTO/07_to_sol/fig0_0.25.pdf, id=1280, 270.27748pt x 270.27748pt>
+<figures/03_comparison_TO_TTO/07_to_sol/fig0_0.25.pdf, id=1325, 270.27748pt x 270.27748pt>
 File: figures/03_comparison_TO_TTO/07_to_sol/fig0_0.25.pdf Graphic file (type pdf)
 <use figures/03_comparison_TO_TTO/07_to_sol/fig0_0.25.pdf>
 Package pdftex.def Info: figures/03_comparison_TO_TTO/07_to_sol/fig0_0.25.pdf  used on input line 363.
 (pdftex.def)             Requested size: 108.7609pt x 108.76068pt.
-<figures/03_comparison_TO_TTO/07_to_sol/stress_10.pdf, id=1281, 142.26349pt x 179.4163pt>
+<figures/03_comparison_TO_TTO/07_to_sol/stress_10.pdf, id=1326, 142.26349pt x 179.4163pt>
 File: figures/03_comparison_TO_TTO/07_to_sol/stress_10.pdf Graphic file (type pdf)
 <use figures/03_comparison_TO_TTO/07_to_sol/stress_10.pdf>
 Package pdftex.def Info: figures/03_comparison_TO_TTO/07_to_sol/stress_10.pdf  used on input line 365.
 (pdftex.def)             Requested size: 108.7609pt x 137.16815pt.
-<figures/03_comparison_TO_TTO/07_to_sol/stress_2.pdf, id=1282, 142.26349pt x 179.4163pt>
+<figures/03_comparison_TO_TTO/07_to_sol/stress_2.pdf, id=1327, 142.26349pt x 179.4163pt>
 File: figures/03_comparison_TO_TTO/07_to_sol/stress_2.pdf Graphic file (type pdf)
 <use figures/03_comparison_TO_TTO/07_to_sol/stress_2.pdf>
 Package pdftex.def Info: figures/03_comparison_TO_TTO/07_to_sol/stress_2.pdf  used on input line 367.
 (pdftex.def)             Requested size: 108.7609pt x 137.16815pt.
-<figures/03_comparison_TO_TTO/07_to_sol/stress_04.pdf, id=1283, 142.26349pt x 179.4163pt>
+<figures/03_comparison_TO_TTO/07_to_sol/stress_04.pdf, id=1328, 142.26349pt x 179.4163pt>
 File: figures/03_comparison_TO_TTO/07_to_sol/stress_04.pdf Graphic file (type pdf)
 <use figures/03_comparison_TO_TTO/07_to_sol/stress_04.pdf>
 Package pdftex.def Info: figures/03_comparison_TO_TTO/07_to_sol/stress_04.pdf  used on input line 369.
 (pdftex.def)             Requested size: 108.7609pt x 137.16815pt.
-<figures/03_comparison_TO_TTO/07_to_sol/stress_025.pdf, id=1284, 142.26349pt x 179.4163pt>
+<figures/03_comparison_TO_TTO/07_to_sol/stress_025.pdf, id=1329, 142.26349pt x 179.4163pt>
 File: figures/03_comparison_TO_TTO/07_to_sol/stress_025.pdf Graphic file (type pdf)
 <use figures/03_comparison_TO_TTO/07_to_sol/stress_025.pdf>
 Package pdftex.def Info: figures/03_comparison_TO_TTO/07_to_sol/stress_025.pdf  used on input line 371.
@@ -8802,6 +9386,48 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input li
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 375.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 375.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 375.
+\openout4 = `manuscript_Stragiotti.mw'.
+
+ [34{D:/estragio/AppData/Roaming/MiKTeX/fonts/enc/dvips/newpx/zpl_OsF.enc} <./figures/03_comparison_TO_TTO/07_to_sol/fig0_10.pdf> <./figures/03_comparison_TO_TTO/07_to_sol/fig0_2.pdf
+
+pdfTeX warning: pdflatex (file ./figures/03_comparison_TO_TTO/07_to_sol/fig0_2.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./figures/03_comparison_TO_TTO/07_to_sol/fig0_0.4.pdf
+
+pdfTeX warning: pdflatex (file ./figures/03_comparison_TO_TTO/07_to_sol/fig0_0.4.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./figures/03_comparison_TO_TTO/07_to_sol/fig0_0.25.pdf
+
+pdfTeX warning: pdflatex (file ./figures/03_comparison_TO_TTO/07_to_sol/fig0_0.25.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./figures/03_comparison_TO_TTO/07_to_sol/stress_10.pdf
+
+pdfTeX warning: pdflatex (file ./figures/03_comparison_TO_TTO/07_to_sol/stress_10.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./figures/03_comparison_TO_TTO/07_to_sol/stress_2.pdf
+
+pdfTeX warning: pdflatex (file ./figures/03_comparison_TO_TTO/07_to_sol/stress_2.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./figures/03_comparison_TO_TTO/07_to_sol/stress_04.pdf
+
+pdfTeX warning: pdflatex (file ./figures/03_comparison_TO_TTO/07_to_sol/stress_04.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./figures/03_comparison_TO_TTO/07_to_sol/stress_025.pdf
+
+pdfTeX warning: pdflatex (file ./figures/03_comparison_TO_TTO/07_to_sol/stress_025.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>] (manuscript_Stragiotti.mw)
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 377.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 377.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 377.
@@ -8864,27 +9490,6 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input li
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 379.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 379.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 379.
-\openout4 = `manuscript_Stragiotti.mw'.
-
- [32{D:/estragio/AppData/Roaming/MiKTeX/fonts/enc/dvips/newpx/zpl_OsF.enc}] (manuscript_Stragiotti.mw)
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
 Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 381.
 \openout4 = `manuscript_Stragiotti.mw'.
 
@@ -8919,32 +9524,6 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input li
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 384.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 385.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 385.
-\openout4 = `manuscript_Stragiotti.mw'.
-
- [33 <./figures/03_comparison_TO_TTO/07_to_sol/fig0_10.pdf> <./figures/03_comparison_TO_TTO/07_to_sol/fig0_2.pdf
-
-pdfTeX warning: pdflatex (file ./figures/03_comparison_TO_TTO/07_to_sol/fig0_2.pdf): PDF inclusion: multiple pdfs with page group included in a single page
-> <./figures/03_comparison_TO_TTO/07_to_sol/fig0_0.4.pdf
-
-pdfTeX warning: pdflatex (file ./figures/03_comparison_TO_TTO/07_to_sol/fig0_0.4.pdf): PDF inclusion: multiple pdfs with page group included in a single page
-> <./figures/03_comparison_TO_TTO/07_to_sol/fig0_0.25.pdf
-
-pdfTeX warning: pdflatex (file ./figures/03_comparison_TO_TTO/07_to_sol/fig0_0.25.pdf): PDF inclusion: multiple pdfs with page group included in a single page
-> <./figures/03_comparison_TO_TTO/07_to_sol/stress_10.pdf
-
-pdfTeX warning: pdflatex (file ./figures/03_comparison_TO_TTO/07_to_sol/stress_10.pdf): PDF inclusion: multiple pdfs with page group included in a single page
-> <./figures/03_comparison_TO_TTO/07_to_sol/stress_2.pdf
-
-pdfTeX warning: pdflatex (file ./figures/03_comparison_TO_TTO/07_to_sol/stress_2.pdf): PDF inclusion: multiple pdfs with page group included in a single page
-> <./figures/03_comparison_TO_TTO/07_to_sol/stress_04.pdf
-
-pdfTeX warning: pdflatex (file ./figures/03_comparison_TO_TTO/07_to_sol/stress_04.pdf): PDF inclusion: multiple pdfs with page group included in a single page
-> <./figures/03_comparison_TO_TTO/07_to_sol/stress_025.pdf
-
-pdfTeX warning: pdflatex (file ./figures/03_comparison_TO_TTO/07_to_sol/stress_025.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->] (manuscript_Stragiotti.mw)
-\openout4 = `manuscript_Stragiotti.mw'.
-
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 387.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 387.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 387.
@@ -8955,6 +9534,11 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input li
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 387.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 387.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 387.
+\openout4 = `manuscript_Stragiotti.mw'.
+
+ [35] (manuscript_Stragiotti.mw)
+\openout4 = `manuscript_Stragiotti.mw'.
+
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 402.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 402.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 402.
@@ -9333,7 +9917,7 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input li
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 423.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 423.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 423.
-<figures/03_comparison_TO_TTO/08_to_no/fig0.pdf, id=1396, 270.27748pt x 270.27748pt>
+<figures/03_comparison_TO_TTO/08_to_no/fig0.pdf, id=1442, 270.27748pt x 270.27748pt>
 File: figures/03_comparison_TO_TTO/08_to_no/fig0.pdf Graphic file (type pdf)
 <use figures/03_comparison_TO_TTO/08_to_no/fig0.pdf>
 Package pdftex.def Info: figures/03_comparison_TO_TTO/08_to_no/fig0.pdf  used on input line 429.
@@ -9352,7 +9936,7 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input li
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 434.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 434.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 434.
-<figures/03_comparison_TO_TTO/09_to_zoom/to_zoom.pdf, id=1398, 142.26349pt x 185.34544pt>
+<figures/03_comparison_TO_TTO/09_to_zoom/to_zoom.pdf, id=1444, 142.26349pt x 185.34544pt>
 File: figures/03_comparison_TO_TTO/09_to_zoom/to_zoom.pdf Graphic file (type pdf)
 <use figures/03_comparison_TO_TTO/09_to_zoom/to_zoom.pdf>
 Package pdftex.def Info: figures/03_comparison_TO_TTO/09_to_zoom/to_zoom.pdf  used on input line 437.
@@ -9368,17 +9952,12 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input li
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 443.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 443.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 443.
-\openout4 = `manuscript_Stragiotti.mw'.
-
- [34 <./figures/03_comparison_TO_TTO/08_to_no/fig0.pdf>] (manuscript_Stragiotti.mw)
-\openout4 = `manuscript_Stragiotti.mw'.
-
-<figures/03_comparison_TO_TTO/10a_to_graph_lin/to_c_lin.pdf, id=1412, 227.85527pt x 132.67868pt>
+<figures/03_comparison_TO_TTO/10a_to_graph_lin/to_c_lin.pdf, id=1447, 227.85527pt x 132.67868pt>
 File: figures/03_comparison_TO_TTO/10a_to_graph_lin/to_c_lin.pdf Graphic file (type pdf)
 <use figures/03_comparison_TO_TTO/10a_to_graph_lin/to_c_lin.pdf>
 Package pdftex.def Info: figures/03_comparison_TO_TTO/10a_to_graph_lin/to_c_lin.pdf  used on input line 448.
 (pdftex.def)             Requested size: 227.8547pt x 132.67834pt.
-<figures/03_comparison_TO_TTO/10b_to_graph_log/to_c.pdf, id=1413, 227.85628pt x 132.6797pt>
+<figures/03_comparison_TO_TTO/10b_to_graph_log/to_c.pdf, id=1448, 227.85628pt x 132.6797pt>
 File: figures/03_comparison_TO_TTO/10b_to_graph_log/to_c.pdf Graphic file (type pdf)
 <use figures/03_comparison_TO_TTO/10b_to_graph_log/to_c.pdf>
 Package pdftex.def Info: figures/03_comparison_TO_TTO/10b_to_graph_log/to_c.pdf  used on input line 450.
@@ -9393,6 +9972,11 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input li
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 455.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 455.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 455.
+\openout4 = `manuscript_Stragiotti.mw'.
+
+ [36 <./figures/03_comparison_TO_TTO/08_to_no/fig0.pdf>] (manuscript_Stragiotti.mw)
+\openout4 = `manuscript_Stragiotti.mw'.
+
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 458.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 458.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 458.
@@ -9473,12 +10057,12 @@ Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 458.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
-<figures/03_comparison_TO_TTO/11_tto_sol/L_tto_opt.pdf, id=1420, 135.74414pt x 157.55562pt>
+<figures/03_comparison_TO_TTO/11_tto_sol/L_tto_opt.pdf, id=1466, 135.74414pt x 157.55562pt>
 File: figures/03_comparison_TO_TTO/11_tto_sol/L_tto_opt.pdf Graphic file (type pdf)
 <use figures/03_comparison_TO_TTO/11_tto_sol/L_tto_opt.pdf>
 Package pdftex.def Info: figures/03_comparison_TO_TTO/11_tto_sol/L_tto_opt.pdf  used on input line 462.
 (pdftex.def)             Requested size: 135.74379pt x 157.55522pt.
-<figures/03_comparison_TO_TTO/11_tto_sol/L_tto_opt_st.pdf, id=1421, 135.74414pt x 160.07906pt>
+<figures/03_comparison_TO_TTO/11_tto_sol/L_tto_opt_st.pdf, id=1467, 135.74414pt x 160.07906pt>
 File: figures/03_comparison_TO_TTO/11_tto_sol/L_tto_opt_st.pdf Graphic file (type pdf)
 <use figures/03_comparison_TO_TTO/11_tto_sol/L_tto_opt_st.pdf>
 Package pdftex.def Info: figures/03_comparison_TO_TTO/11_tto_sol/L_tto_opt_st.pdf  used on input line 464.
@@ -9488,17 +10072,17 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input li
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 466.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 466.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 466.
-\openout4 = `manuscript_Stragiotti.mw'.
-
- [35 <./figures/03_comparison_TO_TTO/10a_to_graph_lin/to_c_lin.pdf> <./figures/03_comparison_TO_TTO/10b_to_graph_log/to_c.pdf> <./figures/03_comparison_TO_TTO/09_to_zoom/to_zoom.pdf>] (manuscript_Stragiotti.mw)
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 470.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 470.
+\openout4 = `manuscript_Stragiotti.mw'.
+
+ [37 <./figures/03_comparison_TO_TTO/10a_to_graph_lin/to_c_lin.pdf> <./figures/03_comparison_TO_TTO/10b_to_graph_log/to_c.pdf> <./figures/03_comparison_TO_TTO/09_to_zoom/to_zoom.pdf>] (manuscript_Stragiotti.mw)
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 471.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 471.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 471.
@@ -9779,19 +10363,7 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input li
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 505.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 505.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 505.
-\openout4 = `manuscript_Stragiotti.mw'.
-
-[36 <./figures/03_comparison_TO_TTO/11_tto_sol/L_tto_opt.pdf> <./figures/03_comparison_TO_TTO/11_tto_sol/L_tto_opt_st.pdf
-
-pdfTeX warning: pdflatex (file ./figures/03_comparison_TO_TTO/11_tto_sol/L_tto_opt_st.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->] (manuscript_Stragiotti.mw)
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-<figures/03_comparison_TO_TTO/12_tto_sol_13/L_tto_opt.pdf, id=1724, 196.17189pt x 212.29713pt>
+<figures/03_comparison_TO_TTO/12_tto_sol_13/L_tto_opt.pdf, id=1518, 196.17189pt x 212.29713pt>
 File: figures/03_comparison_TO_TTO/12_tto_sol_13/L_tto_opt.pdf Graphic file (type pdf)
 <use figures/03_comparison_TO_TTO/12_tto_sol_13/L_tto_opt.pdf>
 Package pdftex.def Info: figures/03_comparison_TO_TTO/12_tto_sol_13/L_tto_opt.pdf  used on input line 511.
@@ -9820,31 +10392,41 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input li
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 515.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 515.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 515.
+\openout4 = `manuscript_Stragiotti.mw'.
+
+[38 <./figures/03_comparison_TO_TTO/11_tto_sol/L_tto_opt.pdf> <./figures/03_comparison_TO_TTO/11_tto_sol/L_tto_opt_st.pdf
+
+pdfTeX warning: pdflatex (file ./figures/03_comparison_TO_TTO/11_tto_sol/L_tto_opt_st.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <./figures/03_comparison_TO_TTO/12_tto_sol_13/L_tto_opt.pdf
+
+pdfTeX warning: pdflatex (file ./figures/03_comparison_TO_TTO/12_tto_sol_13/L_tto_opt.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>] (manuscript_Stragiotti.mw)
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 519.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 519.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 519.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 521.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 521.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 521.
-\openout4 = `manuscript_Stragiotti.mw'.
-
-[37 <./figures/03_comparison_TO_TTO/12_tto_sol_13/L_tto_opt.pdf>] (manuscript_Stragiotti.mw)
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-<figures/03_comparison_TO_TTO/13a_tto_graph_lin/tto_c_lin.pdf, id=1802, 221.71735pt x 139.73807pt>
+<figures/03_comparison_TO_TTO/13a_tto_graph_lin/tto_c_lin.pdf, id=1842, 221.71735pt x 139.73807pt>
 File: figures/03_comparison_TO_TTO/13a_tto_graph_lin/tto_c_lin.pdf Graphic file (type pdf)
 <use figures/03_comparison_TO_TTO/13a_tto_graph_lin/tto_c_lin.pdf>
 Package pdftex.def Info: figures/03_comparison_TO_TTO/13a_tto_graph_lin/tto_c_lin.pdf  used on input line 525.
 (pdftex.def)             Requested size: 221.7168pt x 139.73772pt.
-<figures/03_comparison_TO_TTO/13b_tto_graph_log/tto_c.pdf, id=1803, 221.7083pt x 139.73807pt>
+<figures/03_comparison_TO_TTO/13b_tto_graph_log/tto_c.pdf, id=1843, 221.7083pt x 139.73807pt>
 File: figures/03_comparison_TO_TTO/13b_tto_graph_log/tto_c.pdf Graphic file (type pdf)
 <use figures/03_comparison_TO_TTO/13b_tto_graph_log/tto_c.pdf>
 Package pdftex.def Info: figures/03_comparison_TO_TTO/13b_tto_graph_log/tto_c.pdf  used on input line 527.
@@ -9860,7 +10442,7 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input li
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 534.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 534.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 534.
-<figures/03_comparison_TO_TTO/14_stress_comp/stress_comp.pdf, id=1806, 276.3384pt x 175.87807pt>
+<figures/03_comparison_TO_TTO/14_stress_comp/stress_comp.pdf, id=1846, 276.3384pt x 175.87807pt>
 File: figures/03_comparison_TO_TTO/14_stress_comp/stress_comp.pdf Graphic file (type pdf)
 <use figures/03_comparison_TO_TTO/14_stress_comp/stress_comp.pdf>
 Package pdftex.def Info: figures/03_comparison_TO_TTO/14_stress_comp/stress_comp.pdf  used on input line 537.
@@ -9868,33 +10450,21 @@ Package pdftex.def Info: figures/03_comparison_TO_TTO/14_stress_comp/stress_comp
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 538.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 538.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 538.
+\openout4 = `manuscript_Stragiotti.mw'.
+
+ [39 <./figures/03_comparison_TO_TTO/13a_tto_graph_lin/tto_c_lin.pdf> <./figures/03_comparison_TO_TTO/13b_tto_graph_log/tto_c.pdf>] (manuscript_Stragiotti.mw)
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 542.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 542.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 542.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 542.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 542.
-\openout4 = `manuscript_Stragiotti.mw'.
-
- [38 <./figures/03_comparison_TO_TTO/13a_tto_graph_lin/tto_c_lin.pdf> <./figures/03_comparison_TO_TTO/13b_tto_graph_log/tto_c.pdf> <./figures/03_comparison_TO_TTO/14_stress_comp/stress_comp.pdf>] (manuscript_Stragiotti.mw)
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-<figures/03_comparison_TO_TTO/15_stress_vol/stress_vol.pdf, id=1876, 276.49397pt x 180.51942pt>
+<figures/03_comparison_TO_TTO/15_stress_vol/stress_vol.pdf, id=1891, 276.49397pt x 180.51942pt>
 File: figures/03_comparison_TO_TTO/15_stress_vol/stress_vol.pdf Graphic file (type pdf)
 <use figures/03_comparison_TO_TTO/15_stress_vol/stress_vol.pdf>
 Package pdftex.def Info: figures/03_comparison_TO_TTO/15_stress_vol/stress_vol.pdf  used on input line 547.
@@ -9903,7 +10473,24 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input li
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 548.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 548.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 548.
-<figures/03_comparison_TO_TTO/16_comp_vol/comp_vol.pdf, id=1881, 280.50496pt x 180.52243pt>
+\openout4 = `manuscript_Stragiotti.mw'.
+
+ [40 <./figures/03_comparison_TO_TTO/14_stress_comp/stress_comp.pdf>] (manuscript_Stragiotti.mw)
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+<figures/03_comparison_TO_TTO/16_comp_vol/comp_vol.pdf, id=1925, 280.50496pt x 180.52243pt>
 File: figures/03_comparison_TO_TTO/16_comp_vol/comp_vol.pdf Graphic file (type pdf)
 <use figures/03_comparison_TO_TTO/16_comp_vol/comp_vol.pdf>
 Package pdftex.def Info: figures/03_comparison_TO_TTO/16_comp_vol/comp_vol.pdf  used on input line 556.
@@ -9919,7 +10506,7 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input li
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 561.
 \openout4 = `manuscript_Stragiotti.mw'.
 
- [39 <./figures/03_comparison_TO_TTO/15_stress_vol/stress_vol.pdf>] (manuscript_Stragiotti.mw)
+ [41 <./figures/03_comparison_TO_TTO/15_stress_vol/stress_vol.pdf> <./figures/03_comparison_TO_TTO/16_comp_vol/comp_vol.pdf>] (manuscript_Stragiotti.mw)
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
@@ -9930,7 +10517,11 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input li
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
-<figures/03_comparison_TO_TTO/17_time_vol/time_vol.pdf, id=1902, 286.01355pt x 171.98755pt>
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+<figures/03_comparison_TO_TTO/17_time_vol/time_vol.pdf, id=1972, 286.01355pt x 171.98755pt>
 File: figures/03_comparison_TO_TTO/17_time_vol/time_vol.pdf Graphic file (type pdf)
 <use figures/03_comparison_TO_TTO/17_time_vol/time_vol.pdf>
 Package pdftex.def Info: figures/03_comparison_TO_TTO/17_time_vol/time_vol.pdf  used on input line 565.
@@ -9966,43 +10557,6 @@ Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 570.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
-\openout4 = `manuscript_Stragiotti.mw'.
-
- [40 <./figures/03_comparison_TO_TTO/16_comp_vol/comp_vol.pdf> <./figures/03_comparison_TO_TTO/17_time_vol/time_vol.pdf>] (manuscript_Stragiotti.mw)
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
 Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 572.
 \openout4 = `manuscript_Stragiotti.mw'.
 
@@ -10079,8 +10633,8 @@ Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 572.
 \openout4 = `manuscript_Stragiotti.mw'.
 
 
-Underfull \hbox (badness 4872) in paragraph at lines 572--572
-[][][][][][]\T1/zplLF/m/n/9 (+20) 160.[] [][]No-rato et al. ([]2022), []'A
+Underfull \hbox (badness 4927) in paragraph at lines 572--572
+[][][][][][]\T1/zplLF/m/n/9 (+20) 175.[] [][]No-rato et al. ([]2022), []'A
  []
 
 
@@ -10094,6 +10648,43 @@ Underfull \hbox (badness 10000) in paragraph at lines 572--572
  []
 
 Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 572.
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+[42 <./figures/03_comparison_TO_TTO/17_time_vol/time_vol.pdf>] (manuscript_Stragiotti.mw)
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
@@ -10144,38 +10735,10 @@ Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 577.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
- [41] (manuscript_Stragiotti.mw)
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
 )
 \openout4 = `manuscript_Stragiotti.mw'.
 
- [42] (manuscript_Stragiotti.mw)
+ [43] (manuscript_Stragiotti.mw)
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
@@ -10184,6 +10747,27 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+ [44] (manuscript_Stragiotti.mw)
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
@@ -10228,16 +10812,16 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 chapter without number
-Package marginnote Info: Margin note 51.1 is on absolute page 51 on input line 234.
+Package marginnote Info: Margin note 53.1 is on absolute page 53 on input line 234.
 Package marginnote Info: xpos seems to be 111.51266pt on input line 234.
 LaTeX Font Info:    Font shape `T1/zplLF/m/sc' will be
 (Font)              scaled to size 7.76001pt on input line 234.
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/zplLF/m/sc/8'.
 (microtype)             Ignoring protrusion settings for this character.
-Package marginnote Info: Margin note 51.2 is on absolute page 51 on input line 234.
+Package marginnote Info: Margin note 53.2 is on absolute page 53 on input line 234.
 Package marginnote Info: xpos seems to be 111.51266pt on input line 234.
-Package marginnote Info: Margin note 51.3 is on absolute page 51 on input line 234.
+Package marginnote Info: Margin note 53.3 is on absolute page 53 on input line 234.
 Package marginnote Info: xpos seems to be 111.51266pt on input line 234.
 LaTeX Font Info:    Trying to load font information for T1+fvm on input line 234.
 (D:\estragio\AppData\Roaming\MiKTeX\tex/latex/bera\t1fvm.fd
@@ -10250,87 +10834,13 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
-Package marginnote Info: Margin note 51.4 is on absolute page 51 on input line 234.
-Package marginnote Info: xpos seems to be 111.51266pt on input line 234.
-Package marginnote Info: Margin note 51.5 is on absolute page 51 on input line 234.
-Package marginnote Info: xpos seems to be 111.51266pt on input line 234.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
-Package marginnote Info: Margin note 51.6 is on absolute page 51 on input line 234.
-Package marginnote Info: xpos seems to be 111.51266pt on input line 234.
-Package marginnote Info: Margin note 51.7 is on absolute page 51 on input line 234.
-Package marginnote Info: xpos seems to be 111.51266pt on input line 234.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
-Package marginnote Info: Margin note 51.8 is on absolute page 51 on input line 234.
-Package marginnote Info: xpos seems to be 111.51266pt on input line 234.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
-Package marginnote Info: Margin note 51.9 is on absolute page 51 on input line 234.
-Package marginnote Info: xpos seems to be 111.51266pt on input line 234.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
-Package marginnote Info: Margin note 51.10 is on absolute page 52 on input line 234.
-Package marginnote Info: xpos seems to be 234.42798pt on input line 234.
-\openout4 = `manuscript_Stragiotti.mw'.
-
- [43
-
-
-
-
-
-{C:/Program Files/MiKTeX/fonts/enc/dvips/base/8r.enc}] (manuscript_Stragiotti.mw)
-\openout4 = `manuscript_Stragiotti.mw'.
-
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
-Package marginnote Info: Margin note 52.1 is on absolute page 52 on input line 234.
-Package marginnote Info: xpos seems to be 234.42798pt on input line 234.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
-Package marginnote Info: Margin note 52.2 is on absolute page 52 on input line 234.
-Package marginnote Info: xpos seems to be 234.42798pt on input line 234.
-Package marginnote Info: Margin note 52.3 is on absolute page 52 on input line 234.
-Package marginnote Info: xpos seems to be 234.42798pt on input line 234.
-Package marginnote Info: Margin note 52.4 is on absolute page 52 on input line 234.
-Package marginnote Info: xpos seems to be 234.42798pt on input line 234.
-
-Overfull \hbox (6.38258pt too wide) in paragraph at lines 234--234
-[][]|[]\T1/zplLF/m/n/10.95 (-20) Simon, Dan, 'Evo-lu-tion-ary op-ti-miza-tion al-go-rithms: biologically-
- []
-
-Package marginnote Info: Margin note 52.5 is on absolute page 52 on input line 234.
-Package marginnote Info: xpos seems to be 234.42798pt on input line 234.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
-Package marginnote Info: Margin note 52.6 is on absolute page 52 on input line 234.
-Package marginnote Info: xpos seems to be 234.42798pt on input line 234.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
-Package marginnote Info: Margin note 52.7 is on absolute page 52 on input line 234.
-Package marginnote Info: xpos seems to be 234.42798pt on input line 234.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
-Package marginnote Info: Margin note 52.8 is on absolute page 52 on input line 234.
-Package marginnote Info: xpos seems to be 234.42798pt on input line 234.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
-Package marginnote Info: Margin note 52.9 is on absolute page 53 on input line 234.
-Package marginnote Info: xpos seems to be 111.51266pt on input line 234.
-\openout4 = `manuscript_Stragiotti.mw'.
-
-[44] (manuscript_Stragiotti.mw)
-\openout4 = `manuscript_Stragiotti.mw'.
-
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
-Package marginnote Info: Margin note 53.1 is on absolute page 53 on input line 234.
-Package marginnote Info: xpos seems to be 111.51266pt on input line 234.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
-Package marginnote Info: Margin note 53.2 is on absolute page 53 on input line 234.
-Package marginnote Info: xpos seems to be 111.51266pt on input line 234.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
-Package marginnote Info: Margin note 53.3 is on absolute page 53 on input line 234.
-Package marginnote Info: xpos seems to be 111.51266pt on input line 234.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
 Package marginnote Info: Margin note 53.4 is on absolute page 53 on input line 234.
 Package marginnote Info: xpos seems to be 111.51266pt on input line 234.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
 Package marginnote Info: Margin note 53.5 is on absolute page 53 on input line 234.
 Package marginnote Info: xpos seems to be 111.51266pt on input line 234.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
 Package marginnote Info: Margin note 53.6 is on absolute page 53 on input line 234.
 Package marginnote Info: xpos seems to be 111.51266pt on input line 234.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
 Package marginnote Info: Margin note 53.7 is on absolute page 53 on input line 234.
 Package marginnote Info: xpos seems to be 111.51266pt on input line 234.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
@@ -10344,7 +10854,13 @@ Package marginnote Info: Margin note 53.10 is on absolute page 54 on input line 
 Package marginnote Info: xpos seems to be 234.42798pt on input line 234.
 \openout4 = `manuscript_Stragiotti.mw'.
 
- [45] (manuscript_Stragiotti.mw)
+ [45
+
+
+
+
+
+{C:/Program Files/MiKTeX/fonts/enc/dvips/base/8r.enc}] (manuscript_Stragiotti.mw)
 \openout4 = `manuscript_Stragiotti.mw'.
 
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
@@ -10357,6 +10873,11 @@ Package marginnote Info: Margin note 54.3 is on absolute page 54 on input line 2
 Package marginnote Info: xpos seems to be 234.42798pt on input line 234.
 Package marginnote Info: Margin note 54.4 is on absolute page 54 on input line 234.
 Package marginnote Info: xpos seems to be 234.42798pt on input line 234.
+
+Overfull \hbox (6.38258pt too wide) in paragraph at lines 234--234
+[][]|[]\T1/zplLF/m/n/10.95 (-20) Simon, Dan, 'Evo-lu-tion-ary op-ti-miza-tion al-go-rithms: biologically-
+ []
+
 Package marginnote Info: Margin note 54.5 is on absolute page 54 on input line 234.
 Package marginnote Info: xpos seems to be 234.42798pt on input line 234.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
@@ -10369,17 +10890,11 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input li
 Package marginnote Info: Margin note 54.8 is on absolute page 54 on input line 234.
 Package marginnote Info: xpos seems to be 234.42798pt on input line 234.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
-Package marginnote Info: Margin note 54.9 is on absolute page 54 on input line 234.
-Package marginnote Info: xpos seems to be 234.42798pt on input line 234.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
-Package marginnote Info: Margin note 54.10 is on absolute page 54 on input line 234.
-Package marginnote Info: xpos seems to be 234.42798pt on input line 234.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
-Package marginnote Info: Margin note 54.11 is on absolute page 55 on input line 234.
+Package marginnote Info: Margin note 54.9 is on absolute page 55 on input line 234.
 Package marginnote Info: xpos seems to be 111.51266pt on input line 234.
 \openout4 = `manuscript_Stragiotti.mw'.
 
- [46] (manuscript_Stragiotti.mw)
+[46] (manuscript_Stragiotti.mw)
 \openout4 = `manuscript_Stragiotti.mw'.
 
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
@@ -10397,7 +10912,6 @@ Package marginnote Info: xpos seems to be 111.51266pt on input line 234.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
 Package marginnote Info: Margin note 55.5 is on absolute page 55 on input line 234.
 Package marginnote Info: xpos seems to be 111.51266pt on input line 234.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
 Package marginnote Info: Margin note 55.6 is on absolute page 55 on input line 234.
 Package marginnote Info: xpos seems to be 111.51266pt on input line 234.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
@@ -10423,10 +10937,8 @@ Package marginnote Info: xpos seems to be 234.42798pt on input line 234.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
 Package marginnote Info: Margin note 56.2 is on absolute page 56 on input line 234.
 Package marginnote Info: xpos seems to be 234.42798pt on input line 234.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
 Package marginnote Info: Margin note 56.3 is on absolute page 56 on input line 234.
 Package marginnote Info: xpos seems to be 234.42798pt on input line 234.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
 Package marginnote Info: Margin note 56.4 is on absolute page 56 on input line 234.
 Package marginnote Info: xpos seems to be 234.42798pt on input line 234.
 Package marginnote Info: Margin note 56.5 is on absolute page 56 on input line 234.
@@ -10443,37 +10955,23 @@ Package marginnote Info: xpos seems to be 234.42798pt on input line 234.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
 Package marginnote Info: Margin note 56.9 is on absolute page 56 on input line 234.
 Package marginnote Info: xpos seems to be 234.42798pt on input line 234.
-
-Overfull \hbox (172.7223pt too wide) in paragraph at lines 234--234
-\T1/zplLF/m/it/10.95 (-20) En-gi-neer-ing \T1/zplLF/m/n/10.95 (-20) 41.8 (1998), _-eprint: https://onlinelibrary.wiley.com/doi/pdf/10.1002/%28SICI%291097-
- []
-
-
-Overfull \hbox (83.20598pt too wide) in paragraph at lines 234--234
-\T1/zplLF/m/n/10.95 (-20) 0207%2819980430%2941%3A8%3C1417%3A%3AAID-NME344%3E3.0.CO%3B2-
- []
-
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
+Package marginnote Info: Margin note 56.10 is on absolute page 56 on input line 234.
+Package marginnote Info: xpos seems to be 234.42798pt on input line 234.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
+Package marginnote Info: Margin note 56.11 is on absolute page 57 on input line 234.
+Package marginnote Info: xpos seems to be 111.51266pt on input line 234.
 \openout4 = `manuscript_Stragiotti.mw'.
 
-[48] (manuscript_Stragiotti.mw)
+ [48] (manuscript_Stragiotti.mw)
 \openout4 = `manuscript_Stragiotti.mw'.
 
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
 Package marginnote Info: Margin note 57.1 is on absolute page 57 on input line 234.
 Package marginnote Info: xpos seems to be 111.51266pt on input line 234.
-
-Overfull \hbox (0.6347pt too wide) in paragraph at lines 234--234
-[][]|[]\T1/zplLF/m/n/10.95 (-20) Rojas-Labanda, Su-sana and Stolpe, Math-ias, 'Au-to-matic penalty
- []
-
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
 Package marginnote Info: Margin note 57.2 is on absolute page 57 on input line 234.
 Package marginnote Info: xpos seems to be 111.51266pt on input line 234.
-
-Overfull \hbox (0.84326pt too wide) in paragraph at lines 234--234
-[][]|[]\T1/zplLF/m/n/10.95 (-20) Zhou, Ming, Fleury, Raphael, Shyy, Yaw-Kang, Thomas, Harold,
- []
-
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
 Package marginnote Info: Margin note 57.3 is on absolute page 57 on input line 234.
 Package marginnote Info: xpos seems to be 111.51266pt on input line 234.
@@ -10490,11 +10988,17 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input li
 Package marginnote Info: Margin note 57.7 is on absolute page 57 on input line 234.
 Package marginnote Info: xpos seems to be 111.51266pt on input line 234.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
-Package marginnote Info: Margin note 57.8 is on absolute page 58 on input line 234.
+Package marginnote Info: Margin note 57.8 is on absolute page 57 on input line 234.
+Package marginnote Info: xpos seems to be 111.51266pt on input line 234.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
+Package marginnote Info: Margin note 57.9 is on absolute page 57 on input line 234.
+Package marginnote Info: xpos seems to be 111.51266pt on input line 234.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
+Package marginnote Info: Margin note 57.10 is on absolute page 58 on input line 234.
 Package marginnote Info: xpos seems to be 234.42798pt on input line 234.
 \openout4 = `manuscript_Stragiotti.mw'.
 
-[49] (manuscript_Stragiotti.mw)
+ [49] (manuscript_Stragiotti.mw)
 \openout4 = `manuscript_Stragiotti.mw'.
 
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
@@ -10509,19 +11013,8 @@ Package marginnote Info: xpos seems to be 234.42798pt on input line 234.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
 Package marginnote Info: Margin note 58.4 is on absolute page 58 on input line 234.
 Package marginnote Info: xpos seems to be 234.42798pt on input line 234.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
 Package marginnote Info: Margin note 58.5 is on absolute page 58 on input line 234.
 Package marginnote Info: xpos seems to be 234.42798pt on input line 234.
-
-Overfull \hbox (11.13239pt too wide) in paragraph at lines 234--234
-[][]|[]\T1/zplLF/m/n/10.95 (-20) Coniglio, Si-mone, Mor-lier, Joseph, Gogu, Chris-tian, and Amargier,
- []
-
-
-Overfull \hbox (7.16951pt too wide) in paragraph at lines 234--234
-\T1/zplLF/m/it/10.95 (-20) of Com-pu-ta-tional Meth-ods in En-gi-neer-ing \T1/zplLF/m/n/10.95 (-20) 27.5 (Nov. 2020), pp. 1573^^U
- []
-
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
 Package marginnote Info: Margin note 58.6 is on absolute page 58 on input line 234.
 Package marginnote Info: xpos seems to be 234.42798pt on input line 234.
@@ -10529,12 +11022,21 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input li
 Package marginnote Info: Margin note 58.7 is on absolute page 58 on input line 234.
 Package marginnote Info: xpos seems to be 234.42798pt on input line 234.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
 Package marginnote Info: Margin note 58.8 is on absolute page 58 on input line 234.
 Package marginnote Info: xpos seems to be 234.42798pt on input line 234.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
-Package marginnote Info: Margin note 58.9 is on absolute page 59 on input line 234.
-Package marginnote Info: xpos seems to be 111.51266pt on input line 234.
+Package marginnote Info: Margin note 58.9 is on absolute page 58 on input line 234.
+Package marginnote Info: xpos seems to be 234.42798pt on input line 234.
+
+Overfull \hbox (172.7223pt too wide) in paragraph at lines 234--234
+\T1/zplLF/m/it/10.95 (-20) En-gi-neer-ing \T1/zplLF/m/n/10.95 (-20) 41.8 (1998), _-eprint: https://onlinelibrary.wiley.com/doi/pdf/10.1002/%28SICI%291097-
+ []
+
+
+Overfull \hbox (83.20598pt too wide) in paragraph at lines 234--234
+\T1/zplLF/m/n/10.95 (-20) 0207%2819980430%2941%3A8%3C1417%3A%3AAID-NME344%3E3.0.CO%3B2-
+ []
+
 \openout4 = `manuscript_Stragiotti.mw'.
 
 [50] (manuscript_Stragiotti.mw)
@@ -10543,9 +11045,19 @@ Package marginnote Info: xpos seems to be 111.51266pt on input line 234.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
 Package marginnote Info: Margin note 59.1 is on absolute page 59 on input line 234.
 Package marginnote Info: xpos seems to be 111.51266pt on input line 234.
+
+Overfull \hbox (0.6347pt too wide) in paragraph at lines 234--234
+[][]|[]\T1/zplLF/m/n/10.95 (-20) Rojas-Labanda, Su-sana and Stolpe, Math-ias, 'Au-to-matic penalty
+ []
+
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
 Package marginnote Info: Margin note 59.2 is on absolute page 59 on input line 234.
 Package marginnote Info: xpos seems to be 111.51266pt on input line 234.
+
+Overfull \hbox (0.84326pt too wide) in paragraph at lines 234--234
+[][]|[]\T1/zplLF/m/n/10.95 (-20) Zhou, Ming, Fleury, Raphael, Shyy, Yaw-Kang, Thomas, Harold,
+ []
+
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
 Package marginnote Info: Margin note 59.3 is on absolute page 59 on input line 234.
 Package marginnote Info: xpos seems to be 111.51266pt on input line 234.
@@ -10562,20 +11074,11 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input li
 Package marginnote Info: Margin note 59.7 is on absolute page 59 on input line 234.
 Package marginnote Info: xpos seems to be 111.51266pt on input line 234.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
-Package marginnote Info: Margin note 59.8 is on absolute page 59 on input line 234.
-Package marginnote Info: xpos seems to be 111.51266pt on input line 234.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
-Package marginnote Info: Margin note 59.9 is on absolute page 59 on input line 234.
-Package marginnote Info: xpos seems to be 111.51266pt on input line 234.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
-Package marginnote Info: Margin note 59.10 is on absolute page 59 on input line 234.
-Package marginnote Info: xpos seems to be 111.51266pt on input line 234.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
-Package marginnote Info: Margin note 59.11 is on absolute page 60 on input line 234.
+Package marginnote Info: Margin note 59.8 is on absolute page 60 on input line 234.
 Package marginnote Info: xpos seems to be 234.42798pt on input line 234.
 \openout4 = `manuscript_Stragiotti.mw'.
 
- [51] (manuscript_Stragiotti.mw)
+[51] (manuscript_Stragiotti.mw)
 \openout4 = `manuscript_Stragiotti.mw'.
 
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
@@ -10593,6 +11096,16 @@ Package marginnote Info: xpos seems to be 234.42798pt on input line 234.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
 Package marginnote Info: Margin note 60.5 is on absolute page 60 on input line 234.
 Package marginnote Info: xpos seems to be 234.42798pt on input line 234.
+
+Overfull \hbox (11.13239pt too wide) in paragraph at lines 234--234
+[][]|[]\T1/zplLF/m/n/10.95 (-20) Coniglio, Si-mone, Mor-lier, Joseph, Gogu, Chris-tian, and Amargier,
+ []
+
+
+Overfull \hbox (7.16951pt too wide) in paragraph at lines 234--234
+\T1/zplLF/m/it/10.95 (-20) of Com-pu-ta-tional Meth-ods in En-gi-neer-ing \T1/zplLF/m/n/10.95 (-20) 27.5 (Nov. 2020), pp. 1573^^U
+ []
+
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
 Package marginnote Info: Margin note 60.6 is on absolute page 60 on input line 234.
 Package marginnote Info: xpos seems to be 234.42798pt on input line 234.
@@ -10600,43 +11113,33 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input li
 Package marginnote Info: Margin note 60.7 is on absolute page 60 on input line 234.
 Package marginnote Info: xpos seems to be 234.42798pt on input line 234.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
 Package marginnote Info: Margin note 60.8 is on absolute page 60 on input line 234.
 Package marginnote Info: xpos seems to be 234.42798pt on input line 234.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
-Package marginnote Info: Margin note 60.9 is on absolute page 60 on input line 234.
-Package marginnote Info: xpos seems to be 234.42798pt on input line 234.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
-Package marginnote Info: Margin note 60.10 is on absolute page 61 on input line 234.
+Package marginnote Info: Margin note 60.9 is on absolute page 61 on input line 234.
 Package marginnote Info: xpos seems to be 111.51266pt on input line 234.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
-
-Overfull \hbox (25.19435pt too wide) in paragraph at lines 234--234
-[]\T1/zplLF/m/sc/10.95 (-20) url\T1/zplLF/m/n/10.95 (-20) : [][]$\T1/fvm/m/n/10.95 https : / / www . flickr . com / photos / volvob12b / 52833345708/$[][] 
- []
-
 \openout4 = `manuscript_Stragiotti.mw'.
 
 [52] (manuscript_Stragiotti.mw)
 \openout4 = `manuscript_Stragiotti.mw'.
 
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
 Package marginnote Info: Margin note 61.1 is on absolute page 61 on input line 234.
 Package marginnote Info: xpos seems to be 111.51266pt on input line 234.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
 Package marginnote Info: Margin note 61.2 is on absolute page 61 on input line 234.
 Package marginnote Info: xpos seems to be 111.51266pt on input line 234.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
-
-Overfull \hbox (13.98805pt too wide) in paragraph at lines 234--234
-[]\T1/zplLF/m/sc/10.95 (-20) url\T1/zplLF/m/n/10.95 (-20) : [][]$\T1/fvm/m/n/10.95 https : / / www . flickr . com / photos / gripspix / 1233292309/$[][] 
- []
-
 Package marginnote Info: Margin note 61.3 is on absolute page 61 on input line 234.
 Package marginnote Info: xpos seems to be 111.51266pt on input line 234.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
 Package marginnote Info: Margin note 61.4 is on absolute page 61 on input line 234.
 Package marginnote Info: xpos seems to be 111.51266pt on input line 234.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
 Package marginnote Info: Margin note 61.5 is on absolute page 61 on input line 234.
 Package marginnote Info: xpos seems to be 111.51266pt on input line 234.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
 Package marginnote Info: Margin note 61.6 is on absolute page 61 on input line 234.
 Package marginnote Info: xpos seems to be 111.51266pt on input line 234.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
@@ -10649,11 +11152,14 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input li
 Package marginnote Info: Margin note 61.9 is on absolute page 61 on input line 234.
 Package marginnote Info: xpos seems to be 111.51266pt on input line 234.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
-Package marginnote Info: Margin note 61.10 is on absolute page 62 on input line 234.
+Package marginnote Info: Margin note 61.10 is on absolute page 61 on input line 234.
+Package marginnote Info: xpos seems to be 111.51266pt on input line 234.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
+Package marginnote Info: Margin note 61.11 is on absolute page 62 on input line 234.
 Package marginnote Info: xpos seems to be 234.42798pt on input line 234.
 \openout4 = `manuscript_Stragiotti.mw'.
 
-[53] (manuscript_Stragiotti.mw)
+ [53] (manuscript_Stragiotti.mw)
 \openout4 = `manuscript_Stragiotti.mw'.
 
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
@@ -10678,36 +11184,45 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input li
 Package marginnote Info: Margin note 62.7 is on absolute page 62 on input line 234.
 Package marginnote Info: xpos seems to be 234.42798pt on input line 234.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
-Package marginnote Info: Margin note 62.8 is on absolute page 63 on input line 234.
-Package marginnote Info: xpos seems to be 111.51266pt on input line 234.
-\openout4 = `manuscript_Stragiotti.mw'.
-
- [54] (manuscript_Stragiotti.mw)
-\openout4 = `manuscript_Stragiotti.mw'.
-
+Package marginnote Info: Margin note 62.8 is on absolute page 62 on input line 234.
+Package marginnote Info: xpos seems to be 234.42798pt on input line 234.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
+Package marginnote Info: Margin note 62.9 is on absolute page 62 on input line 234.
+Package marginnote Info: xpos seems to be 234.42798pt on input line 234.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
+Package marginnote Info: Margin note 62.10 is on absolute page 63 on input line 234.
+Package marginnote Info: xpos seems to be 111.51266pt on input line 234.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
+
+Overfull \hbox (25.19435pt too wide) in paragraph at lines 234--234
+[]\T1/zplLF/m/sc/10.95 (-20) url\T1/zplLF/m/n/10.95 (-20) : [][]$\T1/fvm/m/n/10.95 https : / / www . flickr . com / photos / volvob12b / 52833345708/$[][] 
+ []
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+[54] (manuscript_Stragiotti.mw)
+\openout4 = `manuscript_Stragiotti.mw'.
+
 Package marginnote Info: Margin note 63.1 is on absolute page 63 on input line 234.
 Package marginnote Info: xpos seems to be 111.51266pt on input line 234.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
 Package marginnote Info: Margin note 63.2 is on absolute page 63 on input line 234.
 Package marginnote Info: xpos seems to be 111.51266pt on input line 234.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
+
+Overfull \hbox (13.98805pt too wide) in paragraph at lines 234--234
+[]\T1/zplLF/m/sc/10.95 (-20) url\T1/zplLF/m/n/10.95 (-20) : [][]$\T1/fvm/m/n/10.95 https : / / www . flickr . com / photos / gripspix / 1233292309/$[][] 
+ []
+
 Package marginnote Info: Margin note 63.3 is on absolute page 63 on input line 234.
 Package marginnote Info: xpos seems to be 111.51266pt on input line 234.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
 Package marginnote Info: Margin note 63.4 is on absolute page 63 on input line 234.
 Package marginnote Info: xpos seems to be 111.51266pt on input line 234.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
 Package marginnote Info: Margin note 63.5 is on absolute page 63 on input line 234.
 Package marginnote Info: xpos seems to be 111.51266pt on input line 234.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
 Package marginnote Info: Margin note 63.6 is on absolute page 63 on input line 234.
 Package marginnote Info: xpos seems to be 111.51266pt on input line 234.
-
-Overfull \hbox (2.30452pt too wide) in paragraph at lines 234--234
-\T1/zplLF/m/it/10.95 (-20) tural and Mul-ti-dis-ci-plinary Op-ti-miza-tion \T1/zplLF/m/n/10.95 (-20) 60.4 (Oct. 2019), pp. 1605^^U
- []
-
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
 Package marginnote Info: Margin note 63.7 is on absolute page 63 on input line 234.
 Package marginnote Info: xpos seems to be 111.51266pt on input line 234.
@@ -10715,7 +11230,10 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input li
 Package marginnote Info: Margin note 63.8 is on absolute page 63 on input line 234.
 Package marginnote Info: xpos seems to be 111.51266pt on input line 234.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
-Package marginnote Info: Margin note 63.9 is on absolute page 64 on input line 234.
+Package marginnote Info: Margin note 63.9 is on absolute page 63 on input line 234.
+Package marginnote Info: xpos seems to be 111.51266pt on input line 234.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
+Package marginnote Info: Margin note 63.10 is on absolute page 64 on input line 234.
 Package marginnote Info: xpos seems to be 234.42798pt on input line 234.
 \openout4 = `manuscript_Stragiotti.mw'.
 
@@ -10725,24 +11243,9 @@ Package marginnote Info: xpos seems to be 234.42798pt on input line 234.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
 Package marginnote Info: Margin note 64.1 is on absolute page 64 on input line 234.
 Package marginnote Info: xpos seems to be 234.42798pt on input line 234.
-
-Overfull \hbox (2.2503pt too wide) in paragraph at lines 234--234
-\T1/zplLF/m/n/10.95 (-20) tures', \T1/zplLF/m/it/10.95 (-20) 25th AIAA/AHS Adap-tive Struc-tures Con-fer-ence\T1/zplLF/m/n/10.95 (-20) , Grapevine,
- []
-
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
 Package marginnote Info: Margin note 64.2 is on absolute page 64 on input line 234.
 Package marginnote Info: xpos seems to be 234.42798pt on input line 234.
-
-Overfull \hbox (2.86125pt too wide) in paragraph at lines 234--234
-[][]|[]\T1/zplLF/m/n/10.95 (-20) Costa, Al-lan, Jenett, Ben-jamin, Kos-tit-syna, Irina, Abdel-Rahman,
- []
-
-
-Overfull \hbox (19.36005pt too wide) in paragraph at lines 234--234
-\T1/zplLF/m/n/10.95 (-20) Ap-proaches to Re-con-fig-urable As-sem-bly Sys-tems', \T1/zplLF/m/it/10.95 (-20) arXiv:2008.11925
- []
-
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
 Package marginnote Info: Margin note 64.3 is on absolute page 64 on input line 234.
 Package marginnote Info: xpos seems to be 234.42798pt on input line 234.
@@ -10763,17 +11266,12 @@ Package marginnote Info: Margin note 64.8 is on absolute page 65 on input line 2
 Package marginnote Info: xpos seems to be 111.51266pt on input line 234.
 \openout4 = `manuscript_Stragiotti.mw'.
 
-[56] (manuscript_Stragiotti.mw)
+ [56] (manuscript_Stragiotti.mw)
 \openout4 = `manuscript_Stragiotti.mw'.
 
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
 Package marginnote Info: Margin note 65.1 is on absolute page 65 on input line 234.
 Package marginnote Info: xpos seems to be 111.51266pt on input line 234.
-
-Overfull \hbox (0.87306pt too wide) in paragraph at lines 234--234
-\T1/zplLF/m/n/10.95 (-20) 'In-fill Op-ti-miza-tion for Ad-di-tive Man-u-fac-tur-ing^^VApproaching
- []
-
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
 Package marginnote Info: Margin note 65.2 is on absolute page 65 on input line 234.
 Package marginnote Info: xpos seems to be 111.51266pt on input line 234.
@@ -10789,22 +11287,46 @@ Package marginnote Info: xpos seems to be 111.51266pt on input line 234.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
 Package marginnote Info: Margin note 65.6 is on absolute page 65 on input line 234.
 Package marginnote Info: xpos seems to be 111.51266pt on input line 234.
+
+Overfull \hbox (2.30452pt too wide) in paragraph at lines 234--234
+\T1/zplLF/m/it/10.95 (-20) tural and Mul-ti-dis-ci-plinary Op-ti-miza-tion \T1/zplLF/m/n/10.95 (-20) 60.4 (Oct. 2019), pp. 1605^^U
+ []
+
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
 Package marginnote Info: Margin note 65.7 is on absolute page 65 on input line 234.
 Package marginnote Info: xpos seems to be 111.51266pt on input line 234.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
-Package marginnote Info: Margin note 65.8 is on absolute page 66 on input line 234.
+Package marginnote Info: Margin note 65.8 is on absolute page 65 on input line 234.
+Package marginnote Info: xpos seems to be 111.51266pt on input line 234.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
+Package marginnote Info: Margin note 65.9 is on absolute page 66 on input line 234.
 Package marginnote Info: xpos seems to be 234.42798pt on input line 234.
 \openout4 = `manuscript_Stragiotti.mw'.
 
 [57] (manuscript_Stragiotti.mw)
 \openout4 = `manuscript_Stragiotti.mw'.
 
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
 Package marginnote Info: Margin note 66.1 is on absolute page 66 on input line 234.
 Package marginnote Info: xpos seems to be 234.42798pt on input line 234.
+
+Overfull \hbox (2.2503pt too wide) in paragraph at lines 234--234
+\T1/zplLF/m/n/10.95 (-20) tures', \T1/zplLF/m/it/10.95 (-20) 25th AIAA/AHS Adap-tive Struc-tures Con-fer-ence\T1/zplLF/m/n/10.95 (-20) , Grapevine,
+ []
+
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
 Package marginnote Info: Margin note 66.2 is on absolute page 66 on input line 234.
 Package marginnote Info: xpos seems to be 234.42798pt on input line 234.
+
+Overfull \hbox (2.86125pt too wide) in paragraph at lines 234--234
+[][]|[]\T1/zplLF/m/n/10.95 (-20) Costa, Al-lan, Jenett, Ben-jamin, Kos-tit-syna, Irina, Abdel-Rahman,
+ []
+
+
+Overfull \hbox (19.36005pt too wide) in paragraph at lines 234--234
+\T1/zplLF/m/n/10.95 (-20) Ap-proaches to Re-con-fig-urable As-sem-bly Sys-tems', \T1/zplLF/m/it/10.95 (-20) arXiv:2008.11925
+ []
+
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
 Package marginnote Info: Margin note 66.3 is on absolute page 66 on input line 234.
 Package marginnote Info: xpos seems to be 234.42798pt on input line 234.
@@ -10821,18 +11343,21 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input li
 Package marginnote Info: Margin note 66.7 is on absolute page 66 on input line 234.
 Package marginnote Info: xpos seems to be 234.42798pt on input line 234.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
-Package marginnote Info: Margin note 66.8 is on absolute page 66 on input line 234.
-Package marginnote Info: xpos seems to be 234.42798pt on input line 234.
-Package marginnote Info: Margin note 66.9 is on absolute page 67 on input line 234.
+Package marginnote Info: Margin note 66.8 is on absolute page 67 on input line 234.
 Package marginnote Info: xpos seems to be 111.51266pt on input line 234.
 \openout4 = `manuscript_Stragiotti.mw'.
 
- [58] (manuscript_Stragiotti.mw)
+[58] (manuscript_Stragiotti.mw)
 \openout4 = `manuscript_Stragiotti.mw'.
 
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
 Package marginnote Info: Margin note 67.1 is on absolute page 67 on input line 234.
 Package marginnote Info: xpos seems to be 111.51266pt on input line 234.
+
+Overfull \hbox (129.82486pt too wide) in paragraph at lines 234--234
+\T1/zplLF/m/it/10.95 (-20) gi-neer-ing \T1/zplLF/m/n/10.95 (-20) 113.8 (2018), _-eprint: https://onlinelibrary.wiley.com/doi/pdf/10.1002/nme.5575,
+ []
+
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
 Package marginnote Info: Margin note 67.2 is on absolute page 67 on input line 234.
 Package marginnote Info: xpos seems to be 111.51266pt on input line 234.
@@ -10845,20 +11370,18 @@ Package marginnote Info: xpos seems to be 111.51266pt on input line 234.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
 Package marginnote Info: Margin note 67.5 is on absolute page 67 on input line 234.
 Package marginnote Info: xpos seems to be 111.51266pt on input line 234.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
 Package marginnote Info: Margin note 67.6 is on absolute page 67 on input line 234.
 Package marginnote Info: xpos seems to be 111.51266pt on input line 234.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
 Package marginnote Info: Margin note 67.7 is on absolute page 67 on input line 234.
 Package marginnote Info: xpos seems to be 111.51266pt on input line 234.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
-Package marginnote Info: Margin note 67.8 is on absolute page 67 on input line 234.
-Package marginnote Info: xpos seems to be 111.51266pt on input line 234.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
-Package marginnote Info: Margin note 67.9 is on absolute page 68 on input line 234.
+Package marginnote Info: Margin note 67.8 is on absolute page 68 on input line 234.
 Package marginnote Info: xpos seems to be 234.42798pt on input line 234.
 \openout4 = `manuscript_Stragiotti.mw'.
 
- [59] (manuscript_Stragiotti.mw)
+[59] (manuscript_Stragiotti.mw)
 \openout4 = `manuscript_Stragiotti.mw'.
 
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
@@ -10867,10 +11390,131 @@ Package marginnote Info: xpos seems to be 234.42798pt on input line 234.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
 Package marginnote Info: Margin note 68.2 is on absolute page 68 on input line 234.
 Package marginnote Info: xpos seems to be 234.42798pt on input line 234.
+
+Overfull \hbox (1.96935pt too wide) in paragraph at lines 234--234
+\T1/zplLF/m/n/10.95 (-20) chine learning-combined topol-ogy op-ti-miza-tion for func-tionary
+ []
+
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
+Package marginnote Info: Margin note 68.3 is on absolute page 68 on input line 234.
+Package marginnote Info: xpos seems to be 234.42798pt on input line 234.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
+Package marginnote Info: Margin note 68.4 is on absolute page 68 on input line 234.
+Package marginnote Info: xpos seems to be 234.42798pt on input line 234.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
+Package marginnote Info: Margin note 68.5 is on absolute page 68 on input line 234.
+Package marginnote Info: xpos seems to be 234.42798pt on input line 234.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
+Package marginnote Info: Margin note 68.6 is on absolute page 68 on input line 234.
+Package marginnote Info: xpos seems to be 234.42798pt on input line 234.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
+Package marginnote Info: Margin note 68.7 is on absolute page 68 on input line 234.
+Package marginnote Info: xpos seems to be 234.42798pt on input line 234.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
+Package marginnote Info: Margin note 68.8 is on absolute page 68 on input line 234.
+Package marginnote Info: xpos seems to be 234.42798pt on input line 234.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
 \openout4 = `manuscript_Stragiotti.mw'.
 
- [60] (manuscript_Stragiotti.mw)
+[60] (manuscript_Stragiotti.mw)
+\openout4 = `manuscript_Stragiotti.mw'.
+
+Package marginnote Info: Margin note 69.1 is on absolute page 69 on input line 234.
+Package marginnote Info: xpos seems to be 111.51266pt on input line 234.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
+Package marginnote Info: Margin note 69.2 is on absolute page 69 on input line 234.
+Package marginnote Info: xpos seems to be 111.51266pt on input line 234.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
+Package marginnote Info: Margin note 69.3 is on absolute page 69 on input line 234.
+Package marginnote Info: xpos seems to be 111.51266pt on input line 234.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
+Package marginnote Info: Margin note 69.4 is on absolute page 69 on input line 234.
+Package marginnote Info: xpos seems to be 111.51266pt on input line 234.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
+Package marginnote Info: Margin note 69.5 is on absolute page 69 on input line 234.
+Package marginnote Info: xpos seems to be 111.51266pt on input line 234.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
+Package marginnote Info: Margin note 69.6 is on absolute page 69 on input line 234.
+Package marginnote Info: xpos seems to be 111.51266pt on input line 234.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
+Package marginnote Info: Margin note 69.7 is on absolute page 69 on input line 234.
+Package marginnote Info: xpos seems to be 111.51266pt on input line 234.
+Package marginnote Info: Margin note 69.8 is on absolute page 69 on input line 234.
+Package marginnote Info: xpos seems to be 111.51266pt on input line 234.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
+Package marginnote Info: Margin note 69.9 is on absolute page 70 on input line 234.
+Package marginnote Info: xpos seems to be 234.42798pt on input line 234.
+\openout4 = `manuscript_Stragiotti.mw'.
+
+ [61] (manuscript_Stragiotti.mw)
+\openout4 = `manuscript_Stragiotti.mw'.
+
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
+Package marginnote Info: Margin note 70.1 is on absolute page 70 on input line 234.
+Package marginnote Info: xpos seems to be 234.42798pt on input line 234.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
+Package marginnote Info: Margin note 70.2 is on absolute page 70 on input line 234.
+Package marginnote Info: xpos seems to be 234.42798pt on input line 234.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
+Package marginnote Info: Margin note 70.3 is on absolute page 70 on input line 234.
+Package marginnote Info: xpos seems to be 234.42798pt on input line 234.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
+Package marginnote Info: Margin note 70.4 is on absolute page 70 on input line 234.
+Package marginnote Info: xpos seems to be 234.42798pt on input line 234.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
+Package marginnote Info: Margin note 70.5 is on absolute page 70 on input line 234.
+Package marginnote Info: xpos seems to be 234.42798pt on input line 234.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
+Package marginnote Info: Margin note 70.6 is on absolute page 70 on input line 234.
+Package marginnote Info: xpos seems to be 234.42798pt on input line 234.
+Package marginnote Info: Margin note 70.7 is on absolute page 70 on input line 234.
+Package marginnote Info: xpos seems to be 234.42798pt on input line 234.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
+Package marginnote Info: Margin note 70.8 is on absolute page 70 on input line 234.
+Package marginnote Info: xpos seems to be 234.42798pt on input line 234.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
+Package marginnote Info: Margin note 70.9 is on absolute page 71 on input line 234.
+Package marginnote Info: xpos seems to be 111.51266pt on input line 234.
+\openout4 = `manuscript_Stragiotti.mw'.
+
+ [62] (manuscript_Stragiotti.mw)
+\openout4 = `manuscript_Stragiotti.mw'.
+
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
+Package marginnote Info: Margin note 71.1 is on absolute page 71 on input line 234.
+Package marginnote Info: xpos seems to be 111.51266pt on input line 234.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
+Package marginnote Info: Margin note 71.2 is on absolute page 71 on input line 234.
+Package marginnote Info: xpos seems to be 111.51266pt on input line 234.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
+Package marginnote Info: Margin note 71.3 is on absolute page 71 on input line 234.
+Package marginnote Info: xpos seems to be 111.51266pt on input line 234.
+Package marginnote Info: Margin note 71.4 is on absolute page 71 on input line 234.
+Package marginnote Info: xpos seems to be 111.51266pt on input line 234.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
+Package marginnote Info: Margin note 71.5 is on absolute page 71 on input line 234.
+Package marginnote Info: xpos seems to be 111.51266pt on input line 234.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
+Package marginnote Info: Margin note 71.6 is on absolute page 71 on input line 234.
+Package marginnote Info: xpos seems to be 111.51266pt on input line 234.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
+Package marginnote Info: Margin note 71.7 is on absolute page 71 on input line 234.
+Package marginnote Info: xpos seems to be 111.51266pt on input line 234.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
+Package marginnote Info: Margin note 71.8 is on absolute page 71 on input line 234.
+Package marginnote Info: xpos seems to be 111.51266pt on input line 234.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
+Package marginnote Info: Margin note 71.9 is on absolute page 72 on input line 234.
+Package marginnote Info: xpos seems to be 234.42798pt on input line 234.
+\openout4 = `manuscript_Stragiotti.mw'.
+
+ [63] (manuscript_Stragiotti.mw)
+\openout4 = `manuscript_Stragiotti.mw'.
+
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 234.
+\openout4 = `manuscript_Stragiotti.mw'.
+
+ [64] (manuscript_Stragiotti.mw)
 \openout4 = `manuscript_Stragiotti.mw'.
 
 *geometry* verbose mode - [ newgeometry ] result:
@@ -10910,6 +11554,70 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input li
 runsystem(makeindex manuscript_Stragiotti.idx)...executed safely (allowed).
 
  (manuscript_Stragiotti.ind)
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
@@ -11951,14 +12659,6 @@ runsystem(makeindex manuscript_Stragiotti.idx)...executed safely (allowed).
 \openout4 = `manuscript_Stragiotti.mw'.
 
 )
-
-LaTeX Warning: There were undefined references.
-
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                manuscript_Stragiotti
-(biblatex)                and rerun LaTeX afterwards.
-
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
@@ -11978,17 +12678,17 @@ Package logreq Info: Writing requests to 'manuscript_Stragiotti.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 90697 strings out of 476331
- 2111540 string characters out of 5797589
- 3774077 words of memory out of 5000000
- 108666 multiletter control sequences out of 15000+600000
+ 90966 strings out of 476331
+ 2119180 string characters out of 5797589
+ 3845956 words of memory out of 5000000
+ 108907 multiletter control sequences out of 15000+600000
  744271 words of font info for 501 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  133i,20n,159p,10658b,3653s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newpx/NewPXBMI.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newpx/NewPXBMI_gnu.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newpx/NewPXMI.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newpx/NewPXMI_gnu.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/bera/fvmr8a.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newpx/pxbsys.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newpx/pxmiaX.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newpx/pxsys.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/tex-gyre/qhvr.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newtx/txbexs.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newtx/txexs.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newtx/txmiaSTbb.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newpx/zplb.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newpx/zplr.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newpx/zplri.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/boondox/zxxrw8a.pfb>
-Output written on manuscript_Stragiotti.pdf (68 pages, 9638118 bytes).
+Output written on manuscript_Stragiotti.pdf (72 pages, 9665264 bytes).
 PDF statistics:
- 2696 PDF objects out of 2984 (max. 8388607)
- 424 named destinations out of 1000 (max. 500000)
+ 2803 PDF objects out of 2984 (max. 8388607)
+ 444 named destinations out of 1000 (max. 500000)
  89067 words of extra memory for PDF output out of 89155 (max. 10000000)
 
