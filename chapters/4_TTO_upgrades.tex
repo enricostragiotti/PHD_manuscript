@@ -2,7 +2,7 @@
 \glsresetall % reset glossary
 \chapter{Enriching the classic TTO formulation with advanced mechanical constraints} \label{chp:04}
 \label{chap:04}
-Chapter 3 highlighted some inherent limitations of the truss modeling and the conventional optimization formulation of \gls{tto}. These limitations include the minimum slenderness problem and the absence of local buckling and kinematic compatibility constraints. The primary objective of this chapter is to propose a comprehensive formulation capable of addressing these shortcomings. As we will observe, the resulting formulation, if solved in its original form, tends to yield solutions characterized by numerous active and intersecting bars. To mitigate this, we propose a two-step optimization algorithm that offers a means to reduce the solution complexity. Additionally, we introduce a heuristic designed to reduce the influence of the starting point within this two-step optimization algorithm. \marginnote{Part of the content presented in this chapter has been published \todo{finish}.}
+Chapter \cite{chp:03} highlighted some inherent limitations of the truss modeling and the conventional optimization formulation of \gls{tto}. These limitations include the minimum slenderness problem and the absence of local buckling and kinematic compatibility constraints. The primary objective of this chapter is to propose a comprehensive formulation capable of addressing these shortcomings. As we will observe, the resulting formulation, if solved in its original form, tends to yield solutions characterized by numerous active and intersecting bars. To mitigate this, we propose a two-step optimization algorithm that offers a means to reduce the solution complexity. Additionally, we introduce a heuristic designed to reduce the influence of the starting point within this two-step optimization algorithm. \marginnote{Part of the content presented in this chapter has been published \todo{finish}.}
 
 In \secref{sec:04_constr}, we detail and model the various mechanical constraints applied in the context of \gls{tto}. Subsequently, in \secref{sec:04_formulation_and_algo}, a comprehensive formulation is presented along with an accompanying optimization algorithm. Through the utilization of this optimization algorithm, we are able to maintain control over the complexity of the design. Finally, in \secref{sec:04_numerical_app}, we put the proposed formulation to the test, applying it to various 2D and 3D test cases sourced from the literature, as well as novel cases. The objective is to assess its capabilities and numerical performance.
 
@@ -63,18 +63,16 @@ Remembering that for a circular cross-section $I = \pi r_i^4/4$, we can write
 \begin{equation}
     R_{\mathrm{g},i} = \frac{r_i}{2}.
 \end{equation}
-The minimum slenderness limit constraints are then stated as:
+The minimum slenderness limit constraints $\vect{g}_{\text{slend}}$ are then stated as:
 \begin{equation} \label{eq:04_slend_constraints}
-    a_i \leq \frac{4 \pi \ell_i^2}{\lambda_{\text{max}}}, \quad \forall i \in [1,\ldots, N_{\text{el}}]
-    \tag{$\vect{g}_{\text{slend}}$}
+    \vect{g}_{\text{slend}}:=a_i \leq \frac{4 \pi \ell_i^2}{\lambda_{\text{max}}}, \quad \forall i \in [1,\ldots, N_{\text{el}}]
 \end{equation}
 for a fixed $\lambda_{\text{max}}$. In this thesis we set $\lambda_{\text{max}}=15$.
 
 \subsection{Local and topological buckling constraints}
 Adding local buckling constraints to the optimization formulation is fundamental, as ultralight truss structures are often dominated by this mode of failure \sidecite{sigmund_non-optimality_2016}. By imposing local buckling constraints over a \gls{tto} problem (where the lower bound for the members' cross-sectional areas is 0), the optimization domain becomes disjointed \sidecite{cheng_aspects_1995}. The solution is to be searched inside a degenerate space of the design space of the optimization, known in the literature as singular optimum \sidecite{guo_new_2001}. Stolpe \sidecite{stolpe_note_2003} showed how using the \gls{sand} formulation with local buckling and kinematic compatibility constraints, it is possible to find well-optimized structures without the use of relaxation techniques. The authors, however, point out how the solution is still very sensitive to the initialization point of the \gls{nlp} formulation. The local buckling constraints $\vect{g}_{\text{buck}}$ are stated using Euler's critical load formula as:
 \begin{equation}
-    q_i  + \frac{s_i a_i^2}{\ell_i^2} \geq 0 \quad \forall i \in [1,\ldots, N_{\text{el}}],
-    \tag{$\vect{g}_{\text{buck}}$}
+    \vect{g}_{\text{buck}}:=q_i  + \frac{s_i a_i^2}{\ell_i^2} \geq 0 \quad \forall i \in [1,\ldots, N_{\text{el}}],
     \label{eq:04_buck}
 \end{equation}
 where $s_i$ is a parameter dependent on the member material and section topology as follows:
@@ -84,7 +82,7 @@ where $s_i$ is a parameter dependent on the member material and section topology
 \end{equation}
 $\beta_i=I_i/a^2_i$ is a positive constant dependent on the moment of inertia and the section of the $i$-th bar, and $E$ is Young's modulus of the material. Assuming that the shape of the cross-section is identical over the whole structure and is independent of $a$, it follows that  $\beta_i = \beta$ and $s_i = s, \; \forall i \in [1,\ldots, N_{\text{el}}]$.
 
-Direct application of the local buckling constraint \eqrefnotext{eq:04_buck} in the optimization formulation tends to create "chains" of unstable compressive members \sidecite{bendsoe_optimization_1995, zhou_difficulties_1996, rozvany_difficulties_1996}. This problem is known in the literature as topological buckling \sidecite{achtziger_local_1999}, as the definition of the compressive chains is a function of the topology of the structure, and is one of the elements of the nodal stability of the structure. Additional forms of structure instability, such as global buckling \sidecite{ben-tal_optimal_2000,kocvara_modelling_2002, neves_generalized_1995, ferrari_topology_2021} or the use of lateral perturbing forces to obtain nodal stability \sidecite{tyas_practical_2006,mela_resolving_2014} have been studied in the literature. However, since they are beyond the scope of this work, they will not be discussed further.
+Direct application of the local buckling constraint $\vect{g}_{\text{buck}}$ in the optimization formulation tends to create "chains" of unstable compressive members \sidecite{bendsoe_optimization_1995, zhou_difficulties_1996, rozvany_difficulties_1996}. This problem is known in the literature as topological buckling \sidecite{achtziger_local_1999}, as the definition of the compressive chains is a function of the topology of the structure, and is one of the elements of the nodal stability of the structure. Additional forms of structure instability, such as global buckling \sidecite{ben-tal_optimal_2000,kocvara_modelling_2002, neves_generalized_1995, ferrari_topology_2021} or the use of lateral perturbing forces to obtain nodal stability \sidecite{tyas_practical_2006,mela_resolving_2014} have been studied in the literature. However, since they are beyond the scope of this work, they will not be discussed further.
 
 \begin{figure}
     \centering
@@ -106,7 +104,7 @@ If the hinge between bars 1 and 2 is deleted, we obtain the structure pictured i
     \label{eq:04_chain_2}
 \end{equation}
 
-Combining \eqsref{eq:04_chain_1}, \eqrefnotext{eq:04_chain_2} and observing that $q_1=q_2=q_3=F$, it is now trivial to demonstrate that $a_3=2a$. Constraint \eqrefnotext{eq:04_chain_2} leads, then, to more voluminous structures compared to constraint \eqrefnotext{eq:04_chain_1}. For that reason, even if we consider the ground structure given in \figref{fig:04_chain_buck}c composed by the superposition of the ground structures in \figref{fig:04_chain_buck}a and \figref{fig:04_chain_buck}b, the optimization with a uniform initialization tends to converge to the solution $\vect{a}^*=[a,a,0]$, unstable but lighter than the physical solution $\vect{a}_p^*=[0,0,2a]$. 
+Combining \eqsref{eq:04_chain_1} \eqrefnotext{eq:04_chain_2} and observing that $q_1=q_2=q_3=F$, it is now trivial to demonstrate that $a_3=2a$. Constraint \eqrefnotext{eq:04_chain_2} leads, then, to more voluminous structures compared to constraint \eqrefnotext{eq:04_chain_1}. For that reason, even if we consider the ground structure given in \figref{fig:04_chain_buck}c composed by the superposition of the ground structures in \figref{fig:04_chain_buck}a and \figref{fig:04_chain_buck}b, the optimization with a uniform initialization tends to converge to the solution $\vect{a}^*=[a,a,0]$, unstable but lighter than the physical solution $\vect{a}_p^*=[0,0,2a]$. 
 
 The easiest way to get rid of the instability of the compressive chains is to post-process the optimized structure and remove the unstable hinges between the compressive bars. Doing that, the local buckling constraints are not satisfied anymore as the effective buckling length has increased. It is, then, necessary to calculate the section of the new compressive bars to comply with the newly introduced buckling constraints. As extensively shown by Achtziger \sidecite{achtziger_local_1999b}, this post-processing phase leads to structures that are less optimal compared to the ones we could obtain if we take into account the topological buckling in the optimization in the first place.
 
@@ -131,8 +129,7 @@ To optimize test cases that result in statically indeterminate structures, such 
 The kinematic compatibility constraints restrict the displacement field $\vect{U} = [U_1, \ldots,U_{N_{\text{dof}}}]^T$ in such a way that strains $\varepsilon_i$ and internal stresses $\sigma_i$ comply with Hooke's law $\sigma_i = E_i \varepsilon_i$ with $i \in [1,\ldots, N_{\text{el}}]$. Recalling that in a truss the relationship between nodal displacements and member deformations is $\vect{b}^T_i \vect{U} = \ell_i \varepsilon_i$ with $\vect{b}$ as the $i$-th column of the $\matr{B}$ matrix, we can formulate the kinematic compatibility constraints $\vect{g}_{\textrm{comp}}$ as:
 \begin{equation}
 \label{eq:04_compatib}
-     q_i - \frac{a_i E_i}{\ell_i} \vect{b}_i^T\vect{U}  = 0  \quad \forall i \in [1,\ldots, N_{\text{el}}].
-     \tag{$\vect{g}_{\textrm{comp}}$}
+\vect{g}_{\textrm{comp}}:=q_i - \frac{a_i E_i}{\ell_i} \vect{b}_i^T\vect{U}  = 0  \quad \forall i \in [1,\ldots, N_{\text{el}}].
 \end{equation}
 Kinematic compatibility constraints are non-linear as the design variable $\vect{q}$ is dependent on $\vect{a}$ and $\vect{U}$.
 
@@ -158,7 +155,7 @@ The formulation has been extended to multiple load cases given by $N_p$ external
 The formulation follows the \gls{sand} approach \sidecite{sankaranarayanan_truss_1994}, where, in addition to the members' cross-sectional area $\vect{a}$, the member forces $\vect{q}$ and the structure displacements $\vect{U}$ are used as state variables. One of the advantages of \gls{sand} approach is that the state variables are independent of each other and, thus, the sensitivity calculation of the constraints functions is usually simpler and leads to sparse partial derivatives. Additionally, compared to \gls{nand} formulations, the problem stays well-posed even if the cross-sectional area goes to 0. As the linear system $\matr{K}\vect{U}=\vect{f}$ is never explicitly solved during the optimization, it is not necessary to impose a lower bound on the members' cross-sectional area $\vect{a}$ to avoid a singular stiffness matrix. The last important advantage is that thanks to $\vect{U}$ being design variables, it is trivial to add bound constraints on the nodal displacements of the structure if needed.
 
 \subsection{Optimization strategy} \label{sec:04_2step_opt}
-Formulation \eqrefnotext{eq:04_optim_complete} presents multiple constraints and design variables for every physical bar of the ground structure. The quantity of constraints creates a highly non-linear design space and it proved to be hard for the optimizer to bring to zero the value of the cross-sectional areas. If a \gls{nlp} optimizer is directly used on Formulation \eqrefnotext{eq:04_optim_complete}, the resulting structure will be composed of a multitude of intersecting bars. The optimizer is, thus, working like it is performing sizing optimization instead of topology optimization. 
+Formulation \eqrefnotext{eq:04_optim_complete} presents multiple constraints and design variables for every physical bar of the ground structure. The quantity of constraints creates a highly multimodal problem and it proved to be hard for the optimizer to bring to zero the value of the cross-sectional areas. If a \gls{nlp} optimizer is directly used on Formulation \eqrefnotext{eq:04_optim_complete}, the resulting structure will be composed of a multitude of intersecting bars. The optimizer is, thus, working like it is performing sizing optimization instead of topology optimization--\ie in the final design all the members of the ground structure are active. 
 
 Inspired by the early works by Reinschmidt \sidecite{reinschmidt_applications_1974}, we propose a novel two-step optimization strategy in which a first optimization solving a relaxed formulation is used to find a good starting point for the second optimization, solving the full Formulation \eqrefnotext{eq:04_optim_complete}. Doing that way, the first optimization explores extensively the relaxed and more regular design space and finds simpler structures, while the second optimization refines the solution imposing additional mechanical constraints. The complete solving strategy is graphically presented in \figref{fig:04_sol_alg}.
 
@@ -200,7 +197,7 @@ The linearized local buckling constraints $\vect{\tilde{g}}_{\textrm{buck}}$ are
     \label{eq:04_buck_con_lin}
     \tag{$\vect{\tilde{g}}_{\textrm{buck}}$}
 \end{equation}
-where superscript $\sim$ indicates linearized functions and corresponding variables.
+where superscript $\sim$ indicates linearized functions and variables.
 
 \begin{figure}
     \centering
@@ -224,7 +221,7 @@ We can now state the relaxed linearized sub-problem $\tilde{\mathbb{P}}_2$ obtai
     \label{eq:04_optim_no_constr_lp}
 \end{equation}
 
-Since the objective function and all of its constraints are linear, we can approximate the solution of \eqrefnotext{eq:04_optim_no_constr} by iteratively solving the sub-problem \eqrefnotext{eq:04_optim_no_constr_lp}. At every iteration $k$, the vector of cross-sectional areas $\vect{a}^k$ is used to evaluate the linearization point $\vect{P}_{k}$ and calculate the set of linearized buckling constraints $\vect{\tilde{g}}_{\textrm{buck}}$ (see \figref{fig:04_SLP}). The sub-problem \eqrefnotext{eq:04_optim_no_constr_lp} is, then, solved using a \gls{lp} solver, and the updated vector of cross-sectional areas $\vect{a}^{k+1}$ is used to evaluate the set of linearized buckling constraints of the $k+1$ iteration. These steps are repeated until convergence \ie when $\norm{\Delta \vect{x}}_\infty\leq \text{tol}_{slp}$, where $\Delta \vect{x}$ represents the difference of the design variable vector $\vect{x}$ between two successive iterations. The vector $\vect{x}$ is scaled so that the difference $\Delta \vect{x}$ gives coherent results for the different physical quantities (cross-sectional areas and forces).
+Since the objective function and all of its constraints are linear, we can approximate the solution of \eqrefnotext{eq:04_optim_no_constr} by iteratively solving the sub-problem \eqrefnotext{eq:04_optim_no_constr_lp}. At every iteration $k$, the vector of cross-sectional areas $\vect{a}^k$ is used to evaluate the linearization point $\vect{P}_{k}$ and calculate the set of linearized buckling constraints $\vect{\tilde{g}}_{\textrm{buck}}$ (see \figref{fig:04_SLP}). The sub-problem \eqrefnotext{eq:04_optim_no_constr_lp} is, then, solved using a \gls{lp} solver, and the updated vector of cross-sectional areas $\vect{a}^{k+1}$ is used to evaluate the set of linearized buckling constraints of the $k+1$ iteration. These steps are repeated until convergence \ie when $\norm{\Delta \vect{x}}_\infty\leq \text{tol}_{slp}$, where $\Delta \vect{x}$ represents the difference of the design variable vector $\vect{x}$ between two successive iterations.
 
 \subsection{Handling local minima: reinitialization strategy}
 \label{sec:04_reinit}
@@ -250,7 +247,7 @@ Since the objective function and all of its constraints are linear, we can appro
     \label{fig:04_reinit_strat}
 \end{figure}
 
-If at the end of iteration $k-1$ the cross-sectional area of bar $i$, $\vect{a}^k_{i}$, becomes very small, the gradient of the corresponding local buckling constraint at iteration $k$ will tend towards 0 and the feasible domain will be extremely reduced (see \figref{fig:04_tiny-area}). Any bar with near-zero sections will remain as such in future iterations since there is no incentive for the \gls{slp} optimizer to increase its value. This is one of the possible reasons why the \gls{slp} optimizer gets stuck in local minima.
+If at the end of iteration $k-1$ the cross-sectional area of bar $i$, $\vect{a}^k_{i}$, becomes very small, the gradient of the corresponding local buckling constraint at iteration $k$ will tend towards 0 and the feasible domain will shrink (see \figref{fig:04_tiny-area}). Any bar with near-zero sections will remain as such in future iterations since there is no incentive for the \gls{slp} optimizer to increase its value. This is one of the possible reasons why the \gls{slp} optimizer gets stuck in local minima.
 
 Subsequently, we propose a heuristic strategy to reinitialize the small cross-sectional area values $\vect{a}^{k}$ used to evaluate the linearized local buckling constraints $\tilde{g}_{\text{buck}}$ at iteration $k$. The strategy is called multiple times during the optimization when the solver converges to a minimum, \ie when $ \norm{\Delta \vect{x}}_\infty \leq \text{tol}_{slp} $. It affects only the cross-sectional areas that are smaller than a fraction value $\tau$ of the maximum value at iteration $k$, $\norm{\vect{a^k}}_\infty$. The updated cross-sectional area $\overline{\vect{a}}^k$ used to evaluate the linearization point $\overline{\vect{P}}_{k}$ is updated as follows:
 \begin{equation}
@@ -295,7 +292,7 @@ To mitigate the risk of becoming trapped in local minima, the \gls{nlp} optimize
 \end{equation}
 with the parameter $\chi$ called the cross-sectional area threshold value.
 
-An elastic \gls{fea} based on the direct stiffness method is performed to provide a correct estimate of forces and displacements caused by the external forces on the solution of Problem \eqrefnotext{eq:04_optim_no_constr} for the initial point of the optimization. The initial displacement vector $\vect{U}^0$ is calculated as the unique solution to:
+A linear \gls{fea} based on the direct stiffness method is performed to provide a correct estimate of forces and displacements caused by the external forces on the solution of Problem \eqrefnotext{eq:04_optim_no_constr} for the initial point of the optimization. The initial displacement vector $\vect{U}^0$ is calculated as the unique solution to:
 \begin{equation}
     \vect{f}=\matr{B}^T \matr{q}=\matr{B}^{T} \matr{D} \vect{\epsilon}=\matr{B}^{T} \matr{D} \matr{B} \vect{U}^0=\matr{K} \vect{U}^0.
     \label{eq:04_truss_fem}
@@ -303,7 +300,7 @@ An elastic \gls{fea} based on the direct stiffness method is performed to provid
  where $\matr{K}$ is the stiffness matrix of the truss, defined as $\matr{K}=\matr{B}^{T} \matr{D} \matr{B}$, with $\matr{D}=\operatorname{diag}\left(E (\tilde{\vect{a}}^* + \delta \vect{e}) / \vect{\ell}\right)$, $e =[1,\dots,1]^T$, and $\delta =10^{-12}$. This last term is added as the structures coming from the \gls{slp} step could result in a mechanism with respect to load cases different from the one used for the optimization \sidecite{dorn_automatic_1964}. Then the initial member forces vector $\vect{q}^0$ is evaluated using \eqrefnotext{eq:04_compatib}. $\tilde{\vect{a}}^*, \vect{q}^0$ and $\vect{U}^0$ are used as the starting point of the full \gls{nlp} formulation where the kinematic compatibility and the exact local buckling formulation are restored. The \gls{nlp} solver finally outputs the optimized structure variables $\vect{x}^*=[\vect{a}^*,\; \vect{q}^*,\; \vect{U}^*]$.
 
 \section{Numerical application} \label{sec:04_numerical_app}
-In this section, the proposed method is benchmarked against four classical and innovative test cases. Firstly, we show how the proposed two-step solution strategy with reinitialization reduces the influence of the starting point on the optimization result compared to the direct \gls{nlp} optimization of Problem \eqrefnotext{eq:04_optim_complete}. Additionally, as the response surface of the \gls{slp} of the proposed method is more regular than the original \gls{nlp}, the two-step solution strategy generates simple structures \ie with a low number of active bars, as it is efficient at driving the cross-sectional areas to zero. To show that, we implement and optimize the ten-bar truss and the 2D cantilever beam, two of the most common benchmarks in \gls{tto} with buckling constraints. Secondly, to show the ability of the proposed method to work on structures with multiple load cases we implemented a modified ten-bar truss test case where several load cases are applied to the same ground structure. Finally, to assess the computational efficiency and to validate the proposed strategy on a large-scale structure, we optimize a three-dimensional wingbox test case based on the \acrfull{crm} with multiple discretization refinement.
+In this section, the proposed method is benchmarked against multiple classical and innovative test cases. Firstly, we show how the proposed two-step solution strategy with reinitialization reduces the influence of the starting point on the optimization result compared to the direct \gls{nlp} optimization of Problem \eqrefnotext{eq:04_optim_complete}. Additionally, as the response surface of the \gls{slp} of the proposed method is more regular than the original \gls{nlp}, the two-step solution strategy generates simple structures \ie with a low number of active bars, as it is efficient at driving the cross-sectional areas to zero. To show that, we implement and optimize the ten-bar truss and the 2D cantilever beam, two of the most common benchmarks in \gls{tto} with buckling constraints. Secondly, to show the ability of the proposed method to work on structures with multiple load cases we implemented a modified ten-bar truss test case where several load cases are applied to the same ground structure. Finally, to assess the computational efficiency and validate the proposed strategy, we optimize a three-dimensional supported beam test case.
 
 The test cases are optimized using different resolution strategies. The proposed method is compared against the direct \gls{nlp} optimization of Problem \eqrefnotext{eq:04_optim_complete}, denoted in our analysis as \gls{nlp}. The proposed two-step resolution strategy is implemented with three different maximum numbers of reinitialization calls $n_{\text{max}}$: no reinitialization (2S-0R) with $n_{\text{max}}=0$, one call of reinitialization (2S-1R) with $n_{\text{max}}=1$, and finally five calls of reinitialization (2S-5R) with $n_{\text{max}}=5$. The reinitialization magnitude parameter $\vect{\phi}$ is set up using \eqref{eq:04_phi} and the parameters listed in \tabref{tab:04_param}, leading to $\phi = 0.8000$ for the 2S-1R algorithm and to $\vect{\phi} = \left[ 0.8000, 0.6400, 0.4096, 0.1677, 0.0281 \right]$ for the five reinitialization calls of 2S-5R.
 
@@ -343,10 +340,29 @@ $\beta$             & 2              & Index of the exponential decay law \\
 The optimizations presented in this section are performed on a notebook equipped with an Intel\textsuperscript{\textregistered} Core™ i5-9400H Processor @ \qty{2.50}{GHz} (4 cores) and \qty{16}{GB} of RAM. Additionally, the load cases, the starting point, and the result data of all the presented test cases are available in the reference data set \sidecite{enrico_stragiotti_truss_2023}.
 
 \subsection{L-shaped beam}
+\begin{marginfigure}
+    \centering
+    \includegraphics[width=\linewidth]{figures/04_TTO_improvements/06_L_bc/L_bc.pdf}
+    \caption{Boundary conditions of the L-shaped beam test case.}
+    \label{fig:04_LBC}
+\end{marginfigure}
+To assess the effectiveness of the proposed minimum slenderness limit, we conducted a new round of optimization on the L-shaped beam described in \secref{sec:03_applications} and showed in \figref{fig:04_LBC}. The material and geometric data are presented in \tabref{tab:04_mat_l}. In the \figref{fig:04_tto_slend}, we present the optimized structures obtained using this modified formulation and the stress limits $\sigma_\text{L}$ values of 1, $0.8$, $0.3$, and $0.2$. The first two values have already been used and the results have been presented in \tabref{tab:03_TTO_results}. They highlighted the limits of Formulation \eqrefnotext{eq:03_optim_original} when imposing a specified slenderness limit ($\lambda<15$). The last two values are introduced here to test how the \ref{eq:04_slend_constraints} constraints affect the truss topology for extreme cases. 
+\begin{margintable}
+    \small
+    \centering
+    \begin{tabular}{cc}
+    \toprule
+    \textbf{Parameter}        & \textbf{Value} \\ \midrule
+    $E$              & 1     \\
+    $L$              & 100   \\
+    $\sigma_\text{L}$ & $[0.20,1]$ \\
+    \bottomrule
+    \end{tabular}
+    \caption{Material data used for the optimizations.}
+    \label{tab:04_mat_l}
+\end{margintable}
 
-To assess the effectiveness of the proposed minimum slenderness limit, we conducted a new round of optimization on the L-shaped beam described in \secref{sec:03_applications}. In the \figref{fig:04_tto_slend}, we present the optimized structures obtained using this modified formulation and the stress limits $\sigma_\text{L}$ values of 1, 0.8, 0.3, and 0.2. The first two values have already been used and the results have been presented in \tabref{tab:03_TTO_results}. They highlighted the limits of Formulation \eqrefnotext{eq:03_optim_original} when imposing a specified slenderness limit ($\lambda<15$). The last two values are introduced here to test how the \ref{eq:04_slend_constraints} constraints affect the truss topology for extreme cases. 
-
-A major focus is put on the shorter bar of the optimized structures to observe how the solution evolved. We observe a redistribution of the same load across multiple smaller bars. More bars became active because there is an upper limit on the cross-sectional area (and thus the force) they can withstand. The four structures present $N_\text{el,sl}=34$, 38, 56 and 79 active bars, respectively.
+A major focus is put on the shorter bar of the optimized structures to observe how the solution evolved. We observe a redistribution of the same load across multiple smaller bars. More bars became active because there is an upper limit on the cross-sectional area (and thus the force) they can withstand. The four structures present $N_\text{el,sl}=34$, 38, 56, and 79 active bars, respectively.
 
 \begin{figure*}
     \subcaptionbox{}{\includegraphics[width=0.23\linewidth ]{figures/04_TTO_improvements/07_slend_sol/1_opt.pdf}}
@@ -594,11 +610,11 @@ The \gls{nlp} algorithm shows a good consistency with a mean volume $\overline{V
 
 The proposed two-step formulation without reinitialization 2S-0R drastically reduces the complexity of the structure, with an average number of active bars $\overline{N}_{\text{el}}$ of around 27, and an absolute minimum of $N_{\text{min}}=10$. However, this simplification of the design comes at the expense of an increased average volume and dispersion ($\overline{V}=92.80$ and $\text{SD}=7.45$). This detrimental effect is efficiently counterbalanced with the proposed reinitialization strategy, which reduces the average volume to $\overline{V}=86.72$ and $\text{SD}=6.05$ for 2S-5R. To sum up, the \gls{nlp} remains stuck in a low-volume local optimum whose volume varies little and that shows a very high number of active bars. With the two-stage strategy, the number of bars of the optimized structures is \qty{58}{\%} lower, resulting in a lighter design in \qty{30}{\%} of cases, and with the best design found that is \qty{3.5}{\%} lighter.
 
-\figref{fig:04_2d_cant_convergence} shows how the results of the proposed algorithm are more scattered and do not converge to a single minimum as precedently seen on the ten-bar truss example of \secref{sec:04_10bar}. A possible explanation for this difference in performance might be the discrete nature of the optimization when topological buckling constraints are taken into account. In some rare cases, we observed that calling the reinitialization makes the optimization converge to a more voluminous design compared to the one we had just before. In these cases, the results presented are the best ones encountered over the optimization steps and not the final ones.
+\figref{fig:04_2d_cant_convergence} shows how the results of the proposed algorithm are more scattered and do not converge to a single minimum as precedently seen on the ten-bar truss example of \secref{sec:04_10bar}. A possible explanation for this difference in performance might be the discrete nature of the optimization when topological buckling constraints are taken into account. In some rare cases, we observed that calling the reinitialization makes the optimization converge to a more voluminous design compared to the one we had just before--\ie the optimizer at the end of the optimization converges to a worse local minimum compared to the ones found just before calling the reinitialization. In these cases, the results presented are the best ones encountered over the optimization steps and not the final ones.
 
 The lightest solution found by 2S-5R with a volume of $V=77.78$ and with $N_{\text{el}}=31$ is presented in \figref{fig:04_2d_cant_opt}. Some of the active members of the optimized design are not present in the original ground structure but are the result of the bar merging process. The optimized design shows a \qty{9}{\%} lower volume with respect to the solution found by Achtziger \sidecite{achtziger_local_1999b} with $V=85.57$\sidenote{Even if Achtziger \cite{achtziger_local_1999b} reports an optimized volume of $V=79.57$, we use here the value corrected by Tyas \cite{tyas_practical_2006} of $V=85.57$.}. The detailed value of the design variables of the solution can be found in \tabref{tab:04_2d_cant_opt} and in the referenced data set \sidecite{enrico_stragiotti_truss_2023}. Approximately \qty{45}{\%} of the solutions of the 2S-5R algorithm are less voluminous than the one found by Achtziger.
 
-The authors are aware of the less voluminous solution ($V=73.44$) found by \cite{tyas_practical_2006}. The main reason for the difference is that Tyas's method allows the inclusion of bracing-only members that are not required for primary load-carrying purposes to reduce the effective buckling lengths $\ell$ of internal members. The incorporation of these members is regulated by introducing perturbative forces applied to the structure as additional load cases at unstable nodes. In the specific example of Tyas' structure, the resulting structure is statically admissible, and this ensures that kinematic compatibility is satisfied. However, as demonstrated later in this Chapter, this may not always be the case. Tyas' formulation, in this context, serves only as a lower-bound formulation for minimizing the structure's volume.
+We are aware of the less voluminous solution ($V=73.44$) found by \cite{tyas_practical_2006}. The main reason for the difference is that Tyas's method allows the inclusion of bracing-only members that are not required for primary load-carrying purposes to reduce the effective buckling lengths $\ell$ of internal members. The incorporation of these members is regulated by introducing perturbative forces applied to the structure as additional load cases at unstable nodes. In the specific example of Tyas' structure, the resulting structure is statically admissible, and this ensures that kinematic compatibility is satisfied. However, as demonstrated later in this Chapter, this may not always be the case. Tyas' formulation, in this context, serves only as a lower-bound formulation for minimizing the structure's volume.
 
 \subsection{Simply supported 3D beam} \label{sec:04_simply_supp}
 In this subsection, we focus on optimizing a simply supported three-dimensional beam. The supports are positioned at all four lower extremities of the design volume, the structure is subjected to five equispaced nodal loads, with each load magnitude set to $P=\qty{100}{N}$, applied on the XZ symmetry plane of the structure, as depicted in \figref{fig:04_simply3D_BC}. The volume of the design space is \qty{150}{mm} x \qty{50}{mm} x \qty{75}{mm}. These specific dimensions have been selected to accommodate the printing volume of the Creality Halot One, which is an \gls{sla} 3D printer with maximal printing dimensions of \qty{127}{mm} x \qty{80}{mm} x \qty{160}{mm}.
@@ -634,7 +650,7 @@ The material properties used for the optimization are given in \tabref{tab:04_3D
     \label{tab:04_3D_supp_mat}
 \end{margintable}
 
-\tabref{tab:04_3D_supp_res} and \figref{fig:04_3D_supp_topo} show the numerical results and topology of the optimized structure, respectively. The entire structure features 20 active bars, approximately 1 percent of the original ground structure. In \figref{fig:04_3D_supp_mech}, we visualize the stress and buckling constraints applied to the optimized structure. Every compression-loaded bar of the optimized structure activates the buckling constraint, underscoring the critical importance of accounting for this mode of structural failure in a truss. The final structure has a weight of \qty{11.294}{\gram} and achieves a volume fraction of \qty{1.761}{\%}. The optimization process is completed within 4 seconds, with only the \gls{slp} solved, as the resultant structure is statically determinate and kinematic constraints are inherently satisfied.
+\tabref{tab:04_3D_supp_res} and \figref{fig:04_3D_supp_topo} show the numerical results and topology of the optimized structure, respectively. The entire structure features 20 active bars, approximately 1 percent of the original ground structure. In \figref{fig:04_3D_supp_mech}, we visualize the stress and buckling constraints applied to the optimized structure. Every compression-loaded bar of the optimized structure activates the buckling constraint, underscoring the critical importance of accounting for this mode of structural failure in a truss. The final structure weights \qty{11.294}{\gram} and achieves a volume fraction of \qty{1.761}{\%}. The optimization process is completed within 4 seconds, with only the \gls{slp} solved, as the resultant structure is statically determinate and kinematic constraints are inherently satisfied.
 
 \begin{table}
     \small
@@ -672,9 +688,24 @@ The material properties used for the optimization are given in \tabref{tab:04_3D
 \subsection{Ten-bar truss with multiple load cases}
 \label{sec:04_10multi}
 
-We introduce here a more complex example to validate the proposed algorithm on a multiple load cases structure with maximum stress and topological buckling constraints. The test case is obtained by slightly modifying the ten-bar truss presented in \secref{sec:04_10bar}. The ground structure and the material data are the same, and two load cases $P_1$ and $P_2$ are applied at the structure's free extremity in a symmetric way with respect to the horizontal axis. A graphical presentation of the load case is shown in \figref{fig:04_10-bar-bcs-multi}. The loads' magnitude is set to $P_1=P_2=1$.
+We introduce here a more complex example to validate the proposed algorithm on a multiple load cases structure with maximum stress and topological buckling constraints. The test case is obtained by slightly modifying the ten-bar truss presented in \secref{sec:04_10bar}. The ground structure and the material data are the same, and two load cases $P_1$ and $P_2$ are applied at the structure's free extremity symmetrically with respect to the horizontal axis. A graphical presentation of the load case is shown in \figref{fig:04_10-bar-bcs-multi}. The loads' magnitude is set to $P_1=P_2=100$ and the other parameters are listed in \tabref{tab:04_10-bar_mat_2}.
+\begin{margintable}
+    \small
+    \centering
+    \begin{tabular}{cc}
+    \toprule
+    \textbf{Parameter}        & \textbf{Value} \\ \midrule
+    $L$ & 360 \\
+    $E$              & $1.0 \times 10^{4}$     \\
+    $s$ & $\pi E/4$ \\
+    $\sigma_\text{c}, \sigma_\text{t}$ & $\pm 20$ \\
+    \bottomrule
+    \end{tabular}
+    \caption{Material data used for the ten-bar truss optimization.}
+    \label{tab:04_10-bar_mat_2}
+\end{margintable}
 
-First, we optimize the structure using the same four algorithms and the starting point presented in Section \ref{sec:04_10bar}. Differently from the structures optimized earlier in Sections \ref{sec:04_10bar} and \ref{sec:04_2dcant}, the solutions of the \gls{slp} step are statically indeterminate, as they show a $\text{DSI}>0$ and a non-singular $\matr{K}$ stiffness matrix. For that reason, the structures undergo a second optimization in which the kinematic compatibility and the exact buckling constraints are restored (NLP step, see Formulation \eqrefnotext{eq:04_optim_complete}). The numerical findings of the four algorithms are presented in Table \ref{tab:04_10_bar_multi_solution}.
+First, we optimize the structure using the same four algorithms and the starting point presented in Section \ref{sec:04_10bar}. Differently from the structures optimized earlier in Sections \ref{sec:04_10bar} and \ref{sec:04_2dcant}, the solutions of the \gls{slp} step are statically indeterminate, as they show a $\text{DSI}>0$ and a non-singular $\matr{K}$ stiffness matrix. For that reason, the structures undergo the second optimization step in which the kinematic compatibility and the exact buckling constraints are restored (NLP step, see Formulation \eqrefnotext{eq:04_optim_complete}). The numerical findings of the four algorithms are presented in Table \ref{tab:04_10_bar_multi_solution}.
 
 \begin{table}
     \small
