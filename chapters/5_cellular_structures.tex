@@ -535,29 +535,29 @@ To conduct the benchmark, the simply supported 3D beam is divided into 6x2x3 and
 \end{marginfigure}
 
 \begin{figure*}
-    \hspace*{\fill}
-    \subcaptionbox{}{\includegraphics[width=0.46\linewidth]{figures/05_cellular_opt/00_octet_truss_comp_6/octet.png}}
+    % \hspace*{\fill}
+    \subcaptionbox{}{\includegraphics[width=0.43\linewidth]{figures/05_cellular_opt/00_octet_truss_comp_6/octet.png}}
     \hfill
-    \subcaptionbox{}{\includegraphics[width=0.46\linewidth]{figures/05_cellular_opt/00_octet_truss_comp_6/6x2x3_3x3x3.png}}
-    \hspace*{\fill}
+    \subcaptionbox{}{\includegraphics[width=0.43\linewidth]{figures/05_cellular_opt/00_octet_truss_comp_6/6x2x3_3x3x3.png}}
+    % \hspace*{\fill}
     \bigskip
-    \hspace*{\fill}
-    \subcaptionbox{}{\includegraphics[width=0.46\linewidth]{figures/05_cellular_opt/00_octet_truss_comp_6/octet_XZ.png}}
+    % \hspace*{\fill}
+    \subcaptionbox{}{\includegraphics[width=0.43\linewidth]{figures/05_cellular_opt/00_octet_truss_comp_6/octet_XZ.png}}
     \hfill
-    \subcaptionbox{}{\includegraphics[width=0.46\linewidth]{figures/05_cellular_opt/00_octet_truss_comp_6/6x2x3_3x3x3_XZ.png}}
-    \hspace*{\fill}
+    \subcaptionbox{}{\includegraphics[width=0.43\linewidth]{figures/05_cellular_opt/00_octet_truss_comp_6/6x2x3_3x3x3_XZ.png}}
+    % \hspace*{\fill}
     \bigskip
-    \hspace*{\fill}
-    \subcaptionbox{}{\includegraphics[width=0.46\linewidth]{figures/05_cellular_opt/00_octet_truss_comp_12/octet.png}}
+    % \hspace*{\fill}
+    \subcaptionbox{}{\includegraphics[width=0.43\linewidth]{figures/05_cellular_opt/00_octet_truss_comp_12/octet.png}}
     \hfill
-    \subcaptionbox{}{\includegraphics[width=0.46\linewidth]{figures/05_cellular_opt/00_octet_truss_comp_12/12x4x6_3x3x3.png}}
-    \hspace*{\fill}
+    \subcaptionbox{}{\includegraphics[width=0.43\linewidth]{figures/05_cellular_opt/00_octet_truss_comp_12/12x4x6_3x3x3.png}}
+    % \hspace*{\fill}
     \bigskip
-    \hspace*{\fill}
-    \subcaptionbox{}{\includegraphics[width=0.46\linewidth]{figures/05_cellular_opt/00_octet_truss_comp_12/octet_XZ.png}}
+    % \hspace*{\fill}
+    \subcaptionbox{}{\includegraphics[width=0.43\linewidth]{figures/05_cellular_opt/00_octet_truss_comp_12/octet_XZ.png}}
     \hfill
-    \subcaptionbox{}{\includegraphics[width=0.46\linewidth]{figures/05_cellular_opt/00_octet_truss_comp_12/12x4x6_3x3x3_XZ.png}}
-    \hspace*{\fill}
+    \subcaptionbox{}{\includegraphics[width=0.43\linewidth]{figures/05_cellular_opt/00_octet_truss_comp_12/12x4x6_3x3x3_XZ.png}}
+    % \hspace*{\fill}
     \caption{Comparison of the octet-truss structures (a-c-e-g) and the TTO structures (b-d-f-h) for two differnet numbers of submodules, 6x2x3 and 12x4x6.}
     \label{fig:05_octet_results}
 \end{figure*}
@@ -672,7 +672,7 @@ The volume reduction is attributed to a more efficient utilization of the subdom
     This study suggests that employing more modules for optimization allows the achievement of less voluminous structures, potentially approaching the performance of monolithic structures. However, this introduces a compromise between volume (and consequently mass) and the ease of manufacturing, a topic we will delve into further in the upcoming chapter.
 
 \section{Conclusion}
-In this chapter, we introduced a modular structure optimization algorithm based on the \acrfull{tto} and variable linking. Initially, we investigated the impact of modularity constraints on the topological buckling phenomenon and sensitivity analysis. Subsequently, we adapted the two-step optimization algorithm with reinitialization presented in Chapter~\ref{chp:04} to solve the proposed modular formulation.
+In this chapter, we introduced a modular structure optimization algorithm based on the \acrfull{tto} and variable linking. Initially, we investigated the impact of modularity constraints on the topological buckling phenomenon and sensitivity analysis. Subsequently, we adapted the two-step optimization algorithm with reinitialization presented in Chapter~\ref{chap:04} to solve the proposed modular formulation.
 
 The modular \gls{tto} algorithm is then tested on multiple two- and three-dimensional test cases. Initially, we observe an equivalence between modular structures and structures loaded with multiple load cases. The utilization of a repeating module throughout the structure significantly impacts the volume, as the module needs to perform well under various loading conditions concurrently. Subsequently, we conducted an extensive parametric analysis of the number of subdomains and module complexity. Based on the results of the \acrfull{doe}, we provide recommendations: fewer subdomains are generally preferable, with the module as large as manufacturably possible. Module complexity plays a role in volume minimization but has a relatively low impact. Finally, the modular \gls{tto} structures are benchmarked against one of the most commonly used module topologies in the literature: the octet-truss lattice.
 

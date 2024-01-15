@@ -39,4 +39,6 @@
 \contentsline {table}{\numberline {5.5}{\ignorespaces Material data used for the simply supported 3D beam optimization.}}{115}{table.caption.183}%
 \contentsline {table}{\numberline {5.6}{\ignorespaces Numeric results of the parametric study on the influence of the number of modules $N_\text {T}$ on the simply supported 3D beam.}}{116}{table.caption.185}%
 \addvspace {10\p@ }
+\contentsline {table}{\numberline {A.1}{\ignorespaces Reminder of the indexes used for the sensitivity analysis of the layout and topology optimization of modular structures.}}{145}{table.caption.190}%
+\addvspace {10\p@ }
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file

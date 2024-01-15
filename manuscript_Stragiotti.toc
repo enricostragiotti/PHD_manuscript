@@ -3,7 +3,7 @@
 \contentsline {chapter}{\nonumberline Contents}{iii}{chapter*.1}%
 \contentsline {chapter}{\nonumberline List of Figures}{v}{chapter*.2}%
 \contentsline {chapter}{\nonumberline List of Tables}{x}{chapter*.3}%
-\contentsline {chapter}{List of Abbreviations}{xi}{section*.4}%
+\contentsline {chapter}{List of Abbreviations}{xii}{section*.4}%
 \contentsline {chapter}{\numberline {1}Literature review}{1}{chapter.1}%
 \etoc@startlocaltoc {2}
 \etoc@startlocaltoc {3}
@@ -34,7 +34,7 @@
 \etoc@startlocaltoc {5}
 \contentsline {section}{\numberline {2.1}The formulation of a shared problem: volume minimization with stress constraints}{23}{section.2.1}%
 \contentsline {mtocsection}{\numberline {2.1}The formulation of a shared problem: volume minimization with stress constraints}{23}{section.2.1}%
-\contentsline {subsection}{\numberline {2.1.1}density-based topology optimization minimum volume formulation}{23}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.1}Density-based topology optimization minimum volume formulation}{23}{subsection.2.1.1}%
 \contentsline {paragraph}{\nonumberline Objective and constraint functions}{24}{paragraph*.41}%
 \contentsline {paragraph}{\nonumberline Von Mises stress evaluation}{24}{paragraph*.43}%
 \contentsline {paragraph}{\nonumberline Microscopic and macroscopic stress}{25}{paragraph*.46}%
@@ -116,3 +116,15 @@
 \contentsline {section}{\numberline {5.3}Conclusion}{116}{section.5.3}%
 \contentsline {mtocsection}{\numberline {5.3}Conclusion}{116}{section.5.3}%
 \contentsline {chapter}{\nonumberline Bibliography}{119}{chapter*.187}%
+\contentsline {part}{\nonumberline Appendix}{143}{part*.189}%
+\contentsline {chapter}{\numberline {A}Sensitivity analysis of the modular structure optimization algorithm}{145}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Optimization formulation, objective function and constraints}{145}{section.A.1}%
+\contentsline {mtocsection}{\numberline {A.1}Optimization formulation, objective function and constraints}{145}{section.A.1}%
+\contentsline {section}{\numberline {A.2}Common derivatives}{146}{section.A.2}%
+\contentsline {mtocsection}{\numberline {A.2}Common derivatives}{146}{section.A.2}%
+\contentsline {section}{\numberline {A.3}Gradient}{147}{section.A.3}%
+\contentsline {mtocsection}{\numberline {A.3}Gradient}{147}{section.A.3}%
+\contentsline {section}{\numberline {A.4}Jacobian matrix}{147}{section.A.4}%
+\contentsline {mtocsection}{\numberline {A.4}Jacobian matrix}{147}{section.A.4}%
+\contentsline {section}{\numberline {A.5}Hessian matrix}{149}{section.A.5}%
+\contentsline {mtocsection}{\numberline {A.5}Hessian matrix}{149}{section.A.5}%

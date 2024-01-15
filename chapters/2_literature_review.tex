@@ -73,13 +73,13 @@ Both the \gls{tto} methods based on the ground structure and the density-based t
     \caption{The domain $\Omega$ is discretized using $N_\text{e}=N_\text{x} N_\text{y}$ continuous 4-nodes elements.}
     \label{fig:02_mesh_c}
 \end{marginfigure}
-Let $\Omega \in \mathbb{R}^2$ be a rectangular domain in of dimensions $X$ and $Y$, containing respectively $N_\text{x}$ and $N_\text{y}$ linear 4-nodes elements, for a total of $N_\text{e}=N_\text{x} N_\text{y}$ elements and $M$ nodes (see \figref{fig:02_mesh_c}). The objective of the optimization is the minimization of the compliance $C$ of the structure, equivalent to finding the structure with the least possible nodal displacement with respect to a defined set of boundary conditions. 
+Let $\Omega \in \mathbb{R}^2$ be a rectangular domain of dimensions $X$ and $Y$, containing respectively $N_\text{x}$ and $N_\text{y}$ linear 4-nodes elements, for a total of $N_\text{e}=N_\text{x} N_\text{y}$ elements and $M$ nodes (see \figref{fig:02_mesh_c}). The objective of the optimization is the minimization of the compliance $C$ of the structure, equivalent to finding the structure with the least possible nodal displacement with respect to a defined set of boundary conditions. 
 
 \paragraph{Compliance minimization formulation} The Problem $\mathbb{T}_0$ is stated in terms of the design variables $\vect{\rho}$ as follows:
 \begin{equation}
     \begin{aligned}
     \min_{\vect{\rho}}         && C &= \sum_{i} \vect{u}_{e,i}^T \matr{K}_{e,i} \vect{u}_{e,i}=\vect{f}^T\vect{u}&& \forall i \in [0,\dots,N_\text{e}]                         \\
-    \textrm{s.t.}   && & \frac{\sum_{i} \left(\rhophys_i v_i \right) / V_0}{V_\text{p}} - 1 \leq 0 && \forall i \in [0,\dots,N_\text{e}] \\
+    \textrm{s.t.}   && & \frac{1}{V_\text{p}}\frac{\sum_{i} \left(\rhophys_i v_i \right)}{V_0} - 1 \leq 0 && \forall i \in [0,\dots,N_\text{e}] \\
     && \matr{K}\vect{u} &= \vect{f} &&\\
     && 0 &\leq \rho_i \leq 1. && \forall i \in [0,\dots,N_\text{e}] \\
     \end{aligned}
@@ -178,7 +178,7 @@ Compared to the second Michell criterion, \eqref{eq:02_hemp} permits the correct
 The rigid-plastic formulation characterizes the material as entirely rigid up to the point of reaching the yield stress, denoted as $\sigma_y$, and subsequently assumes a constant stress level of $\sigma_y$ once that threshold is exceeded. This formulation is a clear consequence of the application of the Michell-Hemp criteria and has thus been used in the very first work of \gls{tto}~\sidecite{dorn_automatic_1964,chan_optimum_1964,hemp_optimum_1973}. 
 
 \paragraph{The ground structure approach}
-The ground structure is a framework\marginnote{The first use of the ground structure in structural optimization is by Dorn \etal~\cite{dorn_automatic_1964}} composed of various structural members that connect specified points or nodes in two- or three-dimensional space (see \figref{fig:02_mesh_d}). These members can take the form of beams, columns, wires, or bar elements, depending on the specific structural requirements, but the most used is historically the bar element. Since the nodes within the ground structure are considered pin-joints, all straight members exclusively face either tension or compression loads. 
+The ground structure is a framework\marginnote{The first use of the ground structure in structural optimization is by Dorn \etal~\cite{dorn_automatic_1964}} composed of various structural members that connect specified points or nodes in two- or three-dimensional space (see \figref{fig:02_mesh_d}). These members can take the form of beams, columns, wires, or bar elements, depending on the specific structural requirements, but the most used is historically the bar element. Since the nodes within the ground structure are considered as pin-joints, all straight members exclusively face either tension or compression loads. 
 \begin{marginfigure}
     \centering
     \includegraphics{figures/02_literature/04_disc_mesh/d_mesh.pdf}

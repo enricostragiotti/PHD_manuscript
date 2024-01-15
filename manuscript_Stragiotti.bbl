@@ -65,54 +65,38 @@
     \endentry
     \entry{martins_engineering_2021}{book}{}
       \name{author}{2}{}{%
-        {{hash=f78019558101a841974c5f3b5a885657}{%
+        {{hash=398dd601c2b34edff07ab710dc60e070}{%
            family={Martins},
            familyi={M\bibinitperiod},
-           given={Joaquim\bibnamedelimb R.\bibnamedelimi R.\bibnamedelimi A.},
-           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod\bibinitdelim R\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
-        {{hash=93ca2cb81a3707f9a26c8b4c7425e445}{%
+           given={J.R.R.A.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=df7f3dfc7e719aecd111ede985107545}{%
            family={Ning},
            familyi={N\bibinitperiod},
-           given={Andrew},
+           given={A.},
            giveni={A\bibinitperiod}}}%
-      }
-      \list{language}{1}{%
-        {en}%
       }
       \list{publisher}{1}{%
         {Cambridge University Press}%
       }
-      \strng{namehash}{55dc6cf10b12287e88ed45c38cbd30af}
-      \strng{fullhash}{55dc6cf10b12287e88ed45c38cbd30af}
-      \strng{bibnamehash}{55dc6cf10b12287e88ed45c38cbd30af}
-      \strng{authorbibnamehash}{55dc6cf10b12287e88ed45c38cbd30af}
-      \strng{authornamehash}{55dc6cf10b12287e88ed45c38cbd30af}
-      \strng{authorfullhash}{55dc6cf10b12287e88ed45c38cbd30af}
+      \strng{namehash}{a0333472004665e74212113c8aea8fcc}
+      \strng{fullhash}{a0333472004665e74212113c8aea8fcc}
+      \strng{bibnamehash}{a0333472004665e74212113c8aea8fcc}
+      \strng{authorbibnamehash}{a0333472004665e74212113c8aea8fcc}
+      \strng{authornamehash}{a0333472004665e74212113c8aea8fcc}
+      \strng{authorfullhash}{a0333472004665e74212113c8aea8fcc}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{Based on course-tested material, this rigorous yet accessible graduate textbook covers both fundamental and advanced optimization theory and algorithms. It covers a wide range of numerical methods and topics, including both gradient-based and gradient-free algorithms, multidisciplinary design optimization, and uncertainty, with instruction on how to determine which algorithm should be used for a given application. It also provides an overview of models and how to prepare them for use with numerical optimization, including derivative computation. Over 400 high-quality visualizations and numerous examples facilitate understanding of the theory, and practical tips address common issues encountered in practical engineering design optimization and how to address them. Numerous end-of-chapter homework problems, progressing in difficulty, help put knowledge into practice. Accompanied online by a solutions manual for instructors and source code for problems, this is ideal for a one- or two-semester graduate course on optimization in aerospace, civil, mechanical, electrical, and chemical engineering departments.}
-      \field{edition}{1}
-      \field{isbn}{978-1-108-98064-7 978-1-108-83341-7}
-      \field{month}{11}
+      \field{isbn}{978-1-108-83341-7}
       \field{title}{Engineering {Design} {Optimization}}
-      \field{urlday}{20}
-      \field{urlmonth}{12}
-      \field{urlyear}{2023}
       \field{year}{2021}
-      \field{urldateera}{ce}
-      \verb{doi}
-      \verb 10.1017/9781108980647
-      \endverb
-      \verb{file}
-      \verb Martins and Ning - 2021 - Engineering Design Optimization.pdf:D\:\\estragio\\Zotero\\storage\\94FVQUEA\\Martins and Ning - 2021 - Engineering Design Optimization.pdf:application/pdf
-      \endverb
       \verb{urlraw}
-      \verb https://www.cambridge.org/core/product/identifier/9781108980647/type/book
+      \verb https://books.google.fr/books?id=AHVpzgEACAAJ
       \endverb
       \verb{url}
-      \verb https://www.cambridge.org/core/product/identifier/9781108980647/type/book
+      \verb https://books.google.fr/books?id=AHVpzgEACAAJ
       \endverb
     \endentry
     \entry{prager_problems_1968}{article}{}
@@ -1193,13 +1177,11 @@
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{A new method for non-linear programming in general and structural optimization in particular is presented. In each step of the iterative process, a strictly convex approximating subproblem is generated and solved. The generation of these subproblems is controlled by so called ‘moving asymptotes’, which may both stabilize and speed up the convergence of the general process.}
-      \field{issn}{1097-0207}
       \field{journaltitle}{International Journal for Numerical Methods in Engineering}
       \field{number}{2}
       \field{title}{The method of moving asymptotes—a new method for structural optimization}
-      \field{urlday}{14}
-      \field{urlmonth}{4}
+      \field{urlday}{13}
+      \field{urlmonth}{1}
       \field{urlyear}{2021}
       \field{volume}{24}
       \field{year}{1987}
@@ -1208,15 +1190,6 @@
       \range{pages}{15}
       \verb{doi}
       \verb https://doi.org/10.1002/nme.1620240207
-      \endverb
-      \verb{file}
-      \verb Full Text PDF:D\:\\estragio\\Zotero\\storage\\5JUUWV8I\\Svanberg - 1987 - The method of moving asymptotes—a new method for s.pdf:application/pdf
-      \endverb
-      \verb{urlraw}
-      \verb https://onlinelibrary.wiley.com/doi/abs/10.1002/nme.1620240207
-      \endverb
-      \verb{url}
-      \verb https://onlinelibrary.wiley.com/doi/abs/10.1002/nme.1620240207
       \endverb
     \endentry
     \entry{svanberg_class_2002}{article}{}
@@ -1850,6 +1823,7 @@
       \field{abstract}{We consider topology optimization of fluids in Stokes flow. The design objective is to minimize a power function, which for the absence of body fluid forces is the dissipated power in the fluid, subject to a fluid volume constraint. A generalized Stokes problem is derived that is used as a base for introducing the design parameterization. Mathematical proofs of existence of optimal solutions and convergence of discretized solutions are given and it is concluded that no regularization of the optimization problem is needed. The discretized state problem is a mixed finite element problem that is solved by a preconditioned conjugate gradient method and the design optimization problem is solved using sequential separable and convex programming. Several numerical examples are presented that illustrate this new methodology and the results are compared to results obtained in the context of shape optimization of fluids. Copyright © 2003 John Wiley \& Sons, Ltd.}
       \field{issn}{1097-0363}
       \field{journaltitle}{International Journal for Numerical Methods in Fluids}
+      \field{note}{\_eprint: https://onlinelibrary.wiley.com/doi/pdf/10.1002/fld.426}
       \field{number}{1}
       \field{title}{Topology optimization of fluids in {Stokes} flow}
       \field{urlday}{9}
@@ -3940,6 +3914,15 @@
       \verb{doi}
       \verb 10.1016/0045-7825(89)90119-9
       \endverb
+      \verb{file}
+      \verb ScienceDirect Full Text PDF:D\:\\estragio\\Zotero\\storage\\ECRUX6ET\\Kirsch - 1989 - Optimal topologies of truss structures.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/0045782589901199
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/0045782589901199
+      \endverb
     \endentry
     \entry{rozvany_layout_1995}{article}{}
       \name{author}{3}{}{%
@@ -5074,7 +5057,6 @@
       \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{The present paper provides details on the new trends in application of asymptotic homogenization techniques to the analysis of composite materials and thin-walled composite structures and their effective properties. The problems under consideration are important from both fundamental and applied points of view. We review a state-of-the-art in asymptotic homogenization of composites by presenting the variety of existing methods, by pointing out their advantages and shortcomings, and by discussing their applications. In addition to the review of existing results, some new original approaches are also introduced. In particular, we analyze a possibility of analytical solution of the unit cell problems obtained as a result of the homogenization procedure. Asymptotic homogenization of 3D thin-walled composite reinforced structures is considered, and the general homogenization model for a composite shell is introduced. In particular, analytical formulas for the effective stiffness moduli of wafer-reinforced shell and sandwich composite shell with a honeycomb filler are presented. We also consider random composites; use of two-point Padé approximants and asymptotically equivalent functions; correlation between conductivity and elastic properties of composites; and strength, damage, and boundary effects in composites. This article is based on a review of 205 references.}
       \field{issn}{0003-6900}
       \field{journaltitle}{Applied Mechanics Reviews}
       \field{month}{3}
@@ -5088,9 +5070,6 @@
       \field{urldateera}{ce}
       \verb{doi}
       \verb 10.1115/1.3090830
-      \endverb
-      \verb{file}
-      \verb Full Text PDF:D\:\\estragio\\Zotero\\storage\\TGC5RLE3\\Kalamkarov et al. - 2009 - Asymptotic Homogenization of Composite Materials a.pdf:application/pdf
       \endverb
       \verb{urlraw}
       \verb https://doi.org/10.1115/1.3090830
@@ -5205,7 +5184,6 @@
       \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{This paper presents a novel multiscale concurrent topology optimization method for cellular structures with various types of microstructures to obtain a superior structural performance at an affordable computation cost. At macroscale, different microstructures are regarded as different materials in a multi-material topology optimization. An ordered solid isotropic material with penalization (SIMP) interpolation model, which is efficient for solving multi-material topology optimization problems without introducing any new variables, is employed to generate an overall structure layout with predetermined multiple materials. At microscale, each macroscale element is viewed as an individual microstructure. All macroscale elements with the same material are represented by a unique microstructure. A parametric level set method (PLSM) is applied to evolve the shape and topology of the representative microstructures, whose effective properties are evaluated by a numerical homogenization method. The connectivity of adjacent microstructures is guaranteed by a kinematical connective constraint. Using the proposed method, the macrostructural topology as well as the locations and configurations of microstructures can be simultaneously optimized. Numerical examples are provided to test the effectiveness of the proposed method.}
       \field{issn}{0927-0256}
       \field{journaltitle}{Computational Materials Science}
       \field{month}{12}
@@ -5220,9 +5198,6 @@
       \range{pages}{18}
       \verb{doi}
       \verb 10.1016/j.commatsci.2018.08.030
-      \endverb
-      \verb{file}
-      \verb ScienceDirect Full Text PDF:D\:\\estragio\\Zotero\\storage\\QHUPI59M\\Zhang et al. - 2018 - Multiscale concurrent topology optimization for ce.pdf:application/pdf;ScienceDirect Full Text PDF:D\:\\estragio\\Zotero\\storage\\7YP7A5ZY\\Zhang et al. - 2018 - Multiscale concurrent topology optimization for ce.pdf:application/pdf
       \endverb
       \verb{urlraw}
       \verb http://www.sciencedirect.com/science/article/pii/S0927025618305524
@@ -6794,14 +6769,15 @@
       \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
+      \field{abstract}{In this work, a novel design and modeling method is proposed to obtain hierarchical structures with non-uniform lattice microstructures based on density-based topology optimization. First of all, a parametric concept is proposed to generate a family of parameterized lattice microstructures that present similar topological features. In order to balance the structural performance and computational efficiency, we construct a Parameterized Interpolation for Lattice Material (PILM) model and the mathematical formulation incorporates two new design variables. At the macroscale, the relative density variable is applied to describe material volume fraction in the design domain, instead of using the pseudo-density in the Solid Isotropic Material with Penalization (SIMP) model. At the microscale, each macroelement is regarded as an individual microstructure controlled by an aspect ratio variable. The equivalent properties of parameterized lattice microstructures can be derived by interpolating the effective elastic matrixes of several typical microstructure unit cells, which avoid expensive iterative homogenization calculations during optimization procedure. Hence, the multiscale concurrent design method can optimize the macroscopic distribution and their spatially varying microstructural configurations simultaneously at an affordable computation cost. Several numerical examples are presented to demonstrate the effectiveness of the proposed approach. Furthermore, the obtained hierarchical structures with non-uniform lattice microstructures show good manufacturability and remarkably improved structural performance by means of the additive manufacturing and experimental testing, compared to the designs with uniform lattice microstructures.}
       \field{issn}{1615-1488}
       \field{journaltitle}{Structural and Multidisciplinary Optimization}
       \field{month}{3}
       \field{number}{3}
       \field{title}{Concurrent design of hierarchical structures with three-dimensional parameterized lattice microstructures for additive manufacturing}
-      \field{urlday}{2}
-      \field{urlmonth}{2}
-      \field{urlyear}{2021}
+      \field{urlday}{12}
+      \field{urlmonth}{1}
+      \field{urlyear}{2024}
       \field{volume}{61}
       \field{year}{2020}
       \field{urldateera}{ce}
@@ -6810,12 +6786,16 @@
       \verb{doi}
       \verb 10.1007/s00158-019-02408-2
       \endverb
+      \verb{file}
+      \verb Full Text PDF:D\:\\estragio\\Zotero\\storage\\568KHYHP\\Wang et al. - 2020 - Concurrent design of hierarchical structures with .pdf:application/pdf
+      \endverb
       \verb{urlraw}
       \verb https://doi.org/10.1007/s00158-019-02408-2
       \endverb
       \verb{url}
       \verb https://doi.org/10.1007/s00158-019-02408-2
       \endverb
+      \keyw{Topology optimization,Additive manufacturing,Concurrent design,Hierarchical structures,Lattice microstructures}
     \endentry
     \entry{guedes_preprocessing_1990}{article}{}
       \name{author}{2}{}{%
@@ -7657,7 +7637,7 @@
       \verb{file}
       \verb IEEE Xplore Full Text PDF:D\:\\estragio\\Zotero\\storage\\IGT5AQCL\\Wu et al. - 2018 - Infill Optimization for Additive Manufacturing—App.pdf:application/pdf
       \endverb
-      \keyw{additive manufacturing,Optimization,topology optimization,Shape,Topology,Bones,Infill,Mechanical factors,porous structures,Solids,Three-dimensional printing,trabecular bone}
+      \keyw{additive manufacturing,Bones,Infill,Mechanical factors,Optimization,porous structures,Shape,Solids,Three-dimensional printing,Topology,topology optimization,trabecular bone}
     \endentry
     \entry{huang_optimal_2008}{article}{}
       \name{author}{2}{}{%
@@ -9255,15 +9235,6 @@
       \verb{doi}
       \verb 10.1007/BF01199235
       \endverb
-      \verb{file}
-      \verb Silva Smith - 1997 - Topology optimization of trusses with local stabil.pdf:D\:\\estragio\\Zotero\\storage\\44SLF4HN\\Silva Smith - 1997 - Topology optimization of trusses with local stabil.pdf:application/pdf
-      \endverb
-      \verb{urlraw}
-      \verb http://link.springer.com/10.1007/BF01199235
-      \endverb
-      \verb{url}
-      \verb http://link.springer.com/10.1007/BF01199235
-      \endverb
     \endentry
     \entry{achtziger_local_1999b}{article}{}
       \name{author}{1}{}{%
@@ -10754,7 +10725,6 @@
       \endverb
     \endentry
   \enddatalist
-  \missing{chp:03}
 \endrefsection
 \endinput
 
