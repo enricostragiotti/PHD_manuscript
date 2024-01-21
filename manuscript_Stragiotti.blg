@@ -1,23 +1,20 @@
 [0] Config.pm:307> INFO - This is Biber 2.19
 [0] Config.pm:310> INFO - Logfile is 'manuscript_Stragiotti.blg'
-[143] biber-MSWIN64:340> INFO - === 
-[204] Biber.pm:419> INFO - Reading 'manuscript_Stragiotti.bcf'
-[2806] Biber.pm:979> INFO - Found 209 citekeys in bib section 0
-[2823] Biber.pm:4419> INFO - Processing section 0
-[2836] Biber.pm:4610> INFO - Looking for bibtex file 'biblio.bib' for section 0
-[2932] bibtex.pm:1713> INFO - LaTeX decoding ...
-[3598] bibtex.pm:1519> INFO - Found BibTeX data source 'biblio.bib'
-[5004] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[5004] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[5004] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
-[5004] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
-[5163] bbl.pm:660> INFO - Writing 'manuscript_Stragiotti.bbl' with encoding 'UTF-8'
-[5312] bbl.pm:763> INFO - Output to manuscript_Stragiotti.bbl
-[5312] Biber.pm:131> WARN - Duplicate entry key: 'bensoussan_asymptotic_1978' in file 'biblio.bib', skipping ...
-[5313] Biber.pm:131> WARN - Duplicate entry key: 'kirsch_optimal_1980' in file 'biblio.bib', skipping ...
-[5313] Biber.pm:131> WARN - ISBN '978-3-642-07698-5 978-3-662-05086-6' in entry 'bendsoe_topology_2004' is invalid - run biber with '--validate_datamodel' for details.
-[5313] Biber.pm:131> WARN - ISBN '978-3-662-03117-9 978-3-662-03115-5' in entry 'bendsoe_optimization_1995' is invalid - run biber with '--validate_datamodel' for details.
-[5313] Biber.pm:131> WARN - ISBN '978-0-89871-668-9 978-0-89871-876-8' in entry 'conn_introduction_2009' is invalid - run biber with '--validate_datamodel' for details.
-[5313] Biber.pm:131> WARN - ISBN '978-3-319-68912-8 978-3-319-68913-5' in entry 'audet_derivative-free_2017' is invalid - run biber with '--validate_datamodel' for details.
-[5313] Biber.pm:131> WARN - ISBN '978-1-118-65950-2 978-0-470-93741-9' in entry 'simon_evolutionary_2013' is invalid - run biber with '--validate_datamodel' for details.
-[5313] Biber.pm:133> INFO - WARNINGS: 7
+[348] biber-MSWIN64:340> INFO - === 
+[413] Biber.pm:419> INFO - Reading 'manuscript_Stragiotti.bcf'
+[558] Biber.pm:979> INFO - Found 7 citekeys in bib section 0
+[574] Biber.pm:4419> INFO - Processing section 0
+[592] Biber.pm:4610> INFO - Looking for bibtex file 'biblio.bib' for section 0
+[691] bibtex.pm:1713> INFO - LaTeX decoding ...
+[1303] bibtex.pm:1519> INFO - Found BibTeX data source 'biblio.bib'
+[1511] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1511] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1511] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[1511] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[1534] bbl.pm:660> INFO - Writing 'manuscript_Stragiotti.bbl' with encoding 'UTF-8'
+[1545] bbl.pm:763> INFO - Output to manuscript_Stragiotti.bbl
+[1546] Biber.pm:131> WARN - Duplicate entry key: 'bensoussan_asymptotic_1978' in file 'biblio.bib', skipping ...
+[1546] Biber.pm:131> WARN - Duplicate entry key: 'kirsch_optimal_1980' in file 'biblio.bib', skipping ...
+[1546] Biber.pm:131> WARN - Duplicate entry key: 'cheung_reversibly_2013' in file 'biblio.bib', skipping ...
+[1546] Biber.pm:131> WARN - Duplicate entry key: 'costa_algorithmic_2020' in file 'biblio.bib', skipping ...
+[1546] Biber.pm:133> INFO - WARNINGS: 4

@@ -2,129 +2,21 @@
 \babel@toc {english}{}\relax
 \contentsline {chapter}{\nonumberline Contents}{iii}{chapter*.1}%
 \contentsline {chapter}{\nonumberline List of Figures}{v}{chapter*.2}%
-\contentsline {chapter}{\nonumberline List of Tables}{x}{chapter*.3}%
-\contentsline {chapter}{List of Abbreviations}{xii}{section*.4}%
-\contentsline {chapter}{\numberline {1}Literature review}{1}{chapter.1}%
-\etoc@startlocaltoc {2}
-\etoc@startlocaltoc {3}
-\contentsline {section}{\numberline {1.1}An introduction to structural optimization}{1}{section.1.1}%
-\contentsline {mtocsection}{\numberline {1.1}An introduction to structural optimization}{1}{section.1.1}%
-\contentsline {paragraph}{\nonumberline Objective Function}{2}{paragraph*.8}%
-\contentsline {paragraph}{\nonumberline Design Variables}{2}{paragraph*.10}%
-\contentsline {paragraph}{\nonumberline Constraints}{3}{paragraph*.12}%
-\contentsline {subsection}{\numberline {1.1.1}Optimizers}{3}{subsection.1.1.1}%
-\contentsline {section}{\numberline {1.2}Ultra-lightweight structures optimization approaches}{5}{section.1.2}%
-\contentsline {mtocsection}{\numberline {1.2}Ultra-lightweight structures optimization approaches}{5}{section.1.2}%
-\contentsline {subsection}{\numberline {1.2.1}Density-based topology optimization}{6}{subsection.1.2.1}%
-\contentsline {paragraph}{\nonumberline Compliance minimization formulation}{7}{paragraph*.15}%
-\contentsline {paragraph}{\nonumberline Spatial filtering and projection}{8}{paragraph*.18}%
-\contentsline {subsection}{\numberline {1.2.2}Feature-Mapping topology optimization}{10}{subsection.1.2.2}%
-\contentsline {subsection}{\numberline {1.2.3}Truss topology optimization (TTO)}{10}{subsection.1.2.3}%
-\contentsline {paragraph}{\nonumberline Classical Michell structures}{11}{paragraph*.23}%
-\contentsline {paragraph}{\nonumberline Plastic material formulation}{12}{paragraph*.25}%
-\contentsline {paragraph}{\nonumberline The ground structure approach}{12}{paragraph*.27}%
-\contentsline {paragraph}{\nonumberline Optimization formulation}{13}{paragraph*.30}%
-\contentsline {section}{\numberline {1.3}Modular structures and lattice materials}{14}{section.1.3}%
-\contentsline {mtocsection}{\numberline {1.3}Modular structures and lattice materials}{14}{section.1.3}%
-\contentsline {subsection}{\numberline {1.3.1}Modular structures and lattice materials optimization}{17}{subsection.1.3.1}%
-\contentsline {subsection}{\numberline {1.3.2}Multi-scale structures optimization}{18}{subsection.1.3.2}%
-\contentsline {subsection}{\numberline {1.3.3}Full-scale structures optimization}{20}{subsection.1.3.3}%
-\contentsline {chapter}{\numberline {2}Evaluating discretization approaches for ultralight structure optimization}{23}{chapter.2}%
-\etoc@startlocaltoc {4}
-\etoc@startlocaltoc {5}
-\contentsline {section}{\numberline {2.1}The formulation of a shared problem: volume minimization with stress constraints}{23}{section.2.1}%
-\contentsline {mtocsection}{\numberline {2.1}The formulation of a shared problem: volume minimization with stress constraints}{23}{section.2.1}%
-\contentsline {subsection}{\numberline {2.1.1}Density-based topology optimization minimum volume formulation}{23}{subsection.2.1.1}%
-\contentsline {paragraph}{\nonumberline Objective and constraint functions}{24}{paragraph*.41}%
-\contentsline {paragraph}{\nonumberline Von Mises stress evaluation}{24}{paragraph*.43}%
-\contentsline {paragraph}{\nonumberline Microscopic and macroscopic stress}{25}{paragraph*.46}%
-\contentsline {paragraph}{\nonumberline Constraints aggregation and relaxation}{26}{paragraph*.48}%
-\contentsline {paragraph}{\nonumberline Minimum volume formulation}{27}{paragraph*.50}%
-\contentsline {paragraph}{\nonumberline Sensitivity analysis of the objective function}{27}{paragraph*.52}%
-\contentsline {paragraph}{\nonumberline Sensitivity analysis of the constraint function}{28}{paragraph*.54}%
-\contentsline {subsection}{\numberline {2.1.2}\acrfull {tto} minimum volume formulation}{30}{subsection.2.1.2}%
-\contentsline {paragraph}{\nonumberline Objective and constraint functions}{30}{paragraph*.56}%
-\contentsline {paragraph}{\nonumberline Minimum volume formulation}{31}{paragraph*.58}%
-\contentsline {section}{\numberline {2.2}Comparison between density-based topology optimization and TTO}{32}{section.2.2}%
-\contentsline {mtocsection}{\numberline {2.2}Comparison between density-based topology optimization and TTO}{32}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Definition of a test case for the comparison}{32}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}Numerical application}{33}{subsection.2.2.2}%
-\contentsline {paragraph}{\nonumberline density-based topology optimization results}{34}{figure.caption.63}%
-\contentsline {paragraph}{\nonumberline TTO optimization results}{37}{paragraph*.69}%
-\contentsline {subsection}{\numberline {2.2.3}Discussion}{40}{subsection.2.2.3}%
-\contentsline {section}{\numberline {2.3}Conclusion}{43}{section.2.3}%
-\contentsline {mtocsection}{\numberline {2.3}Conclusion}{43}{section.2.3}%
-\contentsline {chapter}{\numberline {3}Enriching the classic TTO formulation with advanced mechanical constraints}{45}{chapter.3}%
-\etoc@startlocaltoc {6}
-\etoc@startlocaltoc {7}
-\contentsline {section}{\numberline {3.1}Advanced mechanical constraints}{45}{section.3.1}%
-\contentsline {mtocsection}{\numberline {3.1}Advanced mechanical constraints}{45}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Minimum slenderness constraints}{46}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}Local and topological buckling constraints}{47}{subsection.3.1.2}%
-\contentsline {subsection}{\numberline {3.1.3}Kinematic compatibility constraints}{49}{subsection.3.1.3}%
-\contentsline {section}{\numberline {3.2}Optimization formulation and solving strategy}{50}{section.3.2}%
-\contentsline {mtocsection}{\numberline {3.2}Optimization formulation and solving strategy}{50}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Optimization strategy}{51}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}First step: SLP optimization}{51}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.2.3}Handling local minima: reinitialization strategy}{53}{subsection.3.2.3}%
-\contentsline {subsection}{\numberline {3.2.4}Second step: NLP optimization}{55}{subsection.3.2.4}%
-\contentsline {section}{\numberline {3.3}Numerical application}{56}{section.3.3}%
-\contentsline {mtocsection}{\numberline {3.3}Numerical application}{56}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}L-shaped beam}{58}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Ten-bar truss}{59}{subsection.3.3.2}%
-\contentsline {subsection}{\numberline {3.3.3}2D cantilever beam}{62}{subsection.3.3.3}%
-\contentsline {subsection}{\numberline {3.3.4}Simply supported 3D beam}{65}{subsection.3.3.4}%
-\contentsline {subsection}{\numberline {3.3.5}Ten-bar truss with multiple load cases}{67}{subsection.3.3.5}%
-\contentsline {section}{\numberline {3.4}Conclusion}{70}{section.3.4}%
-\contentsline {mtocsection}{\numberline {3.4}Conclusion}{70}{section.3.4}%
-\contentsline {chapter}{\numberline {4}Optimizing modular structures}{71}{chapter.4}%
-\etoc@startlocaltoc {8}
-\etoc@startlocaltoc {9}
-\contentsline {section}{\numberline {4.1}Formulation of a modular structure optimization algorithm}{71}{section.4.1}%
-\contentsline {mtocsection}{\numberline {4.1}Formulation of a modular structure optimization algorithm}{71}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Variable linking}{71}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}Topological buckling of modular structures}{73}{subsection.4.1.2}%
-\contentsline {subsection}{\numberline {4.1.3}Optimization formulation}{73}{subsection.4.1.3}%
-\contentsline {subsection}{\numberline {4.1.4}Sensitivity analysis}{75}{subsection.4.1.4}%
-\contentsline {section}{\numberline {4.2}Numerical application}{76}{section.4.2}%
-\contentsline {mtocsection}{\numberline {4.2}Numerical application}{76}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}On the equivalence of multi-load cases and modular structures}{76}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Parametric study on the number of subdomains and the complexity of the module}{78}{subsection.4.2.2}%
-\contentsline {paragraph}{\nonumberline Influence of the number of the subdomains}{79}{paragraph*.127}%
-\contentsline {paragraph}{\nonumberline Influence of the complexity of the module}{81}{paragraph*.135}%
-\contentsline {paragraph}{\nonumberline Design of experiments}{84}{paragraph*.142}%
-\contentsline {paragraph}{\nonumberline Discussion on the DOE}{85}{paragraph*.148}%
-\contentsline {subsection}{\numberline {4.2.3}Comparison with the optimized octet-truss}{86}{subsection.4.2.3}%
-\contentsline {subsection}{\numberline {4.2.4}Using multiple module topologies}{91}{subsection.4.2.4}%
-\contentsline {section}{\numberline {4.3}Conclusion}{94}{section.4.3}%
-\contentsline {mtocsection}{\numberline {4.3}Conclusion}{94}{section.4.3}%
-\contentsline {chapter}{\numberline {5}Optimizing the layout of the modules in space}{97}{chapter.5}%
-\etoc@startlocaltoc {10}
-\etoc@startlocaltoc {11}
-\contentsline {section}{\numberline {5.1}Optimize the modules' layout using a modified DMO algorithm}{97}{section.5.1}%
-\contentsline {mtocsection}{\numberline {5.1}Optimize the modules' layout using a modified DMO algorithm}{97}{section.5.1}%
-\contentsline {subsection}{\numberline {5.1.1}Definition of the subdomains cross-sectional areas}{97}{subsection.5.1.1}%
-\contentsline {subsection}{\numberline {5.1.2}Variables penalization schemes}{98}{subsection.5.1.2}%
-\contentsline {subsection}{\numberline {5.1.3}The optimization formulation and resolution algorithm}{100}{subsection.5.1.3}%
-\contentsline {subsection}{\numberline {5.1.4}Optimization initialization: a clustering algorithm to identify similarly behaving subdomains}{102}{subsection.5.1.4}%
-\contentsline {section}{\numberline {5.2}Numerical application}{104}{section.5.2}%
-\contentsline {mtocsection}{\numberline {5.2}Numerical application}{104}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}Layout optimization of fixed topology modules}{105}{subsection.5.2.1}%
-\contentsline {subsection}{\numberline {5.2.2}Modules and layout optimization}{107}{subsection.5.2.2}%
-\contentsline {subsection}{\numberline {5.2.3}A benchmark case study: a simply supported modular bridge}{110}{subsection.5.2.3}%
-\contentsline {subsection}{\numberline {5.2.4}Simply supported 3D beam}{115}{subsection.5.2.4}%
-\contentsline {section}{\numberline {5.3}Conclusion}{116}{section.5.3}%
-\contentsline {mtocsection}{\numberline {5.3}Conclusion}{116}{section.5.3}%
-\contentsline {chapter}{\nonumberline Bibliography}{119}{chapter*.187}%
-\contentsline {part}{\nonumberline Appendix}{143}{part*.189}%
-\contentsline {chapter}{\numberline {A}Sensitivity analysis of the modular structure optimization algorithm}{145}{appendix.A}%
-\contentsline {section}{\numberline {A.1}Optimization formulation, objective function and constraints}{145}{section.A.1}%
-\contentsline {mtocsection}{\numberline {A.1}Optimization formulation, objective function and constraints}{145}{section.A.1}%
-\contentsline {section}{\numberline {A.2}Common derivatives}{146}{section.A.2}%
-\contentsline {mtocsection}{\numberline {A.2}Common derivatives}{146}{section.A.2}%
-\contentsline {section}{\numberline {A.3}Gradient}{147}{section.A.3}%
-\contentsline {mtocsection}{\numberline {A.3}Gradient}{147}{section.A.3}%
-\contentsline {section}{\numberline {A.4}Jacobian matrix}{147}{section.A.4}%
-\contentsline {mtocsection}{\numberline {A.4}Jacobian matrix}{147}{section.A.4}%
-\contentsline {section}{\numberline {A.5}Hessian matrix}{149}{section.A.5}%
-\contentsline {mtocsection}{\numberline {A.5}Hessian matrix}{149}{section.A.5}%
+\contentsline {chapter}{\nonumberline List of Tables}{v}{chapter*.3}%
+\contentsline {chapter}{List of Abbreviations}{v}{section*.4}%
+\contentsline {chapter}{Abstract}{1}{section*.7}%
+\contentsline {chapter}{Introduction}{3}{section*.9}%
+\contentsline {chapter}{Conclusion and perspectives}{7}{section*.16}%
+\contentsline {part}{\nonumberline Appendix}{13}{part*.20}%
+\contentsline {chapter}{\numberline {A}Sensitivity analysis of the modular structure optimization algorithm}{15}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Optimization formulation, objective function and constraints}{15}{section.A.1}%
+\contentsline {mtocsection}{\numberline {A.1}Optimization formulation, objective function and constraints}{15}{section.A.1}%
+\contentsline {section}{\numberline {A.2}Common derivatives}{16}{section.A.2}%
+\contentsline {mtocsection}{\numberline {A.2}Common derivatives}{16}{section.A.2}%
+\contentsline {section}{\numberline {A.3}Gradient}{17}{section.A.3}%
+\contentsline {mtocsection}{\numberline {A.3}Gradient}{17}{section.A.3}%
+\contentsline {section}{\numberline {A.4}Jacobian matrix}{17}{section.A.4}%
+\contentsline {mtocsection}{\numberline {A.4}Jacobian matrix}{17}{section.A.4}%
+\contentsline {section}{\numberline {A.5}Hessian matrix}{19}{section.A.5}%
+\contentsline {mtocsection}{\numberline {A.5}Hessian matrix}{19}{section.A.5}%
+\contentsline {chapter}{\nonumberline Bibliography}{21}{chapter*.31}%

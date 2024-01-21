@@ -1,44 +1,5 @@
 \babel@toc {english}{}\relax
+\contentsline {table}{\numberline {A.1}{\ignorespaces Reminder of the indexes used for the sensitivity analysis of the layout and topology optimization of modular structures.}}{15}{table.caption.21}%
 \addvspace {10\p@ }
-\addvspace {10\p@ }
-\contentsline {table}{\numberline {2.1}{\ignorespaces Material data used for the optimizations. The value of the maximum material allowable $\sigma _\text {L}$ is used as the parameter to generate multiple optimized topologies. The Poisson module is used only in density-based topology optimization.}}{33}{table.caption.60}%
-\contentsline {table}{\numberline {2.2}{\ignorespaces Numerical results of the topology optimization method of the L-shape beam load case with varying material allowable $\sigma _\text {L}$ on a $600 \times 600$ elements mesh. Numbers in red highlight the results that have not converged.}}{36}{table.caption.64}%
-\contentsline {table}{\numberline {2.3}{\ignorespaces Numerical results of the \gls {tto} method of the L-shape beam test case with varying values of the material allowable $\sigma _\text {L}$ on a $33 \times 33$ nodes ground structure. Numbers in red highlight the results that lie outside the domains of applicability of the optimization method.}}{38}{table.caption.71}%
-\addvspace {10\p@ }
-\contentsline {table}{\numberline {3.1}{\ignorespaces Non-exhaustive list of the existing research in Truss Topology Optimization (TTO) with their corresponding scientific contributions.}}{46}{table.caption.80}%
-\contentsline {table}{\numberline {3.2}{\ignorespaces Values and description of the parameters used for the \gls {slp} and \gls {nlp} optimizations.}}{57}{table.caption.87}%
-\contentsline {table}{\numberline {3.3}{\ignorespaces Material data used for the optimizations.}}{58}{table.caption.89}%
-\contentsline {table}{\numberline {3.4}{\ignorespaces Numerical comparison of the effect of the minimum slenderness constraint on the optimization of the 2D L-shaped beam.}}{59}{table.caption.91}%
-\contentsline {table}{\numberline {3.5}{\ignorespaces Material data used for the ten-bar truss optimization.}}{59}{table.caption.93}%
-\contentsline {table}{\numberline {3.6}{\ignorespaces Numerical comparison of the four optimization algorithms on the ten-bar truss for 50 different initial points. The 2S-5R algorithm shows a \qty {100}{\%} convergence rate to the lightest structure found. The iteration count and time are from the first initialization point $\bm {a}^0_s$.}}{60}{table.caption.95}%
-\contentsline {table}{\numberline {3.7}{\ignorespaces Material data used for the 2D cantilever beam optimization.}}{62}{table.caption.97}%
-\contentsline {table}{\numberline {3.8}{\ignorespaces Numerical comparison of the 2D cantilever beam of the four algorithms for 100 random initial points. The 2S-5R algorithm shows a good balance between the volume, complexity, and dispersion of the solutions.}}{63}{table.caption.99}%
-\contentsline {table}{\numberline {3.9}{\ignorespaces Optimal values of the member forces, areas, and volumes of the 2D cantilever beam.}}{63}{table.caption.101}%
-\contentsline {table}{\numberline {3.10}{\ignorespaces Material data used for the simply supported 3D beam optimization.}}{65}{table.caption.105}%
-\contentsline {table}{\numberline {3.11}{\ignorespaces Numerical results of the optimization of the simply supported 3D beam.}}{66}{table.caption.106}%
-\contentsline {table}{\numberline {3.12}{\ignorespaces Material data used for the ten-bar truss optimization.}}{67}{table.caption.109}%
-\contentsline {table}{\numberline {3.13}{\ignorespaces Numerical comparison of the four optimization algorithms on the ten-bar truss for 50 different initial points.}}{67}{table.caption.110}%
-\contentsline {table}{\numberline {3.14}{\ignorespaces Comparison of the results of the \gls {slp} step and \gls {nlp} step for the multiple load cases ten-bar truss.}}{69}{table.caption.113}%
-\contentsline {table}{\numberline {3.15}{\ignorespaces Optimal values of the member forces, areas, and volumes of the members of the ten-bar truss with multiple load cases.}}{69}{table.caption.114}%
-\addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces Reminder of the parameters used to set the reinitialization parameters for the modular optimization. The full list of values and tolerances used for the setup of the optimization algorithm can be found in Table~\ref {tab:04_param}.}}{76}{table.caption.118}%
-\contentsline {table}{\numberline {4.3}{\ignorespaces \relax }}{77}{table.caption.121}%
-\contentsline {table}{\numberline {4.2}{\ignorespaces Material data used for the modular bridge section 2D structure.}}{77}{table.caption.119}%
-\contentsline {table}{\numberline {4.4}{\ignorespaces Material data used for the simply supported 3D beam optimization.}}{78}{table.caption.124}%
-\contentsline {table}{\numberline {4.5}{\ignorespaces Numeric results of the parametric study on the influence of the number of subdomains on the optimized structures.}}{80}{table.caption.130}%
-\contentsline {table}{\numberline {4.6}{\ignorespaces Numeric results of the parametric study on the influence of the module complexity on the optimized structures.}}{83}{table.caption.136}%
-\contentsline {table}{\numberline {4.7}{\ignorespaces Coefficients of the quadratic function used to model how the volume $V$ varies with the number of subdomains $N_\text {sub}$ and the module complexity $\bar {n}$.}}{85}{table.caption.143}%
-\contentsline {table}{\numberline {4.8}{\ignorespaces Coefficients of the quadratic function used to model how the computational time $t$ varies with the number of subdomains $N_\text {sub}$ and the module complexity $\bar {n}$.}}{85}{table.caption.144}%
-\contentsline {table}{\numberline {4.9}{\ignorespaces Numerical results of the comparison between octet-truss and TTO structures.}}{89}{table.caption.151}%
-\contentsline {table}{\numberline {4.10}{\ignorespaces Numerical results of the comparison between the structure with multiple modules with the monolithic and the fully-modular structures. }}{94}{table.caption.156}%
-\addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces Material data used for the 2D cantilever beam.}}{105}{table.caption.162}%
-\contentsline {table}{\numberline {5.2}{\ignorespaces Numeric results of the parametric study on the influence of the number of modules on the optimized 2D cantilever beam.}}{109}{table.caption.169}%
-\contentsline {table}{\numberline {5.3}{\ignorespaces Material data used for the 2D Bailey bridge without local buckling constraints test case to compare with the work of Tugilimana \textit {et al.}\xspace \blx@tocontentsinit {0}\cite {tugilimana_integrated_2019}.}}{111}{table.caption.175}%
-\contentsline {table}{\numberline {5.4}{\ignorespaces Material data used for the 2D Bailey bridge with local buckling constraints test case.}}{113}{table.caption.177}%
-\contentsline {table}{\numberline {5.5}{\ignorespaces Material data used for the simply supported 3D beam optimization.}}{115}{table.caption.183}%
-\contentsline {table}{\numberline {5.6}{\ignorespaces Numeric results of the parametric study on the influence of the number of modules $N_\text {T}$ on the simply supported 3D beam.}}{116}{table.caption.185}%
-\addvspace {10\p@ }
-\contentsline {table}{\numberline {A.1}{\ignorespaces Reminder of the indexes used for the sensitivity analysis of the layout and topology optimization of modular structures.}}{145}{table.caption.190}%
 \addvspace {10\p@ }
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file
