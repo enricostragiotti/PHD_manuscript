@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.8.29)  21 JAN 2024 20:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.8.29)  22 JAN 2024 00:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2781,7 +2781,7 @@ LaTeX Font Info:    Font shape `T1/zplLF/b/sc' will be
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/zplLF/b/sc/12'.
 (microtype)             Ignoring protrusion settings for this character.
-<figures/01_intro/albatros-1.jpg, id=172, 561.09625pt x 298.11375pt>
+<figures/01_intro/albatros-1.jpg, id=174, 561.09625pt x 298.11375pt>
 File: figures/01_intro/albatros-1.jpg Graphic file (type jpg)
 <use figures/01_intro/albatros-1.jpg>
 Package pdftex.def Info: figures/01_intro/albatros-1.jpg  used on input line 24.
@@ -2792,7 +2792,7 @@ LaTeX Font Info:    Font shape `T1/zplLF/m/n' will be
 (Font)              scaled to size 8.73001pt on input line 24.
 LaTeX Font Info:    Font shape `T1/zplLF/b/n' will be
 (Font)              scaled to size 8.73001pt on input line 24.
-<figures/01_intro/pm_38_529_529759-gml5anffhc.jpg, id=173, 2613.16275pt x 1898.89426pt>
+<figures/01_intro/pm_38_529_529759-gml5anffhc.jpg, id=175, 2613.16275pt x 1898.89426pt>
 File: figures/01_intro/pm_38_529_529759-gml5anffhc.jpg Graphic file (type jpg)
 <use figures/01_intro/pm_38_529_529759-gml5anffhc.jpg>
 Package pdftex.def Info: figures/01_intro/pm_38_529_529759-gml5anffhc.jpg  used on input line 26.
@@ -2846,12 +2846,12 @@ Package pdftex.def Info: figures/01_intro/pm_38_529_529759-gml5anffhc.jpg  used 
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
-<figures/01_intro/fab.png, id=188, 410.7345pt x 471.56175pt>
+<figures/01_intro/fab.png, id=190, 410.7345pt x 471.56175pt>
 File: figures/01_intro/fab.png Graphic file (type png)
 <use figures/01_intro/fab.png>
 Package pdftex.def Info: figures/01_intro/fab.png  used on input line 36.
 (pdftex.def)             Requested size: 86.73936pt x 99.58464pt.
-<figures/01_intro/assembly.png, id=189, 1332.98pt x 670.505pt>
+<figures/01_intro/assembly.png, id=191, 1332.98pt x 670.505pt>
 File: figures/01_intro/assembly.png Graphic file (type png)
 <use figures/01_intro/assembly.png>
 Package pdftex.def Info: figures/01_intro/assembly.png  used on input line 38.
@@ -2934,7 +2934,7 @@ LaTeX Warning: Reference `chap:06' on page 5 undefined on input line 50.
 
  (chapters/8_conclusion.tex
 
-LaTeX Warning: Reference `' on page 7 undefined on input line 9.
+LaTeX Warning: Reference `chap:03' on page 7 undefined on input line 9.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
@@ -2959,9 +2959,28 @@ LaTeX Warning: Reference `' on page 7 undefined on input line 9.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
 
 
-LaTeX Warning: Reference `' on page 8 undefined on input line 13.
+
+LaTeX Warning: Reference `chap:04' on page 8 undefined on input line 11.
+
+
+LaTeX Warning: Reference `chap:05' on page 8 undefined on input line 13.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
@@ -2972,9 +2991,31 @@ LaTeX Warning: Reference `' on page 8 undefined on input line 13.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
 
 
-LaTeX Warning: Reference `' on page 9 undefined on input line 15.
+
+LaTeX Warning: Reference `chap:06' on page 9 undefined on input line 15.
+
+
+LaTeX Warning: Reference `chap:07' on page 9 undefined on input line 17.
+
+
+LaTeX Warning: Reference `chap:06' on page 9 undefined on input line 17.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
@@ -2985,37 +3026,43 @@ LaTeX Warning: Reference `' on page 9 undefined on input line 15.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
 
 
-LaTeX Warning: Reference `' on page 10 undefined on input line 17.
+
+LaTeX Warning: Reference `chap:02' on page 10 undefined on input line 22.
 
 
-LaTeX Warning: Reference `chap:06' on page 10 undefined on input line 17.
+LaTeX Warning: Reference `chap:03' on page 10 undefined on input line 24.
 
 
-LaTeX Warning: Reference `' on page 10 undefined on input line 23.
+LaTeX Warning: Reference `chap:05' on page 10 undefined on input line 26.
 
 
-LaTeX Warning: Reference `' on page 10 undefined on input line 25.
-
-
-LaTeX Warning: Reference `' on page 10 undefined on input line 30.
+LaTeX Warning: Reference `chap:06' on page 10 undefined on input line 28.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
 [10] (manuscript_Stragiotti.mw)
 \openout4 = `manuscript_Stragiotti.mw'.
 
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
 
 
-
-LaTeX Warning: Reference `' on page 11 undefined on input line 32.
-
-
-LaTeX Warning: Reference `' on page 11 undefined on input line 35.
+LaTeX Warning: Reference `chap:07' on page 11 undefined on input line 30.
 
 )
 \openout4 = `manuscript_Stragiotti.mw'.
@@ -3176,14 +3223,11 @@ l.43 \end{equation}
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
-\openout4 = `manuscript_Stragiotti.mw'.
-
-
-Underfull \vbox (badness 2221) has occurred while \output is active []
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
  [16] (manuscript_Stragiotti.mw)
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
@@ -3573,17 +3617,17 @@ Package logreq Info: Writing requests to 'manuscript_Stragiotti.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 87395 strings out of 476331
- 2018372 string characters out of 5797589
- 3341324 words of memory out of 5000000
- 106009 multiletter control sequences out of 15000+600000
+ 87407 strings out of 476331
+ 2018661 string characters out of 5797589
+ 3341322 words of memory out of 5000000
+ 106019 multiletter control sequences out of 15000+600000
  702529 words of font info for 342 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  133i,20n,159p,10658b,3658s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newpx/NewPXBMI.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newpx/NewPXBMI_gnu.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newpx/NewPXMI.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newpx/NewPXMI_gnu.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/bera/fvmr8a.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newpx/pxbsys.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newpx/pxmiaX.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newpx/pxsys.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/tex-gyre/qhvr.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newtx/txexs.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newtx/txmiaSTbb.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newpx/zplb.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newpx/zplr.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newpx/zplri.pfb>
-Output written on manuscript_Stragiotti.pdf (28 pages, 4980811 bytes).
+Output written on manuscript_Stragiotti.pdf (28 pages, 4982098 bytes).
 PDF statistics:
- 526 PDF objects out of 1000 (max. 8388607)
- 119 named destinations out of 1000 (max. 500000)
+ 541 PDF objects out of 1000 (max. 8388607)
+ 121 named destinations out of 1000 (max. 500000)
  81720 words of extra memory for PDF output out of 89155 (max. 10000000)
 
