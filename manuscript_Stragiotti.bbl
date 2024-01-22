@@ -19,403 +19,371 @@
 
 \refsection{0}
   \datalist[entry]{none/global//global/global}
-    \entry{carrier_investigation_2012}{inproceedings}{}
-      \name{author}{4}{}{%
-        {{hash=e463443b042d6b6f97a7f80ab6c9f6fe}{%
-           family={Carrier},
+    \entry{cramer_elastic_2019}{article}{}
+      \name{author}{11}{}{%
+        {{hash=c4b92a262209610f7ca22dca389539e1}{%
+           family={Cramer},
            familyi={C\bibinitperiod},
-           given={G},
-           giveni={G\bibinitperiod}}}%
-        {{hash=db1a1ae9690c69800ea5e3c6c27b3a83}{%
-           family={Atinault},
-           familyi={A\bibinitperiod},
-           given={O},
-           giveni={O\bibinitperiod}}}%
-        {{hash=79d5ed23dae08fc005a63b8507abb7be}{%
-           family={Dequand},
-           familyi={D\bibinitperiod},
-           given={S},
-           giveni={S\bibinitperiod}}}%
-        {{hash=3403da88ab0861dd28671b55315018d8}{%
-           family={Toussaint},
-           familyi={T\bibinitperiod},
-           given={C},
-           giveni={C\bibinitperiod}}}%
-      }
-      \list{language}{1}{%
-        {en}%
-      }
-      \strng{namehash}{84f4250cf6ffa3731d42b8bea5872ece}
-      \strng{fullhash}{e149e0880a500dc1bb748402afcb906c}
-      \strng{bibnamehash}{e149e0880a500dc1bb748402afcb906c}
-      \strng{authorbibnamehash}{e149e0880a500dc1bb748402afcb906c}
-      \strng{authornamehash}{84f4250cf6ffa3731d42b8bea5872ece}
-      \strng{authorfullhash}{e149e0880a500dc1bb748402afcb906c}
-      \field{extraname}{1}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{Strut-braced wing (SBW) is considered in the ongoing ONERA research project ALBATROS as one of a potential fuel-saving transport aircraft configuration. Although not a new concept [1] (several aircraft such as the Hurel-Dubois HD-34, 1956, have used this concept), it has recently received renewed interest since [2][3][4][5][6][7][8][9]. Indeed, the structural strut enables a reduction of the wing weight thanks to the reduction of the bending moment to be sustained by the wing box. The presence of the strut therefore enables to increase the wing aspect ratio, which results in direct aerodynamic performance gains, without considerable weight penalty as it is the case with conventional cantilever wings. The ALBATROS project aims at evaluating the potential of a strut-braced wing concept to improve the aero-structural efficiency of transonic transport aircraft. For that, specific studies are carried out to investigate the potential gains and possible problems of the concept in term of aerodynamics, structures and flight mechanics.}
-      \field{title}{Investigation of a {Strut}-{Braced} {Wing} {Configuration} for {Future} {Commercial} {Transport}}
-      \field{year}{2012}
-      \field{pages}{16}
-      \range{pages}{1}
-      \verb{file}
-      \verb Carrier et al. - INVESTIGATION OF A STRUT-BRACED WING CONFIGURATION.pdf:D\:\\estragio\\Zotero\\storage\\BXJPPPGV\\Carrier et al. - INVESTIGATION OF A STRUT-BRACED WING CONFIGURATION.pdf:application/pdf
-      \endverb
-    \endentry
-    \entry{carrier_multidisciplinary_2021}{inproceedings}{}
-      \name{author}{8}{}{%
-        {{hash=92550697a536532ab23663c6422d0f56}{%
-           family={Carrier},
+           given={Nicholas\bibnamedelima B.},
+           giveni={N\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=313412b7b87239ec487a05e4bc1ebaa2}{%
+           family={Cellucci},
            familyi={C\bibinitperiod},
-           given={Gerald\bibnamedelima G.},
-           giveni={G\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
-        {{hash=5e646f7b1928aa0751a5ba58ad45c97b}{%
-           family={Arnoult},
-           familyi={A\bibinitperiod},
-           given={Guillaume},
-           giveni={G\bibinitperiod}}}%
-        {{hash=3dc9e03a0a4365e714d5899302b710ed}{%
-           family={Fabbiane},
+           given={Daniel\bibnamedelima W.},
+           giveni={D\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=de9d0dc74d4ec7c33f828b81e9dfbdbe}{%
+           family={Formoso},
            familyi={F\bibinitperiod},
-           given={Nicolo},
-           giveni={N\bibinitperiod}}}%
-        {{hash=db07e3510540ac9b46a4e7d6e0409c56}{%
-           family={Schotte},
-           familyi={S\bibinitperiod},
-           given={Jean-Sebastien},
-           giveni={J\bibinithyphendelim S\bibinitperiod}}}%
-        {{hash=a60ffa4eecd12b3ee6b2cf6ff211c01d}{%
-           family={David},
-           familyi={D\bibinitperiod},
-           given={Christophe},
-           giveni={C\bibinitperiod}}}%
-        {{hash=c285618cc30b6569c529bc1ac41445d9}{%
-           family={Defoort},
-           familyi={D\bibinitperiod},
-           given={Sébastien},
-           giveni={S\bibinitperiod}}}%
-        {{hash=e1bb9e2dcd56c38611901866256a64ea}{%
-           family={Benard},
-           familyi={B\bibinitperiod},
-           given={Emmanuel},
-           giveni={E\bibinitperiod}}}%
-        {{hash=c0b8d2349411dc7259f0fe437fc13eef}{%
-           family={Delavenne},
-           familyi={D\bibinitperiod},
-           given={Martin},
-           giveni={M\bibinitperiod}}}%
-      }
-      \list{publisher}{2}{%
-        {American Institute of Aeronautics}%
-        {Astronautics}%
-      }
-      \strng{namehash}{8a09f0db1b95c2ce7064f248bc0af5da}
-      \strng{fullhash}{dc50130e52aa6a0183244242fdca2ed9}
-      \strng{bibnamehash}{dc50130e52aa6a0183244242fdca2ed9}
-      \strng{authorbibnamehash}{dc50130e52aa6a0183244242fdca2ed9}
-      \strng{authornamehash}{8a09f0db1b95c2ce7064f248bc0af5da}
-      \strng{authorfullhash}{dc50130e52aa6a0183244242fdca2ed9}
-      \field{extraname}{2}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{{AIAA} {SCITECH} 2022 {Forum}}
-      \field{month}{12}
-      \field{series}{{AIAA} {SciTech} {Forum}}
-      \field{title}{Multidisciplinary analysis and design of strut-braced wing concept for medium range aircraft}
-      \field{urlday}{20}
-      \field{urlmonth}{1}
-      \field{urlyear}{2024}
-      \field{year}{2021}
-      \field{urldateera}{ce}
-      \verb{doi}
-      \verb 10.2514/6.2022-0726
-      \endverb
-      \verb{file}
-      \verb Submitted Version:D\:\\estragio\\Zotero\\storage\\VCELS6Q7\\Carrier et al. - 2021 - Multidisciplinary analysis and design of strut-bra.pdf:application/pdf
-      \endverb
-      \verb{urlraw}
-      \verb https://arc.aiaa.org/doi/10.2514/6.2022-0726
-      \endverb
-      \verb{url}
-      \verb https://arc.aiaa.org/doi/10.2514/6.2022-0726
-      \endverb
-      \keyw{Aerodynamic Coefficients,Aerodynamic Performance,Aircraft Conceptual Design,Aircraft Configurations,Aircraft Design,Cantilever,High Aspect Ratio,Structural Analysis,Transport Aircraft,Wing Configurations}
-    \endentry
-    \entry{noauthor_airbus_2021}{misc}{}
-      \name{author}{1}{}{%
-        {{hash=b110aa10dc3e3aa939ba099440938e65}{%
-           family={Airbus},
-           familyi={A\bibinitperiod}}}%
-      }
-      \list{language}{1}{%
-        {en}%
-      }
-      \strng{namehash}{b110aa10dc3e3aa939ba099440938e65}
-      \strng{fullhash}{b110aa10dc3e3aa939ba099440938e65}
-      \strng{bibnamehash}{b110aa10dc3e3aa939ba099440938e65}
-      \strng{authorbibnamehash}{b110aa10dc3e3aa939ba099440938e65}
-      \strng{authornamehash}{b110aa10dc3e3aa939ba099440938e65}
-      \strng{authorfullhash}{b110aa10dc3e3aa939ba099440938e65}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{Airbus has revealed three concepts for the world’s first zero-emission commercial aircraft which could enter service by 2035. These concepts each represent a different approach to achieving zero-emission flight, exploring various technology pathways and aerodynamic configurations in order to support the Company’s ambition of leading the way in the decarbonisation of the entire aviation industry.}
-      \field{month}{10}
-      \field{title}{Airbus reveals new zero-emission concept aircraft {|} {Airbus}}
-      \field{urlday}{20}
-      \field{urlmonth}{1}
-      \field{urlyear}{2024}
-      \field{year}{2021}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://www.airbus.com/en/newsroom/press-releases/2020-09-airbus-reveals-new-zero-emission-concept-aircraft
-      \endverb
-      \verb{url}
-      \verb https://www.airbus.com/en/newsroom/press-releases/2020-09-airbus-reveals-new-zero-emission-concept-aircraft
-      \endverb
-    \endentry
-    \entry{belvin_space_2016}{inproceedings}{}
-      \name{author}{9}{}{%
-        {{hash=6af32e629d81cc41283ce59f010b33ac}{%
-           family={Belvin},
-           familyi={B\bibinitperiod},
-           given={Wendel\bibnamedelima K.},
-           giveni={W\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
-        {{hash=7fe3529534ffa42939455f2643318f74}{%
-           family={Doggett},
-           familyi={D\bibinitperiod},
-           given={William\bibnamedelima R.},
-           giveni={W\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
-        {{hash=e7d4c61a4d0e95269ffa663b94c8aeb6}{%
-           family={Watson},
-           familyi={W\bibinitperiod},
-           given={Judith\bibnamedelima J.},
-           giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
-        {{hash=b87755d6c4eeb4d69276f40967277fe5}{%
-           family={Dorsey},
-           familyi={D\bibinitperiod},
-           given={John\bibnamedelima T.},
-           giveni={J\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
-        {{hash=93ef3dbb4b9245dd22198af2eaae5882}{%
-           family={Warren},
-           familyi={W\bibinitperiod},
-           given={Jay\bibnamedelima E.},
-           giveni={J\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
-        {{hash=48a8eba19135497d645347f688432ffa}{%
-           family={Jones},
+           given={Olivia\bibnamedelima B.},
+           giveni={O\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=fb844abc5ed12a860277b3320573596f}{%
+           family={Gregg},
+           familyi={G\bibinitperiod},
+           given={Christine\bibnamedelima E.},
+           giveni={C\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=5230f55680a41212167d3ed2eab519f8}{%
+           family={Jenett},
            familyi={J\bibinitperiod},
-           given={Thomas\bibnamedelima C.},
-           giveni={T\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
-        {{hash=608f0509526d16c455585c47bb1e2609}{%
-           family={Komendera},
+           given={Benjamin\bibnamedelima E.},
+           giveni={B\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=28f4204999fd9d16ed6ccade9a80f85a}{%
+           family={Kim},
            familyi={K\bibinitperiod},
-           given={Erik\bibnamedelima E.},
-           giveni={E\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
-        {{hash=0b3fb2a982c67431f3ae007549401eb4}{%
-           family={Mann},
-           familyi={M\bibinitperiod},
-           given={Troy},
-           giveni={T\bibinitperiod}}}%
-        {{hash=343a49aadec919323d22e8b88c7d3b34}{%
-           family={Bowman},
-           familyi={B\bibinitperiod},
-           given={Lynn\bibnamedelima M.},
-           giveni={L\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
-      }
-      \list{publisher}{2}{%
-        {American Institute of Aeronautics}%
-        {Astronautics}%
-      }
-      \strng{namehash}{4f4cccea56f3ec7c5586fa7d8b517900}
-      \strng{fullhash}{b5b14f12eb71e106081c59a664895dd6}
-      \strng{bibnamehash}{b5b14f12eb71e106081c59a664895dd6}
-      \strng{authorbibnamehash}{b5b14f12eb71e106081c59a664895dd6}
-      \strng{authornamehash}{4f4cccea56f3ec7c5586fa7d8b517900}
-      \strng{authorfullhash}{b5b14f12eb71e106081c59a664895dd6}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{shorttitle}
-      \field{booktitle}{3rd {AIAA} {Spacecraft} {Structures} {Conference}}
-      \field{month}{1}
-      \field{series}{{AIAA} {SciTech} {Forum}}
-      \field{shorttitle}{In-{Space} {Structural} {Assembly}}
-      \field{title}{In-{Space} {Structural} {Assembly}: {Applications} and {Technology}}
-      \field{urlday}{20}
-      \field{urlmonth}{1}
-      \field{urlyear}{2024}
-      \field{year}{2016}
-      \field{urldateera}{ce}
-      \verb{doi}
-      \verb 10.2514/6.2016-2163
-      \endverb
-      \verb{file}
-      \verb Submitted Version:D\:\\estragio\\Zotero\\storage\\JZQFIIEE\\Belvin et al. - 2016 - In-Space Structural Assembly Applications and Tec.pdf:application/pdf
-      \endverb
-      \verb{urlraw}
-      \verb https://arc.aiaa.org/doi/10.2514/6.2016-2163
-      \endverb
-      \verb{url}
-      \verb https://arc.aiaa.org/doi/10.2514/6.2016-2163
-      \endverb
-      \keyw{High Definition Space Telescope,Human Exploration Destination Systems,Infrared Telescopes,International Space Station,Planar Truss,Planets,Robotics,Solar Electric Propulsion,Spacecraft System,Structural Technology}
-    \endentry
-    \entry{cheung_reversibly_2013}{article}{}
-      \name{author}{2}{}{%
+           given={Joseph\bibnamedelima H.},
+           giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=f01185d29620d0c738eb31cb2026e99d}{%
+           family={Lendraitis},
+           familyi={L\bibinitperiod},
+           given={Martynas},
+           giveni={M\bibinitperiod}}}%
+        {{hash=571cdbadfb89884af86de092b2141659}{%
+           family={Swei},
+           familyi={S\bibinitperiod},
+           given={Sean\bibnamedelima S.},
+           giveni={S\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=146a00e4727657311cad76f4624f3335}{%
+           family={Trinh},
+           familyi={T\bibinitperiod},
+           given={Greenfield\bibnamedelima T.},
+           giveni={G\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=46ad41b28a154ee54cae4788895b8137}{%
+           family={Trinh},
+           familyi={T\bibinitperiod},
+           given={Khanh\bibnamedelima V.},
+           giveni={K\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
         {{hash=167d96b89d4ec4a25094057c319979eb}{%
            family={Cheung},
            familyi={C\bibinitperiod},
            given={Kenneth\bibnamedelima C.},
            giveni={K\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
-        {{hash=113a59d98dd032dc5604a9b82a5700b9}{%
-           family={Gershenfeld},
-           familyi={G\bibinitperiod},
-           given={Neil},
-           giveni={N\bibinitperiod}}}%
       }
       \list{language}{1}{%
         {en}%
       }
-      \strng{namehash}{368d87479e9468e85b5d4454a15bc93b}
-      \strng{fullhash}{368d87479e9468e85b5d4454a15bc93b}
-      \strng{bibnamehash}{368d87479e9468e85b5d4454a15bc93b}
-      \strng{authorbibnamehash}{368d87479e9468e85b5d4454a15bc93b}
-      \strng{authornamehash}{368d87479e9468e85b5d4454a15bc93b}
-      \strng{authorfullhash}{368d87479e9468e85b5d4454a15bc93b}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \strng{namehash}{39bde62302bf3125a9aa2c761f488538}
+      \strng{fullhash}{66617fcfa0ce163c8f219ede752f7b5e}
+      \strng{bibnamehash}{66617fcfa0ce163c8f219ede752f7b5e}
+      \strng{authorbibnamehash}{66617fcfa0ce163c8f219ede752f7b5e}
+      \strng{authornamehash}{39bde62302bf3125a9aa2c761f488538}
+      \strng{authorfullhash}{66617fcfa0ce163c8f219ede752f7b5e}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{issn}{0036-8075, 1095-9203}
-      \field{journaltitle}{Science}
-      \field{month}{9}
-      \field{note}{Publisher: American Association for the Advancement of Science Section: Report}
-      \field{number}{6151}
-      \field{title}{Reversibly {Assembled} {Cellular} {Composite} {Materials}}
+      \field{abstract}{Ultralight materials present an opportunity to dramatically increase the efficiency of load-bearing aerostructures. To date, however, these ultralight materials have generally been confined to the laboratory bench-top, due to dimensional constraints of the manufacturing processes. We show a programmable material system applied as a large-scale, ultralight, and conformable aeroelastic structure. The use of a modular, lattice-based, ultralight material results in stiffness typical of an elastomer (2.6 MPa) at a mass density typical of an aerogel . This, combined with a building block based manufacturing and configuration strategy, enables the rapid realization of new adaptive structures and mechanisms. The heterogeneous design with programmable anisotropy allows for enhanced elastic and global shape deformation in response to external loading, making it useful for tuned fluid-structure interaction. We demonstrate an example application experiment using two building block types for the primary structure of a 4.27 m wingspan aircraft, where we spatially program elastic shape morphing to increase aerodynamic efficiency and improve roll control authority, demonstrated with full-scale wind tunnel testing.}
+      \field{issn}{0964-1726}
+      \field{journaltitle}{Smart Materials and Structures}
+      \field{month}{4}
+      \field{number}{5}
+      \field{title}{Elastic shape morphing of ultralight structures by programmable assembly}
       \field{urlday}{2}
       \field{urlmonth}{10}
       \field{urlyear}{2020}
-      \field{volume}{341}
-      \field{year}{2013}
+      \field{volume}{28}
+      \field{year}{2019}
       \field{urldateera}{ce}
-      \field{pages}{1219\bibrangedash 1221}
-      \range{pages}{3}
+      \field{pages}{055006}
+      \range{pages}{1}
       \verb{doi}
-      \verb 10.1126/science.1240889
-      \endverb
-      \verb{urlraw}
-      \verb https://science.sciencemag.org/content/341/6151/1219
-      \endverb
-      \verb{url}
-      \verb https://science.sciencemag.org/content/341/6151/1219
+      \verb 10.1088/1361-665X/ab0ea2
       \endverb
     \endentry
-    \entry{costa_algorithmic_2020}{article}{}
-      \name{author}{6}{}{%
-        {{hash=d954705c32ec3aa68633ceb431398e89}{%
-           family={Costa},
-           familyi={C\bibinitperiod},
-           given={Allan},
-           giveni={A\bibinitperiod}}}%
-        {{hash=adf0762ed660a193284dd64970657a51}{%
-           family={Jenett},
-           familyi={J\bibinitperiod},
-           given={Benjamin},
-           giveni={B\bibinitperiod}}}%
-        {{hash=c257f046f2088d8ca814283264f0352c}{%
-           family={Kostitsyna},
-           familyi={K\bibinitperiod},
-           given={Irina},
-           giveni={I\bibinitperiod}}}%
-        {{hash=9fd680d7c46ccc689dc5c22dc80cedf9}{%
-           family={Abdel-Rahman},
-           familyi={A\bibinithyphendelim R\bibinitperiod},
-           given={Amira},
-           giveni={A\bibinitperiod}}}%
-        {{hash=113a59d98dd032dc5604a9b82a5700b9}{%
-           family={Gershenfeld},
-           familyi={G\bibinitperiod},
-           given={Neil},
-           giveni={N\bibinitperiod}}}%
-        {{hash=1c5aa26ab8c29ad6e448cb3648e67559}{%
-           family={Cheung},
-           familyi={C\bibinitperiod},
-           given={Kenneth},
-           giveni={K\bibinitperiod}}}%
+    \entry{opgenoord_aeroelastic_2018}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=9a4676ce16d52df1aa7892cc01fef54d}{%
+           family={Opgenoord},
+           familyi={O\bibinitperiod},
+           given={Max\bibnamedelima M.},
+           giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=a51c06eb9ede4de9ef30715d223beb5c}{%
+           family={Willcox},
+           familyi={W\bibinitperiod},
+           given={Karen\bibnamedelima E.},
+           giveni={K\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
       }
       \list{language}{1}{%
         {en}%
       }
-      \strng{namehash}{83278dca0141c45ad2764788e8415651}
-      \strng{fullhash}{84fd8402522191ff529ba5ccf138c3a6}
-      \strng{bibnamehash}{84fd8402522191ff529ba5ccf138c3a6}
-      \strng{authorbibnamehash}{84fd8402522191ff529ba5ccf138c3a6}
-      \strng{authornamehash}{83278dca0141c45ad2764788e8415651}
-      \strng{authorfullhash}{84fd8402522191ff529ba5ccf138c3a6}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \list{location}{1}{%
+        {Atlanta, Georgia}%
+      }
+      \list{publisher}{2}{%
+        {American Institute of Aeronautics}%
+        {Astronautics}%
+      }
+      \strng{namehash}{1b1275f889d783d30eee944937823236}
+      \strng{fullhash}{1b1275f889d783d30eee944937823236}
+      \strng{bibnamehash}{1b1275f889d783d30eee944937823236}
+      \strng{authorbibnamehash}{1b1275f889d783d30eee944937823236}
+      \strng{authornamehash}{1b1275f889d783d30eee944937823236}
+      \strng{authorfullhash}{1b1275f889d783d30eee944937823236}
+      \field{extraname}{1}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{arXiv:2008.11925 [cs]}
-      \field{month}{8}
-      \field{note}{arXiv: 2008.11925}
-      \field{title}{Algorithmic {Approaches} to {Reconfigurable} {Assembly} {Systems}}
-      \field{urlday}{17}
-      \field{urlmonth}{3}
-      \field{urlyear}{2021}
-      \field{year}{2020}
+      \field{booktitle}{2018 {Multidisciplinary} {Analysis} and {Optimization} {Conference}}
+      \field{month}{6}
+      \field{title}{Aeroelastic {Tailoring} using {Additively} {Manufactured} {Lattice} {Structures}}
+      \field{urlday}{5}
+      \field{urlmonth}{10}
+      \field{urlyear}{2020}
+      \field{year}{2018}
       \field{urldateera}{ce}
       \verb{doi}
-      \verb 10.1109/AERO.2019.8741572
+      \verb 10.2514/6.2018-4055
       \endverb
       \verb{urlraw}
-      \verb http://arxiv.org/abs/2008.11925
+      \verb https://arc.aiaa.org/doi/10.2514/6.2018-4055
       \endverb
       \verb{url}
-      \verb http://arxiv.org/abs/2008.11925
+      \verb https://arc.aiaa.org/doi/10.2514/6.2018-4055
       \endverb
-      \keyw{Computer Science - Multiagent Systems,Computer Science - Robotics,J.6}
     \endentry
-    \entry{martins_engineering_2021}{book}{}
+    \entry{opgenoord_design_2019}{article}{}
       \name{author}{2}{}{%
-        {{hash=398dd601c2b34edff07ab710dc60e070}{%
+        {{hash=8267983366f0bb66489b9a56c599787d}{%
+           family={Opgenoord},
+           familyi={O\bibinitperiod},
+           given={Max\bibnamedelimb M.\bibnamedelimi J.},
+           giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=a51c06eb9ede4de9ef30715d223beb5c}{%
+           family={Willcox},
+           familyi={W\bibinitperiod},
+           given={Karen\bibnamedelima E.},
+           giveni={K\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{dde3fcd637aca44c40b005701ced3151}
+      \strng{fullhash}{dde3fcd637aca44c40b005701ced3151}
+      \strng{bibnamehash}{dde3fcd637aca44c40b005701ced3151}
+      \strng{authorbibnamehash}{dde3fcd637aca44c40b005701ced3151}
+      \strng{authornamehash}{dde3fcd637aca44c40b005701ced3151}
+      \strng{authorfullhash}{dde3fcd637aca44c40b005701ced3151}
+      \field{extraname}{2}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Structural and Multidisciplinary Optimization}
+      \field{month}{8}
+      \field{number}{2}
+      \field{title}{Design for additive manufacturing: cellular structures in early-stage aerospace design}
+      \field{urlday}{5}
+      \field{urlmonth}{10}
+      \field{urlyear}{2020}
+      \field{volume}{60}
+      \field{year}{2019}
+      \field{urldateera}{ce}
+      \field{pages}{411\bibrangedash 428}
+      \range{pages}{18}
+      \verb{doi}
+      \verb 10.1007/s00158-019-02305-8
+      \endverb
+    \endentry
+    \entry{shahabsafa_novel_2018}{article}{}
+      \name{author}{7}{}{%
+        {{hash=aaa9ce3d7dc197da2f6cdfb7528a1cb0}{%
+           family={Shahabsafa},
+           familyi={S\bibinitperiod},
+           given={Mohammad},
+           giveni={M\bibinitperiod}}}%
+        {{hash=e6a55d22efcca685f11ecdb919b4b46f}{%
+           family={Mohammad-Nezhad},
+           familyi={M\bibinithyphendelim N\bibinitperiod},
+           given={Ali},
+           giveni={A\bibinitperiod}}}%
+        {{hash=a9e401c86ac01b246bcac3ee2468cce1}{%
+           family={Terlaky},
+           familyi={T\bibinitperiod},
+           given={Tamás},
+           giveni={T\bibinitperiod}}}%
+        {{hash=52288ad88af8d2a82d791a180db2bc09}{%
+           family={Zuluaga},
+           familyi={Z\bibinitperiod},
+           given={Luis},
+           giveni={L\bibinitperiod}}}%
+        {{hash=8a879f55d80ea2054dda018cde71a145}{%
+           family={He},
+           familyi={H\bibinitperiod},
+           given={Sicheng},
+           giveni={S\bibinitperiod}}}%
+        {{hash=dbd845fd6b96bddc065ea1799f9b7512}{%
+           family={Hwang},
+           familyi={H\bibinitperiod},
+           given={John\bibnamedelima T.},
+           giveni={J\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=f78019558101a841974c5f3b5a885657}{%
            family={Martins},
            familyi={M\bibinitperiod},
-           given={J.R.R.A.},
-           giveni={J\bibinitperiod}}}%
-        {{hash=df7f3dfc7e719aecd111ede985107545}{%
-           family={Ning},
-           familyi={N\bibinitperiod},
-           given={A.},
-           giveni={A\bibinitperiod}}}%
+           given={Joaquim\bibnamedelimb R.\bibnamedelimi R.\bibnamedelimi A.},
+           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod\bibinitdelim R\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
       }
-      \list{publisher}{1}{%
-        {Cambridge University Press}%
+      \list{language}{1}{%
+        {en}%
       }
-      \strng{namehash}{a0333472004665e74212113c8aea8fcc}
-      \strng{fullhash}{a0333472004665e74212113c8aea8fcc}
-      \strng{bibnamehash}{a0333472004665e74212113c8aea8fcc}
-      \strng{authorbibnamehash}{a0333472004665e74212113c8aea8fcc}
-      \strng{authornamehash}{a0333472004665e74212113c8aea8fcc}
-      \strng{authorfullhash}{a0333472004665e74212113c8aea8fcc}
+      \strng{namehash}{d8f74ab1003f51c5ca60e6dc8d2c0b56}
+      \strng{fullhash}{3ed1524cc70759aba8d1520dfbfe810f}
+      \strng{bibnamehash}{3ed1524cc70759aba8d1520dfbfe810f}
+      \strng{authorbibnamehash}{3ed1524cc70759aba8d1520dfbfe810f}
+      \strng{authornamehash}{d8f74ab1003f51c5ca60e6dc8d2c0b56}
+      \strng{authorfullhash}{3ed1524cc70759aba8d1520dfbfe810f}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{isbn}{978-1-108-83341-7}
-      \field{title}{Engineering {Design} {Optimization}}
-      \field{year}{2021}
-      \verb{urlraw}
-      \verb https://books.google.fr/books?id=AHVpzgEACAAJ
+      \field{abstract}{Discrete truss sizing problems are very challenging to solve due to their combinatorial, nonlinear, non-convex nature. Consequently, truss sizing problems become unsolvable as the size of the truss grows. To address this issue, we consider various mathematical formulations for the truss design problem with the objective of minimizing weight, while the crosssectional areas of the bars take only discrete values. Euler buckling constraints, Hooke’s law, and bounds for stress and displacements are also considered. We propose mixed integer linear optimization (MILO) reformulations of the non-convex mixed integer models. The resulting MILO models are not solvable with existing MILO solvers as the size of the problem grows. Our novel methodology provides high-quality solutions for large-scale real truss sizing problems, as demonstrated through extensive numerical experiments.}
+      \field{issn}{1615-147X, 1615-1488}
+      \field{journaltitle}{Structural and Multidisciplinary Optimization}
+      \field{month}{12}
+      \field{number}{6}
+      \field{title}{A novel approach to discrete truss design problems using mixed integer neighborhood search}
+      \field{urlday}{23}
+      \field{urlmonth}{6}
+      \field{urlyear}{2022}
+      \field{volume}{58}
+      \field{year}{2018}
+      \field{urldateera}{ce}
+      \field{pages}{2411\bibrangedash 2429}
+      \range{pages}{19}
+      \verb{doi}
+      \verb 10.1007/s00158-018-2099-8
       \endverb
-      \verb{url}
-      \verb https://books.google.fr/books?id=AHVpzgEACAAJ
+    \endentry
+    \entry{brooks_benchmark_2018}{article}{}
+      \name{author}{3}{}{%
+        {{hash=90b3c2058a3c750b7659a97d97e3b92d}{%
+           family={Brooks},
+           familyi={B\bibinitperiod},
+           given={Timothy\bibnamedelima R.},
+           giveni={T\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=17c9d79f7c0b7c2e7eb2f3cd684cd508}{%
+           family={Kenway},
+           familyi={K\bibinitperiod},
+           given={Gaetan\bibnamedelimb K.\bibnamedelimi W.},
+           giveni={G\bibinitperiod\bibinitdelim K\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=f78019558101a841974c5f3b5a885657}{%
+           family={Martins},
+           familyi={M\bibinitperiod},
+           given={Joaquim\bibnamedelimb R.\bibnamedelimi R.\bibnamedelimi A.},
+           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod\bibinitdelim R\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{cffa287a9d3b4746720462e587e0f67e}
+      \strng{fullhash}{cffa287a9d3b4746720462e587e0f67e}
+      \strng{bibnamehash}{cffa287a9d3b4746720462e587e0f67e}
+      \strng{authorbibnamehash}{cffa287a9d3b4746720462e587e0f67e}
+      \strng{authornamehash}{cffa287a9d3b4746720462e587e0f67e}
+      \strng{authorfullhash}{cffa287a9d3b4746720462e587e0f67e}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0001-1452, 1533-385X}
+      \field{journaltitle}{AIAA Journal}
+      \field{month}{7}
+      \field{number}{7}
+      \field{title}{Benchmark {Aerostructural} {Models} for the {Study} of {Transonic} {Aircraft} {Wings}}
+      \field{urlday}{12}
+      \field{urlmonth}{9}
+      \field{urlyear}{2022}
+      \field{volume}{56}
+      \field{year}{2018}
+      \field{urldateera}{ce}
+      \field{pages}{2840\bibrangedash 2855}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.2514/1.J056603
+      \endverb
+    \endentry
+    \entry{fakhimi_discrete_2021}{article}{}
+      \name{author}{7}{}{%
+        {{hash=b717b4e1abf47b32aac90e145f515339}{%
+           family={Fakhimi},
+           familyi={F\bibinitperiod},
+           given={Ramin},
+           giveni={R\bibinitperiod}}}%
+        {{hash=aaa9ce3d7dc197da2f6cdfb7528a1cb0}{%
+           family={Shahabsafa},
+           familyi={S\bibinitperiod},
+           given={Mohammad},
+           giveni={M\bibinitperiod}}}%
+        {{hash=ff420034510e582a19f9526e9d6cf29d}{%
+           family={Lei},
+           familyi={L\bibinitperiod},
+           given={Weiming},
+           giveni={W\bibinitperiod}}}%
+        {{hash=8a879f55d80ea2054dda018cde71a145}{%
+           family={He},
+           familyi={H\bibinitperiod},
+           given={Sicheng},
+           giveni={S\bibinitperiod}}}%
+        {{hash=f78019558101a841974c5f3b5a885657}{%
+           family={Martins},
+           familyi={M\bibinitperiod},
+           given={Joaquim\bibnamedelimb R.\bibnamedelimi R.\bibnamedelimi A.},
+           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod\bibinitdelim R\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=a9e401c86ac01b246bcac3ee2468cce1}{%
+           family={Terlaky},
+           familyi={T\bibinitperiod},
+           given={Tamás},
+           giveni={T\bibinitperiod}}}%
+        {{hash=1ec5f170802538f9277ae2ac1e7e0208}{%
+           family={Zuluaga},
+           familyi={Z\bibinitperiod},
+           given={Luis\bibnamedelima F.},
+           giveni={L\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{380c8aa31cab738c8c74b768ccb153dd}
+      \strng{fullhash}{4ab2596912d228c66afb650f90fc5f9d}
+      \strng{bibnamehash}{4ab2596912d228c66afb650f90fc5f9d}
+      \strng{authorbibnamehash}{4ab2596912d228c66afb650f90fc5f9d}
+      \strng{authornamehash}{380c8aa31cab738c8c74b768ccb153dd}
+      \strng{authorfullhash}{4ab2596912d228c66afb650f90fc5f9d}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Discrete multi-load truss sizing optimization (MTSO) problems are challenging to solve due to their combinatorial, nonlinear, and non-convex nature. This study highlights two important characteristics of the feasible set of MTSO problems considered here, in which force balance equations, Hooke’s law, yield stress, bound constraints on displacements, and local bucking are taken into account. Namely, we use the linear or bilinear nature of the problem to take advantage of re-scaling properties of both the problem’s design and auxiliary variables, as well as to extend the superposition principle to the case in which nonlinear stress constraints are considered. Taking advantage of these characteristics, we extend the neighborhood search mixed-integer linear optimization (NS-MILO) method (Shahabsafa et al. in SMO 63: 21–38, 2018), which provides an effective heuristic solution approach based on exact solution methods for MILO problems. Through extensive computational experiments, we demonstrate that the extended NS-MILO method provides highquality solutions for large-scale discrete MTSO problems in a reasonable time.}
+      \field{issn}{1389-4420, 1573-2924}
+      \field{journaltitle}{Optimization and Engineering}
+      \field{month}{9}
+      \field{shorttitle}{Discrete multi-load truss sizing optimization}
+      \field{title}{Discrete multi-load truss sizing optimization: model analysis and computational experiments}
+      \field{urlday}{23}
+      \field{urlmonth}{6}
+      \field{urlyear}{2022}
+      \field{year}{2021}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.1007/s11081-021-09672-6
       \endverb
     \endentry
   \enddatalist

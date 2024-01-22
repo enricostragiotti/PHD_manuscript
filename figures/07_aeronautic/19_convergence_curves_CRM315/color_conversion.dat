@@ -1,0 +1,15 @@
+{RGB}{58,76,192}
+{RGB}{153,186,254}
+{RGB}{237,208,193}
+{RGB}{225,104,82}
+{RGB}{179,3,38}
+
+\definecolor{accent_b_1}{RGB}{58,76,192}
+\definecolor{accent_b_2}{RGB}{103,136,237}
+\definecolor{accent_b_3}{RGB}{153,186,254}
+\definecolor{accent_b_4}{RGB}{200,215,239}
+
+\definecolor{accent_r_1}{RGB}{179,3,38}
+\definecolor{accent_r_2}{RGB}{225,104,82}
+\definecolor{accent_r_3}{RGB}{246,167,137}
+\definecolor{accent_r_4}{RGB}{237,208,193}

@@ -1,11 +1,11 @@
 \setchapterpreamble[u]{\margintoc}
 \glsresetall % reset glossary
 \chapter{Optimizing modular structures} \label{chap:05}
-Introduction TODO
-\todo{EVALUATE DENSITIES}
+\chpref{chap:04} addressed the primary limitations of the classical \gls{tto} method by introducing various mechanical constraints such as minimum slenderness of active bars, topological buckling, and kinematic compatibility. However, structures optimized using this algorithm often exhibit complex topologies, and regularization methods could enhance the manufacturing phase. This chapter focuses on developing a modular framework for the proposed \gls{tto} formulation.
 
 In \secref{sec:05_01}, we provide a detailed explanation of the modifications needed to apply modular constraints to the \gls{tto}. Specifically, we focus on how to model the problem when multiple modules are used and how topological buckling constraints are implemented in modular structures. Finally, in \secref{sec:05_02}, we evaluate the proposed formulation through various 2D and 3D test cases, aiming to gain a better understanding of modular structures.
 \marginnote{Part of the content presented in this chapter has been published and showcased during a conference as:\\Stragiotti, E. et al. (2022) "Enhanced truss topology optimization ({TTO}) applied to a cellular wing box", in \textit{ASMO-UK 12, an ISSMO Conference on Engineering Design Optimization}. Book of proceedings. Leeds, United Kingdom~\cite{stragiotti_enhanced_2022}.}
+
 \section{Formulation of a modular structure optimization algorithm} \label{sec:05_01}
 Assembled modular ultralight structures present an opportunity to greatly improve the performance and cost efficiency of modern aerostructures~\sidecite{cramer_elastic_2019}. The repetitive nature brings various interesting features among which reduced tooling, fast assembly, and short repair time. Additionally, as the mechanical performance of the structure is greatly influenced by the topology and the materials of the repetitive pattern, modular structures are naturally prone to optimization.
 

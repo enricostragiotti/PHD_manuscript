@@ -202,7 +202,7 @@ This document was typeset with the help of \href{https://sourceforge.net/project
 \mainmatter % Denotes the start of the main document content, resets page numbering and uses arabic numbers
 \setchapterstyle{kao} % Choose the default chapter heading style
 
-\include{chapters/1_intro}
+% \include{chapters/1_intro}
 
 % \include{chapters/2_literature_review}
 
@@ -214,19 +214,11 @@ This document was typeset with the help of \href{https://sourceforge.net/project
 
 % \include{chapters/6_DMO}
 
-% \include{chapters/7_advanced_applications}
+\include{chapters/7_advanced_applications}
 
-\include{chapters/8_conclusion}
+% \include{chapters/8_conclusion}
 
 % \include{chapters/99_pubblications}
-
-\appendix % From here onwards, chapters are numbered with letters, as is the appendix convention
-
-\pagelayout{wide} % No margins
-\addpart{Appendix}
-\pagelayout{margin} % Restore margins
-
-\include{chapters/app/A_sens}
 
 %----------------------------------------------------------------------------------------
 
@@ -243,6 +235,13 @@ This document was typeset with the help of \href{https://sourceforge.net/project
 \printbibliography[heading=bibintoc, title=Bibliography] % Add the bibliography heading to the ToC, set the title of the bibliography and output the bibliography note
 \pagelayout{wide} % No margins
 
+% \appendix % From here onwards, chapters are numbered with letters, as is the appendix convention
+
+% \pagelayout{wide} % No margins
+% \addpart{Appendix}
+% \pagelayout{margin} % Restore margins
+
+% \include{chapters/app/A_sens}
 
 %----------------------------------------------------------------------------------------
 %	INDEX

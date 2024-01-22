@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.8.29)  22 JAN 2024 00:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.8.29)  22 JAN 2024 19:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1756,7 +1756,7 @@ Package biblatex Info: ... and expl3
  (C:\Program Files\MiKTeX\tex/latex/biblatex\blx-case-expl3.sty
 Package: blx-case-expl3 2023/03/05 v3.19 expl3 case changing code for biblatex
 ))
-Package biblatex Info: Redefining '\fullcite' on input line 1076.
+Package biblatex Info: Redefining '\fullcite' on input line 1077.
 ) (kaotheorems.sty
 Package: kaotheorems 
  (D:\estragio\AppData\Roaming\MiKTeX\tex/latex/amscls\amsthm.sty
@@ -2123,7 +2123,7 @@ Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'english'.
- (manuscript_Stragiotti.aux (chapters/1_intro.aux) (chapters/8_conclusion.aux) (chapters/app/A_sens.aux))
+ (manuscript_Stragiotti.aux (chapters/7_advanced_applications.aux))
 \openout1 = `manuscript_Stragiotti.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/npxmi/m/it on input line 88.
@@ -2658,8 +2658,6 @@ Package microtype Info: Character `029' is missing
 Package tocbasic Info: character protrusion at toc deactivated on input line 182.
 LaTeX Font Info:    Font shape `T1/zplLF/b/n' will be
 (Font)              scaled to size 10.6215pt on input line 182.
-LaTeX Font Info:    Font shape `T1/qhv/b/n' will be
-(Font)              scaled to size 10.82501pt on input line 182.
 \openout4 = `manuscript_Stragiotti.mw'.
 
  [3
@@ -2690,10 +2688,6 @@ Package tocbasic Info: character protrusion at lot deactivated on input line 189
 \openout4 = `manuscript_Stragiotti.mw'.
 
  [5] (manuscript_Stragiotti.mw)
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
@@ -2736,67 +2730,332 @@ Package tocbasic Info: character protrusion at lot deactivated on input line 189
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\openout2 = `chapters/1_intro.aux'.
+\openout2 = `chapters/7_advanced_applications.aux'.
 
- (chapters/1_intro.tex
-\openout4 = `manuscript_Stragiotti.mw'.
-
- [1
-
-
-
-
-] (manuscript_Stragiotti.mw)
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
- [2
-
-
-] (manuscript_Stragiotti.mw)
-\openout4 = `manuscript_Stragiotti.mw'.
-
-LaTeX Font Info:    Font shape `T1/zplLF/m/it' will be
-(Font)              scaled to size 10.6215pt on input line 14.
-
-Underfull \hbox (badness 10000) in paragraph at lines 14--17
-
- []
-
-LaTeX Font Info:    Font shape `T1/qhv/b/n' will be
-(Font)              scaled to size 12.99pt on input line 19.
+ (chapters/7_advanced_applications.tex
+chapter 1.
 LaTeX Font Info:    Font shape `T1/zplLF/m/sc' will be
-(Font)              scaled to size 13.968pt on input line 19.
+(Font)              scaled to size 13.968pt on input line 4.
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/zplLF/m/sc/14.4'.
 (microtype)             Ignoring protrusion settings for this character.
 LaTeX Font Info:    Font shape `T1/zplLF/b/sc' will be
-(Font)              scaled to size 13.968pt on input line 19.
+(Font)              scaled to size 13.968pt on input line 4.
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/zplLF/b/sc/14.4'.
 (microtype)             Ignoring protrusion settings for this character.
 LaTeX Font Info:    Font shape `T1/zplLF/b/sc' will be
-(Font)              scaled to size 11.64001pt on input line 19.
+(Font)              scaled to size 11.64001pt on input line 4.
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/zplLF/b/sc/12'.
 (microtype)             Ignoring protrusion settings for this character.
-<figures/01_intro/albatros-1.jpg, id=174, 561.09625pt x 298.11375pt>
-File: figures/01_intro/albatros-1.jpg Graphic file (type jpg)
-<use figures/01_intro/albatros-1.jpg>
-Package pdftex.def Info: figures/01_intro/albatros-1.jpg  used on input line 24.
-(pdftex.def)             Requested size: 230.27354pt x 122.34692pt.
+LaTeX Font Info:    Font shape `T1/zplLF/b/sc' will be
+(Font)              scaled to size 9.70001pt on input line 4.
+Package microtype Info: Character `029' is missing
+(microtype)             in font `T1/zplLF/b/sc/10'.
+(microtype)             Ignoring protrusion settings for this character.
+Package marginnote Info: Margin note 7.1 is on absolute page 7 on input line 4.
+Package marginnote Info: xpos seems to be 77.96011pt on input line 4.
 LaTeX Font Info:    Font shape `T1/zplLF/m/n' will be
-(Font)              scaled to size 9.70001pt on input line 24.
+(Font)              scaled to size 8.73001pt on input line 4.
+LaTeX Font Info:    Font shape `T1/zplLF/m/sc' will be
+(Font)              scaled to size 11.64001pt on input line 4.
+Package microtype Info: Character `029' is missing
+(microtype)             in font `T1/zplLF/m/sc/12'.
+(microtype)             Ignoring protrusion settings for this character.
+LaTeX Font Info:    Font shape `T1/zplLF/m/sc' will be
+(Font)              scaled to size 9.70001pt on input line 4.
+Package microtype Info: Character `029' is missing
+(microtype)             in font `T1/zplLF/m/sc/10'.
+(microtype)             Ignoring protrusion settings for this character.
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--4
+ [][][][]\T1/zplLF/m/sc/10 (+20) 3D CRM wing-box with 
+ []
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 8.
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 8.
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+LaTeX Font Info:    Font shape `T1/qhv/b/n' will be
+(Font)              scaled to size 12.99pt on input line 11.
+Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 11.
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 11.
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+LaTeX Font Info:    Font shape `T1/zplLF/m/it' will be
+(Font)              scaled to size 10.6215pt on input line 13.
+\openout4 = `manuscript_Stragiotti.mw'.
+
+[1
+
+
+
+
+] (manuscript_Stragiotti.mw)
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
 LaTeX Font Info:    Font shape `T1/zplLF/m/n' will be
-(Font)              scaled to size 8.73001pt on input line 24.
+(Font)              scaled to size 9.70001pt on input line 15.
+LaTeX Font Info:    Font shape `OT1/zplTLF/m/n' will be
+(Font)              scaled to size 9.70001pt on input line 17.
+LaTeX Font Info:    Font shape `OT1/zplTLF/m/n' will be
+(Font)              scaled to size 7.08101pt on input line 17.
+LaTeX Font Info:    Font shape `OT1/zplTLF/m/n' will be
+(Font)              scaled to size 5.335pt on input line 17.
+LaTeX Font Info:    Font shape `OT1/zplTLF/b/n' will be
+(Font)              scaled to size 9.70001pt on input line 17.
+LaTeX Font Info:    Font shape `OT1/zplTLF/b/n' will be
+(Font)              scaled to size 7.08101pt on input line 17.
+LaTeX Font Info:    Font shape `OT1/zplTLF/b/n' will be
+(Font)              scaled to size 5.335pt on input line 17.
 LaTeX Font Info:    Font shape `T1/zplLF/b/n' will be
-(Font)              scaled to size 8.73001pt on input line 24.
-<figures/01_intro/pm_38_529_529759-gml5anffhc.jpg, id=175, 2613.16275pt x 1898.89426pt>
-File: figures/01_intro/pm_38_529_529759-gml5anffhc.jpg Graphic file (type jpg)
-<use figures/01_intro/pm_38_529_529759-gml5anffhc.jpg>
-Package pdftex.def Info: figures/01_intro/pm_38_529_529759-gml5anffhc.jpg  used on input line 26.
-(pdftex.def)             Requested size: 168.34634pt x 122.34692pt.
+(Font)              scaled to size 9.70001pt on input line 19.
+LaTeX Font Info:    Font shape `T1/zplLF/m/n' will be
+(Font)              scaled to size 7.08101pt on input line 21.
+LaTeX Font Info:    Font shape `T1/zplLF/m/n' will be
+(Font)              scaled to size 5.335pt on input line 21.
+LaTeX Font Info:    Font shape `T1/zplLF/b/n' will be
+(Font)              scaled to size 8.73001pt on input line 25.
+LaTeX Font Info:    Font shape `T1/qhv/b/n' will be
+(Font)              scaled to size 10.82501pt on input line 29.
+LaTeX Font Info:    Font shape `T1/zplLF/b/sc' will be
+(Font)              scaled to size 10.6215pt on input line 29.
+Package microtype Info: Character `029' is missing
+(microtype)             in font `T1/zplLF/b/sc/10.95'.
+(microtype)             Ignoring protrusion settings for this character.
+
+
+LaTeX Warning: Reference `eq:04_thr' on page 2 undefined on input line 30.
+
+LaTeX Font Info:    Font shape `OT1/zplTLF/m/n' will be
+(Font)              scaled to size 8.73001pt on input line 30.
+LaTeX Font Info:    Font shape `OT1/zplTLF/b/n' will be
+(Font)              scaled to size 8.73001pt on input line 30.
+
+Overfull \hbox (1.85326pt too wide) detected at line 30
+\OML/npxmi/m/it/9 a[] < a[] \LMS/npxsy/m/n/9 8\OML/npxmi/m/it/9 i; []a[] \U/npxmia/m/it/9 = \OML/npxmi/m/it/9 ^^_  []\LMS/npxsy/m/n/9 ¹[]º
+ []
+
+
+LaTeX Warning: Reference `eq:04_thr' on page 2 undefined on input line 30.
+
+LaTeX Font Info:    Font shape `T1/zplLF/m/n' will be
+(Font)              scaled to size 5.917pt on input line 30.
+<figures/07_aeronautic/14a_00_Topology_x0_iso.png, id=217, 3854.4pt x 2168.1pt>
+File: figures/07_aeronautic/14a_00_Topology_x0_iso.png Graphic file (type png)
+<use figures/07_aeronautic/14a_00_Topology_x0_iso.png>
+Package pdftex.def Info: figures/07_aeronautic/14a_00_Topology_x0_iso.png  used on input line 58.
+(pdftex.def)             Requested size: 212.79558pt x 119.69247pt.
+<figures/07_aeronautic/14b_00_Topology_x0_iso 2370.png, id=218, 3854.4pt x 2168.1pt>
+File: figures/07_aeronautic/14b_00_Topology_x0_iso 2370.png Graphic file (type png)
+<use figures/07_aeronautic/14b_00_Topology_x0_iso 2370.png>
+Package pdftex.def Info: figures/07_aeronautic/14b_00_Topology_x0_iso 2370.png  used on input line 60.
+(pdftex.def)             Requested size: 212.79558pt x 119.69247pt.
+<figures/07_aeronautic/15_04_Topology_NLP_iso.png, id=219, 3854.4pt x 2168.1pt>
+File: figures/07_aeronautic/15_04_Topology_NLP_iso.png Graphic file (type png)
+<use figures/07_aeronautic/15_04_Topology_NLP_iso.png>
+Package pdftex.def Info: figures/07_aeronautic/15_04_Topology_NLP_iso.png  used on input line 67.
+(pdftex.def)             Requested size: 159.3346pt x 89.62048pt.
+Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 72.
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+[2{D:/estragio/AppData/Roaming/MiKTeX/fonts/enc/dvips/newtx/ntx-ecth-tlf.enc}] (manuscript_Stragiotti.mw)
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 74.
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
@@ -2831,33 +3090,28 @@ Package pdftex.def Info: figures/01_intro/pm_38_529_529759-gml5anffhc.jpg  used 
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-[3 <./figures/01_intro/albatros-1.jpg> <./figures/01_intro/pm_38_529_529759-gml5anffhc.jpg>] (manuscript_Stragiotti.mw)
-\openout4 = `manuscript_Stragiotti.mw'.
-
+ [3 <./figures/07_aeronautic/14a_00_Topology_x0_iso.png> <./figures/07_aeronautic/14b_00_Topology_x0_iso 2370.png> <./figures/07_aeronautic/15_04_Topology_NLP_iso.png>] (manuscript_Stragiotti.mw)
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
+LaTeX Font Info:    Font shape `T1/zplLF/m/sc' will be
+(Font)              scaled to size 10.6215pt on input line 80.
+Package microtype Info: Character `029' is missing
+(microtype)             in font `T1/zplLF/m/sc/10.95'.
+(microtype)             Ignoring protrusion settings for this character.
+<figures/07_aeronautic/16_wing_opt/wing_opt.pdf, id=247, 464.23137pt x 439.55516pt>
+File: figures/07_aeronautic/16_wing_opt/wing_opt.pdf Graphic file (type pdf)
+<use figures/07_aeronautic/16_wing_opt/wing_opt.pdf>
+Package pdftex.def Info: figures/07_aeronautic/16_wing_opt/wing_opt.pdf  used on input line 86.
+(pdftex.def)             Requested size: 472.8823pt x 447.7568pt.
+LaTeX Font Info:    Font shape `T1/zplLF/b/it' will be
+(Font)              scaled to size 10.6215pt on input line 93.
 \openout4 = `manuscript_Stragiotti.mw'.
 
-<figures/01_intro/fab.png, id=190, 410.7345pt x 471.56175pt>
-File: figures/01_intro/fab.png Graphic file (type png)
-<use figures/01_intro/fab.png>
-Package pdftex.def Info: figures/01_intro/fab.png  used on input line 36.
-(pdftex.def)             Requested size: 86.73936pt x 99.58464pt.
-<figures/01_intro/assembly.png, id=191, 1332.98pt x 670.505pt>
-File: figures/01_intro/assembly.png Graphic file (type png)
-<use figures/01_intro/assembly.png>
-Package pdftex.def Info: figures/01_intro/assembly.png  used on input line 38.
-(pdftex.def)             Requested size: 197.96542pt x 99.58464pt.
-\openout4 = `manuscript_Stragiotti.mw'.
-
+ [4] (manuscript_Stragiotti.mw)
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
@@ -2866,32 +3120,57 @@ Package pdftex.def Info: figures/01_intro/assembly.png  used on input line 38.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
- [4{D:/estragio/AppData/Roaming/MiKTeX/fonts/enc/dvips/newtx/ntx-ecth-tlf.enc} <./figures/01_intro/fab.png> <./figures/01_intro/assembly.png>] (manuscript_Stragiotti.mw)
 \openout4 = `manuscript_Stragiotti.mw'.
 
+\openout4 = `manuscript_Stragiotti.mw'.
 
+\openout4 = `manuscript_Stragiotti.mw'.
 
-LaTeX Warning: Reference `chap:02' on page 5 undefined on input line 50.
+\openout4 = `manuscript_Stragiotti.mw'.
 
+\openout4 = `manuscript_Stragiotti.mw'.
 
-LaTeX Warning: Reference `chap:03' on page 5 undefined on input line 50.
+\openout4 = `manuscript_Stragiotti.mw'.
 
+\openout4 = `manuscript_Stragiotti.mw'.
 
-LaTeX Warning: Reference `chap:04' on page 5 undefined on input line 50.
+\openout4 = `manuscript_Stragiotti.mw'.
 
+\openout4 = `manuscript_Stragiotti.mw'.
 
-LaTeX Warning: Reference `chap:05' on page 5 undefined on input line 50.
+\openout4 = `manuscript_Stragiotti.mw'.
 
+\openout4 = `manuscript_Stragiotti.mw'.
 
-LaTeX Warning: Reference `chap:06' on page 5 undefined on input line 50.
+\openout4 = `manuscript_Stragiotti.mw'.
 
+\openout4 = `manuscript_Stragiotti.mw'.
 
-LaTeX Warning: Reference `chap:07' on page 5 undefined on input line 50.
-
-
-LaTeX Warning: Reference `chap:06' on page 5 undefined on input line 50.
-
-)
+<figures/07_aeronautic/18_failure new/failure_max.pdf, id=274, 213.39624pt x 213.39624pt>
+File: figures/07_aeronautic/18_failure new/failure_max.pdf Graphic file (type pdf)
+<use figures/07_aeronautic/18_failure new/failure_max.pdf>
+Package pdftex.def Info: figures/07_aeronautic/18_failure new/failure_max.pdf  used on input line 97.
+(pdftex.def)             Requested size: 254.93631pt x 254.94104pt.
+<figures/07_aeronautic/19a_v_hist_315.pdf, id=275, 462.52798pt x 346.89601pt>
+File: figures/07_aeronautic/19a_v_hist_315.pdf Graphic file (type pdf)
+<use figures/07_aeronautic/19a_v_hist_315.pdf>
+Package pdftex.def Info: figures/07_aeronautic/19a_v_hist_315.pdf  used on input line 121.
+(pdftex.def)             Requested size: 231.71492pt x 173.78633pt.
+<figures/07_aeronautic/19b_c_hist_315.pdf, id=276, 462.52798pt x 346.89601pt>
+File: figures/07_aeronautic/19b_c_hist_315.pdf Graphic file (type pdf)
+<use figures/07_aeronautic/19b_c_hist_315.pdf>
+Package pdftex.def Info: figures/07_aeronautic/19b_c_hist_315.pdf  used on input line 123.
+(pdftex.def)             Requested size: 231.71492pt x 173.78633pt.
+<figures/07_aeronautic/20a_v_hist_2370.pdf, id=277, 462.52798pt x 346.89601pt>
+File: figures/07_aeronautic/20a_v_hist_2370.pdf Graphic file (type pdf)
+<use figures/07_aeronautic/20a_v_hist_2370.pdf>
+Package pdftex.def Info: figures/07_aeronautic/20a_v_hist_2370.pdf  used on input line 130.
+(pdftex.def)             Requested size: 231.71492pt x 173.78633pt.
+<figures/07_aeronautic/20b_c_hist_2370.pdf, id=278, 462.52798pt x 346.89601pt>
+File: figures/07_aeronautic/20b_c_hist_2370.pdf Graphic file (type pdf)
+<use figures/07_aeronautic/20b_c_hist_2370.pdf>
+Package pdftex.def Info: figures/07_aeronautic/20b_c_hist_2370.pdf  used on input line 132.
+(pdftex.def)             Requested size: 231.71492pt x 173.78633pt.
 \openout4 = `manuscript_Stragiotti.mw'.
 
  [5] (manuscript_Stragiotti.mw)
@@ -2903,369 +3182,35 @@ LaTeX Warning: Reference `chap:06' on page 5 undefined on input line 50.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
+ [6 <./figures/07_aeronautic/16_wing_opt/wing_opt.pdf>] (manuscript_Stragiotti.mw)
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
+ [7 <./figures/07_aeronautic/18_failure new/failure_max.pdf> <./figures/07_aeronautic/19a_v_hist_315.pdf> <./figures/07_aeronautic/19b_c_hist_315.pdf>] (manuscript_Stragiotti.mw)
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
+ [8 <./figures/07_aeronautic/20a_v_hist_2370.pdf> <./figures/07_aeronautic/20b_c_hist_2370.pdf>] (manuscript_Stragiotti.mw)
 \openout4 = `manuscript_Stragiotti.mw'.
 
+)
 \openout4 = `manuscript_Stragiotti.mw'.
 
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
- [6] (manuscript_Stragiotti.mw)
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout2 = `chapters/8_conclusion.aux'.
-
- (chapters/8_conclusion.tex
-
-LaTeX Warning: Reference `chap:03' on page 7 undefined on input line 9.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-[7
-
-
-
-
+ [9
 
 ] (manuscript_Stragiotti.mw)
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-
-
-LaTeX Warning: Reference `chap:04' on page 8 undefined on input line 11.
-
-
-LaTeX Warning: Reference `chap:05' on page 8 undefined on input line 13.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-[8] (manuscript_Stragiotti.mw)
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-
-
-LaTeX Warning: Reference `chap:06' on page 9 undefined on input line 15.
-
-
-LaTeX Warning: Reference `chap:07' on page 9 undefined on input line 17.
-
-
-LaTeX Warning: Reference `chap:06' on page 9 undefined on input line 17.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-[9] (manuscript_Stragiotti.mw)
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-
-
-LaTeX Warning: Reference `chap:02' on page 10 undefined on input line 22.
-
-
-LaTeX Warning: Reference `chap:03' on page 10 undefined on input line 24.
-
-
-LaTeX Warning: Reference `chap:05' on page 10 undefined on input line 26.
-
-
-LaTeX Warning: Reference `chap:06' on page 10 undefined on input line 28.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-[10] (manuscript_Stragiotti.mw)
-\openout4 = `manuscript_Stragiotti.mw'.
-
-
-
-LaTeX Warning: Reference `chap:07' on page 11 undefined on input line 30.
-
-)
-\openout4 = `manuscript_Stragiotti.mw'.
-
- [11] (manuscript_Stragiotti.mw)
-\openout4 = `manuscript_Stragiotti.mw'.
-
-*geometry* verbose mode - [ newgeometry ] result:
-* driver: pdftex
-* paper: custom
-* layout: <same size as paper>
-* layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: twoside 
-* h-part:(L,W,R)=(70.56247pt, 456.37979pt, 70.56247pt)
-* v-part:(T,H,B)=(77.96011pt, 689.12218pt, 77.96011pt)
-* \paperwidth=597.50473pt
-* \paperheight=845.0424pt
-* \textwidth=456.37979pt
-* \textheight=689.12218pt
-* \oddsidemargin=-1.70752pt
-* \evensidemargin=-1.70752pt
-* \topmargin=-42.60774pt
-* \headheight=17.0pt
-* \headsep=31.29787pt
-* \topskip=11.0pt
-* \footskip=47.6pt
-* \marginparwidth=0.0pt
-* \marginparsep=0.0pt
-* \columnsep=10.0pt
-* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
-* \hoffset=0.0pt
-* \voffset=0.0pt
-* \mag=1000
-* \@twocolumnfalse
-* \@twosidetrue
-* \@mparswitchtrue
-* \@reversemarginfalse
-* (1in=72.27pt=25.4mm, 1cm=28.453pt)
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
- [12
-
+ [10
 
 
 
 
 ] (manuscript_Stragiotti.mw)
-\openout4 = `manuscript_Stragiotti.mw'.
-
-
-part without number
-LaTeX Font Info:    Font shape `T1/qhv/b/n' will be
-(Font)              scaled to size 22.44386pt on input line 226.
-LaTeX Font Info:    Font shape `T1/zplLF/b/sc' will be
-(Font)              scaled to size 24.13362pt on input line 226.
-Package microtype Info: Character `029' is missing
-(microtype)             in font `T1/zplLF/b/sc/24.88'.
-(microtype)             Ignoring protrusion settings for this character.
-\openout4 = `manuscript_Stragiotti.mw'.
-
-[13] (manuscript_Stragiotti.mw)
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
- [14] (manuscript_Stragiotti.mw)
-\openout4 = `manuscript_Stragiotti.mw'.
-
-*geometry* verbose mode - [ newgeometry ] result:
-* driver: pdftex
-* paper: custom
-* layout: <same size as paper>
-* layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: twoside 
-* h-part:(L,W,R)=(77.96011pt, 318.66919pt, 200.87543pt)
-* v-part:(T,H,B)=(77.96011pt, 689.12218pt, 77.96011pt)
-* \paperwidth=597.50473pt
-* \paperheight=845.0424pt
-* \textwidth=318.66919pt
-* \textheight=689.12218pt
-* \oddsidemargin=5.69012pt
-* \evensidemargin=128.60544pt
-* \topmargin=-42.60774pt
-* \headheight=17.0pt
-* \headsep=31.29787pt
-* \topskip=11.0pt
-* \footskip=47.6pt
-* \marginparwidth=136.57251pt
-* \marginparsep=17.6406pt
-* \columnsep=10.0pt
-* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
-* \hoffset=0.0pt
-* \voffset=0.0pt
-* \mag=1000
-* \@twocolumnfalse
-* \@twosidetrue
-* \@mparswitchtrue
-* \@reversemarginfalse
-* (1in=72.27pt=25.4mm, 1cm=28.453pt)
-
-\openout2 = `chapters/app/A_sens.aux'.
-
- (chapters/app/A_sens.tex
-chapter A.
-
-LaTeX Warning: Reference `chap:06' on page 15 undefined on input line 2.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-
-Underfull \hbox (badness 1102) in paragraph at lines 2--2
-[]\T1/zplLF/m/n/9 (+20) More in-for-ma-tion on sen-si-tiv-ity
- []
-
-LaTeX Font Info:    Font shape `T1/zplLF/m/n' will be
-(Font)              scaled to size 5.917pt on input line 2.
-LaTeX Font Info:    Font shape `OT1/zplTLF/m/n' will be
-(Font)              scaled to size 9.70001pt on input line 7.
-LaTeX Font Info:    Font shape `OT1/zplTLF/m/n' will be
-(Font)              scaled to size 7.08101pt on input line 7.
-LaTeX Font Info:    Font shape `OT1/zplTLF/m/n' will be
-(Font)              scaled to size 5.335pt on input line 7.
-LaTeX Font Info:    Font shape `OT1/zplTLF/b/n' will be
-(Font)              scaled to size 9.70001pt on input line 7.
-LaTeX Font Info:    Font shape `OT1/zplTLF/b/n' will be
-(Font)              scaled to size 7.08101pt on input line 7.
-LaTeX Font Info:    Font shape `OT1/zplTLF/b/n' will be
-(Font)              scaled to size 5.335pt on input line 7.
-LaTeX Font Info:    Font shape `T1/zplLF/b/n' will be
-(Font)              scaled to size 9.70001pt on input line 9.
-LaTeX Font Info:    Font shape `T1/zplLF/m/n' will be
-(Font)              scaled to size 7.08101pt on input line 11.
-LaTeX Font Info:    Font shape `T1/zplLF/m/n' will be
-(Font)              scaled to size 5.335pt on input line 11.
-
-Overfull \hbox (0.87245pt too wide) in paragraph at lines 7--15
- [][] 
- []
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-[15
-
-
-
-
-
-pdfTeX warning (ext4): destination with the same identifier (name{equation.A.1.1}) has been already used, duplicate ignored
-
-\__morewrites_shipout_ii: ...rewrites_shipout_box 
-                                                  \__morewrites_after_shipout: 
-l.43 \end{equation}
-                   ] (manuscript_Stragiotti.mw)
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
- [16] (manuscript_Stragiotti.mw)
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
-LaTeX Font Info:    Font shape `T1/zplLF/m/sc' will be
-(Font)              scaled to size 10.6215pt on input line 102.
-Package microtype Info: Character `029' is missing
-(microtype)             in font `T1/zplLF/m/sc/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-LaTeX Font Info:    Font shape `T1/zplLF/b/sc' will be
-(Font)              scaled to size 10.6215pt on input line 102.
-Package microtype Info: Character `029' is missing
-(microtype)             in font `T1/zplLF/b/sc/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-\openout4 = `manuscript_Stragiotti.mw'.
-
- [17] (manuscript_Stragiotti.mw)
-\openout4 = `manuscript_Stragiotti.mw'.
-
-
-Underfull \vbox (badness 3354) has occurred while \output is active []
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
- [18] (manuscript_Stragiotti.mw)
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
- [19] (manuscript_Stragiotti.mw)
-\openout4 = `manuscript_Stragiotti.mw'.
-
-)
-\openout4 = `manuscript_Stragiotti.mw'.
-
- [20] (manuscript_Stragiotti.mw)
 \openout4 = `manuscript_Stragiotti.mw'.
 
 *geometry* verbose mode - [ newgeometry ] result:
@@ -3334,47 +3279,31 @@ Underfull \vbox (badness 3354) has occurred while \output is active []
 
 
 chapter without number
-Package marginnote Info: Margin note 27.1 is on absolute page 27 on input line 243.
-Package marginnote Info: xpos seems to be 101.63467pt on input line 243.
-Package marginnote Info: Margin note 27.2 is on absolute page 27 on input line 243.
-Package marginnote Info: xpos seems to be 101.63467pt on input line 243.
-LaTeX Font Info:    Trying to load font information for T1+fvm on input line 243.
+Package marginnote Info: Margin note 17.1 is on absolute page 17 on input line 235.
+Package marginnote Info: xpos seems to be 101.63467pt on input line 235.
+LaTeX Font Info:    Trying to load font information for T1+fvm on input line 235.
 (D:\estragio\AppData\Roaming\MiKTeX\tex/latex/bera\t1fvm.fd
 File: t1fvm.fd 2004/09/07 scalable font definitions for T1/fvm.
 )
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
-(Font)              scaled to size 9.30756pt on input line 243.
+(Font)              scaled to size 9.30756pt on input line 235.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `fvm' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-Package marginnote Info: Margin note 27.3 is on absolute page 27 on input line 243.
-Package marginnote Info: xpos seems to be 101.63467pt on input line 243.
-
-Overfull \hbox (4.61006pt too wide) in paragraph at lines 243--243
-[]\T1/zplLF/m/sc/10.95 (-20) url\T1/zplLF/m/n/10.95 (-20) : [][]$\T1/fvm/m/n/10.95 https : / / www . airbus . com / en / newsroom / press -[] releases /
- []
-
-Package marginnote Info: Margin note 27.4 is on absolute page 27 on input line 243.
-Package marginnote Info: xpos seems to be 101.63467pt on input line 243.
-Package marginnote Info: Margin note 27.5 is on absolute page 27 on input line 243.
-Package marginnote Info: xpos seems to be 101.63467pt on input line 243.
-Package marginnote Info: Margin note 27.6 is on absolute page 27 on input line 243.
-Package marginnote Info: xpos seems to be 101.63467pt on input line 243.
-Package marginnote Info: Margin note 27.7 is on absolute page 27 on input line 243.
-Package marginnote Info: xpos seems to be 101.63467pt on input line 243.
-LaTeX Font Info:    Font shape `T1/zplLF/m/sc' will be
-(Font)              scaled to size 7.76001pt on input line 243.
-Package microtype Info: Character `029' is missing
-(microtype)             in font `T1/zplLF/m/sc/8'.
-(microtype)             Ignoring protrusion settings for this character.
+Package marginnote Info: Margin note 17.2 is on absolute page 17 on input line 235.
+Package marginnote Info: xpos seems to be 101.63467pt on input line 235.
+Package marginnote Info: Margin note 17.3 is on absolute page 17 on input line 235.
+Package marginnote Info: xpos seems to be 101.63467pt on input line 235.
+Package marginnote Info: Margin note 17.4 is on absolute page 17 on input line 235.
+Package marginnote Info: xpos seems to be 101.63467pt on input line 235.
+Package marginnote Info: Margin note 17.5 is on absolute page 17 on input line 235.
+Package marginnote Info: xpos seems to be 101.63467pt on input line 235.
+Package marginnote Info: Margin note 17.6 is on absolute page 17 on input line 235.
+Package marginnote Info: xpos seems to be 101.63467pt on input line 235.
 \openout4 = `manuscript_Stragiotti.mw'.
 
-[21
-
-
-
-
+ [11
 
 
 
@@ -3416,7 +3345,7 @@ Package microtype Info: Character `029' is missing
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
- [22
+ [12
 
 
 
@@ -3428,10 +3357,6 @@ Package microtype Info: Character `029' is missing
 runsystem(makeindex manuscript_Stragiotti.idx)...executed safely (allowed).
 
  (manuscript_Stragiotti.ind)
-\openout4 = `manuscript_Stragiotti.mw'.
-
-\openout4 = `manuscript_Stragiotti.mw'.
-
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
@@ -3489,7 +3414,7 @@ runsystem(makeindex manuscript_Stragiotti.idx)...executed safely (allowed).
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
- (chapters/1_intro.aux
+ (chapters/7_advanced_applications.aux
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
@@ -3506,17 +3431,54 @@ runsystem(makeindex manuscript_Stragiotti.idx)...executed safely (allowed).
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
-) (chapters/8_conclusion.aux
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
-)
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
- (chapters/app/A_sens.aux
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
@@ -3617,17 +3579,17 @@ Package logreq Info: Writing requests to 'manuscript_Stragiotti.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 87407 strings out of 476331
- 2018661 string characters out of 5797589
- 3341322 words of memory out of 5000000
- 106019 multiletter control sequences out of 15000+600000
- 702529 words of font info for 342 fonts, out of 8000000 for 9000
+ 87392 strings out of 476331
+ 2018896 string characters out of 5797589
+ 3339152 words of memory out of 5000000
+ 106052 multiletter control sequences out of 15000+600000
+ 725625 words of font info for 381 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 133i,20n,159p,10658b,3658s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newpx/NewPXBMI.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newpx/NewPXBMI_gnu.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newpx/NewPXMI.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newpx/NewPXMI_gnu.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/bera/fvmr8a.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newpx/pxbsys.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newpx/pxmiaX.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newpx/pxsys.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/tex-gyre/qhvr.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newtx/txexs.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newtx/txmiaSTbb.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newpx/zplb.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newpx/zplr.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newpx/zplri.pfb>
-Output written on manuscript_Stragiotti.pdf (28 pages, 4982098 bytes).
+ 133i,19n,159p,10658b,2537s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newpx/NewPXBMI.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newpx/NewPXMI.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newpx/NewPXMI_gnu.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmti7.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/bera/fvmr8a.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newpx/pxmiaX.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newpx/pxsys.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/tex-gyre/qhvr.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newpx/zplb.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newpx/zplbi.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newpx/zplr.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newpx/zplri.pfb>
+Output written on manuscript_Stragiotti.pdf (18 pages, 7267565 bytes).
 PDF statistics:
- 541 PDF objects out of 1000 (max. 8388607)
- 121 named destinations out of 1000 (max. 500000)
- 81720 words of extra memory for PDF output out of 89155 (max. 10000000)
+ 564 PDF objects out of 1000 (max. 8388607)
+ 66 named destinations out of 1000 (max. 500000)
+ 92961 words of extra memory for PDF output out of 106986 (max. 10000000)
 
