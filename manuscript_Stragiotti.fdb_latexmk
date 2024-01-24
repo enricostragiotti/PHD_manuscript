@@ -1,23 +1,23 @@
 # Fdb version 4
-["biber manuscript_Stragiotti"] 1705949186 "manuscript_Stragiotti.bcf" "manuscript_Stragiotti.bbl" "manuscript_Stragiotti" 1705949230 0
+["biber manuscript_Stragiotti"] 1706033936 "manuscript_Stragiotti.bcf" "manuscript_Stragiotti.bbl" "manuscript_Stragiotti" 1706120239 0
   "./biblio.bib" 1705922354 321787 3744d6e309aa57960a86ba966aa67a9f ""
-  "manuscript_Stragiotti.bcf" 1705949229 112518 087ad0541c273a8c130d5ee63f5ace42 "pdflatex"
+  "manuscript_Stragiotti.bcf" 1706120237 113046 0d7c3eb23251aeb000d3358b061b2e25 "pdflatex"
   (generated)
   "manuscript_Stragiotti.bbl"
   "manuscript_Stragiotti.blg"
   (rewritten before read)
-["cusdep glo gls manuscript_Stragiotti"] 1705949186 "manuscript_Stragiotti.glo" "manuscript_Stragiotti.gls" "manuscript_Stragiotti" 1705949230 0
-  "manuscript_Stragiotti.glo" 1705949229 1381 55396e38ed8465ccb1ab2618e98b14e5 "pdflatex"
+["cusdep glo gls manuscript_Stragiotti"] 1705982433 "manuscript_Stragiotti.glo" "manuscript_Stragiotti.gls" "manuscript_Stragiotti" 1706120239 0
+  "manuscript_Stragiotti.glo" 1706120237 1464 54a7429d7526e70566e8a15937e2ad37 "pdflatex"
   (generated)
   "manuscript_Stragiotti.gls"
   (rewritten before read)
-["makeindex manuscript_Stragiotti.idx"] 1705949185 "manuscript_Stragiotti.idx" "manuscript_Stragiotti.ind" "manuscript_Stragiotti" 1705949230 0
-  "manuscript_Stragiotti.idx" 1705949228 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+["makeindex manuscript_Stragiotti.idx"] 1705960923 "manuscript_Stragiotti.idx" "manuscript_Stragiotti.ind" "manuscript_Stragiotti" 1706120239 0
+  "manuscript_Stragiotti.idx" 1706120236 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   (generated)
   "manuscript_Stragiotti.ilg"
   "manuscript_Stragiotti.ind"
   (rewritten before read)
-["pdflatex"] 1705949216 "d:/estragio/PhD/99_Github/PHD_manuscript/manuscript_Stragiotti.tex" "manuscript_Stragiotti.pdf" "manuscript_Stragiotti" 1705949230 0
+["pdflatex"] 1706120222 "d:/estragio/PhD/99_Github/PHD_manuscript/manuscript_Stragiotti.tex" "manuscript_Stragiotti.pdf" "manuscript_Stragiotti" 1706120239 0
   "C:/Program Files/MiKTeX/fonts/enc/dvips/base/8r.enc" 1458473887 4993 80dc9bab7f31fb78a000ccfed0e27cab ""
   "C:/Program Files/MiKTeX/fonts/tfm/jknappen/ec/ecrm1095.tfm" 993058524 3172 eb6efaa83c6c52473a1c403f376eab0f ""
   "C:/Program Files/MiKTeX/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1233951854 916 f87d7c45f9c908e672703b83b72241a3 ""
@@ -35,6 +35,7 @@
   "C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1247593067 32722 d7379af29a190c3f453aba36302ff5a9 ""
   "C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb" 1247593066 32362 bc3f3eec7ab7d65fe700963d4017d32c ""
   "C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb" 1247593067 31809 8670ca339bf94e56da1fc21c80635e2a ""
+  "C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1247593067 32762 7fee39e011c23b3589931effd97b9702 ""
   "C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1247593067 32726 39f0f9e62e84beb801509898a605dbd5 ""
   "C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb" 1247593067 32626 5abc8bb2f28aa647d4c70f8ea38cc0d3 ""
   "C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmti7.pfb" 1247593067 36607 d654cb3f2bc54f57509240071db3bffa ""
@@ -329,6 +330,7 @@
   "D:/estragio/AppData/Roaming/MiKTeX/fonts/tfm/public/tex-gyre/ec-qhvb.tfm" 1256929440 11796 b7bc3db132e822d2872ea50ba8fa7cc0 ""
   "D:/estragio/AppData/Roaming/MiKTeX/fonts/tfm/public/tex-gyre/ec-qhvr.tfm" 1256929440 12084 374c5b7e91efcc10472ab8e61f66d36b ""
   "D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/bera/fvmr8a.pfb" 1075400854 29228 440002646d60f9d1a0cdf5878b9a308f ""
+  "D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/cm-super/sfrm0700.pfb" 1215614700 154599 111aa29c1b43dc5b4a8516224bf12bac ""
   "D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newpx/NewPXBMI.pfb" 1692715658 24085 07d6ec1a00aedb309ca006deb8b84e98 ""
   "D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newpx/NewPXMI.pfb" 1692715658 25273 f960e32cde1c0986a3535980d55a0146 ""
   "D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newpx/NewPXMI_gnu.pfb" 1692715658 16003 379767f2e95213e4cfc7bfd5823fb860 ""
@@ -500,12 +502,16 @@
   "D:/estragio/AppData/Roaming/MiKTeX/tex/latex/xpatch/xpatch.sty" 1585221260 8510 7803f78066c4f9d008405191a4b43073 ""
   "D:/estragio/AppData/Roaming/MiKTeX/tex/latex/xstring/xstring.sty" 1673962217 123 a302f2c651a95033260db60e51527ae8 ""
   "abbreviations.tex" 1705754282 3599 74128a6ea61873fa96163b34d0c16ca6 ""
-  "chapters/7_advanced_applications.aux" 1705949228 14577 63a7cbbab1857f9687d278fad48c05f4 "pdflatex"
-  "chapters/7_advanced_applications.tex" 1705949126 16877 fb740968d8637c2129953f770f13fccf ""
+  "chapters/7_advanced_applications.aux" 1706120236 17380 23e17eed84ba8aa577422225a8fe53c8 "pdflatex"
+  "chapters/7_advanced_applications.tex" 1706120186 21723 a2c428cb7f81d2c16cdb3158b60edf84 ""
   "d:/estragio/PhD/99_Github/PHD_manuscript/manuscript_Stragiotti.tex" 1705947001 9421 96998502ac186489127873682bff3861 ""
   "figures/01_intro/Logo-ISAE-SUPAERO.png" 1628085192 194003 676a6cb7d3296cbb2431a28bac670acf ""
   "figures/01_intro/ONERA_logo.svg.png" 1628085367 29625 6f38f88e405613b2fb60825e112e3260 ""
   "figures/01_intro/megep.png" 1628085305 45346 836b00e6045ba8e3c3c82d6c4ad0a159 ""
+  "figures/07_aeronautic/00_co2eq/co2_dollar.pdf" 1706034920 35816 805c15f3a514b00a78370fd567f5dd5a ""
+  "figures/07_aeronautic/00_dispalcements/disp.pdf" 1705981605 39511 fde2edaf0e9e3f39bdf9080cf4f2e160 ""
+  "figures/07_aeronautic/00_materials/mat.pdf" 1705982035 40071 2c047698383550afce240201da72e1e4 ""
+  "figures/07_aeronautic/00_naca_howtomesh/MESH.pdf" 1706120107 219658 82a2153cf449961f65894e5c5ee9d27f ""
   "figures/07_aeronautic/14a_00_Topology_x0_iso.png" 1705680016 165055 153f839a4ad1543fd657dea22477429f ""
   "figures/07_aeronautic/14b_00_Topology_x0_iso 2370.png" 1705680016 295686 73545ecb39d031cb43dcf820ac3c1207 ""
   "figures/07_aeronautic/15_04_Topology_NLP_iso.png" 1705680016 162791 e473232bb60271ff7caef022cbbb95f0 ""
@@ -522,16 +528,16 @@
   "kaobook.cls" 1693306131 11196 257e43e963392f1cba8de846b9c392bd ""
   "kaorefs.sty" 1688394461 11391 1417147ee13fc4482c03393a95e76931 ""
   "kaotheorems.sty" 1688394461 12185 9540b1857c6b9e97b449194962ccc5fa ""
-  "manuscript_Stragiotti.aux" 1705949229 15002 659941d3f75a3478e874b99fa54c2ea3 "pdflatex"
-  "manuscript_Stragiotti.bbl" 1705949190 18998 3d27ce668225d2f2f7de89349ad2eaf0 "biber manuscript_Stragiotti"
-  "manuscript_Stragiotti.gls" 1705949186 1030 a4f7410683664196c2e984cc516f615e "cusdep glo gls manuscript_Stragiotti"
-  "manuscript_Stragiotti.ind" 1705949228 0 d41d8cd98f00b204e9800998ecf8427e "makeindex manuscript_Stragiotti.idx"
-  "manuscript_Stragiotti.lof" 1705949229 1954 1d2d6af455d3b8ec4d40f1500fb75e51 "pdflatex"
-  "manuscript_Stragiotti.lot" 1705949229 638 ea82a6956fc5e0c424215db70622c570 "pdflatex"
-  "manuscript_Stragiotti.mw" 1705949229 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "manuscript_Stragiotti.run.xml" 1705949229 2425 ad1365c2cb12176cf957fc8f0a23d8e5 "pdflatex"
+  "manuscript_Stragiotti.aux" 1706120237 15681 df9a3bdcea8003bb311642ff2c731e10 "pdflatex"
+  "manuscript_Stragiotti.bbl" 1706033940 20207 3c17f1aa249a424ac502e037135adc78 "biber manuscript_Stragiotti"
+  "manuscript_Stragiotti.gls" 1705982433 1235 3cfcfd64247e24e4ff4739d84f0e7533 "cusdep glo gls manuscript_Stragiotti"
+  "manuscript_Stragiotti.ind" 1706120236 0 d41d8cd98f00b204e9800998ecf8427e "makeindex manuscript_Stragiotti.idx"
+  "manuscript_Stragiotti.lof" 1706120237 2308 69eb03da1e204478cb1815fd8c418b73 "pdflatex"
+  "manuscript_Stragiotti.lot" 1706120237 1253 2dfc13bf216a365ae707f163ed310595 "pdflatex"
+  "manuscript_Stragiotti.mw" 1706120237 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "manuscript_Stragiotti.run.xml" 1706120237 2425 6612915bdb96a96012c242bc16a5dcbe "pdflatex"
   "manuscript_Stragiotti.tex" 1705947001 9421 96998502ac186489127873682bff3861 ""
-  "manuscript_Stragiotti.toc" 1705949229 2105 c493c8feb128d50a59dfda5e936785b9 "pdflatex"
+  "manuscript_Stragiotti.toc" 1706120237 2111 c88b9d2ca181f5a34552157435bbeb62 "pdflatex"
   (generated)
   "chapters/7_advanced_applications.aux"
   "manuscript_Stragiotti.aux"

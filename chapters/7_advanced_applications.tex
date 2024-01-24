@@ -64,7 +64,7 @@ As the \gls{crm} is a large and thin structure that presents a noticeable differ
     
     \begin{figure}
         \centering
-        \includegraphics[width=0.5\linewidth]{figures/07_aeronautic/15_04_Topology_NLP_iso.png}
+        \includegraphics[width=0.8\linewidth]{figures/07_aeronautic/15_04_Topology_NLP_iso.png}
          \caption{Optimized topology of the CRM-315 with 257 active bars.}
         \label{fig:07_crm315}
     \end{figure}
@@ -75,10 +75,111 @@ As the \gls{crm} is a large and thin structure that presents a noticeable differ
     
     The volume fraction of the solution is \qty{1.313}{\percent} and the minimum slenderness ratio $\lambda$ (ratio between the length and the radius of gyration of the bar) of a bar is 14.96, which is compatible with the truss modelization used to discretize the wingbox volume. The execution time of the optimization is \qty{19}{s} for the \gls{slp} step and \qty{128}{s} for the \gls{nlp} step, for a total of \qty{147}{s} on a regular notebook, compared to the over four days of optimization of Fakhimi \cite{fakhimi_discrete_2021} on a desktop workstation. The iteration history curves of the optimization are plot in \figref{fig:07_c2}.
 
+    \begin{figure*}
+        \centering
+        \subcaptionbox{}{\includegraphics[width=0.49\linewidth]{figures/07_aeronautic/19a_v_hist_315.pdf}}
+        \bigskip
+        \subcaptionbox{}{\includegraphics[width=0.49\linewidth]{figures/07_aeronautic/19b_c_hist_315.pdf}}
+        \caption{Iteration history of the CRM-315 example solved with the 2S-5R algorithm. (a) objective function history for the SLP and NLP step. The sharp increases in the objective function during the SLP step correspond to the reinitialization calls. (b) constraint violation for the NLP step.}
+        \label{fig:07_c2}
+    \end{figure*}
+
 \paragraph{Maximum displacements constraints}
+
+agiamo sulla stiffness, gaurda i valori di compliance come scendono
+
+\begin{table}
+    \small
+    \centering
+    \begin{tabular}{ccccc}
+    \toprule
+    $\bm{Z}_\ell\:[\text{m}]$ & 1&2&3&--\\ \midrule
+    V [\unit{\meter^3}]&  26.70&13.78&9.39&7.90\\
+    V [\unit{\%}]&   \qty{4.421}{\%}   & \qty{2.283}{\%}&\qty{1.556}{\%}&\qty{1.309}{\%}  \\
+    Mass [\unit{\tonne}]  &72.086&37.218&25.363&21.342\\
+    a$_{\text{max}}$ [\unit{\meter^2}]&  0.615    & 0.293&0.197&0.198\\
+    C$_\text{LC\_1}$ [\unit{\mega \joule}]   &  1.05    &  1.96&2.79& 3.23\\
+    C$_\text{LC\_2}$ [\unit{\mega \joule}]   &   0.37   &  0.71&1.04& 1.28\\
+    C$_\text{LC\_3}$ [\unit{\mega \joule}]   &   0.26   &  0.47&0.67& 0.76\\
+
+    \bottomrule
+    \end{tabular}
+    \caption{remember \todo{put here the span of the wing}}
+    \label{tab:07_disp}
+\end{table}
+
+\begin{figure*}
+    \centering
+    \includegraphics[width=\linewidth]{figures/07_aeronautic/00_dispalcements/disp.pdf}
+     \caption{}
+    \label{fig:07_disp_sol}
+\end{figure*}
 
 \paragraph{Multiple materials}
 \todo{complete with Ashby charts on cost and co2 evaluation}
+
+\begin{table}
+    \small
+    \centering
+    \begin{tabular}{ccccc}
+    \toprule
+    \textbf{Material} &\textbf{Aluminium}&\textbf{Titanium}&\textbf{Steel}&\textbf{Pultruted CFRP}\\ \midrule
+    $E$& \qty{69}{GPa}&\qty{120}{GPa}&\qty{210}{GPa}&\qty{150}{GPa}     \\
+    $\sigma_\text{c}, \sigma_\text{t}$ & $\pm $\qty{270}{MPa}&$\pm $\qty{880}{MPa}&$\pm $\qty{355}{MPa}&+1200,\qty{-880}{MPa} \\
+    $\rho$& \qty{2.7}{\gram\per\cubic\centi\metre}&\qty{4.5}{\gram\per\cubic\centi\metre}&\qty{7.8}{\gram\per\cubic\centi\metre}&\qty{1.6}{\gram\per\cubic\centi\metre}   \\
+    \unit{kg CO^2_e\per\kilo\gram}&12.5&47.0&5.0&34.5 \\
+    \unit{\$\per\kilo\gram}&2.2&23.5&6.3&40.5\\
+    \bottomrule
+    \end{tabular}
+    \caption{remember \todo{put here the span of the wing}}
+    \label{tab:07_materials_data}
+\end{table}
+
+\sidecite{ashby_materials_1999}
+
+\gls{cfrp}
+
+\begin{table}
+    \small
+    \centering
+    \begin{tabular}{ccccc}
+    \toprule
+    \textbf{Material} &\textbf{Aluminium}&\textbf{Titanium}&\textbf{Steel}&\textbf{Pultruted CFRP}\\ \midrule
+    V [\unit{\meter^3}]&7.90&4.53&10.97&3.67\\
+    V [\unit{\%}]&\qty{1.309}{\%}&\qty{0.749}{\%}&\qty{1.816}{\%}&\qty{0.607}{\%}\\
+    Mass [\unit{\tonne}]& 21.342&20.372&86.112&5.868\\
+    a$_{\text{max}}$ [\unit{\meter^2}]&0.198&0.088&0.154&0.86\\
+    C$_\text{LC\_1}$ [\unit{\mega \joule}]&3.23&4.88&1.19&4.39\\
+    C$_\text{LC\_2}$ [\unit{\mega \joule}]&1.28&1.94&0.47&1.73\\
+    C$_\text{LC\_3}$ [\unit{\mega \joule}]&0.76&1.15&0.28&1.03\\
+    $Z_\ell\:[\text{m}]$&4.10&5.97&1.42&5.31\\
+    Cost [\unit{\tonne CO^2_e}]&266.7&957.5&430.6&202.4\\
+    Cost [\unit{k\$}]&46.9&478.7&542.5&237.6\\
+    \bottomrule
+    \end{tabular}
+    \caption{remember \todo{put here the span of the wing}}
+    \label{tab:07_materials}
+\end{table}
+
+ovviamente qui si tiene in conto solo il materiale, ma il peso inferiore su un aero permette di risparmiare veramente molto di piu
+
+\begin{figure*}
+    \centering
+    \includegraphics[width=\linewidth]{figures/07_aeronautic/00_materials/mat.pdf}
+     \caption{}
+    \label{fig:07_mat_sol}
+\end{figure*}
+
+\todo{grafico co2 soldi per materiale}
+
+\begin{marginfigure}
+    \centering
+    \includegraphics[width=\linewidth]{figures/07_aeronautic/00_co2eq/co2_dollar.pdf}
+    \caption{}
+    \label{fig:07}
+\end{marginfigure}
+
+\todo{grafico volume/resistenza specifica}
 
 \paragraph{Enriching the mesh}
 \begin{figure*}
@@ -87,7 +188,16 @@ As the \gls{crm} is a large and thin structure that presents a noticeable differ
      \caption{Maximum stress constraint value (left) and buckling constraint value (right) plotted on the deformed shape of the optimized design (undeformed shape in light grey) of CRM-2370 for the three load cases: +2.5 g maneuver (a), -1 g maneuver (b), and cruise with gust (+1.3 g) (c). The maximum $z$ tip deflection is \qty{4.167}{m}, \qty{-2.953}{m}, and \qty{1.948}{m}, respectively.}
     \label{fig:07_wing_opt}
 \end{figure*}
-The mass of the optimized CRM-2370 structure is \qty{20.092}{\tonne}, a \qty{1.318}{\tonne} reduction compared to the CRM-315 (\qty{-6.2}{\%}). Additionally, if we compare the compliance of the three load cases (see \tabref{tab:wing-res}), we notice how the solution of CRM-2370 is not only lighter but also stiffer, suggesting in general a more efficient structure topology. The maximum z tip deflection of the wingbox is \qty{4.167}{m}, \qty{-2.953}{m}, \qty{1.948}{m} for the three considered load cases, respectively. There are 1127 active bars in the optimized design, and the whole optimization took \qty{3189}{s} (\qty{1911}{s} for the \gls{slp} step, \qty{1278}{s} for the \gls{nlp} step). The iteration history curves of the optimization are plot in \figref{fig:07_c3}. In \figref{fig:07_wing_opt} the normalized maximum stress and buckling constraints are plotted on the deformed shape of the three load cases. We notice how in general the topology of the two external "spars" is shaped after the +2.5 g load case, while the interior of the wingbox is made by a thinner truss constrained by buckling. 
+The mass of the optimized CRM-2370 structure is \qty{20.092}{\tonne}, a \qty{1.318}{\tonne} reduction compared to the CRM-315 (\qty{-6.2}{\%}). Additionally, if we compare the compliance of the three load cases (see \tabref{tab:wing-res}), we notice how the solution of CRM-2370 is not only lighter but also stiffer, suggesting in general a more efficient structure topology. The maximum \todo[sostituiscci con Zell] z tip deflection of the wingbox is \qty{4.167}{m}, \qty{-2.953}{m}, \qty{1.948}{m} for the three considered load cases, respectively. There are 1127 active bars in the optimized design, and the whole optimization took \qty{3189}{s} (\qty{1911}{s} for the \gls{slp} step, \qty{1278}{s} for the \gls{nlp} step). The iteration history curves of the optimization are plot in \figref{fig:07_c3}. In \figref{fig:07_wing_opt} the normalized maximum stress and buckling constraints are plotted on the deformed shape of the three load cases. We notice how in general the topology of the two external "spars" is shaped after the +2.5 g load case, while the interior of the wingbox is made by a thinner truss constrained by buckling. 
+
+\begin{figure*}
+    \centering
+    \subcaptionbox{}{\includegraphics[width=0.49\linewidth]{figures/07_aeronautic/20a_v_hist_2370.pdf}}
+    \bigskip
+    \subcaptionbox{}{\includegraphics[width=0.49\linewidth]{figures/07_aeronautic/20b_c_hist_2370.pdf}}
+    \caption{Iteration history of the CRM-2370 example solved with the 2S-5R algorithm. (a) objective function history for the SLP and NLP step. The sharp increases in the objective function during the SLP step correspond to the reinitialization calls. (b) constraint violation for the NLP step.}
+    \label{fig:07_c3}
+\end{figure*}
 
 \paragraph{Active mechanical constraints}
 To better understand which mechanical phenomena is the most constraining for the bars of the solution, we present in \figref{fig:fail-crm} a graph where the normalized stress criterion $\vect{c_s}=\max{\left(-\vect{q} \; \textit{\textbf{sf}}/\sigma_c \vect{a},\vect{q} \; \textit{\textbf{sf}}/\sigma_t \vect{a}\right)}$ and the normalized buckling criterion $\vect{c_b}=\vect{q}\; \textit{\textbf{sf}}/\vect{q}_{\text{crit}}$ are plotted against each other. Every point in the scatter plot represents the members of the solution of the \gls{slp} and the \gls{nlp} steps that show at least a charge of 1N (931 out of 1127 members). This threshold is applied as at the end of the NLP step some members present a very small section, creating numerical problems when evaluating the stress and buckling criteria. All the \gls{slp} members activate either the maximum stress or buckling limit, while 68 out of 931 \gls{nlp} members are located in the center of the graph ($c_s<0.95$ and $c_b<0.95$). We speculate that this behavior is due to the inclusion of the kinematic compatibility constraint in the \gls{nlp} algorithm: the cross-sectional area of these bars is chosen to comply with the global displacements. In \tabref{tab:07_constrNLP}, a summary of the active mechanical failure constraints (buckling, tensile stress, and compressive stress) present in the NLP solution. The table showcases the number of active constraints categorized by constraint type and load case. The optimized design encompasses a total of 930 active mechanical failure constraints for 863 bars (931 minus the 68 bars constrained by kinematic compatibility). This suggests that certain members are concurrently subject to multiple failure constraints across different load cases. An additional observation is that the design of the solution is primarily influenced by local buckling and compressive failures, especially under the +2.5 g load case (LC\_1).
@@ -116,32 +226,41 @@ To better understand which mechanical phenomena is the most constraining for the
 \label{tab:07_constrNLP}
 \end{table}
 
-\begin{figure*}
-    \centering
-    \subcaptionbox{}{\includegraphics[width=0.49\linewidth]{figures/07_aeronautic/19a_v_hist_315.pdf}}
-    \bigskip
-    \subcaptionbox{}{\includegraphics[width=0.49\linewidth]{figures/07_aeronautic/19b_c_hist_315.pdf}}
-    \caption{Iteration history of the CRM-315 example solved with the 2S-5R algorithm. (a) objective function history for the SLP and NLP step. The sharp increases in the objective function during the SLP step correspond to the reinitialization calls. (b) constraint violation for the NLP step.}
-    \label{fig:07_c2}
-\end{figure*}
-
-\begin{figure*}
-    \centering
-    \subcaptionbox{}{\includegraphics[width=0.49\linewidth]{figures/07_aeronautic/20a_v_hist_2370.pdf}}
-    \bigskip
-    \subcaptionbox{}{\includegraphics[width=0.49\linewidth]{figures/07_aeronautic/20b_c_hist_2370.pdf}}
-    \caption{Iteration history of the CRM-2370 example solved with the 2S-5R algorithm. (a) objective function history for the SLP and NLP step. The sharp increases in the objective function during the SLP step correspond to the reinitialization calls. (b) constraint violation for the NLP step.}
-    \label{fig:07_c3}
-\end{figure*}
-
-\section{NACA profile extruded}
+\section{NACA 0012 drone wing}
 
 \subsection{Numerical implementation}
 
 \subsection{Meshing irregular volumes}
+\begin{figure*}
+    \centering
+    \includegraphics[width=\linewidth]{figures/07_aeronautic/00_naca_howtomesh/MESH.pdf}
+     \caption{}
+    \label{fig:07_howto}
+\end{figure*}
 
 \subsection{Definition of the repetitive zones}
 
 \subsection{Numerical application}
+
+\begin{table}
+    \centering
+    \small
+    \begin{tabular}{lx{1.8cm}x{1.8cm}x{1.8cm}x{1.8cm}}
+        \toprule
+    $N_\text{T}$ & --     & 1     &  2    &  3  \\ \midrule
+    $N_\text{sub}$           &    1  &   36   &   36   &   36     \\
+    $N_\text{opt}\;(N_\text{el})$  &  20 (1984) &  360 (12636)   &  204 (12636)   &  104 (12636)        \\
+    $V$ [\unit{cm^3}] & 9.907 &  27.958 &   15.548  & 10.178    \\
+    $V$ [\unit{\percent}] & 1.761 & 4.970&2.764 & 1.809    \\
+    $\bar{\rho}$ [\unit{kg/m^3}] & 80.31 &226.65 &126.05 &82.51 \\
+    C [\unit{J}]      &  3.71  &  5.20   &  6.21  & 4.141  \\
+    $a_\text{max}$ [\unit{mm^2}]      & 37.61& 9.40  & 12.81  &   15.81     \\
+    $\varphi$   &\qty{100.00}{\percent}&\qty{21.11}{\percent}&\qty{39.21}{\percent}&\qty{80.77}{\percent}  \\
+    $\psi$& 1.00   &  0.47 &  0.66   & 0.87        \\
+    t        & \hms{0;0;4}  &  \hms{0;1;18} & \hms{0;0;42} & \hms{0;10;22}   \\ \bottomrule
+    \end{tabular}
+    \caption{Numeric results of the parametric study on the influence of the number of modules $N_\text{T}$ on the NACA 0012 drone wing.}
+    \label{tab:07}
+    \end{table}
 
 \section{Conclusion}

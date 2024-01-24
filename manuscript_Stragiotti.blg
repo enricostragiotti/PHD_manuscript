@@ -1,20 +1,20 @@
 [0] Config.pm:307> INFO - This is Biber 2.19
 [0] Config.pm:310> INFO - Logfile is 'manuscript_Stragiotti.blg'
-[149] biber-MSWIN64:340> INFO - === 
-[206] Biber.pm:419> INFO - Reading 'manuscript_Stragiotti.bcf'
-[361] Biber.pm:979> INFO - Found 6 citekeys in bib section 0
-[379] Biber.pm:4419> INFO - Processing section 0
-[397] Biber.pm:4610> INFO - Looking for bibtex file 'biblio.bib' for section 0
-[520] bibtex.pm:1713> INFO - LaTeX decoding ...
-[1227] bibtex.pm:1519> INFO - Found BibTeX data source 'biblio.bib'
-[1351] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[1351] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[1352] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
-[1352] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
-[1363] bbl.pm:660> INFO - Writing 'manuscript_Stragiotti.bbl' with encoding 'UTF-8'
-[1371] bbl.pm:763> INFO - Output to manuscript_Stragiotti.bbl
-[1371] Biber.pm:131> WARN - Duplicate entry key: 'bensoussan_asymptotic_1978' in file 'biblio.bib', skipping ...
-[1371] Biber.pm:131> WARN - Duplicate entry key: 'kirsch_optimal_1980' in file 'biblio.bib', skipping ...
-[1371] Biber.pm:131> WARN - Duplicate entry key: 'cheung_reversibly_2013' in file 'biblio.bib', skipping ...
-[1371] Biber.pm:131> WARN - Duplicate entry key: 'costa_algorithmic_2020' in file 'biblio.bib', skipping ...
-[1371] Biber.pm:133> INFO - WARNINGS: 4
+[171] biber-MSWIN64:340> INFO - === 
+[241] Biber.pm:419> INFO - Reading 'manuscript_Stragiotti.bcf'
+[415] Biber.pm:979> INFO - Found 7 citekeys in bib section 0
+[436] Biber.pm:4419> INFO - Processing section 0
+[452] Biber.pm:4610> INFO - Looking for bibtex file 'biblio.bib' for section 0
+[567] bibtex.pm:1713> INFO - LaTeX decoding ...
+[1626] bibtex.pm:1519> INFO - Found BibTeX data source 'biblio.bib'
+[1800] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1800] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1800] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[1800] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[1812] bbl.pm:660> INFO - Writing 'manuscript_Stragiotti.bbl' with encoding 'UTF-8'
+[1820] bbl.pm:763> INFO - Output to manuscript_Stragiotti.bbl
+[1820] Biber.pm:131> WARN - Duplicate entry key: 'bensoussan_asymptotic_1978' in file 'biblio.bib', skipping ...
+[1820] Biber.pm:131> WARN - Duplicate entry key: 'kirsch_optimal_1980' in file 'biblio.bib', skipping ...
+[1820] Biber.pm:131> WARN - Duplicate entry key: 'cheung_reversibly_2013' in file 'biblio.bib', skipping ...
+[1820] Biber.pm:131> WARN - Duplicate entry key: 'costa_algorithmic_2020' in file 'biblio.bib', skipping ...
+[1820] Biber.pm:133> INFO - WARNINGS: 4

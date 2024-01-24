@@ -3343,9 +3343,8 @@ OUTPUT manuscript_Stragiotti.lof
 INPUT .\manuscript_Stragiotti.lot
 INPUT manuscript_Stragiotti.lot
 INPUT manuscript_Stragiotti.lot
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zpl-Regular-lf-t1.tfm
 OUTPUT manuscript_Stragiotti.lot
-INPUT .\manuscript_Stragiotti.gls
-INPUT manuscript_Stragiotti.gls
 INPUT .\manuscript_Stragiotti.gls
 INPUT manuscript_Stragiotti.gls
 INPUT .\manuscript_Stragiotti.gls
@@ -3358,6 +3357,14 @@ INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newtx\stxscr.tfm
 INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\vf\public\newpx\zplsy.vf
 INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\pxsys.tfm
 INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newtx\txex-bar.tfm
+INPUT manuscript_Stragiotti.mw
+OUTPUT manuscript_Stragiotti.mw
+OUTPUT manuscript_Stragiotti.mw
+INPUT manuscript_Stragiotti.mw
+OUTPUT manuscript_Stragiotti.mw
+INPUT .\manuscript_Stragiotti.gls
+INPUT manuscript_Stragiotti.gls
+OUTPUT manuscript_Stragiotti.mw
 INPUT manuscript_Stragiotti.mw
 OUTPUT manuscript_Stragiotti.mw
 OUTPUT manuscript_Stragiotti.mw
@@ -3565,7 +3572,6 @@ INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zpl-Bold-tlf-ot1
 INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplbmi.tfm
 INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplbsy.tfm
 INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zplbexx.tfm
-INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zpl-Regular-lf-t1.tfm
 INPUT .\figures\07_aeronautic\14a_00_Topology_x0_iso.png
 INPUT .\figures\07_aeronautic\14a_00_Topology_x0_iso.png
 INPUT figures\07_aeronautic\14a_00_Topology_x0_iso.png
@@ -3687,13 +3693,91 @@ OUTPUT manuscript_Stragiotti.mw
 OUTPUT manuscript_Stragiotti.mw
 INPUT manuscript_Stragiotti.mw
 OUTPUT manuscript_Stragiotti.mw
+INPUT .\figures\07_aeronautic\19a_v_hist_315.pdf
+INPUT .\figures\07_aeronautic\19a_v_hist_315.pdf
+INPUT figures\07_aeronautic\19a_v_hist_315.pdf
+INPUT .\figures\07_aeronautic\19a_v_hist_315.pdf
+INPUT .\figures\07_aeronautic\19a_v_hist_315.pdf
+INPUT .\figures\07_aeronautic\19a_v_hist_315.pdf
+INPUT .\figures\07_aeronautic\19b_c_hist_315.pdf
+INPUT .\figures\07_aeronautic\19b_c_hist_315.pdf
+INPUT figures\07_aeronautic\19b_c_hist_315.pdf
+INPUT .\figures\07_aeronautic\19b_c_hist_315.pdf
+INPUT .\figures\07_aeronautic\19b_c_hist_315.pdf
+INPUT .\figures\07_aeronautic\19b_c_hist_315.pdf
 INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zpl-Regular-lf-sc-t1.tfm
+INPUT .\figures\07_aeronautic\00_dispalcements\disp.pdf
+INPUT .\figures\07_aeronautic\00_dispalcements\disp.pdf
+INPUT figures\07_aeronautic\00_dispalcements\disp.pdf
+INPUT .\figures\07_aeronautic\00_dispalcements\disp.pdf
+INPUT .\figures\07_aeronautic\00_dispalcements\disp.pdf
+INPUT .\figures\07_aeronautic\00_dispalcements\disp.pdf
+OUTPUT manuscript_Stragiotti.mw
+INPUT manuscript_Stragiotti.mw
+OUTPUT manuscript_Stragiotti.mw
+OUTPUT manuscript_Stragiotti.mw
+INPUT manuscript_Stragiotti.mw
+OUTPUT manuscript_Stragiotti.mw
+OUTPUT manuscript_Stragiotti.mw
+INPUT manuscript_Stragiotti.mw
+OUTPUT manuscript_Stragiotti.mw
+OUTPUT manuscript_Stragiotti.mw
+INPUT manuscript_Stragiotti.mw
+OUTPUT manuscript_Stragiotti.mw
+OUTPUT manuscript_Stragiotti.mw
+INPUT manuscript_Stragiotti.mw
+OUTPUT manuscript_Stragiotti.mw
+OUTPUT manuscript_Stragiotti.mw
+INPUT manuscript_Stragiotti.mw
+OUTPUT manuscript_Stragiotti.mw
+OUTPUT manuscript_Stragiotti.mw
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\vf\public\newpx\zplbmi.vf
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\NewPXBMI_gnu.tfm
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\NewPXBMI.tfm
+INPUT manuscript_Stragiotti.mw
+OUTPUT manuscript_Stragiotti.mw
+OUTPUT manuscript_Stragiotti.mw
+INPUT manuscript_Stragiotti.mw
+OUTPUT manuscript_Stragiotti.mw
+OUTPUT manuscript_Stragiotti.mw
+INPUT manuscript_Stragiotti.mw
+OUTPUT manuscript_Stragiotti.mw
+INPUT .\figures\07_aeronautic\00_materials\mat.pdf
+INPUT .\figures\07_aeronautic\00_materials\mat.pdf
+INPUT figures\07_aeronautic\00_materials\mat.pdf
+INPUT .\figures\07_aeronautic\00_materials\mat.pdf
+INPUT .\figures\07_aeronautic\00_materials\mat.pdf
+INPUT .\figures\07_aeronautic\00_materials\mat.pdf
+OUTPUT manuscript_Stragiotti.mw
+INPUT manuscript_Stragiotti.mw
+OUTPUT manuscript_Stragiotti.mw
+OUTPUT manuscript_Stragiotti.mw
+INPUT manuscript_Stragiotti.mw
+OUTPUT manuscript_Stragiotti.mw
+INPUT .\figures\07_aeronautic\00_co2eq\co2_dollar.pdf
+INPUT .\figures\07_aeronautic\00_co2eq\co2_dollar.pdf
+INPUT figures\07_aeronautic\00_co2eq\co2_dollar.pdf
+INPUT .\figures\07_aeronautic\00_co2eq\co2_dollar.pdf
+INPUT .\figures\07_aeronautic\00_co2eq\co2_dollar.pdf
+INPUT .\figures\07_aeronautic\00_co2eq\co2_dollar.pdf
 INPUT .\figures\07_aeronautic\16_wing_opt\wing_opt.pdf
 INPUT .\figures\07_aeronautic\16_wing_opt\wing_opt.pdf
 INPUT figures\07_aeronautic\16_wing_opt\wing_opt.pdf
 INPUT .\figures\07_aeronautic\16_wing_opt\wing_opt.pdf
 INPUT .\figures\07_aeronautic\16_wing_opt\wing_opt.pdf
 INPUT .\figures\07_aeronautic\16_wing_opt\wing_opt.pdf
+INPUT .\figures\07_aeronautic\20a_v_hist_2370.pdf
+INPUT .\figures\07_aeronautic\20a_v_hist_2370.pdf
+INPUT figures\07_aeronautic\20a_v_hist_2370.pdf
+INPUT .\figures\07_aeronautic\20a_v_hist_2370.pdf
+INPUT .\figures\07_aeronautic\20a_v_hist_2370.pdf
+INPUT .\figures\07_aeronautic\20a_v_hist_2370.pdf
+INPUT .\figures\07_aeronautic\20b_c_hist_2370.pdf
+INPUT .\figures\07_aeronautic\20b_c_hist_2370.pdf
+INPUT figures\07_aeronautic\20b_c_hist_2370.pdf
+INPUT .\figures\07_aeronautic\20b_c_hist_2370.pdf
+INPUT .\figures\07_aeronautic\20b_c_hist_2370.pdf
+INPUT .\figures\07_aeronautic\20b_c_hist_2370.pdf
 INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zpl-BoldItalic-lf-t1.tfm
 INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zpl-Italic-lf-t1.tfm
 INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zpl-BoldItalic-lf-t1.tfm
@@ -3727,42 +3811,12 @@ OUTPUT manuscript_Stragiotti.mw
 OUTPUT manuscript_Stragiotti.mw
 INPUT manuscript_Stragiotti.mw
 OUTPUT manuscript_Stragiotti.mw
-OUTPUT manuscript_Stragiotti.mw
-INPUT manuscript_Stragiotti.mw
-OUTPUT manuscript_Stragiotti.mw
-OUTPUT manuscript_Stragiotti.mw
-INPUT manuscript_Stragiotti.mw
-OUTPUT manuscript_Stragiotti.mw
 INPUT .\figures\07_aeronautic\18_failure new\failure_max.pdf
 INPUT .\figures\07_aeronautic\18_failure new\failure_max.pdf
 INPUT figures\07_aeronautic\18_failure new\failure_max.pdf
 INPUT .\figures\07_aeronautic\18_failure new\failure_max.pdf
 INPUT .\figures\07_aeronautic\18_failure new\failure_max.pdf
 INPUT .\figures\07_aeronautic\18_failure new\failure_max.pdf
-INPUT .\figures\07_aeronautic\19a_v_hist_315.pdf
-INPUT .\figures\07_aeronautic\19a_v_hist_315.pdf
-INPUT figures\07_aeronautic\19a_v_hist_315.pdf
-INPUT .\figures\07_aeronautic\19a_v_hist_315.pdf
-INPUT .\figures\07_aeronautic\19a_v_hist_315.pdf
-INPUT .\figures\07_aeronautic\19a_v_hist_315.pdf
-INPUT .\figures\07_aeronautic\19b_c_hist_315.pdf
-INPUT .\figures\07_aeronautic\19b_c_hist_315.pdf
-INPUT figures\07_aeronautic\19b_c_hist_315.pdf
-INPUT .\figures\07_aeronautic\19b_c_hist_315.pdf
-INPUT .\figures\07_aeronautic\19b_c_hist_315.pdf
-INPUT .\figures\07_aeronautic\19b_c_hist_315.pdf
-INPUT .\figures\07_aeronautic\20a_v_hist_2370.pdf
-INPUT .\figures\07_aeronautic\20a_v_hist_2370.pdf
-INPUT figures\07_aeronautic\20a_v_hist_2370.pdf
-INPUT .\figures\07_aeronautic\20a_v_hist_2370.pdf
-INPUT .\figures\07_aeronautic\20a_v_hist_2370.pdf
-INPUT .\figures\07_aeronautic\20a_v_hist_2370.pdf
-INPUT .\figures\07_aeronautic\20b_c_hist_2370.pdf
-INPUT .\figures\07_aeronautic\20b_c_hist_2370.pdf
-INPUT figures\07_aeronautic\20b_c_hist_2370.pdf
-INPUT .\figures\07_aeronautic\20b_c_hist_2370.pdf
-INPUT .\figures\07_aeronautic\20b_c_hist_2370.pdf
-INPUT .\figures\07_aeronautic\20b_c_hist_2370.pdf
 OUTPUT manuscript_Stragiotti.mw
 INPUT manuscript_Stragiotti.mw
 OUTPUT manuscript_Stragiotti.mw
@@ -3775,6 +3829,12 @@ OUTPUT manuscript_Stragiotti.mw
 OUTPUT manuscript_Stragiotti.mw
 INPUT manuscript_Stragiotti.mw
 OUTPUT manuscript_Stragiotti.mw
+INPUT .\figures\07_aeronautic\00_naca_howtomesh\MESH.pdf
+INPUT .\figures\07_aeronautic\00_naca_howtomesh\MESH.pdf
+INPUT figures\07_aeronautic\00_naca_howtomesh\MESH.pdf
+INPUT .\figures\07_aeronautic\00_naca_howtomesh\MESH.pdf
+INPUT .\figures\07_aeronautic\00_naca_howtomesh\MESH.pdf
+INPUT .\figures\07_aeronautic\00_naca_howtomesh\MESH.pdf
 OUTPUT manuscript_Stragiotti.mw
 INPUT manuscript_Stragiotti.mw
 OUTPUT manuscript_Stragiotti.mw
@@ -3789,6 +3849,7 @@ INPUT D:\estragio\AppData\Roaming\MiKTeX\tex\latex\bera\t1fvm.fd
 INPUT D:\estragio\AppData\Roaming\MiKTeX\tex\latex\bera\t1fvm.fd
 INPUT D:\estragio\AppData\Roaming\MiKTeX\tex\latex\bera\t1fvm.fd
 INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\bera\fvmr8t.tfm
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zpl-Regular-lf-sc-t1.tfm
 OUTPUT manuscript_Stragiotti.mw
 INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\vf\public\bera\fvmr8t.vf
 INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\bera\fvmr8r.tfm
@@ -3803,6 +3864,9 @@ INPUT .\manuscript_Stragiotti.ind
 INPUT manuscript_Stragiotti.ind
 INPUT .\manuscript_Stragiotti.ind
 INPUT manuscript_Stragiotti.ind
+OUTPUT manuscript_Stragiotti.mw
+INPUT manuscript_Stragiotti.mw
+OUTPUT manuscript_Stragiotti.mw
 OUTPUT manuscript_Stragiotti.mw
 INPUT manuscript_Stragiotti.mw
 OUTPUT manuscript_Stragiotti.mw
@@ -3957,6 +4021,30 @@ OUTPUT manuscript_Stragiotti.mw
 OUTPUT manuscript_Stragiotti.mw
 INPUT manuscript_Stragiotti.mw
 OUTPUT manuscript_Stragiotti.mw
+OUTPUT manuscript_Stragiotti.mw
+INPUT manuscript_Stragiotti.mw
+OUTPUT manuscript_Stragiotti.mw
+OUTPUT manuscript_Stragiotti.mw
+INPUT manuscript_Stragiotti.mw
+OUTPUT manuscript_Stragiotti.mw
+OUTPUT manuscript_Stragiotti.mw
+INPUT manuscript_Stragiotti.mw
+OUTPUT manuscript_Stragiotti.mw
+OUTPUT manuscript_Stragiotti.mw
+INPUT manuscript_Stragiotti.mw
+OUTPUT manuscript_Stragiotti.mw
+OUTPUT manuscript_Stragiotti.mw
+INPUT manuscript_Stragiotti.mw
+OUTPUT manuscript_Stragiotti.mw
+OUTPUT manuscript_Stragiotti.mw
+INPUT manuscript_Stragiotti.mw
+OUTPUT manuscript_Stragiotti.mw
+OUTPUT manuscript_Stragiotti.mw
+INPUT manuscript_Stragiotti.mw
+OUTPUT manuscript_Stragiotti.mw
+OUTPUT manuscript_Stragiotti.mw
+INPUT manuscript_Stragiotti.mw
+OUTPUT manuscript_Stragiotti.mw
 OUTPUT manuscript_Stragiotti.bcf
 INPUT manuscript_Stragiotti.run.xml
 OUTPUT manuscript_Stragiotti.run.xml
@@ -3986,6 +4074,8 @@ INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmr17.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmr17.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmr5.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmr5.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmr7.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmr7.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmr8.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmr8.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy8.pfb
@@ -4000,6 +4090,8 @@ INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\type1\public\newpx\pxsys.pfb
 INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\type1\public\newpx\pxsys.pfb
 INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\type1\public\tex-gyre\qhvr.pfb
 INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\type1\public\tex-gyre\qhvr.pfb
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\type1\public\cm-super\sfrm0700.pfb
+INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\type1\public\cm-super\sfrm0700.pfb
 INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\type1\public\newpx\zplb.pfb
 INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\type1\public\newpx\zplb.pfb
 INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\type1\public\newpx\zplbi.pfb

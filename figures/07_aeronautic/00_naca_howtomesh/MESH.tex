@@ -1,0 +1,73 @@
+\documentclass[12pt, varwidth=200mm]{standalone}
+
+\input{../../img_header}
+
+\tikzset{font=\small}
+
+\begin{document}
+
+\begin{tikzpicture} [
+  line/.style     = { draw, very thick, -stealth, shorten >=2pt },
+  ]
+    
+\pgfmathsetmacro{\imglen}{5};
+% Define nodes
+
+\node[inner sep=0pt,label={[label distance=0cm,color=black]90:Volume}] (00) at (0,0)
+    {\includegraphics[width=\imglen cm]{00_naca.png}};
+
+\node[inner sep=0pt, right=of 00,label={[label distance=0cm,color=black]90:Test nodes}] (01)
+  {\includegraphics[width=\imglen cm]{01_test_points_GS.png}};
+
+\node[inner sep=0pt, right=of 01,label={[label distance=0cm,color=black]90:Repartition}] (02)
+  {\includegraphics[width=\imglen cm]{03_cell_GS.png}};
+
+\node[inner sep=0pt, below=of 00, xshift=0.7cm] (03)
+  {\includegraphics[width=\imglen cm]{04_mesh_1.png}};
+
+\node[inner sep=0pt, right=of 03, xshift=-1.4cm] (04)
+  {\includegraphics[width=\imglen cm]{04_mesh_2.png}};
+
+\node[label={[label distance=0cm,color=black]270:Conformal ground structures},draw, color=black, very thick, inner ysep=-0.5pt, inner xsep=-0.5pt, rounded corners=0.3cm, fit=(03) (04)] (box) {};
+
+\node[inner sep=0pt, below=of 02,label={[label distance=0cm,color=black]270:Final ground structure}] (05)
+  {\includegraphics[width=\imglen cm]{05_mesh_complete.png}};
+
+
+
+  \begin{scope} [every path/.style=line]
+        \path (00)        --    (01);
+        \path (01)        --    (02);
+        \path (02.south)        |-  node[pos=0.75]{} ++(-1,-0.45) -|   (box.north);
+        \path (box)        --    (05);
+
+  \end{scope}
+
+
+
+
+% \node [text centered] at (0,0) (inp1) {$\bm{x}^{0}=[\bm{a}^0, \bm{q}^0]$}; 
+% \node [block, text width=\textlen, below=of inp1] (linearization) {Linearize $\bm{g}_{\textrm{buck}}$ at point $\bm{P}_i$};
+% \node [block, text width=\textlen, right=of linearization, xshift=0.5cm] (solve) {Solve linearized problem $\tilde{\mathbb{P}}_2$};
+% \node [decision, inner sep=1pt, below=of solve, yshift=-0.5cm,label={290:Yes}, label={170:No},] (dec1) {\scriptsize $\norm{\Delta \vect{x}}_\infty\leq \text{tol}_{slp}$};
+% \node [decision, inner sep=2pt, below=of dec1, yshift=0.5cm,label={290:No}, label={170:Yes},] (dec2) {\scriptsize $k\leq k_{\text{max}}$};
+% \node [block, left=of dec2, xshift=-0.5cm] (reinit) {Reinitialization};
+% \node [text centered, below=of dec2] (out1) {$\tilde{\bm{x}}^*=[\tilde{\bm{a}}^*, \tilde{\bm{q}}^*]$}; 
+
+  
+% % connect all nodes defined above
+% \begin{scope} [every path/.style=line]
+%     \path (inp1)        --    (linearization);
+%     \path (linearization)        -- node[pos=0.45,anchor=center,fill=black!5,inner sep=0.5em] {$\bm{\tilde{g}}_{\text{buck}}$}    (solve);
+%     \path (solve)        --    node[pos=0.4,text centered, text width=0.8cm,anchor=center,fill=black!5,inner sep=0.5em] {$\bm{x}^{i+1}$}(dec1);
+%     \path (dec1)         --    (dec2) ;
+%     \path (dec2)         --    (out1) ;
+%     \path (dec1)  -|    (linearization.300);
+%     \path (dec2)  --          (reinit);
+%     \path (reinit.132)        -- node[pos=0.25,text centered, text width=0.7cm, anchor=center,fill=black!5,inner sep=0.5em] {$\overline{\bm{a}}^{i}$\\$k$\tiny{++}}    (linearization.240);
+% \end{scope}
+  
+%    % Post Processing Box
+
+\end{tikzpicture}
+\end{document}

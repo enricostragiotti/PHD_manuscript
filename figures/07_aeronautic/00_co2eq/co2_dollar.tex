@@ -1,0 +1,77 @@
+\documentclass[10pt, varwidth=20cm]{standalone}
+
+\input{../../img_header}
+
+\pgfdeclarelayer{background}
+\pgfsetlayers{background,main}
+
+\begin{document}
+
+\begin{tikzpicture}    
+  \begin{axis}[
+  curves_left,
+  width = 3cm,
+  height = 3cm,
+  y axis line style={accent_b_1},
+    every y tick label/.append style ={accent_b_1},
+    every y tick/.append style={color=accent_b_1},
+  % y axis line style={accent_b_1},
+  % every y tick label/.append style ={accent_b_1},
+  % every y tick/.append style={color=accent_b_1},
+  % legend columns=-1,
+  % legend style={
+  %               at={(0.5,1.05)},
+  %               anchor=south,
+  %               column sep=0.15cm,
+  %           },
+  xlabel={Material},
+  xtick={1,2,3,4},
+  xmin = 0.7, xmax = 4.3,
+  xticklabels={Al,Ti,Steel,CFRP},
+  ylabel={\color{accent_b_1}\unit{\tonne CO^2_e}},
+  ymin=0, ymax=1000,
+  % xmode=log,
+  % ytick={1000,1500,2000,2300},
+  ]
+      \addplot [scatter_plot_lin, accent_b_1]
+      table {%
+      1 266.7
+      2 957.5
+      3 430.6
+      4 202.4
+      };
+  
+\end{axis}
+
+  \begin{axis}[
+    curves_right,
+    width = 3cm,
+    height = 3cm,
+    y axis line style={accent_r_1},
+    every y tick label/.append style ={accent_r_1},
+    every y tick/.append style={color=accent_r_1},
+    ylabel={\color{accent_r_1}k\$},
+    % ymin=0, ymax=8030,
+    % ytick={0,2000,4000,6000,8000},
+    yticklabel style={anchor=west},
+    % symbolic x coords={A,B,C,D},
+    xmin = 0.7, xmax = 4.3,
+    ymin=0, ymax=600,
+    % ytick={0,2,4,6},
+    % yticklabels={0,$2 \unit{m}$,$4 \unit{m}$,$6 \unit{m}$},
+    xtick={1,2,3,4},
+    xticklabels={Al,Ti,Steel,CFRP},
+    ]
+    \addplot [scatter_plot_lin, accent_r_1]
+    table {%
+    1 46.9
+    2 478.7
+    3 542.5
+    4 237.6 
+    };
+
+  \end{axis}
+
+\end{tikzpicture}
+
+\end{document}

@@ -386,6 +386,36 @@
       \verb 10.1007/s11081-021-09672-6
       \endverb
     \endentry
+    \entry{ashby_materials_1999}{book}{}
+      \name{author}{1}{}{%
+        {{hash=4efbe37e741cfa6637ad06d22dcb5217}{%
+           family={Ashby},
+           familyi={A\bibinitperiod},
+           given={M.\bibnamedelimi F.},
+           giveni={M\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Oxford, OX ; Boston, MA}%
+      }
+      \list{publisher}{1}{%
+        {Butterworth-Heinemann}%
+      }
+      \strng{namehash}{4efbe37e741cfa6637ad06d22dcb5217}
+      \strng{fullhash}{4efbe37e741cfa6637ad06d22dcb5217}
+      \strng{bibnamehash}{4efbe37e741cfa6637ad06d22dcb5217}
+      \strng{authorbibnamehash}{4efbe37e741cfa6637ad06d22dcb5217}
+      \strng{authornamehash}{4efbe37e741cfa6637ad06d22dcb5217}
+      \strng{authorfullhash}{4efbe37e741cfa6637ad06d22dcb5217}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{2nd ed}
+      \field{isbn}{978-0-7506-4357-3}
+      \field{title}{Materials selection in mechanical design}
+      \field{year}{1999}
+      \keyw{Engineering design,Materials}
+    \endentry
   \enddatalist
 \endrefsection
 \endinput
