@@ -1,0 +1,52 @@
+\documentclass[10pt, varwidth=174mm]{standalone} % Figure*
+% \documentclass[11pt, varwidth=87mm]{standalone} % Figure
+
+\input{../../img_header}
+
+% \tikzset{font=\scriptsize}
+\usetikzlibrary{calc}
+
+\begin{document}
+\begin{tikzpicture}
+
+    \node[inner sep=0pt, label={[label distance=-5mm,color=black]270:(a)}] (min1) at (0cm,0cm) {\includegraphics[width=7cm]{04_Topology_NLP_XZ.png}};
+    \node[inner sep=0pt, label={[label distance=4mm,color=black]270:(b)}] (min2) at (8.5cm,0cm) {\includegraphics[width=3.5cm]{04_Topology_NLP_YZ.png}};
+    \node[inner sep=0pt, label={[label distance=0mm,color=black]270:(c)}] (min3) at (0cm,-4cm){\includegraphics[width=7cm]{04_Topology_NLP_XY.png}};
+    \node[inner sep=0pt, label={[label distance=0mm,color=black]270:(d)}] (min4) at (8.5cm,-4cm) {\includegraphics[width=7cm]{04_Topology_NLP_iso.png}};
+
+    \node[inner sep=0pt, label={[label distance=0mm,color=black]270:(e)}] (min5) at (0cm,-9cm){\includegraphics[width=9cm]{03_color_cells.png}};
+    \node[inner sep=0pt, label={[label distance=0mm,color=black]270:(f)}] (min6) at (8.5cm,-9cm) {\includegraphics[width=9cm]{03_color_sections.png}};
+
+    \node[inner sep=0pt, label={[label distance=0mm,color=black]270:(g)}] (min7) at (0cm,-14cm){\includegraphics[width=7cm]{04_Topology_cell_iso.png}};
+    \node[inner sep=0pt, label={[label distance=0mm,color=black]270:(h)}] (min8) at (8.5cm,-14cm) {\includegraphics[width=7cm]{04_Topology_sect_iso.png}};
+
+    \draw[arrow_reference] (0-4.5,-.7) -- (0.9-4.5,0-.7) node[midway,below] {$x$};
+    \draw[arrow_reference] (0-4.5,-.7) -- (0-4.5,0.9-.7) node[midway,left] {$z$};
+
+    \draw[arrow_reference] (0-4.5,-.7-4) -- (0.9-4.5,0-.7-4) node[midway,below] {$x$};
+    \draw[arrow_reference] (0-4.5,-.7-4) -- (0-4.5,0.9-.7-4) node[midway,left] {$y$};
+
+    \draw[arrow_reference] (0-4+10,-.7) -- (0.9-4+10,0-.7) node[midway,below] {$y$};
+    \draw[arrow_reference] (0-4+10,-.7) -- (0-4+10,0.9-.7) node[midway,left] {$z$};
+
+    \begin{scope}[coords]
+        \dscaling{3}{0.65};
+        \daxis{1}{9,-5.3 ,+0.2
+        }[right][above][right];
+    \end{scope}
+
+    \begin{scope}[coords]
+        \dscaling{3}{0.65};
+        \daxis{1}{0,-5.3 ,-11.6
+        }[right][above][right];
+    \end{scope}
+    
+    \begin{scope}[coords]
+        \dscaling{3}{0.65};
+        \daxis{1}{9,-5.3 ,-9.8
+        }[right][above][right];
+    \end{scope}
+
+
+\end{tikzpicture}
+\end{document}

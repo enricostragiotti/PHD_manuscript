@@ -1,0 +1,42 @@
+\documentclass[10pt, varwidth=174mm]{standalone} % Figure*
+% \documentclass[11pt, varwidth=87mm]{standalone} % Figure
+
+\input{../../img_header}
+
+% \tikzset{font=\scriptsize}
+\usetikzlibrary{calc}
+
+\begin{document}
+\begin{tikzpicture}
+
+    \node[] (A) at (0cm,0){};
+
+    \node[left=.5cm, label={[label distance=.5cm,color=black]270:(a)}] (figA) at (A){
+        \includegraphics[width=7cm]{02_GS_c_iso.png}
+    };
+    \node[right=.5cm, label={[label distance=.5cm,color=black]270:(b)}] (figB) at (A){
+        \includegraphics[width=7cm]{03_GS_s_iso.png}
+    };
+    % \draw[arrow_reference] (0-4.5,-.7) -- (0.9-4.5,0-.7) node[midway,below] {$x$};
+    % \draw[arrow_reference] (0-4.5,-.7) -- (0-4.5,0.9-.7) node[midway,left] {$z$};
+
+    % \draw[arrow_reference] (0-4.5,-.7-4) -- (0.9-4.5,0-.7-4) node[midway,below] {$x$};
+    % \draw[arrow_reference] (0-4.5,-.7-4) -- (0-4.5,0.9-.7-4) node[midway,left] {$y$};
+
+    % \draw[arrow_reference] (0-4+10,-.7) -- (0.9-4+10,0-.7) node[midway,below] {$y$};
+    % \draw[arrow_reference] (0-4+10,-.7) -- (0-4+10,0.9-.7) node[midway,left] {$z$};
+
+    \begin{scope}[coords]
+        \dscaling{3}{0.65};
+        \daxis{1}{2,-1.5,-0.5
+        }[right][above][right];
+    \end{scope}
+
+    \begin{scope}[coords]
+        \dscaling{3}{0.65};
+        \daxis{1}{-5,-3.2,-0.95
+        }[right][above][right];
+    \end{scope}
+
+\end{tikzpicture}
+\end{document}

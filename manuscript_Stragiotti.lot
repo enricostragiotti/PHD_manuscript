@@ -1,11 +1,12 @@
 \babel@toc {english}{}\relax
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {1.1}{\ignorespaces Material data used for the CRM optimization.}}{2}{table.caption.6}%
-\contentsline {table}{\numberline {1.2}{\ignorespaces Numerical results of the optimization of the CRM with two different ground structures.}}{2}{table.caption.7}%
-\contentsline {table}{\numberline {1.3}{\ignorespaces remember \textcolor {green}{put here the span of the wing}}}{4}{table.caption.13}%
-\contentsline {table}{\numberline {1.4}{\ignorespaces remember \textcolor {green}{put here the span of the wing}}}{5}{table.caption.17}%
-\contentsline {table}{\numberline {1.5}{\ignorespaces remember \textcolor {green}{put here the span of the wing}}}{5}{table.caption.18}%
-\contentsline {table}{\numberline {1.6}{\ignorespaces Number of active mechanical failure constraints for the CRM-2370 optimized design per type of constraint (rows) and per load case (columns).}}{7}{table.caption.28}%
-\contentsline {table}{\numberline {1.7}{\ignorespaces Numeric results of the parametric study on the influence of the number of modules $N_\text {T}$ on the NACA 0012 drone wing.}}{10}{table.caption.30}%
+\contentsline {table}{\numberline {1.2}{\ignorespaces Numerical results of the optimization of the CRM with two different ground structures.}}{5}{table.caption.9}%
+\contentsline {table}{\numberline {1.3}{\ignorespaces remember \textcolor {green}{put here the span of the wing}}}{6}{table.caption.13}%
+\contentsline {table}{\numberline {1.4}{\ignorespaces remember \textcolor {green}{put here the span of the wing}}}{7}{table.caption.17}%
+\contentsline {table}{\numberline {1.5}{\ignorespaces remember \textcolor {green}{put here the span of the wing}}}{7}{table.caption.18}%
+\contentsline {table}{\numberline {1.6}{\ignorespaces Number of active mechanical failure constraints for the CRM-2370 optimized design per type of constraint (rows) and per load case (columns).}}{9}{table.caption.28}%
+\contentsline {table}{\numberline {1.7}{\ignorespaces Material data of the Ultem 2200 used for the NACA 0012 optimization.}}{12}{table.caption.29}%
+\contentsline {table}{\numberline {1.8}{\ignorespaces Numeric results of the parametric study on the influence of the number of modules $N_\text {T}$ on the NACA 0012 drone wing.}}{12}{table.caption.35}%
 \addvspace {10\p@ }
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file

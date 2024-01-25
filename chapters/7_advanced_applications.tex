@@ -2,15 +2,17 @@
 \glsresetall % reset glossary
 
 \chapter{Design of real-size aeronautical wing structures} \label{chap:07}
-\todo{tables always small}
-Introduction
 
-Ultralight trusses are a good design candidate for the design of innovative aerostructures thanks to their superior aeroelastic properties and stiffness-to-weight ratio \sidecite{cramer_elastic_2019}. These structures represent a natural application case for the discussed optimization formulations. \sidecite{opgenoord_aeroelastic_2018, opgenoord_design_2019} proposed a two-step sequential optimization algorithm to reduce the weight of a truss wing. Firstly, a ground structure with different nodal densities based on the stress field of the structure is generated and secondly, the cross-sectional areas are found using a sizing optimization algorithm that takes into account stress, local buckling, and aeroelastic constraints. \sidecite{shahabsafa_novel_2018} decided, instead, to tackle all the difficulties of the problem using a set of discrete cross-sectional areas and a sizing \gls{milo} algorithm. The algorithm is validated on a 315-bars wingbox ground structure, based on the \gls{crm}. In these studies, the adoption of a sizing optimization algorithm simplifies the numerical complexities associated with the problem. However, by solely focusing on modifying the component sizes, the opportunity to optimize the overall truss topology is missed, limiting the potential for further weight savings.
+Ultralight trusses are a good design candidate for the design of innovative aerostructures thanks to their superior aeroelastic properties and stiffness-to-weight ratio \sidecite{cramer_elastic_2019}. These structures represent a natural application case for the discussed optimization formulations until that point. Opgenoord \sidecite{opgenoord_aeroelastic_2018, opgenoord_design_2019} proposed a two-step sequential optimization algorithm to reduce the weight of a truss wing. Firstly, a ground structure with different nodal densities based on the stress field of the structure is generated and secondly, the cross-sectional areas are found using a sizing optimization algorithm that takes into account stress, local buckling, and aeroelastic constraints. Shahabsafa \sidecite{shahabsafa_novel_2018} decided, instead, to tackle all the difficulties of the problem using a set of discrete cross-sectional areas and a sizing \gls{milo} algorithm. In these studies, the adoption of a sizing optimization algorithm simplifies the numerical complexities associated with the problem. However, by solely focusing on modifying the component sizes, the opportunity to optimize the overall truss topology is missed, limiting the potential for further weight savings. Additionally, no one of these study evalued the febrivcabiliry of the proposed design. it is here that the modularity cound be beneficial.
+
+In the precedent chapters we focused on the developement of optiization methods for monolitich and modular structures, and we applied them to two and three dimensional academic load cases. Here we want to validate the proposed optimization algorithms by testing them on real world engineering problem in the aeronautic domain. First, to assess the computational efficiency and to validate the strategy proposed in \chpref{chap:04} on a large-scale structure, we optimize a monolitich three-dimensional wingbox test case based on the \acrfull{crm} with multiple load cases and for two discretization refinement. Later, we put the modular algorithm presented in \chpref{chap:06} on a drone-sized wing based on a extruded NACA 0012 profile.
+
+The optimizations presented in this section are performed on a notebook equipped with an Intel\textsuperscript{\textregistered} Core™ i5-9400H Processor @ \qty{2.50}{GHz} (4 cores) and \qty{16}{GB} of RAM. 
 
 \section{3D CRM wingbox with multiple load cases}
-In this section, the proposed strategy is used to optimize a real-size wingbox, to validate its ability to work on large, three-dimensional structures with more candidate members compared to the precedent test cases. The structure is based on the jig (undeformed) shape of the wingbox of the NASA \gls{crm} \sidecite{brooks_benchmark_2018}. The structure is submitted to three different load cases: +2.5 g maneuver (LC\_1), -1 g maneuver (LC\_2), and cruise with gust +1.3 g (LC\_3). The nodes of the bounding volume and the loads used are provided by \sidecite{fakhimi_discrete_2021}, where a detailed discussion on how they are evaluated can be found. The ground structure of the test case is presented in \figref{fig:07_crm315_x0}.
+In this section, the proposed strategy is used to optimize a real-size wingbox, to validate its ability to work on large, three-dimensional structures with more candidate members compared to the precedent test cases. The structure is based on the jig (undeformed) shape of the wingbox of the NASA \gls{crm} \sidecite{brooks_benchmark_2018}. The structure is submitted to three different load cases: +2.5 g maneuver (LC\_1), -1 g maneuver (LC\_2), and cruise with gust +1.3 g (LC\_3). The nodes of the bounding volume and the loads used are provided by Fakhimi \etal \sidecite{fakhimi_discrete_2021}, where a detailed discussion on how they are evaluated can be found. The ground structure of the test case is presented in \figref{fig:07_crm315_x0}. Additionally, the load cases and the starting point, of all the presented test cases are available in the reference data set \sidecite{enrico_stragiotti_truss_2023}.
 
-The material used for the optimization is an aluminum alloy with Young's modulus of \qty{69}{\GPa}, density of \qty{2.7}{\gram/\cm^3}, and yield stress equal to $\pm$\qty{270}{\MPa} (see \tabref{tab:07_CRM_mat}). To ensure a conservative design, we incorporated safety factors (\textit{sf}) associated with each load case. These safety factors were integrated into the formulation by reducing the maximum stress and buckling allowables by factors of 1.5, 1.5, and 2.67 for the three considered load cases, respectively. No bounds constraints are imposed on the nodal displacements of the structure and the cross-sections are assumed circular with the cross-sectional buckling parameter $s = \pi E/4$. The optimization is carried only on the wingbox, the internal structure of the wing, and there is no influence of the skin on the optimization.
+The material used for the optimization is an aluminum alloy with Young's modulus of \qty{69}{\GPa}, density of \qty{2.7}{\gram/\cm^3}, and yield stress equal to $\pm$\qty{270}{\MPa} (see \tabref{tab:07_CRM_mat}). To ensure a conservative design, we incorporated safety factors (\textit{sf}) associated with each load case. These safety factors are integrated into the formulation by reducing the maximum stress and buckling allowables by factors of 1.5, 1.5, and 2.67 for the three considered load cases, respectively. The cross-sections are assumed circular with the cross-sectional buckling parameter $s = \pi E/4$. The optimization is carried only on the wingbox, the internal structure of the wing, and there is no influence of the skin on the optimization.
 \begin{margintable}
     \small
     \centering
@@ -26,33 +28,11 @@ The material used for the optimization is an aluminum alloy with Young's modulus
     \label{tab:07_CRM_mat}
 \end{margintable}
 
+The optimizations are performed using the Python package CVXPY 1.2.2 \sidecite{diamond_cvxpy_2016} with the ECOS 2.0.7 \sidecite{domahidi_ecos_2013} solver to solve the relaxed \gls{lp} Problem \eqref{eq:04_optim_no_constr_lp}. The \gls{nlp} Problem \eqref{eq:04_optim_complete} is solved using cyipopt \sidecite{Moore_Mechmotum}, a Python wrapper for IPOPT 3.14.11 \sidecite{wachter_implementation_2006}, a large-scale nonlinear optimization package using PARDISO 6.0 \sidecite{alappat_recursive_2020} as the linear solver. The Jacobian and the Hessian of the Lagrangian of the \gls{nlp} step are calculated at every optimization iteration to allow faster convergence. As every state variable of the optimization is independent of the others, these responses are derived analytically and will not be detailed there. The stopping criterion used for the \gls{slp} and \gls{nlp} optimisations are $\norm{\Delta \vect{x}}_\infty \leq \text{tol}_{slp}  \text{, and } \norm{\Delta_{\text{NLP}}}_\infty \leq \text{tol}_{nlp}$, with $\text{tol}_{slp}=10^{-6}$ and $\text{tol}_{nlp}=10^{-4}$ respectively. $\Delta_{\text{NLP}}$ represents the scaled \gls{nlp} error, a more comprehensive value used by IPOPT to take into account the optimality of the solution and the constraints violation. The reinitialization magnitude parameter $\vect{\phi}$ is set up using \eqref{eq:04_phi} \marginnote{\eqref{eq:04_phi} reads: $$\phi_n = \phi_{n-1}^\beta \quad \forall n \in [1,\dots,n_{\text{max}}],$$ with $\phi_0=0.8$ and $\beta=2$.}, leading to $\vect{\phi} = \left[ 0.8000, 0.6400, 0.4096, 0.1677, 0.0281 \right]$ for the five reinitialization calls of 2S-5R. The full list of parameters used to set up the variable scaling, the SLP optimization, the reinitialization, and the NLP optimization is the same used in \chpref{chap:04} listed in \tabref{tab:04_param}.
+
 \subsection{Advanced thresholding}
 As the \gls{crm} is a large and thin structure that presents a noticeable difference in load magnitude between the tip and the root of the wingbox, the quantities of interest of the optimization span different orders of magnitude (from \unit{m^2} to \unit{mm^2}, and\marginnote{\eqref{eq:04_thr} reads: $$a_i<a_{\text{thr}} \; \forall i, \text{ with }a_{\text{thr}} = \chi \; \max(\tilde{\vect{a}}^*)$$} from \unit{MN} to \unit{N}). For that reason, the choice of the cross-sectional area threshold value $\chi$ defined in \eqref{eq:04_thr} and used to simplify the initial \gls{nlp} ground structure is crucial. Taking a high value (such as $\chi = 10^{-4}$, restraining the solution from \unit{m^2} to \unit{cm^2}) would mean possibly canceling out bars fundamental for the nodal force equilibrium in the less loaded part of the wing (wing tip and the central part of the wing's sections near the root). By contrast, a low value (such as $\chi=10^{-9}$) would permit the correct simulation of the mechanical response of the structure, but it would lead to a very high number of candidate bars and, thus, longer optimizations and convergence difficulty for the \gls{nlp} phase. For that reason, $\chi$ is set to an average value ($\chi=10^{-6}$), eliminating all the bars under the value $a_{\text{thr}}=\chi \; \max(\vect{a})$, but an additional check is performed before proceeding to the thresholding. The bars under the threshold $a_{\text{thr}}$ are sorted in ascending order of cross-sectional area and, starting from the smallest one, we iteratively check via a \gls{fea} that the difference between the force and displacement fields before and after the bar removal is below than a certain bound. In the present study we used the following: $\norm{\Delta q}_{\infty}<\qty{10}{N}$ and $\norm{\Delta U}_{\infty}<\qty{1}{cm}$.
-
-
-\subsection{Numerical application}
-
-\begin{table}
-    \small
-    \centering
-    \begin{tabular}{ccc}
-    \toprule
-    \textbf{Quantity} & \textbf{CRM-315} & \textbf{CRM-2370} \\ \midrule
-    N$_{\text{el}}$          & 315               & 2370               \\
-    N$_{\text{opt}}$           & 257                  &  1127              \\
-    V [\unit{\meter^3}]             &  7.90                 &  7.44             \\
-    V [\unit{\%}]             &   \qty{1.309}{\%}                & \qty{1.232}{\%}               \\
-    Mass [\unit{\tonne}]               &   21.342                & 20.092     \\
-    a$_{\text{max}}$ [\unit{\meter^2}]           &  0.198                 & 0.208              \\
-    C$_\text{LC\_1}$ [\unit{\mega \joule}]                &  3.23                 &  3.17              \\
-    C$_\text{LC\_2}$ [\unit{\mega \joule}]                &   1.28                &  1.27              \\
-    C$_\text{LC\_3}$ [\unit{\mega \joule}]                &   0.76                &  0.74              \\
-    t [\unit{\second}]                & 147                  & 3189   \\ \bottomrule            
-    \end{tabular}
-    \caption{Numerical results of the optimization of the CRM with two different ground structures.}
-    \label{tab:wing-res}
-    \end{table}
-    
+\subsection{Numerical optimization}    
     \begin{figure*}
         \centering
         \subcaptionbox{\label{fig:07_crm315_x0}}{\includegraphics[width=0.45\linewidth]{figures/07_aeronautic/14a_00_Topology_x0_iso.png}}
@@ -69,31 +49,53 @@ As the \gls{crm} is a large and thin structure that presents a noticeable differ
         \label{fig:07_crm315}
     \end{figure}
     
-    Two different discretizations are considered for the optimization. The proposed algorithm is firstly tested on the same ground structure provided by Fakhimi \etal \sidecite{fakhimi_discrete_2021}, composed of $N_{\text{el}}=315$ candidate members (CRM-315). The second discretization is obtained by refining the 315-bar ground structure, evaluating the midpoints of every member, and connecting them with first-order connectivity. We obtain $N_{\text{el}}=2370$ candidate members (CRM-2370). The loads and the boundary conditions are applied on the same nodes of the ground structure for the two studied ground structures. The cross-sectional areas of the starting point of the CRM-315 and the CRM-2370 are set to \qty{0.0001}{m^2} and they are shown in \figref{fig:07_crm}. Only one single start point is used for these two examples as the proposed two-step strategy with reinitialization already proved in the previous sections to reduce the starting point influence on the optimization result. The resolution algorithm used is 2S-5R. The numerical results of the optimization for the two different discretizations are reported in \tabref{tab:wing-res}. 
+    Two different discretizations are considered for the optimization. The proposed algorithm is firstly tested on the same ground structure provided by Fakhimi \etal \sidecite{fakhimi_discrete_2021}, composed of $N_{\text{el}}=315$ candidate members (CRM-315). The second discretization is obtained by refining the 315-bar ground structure, evaluating the midpoints of every member, and connecting them with first-order connectivity. We obtain $N_{\text{el}}=2370$ candidate members (CRM-2370). The loads and the boundary conditions are applied on the same nodes of the ground structure for the two studied ground structures. The cross-sectional areas of the starting point of the CRM-315 and the CRM-2370 are set to \qty{0.0001}{m^2} and they are shown in \figref{fig:07_crm}. Only one single start point is used for these two examples as the proposed two-step strategy with reinitialization already proved in \chpref{chap:04} to reduce the starting point influence on the optimization result. The resolution algorithm used is 2S-5R. The numerical results of the optimization for the two different discretizations are reported in \tabref{tab:07_wing-res}. 
     
     The optimized CRM-315 structure shows a mass of \qty{21.342}{\tonne}, a \qty{27.01}{\%} reduction compared to the solution with discrete cross-section areas found by Fakhimi \etal \sidecite{fakhimi_discrete_2021} (\qty{29.238}{\tonne}). Other than the substantial difference in the modelization of the cross-section areas, the mass reduction could be explained by the fact that the proposed algorithm has a zero lower bound on cross-sectional areas, thus permitting the topology of the structure to change: the 2S-5R solution shows 257 active bars out of 315 at convergence (see \figref{fig:07_crm315}). In contrast, the \gls{milo} problem solved by Fakhimi \etal \cite{fakhimi_discrete_2021} is employed as a sizing optimization algorithm with fixed topology (and thus 315 active members in the optimized design). A more detailed comparison could not be performed as the authors did not share the values of the cross-sectional areas of their solution. 
     
-    The volume fraction of the solution is \qty{1.313}{\percent} and the minimum slenderness ratio $\lambda$ (ratio between the length and the radius of gyration of the bar) of a bar is 14.96, which is compatible with the truss modelization used to discretize the wingbox volume. The execution time of the optimization is \qty{19}{s} for the \gls{slp} step and \qty{128}{s} for the \gls{nlp} step, for a total of \qty{147}{s} on a regular notebook, compared to the over four days of optimization of Fakhimi \cite{fakhimi_discrete_2021} on a desktop workstation. The iteration history curves of the optimization are plot in \figref{fig:07_c2}.
+    The volume fraction of the solution is \qty{1.313}{\percent} and the minimum slenderness ratio $\lambda$ (ratio between the length and the radius of gyration of the bar) of a bar is 14.96, which is compatible with the truss modelization used to discretize the wingbox volume. The execution time of the optimization is \qty{19}{s} for the \gls{slp} step and \qty{128}{s} for the \gls{nlp} step, for a total of \qty{147}{s} on a regular notebook, compared to the over four days of optimization of Fakhimi \cite{fakhimi_discrete_2021} on a desktop workstation. The iteration history curves of the optimization are plot in \figref{fig:07_c2}a, in which we notice the sharp volume increase due to the reinitialization heuristic in the \gls{slp} step. \figref{fig:07_c2}b shows invece the constaint violation curves for the NLP phase. The starting point coming from the relaxed \gls{slp} step violates the stress and buckling constraints as the predicted force field does not account for kinematic compatibility, necessary due to the multiple loading condition of this test case. From the graph we can notice how the kinematic  compatibility constraint is extremely hard to satisfy.
+
+    \begin{table}
+        \small
+        \centering
+        \begin{tabular}{ccc}
+        \toprule
+        \textbf{Quantity} & \textbf{CRM-315} & \textbf{CRM-2370} \\ \midrule
+        N$_{\text{el}}$          & 315               & 2370               \\
+        N$_{\text{opt}}$           & 257                  &  1127              \\
+        V [\unit{\meter^3}]             &  7.90                 &  7.44             \\
+        V [\unit{\%}]             &   \qty{1.309}{\%}                & \qty{1.232}{\%}               \\
+        Mass [\unit{\tonne}]               &   21.342                & 20.092     \\
+        a$_{\text{max}}$ [\unit{\meter^2}]           &  0.198                 & 0.208              \\
+        C$_\text{LC\_1}$ [\unit{\mega \joule}]                &  3.23                 &  3.17              \\
+        C$_\text{LC\_2}$ [\unit{\mega \joule}]                &   1.28                &  1.27              \\
+        C$_\text{LC\_3}$ [\unit{\mega \joule}]                &   0.76                &  0.74              \\
+        t [\unit{\second}]                & 147                  & 3189   \\ \bottomrule            
+        \end{tabular}
+        \caption{Numerical results of the optimization of the CRM with two different ground structures.}
+        \label{tab:07_wing-res}
+    \end{table}
 
     \begin{figure*}
         \centering
         \subcaptionbox{}{\includegraphics[width=0.49\linewidth]{figures/07_aeronautic/19a_v_hist_315.pdf}}
         \bigskip
         \subcaptionbox{}{\includegraphics[width=0.49\linewidth]{figures/07_aeronautic/19b_c_hist_315.pdf}}
-        \caption{Iteration history of the CRM-315 example solved with the 2S-5R algorithm. (a) objective function history for the SLP and NLP step. The sharp increases in the objective function during the SLP step correspond to the reinitialization calls. (b) constraint violation for the NLP step.}
+        \caption{Iteration history of the CRM-315 test case solved with the 2S-5R algorithm. (a) objective function history for the SLP and NLP step. The sharp increases in the objective function during the SLP step correspond to the reinitialization calls. (b) constraint violation for the NLP step.}
         \label{fig:07_c2}
     \end{figure*}
 
 \paragraph{Maximum displacements constraints}
+The designer of a plane could be interested in limiting the maximum Z displacement $Z_{t,\ell}$ of the wing tip to avoid a too high flex on the wing that could influence too much the aerodynamic field attorno all ala. We remember that controlling the displacements of the structure, we can actively influence the complance of the structure, even if the compliance minimization is not in the objective function. Additionally, this could be a constraint that can passively add stiffness to the wing and helps with the aeroelastic phenomenon of flutter instability.
 
-agiamo sulla stiffness, gaurda i valori di compliance come scendono
+having observed that in the unconstrained version the maxiumm tip dispalcement of the optimized CRM-315 structure, that has a half wing span of \qty{29.4}{m}, is $Z_t=\qty{4.11}{m}$, we set three differet $Z_{t,\ell} = [\qty{1}{m},\qty{2}{m},\qty{3}{m}]$ in the \gls{nlp} step, willing to explore ho sensible is the optimized structure is with respect to this constraint. The optimization are efectuated using the same material, geometrical and load data used in the above example.
 
 \begin{table}
     \small
     \centering
     \begin{tabular}{ccccc}
     \toprule
-    $\bm{Z}_\ell\:[\text{m}]$ & 1&2&3&--\\ \midrule
+    $\bm{Z}_{t,\ell}\:[\text{m}]$ & 1&2&3&--\\ \midrule
     V [\unit{\meter^3}]&  26.70&13.78&9.39&7.90\\
     V [\unit{\%}]&   \qty{4.421}{\%}   & \qty{2.283}{\%}&\qty{1.556}{\%}&\qty{1.309}{\%}  \\
     Mass [\unit{\tonne}]  &72.086&37.218&25.363&21.342\\
@@ -111,12 +113,15 @@ agiamo sulla stiffness, gaurda i valori di compliance come scendono
 \begin{figure*}
     \centering
     \includegraphics[width=\linewidth]{figures/07_aeronautic/00_dispalcements/disp.pdf}
-     \caption{}
+     \caption{Undeformed (gray) and deformed (black) shapes of the optimized CRM-315 structures for different values of maximum Z displacement $Z_{t,\ell}$ of the wing tip constrints. (a) $Z_{t,\ell}=\qty{1}{m}$  ; (b) $Z_{t,\ell}=\qty{2}{m}$; (c) $Z_{t,\ell}=\qty{3}{m}$; (d) no maximum displacement constraints.}
     \label{fig:07_disp_sol}
 \end{figure*}
 
+We plot the displacements in the XZ plane in \figref{fig:07_disp_sol} and the numeric values of the optimization in \tabref{tab:07_disp}. First, we notice how efficacely the optimizer limited the maximum displacement and converged to a solution even with a hard to satisfy constraint as $Z_{t,\ell}=\qty{1}{m}$ \marginnote{we remember that the \gls{crm} shows a half wing span of \qty{29.4}{m}.} . Second, we see that the constraint satisfaction doesent come free. The added rigidity needed to comply with the maximum displacement constraint come from a massive add of material that represent a \qty{19}{percent}, \qty{75}{percent} and \qty{237}{percent} increase for the $Z_{t,\ell} = [\qty{3}{m},\qty{2}{m},\qty{1}{m}]$, rispectively. Finally, as already stated before, the constaints on the maximum displacements infuence a lot the compliance of the structure, and we can see how, even if the proposed formulation does not keep into account for that, we can reduce indrecly the compliance of the structure.
+
 \paragraph{Multiple materials}
 \todo{complete with Ashby charts on cost and co2 evaluation}
+The proposed formulation uses the material data as an input for the optimization and up untill this point we never interested in seeing how the mateial data could influence the topology and the final volume of the optimized structure. However we know how much the material is important and we wnat here see the influence on the CRM-315 test case. 
 
 \begin{table}
     \small
@@ -135,6 +140,8 @@ agiamo sulla stiffness, gaurda i valori di compliance come scendono
     \label{tab:07_materials_data}
 \end{table}
 
+Commenta i materiali qui
+
 \sidecite{ashby_materials_1999}
 
 \gls{cfrp}
@@ -152,7 +159,7 @@ agiamo sulla stiffness, gaurda i valori di compliance come scendono
     C$_\text{LC\_1}$ [\unit{\mega \joule}]&3.23&4.88&1.19&4.39\\
     C$_\text{LC\_2}$ [\unit{\mega \joule}]&1.28&1.94&0.47&1.73\\
     C$_\text{LC\_3}$ [\unit{\mega \joule}]&0.76&1.15&0.28&1.03\\
-    $Z_\ell\:[\text{m}]$&4.10&5.97&1.42&5.31\\
+    $Z_t\:[\text{m}]$&4.10&5.97&1.42&5.31\\
     Cost [\unit{\tonne CO^2_e}]&266.7&957.5&430.6&202.4\\
     Cost [\unit{k\$}]&46.9&478.7&542.5&237.6\\
     \bottomrule
@@ -160,6 +167,8 @@ agiamo sulla stiffness, gaurda i valori di compliance come scendono
     \caption{remember \todo{put here the span of the wing}}
     \label{tab:07_materials}
 \end{table}
+
+Commenta le soluzioni, prima di tutto il peso, poi la compliance e la Z max e infine costo 
 
 ovviamente qui si tiene in conto solo il materiale, ma il peso inferiore su un aero permette di risparmiare veramente molto di piu
 
@@ -188,7 +197,7 @@ ovviamente qui si tiene in conto solo il materiale, ma il peso inferiore su un a
      \caption{Maximum stress constraint value (left) and buckling constraint value (right) plotted on the deformed shape of the optimized design (undeformed shape in light grey) of CRM-2370 for the three load cases: +2.5 g maneuver (a), -1 g maneuver (b), and cruise with gust (+1.3 g) (c). The maximum $z$ tip deflection is \qty{4.167}{m}, \qty{-2.953}{m}, and \qty{1.948}{m}, respectively.}
     \label{fig:07_wing_opt}
 \end{figure*}
-The mass of the optimized CRM-2370 structure is \qty{20.092}{\tonne}, a \qty{1.318}{\tonne} reduction compared to the CRM-315 (\qty{-6.2}{\%}). Additionally, if we compare the compliance of the three load cases (see \tabref{tab:wing-res}), we notice how the solution of CRM-2370 is not only lighter but also stiffer, suggesting in general a more efficient structure topology. The maximum \todo[sostituiscci con Zell] z tip deflection of the wingbox is \qty{4.167}{m}, \qty{-2.953}{m}, \qty{1.948}{m} for the three considered load cases, respectively. There are 1127 active bars in the optimized design, and the whole optimization took \qty{3189}{s} (\qty{1911}{s} for the \gls{slp} step, \qty{1278}{s} for the \gls{nlp} step). The iteration history curves of the optimization are plot in \figref{fig:07_c3}. In \figref{fig:07_wing_opt} the normalized maximum stress and buckling constraints are plotted on the deformed shape of the three load cases. We notice how in general the topology of the two external "spars" is shaped after the +2.5 g load case, while the interior of the wingbox is made by a thinner truss constrained by buckling. 
+The mass of the optimized CRM-2370 structure is \qty{20.092}{\tonne}, a \qty{1.318}{\tonne} reduction compared to the CRM-315 (\qty{-6.2}{\%}). Additionally, if we compare the compliance of the three load cases (see \tabref{tab:07_wing-res}), we notice how the solution of CRM-2370 is not only lighter but also stiffer, suggesting in general a more efficient structure topology. The maximum \todo[sostituiscci con Zell] z tip deflection of the wingbox is \qty{4.167}{m}, \qty{-2.953}{m}, \qty{1.948}{m} for the three considered load cases, respectively. There are 1127 active bars in the optimized design, and the whole optimization took \qty{3189}{s} (\qty{1911}{s} for the \gls{slp} step, \qty{1278}{s} for the \gls{nlp} step). The iteration history curves of the optimization are plot in \figref{fig:07_c3}. In \figref{fig:07_wing_opt} the normalized maximum stress and buckling constraints are plotted on the deformed shape of the three load cases. We notice how in general the topology of the two external "spars" is shaped after the +2.5 g load case, while the interior of the wingbox is made by a thinner truss constrained by buckling. 
 
 \begin{figure*}
     \centering
@@ -227,6 +236,22 @@ To better understand which mechanical phenomena is the most constraining for the
 \end{table}
 
 \section{NACA 0012 drone wing}
+we make a big semplification, the wing has a rectangular planform so we assume a constant lift distribution on the x axis. as a further simplification, we asume the lift distrubutiion as constant also on the y plane.
+
+\begin{margintable}
+    \small
+    \centering
+    \begin{tabular}{cc}
+    \toprule
+    \textbf{Parameter}        & \textbf{Value} \\ \midrule
+    $E$              & \qty{6.8}{GPa}     \\
+    $\sigma_\text{c}, \sigma_\text{t}$ & $\pm $\qty{140}{MPa} \\
+    $\rho$              & \qty{1.42}{\gram\per\cubic\centi\metre}   \\
+    \bottomrule
+    \end{tabular}
+    \caption{Material data of the Ultem 2200 used for the NACA 0012 optimization.}
+    \label{tab:07_NACA_mat}
+\end{margintable}
 
 \subsection{Numerical implementation}
 
@@ -242,25 +267,76 @@ To better understand which mechanical phenomena is the most constraining for the
 
 \subsection{Numerical application}
 
-\begin{table}
+\todo{BC}
+
+\begin{figure*}
+    \centering
+    \includegraphics[width=\linewidth]{figures/07_aeronautic/00_NACA_a_gs_cell/gs_a_types.pdf}
+     \caption{}
+    \label{fig:07_}
+\end{figure*}
+
+\begin{figure*}
+    \centering
+    \includegraphics[width=\linewidth]{figures/07_aeronautic/00_NACA_gs/gs_a.pdf}
+     \caption{}
+    \label{fig:07_}
+\end{figure*}
+
+\begin{figure*}
+    \centering
+    \includegraphics[width=\linewidth]{figures/07_aeronautic/00_NACA_a_sol_3/gs_a.pdf}
+        \caption{}
+    \label{fig:07_}
+\end{figure*}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\linewidth]{figures/07_aeronautic/00_NACA_c_1/04_Topology_cell_iso.png}
+        \caption{}
+    \label{fig:07_}
+\end{figure}
+
+\begin{table*}
     \centering
     \small
-    \begin{tabular}{lx{1.8cm}x{1.8cm}x{1.8cm}x{1.8cm}}
+    \begin{tabular}{lx{1.4cm}x{1.4cm}x{1.4cm}x{1.4cm}x{1.4cm}x{1.4cm}}
         \toprule
-    $N_\text{T}$ & --     & 1     &  2    &  3  \\ \midrule
-    $N_\text{sub}$           &    1  &   36   &   36   &   36     \\
-    $N_\text{opt}\;(N_\text{el})$  &  20 (1984) &  360 (12636)   &  204 (12636)   &  104 (12636)        \\
-    $V$ [\unit{cm^3}] & 9.907 &  27.958 &   15.548  & 10.178    \\
-    $V$ [\unit{\percent}] & 1.761 & 4.970&2.764 & 1.809    \\
-    $\bar{\rho}$ [\unit{kg/m^3}] & 80.31 &226.65 &126.05 &82.51 \\
-    C [\unit{J}]      &  3.71  &  5.20   &  6.21  & 4.141  \\
-    $a_\text{max}$ [\unit{mm^2}]      & 37.61& 9.40  & 12.81  &   15.81     \\
-    $\varphi$   &\qty{100.00}{\percent}&\qty{21.11}{\percent}&\qty{39.21}{\percent}&\qty{80.77}{\percent}  \\
-    $\psi$& 1.00   &  0.47 &  0.66   & 0.87        \\
-    t        & \hms{0;0;4}  &  \hms{0;1;18} & \hms{0;0;42} & \hms{0;10;22}   \\ \bottomrule
+         &\multicolumn{3}{l}{Configuration A} & \multicolumn{3}{l}{Configuration B} \\ 
+             \cmidrule(lr){2-4} \cmidrule(lr){5-7} 
+    $N_\text{T}$&1&2&3&1&2&3\\
+    $N_\text{opt}\;(N_\text{el})$ & 425 (1155)&503 (1155)& 366 (1155)&620 (1675)&539 (1675)&454 (1675) \\
+    Mass [\unit{g}]&49.0&33.3&29.5&37.3&23.8&22.9 \\
+    $V$ [\unit{\percent}] &0.81&0.55 &0.48&0.62&0.39&0.37        \\
+    $\bar{\rho}$ [\unit{kg/m^3}] &11.53&7.84&6.93&8.76&5.59&5.38\\
+    $\varphi$    &\qty{22.5}{\percent}&\qty{37.9}{\percent}&\qty{56.0}{\percent}&\qty{19.0}{\percent}&\qty{36.9}{\percent}&\qty{50.0}{\percent} \\
+    $\psi$    &0.45&0.69&0.73&0.46&0.70&0.72\\ 
+    t        & \hms{0;0;39}  & \hms{0;5;6} & \hms{0;2;3} & \hms{0;2;28} & \hms{0;3;32}&\hms{0;5;1}\\
+    \bottomrule
     \end{tabular}
     \caption{Numeric results of the parametric study on the influence of the number of modules $N_\text{T}$ on the NACA 0012 drone wing.}
     \label{tab:07}
-    \end{table}
+    \end{table*}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\linewidth]{figures/07_aeronautic/00_NACA_gs_b/02_GS_c_iso.png}
+        \caption{}
+    \label{fig:07_}
+\end{figure}
+
+\begin{marginfigure}
+    \centering
+    \includegraphics[width=\linewidth]{figures/07_aeronautic/00_NACA_vol_crv/vol.pdf}
+    \caption{}
+    \label{fig:07}
+\end{marginfigure}
+
+\begin{figure*}
+    \centering
+    \includegraphics[width=\linewidth]{figures/07_aeronautic/00_NACA_b_sol_3/gs_a.pdf}
+        \caption{}
+    \label{fig:07_}
+\end{figure*}
 
 \section{Conclusion}
