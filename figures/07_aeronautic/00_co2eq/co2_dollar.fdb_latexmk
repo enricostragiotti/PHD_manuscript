@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1706034917 "d:/estragio/PhD/99_Github/PHD_manuscript/figures/07_aeronautic/00_co2eq/co2_dollar.tex" "co2_dollar.pdf" "co2_dollar" 1706034920 0
+["pdflatex"] 1706265967 "d:/estragio/PhD/99_Github/PHD_manuscript/figures/07_aeronautic/00_co2eq/co2_dollar.tex" "co2_dollar.pdf" "co2_dollar" 1706265970 0
   "../../img_header.tex" 1701714123 10873 22aeeb3fdab60d5b2d649f63ba5830f4 ""
   "C:/Program Files/MiKTeX/fonts/tfm/jknappen/ec/tcrm0700.tfm" 993058906 1452 97bdc98984cb373fbcd868e2fa55f5f2 ""
   "C:/Program Files/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1233951848 1120 1e8878807317373affa7f7bba4cf2f6a ""
@@ -209,9 +209,9 @@
   "D:/estragio/AppData/Roaming/MiKTeX/tex/latex/varwidth/varwidth.sty" 1238465940 10894 d359a13923460b2a73d4312d613554c8 ""
   "D:/estragio/AppData/Roaming/MiKTeX/tex/latex/xargs/xargs.sty" 1206231060 12403 a11204384274e5980f17ec9564088fa4 ""
   "D:/estragio/AppData/Roaming/MiKTeX/tex/latex/xstring/xstring.sty" 1673962217 123 a302f2c651a95033260db60e51527ae8 ""
-  "co2_dollar.aux" 1706034920 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
-  "co2_dollar.tex" 1706034916 1855 7271bf0ec78a1dba4bdbfe637fe58689 ""
-  "d:/estragio/PhD/99_Github/PHD_manuscript/figures/07_aeronautic/00_co2eq/co2_dollar.tex" 1706034916 1855 7271bf0ec78a1dba4bdbfe637fe58689 ""
+  "co2_dollar.aux" 1706265969 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "co2_dollar.tex" 1706265966 1855 1c426273d42697c2647e66262438e084 ""
+  "d:/estragio/PhD/99_Github/PHD_manuscript/figures/07_aeronautic/00_co2eq/co2_dollar.tex" 1706265966 1855 1c426273d42697c2647e66262438e084 ""
   (generated)
   "co2_dollar.aux"
   "co2_dollar.log"

@@ -13,14 +13,12 @@
 \contentsline {subsection}{\numberline {1.1.2}Numerical optimization}{3}{subsection.1.1.2}%
 \contentsline {paragraph}{\nonumberline Maximum displacements constraints}{5}{paragraph*.12}%
 \contentsline {paragraph}{\nonumberline Multiple materials}{6}{paragraph*.16}%
-\contentsline {paragraph}{\nonumberline Enriching the mesh}{8}{figure.caption.23}%
-\contentsline {paragraph}{\nonumberline Active mechanical constraints}{8}{paragraph*.26}%
-\contentsline {section}{\numberline {1.2}NACA 0012 drone wing}{12}{section.1.2}%
-\contentsline {mtocsection}{\numberline {1.2}NACA 0012 drone wing}{12}{section.1.2}%
-\contentsline {subsection}{\numberline {1.2.1}Numerical implementation}{12}{subsection.1.2.1}%
-\contentsline {subsection}{\numberline {1.2.2}Meshing irregular volumes}{12}{subsection.1.2.2}%
-\contentsline {subsection}{\numberline {1.2.3}Definition of the repetitive zones}{12}{subsection.1.2.3}%
-\contentsline {subsection}{\numberline {1.2.4}Numerical application}{12}{subsection.1.2.4}%
-\contentsline {section}{\numberline {1.3}Conclusion}{16}{section.1.3}%
-\contentsline {mtocsection}{\numberline {1.3}Conclusion}{16}{section.1.3}%
-\contentsline {chapter}{\nonumberline Bibliography}{17}{chapter*.39}%
+\contentsline {paragraph}{\nonumberline Enriching the mesh}{8}{paragraph*.22}%
+\contentsline {paragraph}{\nonumberline Active mechanical constraints}{9}{paragraph*.26}%
+\contentsline {section}{\numberline {1.2}NACA 0012 modular drone wing}{12}{section.1.2}%
+\contentsline {mtocsection}{\numberline {1.2}NACA 0012 modular drone wing}{12}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Modular ground structure generation for irregular volumes}{13}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Numerical optimization of the modular NACA 0012 drone wing}{13}{subsection.1.2.2}%
+\contentsline {section}{\numberline {1.3}Conclusion}{18}{section.1.3}%
+\contentsline {mtocsection}{\numberline {1.3}Conclusion}{18}{section.1.3}%
+\contentsline {chapter}{\nonumberline Bibliography}{19}{chapter*.40}%

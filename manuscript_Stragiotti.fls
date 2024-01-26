@@ -3903,15 +3903,15 @@ OUTPUT manuscript_Stragiotti.mw
 OUTPUT manuscript_Stragiotti.mw
 INPUT manuscript_Stragiotti.mw
 OUTPUT manuscript_Stragiotti.mw
+OUTPUT manuscript_Stragiotti.mw
+INPUT manuscript_Stragiotti.mw
+OUTPUT manuscript_Stragiotti.mw
 INPUT .\figures\07_aeronautic\00_materials\mat.pdf
 INPUT .\figures\07_aeronautic\00_materials\mat.pdf
 INPUT figures\07_aeronautic\00_materials\mat.pdf
 INPUT .\figures\07_aeronautic\00_materials\mat.pdf
 INPUT .\figures\07_aeronautic\00_materials\mat.pdf
 INPUT .\figures\07_aeronautic\00_materials\mat.pdf
-OUTPUT manuscript_Stragiotti.mw
-INPUT manuscript_Stragiotti.mw
-OUTPUT manuscript_Stragiotti.mw
 INPUT .\figures\07_aeronautic\00_co2eq\co2_dollar.pdf
 INPUT .\figures\07_aeronautic\00_co2eq\co2_dollar.pdf
 INPUT figures\07_aeronautic\00_co2eq\co2_dollar.pdf
@@ -3942,6 +3942,21 @@ INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zpl-BoldItalic-l
 INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zpl-Italic-lf-t1.tfm
 INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\zpl-BoldItalic-lf-t1.tfm
 OUTPUT manuscript_Stragiotti.mw
+INPUT manuscript_Stragiotti.mw
+OUTPUT manuscript_Stragiotti.mw
+OUTPUT manuscript_Stragiotti.mw
+INPUT manuscript_Stragiotti.mw
+OUTPUT manuscript_Stragiotti.mw
+OUTPUT manuscript_Stragiotti.mw
+INPUT manuscript_Stragiotti.mw
+OUTPUT manuscript_Stragiotti.mw
+INPUT .\figures\07_aeronautic\18_failure new\failure_max.pdf
+INPUT .\figures\07_aeronautic\18_failure new\failure_max.pdf
+INPUT figures\07_aeronautic\18_failure new\failure_max.pdf
+INPUT .\figures\07_aeronautic\18_failure new\failure_max.pdf
+INPUT .\figures\07_aeronautic\18_failure new\failure_max.pdf
+INPUT .\figures\07_aeronautic\18_failure new\failure_max.pdf
+OUTPUT manuscript_Stragiotti.mw
 INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\vf\public\newpx\zplbmi.vf
 INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\NewPXBMI_gnu.tfm
 INPUT D:\estragio\AppData\Roaming\MiKTeX\fonts\tfm\public\newpx\NewPXBMI.tfm
@@ -3965,18 +3980,16 @@ OUTPUT manuscript_Stragiotti.mw
 OUTPUT manuscript_Stragiotti.mw
 INPUT manuscript_Stragiotti.mw
 OUTPUT manuscript_Stragiotti.mw
-INPUT .\figures\07_aeronautic\18_failure new\failure_max.pdf
-INPUT .\figures\07_aeronautic\18_failure new\failure_max.pdf
-INPUT figures\07_aeronautic\18_failure new\failure_max.pdf
-INPUT .\figures\07_aeronautic\18_failure new\failure_max.pdf
-INPUT .\figures\07_aeronautic\18_failure new\failure_max.pdf
-INPUT .\figures\07_aeronautic\18_failure new\failure_max.pdf
 OUTPUT manuscript_Stragiotti.mw
 INPUT manuscript_Stragiotti.mw
 OUTPUT manuscript_Stragiotti.mw
-OUTPUT manuscript_Stragiotti.mw
-INPUT manuscript_Stragiotti.mw
-OUTPUT manuscript_Stragiotti.mw
+INPUT .\figures\07_aeronautic\naca0012.png
+INPUT .\figures\07_aeronautic\naca0012.png
+INPUT figures\07_aeronautic\naca0012.png
+INPUT .\figures\07_aeronautic\naca0012.png
+INPUT .\figures\07_aeronautic\naca0012.png
+INPUT .\figures\07_aeronautic\naca0012.png
+INPUT .\figures\07_aeronautic\naca0012.png
 OUTPUT manuscript_Stragiotti.mw
 INPUT manuscript_Stragiotti.mw
 OUTPUT manuscript_Stragiotti.mw
@@ -4030,6 +4043,9 @@ OUTPUT manuscript_Stragiotti.mw
 OUTPUT manuscript_Stragiotti.mw
 INPUT manuscript_Stragiotti.mw
 OUTPUT manuscript_Stragiotti.mw
+OUTPUT manuscript_Stragiotti.mw
+INPUT manuscript_Stragiotti.mw
+OUTPUT manuscript_Stragiotti.mw
 INPUT .\figures\07_aeronautic\00_NACA_vol_crv\vol.pdf
 INPUT .\figures\07_aeronautic\00_NACA_vol_crv\vol.pdf
 INPUT figures\07_aeronautic\00_NACA_vol_crv\vol.pdf
@@ -4042,6 +4058,9 @@ INPUT figures\07_aeronautic\00_NACA_b_sol_3\gs_a.pdf
 INPUT .\figures\07_aeronautic\00_NACA_b_sol_3\gs_a.pdf
 INPUT .\figures\07_aeronautic\00_NACA_b_sol_3\gs_a.pdf
 INPUT .\figures\07_aeronautic\00_NACA_b_sol_3\gs_a.pdf
+OUTPUT manuscript_Stragiotti.mw
+INPUT manuscript_Stragiotti.mw
+OUTPUT manuscript_Stragiotti.mw
 OUTPUT manuscript_Stragiotti.mw
 INPUT manuscript_Stragiotti.mw
 OUTPUT manuscript_Stragiotti.mw
@@ -4068,6 +4087,9 @@ INPUT .\manuscript_Stragiotti.ind
 INPUT manuscript_Stragiotti.ind
 INPUT .\manuscript_Stragiotti.ind
 INPUT manuscript_Stragiotti.ind
+OUTPUT manuscript_Stragiotti.mw
+INPUT manuscript_Stragiotti.mw
+OUTPUT manuscript_Stragiotti.mw
 OUTPUT manuscript_Stragiotti.mw
 INPUT manuscript_Stragiotti.mw
 OUTPUT manuscript_Stragiotti.mw
@@ -4135,9 +4157,6 @@ OUTPUT manuscript_Stragiotti.mw
 INPUT .\chapters\7_advanced_applications.aux
 INPUT chapters\7_advanced_applications.aux
 INPUT chapters\7_advanced_applications.aux
-OUTPUT manuscript_Stragiotti.mw
-INPUT manuscript_Stragiotti.mw
-OUTPUT manuscript_Stragiotti.mw
 OUTPUT manuscript_Stragiotti.mw
 INPUT manuscript_Stragiotti.mw
 OUTPUT manuscript_Stragiotti.mw

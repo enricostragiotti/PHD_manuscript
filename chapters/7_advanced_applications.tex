@@ -113,14 +113,13 @@ having observed that in the unconstrained version the maxiumm tip dispalcement o
 \begin{figure*}
     \centering
     \includegraphics[width=\linewidth]{figures/07_aeronautic/00_dispalcements/disp.pdf}
-     \caption{Undeformed (gray) and deformed (black) shapes of the optimized CRM-315 structures for different values of maximum Z displacement $Z_{t,\ell}$ of the wing tip constrints. (a) $Z_{t,\ell}=\qty{1}{m}$  ; (b) $Z_{t,\ell}=\qty{2}{m}$; (c) $Z_{t,\ell}=\qty{3}{m}$; (d) no maximum displacement constraints.}
+     \caption{Undeformed (gray) and deformed (black) shapes of the optimized CRM-315 structures with half wing span of \qty{29.4}{m} for different values of maximum Z displacement $Z_{t,\ell}$ of the wing tip constrints. (a) $Z_{t,\ell}=\qty{1}{m}$  ; (b) $Z_{t,\ell}=\qty{2}{m}$; (c) $Z_{t,\ell}=\qty{3}{m}$; (d) no maximum displacement constraints.}
     \label{fig:07_disp_sol}
 \end{figure*}
 
-We plot the displacements in the XZ plane in \figref{fig:07_disp_sol} and the numeric values of the optimization in \tabref{tab:07_disp}. First, we notice how efficacely the optimizer limited the maximum displacement and converged to a solution even with a hard to satisfy constraint as $Z_{t,\ell}=\qty{1}{m}$ \marginnote{we remember that the \gls{crm} shows a half wing span of \qty{29.4}{m}.} . Second, we see that the constraint satisfaction doesent come free. The added rigidity needed to comply with the maximum displacement constraint come from a massive add of material that represent a \qty{19}{percent}, \qty{75}{percent} and \qty{237}{percent} increase for the $Z_{t,\ell} = [\qty{3}{m},\qty{2}{m},\qty{1}{m}]$, rispectively. Finally, as already stated before, the constaints on the maximum displacements infuence a lot the compliance of the structure, and we can see how, even if the proposed formulation does not keep into account for that, we can reduce indrecly the compliance of the structure.
+We plot the displacements in the XZ plane in \figref{fig:07_disp_sol} and the numeric values of the optimization in \tabref{tab:07_disp}. First, we notice how efficacely the optimizer limited the maximum displacement and converged to a solution even with a hard to satisfy constraint as $Z_{t,\ell}=\qty{1}{m}$ \marginnote{We remember that the \gls{crm} shows a half wing span of \qty{29.4}{m}.} . Second, we see that the constraint satisfaction doesent come free. The added rigidity needed to comply with the maximum displacement constraint come from a massive add of material that represent a \qty{19}{percent}, \qty{75}{percent} and \qty{237}{percent} increase for the $Z_{t,\ell} = [\qty{3}{m},\qty{2}{m},\qty{1}{m}]$, rispectively. Finally, as already stated before, the constaints on the maximum displacements infuence a lot the compliance of the structure, and we can see how, even if the proposed formulation does not keep into account for that, we can reduce indrecly the compliance of the structure.
 
 \paragraph{Multiple materials}
-\todo{complete with Ashby charts on cost and co2 evaluation}
 The proposed formulation uses the material data as an input for the optimization and up untill this point we never interested in seeing how the mateial data could influence the topology and the final volume of the optimized structure. However we know how much the material is important and we wnat here see the influence on the CRM-315 test case. 
 
 \begin{table}
@@ -140,11 +139,7 @@ The proposed formulation uses the material data as an input for the optimization
     \label{tab:07_materials_data}
 \end{table}
 
-Commenta i materiali qui
-
-\sidecite{ashby_materials_1999}
-
-\gls{cfrp}
+We used four different materials commonly used in the aerospace domain: an alluminium alloy, titanium alloy, inox steel and pultruted \gls{cfrp}, of which mecanical properties are reported in \tabref{tab:07_materials_data}. on the top of classic material properties as young modulus, yeld stress and density we also take into account the enviromental cost \ie the mass of equivalent co2 emitted to produce a unit mass of the material and also the economic cost in dollar. We took this value from the book of Ashby \sidecite{ashby_materials_1999}. 
 
 \begin{table}
     \small
@@ -152,25 +147,25 @@ Commenta i materiali qui
     \begin{tabular}{ccccc}
     \toprule
     \textbf{Material} &\textbf{Aluminium}&\textbf{Titanium}&\textbf{Steel}&\textbf{Pultruted CFRP}\\ \midrule
-    V [\unit{\meter^3}]&7.90&4.53&10.97&3.67\\
-    V [\unit{\%}]&\qty{1.309}{\%}&\qty{0.749}{\%}&\qty{1.816}{\%}&\qty{0.607}{\%}\\
-    Mass [\unit{\tonne}]& 21.342&20.372&86.112&5.868\\
-    a$_{\text{max}}$ [\unit{\meter^2}]&0.198&0.088&0.154&0.86\\
-    C$_\text{LC\_1}$ [\unit{\mega \joule}]&3.23&4.88&1.19&4.39\\
-    C$_\text{LC\_2}$ [\unit{\mega \joule}]&1.28&1.94&0.47&1.73\\
-    C$_\text{LC\_3}$ [\unit{\mega \joule}]&0.76&1.15&0.28&1.03\\
-    $Z_t\:[\text{m}]$&4.10&5.97&1.42&5.31\\
-    Cost [\unit{\tonne CO^2_e}]&266.7&957.5&430.6&202.4\\
-    Cost [\unit{k\$}]&46.9&478.7&542.5&237.6\\
+    V [\unit{\meter^3}]&7.90&4.53&5.88&3.67\\
+    V [\unit{\%}]&\qty{1.309}{\%}&\qty{0.749}{\%}&\qty{0.974}{\%}&\qty{0.607}{\%}\\
+    Mass [\unit{\tonne}]& 21.342&20.372&46.168&5.868\\
+    a$_{\text{max}}$ [\unit{\meter^2}]&0.198&0.088&0.153&0.086\\
+    C$_\text{LC\_1}$ [\unit{\mega \joule}]&3.23&4.88&1.33&4.39\\
+    C$_\text{LC\_2}$ [\unit{\mega \joule}]&1.28&1.94&0.53&1.73\\
+    C$_\text{LC\_3}$ [\unit{\mega \joule}]&0.76&1.15&0.31&1.03\\
+    $Z_t\:[\text{m}]$&4.10&5.97&1.70&5.31\\
+    Cost [\unit{\tonne CO^2_e}]&266.7&957.5&230.8&202.4\\
+    Cost [\unit{k\$}]&46.9&478.7&290.8&237.6\\
     \bottomrule
     \end{tabular}
     \caption{remember \todo{put here the span of the wing}}
     \label{tab:07_materials}
 \end{table}
 
-Commenta le soluzioni, prima di tutto il peso, poi la compliance e la Z max e infine costo 
+The numerical results are presented in \tabref{tab:07_materials} and different observation can be made. First, we confirm that the mass of the optimized structure is highly influenced by the material choice, and more exactly it seems particularry influenced by the specific resistance and specific stiffness of the material. Second we notice that also the value of the complance and the maximum tip displacement is very influenced by material data, and more exactly elle est pilotée par le rapport entre strenght and young modulus of the material. This because with a material more strong we have smaller cross sectionals areas and thus smaller global rigidity. Third, is the volume behaviour, that follows a hyperbolic law with respect to the strenght of the material (as in this specific case the most volumic elements are constraint by stress and not buckling, see the constraints analysis later in the chapter). We finally give the deformed structuresi in \figref{fig:07_mat_sol}, in wich we claerly see how the titanium and the pultruted cfrp shows high deform shapes due to their high material properties.
 
-ovviamente qui si tiene in conto solo il materiale, ma il peso inferiore su un aero permette di risparmiare veramente molto di piu
+We then observe the environmental and economic cost of the 4 structures. having a look at \figref{fig:07_cost}, we notice how, a part from titanium, the structures shows almost the same environmental cost for the production of the material. this come as unexpected due to the very different spectific c02 emission \eg there is a difference of almost 7 times between steel and CFRP. However the cfrp solution shows a massively reduction in weight that at the end favours it with respect to steel and even aluminum. A similar result can be observed in cost, anche se the very low production cost favors aluminum with respect to all other materials. It seems that at the end for this specific load case, the CFRP, even if costing more than aluminium, represent the better compromise between excellent mechanical properties, environmental and economic cost. Finally, ovviamente qui si tiene in conto solo del costo del materiale, ma il peso inferiore su un aero permette di risparmiare veramente molto di piu rispetto al costo della sola produzione. questo favorisce ancora di piu il caso pultruted CFRP.
 
 \begin{figure*}
     \centering
@@ -179,25 +174,23 @@ ovviamente qui si tiene in conto solo il materiale, ma il peso inferiore su un a
     \label{fig:07_mat_sol}
 \end{figure*}
 
-\todo{grafico co2 soldi per materiale}
-
 \begin{marginfigure}
     \centering
     \includegraphics[width=\linewidth]{figures/07_aeronautic/00_co2eq/co2_dollar.pdf}
     \caption{}
-    \label{fig:07}
+    \label{fig:07_cost}
 \end{marginfigure}
 
-\todo{grafico volume/resistenza specifica}
-
 \paragraph{Enriching the mesh}
+As earlier described in the chapter, we want now to assess the influence of the initial ground structure on the volume and topology of the optimized structure. We use then the refined ground structure called CRM-2370, optimized for the smae threee load cases used precedently and using the aluminium as material.
+
 \begin{figure*}
     \centering
     \includegraphics[width=\linewidth]{figures/07_aeronautic/16_wing_opt/wing_opt.pdf}
      \caption{Maximum stress constraint value (left) and buckling constraint value (right) plotted on the deformed shape of the optimized design (undeformed shape in light grey) of CRM-2370 for the three load cases: +2.5 g maneuver (a), -1 g maneuver (b), and cruise with gust (+1.3 g) (c). The maximum $z$ tip deflection is \qty{4.167}{m}, \qty{-2.953}{m}, and \qty{1.948}{m}, respectively.}
     \label{fig:07_wing_opt}
 \end{figure*}
-The mass of the optimized CRM-2370 structure is \qty{20.092}{\tonne}, a \qty{1.318}{\tonne} reduction compared to the CRM-315 (\qty{-6.2}{\%}). Additionally, if we compare the compliance of the three load cases (see \tabref{tab:07_wing-res}), we notice how the solution of CRM-2370 is not only lighter but also stiffer, suggesting in general a more efficient structure topology. The maximum \todo[sostituiscci con Zell] z tip deflection of the wingbox is \qty{4.167}{m}, \qty{-2.953}{m}, \qty{1.948}{m} for the three considered load cases, respectively. There are 1127 active bars in the optimized design, and the whole optimization took \qty{3189}{s} (\qty{1911}{s} for the \gls{slp} step, \qty{1278}{s} for the \gls{nlp} step). The iteration history curves of the optimization are plot in \figref{fig:07_c3}. In \figref{fig:07_wing_opt} the normalized maximum stress and buckling constraints are plotted on the deformed shape of the three load cases. We notice how in general the topology of the two external "spars" is shaped after the +2.5 g load case, while the interior of the wingbox is made by a thinner truss constrained by buckling. 
+The mass of the optimized CRM-2370 structure is \qty{20.092}{\tonne}, a \qty{1.318}{\tonne} reduction compared to the CRM-315 (\qty{-6.2}{\%}). Additionally, if we compare the compliance of the three load cases (see \tabref{tab:07_wing-res}), we notice how the solution of CRM-2370 is not only lighter but also stiffer, suggesting in general a more efficient structure topology. The maximum \todo{[sostituiscci con Zell]} z tip deflection of the wingbox is \qty{4.167}{m}, \qty{-2.953}{m}, \qty{1.948}{m} for the three considered load cases, respectively. There are 1127 active bars in the optimized design, and the whole optimization took \qty{3189}{s} (\qty{1911}{s} for the \gls{slp} step, \qty{1278}{s} for the \gls{nlp} step). The iteration history curves of the optimization are plot in \figref{fig:07_c3}. In \figref{fig:07_wing_opt} the normalized maximum stress and buckling constraints are plotted on the deformed shape of the three load cases. We notice how in general the topology of the two external "spars" is shaped after the +2.5 g load case, while the interior of the wingbox is made by a thinner truss constrained by buckling. 
 
 \begin{figure*}
     \centering
@@ -235,9 +228,14 @@ To better understand which mechanical phenomena is the most constraining for the
 \label{tab:07_constrNLP}
 \end{table}
 
-\section{NACA 0012 drone wing}
-we make a big semplification, the wing has a rectangular planform so we assume a constant lift distribution on the x axis. as a further simplification, we asume the lift distrubutiion as constant also on the y plane.
-
+\section{NACA 0012 modular drone wing}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\linewidth]{figures/07_aeronautic/naca0012.png}
+        \caption{ \cite{jenett_digital_2017}}
+    \label{fig:07_naca0012}
+\end{figure}
+We will now deal wit another aeronautical test case. One of the possible and most fitting application for modular structures is the use for small fixed wing drones. THis because of the easy in field deployement, easy to repair structure and extreme lightweight. Jenett and his working group at NASA developed an experimental platform for the study of active morphing wings using lattices which dimensions are shown in \figref{fig:07_naca0012}. The platform wing volume is obtained by extruding by $b=\qty{580}{mm}$ a NACA 0012 airfoil with a chord $c=\qty{305}{mm}$. We are taking the exact same volume for our modular optimization, and instead of focussing on aerodynamic and aeroelastic properties, we deal with the optimization of the internal structure. As the platform was not meant for flying, the authors dont share additional data on the requirement used to design the internal structure. For that reason, we assume in a conservative way a $\text{MTOW}=\qty{10}{kg}$ and we design the structure to withstand a maximum loading factor $\text{nz}=2$.
 \begin{margintable}
     \small
     \centering
@@ -252,10 +250,11 @@ we make a big semplification, the wing has a rectangular planform so we assume a
     \caption{Material data of the Ultem 2200 used for the NACA 0012 optimization.}
     \label{tab:07_NACA_mat}
 \end{margintable}
+As the wing present a rectangular planform on the XY plane we assume a constant lift distribution on the X axis (span of the extruded profile). as a further simplification, we assume the lift distrubutiion as constant also on the Y plane (chord plane). THe lift distribution is then integrated to evaluate the concentrated nodal load necessary to conduct our optimization. In this settings all the nodes on the upper skin are then equally loaded in the Z direction. As already done in the \gls{crm} test case, we dont take into account the effect of the skin on the mechanical model. Finally, the material used for the optimization is the Ultem 2200, a high-performance thermoplastic material filled at \qty{20}{\percent} by glass fiber and known for its exceptional strength, heat resistance, chemical resistance, and suitability for applications requiring durability. Thei mecahnical properties are summarized in \tabref{tab:07_NACA_mat}.
 
-\subsection{Numerical implementation}
+\subsection{Modular ground structure generation for irregular volumes}
+Compared to the academic test cases presented in \chpref{chap:05} and \chpref{chap:06}, the extruded NACA 0012 profile does not present a regular parallepipedic shape that is easily partitioned in cubic subdomains. The easiest solution in this particular scenario of the extruded wingfoil case would be to partition the structure in sections by performing multiple cutting on the YZ plane, but this strategy woul not apply to more complex external shapes. For that reason we developed a ground structure generation strategy that maximizes the generation of modular domains on complex volumes. First, we generate a cloud of nodes equally repartitioned in the trhee axis. The distance between nodes on the three axis represent an hyperparameter for the user that could via this parameter chose the size of the geometry of the repeating module. All these phases are presented grphically on \figref{fig:07_howto}.
 
-\subsection{Meshing irregular volumes}
 \begin{figure*}
     \centering
     \includegraphics[width=\linewidth]{figures/07_aeronautic/00_naca_howtomesh/MESH.pdf}
@@ -263,10 +262,7 @@ we make a big semplification, the wing has a rectangular planform so we assume a
     \label{fig:07_howto}
 \end{figure*}
 
-\subsection{Definition of the repetitive zones}
-
-\subsection{Numerical application}
-
+\subsection{Numerical optimization of the modular NACA 0012 drone wing}
 \todo{BC}
 
 \begin{figure*}
@@ -297,27 +293,6 @@ we make a big semplification, the wing has a rectangular planform so we assume a
     \label{fig:07_}
 \end{figure}
 
-\begin{table*}
-    \centering
-    \small
-    \begin{tabular}{lx{1.4cm}x{1.4cm}x{1.4cm}x{1.4cm}x{1.4cm}x{1.4cm}}
-        \toprule
-         &\multicolumn{3}{l}{Configuration A} & \multicolumn{3}{l}{Configuration B} \\ 
-             \cmidrule(lr){2-4} \cmidrule(lr){5-7} 
-    $N_\text{T}$&1&2&3&1&2&3\\
-    $N_\text{opt}\;(N_\text{el})$ & 425 (1155)&503 (1155)& 366 (1155)&620 (1675)&539 (1675)&454 (1675) \\
-    Mass [\unit{g}]&49.0&33.3&29.5&37.3&23.8&22.9 \\
-    $V$ [\unit{\percent}] &0.81&0.55 &0.48&0.62&0.39&0.37        \\
-    $\bar{\rho}$ [\unit{kg/m^3}] &11.53&7.84&6.93&8.76&5.59&5.38\\
-    $\varphi$    &\qty{22.5}{\percent}&\qty{37.9}{\percent}&\qty{56.0}{\percent}&\qty{19.0}{\percent}&\qty{36.9}{\percent}&\qty{50.0}{\percent} \\
-    $\psi$    &0.45&0.69&0.73&0.46&0.70&0.72\\ 
-    t        & \hms{0;0;39}  & \hms{0;5;6} & \hms{0;2;3} & \hms{0;2;28} & \hms{0;3;32}&\hms{0;5;1}\\
-    \bottomrule
-    \end{tabular}
-    \caption{Numeric results of the parametric study on the influence of the number of modules $N_\text{T}$ on the NACA 0012 drone wing.}
-    \label{tab:07}
-    \end{table*}
-
 \begin{figure}
     \centering
     \includegraphics[width=0.8\linewidth]{figures/07_aeronautic/00_NACA_gs_b/02_GS_c_iso.png}
@@ -338,5 +313,26 @@ we make a big semplification, the wing has a rectangular planform so we assume a
         \caption{}
     \label{fig:07_}
 \end{figure*}
+
+\begin{table*}
+    \centering
+    \small
+    \begin{tabular}{lx{1.4cm}x{1.4cm}x{1.4cm}x{1.4cm}x{1.4cm}x{1.4cm}}
+        \toprule
+         &\multicolumn{3}{l}{Configuration A} & \multicolumn{3}{l}{Configuration B} \\ 
+             \cmidrule(lr){2-4} \cmidrule(lr){5-7} 
+    $N_\text{T}$&1&2&3&1&2&3\\
+    $N_\text{opt}\;(N_\text{el})$ & 425 (1155)&503 (1155)& 366 (1155)&620 (1675)&539 (1675)&454 (1675) \\
+    Mass [\unit{g}]&49.0&33.3&29.5&37.3&23.8&22.9 \\
+    $V$ [\unit{\percent}] &0.81&0.55 &0.48&0.62&0.39&0.37        \\
+    $\bar{\rho}$ [\unit{kg/m^3}] &11.53&7.84&6.93&8.76&5.59&5.38\\
+    $\varphi$    &\qty{22.5}{\percent}&\qty{37.9}{\percent}&\qty{56.0}{\percent}&\qty{19.0}{\percent}&\qty{36.9}{\percent}&\qty{50.0}{\percent} \\
+    $\psi$    &0.45&0.69&0.73&0.46&0.70&0.72\\ 
+    t        & \hms{0;0;39}  & \hms{0;5;6} & \hms{0;2;3} & \hms{0;2;28} & \hms{0;3;32}&\hms{0;5;1}\\
+    \bottomrule
+    \end{tabular}
+    \caption{Numeric results of the parametric study on the influence of the number of modules $N_\text{T}$ on the NACA 0012 drone wing.}
+    \label{tab:07}
+    \end{table*}
 
 \section{Conclusion}
