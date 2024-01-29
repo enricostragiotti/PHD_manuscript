@@ -86,8 +86,8 @@
       \strng{authorbibnamehash}{66617fcfa0ce163c8f219ede752f7b5e}
       \strng{authornamehash}{39bde62302bf3125a9aa2c761f488538}
       \strng{authorfullhash}{66617fcfa0ce163c8f219ede752f7b5e}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Ultralight materials present an opportunity to dramatically increase the efficiency of load-bearing aerostructures. To date, however, these ultralight materials have generally been confined to the laboratory bench-top, due to dimensional constraints of the manufacturing processes. We show a programmable material system applied as a large-scale, ultralight, and conformable aeroelastic structure. The use of a modular, lattice-based, ultralight material results in stiffness typical of an elastomer (2.6 MPa) at a mass density typical of an aerogel . This, combined with a building block based manufacturing and configuration strategy, enables the rapid realization of new adaptive structures and mechanisms. The heterogeneous design with programmable anisotropy allows for enhanced elastic and global shape deformation in response to external loading, making it useful for tuned fluid-structure interaction. We demonstrate an example application experiment using two building block types for the primary structure of a 4.27 m wingspan aircraft, where we spatially program elastic shape morphing to increase aerodynamic efficiency and improve roll control authority, demonstrated with full-scale wind tunnel testing.}
@@ -138,8 +138,8 @@
       \strng{authornamehash}{1b1275f889d783d30eee944937823236}
       \strng{authorfullhash}{1b1275f889d783d30eee944937823236}
       \field{extraname}{1}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{2018 {Multidisciplinary} {Analysis} and {Optimization} {Conference}}
@@ -183,8 +183,8 @@
       \strng{authornamehash}{dde3fcd637aca44c40b005701ced3151}
       \strng{authorfullhash}{dde3fcd637aca44c40b005701ced3151}
       \field{extraname}{2}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Structural and Multidisciplinary Optimization}
@@ -367,8 +367,8 @@
       \strng{authorbibnamehash}{4ab2596912d228c66afb650f90fc5f9d}
       \strng{authornamehash}{380c8aa31cab738c8c74b768ccb153dd}
       \strng{authorfullhash}{4ab2596912d228c66afb650f90fc5f9d}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{abstract}{Discrete multi-load truss sizing optimization (MTSO) problems are challenging to solve due to their combinatorial, nonlinear, and non-convex nature. This study highlights two important characteristics of the feasible set of MTSO problems considered here, in which force balance equations, Hooke’s law, yield stress, bound constraints on displacements, and local bucking are taken into account. Namely, we use the linear or bilinear nature of the problem to take advantage of re-scaling properties of both the problem’s design and auxiliary variables, as well as to extend the superposition principle to the case in which nonlinear stress constraints are considered. Taking advantage of these characteristics, we extend the neighborhood search mixed-integer linear optimization (NS-MILO) method (Shahabsafa et al. in SMO 63: 21–38, 2018), which provides an effective heuristic solution approach based on exact solution methods for MILO problems. Through extensive computational experiments, we demonstrate that the extended NS-MILO method provides highquality solutions for large-scale discrete MTSO problems in a reasonable time.}
@@ -566,8 +566,8 @@
       \strng{authorbibnamehash}{842d46b1a24346d113a0e8274fa09dd0}
       \strng{authornamehash}{842d46b1a24346d113a0e8274fa09dd0}
       \strng{authorfullhash}{842d46b1a24346d113a0e8274fa09dd0}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{We present a primal-dual interior-point algorithm with a filter line-search method for nonlinear programming. Local and global convergence properties of this method were analyzed in previous work. Here we provide a comprehensive description of the algorithm, including the feasibility restoration phase for the filter method, second-order corrections, and inertia correction of the KKT matrix. Heuristics are also considered that allow faster performance. This method has been implemented in the IPOPT code, which we demonstrate in a detailed numerical study based on 954 problems from the CUTEr test set. An evaluation is made of several line-search options, and a comparison is provided with two state-of-the-art interior-point codes for nonlinear programming.}

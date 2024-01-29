@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.8.29)  26 JAN 2024 17:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.8.29)  29 JAN 2024 19:05
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2123,38 +2123,7 @@ Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'english'.
- (manuscript_Stragiotti.aux (chapters/7_advanced_applications.aux
-
-LaTeX Warning: Label `fig:07_' multiply defined.
-
-
-LaTeX Warning: Label `fig:07_@cref' multiply defined.
-
-
-LaTeX Warning: Label `fig:07_' multiply defined.
-
-
-LaTeX Warning: Label `fig:07_@cref' multiply defined.
-
-
-LaTeX Warning: Label `fig:07_' multiply defined.
-
-
-LaTeX Warning: Label `fig:07_@cref' multiply defined.
-
-
-LaTeX Warning: Label `fig:07_' multiply defined.
-
-
-LaTeX Warning: Label `fig:07_@cref' multiply defined.
-
-
-LaTeX Warning: Label `fig:07_' multiply defined.
-
-
-LaTeX Warning: Label `fig:07_@cref' multiply defined.
-
-))
+ (manuscript_Stragiotti.aux (chapters/7_advanced_applications.aux))
 \openout1 = `manuscript_Stragiotti.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/npxmi/m/it on input line 88.
@@ -3558,101 +3527,183 @@ Package pdftex.def Info: figures/07_aeronautic/18_failure new/failure_max.pdf  u
 <figures/07_aeronautic/naca0012.png, id=627, 1250.6725pt x 677.53125pt>
 File: figures/07_aeronautic/naca0012.png Graphic file (type png)
 <use figures/07_aeronautic/naca0012.png>
-Package pdftex.def Info: figures/07_aeronautic/naca0012.png  used on input line 234.
+Package pdftex.def Info: figures/07_aeronautic/naca0012.png  used on input line 248.
 (pdftex.def)             Requested size: 254.93631pt x 138.09875pt.
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
+
+
+LaTeX Warning: Reference `chap:05' on page 12 undefined on input line 255.
+
+
+LaTeX Warning: Reference `chap:06' on page 12 undefined on input line 255.
+
 \openout4 = `manuscript_Stragiotti.mw'.
 
- [12
+[12
 
  <./figures/07_aeronautic/naca0012.png>] (manuscript_Stragiotti.mw)
 \openout4 = `manuscript_Stragiotti.mw'.
 
+\openout4 = `manuscript_Stragiotti.mw'.
 
+\openout4 = `manuscript_Stragiotti.mw'.
 
-LaTeX Warning: Reference `chap:05' on page 13 undefined on input line 256.
-
-
-LaTeX Warning: Reference `chap:06' on page 13 undefined on input line 256.
-
-<figures/07_aeronautic/00_naca_howtomesh/MESH.pdf, id=638, 484.49709pt x 219.88348pt>
+<figures/07_aeronautic/00_naca_howtomesh/MESH.pdf, id=639, 484.49709pt x 219.88348pt>
 File: figures/07_aeronautic/00_naca_howtomesh/MESH.pdf Graphic file (type pdf)
 <use figures/07_aeronautic/00_naca_howtomesh/MESH.pdf>
-Package pdftex.def Info: figures/07_aeronautic/00_naca_howtomesh/MESH.pdf  used on input line 260.
+Package pdftex.def Info: figures/07_aeronautic/00_naca_howtomesh/MESH.pdf  used on input line 261.
 (pdftex.def)             Requested size: 472.8823pt x 214.62206pt.
-<figures/07_aeronautic/00_NACA_a_gs_cell/gs_a_types.pdf, id=639, 440.5228pt x 149.9753pt>
+\openout4 = `manuscript_Stragiotti.mw'.
+
+ [13] (manuscript_Stragiotti.mw)
+\openout4 = `manuscript_Stragiotti.mw'.
+
+<figures/07_aeronautic/00_NACA_a_gs_cell/gs_a_types.pdf, id=647, 440.5228pt x 149.9753pt>
 File: figures/07_aeronautic/00_NACA_a_gs_cell/gs_a_types.pdf Graphic file (type pdf)
 <use figures/07_aeronautic/00_NACA_a_gs_cell/gs_a_types.pdf>
-Package pdftex.def Info: figures/07_aeronautic/00_NACA_a_gs_cell/gs_a_types.pdf  used on input line 270.
+Package pdftex.def Info: figures/07_aeronautic/00_NACA_a_gs_cell/gs_a_types.pdf  used on input line 273.
 (pdftex.def)             Requested size: 472.8823pt x 160.99832pt.
-<figures/07_aeronautic/00_NACA_gs/gs_a.pdf, id=640, 481.89836pt x 242.89445pt>
+<figures/07_aeronautic/00_NACA_gs/gs_a.pdf, id=648, 481.89836pt x 242.89445pt>
 File: figures/07_aeronautic/00_NACA_gs/gs_a.pdf Graphic file (type pdf)
 <use figures/07_aeronautic/00_NACA_gs/gs_a.pdf>
-Package pdftex.def Info: figures/07_aeronautic/00_NACA_gs/gs_a.pdf  used on input line 277.
+Package pdftex.def Info: figures/07_aeronautic/00_NACA_gs/gs_a.pdf  used on input line 280.
 (pdftex.def)             Requested size: 472.8823pt x 238.35736pt.
-<figures/07_aeronautic/00_NACA_a_sol_3/gs_a.pdf, id=641, 495.0776pt x 527.42143pt>
+
+
+LaTeX Warning: Reference `chap:06' on page 14 undefined on input line 308.
+
+Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 308.
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+Package biblatex Info: Redefining '\kaobiblio@sidecite' on input line 308.
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+[14 <./figures/07_aeronautic/00_naca_howtomesh/MESH.pdf>] (manuscript_Stragiotti.mw)
+\openout4 = `manuscript_Stragiotti.mw'.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+ [15 <./figures/07_aeronautic/00_NACA_a_gs_cell/gs_a_types.pdf> <./figures/07_aeronautic/00_NACA_gs/gs_a.pdf>] (manuscript_Stragiotti.mw)
+\openout4 = `manuscript_Stragiotti.mw'.
+
+<figures/07_aeronautic/00_NACA_a_sol_3/gs_a.pdf, id=709, 495.0776pt x 527.42143pt>
 File: figures/07_aeronautic/00_NACA_a_sol_3/gs_a.pdf Graphic file (type pdf)
 <use figures/07_aeronautic/00_NACA_a_sol_3/gs_a.pdf>
-Package pdftex.def Info: figures/07_aeronautic/00_NACA_a_sol_3/gs_a.pdf  used on input line 284.
+Package pdftex.def Info: figures/07_aeronautic/00_NACA_a_sol_3/gs_a.pdf  used on input line 312.
 (pdftex.def)             Requested size: 472.8823pt x 503.78377pt.
-<figures/07_aeronautic/00_NACA_c_1/04_Topology_cell_iso.png, id=642, 1927.2pt x 1084.05pt>
+
+
+LaTeX Warning: Reference `fig:06_diferent_modules_cant_topology' on page 16 undefined on input line 319.
+
+\openout4 = `manuscript_Stragiotti.mw'.
+
+[16] (manuscript_Stragiotti.mw)
+\openout4 = `manuscript_Stragiotti.mw'.
+
+<figures/07_aeronautic/00_NACA_c_1/04_Topology_cell_iso.png, id=715, 1927.2pt x 1084.05pt>
 File: figures/07_aeronautic/00_NACA_c_1/04_Topology_cell_iso.png Graphic file (type png)
 <use figures/07_aeronautic/00_NACA_c_1/04_Topology_cell_iso.png>
-Package pdftex.def Info: figures/07_aeronautic/00_NACA_c_1/04_Topology_cell_iso.png  used on input line 291.
+Package pdftex.def Info: figures/07_aeronautic/00_NACA_c_1/04_Topology_cell_iso.png  used on input line 323.
 (pdftex.def)             Requested size: 254.93631pt x 143.39609pt.
-<figures/07_aeronautic/00_NACA_gs_b/02_GS_c_iso.png, id=643, 1927.2pt x 1084.05pt>
+<figures/07_aeronautic/00_NACA_gs_b/02_GS_c_iso.png, id=718, 1927.2pt x 1084.05pt>
 File: figures/07_aeronautic/00_NACA_gs_b/02_GS_c_iso.png Graphic file (type png)
 <use figures/07_aeronautic/00_NACA_gs_b/02_GS_c_iso.png>
-Package pdftex.def Info: figures/07_aeronautic/00_NACA_gs_b/02_GS_c_iso.png  used on input line 298.
+Package pdftex.def Info: figures/07_aeronautic/00_NACA_gs_b/02_GS_c_iso.png  used on input line 332.
 (pdftex.def)             Requested size: 254.93631pt x 143.39609pt.
-\openout4 = `manuscript_Stragiotti.mw'.
 
-[13] (manuscript_Stragiotti.mw)
-\openout4 = `manuscript_Stragiotti.mw'.
 
-\openout4 = `manuscript_Stragiotti.mw'.
+LaTeX Warning: Reference `sec:05_doe' on page 17 undefined on input line 337.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
-\openout4 = `manuscript_Stragiotti.mw'.
-
- [14 <./figures/07_aeronautic/00_naca_howtomesh/MESH.pdf> <./figures/07_aeronautic/00_NACA_a_gs_cell/gs_a_types.pdf> <./figures/07_aeronautic/00_NACA_gs/gs_a.pdf>] (manuscript_Stragiotti.mw)
+[17] (manuscript_Stragiotti.mw)
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
- [15 <./figures/07_aeronautic/00_NACA_a_sol_3/gs_a.pdf> <./figures/07_aeronautic/00_NACA_c_1/04_Topology_cell_iso.png>] (manuscript_Stragiotti.mw)
+ [18 <./figures/07_aeronautic/00_NACA_a_sol_3/gs_a.pdf> <./figures/07_aeronautic/00_NACA_c_1/04_Topology_cell_iso.png>] (manuscript_Stragiotti.mw)
 \openout4 = `manuscript_Stragiotti.mw'.
 
-<figures/07_aeronautic/00_NACA_vol_crv/vol.pdf, id=731, 137.82692pt x 134.25156pt>
+\openout4 = `manuscript_Stragiotti.mw'.
+
+ [19 <./figures/07_aeronautic/00_NACA_gs_b/02_GS_c_iso.png>] (manuscript_Stragiotti.mw)
+\openout4 = `manuscript_Stragiotti.mw'.
+
+<figures/07_aeronautic/00_NACA_vol_crv/vol.pdf, id=761, 137.18652pt x 134.25156pt>
 File: figures/07_aeronautic/00_NACA_vol_crv/vol.pdf Graphic file (type pdf)
 <use figures/07_aeronautic/00_NACA_vol_crv/vol.pdf>
-Package pdftex.def Info: figures/07_aeronautic/00_NACA_vol_crv/vol.pdf  used on input line 305.
-(pdftex.def)             Requested size: 136.57251pt x 133.04259pt.
-<figures/07_aeronautic/00_NACA_b_sol_3/gs_a.pdf, id=732, 495.0776pt x 460.48337pt>
+Package pdftex.def Info: figures/07_aeronautic/00_NACA_vol_crv/vol.pdf  used on input line 341.
+(pdftex.def)             Requested size: 136.57251pt x 133.66328pt.
+<figures/07_aeronautic/00_NACA_b_sol_3/gs_a.pdf, id=763, 495.0776pt x 460.48337pt>
 File: figures/07_aeronautic/00_NACA_b_sol_3/gs_a.pdf Graphic file (type pdf)
 <use figures/07_aeronautic/00_NACA_b_sol_3/gs_a.pdf>
-Package pdftex.def Info: figures/07_aeronautic/00_NACA_b_sol_3/gs_a.pdf  used on input line 312.
+Package pdftex.def Info: figures/07_aeronautic/00_NACA_b_sol_3/gs_a.pdf  used on input line 350.
 (pdftex.def)             Requested size: 472.8823pt x 439.84569pt.
 \openout4 = `manuscript_Stragiotti.mw'.
 
- [16 <./figures/07_aeronautic/00_NACA_gs_b/02_GS_c_iso.png>] (manuscript_Stragiotti.mw)
+ [20 <./figures/07_aeronautic/00_NACA_vol_crv/vol.pdf>] (manuscript_Stragiotti.mw)
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
 
- [17 <./figures/07_aeronautic/00_NACA_b_sol_3/gs_a.pdf>] (manuscript_Stragiotti.mw)
+ [21 <./figures/07_aeronautic/00_NACA_b_sol_3/gs_a.pdf>] (manuscript_Stragiotti.mw)
 \openout4 = `manuscript_Stragiotti.mw'.
 
 )
 \openout4 = `manuscript_Stragiotti.mw'.
 
- [18
+ [22
 
- <./figures/07_aeronautic/00_NACA_vol_crv/vol.pdf>] (manuscript_Stragiotti.mw)
+] (manuscript_Stragiotti.mw)
 \openout4 = `manuscript_Stragiotti.mw'.
 
 *geometry* verbose mode - [ newgeometry ] result:
@@ -3721,7 +3772,7 @@ Package pdftex.def Info: figures/07_aeronautic/00_NACA_b_sol_3/gs_a.pdf  used on
 
 
 chapter without number
-Package marginnote Info: Margin note 25.1 is on absolute page 25 on input line 235.
+Package marginnote Info: Margin note 29.1 is on absolute page 29 on input line 235.
 Package marginnote Info: xpos seems to be 105.86203pt on input line 235.
 LaTeX Font Info:    Trying to load font information for T1+fvm on input line 235.
 (D:\estragio\AppData\Roaming\MiKTeX\tex/latex/bera\t1fvm.fd
@@ -3733,27 +3784,27 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `fvm' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-Package marginnote Info: Margin note 25.2 is on absolute page 25 on input line 235.
+Package marginnote Info: Margin note 29.2 is on absolute page 29 on input line 235.
 Package marginnote Info: xpos seems to be 105.86203pt on input line 235.
-Package marginnote Info: Margin note 25.3 is on absolute page 25 on input line 235.
+Package marginnote Info: Margin note 29.3 is on absolute page 29 on input line 235.
 Package marginnote Info: xpos seems to be 105.86203pt on input line 235.
-Package marginnote Info: Margin note 25.4 is on absolute page 25 on input line 235.
+Package marginnote Info: Margin note 29.4 is on absolute page 29 on input line 235.
 Package marginnote Info: xpos seems to be 105.86203pt on input line 235.
-Package marginnote Info: Margin note 25.5 is on absolute page 25 on input line 235.
+Package marginnote Info: Margin note 29.5 is on absolute page 29 on input line 235.
 Package marginnote Info: xpos seems to be 105.86203pt on input line 235.
-Package marginnote Info: Margin note 25.6 is on absolute page 25 on input line 235.
+Package marginnote Info: Margin note 29.6 is on absolute page 29 on input line 235.
 Package marginnote Info: xpos seems to be 105.86203pt on input line 235.
-Package marginnote Info: Margin note 25.7 is on absolute page 25 on input line 235.
+Package marginnote Info: Margin note 29.7 is on absolute page 29 on input line 235.
 Package marginnote Info: xpos seems to be 105.86203pt on input line 235.
-Package marginnote Info: Margin note 25.8 is on absolute page 25 on input line 235.
+Package marginnote Info: Margin note 29.8 is on absolute page 29 on input line 235.
 Package marginnote Info: xpos seems to be 105.86203pt on input line 235.
-Package marginnote Info: Margin note 25.9 is on absolute page 25 on input line 235.
+Package marginnote Info: Margin note 29.9 is on absolute page 29 on input line 235.
 Package marginnote Info: xpos seems to be 105.86203pt on input line 235.
-Package marginnote Info: Margin note 25.10 is on absolute page 25 on input line 235.
+Package marginnote Info: Margin note 29.10 is on absolute page 29 on input line 235.
 Package marginnote Info: xpos seems to be 105.86203pt on input line 235.
 \openout4 = `manuscript_Stragiotti.mw'.
 
- [19
+ [23
 
 
 
@@ -3765,22 +3816,22 @@ Package marginnote Info: xpos seems to be 105.86203pt on input line 235.
 {C:/Program Files/MiKTeX/fonts/enc/dvips/base/8r.enc}] (manuscript_Stragiotti.mw)
 \openout4 = `manuscript_Stragiotti.mw'.
 
-Package marginnote Info: Margin note 26.1 is on absolute page 26 on input line 235.
+Package marginnote Info: Margin note 30.1 is on absolute page 30 on input line 235.
 Package marginnote Info: xpos seems to be 228.77734pt on input line 235.
-Package marginnote Info: Margin note 26.2 is on absolute page 26 on input line 235.
+Package marginnote Info: Margin note 30.2 is on absolute page 30 on input line 235.
 Package marginnote Info: xpos seems to be 228.77734pt on input line 235.
-Package marginnote Info: Margin note 26.3 is on absolute page 26 on input line 235.
+Package marginnote Info: Margin note 30.3 is on absolute page 30 on input line 235.
 Package marginnote Info: xpos seems to be 228.77734pt on input line 235.
 LaTeX Font Info:    Font shape `T1/zplLF/m/sc' will be
 (Font)              scaled to size 7.76001pt on input line 235.
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/zplLF/m/sc/8'.
 (microtype)             Ignoring protrusion settings for this character.
-Package marginnote Info: Margin note 26.4 is on absolute page 26 on input line 235.
+Package marginnote Info: Margin note 30.4 is on absolute page 30 on input line 235.
 Package marginnote Info: xpos seems to be 228.77734pt on input line 235.
 \openout4 = `manuscript_Stragiotti.mw'.
 
- [20] (manuscript_Stragiotti.mw)
+ [24] (manuscript_Stragiotti.mw)
 \openout4 = `manuscript_Stragiotti.mw'.
 
 *geometry* verbose mode - [ newgeometry ] result:
@@ -4115,9 +4166,6 @@ runsystem(makeindex manuscript_Stragiotti.idx)...executed safely (allowed).
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: There were multiply-defined labels.
-
 \openout4 = `manuscript_Stragiotti.mw'.
 
 \openout4 = `manuscript_Stragiotti.mw'.
@@ -4137,17 +4185,17 @@ Package logreq Info: Writing requests to 'manuscript_Stragiotti.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 87866 strings out of 476331
- 2032396 string characters out of 5797589
- 3346939 words of memory out of 5000000
- 106396 multiletter control sequences out of 15000+600000
- 733586 words of font info for 409 fonts, out of 8000000 for 9000
+ 87900 strings out of 476331
+ 2033267 string characters out of 5797589
+ 3347418 words of memory out of 5000000
+ 106416 multiletter control sequences out of 15000+600000
+ 733709 words of font info for 410 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  133i,19n,159p,10658b,3564s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newpx/NewPXBMI.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newpx/NewPXBMI_gnu.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newpx/NewPXMI.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newpx/NewPXMI_gnu.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmti7.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/bera/fvmr8a.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newpx/pxmiaX.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newpx/pxsys.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/tex-gyre/qhvr.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/cm-super/sfrm0700.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newpx/zplb.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newpx/zplbi.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newpx/zplr.pfb><D:/estragio/AppData/Roaming/MiKTeX/fonts/type1/public/newpx/zplri.pfb>
-Output written on manuscript_Stragiotti.pdf (26 pages, 11709911 bytes).
+Output written on manuscript_Stragiotti.pdf (30 pages, 11728238 bytes).
 PDF statistics:
- 950 PDF objects out of 1000 (max. 8388607)
- 99 named destinations out of 1000 (max. 500000)
+ 982 PDF objects out of 1000 (max. 8388607)
+ 103 named destinations out of 1000 (max. 500000)
  98141 words of extra memory for PDF output out of 106986 (max. 10000000)
 

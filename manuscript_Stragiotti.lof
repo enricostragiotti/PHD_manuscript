@@ -9,14 +9,14 @@
 \contentsline {figure}{\numberline {1.7}{\ignorespaces Maximum stress constraint value (left) and buckling constraint value (right) plotted on the deformed shape of the optimized design (undeformed shape in light grey) of CRM-2370 for the three load cases: +2.5 g maneuver (a), -1 g maneuver (b), and cruise with gust (+1.3 g) (c). The maximum $z$ tip deflection is \qty {4.167}{m}, \qty {-2.953}{m}, and \qty {1.948}{m}, respectively.}}{10}{figure.caption.23}%
 \contentsline {figure}{\numberline {1.8}{\ignorespaces Iteration history of the CRM-2370 example solved with the 2S-5R algorithm. (a) objective function history for the SLP and NLP step. The sharp increases in the objective function during the SLP step correspond to the reinitialization calls. (b) constraint violation for the NLP step.}}{11}{figure.caption.24}%
 \contentsline {figure}{\numberline {1.9}{\ignorespaces Normalized buckling and maximum stress constraint values for the optimized CRM-2370 structure after the SLP and the NLP optimization steps.}}{11}{figure.caption.27}%
-\contentsline {figure}{\numberline {1.10}{\ignorespaces \blx@tocontentsinit {0}\cite {jenett_digital_2017}}}{12}{figure.caption.29}%
+\contentsline {figure}{\numberline {1.10}{\ignorespaces \blx@tocontentsinit {0}\cite {jenett_digital_2017}}}{12}{figure.caption.30}%
 \contentsline {figure}{\numberline {1.11}{\ignorespaces \relax }}{14}{figure.caption.31}%
-\contentsline {figure}{\numberline {1.12}{\ignorespaces \relax }}{14}{figure.caption.32}%
-\contentsline {figure}{\numberline {1.13}{\ignorespaces \relax }}{14}{figure.caption.33}%
-\contentsline {figure}{\numberline {1.14}{\ignorespaces \relax }}{15}{figure.caption.34}%
-\contentsline {figure}{\numberline {1.15}{\ignorespaces \relax }}{15}{figure.caption.35}%
-\contentsline {figure}{\numberline {1.16}{\ignorespaces \relax }}{16}{figure.caption.36}%
-\contentsline {figure}{\numberline {1.18}{\ignorespaces \relax }}{17}{figure.caption.38}%
-\contentsline {figure}{\numberline {1.17}{\ignorespaces \relax }}{18}{figure.caption.37}%
+\contentsline {figure}{\numberline {1.12}{\ignorespaces \relax }}{15}{figure.caption.32}%
+\contentsline {figure}{\numberline {1.13}{\ignorespaces \relax }}{15}{figure.caption.33}%
+\contentsline {figure}{\numberline {1.14}{\ignorespaces \relax }}{18}{figure.caption.35}%
+\contentsline {figure}{\numberline {1.15}{\ignorespaces \relax }}{18}{figure.caption.36}%
+\contentsline {figure}{\numberline {1.16}{\ignorespaces \relax }}{19}{figure.caption.37}%
+\contentsline {figure}{\numberline {1.17}{\ignorespaces \relax }}{20}{figure.caption.38}%
+\contentsline {figure}{\numberline {1.18}{\ignorespaces \relax }}{21}{figure.caption.39}%
 \addvspace {10\p@ }
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file

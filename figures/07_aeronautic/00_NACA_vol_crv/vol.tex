@@ -25,8 +25,8 @@
     xmin=1, xmax=3,
     xtick={1,2,3},
     % xticklabels={5x2,10x4,15x6,20x8},
-    ylabel={$V [\unit{\centi\meter^3}]$},
-    ymin=10, ymax=35,
+    ylabel={$\text{Mass } [\unit{\gram}]$},
+    ymin=20, ymax=50,
     % xmode=log,
     % ytick={0,25,50,75},
     ]
@@ -34,17 +34,17 @@
   \addplot [scatter_plot_smooth, accent_b_1]
     table{%
     x y
-    1 34.538
-    2 23.495
-    3 20.766
+    1 49.0
+    2 33.3
+    3 29.5
     };
     \addlegendentry{Conf. A}
     \addplot [scatter_plot_smooth, accent_r_1]
     table{%
     x y
-    1 26.252
-    2 16.743
-    3 16.102
+    1 37.3
+    2 23.8
+    3 22.9
     };
     \addlegendentry{Conf. B}
   
