@@ -2,3 +2,9 @@ thresholding
 wingbox
 mesh-independency
 architechted
+parallelepiped
+tetrahedra
+discretizations
+Delaunay
+parallelepipedic-shaped
+wingbox-type
