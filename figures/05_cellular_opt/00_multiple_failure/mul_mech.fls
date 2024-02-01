@@ -828,45 +828,6 @@ INPUT .\mul04_BUCK_NLP_LC001_iso.png
 INPUT .\mul04_BUCK_NLP_LC001_iso.png
 INPUT .\mul04_BUCK_NLP_LC001_iso.png
 INPUT .\mul04_BUCK_NLP_LC001_iso.png
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmbx10.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmbx7.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmbx5.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmmib10.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmmib7.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmmib5.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmbsy10.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmbsy7.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmbsy5.tfm
-INPUT C:\Program Files\MiKTeX\tex\latex\amsfonts\umsa.fd
-INPUT C:\Program Files\MiKTeX\tex\latex\amsfonts\umsa.fd
-INPUT C:\Program Files\MiKTeX\tex\latex\amsfonts\umsa.fd
-INPUT C:\Program Files\MiKTeX\tex\latex\amsfonts\umsa.fd
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam7.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam5.tfm
-INPUT C:\Program Files\MiKTeX\tex\latex\amsfonts\umsb.fd
-INPUT C:\Program Files\MiKTeX\tex\latex\amsfonts\umsb.fd
-INPUT C:\Program Files\MiKTeX\tex\latex\amsfonts\umsb.fd
-INPUT C:\Program Files\MiKTeX\tex\latex\amsfonts\umsb.fd
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm5.tfm
-INPUT .\04_STRESS_NLP_LC001_iso.png
-INPUT .\04_STRESS_NLP_LC001_iso.png
-INPUT 04_STRESS_NLP_LC001_iso.png
-INPUT .\04_STRESS_NLP_LC001_iso.png
-INPUT .\04_STRESS_NLP_LC001_iso.png
-INPUT .\04_STRESS_NLP_LC001_iso.png
-INPUT .\04_STRESS_NLP_LC001_iso.png
-INPUT .\04_BUCK_NLP_LC001_iso.png
-INPUT .\04_BUCK_NLP_LC001_iso.png
-INPUT 04_BUCK_NLP_LC001_iso.png
-INPUT .\04_BUCK_NLP_LC001_iso.png
-INPUT .\04_BUCK_NLP_LC001_iso.png
-INPUT .\04_BUCK_NLP_LC001_iso.png
-INPUT .\04_BUCK_NLP_LC001_iso.png
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmr8.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmr6.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmmi12.tfm
@@ -887,23 +848,45 @@ INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmmib6.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmbsy10.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmbsy8.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmbsy6.tfm
+INPUT C:\Program Files\MiKTeX\tex\latex\amsfonts\umsa.fd
+INPUT C:\Program Files\MiKTeX\tex\latex\amsfonts\umsa.fd
+INPUT C:\Program Files\MiKTeX\tex\latex\amsfonts\umsa.fd
+INPUT C:\Program Files\MiKTeX\tex\latex\amsfonts\umsa.fd
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam7.tfm
+INPUT C:\Program Files\MiKTeX\tex\latex\amsfonts\umsb.fd
+INPUT C:\Program Files\MiKTeX\tex\latex\amsfonts\umsb.fd
+INPUT C:\Program Files\MiKTeX\tex\latex\amsfonts\umsb.fd
+INPUT C:\Program Files\MiKTeX\tex\latex\amsfonts\umsb.fd
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
+INPUT .\04_STRESS_NLP_LC001_iso.png
+INPUT .\04_STRESS_NLP_LC001_iso.png
+INPUT 04_STRESS_NLP_LC001_iso.png
+INPUT .\04_STRESS_NLP_LC001_iso.png
+INPUT .\04_STRESS_NLP_LC001_iso.png
+INPUT .\04_STRESS_NLP_LC001_iso.png
+INPUT .\04_STRESS_NLP_LC001_iso.png
+INPUT .\04_BUCK_NLP_LC001_iso.png
+INPUT .\04_BUCK_NLP_LC001_iso.png
+INPUT 04_BUCK_NLP_LC001_iso.png
+INPUT .\04_BUCK_NLP_LC001_iso.png
+INPUT .\04_BUCK_NLP_LC001_iso.png
+INPUT .\04_BUCK_NLP_LC001_iso.png
+INPUT .\04_BUCK_NLP_LC001_iso.png
 INPUT D:\estragio\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
 INPUT mul_mech.aux
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi10.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi10.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi5.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi5.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi7.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi7.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmr10.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmr10.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmr5.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmr5.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi12.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi12.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi6.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi6.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi8.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi8.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmr12.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmr12.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmr6.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmr6.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
