@@ -146,7 +146,7 @@ Solving the first step of the proposed optimization formulation, we not only adj
     \label{fig:06_x0}
 \end{figure*}
 
-The idea behind how to select the best module for a subdomain is to identify the subdomains that show similar mechanical behavior, grouping them based on their stress state. This approach is not new, and it is already been used in the literature of structural optimization \sidecite{opgenoord_design_2019,kumar_density-and-strain-based_2020}. This grouping is assessed using a k-means clustering technique with the number of clusters equal to the number of module topologies $N_\text{T}$. Given a set of observations $(x_1, x_2, ..., x_{N_\text{sub}})$, where each observation is a $\bar{n}$-dimensional real vector, k-means clustering aims to partition the $N_\text{sub}$ observations into $N_\text{T}$ sets. In our context, each observation is the vector containing the \acrfull{fea} calculated stress distribution on the initial ground structure with a uniform cross-sectional area.
+The idea behind how to select the best module for a subdomain is to identify the subdomains that show similar mechanical behavior, grouping them based on their stress state. This approach is not new, and it is already been used in the literature of structural optimization \sidecite{opgenoord_design_2019,kumar_density-and-strain-based_2020,song_investigation_2021}. This grouping is assessed using a k-means clustering technique with the number of clusters equal to the number of module topologies $N_\text{T}$. Given a set of observations $(x_1, x_2, ..., x_{N_\text{sub}})$, where each observation is a $\bar{n}$-dimensional real vector, k-means clustering aims to partition the $N_\text{sub}$ observations into $N_\text{T}$ sets. In our context, each observation is the vector containing the \acrfull{fea} calculated stress distribution on the initial ground structure with a uniform cross-sectional area.
 
 Besides the stress values $\sigma_i^j$ of the $i$-th bar of the $j$-th subdomain, we introduce the stress state $S$ for the $j$-th subdomain as:
 \begin{equation}
@@ -476,7 +476,7 @@ The resulting optimized structures are presented in \figref{fig:06_supp_top}, an
 
 In our attempts to mitigate this behavior, we experimented with scaling the layout design variable $\vect{\alpha}$ and its associated constraints using various factors, yet we consistently obtained identical outcomes. This issue suggests that while the starting point perturbation certainly aids in achieving a well-optimized structure, additional work is needed to develop a whole new resolution strategy. One possible approach could be to separate the topology and layout variables and iteratively solve the two problems independently, one iteration at a time.
 
-A careful examination of the volume $V$ and mean densities $\bar{\rho}$ in \tabref{tab:06_supp_tab}, however, reveals that the modular structures with $N_\text{T}=2$ and $N_\text{T}=3$ achieve remarkably similar values to the monolithic reference ($N_\text{sub}=1$) depicted in \figref{fig:06_supp_ref}. This outcome is particularly significant as it attains the objective of achieving a lightweight structure, almost comparable to the monolithic one, while preserving modularity, highlighting the potential for a light structure with manufacturing advantages due to its modular nature.
+A careful examination of the volume $V$ and mean densities $\bar{\rho}$ in \tabref{tab:06_supp_tab}, however, reveals that the modular structure with $N_\text{T}=3$ achieves remarkably similar volume (+\qty{2.8}{\percent}) to the monolithic reference ($N_\text{sub}=1$) depicted in \figref{fig:06_supp_ref}. This outcome is particularly significant as it attains the objective of achieving a lightweight structure, almost comparable to the monolithic one, while preserving modularity, highlighting the potential for a light structure with manufacturing advantages due to its modular nature.
 
 \begin{figure*}
     \hspace*{\fill}
@@ -494,7 +494,7 @@ A careful examination of the volume $V$ and mean densities $\bar{\rho}$ in \tabr
     \hfill
     \subcaptionbox{}{\includegraphics[width=0.30\linewidth]{figures/06_DMO/00_print_topology/3_04_Topology_NLP_XZ.png}}
     \hspace*{\fill}
-    \caption{Rendering of the optimized structures with $N_\text{T}=1$ (a,d), $N_\text{T}=2$ (b,e), and $N_\text{T}=3$ (c,f).}
+    \caption{Rendering of the optimized simply supported 3D beam with $N_\text{T}=1$ (a,d), $N_\text{T}=2$ (b,e), and $N_\text{T}=3$ (c,f).}
     \label{fig:06_supp_top}
 \end{figure*}
 

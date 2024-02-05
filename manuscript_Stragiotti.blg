@@ -1,21 +1,21 @@
 [0] Config.pm:307> INFO - This is Biber 2.19
 [0] Config.pm:310> INFO - Logfile is 'manuscript_Stragiotti.blg'
-[212] biber-MSWIN64:340> INFO - === 
-[329] Biber.pm:419> INFO - Reading 'manuscript_Stragiotti.bcf'
-[3660] Biber.pm:979> INFO - Found 220 citekeys in bib section 0
-[3692] Biber.pm:4419> INFO - Processing section 0
-[3707] Biber.pm:4610> INFO - Looking for bibtex file 'biblio.bib' for section 0
-[3823] bibtex.pm:1713> INFO - LaTeX decoding ...
-[4583] bibtex.pm:1519> INFO - Found BibTeX data source 'biblio.bib'
-[6592] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[6592] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[6592] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
-[6592] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
-[6792] bbl.pm:660> INFO - Writing 'manuscript_Stragiotti.bbl' with encoding 'UTF-8'
-[6990] bbl.pm:763> INFO - Output to manuscript_Stragiotti.bbl
-[6991] Biber.pm:131> WARN - ISBN '978-3-642-07698-5 978-3-662-05086-6' in entry 'bendsoe_topology_2004' is invalid - run biber with '--validate_datamodel' for details.
-[6991] Biber.pm:131> WARN - ISBN '978-3-662-03117-9 978-3-662-03115-5' in entry 'bendsoe_optimization_1995' is invalid - run biber with '--validate_datamodel' for details.
-[6991] Biber.pm:131> WARN - ISBN '978-0-89871-668-9 978-0-89871-876-8' in entry 'conn_introduction_2009' is invalid - run biber with '--validate_datamodel' for details.
-[6991] Biber.pm:131> WARN - ISBN '978-3-319-68912-8 978-3-319-68913-5' in entry 'audet_derivative-free_2017' is invalid - run biber with '--validate_datamodel' for details.
-[6991] Biber.pm:131> WARN - ISBN '978-1-118-65950-2 978-0-470-93741-9' in entry 'simon_evolutionary_2013' is invalid - run biber with '--validate_datamodel' for details.
-[6991] Biber.pm:133> INFO - WARNINGS: 5
+[144] biber-MSWIN64:340> INFO - === 
+[203] Biber.pm:419> INFO - Reading 'manuscript_Stragiotti.bcf'
+[1546] Biber.pm:979> INFO - Found 169 citekeys in bib section 0
+[1564] Biber.pm:4419> INFO - Processing section 0
+[1577] Biber.pm:4610> INFO - Looking for bibtex file 'biblio.bib' for section 0
+[1677] bibtex.pm:1713> INFO - LaTeX decoding ...
+[2339] bibtex.pm:1519> INFO - Found BibTeX data source 'biblio.bib'
+[3650] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[3650] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[3650] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[3650] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[3787] bbl.pm:660> INFO - Writing 'manuscript_Stragiotti.bbl' with encoding 'UTF-8'
+[3917] bbl.pm:763> INFO - Output to manuscript_Stragiotti.bbl
+[3917] Biber.pm:131> WARN - ISBN '978-3-642-07698-5 978-3-662-05086-6' in entry 'bendsoe_topology_2004' is invalid - run biber with '--validate_datamodel' for details.
+[3917] Biber.pm:131> WARN - ISBN '978-3-662-03117-9 978-3-662-03115-5' in entry 'bendsoe_optimization_1995' is invalid - run biber with '--validate_datamodel' for details.
+[3917] Biber.pm:131> WARN - ISBN '978-0-89871-668-9 978-0-89871-876-8' in entry 'conn_introduction_2009' is invalid - run biber with '--validate_datamodel' for details.
+[3917] Biber.pm:131> WARN - ISBN '978-3-319-68912-8 978-3-319-68913-5' in entry 'audet_derivative-free_2017' is invalid - run biber with '--validate_datamodel' for details.
+[3917] Biber.pm:131> WARN - ISBN '978-1-118-65950-2 978-0-470-93741-9' in entry 'simon_evolutionary_2013' is invalid - run biber with '--validate_datamodel' for details.
+[3918] Biber.pm:133> INFO - WARNINGS: 5

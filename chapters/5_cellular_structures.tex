@@ -1,7 +1,7 @@
 \setchapterpreamble[u]{\margintoc}
 \glsresetall % reset glossary
 \chapter{Optimizing modular structures} \label{chap:05}
-\chpref{chap:04} addressed the primary limitations of the classical \gls{tto} method by introducing various mechanical constraints such as minimum slenderness of active bars, topological buckling, and kinematic compatibility. However, structures optimized using this algorithm often exhibit complex topologies, and regularization methods could enhance the manufacturing phase. This chapter focuses on developing a modular framework for the proposed \gls{tto} formulation.
+\chpref{chap:04} addressed the primary limitations of the classical \gls{tto} method by introducing various mechanical constraints such as minimum slenderness of active bars, topological buckling, and kinematic compatibility. However, structures optimized using this algorithm often exhibit complex topologies and regularization methods could enhance the manufacturing phase. This chapter focuses on developing a modular framework for the proposed \gls{tto} formulation.
 
 In \secref{sec:05_01}, we provide a detailed explanation of the modifications needed to apply modular constraints to the \gls{tto}. Specifically, we focus on how to model the problem when multiple modules are used and how topological buckling constraints are implemented in modular structures. Finally, in \secref{sec:05_02}, we evaluate the proposed formulation through various 2D and 3D test cases, aiming to gain a better understanding of modular structures.
 \marginnote{Part of the content presented in this chapter has been published and showcased during a conference as:\\Stragiotti, E. et al. (2022) "Enhanced truss topology optimization ({TTO}) applied to a cellular wing box", in \textit{ASMO-UK 12, an ISSMO Conference on Engineering Design Optimization}. Book of proceedings. Leeds, United Kingdom~\cite{stragiotti_enhanced_2022}.}
@@ -9,7 +9,7 @@ In \secref{sec:05_01}, we provide a detailed explanation of the modifications ne
 \section{Formulation of a modular structure optimization algorithm} \label{sec:05_01}
 Assembled modular ultralight structures present an opportunity to greatly improve the performance and cost efficiency of modern aerostructures~\sidecite{cramer_elastic_2019}. The repetitive nature brings various interesting features among which reduced tooling, fast assembly, and short repair time. Additionally, as the mechanical performance of the structure is greatly influenced by the topology and the materials of the repetitive pattern, modular structures are naturally prone to optimization.
 
-In the field of structural optimization, periodic materials are often modeled through asymptotic homogenization~\sidecite{zhou_design_2008}. The heterogeneous module topology (also called \gls{rve}) is treated as an homogeneous material with associated mechanical properties \ie equivalent elastic tensor, shear modulus, etc. The homogenization approach is valid only if the \gls{rve} contains enough information about the heterogeneous material and if the structure presents significant periodicity~\sidecite{kalamkarov_asymptotic_2009,li_anisotropic_2020}. 
+In the field of structural optimization, periodic materials are often modeled through asymptotic homogenization~\sidecite{zhou_design_2008}. The heterogeneous module topology (also called \gls{rve}) is treated as a homogeneous material with associated mechanical properties \ie equivalent elastic tensor, shear modulus, etc. The homogenization approach is valid only if the \gls{rve} contains enough information about the heterogeneous material and if the structure presents significant periodicity~\sidecite{kalamkarov_asymptotic_2009,li_anisotropic_2020}. 
 
 Nevertheless, our work pertains to structures that frequently exhibit one or more dimensions significantly smaller than the remaining dimensions, such as the thickness of a wingbox or a sandwich panel. In the context of designing modular structures (and not materials), no scale separation is assumed between the repetitive pattern and the structure itself. Consequently, the assumptions of asymptotic homogenization are not always verified. To address this, full-scale approaches~\sidecite{wu_topology_2021} have been developed.
 
@@ -59,7 +59,7 @@ where the $\otimes$ operator represents the Kronecher product. The scalars $h_{j
     0 & 1 & \scriptstyle\textcolor{axis_gray}{\,j=7} 
 \end{bNiceMatrix}
 \end{equation*}
-as the lower subdomains (numbered from 0 to 3) exhibit the topology of module $t=0$, while the upper subdomains (numbered 4 to 7) the topology of module $t=1$.}
+as the lower subdomains (numbered from 0 to 3) exhibit the topology of module $t=0$, while the upper subdomains (numbered 4 to 7) show the topology of module $t=1$.}
 \begin{equation}
     h_{j,t} =
     \begin{cases}
@@ -86,7 +86,7 @@ Addressing topological buckling in modular structures is a more complex task com
 \begin{equation*}
     a_{r}\geq a_{r=1}, \; r \in \mathcal{C}_{l,r}(\vect{a}), \; \forall r \neq 1.
 \end{equation*}
-} We focus only on the assessment of nodal instability within each module: the critical buckling force in \eqref{eq:04_buck} is evaluated using \eqref{eq:04_chain_len}, where the topological set $\mathcal{C}$ only contain the compressive chains of bars that fall inside a module. Additionally, \eqref{eq:04_side_cons_chain} is modified as follows:
+} We focus only on the assessment of nodal instability within each module: the critical buckling force in \eqref{eq:04_buck} is evaluated using \eqref{eq:04_chain_len}, where the topological set $\mathcal{C}$ only contains the compressive chains of bars that fall inside a module. Additionally, \eqref{eq:04_side_cons_chain} is modified as follows:
 \begin{equation}\label{eq:05_side_cons_chain_modular}
     \bar{\vect{a}}_{t,r} \geq \bar{a}_{t,r=1} \quad r \in \mathcal{C}_{l,r}(\bar{\vect{a}}_t) \quad \forall t \in [1,\dots,N_\text{T}].
 \end{equation}
@@ -185,7 +185,7 @@ The optimizations are performed using the Python package CVXPY 1.2.2 \sidecite{d
 \end{margintable}
 The first test case we deal with is a two-dimensional bridge structure segment composed of two subdomains ($n_{\text{sub}} = 2$) with symmetric boundary conditions, as illustrated in \figref{fig:05_cell_multi_eq_bcs}a. In this test case, two vertical loads of magnitude P=1 are applied to the lower side of the design space. The material and geometrical details are given in \tabref{tab:05_modular_data} and are normalized and adimensional for simplicity. Each subdomain of the structure is discretized using a 15x15 fully connected ground structure, with a number of candidates $\bar{n}=25200$ per subdomain. It is important to note that, for this example, buckling constraints have been deactivated.
 
-Additionally, a similar structure is optimized, comprised a single subdomain subjected to two distinct load cases, denoted as $P_1$ and $P_2$. These loads are positioned at precisely the same distance from the support as the structure with multiple subdomains, as illustrated in \figref{fig:05_cell_multi_eq_bcs}b. The subdomain is discretized using the same 15x15 fully connected ground structure.
+Additionally, a similar structure is optimized, comprised of a single subdomain subjected to two distinct load cases, denoted as $P_1$ and $P_2$. These loads are positioned at precisely the same distance from the support as the structure with multiple subdomains, as illustrated in \figref{fig:05_cell_multi_eq_bcs}b. The subdomain is discretized using the same 15x15 fully connected ground structure.
 
 \begin{figure}[]
     \hspace*{\fill}
@@ -254,7 +254,7 @@ This straightforward example highlights an interesting aspect of optimization of
     \caption{Perspective view of the monolithic simply supported 3D beam optimized structure with $V=\qty{9.907}{\centi\meter^3}$}
     \label{fig:05}
 \end{marginfigure}
-Here, we perform a parametric study on the modular parameters that are used to optimize the simply supported 3D truss, which was previously analyzed as a monolithic structure in \secref{sec:04_simply_supp}. In this study, we focus on a single module $N_\text{T} = 1$, excluding for the moment the possibility of using multiple module topologies. Additionally, we restrict our investigation to a single module type with cubic cell shape. A summary of the loading case, as well as the geometric and material properties of the test case, is presented in \tabref{tab:05_3D_supp_mat} and depicted in \figref{fig:05_symm_support_bc}.
+Here, we perform a parametric study on the modular parameters that are used to optimize the simply supported 3D truss, which was previously analyzed as a monolithic structure in \secref{sec:04_simply_supp}. In this study, we focus on a single module $N_\text{T} = 1$, excluding for the moment the possibility of using multiple module topologies. Additionally, we restrict our investigation to a single module geometry (called also type) with a cubic cell shape. A summary of the loading case, as well as the geometric and material properties of the test case, is presented in \tabref{tab:05_3D_supp_mat} and depicted in \figref{fig:05_symm_support_bc}.
 
 We introduce two new metrics used to enhance our understanding of how modular structures are subjected to loading. The first metric, named the structural efficiency index and denoted as $\varphi$, is defined as:
 \begin{equation}
@@ -266,14 +266,14 @@ Here, $N_\text{opt,f}$ represents the number of bars that activate either the te
 \end{equation}
 where $\vect{c}_\text{f}=\max{\left(-\vect{q} /\sigma_c \vect{a},\:\vect{q} /\sigma_t \vect{a},\:\vect{q}/\vect{q}_{\text{crit}}\right)}$ represent the normalized mechanical failure criterion and $\operatorname{card}(\{\cdot\})$ represent the cardinality of the set $\{\cdot\}$. $\varphi$ enables a rapid assessment of how close the structure is to the optimal fully stressed state as described by Michell \sidecite{michell_limits_1904}. Since we are accounting for not only tensile and compressive stress but also local buckling, we define a bar as fully stressed when it activates one or more of the three mechanical failure constraints.
 
-The second metric, is defined as the mean value of the normalized mechanical failure criterion $\vect{c}_\text{f}$, weighted by the volumes of individual bars $\vect{v}$:
+The second metric is defined as the mean value of the normalized mechanical failure criterion $\vect{c}_\text{f}$, weighted by the volumes of individual bars $\vect{v}$:
 \begin{equation}
     \psi = \frac{1}{V} \left( \sum_{i=0}^{N_\text{opt}} v_i c_{\text{f},i} \right)
 \end{equation}
 This parameter ranges between 0 and 1, with higher values indicating that, on average, bars are closer to the upper limit of one of the mechanical failure constraints. Notably, greater importance is attributed to more voluminous bars.
 
 \paragraph{Influence of the number of the subdomains}
-We begin by examining the impact of the number (and consequently, the module scale, interchangeably used here) of subdomains $N_\text{sub}$ in the structure. The structure is partitioned into a varying number of cubic and equally sized subdomains while keeping the test case and material constant. Specifically, the entire structure is subdivided into 6x2x3, 12x4x6, 18x6x9, and 30x10x15 subdomains along the $X$, $Y$, and $Z$ axes, and each subdomain is discretized by a 2x2x2 fully connected ground structure with $n_{\text{bar}} = 28$. The same analysis is also conducted on a 3x3x3 fully connected ground structure with $n_{\text{bar}} = 351$ to verify that the trend observed remain consistent across varying cell complexities.
+We begin by examining the impact of the number (and consequently, the module scale, interchangeably used here) of subdomains $N_\text{sub}$ in the structure. The structure is partitioned into a varying number of cubic and equally sized subdomains while keeping the test case and material constant. Specifically, the entire structure is subdivided into 6x2x3, 12x4x6, 18x6x9, and 30x10x15 subdomains along the $X$, $Y$, and $Z$ axes, and each subdomain is discretized by a 2x2x2 fully connected ground structure with $n_{\text{bar}} = 28$. The same analysis is also conducted on a 3x3x3 fully connected ground structure with $n_{\text{bar}} = 351$ to verify that the trend observed remains consistent across varying cell complexities.
 
 \begin{marginfigure}
     \centering
@@ -391,7 +391,7 @@ The results of the parametric study are presented in a tabular format in \tabref
 
 Regarding computational time (see \figref{fig:05_comp_t}), we notice a relationship similar to the one already observed for the subdomain scale. The computational time goes up as the module complexity increases. This is understandable because in this scenario the number of design variables increases along with the number of candidates and, consequently, the number of constraints as well.
 
-The 3D renderings of the optimized structures for the 6x2x3 subdomains case are presented in \figref{fig:05_comp_results}, allowing the reader to observe the evolution of the module's topology toward greater complexity (from $\bar{n}_\text{opt}=9$ to $\bar{n}_\text{opt}=88$ for the 2x2x2 and 5x5x5 cases, respectively). While in low complexity, the optimizer prioritizes long slender tensile elements, in more complex cases, we observe the apparition of compressive elements less influenced by local buckling because or their shorter buckling length.
+The 3D renderings of the optimized structures for the 6x2x3 subdomains case are presented in \figref{fig:05_comp_results}, allowing the reader to observe the evolution of the module's topology toward greater complexity (from $\bar{n}_\text{opt}=9$ to $\bar{n}_\text{opt}=88$ for the 2x2x2 and 5x5x5 cases, respectively). While in low complexity, the optimizer prioritizes long slender tensile elements, in more complex cases, we observe the apparition of compressive elements less influenced by local buckling because of their shorter buckling length.
 
 
 \begin{figure*}
@@ -492,7 +492,7 @@ The coefficients are determined by solving a least-squares system using the data
 
 We present the outcomes of the \gls{doe} for the structure volume $V$ in \figref{fig:05_doe}. In the upper part of the image, we display the surface response along with a scatter plot of the optimized structures (a), and additionally, the isovalue line plot (b). It is noticeable that the volume $V$ is strongly influenced by the number of subdomains $N_\text{sub}$, as indicated by the horizontal orientation of the isovalue lines. This suggests that the steeper gradient of the function is in the vertical direction. The modular structures with the lower volume tend to be structures with fewer subdomains characterized by high complexity $\bar{n}$. However, when examining subfigures (c) and (d), representing the surface response for computational time $t$ , it is evident that high module complexity $\bar{n}$ is associated with an elevated computational time.
 
-Subsequently, we present the main effects plot for the volume and module complexity in \figref{fig:05_doe_main_eff}. The idea of this figure is to visualize, for each independent variables, the effect on the volume an computational time by looking at the slope of the curves. The advantage of this representation is to offer an immediate visualization of the various effects on the observed function.
+Subsequently, we present the main effects plot for the volume and module complexity in \figref{fig:05_doe_main_eff}. The idea of this figure is to visualize, for each independent variable, the effect on the volume and computational time by looking at the slope of the curves. The advantage of this representation is to offer an immediate visualization of the various effects on the observed function.
 \begin{figure}
     \centering
     \subcaptionbox{}{\includegraphics{figures/05_cellular_opt/00_doe_main_effect_plots/tab_v.pdf}}
@@ -592,7 +592,7 @@ We notice that in the octet-truss structure, there are no members oriented exact
     \label{tab:05_octet_results}
     \end{table}
 
-The numerical results are presented in \tabref{tab:05_octet_results} and confirm our observations. The volume of the octet-truss structures is approximately thrice and twice the volume of the modular \gls{tto} optimized structures for the 6x2x3 and the 12x4x6 test cases, respectively. This significant gap between the two structures is also evident when examining the values of $\varphi$ and $\psi$ of the octet truss structures, significantly lower when compared to the \gls{tto} optimized ones. These values drop to very low levels because the cross-sectional area of the entire octet truss structure is determined by the value at which a bar on the structure activates either the stress or the buckling constraints. As the structure is symmetric on the XZ and the YZ planes, a total of four bars activate a mechanical constraints, resulting in an highli inefficent design. Better results could have been obtained by providing more design freedom to the optimization of the octet-truss, using multiple cross-sectional design variables, but this approach has not been taken here. It is important to note that the comparison presented here does not account for the weight of fasteners and joints necessary to link the cells together.
+The numerical results are presented in \tabref{tab:05_octet_results} and confirm our observations. The volume of the octet-truss structures is approximately thrice and twice the volume of the modular \gls{tto} optimized structures for the 6x2x3 and the 12x4x6 test cases, respectively. This significant gap between the two structures is also evident when examining the values of $\varphi$ and $\psi$ of the octet truss structures, significantly lower when compared to the \gls{tto} optimized ones. These values drop to very low levels because the cross-sectional area of the entire octet truss structure is determined by the value at which a bar on the structure activates either the stress or the buckling constraints. As the structure is symmetric on the XZ and the YZ planes, a total of four bars activate mechanical constraints, resulting in a highly inefficient design. Better results could have been obtained by providing more design freedom to the optimization of the octet-truss, using multiple cross-sectional design variables, but this approach has not been taken here. It is important to note that the comparison presented here does not account for the weight of fasteners and joints necessary to link the cells together.
 
 \subsection{Using multiple module topologies}
 We have explored two extremes so far -- the fully modular and the monolithic structures. Now, we aim to investigate the scenarios in between. Up to this point, our study on modular structures has been limited to a single topology of the module, \ie, $N_\text{T}=1$. This is because, when dealing with multiple module topologies, another crucial question arises: how to optimize the module layout? How should the modules be arranged in the structure to minimize the overall volume of the part? This critical question will be discussed in-depth later in the thesis. For now, as we begin to consider multiple module topologies, we make a significant simplification by determining the layout based solely on good engineering common sense, without an additional optimization process.
@@ -646,7 +646,7 @@ We now examine the modules of the optimized structure. Firstly, we observe that 
 
 The optimized structure with $N_\text{T}=3$ is now compared to the reference monolithic structure and the structure with $N_\text{T}=1$ to assess the difference in mechanical performance due to the increased number of modules topologies. The results are presented in \tabref{tab:05_multiple_topology_sol}. Interestingly, the computational time of the $N_\text{T}=1$ solution is lower $(t = \hms{00;3;22}$) compared to the $N_\text{T}=3$ structure $(t = \hms{00;5;42}$). This comes as a surprise, considering that the $N_\text{T}=1$ optimization problem involves more design variables (as three times the number of cross-sectional areas are optimized). However, it turns out that having more design freedom makes the optimization process easier, as the constraints are more straightforward to satisfy. The trends of the volume and computational time are plotted in \figref{fig:05_multiple_topology_sol_graph}.
 
-The volume reduction is attributed to a more efficient utilization of the subdomain topology, which now varies with the subdomain position. This can be observed by examining the more efficient use of material, with a greater number of bars reaching the mechanical failure limit ($\varphi = \qty{61.90}{\%}$ for $N_\text{t} = 3$ compared to $\varphi = \qty{20.51}{\%}$ for $N_\text{t} = 1$) and, in general, a more uniform structure loading ($\psi = 0.716$ vs. $\psi = 0.327$). The stress and buckling failure criteria are plotted in \figref{fig:05_multiple_topology_sol_mech} for deeper analysis. It's notable that in subfigures (a) and (b), a greater number of colored bars are observed. This indicates that more candidates are reaching their maximum mechanical capacity, resulting in increased efficiency and a reduction in the overall volume of the structure.
+The volume reduction is attributed to a more efficient utilization of the subdomain topology, which now varies with the subdomain position. This can be observed by examining the more efficient use of material, with a greater number of bars reaching the mechanical failure limit ($\varphi = \qty{61.90}{\%}$ for $N_\text{t} = 3$ compared to $\varphi = \qty{20.51}{\%}$ for $N_\text{t} = 1$) and, in general, a more uniform structure loading ($\psi = 0.716$ vs. $\psi = 0.327$). The stress and buckling failure criteria are plotted in \figref{fig:05_multiple_topology_sol_mech} for deeper analysis. It's notable that in subfigures (a) and (b) compared to their counterpart in (c) and (d), a greater number of colored bars are observed. This indicates that more candidates are reaching their maximum mechanical capacity, resulting in increased efficiency and a reduction in the overall volume of the structure.
 
 \begin{table}
     \centering
@@ -662,13 +662,13 @@ The volume reduction is attributed to a more efficient utilization of the subdom
     $V$ [\unit{cm^3}]&9.907 &  \multicolumn{3}{c}{12.032}   & 24.323       \\
     $V$ [\unit{\percent}] &1.761& \multicolumn{3}{c}{2.139} &4.324       \\
     $\bar{\rho}$ [\unit{kg/m^3}] &80.31 & \multicolumn{3}{c}{97.54} &197.18\\
-    C [\unit{J}]    &3.71     & \multicolumn{3}{c}{6.14}  & 3.63       \\
-    $a_\text{max}$ [\unit{mm^2}]   &37.61   &  \multicolumn{3}{c}{7.13}   &   5.33    \\
+    % C [\unit{J}]    &3.71     & \multicolumn{3}{c}{6.14}  & 3.63       \\
+    % $a_\text{max}$ [\unit{mm^2}]   &37.61   &  \multicolumn{3}{c}{7.13}   &   5.33    \\
     $\varphi$    &\qty{100.00}{\percent}&\multicolumn{3}{c}{\qty{61.90}{\percent}}&\qty{20.51}{\percent}        \\
     $\psi$    &1.000&\multicolumn{3}{c}{0.716}&0.327          \\ 
     t     &\hms{0;0;4}  & \multicolumn{3}{c}{\hms{00;3;22}} &  \hms{00;5;42}      \\ \bottomrule
     \end{tabular}
-    \caption{Numerical results of the comparison between the structure with multiple modules with the monolithic and the fully-modular structures. }
+    \caption{Numerical results of the comparison between the structure with multiple modules with the monolithic and the fully modular structures. }
     \label{tab:05_multiple_topology_sol}
     \end{table}
     

@@ -39,6 +39,7 @@
 \usepackage{array} % for defining a new column type
 \usepackage{varwidth} %for the varwidth minipage environment
 \newcolumntype{x}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{y}[1]{>{\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
 \usepackage{nicematrix} % for index in lines and column
 \usepackage{multirow}% multirow in tables
 
@@ -209,13 +210,13 @@ This document was typeset with the help of \href{https://sourceforge.net/project
 
 \include{chapters/2_literature_review}
 
-\include{chapters/3_comparison_TO_TTO}
+% \include{chapters/3_comparison_TO_TTO}
 
-\include{chapters/4_TTO_upgrades}
+% \include{chapters/4_TTO_upgrades}
 
-\include{chapters/5_cellular_structures}
+% \include{chapters/5_cellular_structures}
 
-\include{chapters/6_DMO}
+% \include{chapters/6_DMO}
 
 % \include{chapters/7_advanced_applications}
 
@@ -240,11 +241,11 @@ This document was typeset with the help of \href{https://sourceforge.net/project
 
 % \appendix % From here onwards, chapters are numbered with letters, as is the appendix convention
 
-% \pagelayout{wide} % No margins
-% \addpart{Appendix}
-% \pagelayout{margin} % Restore margins
+\pagelayout{wide} % No margins
+\addpart{Appendix}
+\pagelayout{margin} % Restore margins
 
-% \include{chapters/app/A_sens}
+\include{chapters/app/A_sens}
 
 %----------------------------------------------------------------------------------------
 %	INDEX
