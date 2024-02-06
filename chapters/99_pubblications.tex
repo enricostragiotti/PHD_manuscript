@@ -3,13 +3,23 @@
 \addcontentsline{toc}{chapter}{Communications}%
 \markboth{Communications}{Communications}%
 
-\begin{refsection}
-\newrefcontext[sorting=ynt, labelprefix=C]
+\begin{refsection}[my_pub]
+\newrefcontext[sorting=ynt, labelprefix=A]
 \nocite{*}
 \section*{Journal Articles}
-\printbibliography[type=article,keyword=own,heading=none]
+\printbibliography[keyword=art,heading=none]
+\end{refsection}
+
+\begin{refsection}[my_pub]
+\newrefcontext[sorting=ynt, labelprefix=C]
+\nocite{*}
 \section*{Conference Proceedings}
-\printbibliography[type=inproceedings,keyword=own,heading=none]
+\printbibliography[keyword=conf,heading=none]
+\end{refsection}
+
+\begin{refsection}[my_pub]
+\newrefcontext[sorting=ynt, labelprefix=M]
+\nocite{*}
 \section*{Others}
-\printbibliography[type=misc,keyword=own,heading=none]
+\printbibliography[keyword=misc,heading=none]
 \end{refsection}
