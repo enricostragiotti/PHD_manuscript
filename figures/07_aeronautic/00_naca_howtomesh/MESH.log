@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.8.29)  26 JAN 2024 17:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.8.29)  7 FEB 2024 14:11
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -635,13 +635,13 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 Here is how much of TeX's memory you used:
  32326 strings out of 476331
  853607 string characters out of 5797589
- 1859660 words of memory out of 5000000
+ 1860660 words of memory out of 5000000
  52221 multiletter control sequences out of 15000+600000
  520001 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  122i,9n,121p,823b,841s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb>
-Output written on MESH.pdf (1 page, 219582 bytes).
+Output written on MESH.pdf (1 page, 219666 bytes).
 PDF statistics:
  27 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

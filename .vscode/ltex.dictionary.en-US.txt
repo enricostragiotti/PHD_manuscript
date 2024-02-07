@@ -8,3 +8,5 @@ discretizations
 Delaunay
 parallelepipedic-shaped
 wingbox-type
+pultruded
+parallelepipedal

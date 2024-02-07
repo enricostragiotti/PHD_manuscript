@@ -11,10 +11,14 @@
 
     \node[] (A) at (0cm,0){};
 
-    \node[left=.5cm, label={[label distance=.5cm,color=black]270:(a)}] (figA) at (A){
+    \node[above=2.5cm of A, label={[label distance=0cm,color=black]270:(a)}] (fig0){
+        \includegraphics[width=8cm]{vol_naca.png}
+    };
+
+    \node[left=.5cm, label={[label distance=.5cm,color=black]270:(b)}] (figA) at (A){
         \includegraphics[width=7cm]{02_GS_c_iso.png}
     };
-    \node[right=.5cm, label={[label distance=.5cm,color=black]270:(b)}] (figB) at (A){
+    \node[right=.5cm, label={[label distance=.5cm,color=black]270:(c)}] (figB) at (A){
         \includegraphics[width=7cm]{03_GS_s_iso.png}
     };
     % \draw[arrow_reference] (0-4.5,-.7) -- (0.9-4.5,0-.7) node[midway,below] {$x$};

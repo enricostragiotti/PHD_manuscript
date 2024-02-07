@@ -13,7 +13,7 @@
 \pgfmathsetmacro{\imglen}{5};
 % Define nodes
 
-\node[inner sep=0pt,label={[label distance=0cm,color=black]90:Volume}] (00) at (0,0)
+\node[inner sep=0pt,label={[label distance=0cm,color=black]90:Volumetric domain}] (00) at (0,0)
     {\includegraphics[width=\imglen cm]{00_naca.png}};
 
 \node[inner sep=0pt, right=of 00,label={[label distance=0cm,color=black]90:Test nodes}] (01)
@@ -22,10 +22,10 @@
 \node[inner sep=0pt, right=of 01,label={[label distance=0cm,color=black]90:Modular subdomains}] (02)
   {\includegraphics[width=\imglen cm]{03_cell_GS.png}};
 
-\node[inner sep=0pt, below=of 00, xshift=0.7cm] (03)
+\node[label={[label distance=-0.6cm,color=black]90:Modular}, inner sep=0pt, below=of 00, xshift=0.7cm] (03)
   {\includegraphics[width=\imglen cm]{04_mesh_1.png}};
 
-\node[inner sep=0pt, right=of 03, xshift=-1.4cm] (04)
+\node[label={[label distance=-0.6cm,color=black]90:Filler}, inner sep=0pt, right=of 03, xshift=-1.4cm] (04)
   {\includegraphics[width=\imglen cm]{04_mesh_2.png}};
 
 \node[label={[label distance=0cm,color=black]270:Conformal ground structures},draw, color=black, very thick, inner ysep=-0.5pt, inner xsep=-0.5pt, rounded corners=0.3cm, fit=(03) (04)] (box) {};

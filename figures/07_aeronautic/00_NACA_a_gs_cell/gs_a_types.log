@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.8.29)  25 JAN 2024 12:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.8.29)  7 FEB 2024 18:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -591,22 +591,27 @@ Package translations Info: loading dictionary `translations-basic-dictionary' fo
 
 Package pgfplots notification 'compat/show suggested version=true': document has been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
 
-<02_GS_c_iso.png, id=4, 1927.2pt x 1084.05pt>
+<vol_naca.png, id=4, 2284.535pt x 807.015pt>
+File: vol_naca.png Graphic file (type png)
+<use vol_naca.png>
+Package pdftex.def Info: vol_naca.png  used on input line 15.
+(pdftex.def)             Requested size: 227.62204pt x 80.39838pt.
+<02_GS_c_iso.png, id=5, 1927.2pt x 1084.05pt>
 File: 02_GS_c_iso.png Graphic file (type png)
 <use 02_GS_c_iso.png>
-Package pdftex.def Info: 02_GS_c_iso.png  used on input line 15.
+Package pdftex.def Info: 02_GS_c_iso.png  used on input line 19.
 (pdftex.def)             Requested size: 199.16928pt x 112.01733pt.
-<03_GS_s_iso.png, id=5, 1927.2pt x 1084.05pt>
+<03_GS_s_iso.png, id=6, 1927.2pt x 1084.05pt>
 File: 03_GS_s_iso.png Graphic file (type png)
 <use 03_GS_s_iso.png>
-Package pdftex.def Info: 03_GS_s_iso.png  used on input line 18.
+Package pdftex.def Info: 03_GS_s_iso.png  used on input line 22.
 (pdftex.def)             Requested size: 199.16928pt x 112.01733pt.
 Missing character: There is no ; in font nullfont!
-LaTeX Font Info:    Trying to load font information for U+msa on input line 32.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 36.
 (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 32.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 36.
  (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
@@ -615,19 +620,19 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 [1
 
-{D:/estragio/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./02_GS_c_iso.png> <./03_GS_s_iso.png>] (gs_a_types.aux) ) 
+{D:/estragio/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./vol_naca.png> <./02_GS_c_iso.png> <./03_GS_s_iso.png>] (gs_a_types.aux) ) 
 Here is how much of TeX's memory you used:
- 32258 strings out of 476331
- 852691 string characters out of 5797589
- 1857660 words of memory out of 5000000
- 52164 multiletter control sequences out of 15000+600000
+ 32272 strings out of 476331
+ 852909 string characters out of 5797589
+ 1859660 words of memory out of 5000000
+ 52177 multiletter control sequences out of 15000+600000
  516743 words of font info for 49 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  122i,9n,121p,829b,868s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb>
-Output written on gs_a_types.pdf (1 page, 742495 bytes).
+Output written on gs_a_types.pdf (1 page, 759195 bytes).
 PDF statistics:
- 23 PDF objects out of 1000 (max. 8388607)
+ 25 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 23 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 28 words of extra memory for PDF output out of 10000 (max. 10000000)
 
