@@ -1,6 +1,6 @@
 \setchapterpreamble[u]{\margintoc}
 \glsresetall % reset glossary
-\chapter{Optimizing modular structures} \label{chap:05}
+\chapter{Optimizing modular lattice structures} \label{chap:05}
 \chpref{chap:04} addressed the primary limitations of the classical \gls{tto} method by introducing various mechanical constraints such as minimum slenderness of active bars, topological buckling, and kinematic compatibility. However, structures optimized using this algorithm often exhibit complex topologies and regularization methods could enhance the manufacturing phase. This chapter focuses on developing a modular framework for the proposed \gls{tto} formulation.
 
 In \secref{sec:05_01}, we provide a detailed explanation of the modifications needed to apply modular constraints to the \gls{tto}. Specifically, we focus on how to model the problem when multiple modules are used and how topological buckling constraints are implemented in modular structures. Finally, in \secref{sec:05_02}, we evaluate the proposed formulation through various 2D and 3D test cases, aiming to gain a better understanding of modular structures.
@@ -92,7 +92,7 @@ Addressing topological buckling in modular structures is a more complex task com
 \end{equation}
 We made this choice knowing that the high connectivity of modular structures tends to reduce the occurrence of nodal instability within the structure. Any potential nodal instability in compressive chains at the structure level is addressed in a subsequent post-processing phase.
 
-\subsection{Optimization formulation} \label{sec:05_opt_formulation}
+\subsection{Modular optimization formulation} \label{sec:05_opt_formulation}
 The monolithic formulation \ref{eq:04_optim_complete} is updated using \eqref{eq:05_VL} and \eqref{eq:05_side_cons_chain_modular} to obtain the modular optimization formulation \ref{eq:05_optim_complete_modular} that uses the variable linking approach. Formulation~\ref{eq:05_optim_complete_modular} is stated in terms of modular cross-sectional areas $\bar{\vect{a}}$, member forces $\vect{q}$ and nodal displacements $\vect{U}$ as follows:
 \begin{equation}
     \begin{aligned}

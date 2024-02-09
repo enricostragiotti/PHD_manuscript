@@ -1,4 +1,4 @@
-\chapter{Sensitivity analysis of the modular structure optimization algorithm} \label{app:01}
+\chapter{Sensitivity analysis of the modular lattice structure optimization algorithm} \label{app:01}
 In this appendix, we demonstrate how the gradient, Jacobian, and Hessian matrices of the objective function and the optimization constraints are evaluated for the layout and topology optimization formulation $\mathbb{M}_2$ presented in Chapter~\ref{chap:06}. This step, called sensitivity analysis, is crucial for gradient descent optimization algorithms, as it allows for faster and more accurate convergence compared to using finite differences. \marginnote{More information on sensitivity analysis can be found in the book by Martins and Ning \cite{martins_engineering_2021}.} We remind the reader that the index $i$ is relative to the number of bars in a module $\bar{n}$, the index $j$ is relative to the number of subdomains $N_\text{sub}$ in which the structure is divided, and the index $t$ is relative to the number of different modules' topologies $N_\text{T}$. The indexes are summarized in \tabref{tab:appA_indexes} for added clarity.
 
 \begin{margintable}

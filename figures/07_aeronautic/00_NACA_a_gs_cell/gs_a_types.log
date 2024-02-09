@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.8.29)  7 FEB 2024 18:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.8.29)  9 FEB 2024 17:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -591,11 +591,11 @@ Package translations Info: loading dictionary `translations-basic-dictionary' fo
 
 Package pgfplots notification 'compat/show suggested version=true': document has been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
 
-<vol_naca.png, id=4, 2284.535pt x 807.015pt>
-File: vol_naca.png Graphic file (type png)
-<use vol_naca.png>
-Package pdftex.def Info: vol_naca.png  used on input line 15.
-(pdftex.def)             Requested size: 227.62204pt x 80.39838pt.
+<bcs.png, id=4, 1284.8pt x 722.7pt>
+File: bcs.png Graphic file (type png)
+<use bcs.png>
+Package pdftex.def Info: bcs.png  used on input line 15.
+(pdftex.def)             Requested size: 227.62204pt x 128.02927pt.
 <02_GS_c_iso.png, id=5, 1927.2pt x 1084.05pt>
 File: 02_GS_c_iso.png Graphic file (type png)
 <use 02_GS_c_iso.png>
@@ -620,17 +620,17 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 [1
 
-{D:/estragio/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./vol_naca.png> <./02_GS_c_iso.png> <./03_GS_s_iso.png>] (gs_a_types.aux) ) 
+{D:/estragio/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./bcs.png> <./02_GS_c_iso.png> <./03_GS_s_iso.png>] (gs_a_types.aux) ) 
 Here is how much of TeX's memory you used:
  32272 strings out of 476331
- 852909 string characters out of 5797589
+ 852874 string characters out of 5797589
  1859660 words of memory out of 5000000
  52177 multiletter control sequences out of 15000+600000
  516743 words of font info for 49 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  122i,9n,121p,829b,868s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb>
-Output written on gs_a_types.pdf (1 page, 759195 bytes).
+Output written on gs_a_types.pdf (1 page, 756408 bytes).
 PDF statistics:
  25 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
