@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.8.29)  9 NOV 2023 19:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.8.29)  10 FEB 2024 15:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -602,15 +602,15 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 {D:/estragio/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] (scale_tab_param.aux) ) 
 Here is how much of TeX's memory you used:
- 32503 strings out of 476331
- 860923 string characters out of 5797589
+ 32572 strings out of 476331
+ 862916 string characters out of 5797589
  1864660 words of memory out of 5000000
- 52412 multiletter control sequences out of 15000+600000
+ 52481 multiletter control sequences out of 15000+600000
  516743 words of font info for 49 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 122i,12n,121p,838b,2477s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 122i,12n,121p,838b,2479s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb>
-Output written on scale_tab_param.pdf (1 page, 30327 bytes).
+Output written on scale_tab_param.pdf (1 page, 30742 bytes).
 PDF statistics:
  24 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

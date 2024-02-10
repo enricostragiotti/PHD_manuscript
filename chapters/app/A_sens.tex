@@ -99,7 +99,7 @@ As already mentioned, the gradient is zero with respect to the member forces $\v
 \section{Jacobian matrix}
 We focus now on the evaluation of the Jacobian matrix of the optimization constraints with respect to the design variables.
 \paragraph*{Equilibrium constraints}
-The equilibrium constraint $\vect{g}_\text{eq}$ is linear on $\vect{q}$ and not dependent on $\bar{\vect{a}}$ and $\vect{\alpha}$. For that reason we can write:
+The equilibrium constraint $\vect{g}_\text{eq}$ is linear on $\vect{q}$ and not dependent on $\bar{\vect{a}}$ and $\vect{\alpha}$. For that reason, we can write:
 \begin{equation}
     \derfrac{\vect{g}_\text{eq}}{\bar{\vect{a}}}=0,
 \end{equation}
@@ -118,7 +118,7 @@ and
 \begin{equation}
     \derfrac{\vect{g}_\text{st,c}^j}{{\vect{a}^j}} = \sigma_c,
 \end{equation}
-the Jacobian for the stress constraints $\vect{g}_\text{st,t}$ and $\vect{g}_\text{st,c}$ can be evalued using \eqref{eq:appA_02} and \eqref{eq:appA_03} as follows:
+the Jacobian for the stress constraints $\vect{g}_\text{st,t}$ and $\vect{g}_\text{st,c}$ can be evaluated using \eqref{eq:appA_02} and \eqref{eq:appA_03} as follows:
 \begin{equation}
     \derfrac{\vect{g}_\text{st,*}^j}{\bar{\vect{a}}_t} = \derfrac{\vect{g}_\text{st,*}^j}{{\vect{a}^j}} \derfrac{\vect{a}^j}{\bar{\vect{a}}_t},
 \end{equation}
@@ -126,7 +126,7 @@ and
 \begin{equation}
     \derfrac{\vect{g}_\text{st,*}^j}{\alpha^j}=\derfrac{\vect{g}_\text{st,*}^j}{\vect{a}^j} \derfrac{\vect{a}^j}{\alpha^j},
 \end{equation} 
-where the asterisk $*$ refers to either the compression and the tension constraints. The stress constraints are linear with respect to $q$:
+where the asterisk $*$ refers to either the compression or the tension constraints. The stress constraints are linear with respect to $q$:
 \begin{equation}
     \derfrac{\vect{g}_\text{st,*}}{\vect{q}}=\vect{1},
 \end{equation}
@@ -135,7 +135,7 @@ in which $\vect{1}$ represent a vector of all ones.
 \begin{equation}
     \derfrac{\vect{g}_\text{buck}^j}{\vect{a}^j} =  2\frac{s\vect{a}^j}{\vect{\ell^2}},
 \end{equation}
-the Jacobian for the buckling constraints $\vect{g}_\text{buck}$ with respect to $\bar{\vect{a}}$ can be evalued using \eqref{eq:appA_02} as:
+the Jacobian for the buckling constraints $\vect{g}_\text{buck}$ with respect to $\bar{\vect{a}}$ can be evaluated using \eqref{eq:appA_02} as:
 \begin{equation}
     \derfrac{\vect{g}_\text{buck}^j}{\bar{\vect{a}}_t} = \derfrac{\vect{g}_\text{buck}^j}{{\vect{a}^j}} \derfrac{\vect{a}^j}{\bar{\vect{a}}_t}.
 \end{equation}
@@ -144,7 +144,7 @@ Using \eqref{eq:appA_03} we evaluate the derivative with respect to $\vect{\alph
     \derfrac{\vect{g}_\text{buck}^j}{\alpha^j}=\derfrac{\vect{g}_\text{buck}^j}{\vect{a}^j} \derfrac{\vect{a}^j}{\alpha^j}.
 \end{equation}
 \paragraph*{Maximum sum alpha constraints}
-The constraint $\vect{g}_\text{sum}$ on the maximal value of $\alpha$ in every subdomain is linear with respect to $\alpha$ and it does not depend on the other design variables. For that reason we can write:
+The constraint $\vect{g}_\text{sum}$ on the maximal value of $\alpha$ in every subdomain is linear with respect to $\alpha$ and it does not depend on the other design variables. For that reason, we can write:
 \begin{equation}
     \derfrac{\vect{g}_\text{sum}}{\bar{\vect{a}}}=0,
 \end{equation}
@@ -156,7 +156,7 @@ The constraint $\vect{g}_\text{sum}$ on the maximal value of $\alpha$ in every s
 \end{equation}
 
 \section{Hessian matrix}
-For the evaluation of the hessian matrix, we list here only the nonzero contributions, assuming that all the remaining are zero.
+For the evaluation of the Hessian matrix, we list here only the nonzero contributions, assuming that all the remaining are zero.
 \paragraph*{Volume}
 The only nonzero contributions to the Hessian matrix are: 
 \begin{equation}
@@ -181,7 +181,7 @@ To evaluate the Hessian of buckling constraints we need to define two additional
 \begin{equation}
     \hessfrac{\vect{g}_\text{buck}^j}{\bar{\vect{a}}_l}{\bar{\vect{a}}_m} = 2\frac{s}{\vect{\ell^2}} w_l^j w_m^j.
 \end{equation}
-The mixed term is evaluated as follow:
+The mixed term is evaluated as follows:
 \begin{equation}
     \hessfrac{\vect{g}_\text{buck}^j}{{\bar{\vect{a}}_l}}{\alpha_m^j} =  2\frac{s}{\vect{\ell^2}} w_l^j \derfrac{\vect{a}^j}{\alpha^j_m} + 2\frac{s\vect{a}^j}{\vect{\ell^2}} \derfrac{w_l^j}{\alpha_m^j},
 \end{equation}

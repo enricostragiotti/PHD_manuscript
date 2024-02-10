@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.8.29)  9 FEB 2024 17:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.8.29)  10 FEB 2024 18:42
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -591,11 +591,11 @@ Package translations Info: loading dictionary `translations-basic-dictionary' fo
 
 Package pgfplots notification 'compat/show suggested version=true': document has been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
 
-<bcs.png, id=4, 1284.8pt x 722.7pt>
+<bcs.png, id=4, 963.6pt x 433.62pt>
 File: bcs.png Graphic file (type png)
 <use bcs.png>
 Package pdftex.def Info: bcs.png  used on input line 15.
-(pdftex.def)             Requested size: 227.62204pt x 128.02927pt.
+(pdftex.def)             Requested size: 227.62204pt x 102.43002pt.
 <02_GS_c_iso.png, id=5, 1927.2pt x 1084.05pt>
 File: 02_GS_c_iso.png Graphic file (type png)
 <use 02_GS_c_iso.png>
@@ -630,9 +630,9 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  122i,9n,121p,829b,868s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb>
-Output written on gs_a_types.pdf (1 page, 756408 bytes).
+Output written on gs_a_types.pdf (1 page, 803543 bytes).
 PDF statistics:
- 25 PDF objects out of 1000 (max. 8388607)
+ 24 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  28 words of extra memory for PDF output out of 10000 (max. 10000000)
 

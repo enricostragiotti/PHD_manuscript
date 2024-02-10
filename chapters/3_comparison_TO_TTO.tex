@@ -86,7 +86,6 @@ The stress tensor is evaluated at the Gaussian point GP using the elasticity Hoo
     0   &   0   &   G
     \end{pmatrix}.
 \end{equation}
-
 The equivalent Von Mises stress of the element can then be written as:
 \begin{align}
     \langle \vect{\sigma}_{\text{VM}} \rangle &= \sqrt{\sigma_x^2 + \sigma_y^2 - \sigma_x \sigma_y+3\tau_{xy}} \\
@@ -112,7 +111,7 @@ The equivalent Von Mises stress of the element can then be written as:
     0       &   0       &   3
     \end{pmatrix} \\
     \langle \vect{\sigma}_{\text{VM}} \rangle &= \sqrt{\vect{q}_s^T\matr{S}\vect{q}_s}, \quad
-    \textrm{with } \matr{S} = \matr{B}_s^T\matr{C}_e^T\matr{D}_{\text{VM}}\matr{C}_e\matr{B}_s.
+    \textrm{with } \matr{S} = \matr{B}_s^T\matr{C}_e^T\matr{D}_{\text{VM}}\matr{C}_e\matr{B}_s,
     \label{eq:03_VM_calc}
 \end{align}
 in which we used the notation introduced by Verbart~\sidecite{verbart_unified_2017} $\langle \dots \rangle$ to represent macroscopic (or homogenized) variables.
@@ -180,7 +179,7 @@ Deriving \eqref{eq:03_obj_vol} with respect to $\rhophys$ we obtain:
 \end{equation}
 The sensitivity of the objective function can then be evaluated using \eqref{eq:03_01} as follows:
 \begin{equation}
-    \frac{d V}{d \rho_i} = \sum_{j \in \mathbb{N}_{i,R}} \derfrac{V}{\rhophys_j} \derfrac{\rhophys_j}{\rhofil_j} \derfrac{\rhofil_j}{\rho_i}.
+    \frac{d V}{d \rho_i} = \sum_{j \in \mathbb{N}_{i,R}} \derfrac{V}{\rhophys_j} \derfrac{\rhophys_j}{\rhofil_j} \derfrac{\rhofil_j}{\rho_i},
 \end{equation}
 in \marginnote{\eqref{eq:02_rhofil} reads: $$ \rhofil_i = \frac{\sum_{j \in \mathbb{N}_{i,R}} w(d_j)v_j\rho_j}{\sum_{j \in \mathbb{N}_{i,R}} w(d_j)v_j}.$$} which the derivative of the filtered density $\vect{\rhofil}$ with respect to the design variable $\vect{\rho}$ is written deriving \eqref{eq:02_rhofil}:
 \begin{equation}
@@ -204,7 +203,7 @@ The sensitivity of the aggregated constraint function $G_{\text{KS}}^\text{L}$ w
     \frac{d G_{\text{KS}}^\text{L}}{d \rho_i} = \sum_{j \in \mathbb{N}_{i,R}} \derfrac{G_{\text{KS}}^\text{L}}{\rhophys_j} \derfrac{\rhophys_j}{\rhofil_j} \derfrac{\rhofil_j}{\rho_i}.
 \end{equation}
 
-As \marginnote{we remember that $$\matr{K}(\vect{\rhophys})\vect{u}=\vect{f}$$} the constraint function $G_{\text{KS}}^\text{L} = G(\vect{\rhophys}, \vect{u}(\vect{\rhophys}) )$ is explicitly and implicitly (via the relationship with $\vect{u}$) depending on $\vect{\rhophys}$, the first-order derivative is evaluated using the total derivative formula:
+As \marginnote{We remember that $$\matr{K}(\vect{\rhophys})\vect{u}=\vect{f}$$} the constraint function $G_{\text{KS}}^\text{L} = G(\vect{\rhophys}, \vect{u}(\vect{\rhophys}) )$ is explicitly and implicitly (via the relationship with $\vect{u}$) depending on $\vect{\rhophys}$, the first-order derivative is evaluated using the total derivative formula:
 \begin{equation} \label{eq:03_sens-0}
     \frac{d G}{d \rhophys_j} = \derfrac{G}{ \rhophys_j} + \derfrac{G}{\vect{u}} \derfrac{\vect{u} }{\rhophys_j}.
 \end{equation}
@@ -282,13 +281,13 @@ We are now shifting our focus from structures discretized using continuous eleme
 \paragraph{Objective and constraint functions} 
 The goal of the optimization is to minimize the volume occupied by a structure under a specified load case. For a truss structure, we can write:
 \begin{equation}
-    V = \vect{\ell}^{T}\vect{a}
+    V = \vect{\ell}^{T}\vect{a},
 \end{equation}
 in which $\vect{\ell} = [\ell_1, \ell_2, \ldots,\ell_{N\text{el}}]^T$ is the length vector of the member of the ground structure. The volume fraction is evaluated as the ratio $ V_\text{f} = \frac{V}{V_0}$, where $V_0$ represents the total volume of the design domain $\Omega$.
 
 As the volume minimization problem is stated using the \gls{sand} approach, both the members' cross-sectional areas $\vect{a}$ and member forces $\vect{q}$ are design variables of the problem. For that reason, the stress constraints in tension and compression ($\vect{g}_\text{st,t}$ and $\vect{g}_\text{st,c}$) can be trivially written as:
 \begin{equation}
-    -\sigma_\text{c}\vect{a} \leq \vect{q} \leq \sigma_\text{t}\vect{a}
+    -\sigma_\text{c}\vect{a} \leq \vect{q} \leq \sigma_\text{t}\vect{a},
 \end{equation}
 in which $\sigma_\text{c}$ and $\sigma_\text{t}$ are the compressive and tensile maximum allowable stresses of the material.
 
@@ -452,7 +451,7 @@ Finally, in \figref{fig:03_to_plot} we show the plots summarizing our results, w
 We notice that the volume fraction $V_\text{f}$ follows a hyperbolic relationship, while compliance $C$ exhibits a linear correlation with respect to the material allowable $\sigma_\text{L}$.
 
 \paragraph{TTO optimization results}
-In this section, we present the optimized structures of the \gls{tto} formulation with different values of the material allowable $\sigma_\text{L}$ spanning from $0.2$ to $20$. Due to the inherent linearity of Formulation \ref{eq:03_optim_original}, the solutions exhibit several intriguing characteristics. Notably, in cases such as the tested L-shaped test case where the structures are not overconstrained and are not subject to asymmetric stress constraints, the formulation aligns with the Michell criteria. Consequently, the connectivity remains unchanged regardless of the imposed stress limit, and the stress distribution results in a fully stressed structure. Only the cross-sectional area values varies for the different $\sigma_\text{L}$ considered. \figref{fig:03_L_tto} provides a visual representation of the optimized topology and the corresponding stress distribution for the different values of the material allowable $\sigma_\text{L}$. By examining the figure, it is evident that the node positions are constrained by the initial ground structure. The solution resembles half of a spoked wheel, with an irregular distribution of the spokes. One might expect a more evenly distributed arrangement of these spokes. Interestingly, no fillet is formed at the corner of the L-shaped beam. This observation is attributed to the modeling of truss nodes as frictionless joints that do not support moments. However, this aligns with our earlier findings in density-based topology optimization, where the fillet radius diminishes as the volume fraction decreases. Finally, it is crucial to note that in this simple test case with only a single load case, linear elasticity is inherently considered in the formulation. There is no need to explicitly account for it by imposing kinematic compatibility constraints, as highlighted in previous studies \sidecite{dorn_automatic_1964,hemp_optimum_1973,bendsoe_topology_2004}.
+In this section, we present the optimized structures of the \gls{tto} formulation with different values of the material allowable $\sigma_\text{L}$ spanning from $0.2$ to $20$. Due to the inherent linearity of Formulation \ref{eq:03_optim_original}, the solutions exhibit several intriguing characteristics. Notably, in cases such as the tested L-shaped test case where the structures are not overconstrained and are not subject to asymmetric stress constraints, the formulation aligns with the Michell criteria. Consequently, the connectivity remains unchanged regardless of the imposed stress limit, and the stress distribution results in a fully stressed structure. Only the cross-sectional area values vary for the different $\sigma_\text{L}$ considered. \figref{fig:03_L_tto} provides a visual representation of the optimized topology and the corresponding stress distribution for the different values of the material allowable $\sigma_\text{L}$. By examining the figure, it is evident that the node positions are constrained by the initial ground structure. The solution resembles half of a spoked wheel, with an irregular distribution of the spokes. One might expect a more evenly distributed arrangement of these spokes. Interestingly, no fillet is formed at the corner of the L-shaped beam. This observation is attributed to the modeling of truss nodes as frictionless joints that do not support moments. However, this aligns with our earlier findings in density-based topology optimization, where the fillet radius diminishes as the volume fraction decreases. Finally, it is crucial to note that in this simple test case with only a single load case, linear elasticity is inherently considered in the formulation. There is no need to explicitly account for it by imposing kinematic compatibility constraints, as highlighted in previous studies \sidecite{dorn_automatic_1964,hemp_optimum_1973,bendsoe_topology_2004}.
 \begin{figure}
     \centering
     \hspace*{\fill}

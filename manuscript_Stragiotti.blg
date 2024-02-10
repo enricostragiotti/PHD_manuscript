@@ -1,63 +1,59 @@
 [0] Config.pm:307> INFO - This is Biber 2.19
 [0] Config.pm:310> INFO - Logfile is 'manuscript_Stragiotti.blg'
-[143] biber-MSWIN64:340> INFO - === 
-[205] Biber.pm:419> INFO - Reading 'manuscript_Stragiotti.bcf'
-[3570] Biber.pm:979> INFO - Found 236 citekeys in bib section 0
-[3571] Biber.pm:976> INFO - Using all citekeys in bib section 1
-[3571] Biber.pm:979> INFO - Found 0 citekeys in bib section 0
-[3571] Biber.pm:976> INFO - Using all citekeys in bib section 2
-[3571] Biber.pm:979> INFO - Found 0 citekeys in bib section 0
-[3571] Biber.pm:976> INFO - Using all citekeys in bib section 3
-[3571] Biber.pm:979> INFO - Found 0 citekeys in bib section 0
-[3623] Biber.pm:4419> INFO - Processing section 0
-[3636] Biber.pm:4610> INFO - Looking for bibtex file 'biblio.bib' for section 0
-[3737] bibtex.pm:1713> INFO - LaTeX decoding ...
-[4382] bibtex.pm:1519> INFO - Found BibTeX data source 'biblio.bib'
-[6084] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[6084] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[6084] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
-[6084] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
-[6265] Biber.pm:4419> INFO - Processing section 1
-[6265] Biber.pm:4610> INFO - Looking for bibtex file 'my_pub.bib' for section 1
-[6345] bibtex.pm:1713> INFO - LaTeX decoding ...
-[6357] bibtex.pm:1519> INFO - Found BibTeX data source 'my_pub.bib'
-[6404] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[6404] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[6404] Biber.pm:4239> INFO - Sorting list 'ynt/global/7FC56270E7A70FA81A5935B72EACBE29/global/global' of type 'entry' with template 'ynt' and locale 'en-US'
-[6405] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
-[6420] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[6420] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[6421] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
-[6421] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
-[6427] Biber.pm:4419> INFO - Processing section 2
-[6428] Biber.pm:4610> INFO - Looking for bibtex file 'my_pub.bib' for section 2
-[6532] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[6532] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[6532] Biber.pm:4239> INFO - Sorting list 'ynt/global/0D61F8370CAD1D412F80B84D143E1257/global/global' of type 'entry' with template 'ynt' and locale 'en-US'
-[6532] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
-[6546] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[6546] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[6546] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
-[6546] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
-[6551] Biber.pm:4419> INFO - Processing section 3
-[6551] Biber.pm:4610> INFO - Looking for bibtex file 'my_pub.bib' for section 3
-[6639] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[6639] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[6639] Biber.pm:4239> INFO - Sorting list 'ynt/global/69691C7BDCC3CE6D5D8A1361F22D04AC/global/global' of type 'entry' with template 'ynt' and locale 'en-US'
-[6639] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
-[6652] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[6652] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[6652] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
-[6652] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
-[6657] bbl.pm:660> INFO - Writing 'manuscript_Stragiotti.bbl' with encoding 'UTF-8'
-[6866] bbl.pm:763> INFO - Output to manuscript_Stragiotti.bbl
-[6866] Biber.pm:131> WARN - Duplicate entry key: 'ben-tal_optimal_2000' in file 'biblio.bib', skipping ...
-[6866] Biber.pm:131> WARN - Duplicate entry key: 'kocvara_modelling_2002' in file 'biblio.bib', skipping ...
-[6866] Biber.pm:131> WARN - Duplicate entry key: 'watts_geometric_2017' in file 'biblio.bib', skipping ...
-[6867] Biber.pm:131> WARN - Duplicate entry key: 'zhou_design_2008' in file 'biblio.bib', skipping ...
-[6867] Biber.pm:131> WARN - ISBN '978-3-642-07698-5 978-3-662-05086-6' in entry 'bendsoe_topology_2004' is invalid - run biber with '--validate_datamodel' for details.
-[6867] Biber.pm:131> WARN - ISBN '978-3-662-03117-9 978-3-662-03115-5' in entry 'bendsoe_optimization_1995' is invalid - run biber with '--validate_datamodel' for details.
-[6867] Biber.pm:131> WARN - ISBN '978-0-89871-668-9 978-0-89871-876-8' in entry 'conn_introduction_2009' is invalid - run biber with '--validate_datamodel' for details.
-[6867] Biber.pm:131> WARN - ISBN '978-3-319-68912-8 978-3-319-68913-5' in entry 'audet_derivative-free_2017' is invalid - run biber with '--validate_datamodel' for details.
-[6867] Biber.pm:131> WARN - ISBN '978-1-118-65950-2 978-0-470-93741-9' in entry 'simon_evolutionary_2013' is invalid - run biber with '--validate_datamodel' for details.
-[6867] Biber.pm:133> INFO - WARNINGS: 9
+[160] biber-MSWIN64:340> INFO - === 
+[223] Biber.pm:419> INFO - Reading 'manuscript_Stragiotti.bcf'
+[3442] Biber.pm:979> INFO - Found 236 citekeys in bib section 0
+[3443] Biber.pm:976> INFO - Using all citekeys in bib section 1
+[3443] Biber.pm:979> INFO - Found 0 citekeys in bib section 0
+[3443] Biber.pm:976> INFO - Using all citekeys in bib section 2
+[3443] Biber.pm:979> INFO - Found 0 citekeys in bib section 0
+[3443] Biber.pm:976> INFO - Using all citekeys in bib section 3
+[3444] Biber.pm:979> INFO - Found 0 citekeys in bib section 0
+[3496] Biber.pm:4419> INFO - Processing section 0
+[3509] Biber.pm:4610> INFO - Looking for bibtex file 'biblio.bib' for section 0
+[3608] bibtex.pm:1713> INFO - LaTeX decoding ...
+[4300] bibtex.pm:1519> INFO - Found BibTeX data source 'biblio.bib'
+[5969] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[5969] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[5969] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[5969] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[6148] Biber.pm:4419> INFO - Processing section 1
+[6148] Biber.pm:4610> INFO - Looking for bibtex file 'my_pub.bib' for section 1
+[6229] bibtex.pm:1713> INFO - LaTeX decoding ...
+[6241] bibtex.pm:1519> INFO - Found BibTeX data source 'my_pub.bib'
+[6289] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[6289] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[6289] Biber.pm:4239> INFO - Sorting list 'ynt/global/7FC56270E7A70FA81A5935B72EACBE29/global/global' of type 'entry' with template 'ynt' and locale 'en-US'
+[6290] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[6301] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[6301] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[6301] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[6301] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[6306] Biber.pm:4419> INFO - Processing section 2
+[6306] Biber.pm:4610> INFO - Looking for bibtex file 'my_pub.bib' for section 2
+[6394] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[6394] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[6394] Biber.pm:4239> INFO - Sorting list 'ynt/global/0D61F8370CAD1D412F80B84D143E1257/global/global' of type 'entry' with template 'ynt' and locale 'en-US'
+[6394] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[6406] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[6406] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[6406] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[6406] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[6411] Biber.pm:4419> INFO - Processing section 3
+[6411] Biber.pm:4610> INFO - Looking for bibtex file 'my_pub.bib' for section 3
+[6509] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[6509] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[6509] Biber.pm:4239> INFO - Sorting list 'ynt/global/69691C7BDCC3CE6D5D8A1361F22D04AC/global/global' of type 'entry' with template 'ynt' and locale 'en-US'
+[6509] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[6527] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[6527] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[6527] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[6527] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[6535] bbl.pm:660> INFO - Writing 'manuscript_Stragiotti.bbl' with encoding 'UTF-8'
+[6765] bbl.pm:763> INFO - Output to manuscript_Stragiotti.bbl
+[6765] Biber.pm:131> WARN - ISBN '978-3-642-07698-5 978-3-662-05086-6' in entry 'bendsoe_topology_2004' is invalid - run biber with '--validate_datamodel' for details.
+[6765] Biber.pm:131> WARN - ISBN '978-3-662-03117-9 978-3-662-03115-5' in entry 'bendsoe_optimization_1995' is invalid - run biber with '--validate_datamodel' for details.
+[6765] Biber.pm:131> WARN - ISBN '978-0-89871-668-9 978-0-89871-876-8' in entry 'conn_introduction_2009' is invalid - run biber with '--validate_datamodel' for details.
+[6765] Biber.pm:131> WARN - ISBN '978-3-319-68912-8 978-3-319-68913-5' in entry 'audet_derivative-free_2017' is invalid - run biber with '--validate_datamodel' for details.
+[6766] Biber.pm:131> WARN - ISBN '978-1-118-65950-2 978-0-470-93741-9' in entry 'simon_evolutionary_2013' is invalid - run biber with '--validate_datamodel' for details.
+[6766] Biber.pm:133> INFO - WARNINGS: 5
