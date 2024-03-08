@@ -43,6 +43,7 @@
 \usepackage{nicematrix} % for index in lines and column
 \usepackage{multirow}% multirow in tables
 \usepackage{placeins}
+\usepackage{pdfpages} 
 
 
 \usepackage{tikz,pgfplots}  % TikZ and PGF
@@ -126,33 +127,35 @@ joseph.morlier@isae-supaero.fr\\
 
 \makeatletter
 
-\begin{titlepage}
-	\centering
-	\includegraphics[height=1.5cm]{figures/01_intro/megep.png}\hfill\includegraphics[height=1.5cm]{figures/01_intro/ONERA_logo.svg.png}\hfill\includegraphics[height=1.5cm]{figures/01_intro/Logo-ISAE-SUPAERO.png}\par
-	\vspace{4\baselineskip}
-	{\Huge\scshape 
-	\@title\par}
-	\vspace{4\baselineskip}
-	{\LARGE\@author\par}
-	\vspace{4\baselineskip}
-	{% author
-	\fontsize{12}{14}\selectfont
-	\bfseries\@titlepageauthor
-	\par
- 	}%
-	\medskip
-	{% address
-		\fontsize{11}{12}\selectfont
-		\def\and{\\\vspace{13pt}}
-		\normalfont\@address
-		\par
-	}%
-	\@date
-	\vfill
-	{\Large \@titlehead}\par
-	\medskip
-	\@publishers
-\end{titlepage}
+% \begin{titlepage}
+% 	\centering
+% 	\includegraphics[height=1.5cm]{figures/01_intro/megep.png}\hfill\includegraphics[height=1.5cm]{figures/01_intro/ONERA_logo.svg.png}\hfill\includegraphics[height=1.5cm]{figures/01_intro/Logo-ISAE-SUPAERO.png}\par
+% 	\vspace{4\baselineskip}
+% 	{\Huge\scshape 
+% 	\@title\par}
+% 	\vspace{4\baselineskip}
+% 	{\LARGE\@author\par}
+% 	\vspace{4\baselineskip}
+% 	{% author
+% 	\fontsize{12}{14}\selectfont
+% 	\bfseries\@titlepageauthor
+% 	\par
+%  	}%
+% 	\medskip
+% 	{% address
+% 		\fontsize{11}{12}\selectfont
+% 		\def\and{\\\vspace{13pt}}
+% 		\normalfont\@address
+% 		\par
+% 	}%
+% 	\@date
+% 	\vfill
+% 	{\Large \@titlehead}\par
+% 	\medskip
+% 	\@publishers
+% \end{titlepage}
+
+\includepdf[pages=-]{first_page/couverture_these.pdf}
 
 \newpage
 \vspace*{\fill}
