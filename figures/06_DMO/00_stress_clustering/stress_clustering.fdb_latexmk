@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1701164644 "d:/estragio/PhD/99_Github/PHD_manuscript/figures/06_DMO/00_stress_clustering/stress_clustering.tex" "stress_clustering.pdf" "stress_clustering" 1701164649 0
-  "../../img_header.tex" 1699464406 10695 989973cca69a9e9778b43ca688ada1f0 ""
+["pdflatex"] 1711273814 "d:/estragio/PhD/99_Github/PHD_manuscript/figures/06_DMO/00_stress_clustering/stress_clustering.tex" "stress_clustering.pdf" "stress_clustering" 1711273817 0
+  "../../img_header.tex" 1701714123 10873 22aeeb3fdab60d5b2d649f63ba5830f4 ""
   "C:/Program Files/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1233951848 1120 1e8878807317373affa7f7bba4cf2f6a ""
   "C:/Program Files/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm" 1233951848 1124 14ccf5552bc7f77ca02a8a402bea8bfb ""
   "C:/Program Files/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmbsy7.tfm" 1233951848 1120 7f9f170e8aa57527ad6c49feafd45d54 ""
@@ -230,9 +230,9 @@
   "d:/estragio/PhD/99_Github/PHD_manuscript/figures/06_DMO/00_stress_clustering/stress_clustering.tex" 1701164643 5656 69a327a805244ce3e35594df25ba7967 ""
   "kmeans_clustering_2.pdf" 1701103687 1662 fe110fc15df88f8ce839a81768c368fb ""
   "kmeans_clustering_3.pdf" 1701103737 1667 23fe4030e23453a13ed63353dd38d569 ""
-  "kmeans_clustering_5.pdf" 1701103771 1668 096c4d0b3885b68c8fb13a25bdd3f8bb ""
+  "kmeans_clustering_5.pdf" 1711273813 12652 fa3cec45e46519a186a19cb2530e0cbd ""
   "stress.pdf" 1701103638 6185 aea69640d01437962d69e99eca4b500f ""
-  "stress_clustering.aux" 1701164648 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "stress_clustering.aux" 1711273817 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
   "stress_clustering.tex" 1701164643 5656 69a327a805244ce3e35594df25ba7967 ""
   (generated)
   "stress_clustering.aux"

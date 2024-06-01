@@ -1,0 +1,49 @@
+\chapter*{Abstract}
+\phantomsection
+\addcontentsline{toc}{chapter}{Abstract}%
+\markboth{Abstract}{Abstract}%
+In the aerospace industry, there is a continuous demand for lighter aerostructures driven by the need to improve fuel efficiency and overall performance. Consequently, the aerospace sector is undergoing two significant shifts: the adoption of hydrogen-powered and electric planes, aimed at developing cleaner and more sustainable aviation technologies. These changes present opportunities to explore innovative concepts such as the flying wing or transonic dry truss-braced wings, deviating from the traditional tube-and-wing configuration. One promising approach to meet these demands is the utilization of modular lattice structures, known for their ultralight properties and modularity. Modular designs offer various advantages, including the assembly of large structures from smaller, easily manufacturable repeating modules, on-field repairability, and rapid assembly for temporary structures.
+The objective of this thesis is to develop a design and optimization methodology for ultralight and modular aerostructures. Initially, we conducted a review of existing literature to identify the most suitable algorithm basis for optimizing monolithic (non-modular) structures. After a comprehensive comparison, we selected the Truss Topology Optimization (TTO) approach, which utilizes bars as the discretizing element of the structure. However, the classic TTO formulation has limitations, such as the inability to address buckling constraints, consider multiple load cases, limit the minimum slenderness, and ensure mechanical compatibility. To overcome these challenges, we formulated a comprehensive approach and developed an innovative two-step optimization algorithm. This involves using a relaxed problem to generate an initial solution, which serves as the starting point for optimization using a complete formulation.
+The second part of the thesis focuses on adapting the proposed monolithic formulation to model modular structures. Initially, we concentrate on optimizing the topology of a fully modular structure, where a single module is repeated throughout the design. We investigate how hyperparameters, such as the number of subdomains and module complexity, affect the mechanical performance of the structure. Subsequently, we explore a more complex scenario by optimizing multiple module topologies and their layout within the structure. This is achieved through a newly proposed solving strategy based on a modified Discrete Material Optimization (DMO) approach, employing a gradient-based optimizer.
+By addressing the challenges of lightweight design and modularity in aerostructures, this research aims to contribute to the ongoing evolution of aerospace technologies and advance the efficiency and performance of future aircraft.
+
+\newpage
+
+
+
+\chapter*{Acknowledgement}
+\phantomsection
+\addcontentsline{toc}{chapter}{Acknowledgement}%
+\markboth{Acknowledgement}{Acknowledgement}%
+I never imagined pursuing a Ph.D. during my university years until I began my master's research internship at ISAE SUPAERO. It was during this time that something sparked within me, and I was captivated by the possibility of contributing, even in a small way, to uncharted knowledge. Today, after three wonderful and intense years at the ONERA laboratories in Châtillon, near Paris, I can look back with gratitude. These years would not have been bearable without the support of the incredible people I met along the way.
+
+I could not have asked for a better supervisor than François-Xavier Irisarri. Always available despite his busy schedule, he showed me that a Ph.D. is not just about technical aspects but also about the pedagogical and human factors crucial to being a researcher. He always asked the right questions at the right moments, guiding my work and efforts where necessary. I am deeply grateful for the time we spent together, not just within ONERA, and I will miss working with you.
+
+I was fortunate to have Cédric Julien on my advisory board. Incredibly competent in the field, I knew I could always rely on him. I was amazed by how quickly he grasped the key concepts of my presentations and understood my goals, even during our long and sometimes inconclusive meetings. Thank you for all the advice and discussions over these years; I will not forget them.
+
+Lastly, I want to express my gratitude to Professor Joseph Morlier, who was not only the director of my thesis but also my advisor during my final year master's internship. Despite the four-hour train distance between us, it felt as though you were always nearby. I deeply appreciate your responsiveness and the guidance you provided to navigate the complex academic world.
+
+I extend my sincere gratitude to all the members of the MC2 unit at ONERA, who welcomed me even during the challenging times of Covid-19. Special thanks to Juan Manuel, Frédéric, Miriam, Christian, Jean-François, Martin, Pascal, Jules, Sarah, Anne, and François-Henri for their support.
+
+\vspace{8mm}
+
+A Ph.D. is not completed solely within the confines of the lab; the support of friends and family is crucial. I cannot forget the incredible Ph.D. students I encountered over these three years. The nights out with Ludovic behind the DJ's decks, Gaspard's beautiful Ricotta photos, tarot games with Mathis, jogging with Loïc and Manon, long hours of climbing with Roger and Shon, sharing the thesis burden with my co-bureau Stacy, Claire's endless need for hot water, plane discussions with Florent, and the LaTeX and VS Code cult with Mathieu… Thank you all!
+
+I want to deeply thank especially Lander and Pierre, who shared my passions and spent a lot of time with me in and outside the labs, climbing, running, watching F1 together, and partying.
+
+Outside the lab, a big thank you to my friends around Paris, especially Maddalena, Agnese, Teresa, Francisco, Giulio, Valentina, and Flaminia, for dragging me out of the lab to enjoy the Parisian nightlife, movie nights, weekend getaways, or just a nice lunch.
+
+I cannot forget how well I felt living with Matteo and Luis, the best roommates I could have asked for. I will not write too much here, but I will just say that at the end of the day, I looked forward to our dinners together (with \textit{pomme noisette}, of course). Thanks, guys; I will miss that.
+
+I always believed that university friendships are some of the longest-lasting, formed through shared challenging times. I would not have pursued a Ph.D. without all the experiences I had with Francesco, Filippo, Alberto, and Federico. Thanks, Villanova gang; I know each of you will achieve your goals with the attitude you have shown me.
+
+I would not be here--figuratively and literally--without the love and support of my parents, Milena and Roberto. Even though I am now far from them, I know I can always count on them. I want to express my infinite gratitude to my brother Andrea, who has always supported and trusted me and shown me by example how great things can be achieved through hard work. Finally, I thank Andrea, who shares his life with me and helps me navigate these incredible experiences together.
+
+\vspace{12mm}
+
+\begin{flushright}
+    Enrico Stragiotti \\
+    Châtillon, France\\
+    April 2024
+\end{flushright}
+\newpage

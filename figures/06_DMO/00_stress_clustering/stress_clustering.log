@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.8.29)  28 NOV 2023 10:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.8.29)  24 MAR 2024 10:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -657,11 +657,11 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
-<kmeans_clustering_5.pdf, id=7, 358.4592pt x 72.27pt>
+<kmeans_clustering_5.pdf, id=7, 358.2183pt x 72.27pt>
 File: kmeans_clustering_5.pdf Graphic file (type pdf)
 <use kmeans_clustering_5.pdf>
 Package pdftex.def Info: kmeans_clustering_5.pdf  used on input line 131.
-(pdftex.def)             Requested size: 184.9429pt x 37.28726pt.
+(pdftex.def)             Requested size: 184.9429pt x 37.31264pt.
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
@@ -683,17 +683,17 @@ pdfTeX warning: pdflatex (file ./kmeans_clustering_3.pdf): PDF inclusion: multip
 pdfTeX warning: pdflatex (file ./kmeans_clustering_5.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >] (stress_clustering.aux) ) 
 Here is how much of TeX's memory you used:
- 32437 strings out of 476331
- 855359 string characters out of 5797589
+ 32497 strings out of 476331
+ 857159 string characters out of 5797589
  1894660 words of memory out of 5000000
- 52326 multiletter control sequences out of 15000+600000
+ 52386 multiletter control sequences out of 15000+600000
  524157 words of font info for 76 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  122i,9n,121p,832b,1138s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb>
-Output written on stress_clustering.pdf (1 page, 65072 bytes).
+Output written on stress_clustering.pdf (1 page, 75942 bytes).
 PDF statistics:
- 61 PDF objects out of 1000 (max. 8388607)
+ 68 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  33 words of extra memory for PDF output out of 10000 (max. 10000000)
 
